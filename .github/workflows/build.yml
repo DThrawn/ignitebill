@@ -34,22 +34,17 @@ jobs:
           cache: true
 
       - name: Accept Android SDK licenses
-        run: |
-          yes | flutter doctor --android-licenses || true
-          mkdir -p $ANDROID_HOME/licenses
-          echo -e "\n8933bad161af4178b1185d1a37fbf41ea5269c55\nd56267bc2600a0f807eca733ef4187d334fa2506\n24333f8a63b6825ea9d5513f83c2829b004d1fee" > $ANDROID_HOME/licenses/android-sdk-license
-          echo -e "\n84831b9409646a918e30573bab4c9c91346d8abd" > $ANDROID_HOME/licenses/android-sdk-preview-license
+        run: yes | flutter doctor --android-licenses || true
 
       - name: Install dependencies
         run: flutter pub get
 
       - name: Clean and Build APKs
         run: |
-          cd android
-          ./gradlew clean
-          cd ..
-          flutter build apk --debug --verbose --split-per-abi
-          flutter build apk --release --verbose --split-per-abi
+          flutter clean
+          flutter pub get
+          flutter build apk --debug --split-per-abi
+          flutter build apk --release --split-per-abi
 
       - name: Upload Debug APK
         uses: actions/upload-artifact@v4

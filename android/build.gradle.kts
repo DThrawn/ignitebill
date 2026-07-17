@@ -1,5 +1,5 @@
 buildscript {
-    val kotlin_version = "1.9.24"
+    val kotlin_version = "2.1.0"
     repositories {
         google()
         mavenCentral()
@@ -17,15 +17,6 @@ allprojects {
 }
 
 subprojects {
-    configurations.all {
-        resolutionStrategy {
-            eachDependency {
-                if (requested.group == "org.jetbrains.kotlin") {
-                    useVersion("1.9.24")
-                }
-            }
-        }
-    }
 }
 
 tasks.register<Delete>("clean") {
