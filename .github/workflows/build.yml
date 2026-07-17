@@ -20,10 +20,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Java
+      - name: Set up Java 21
         uses: actions/setup-java@v4
         with:
-          java-version: '17'
+          java-version: '21'
           distribution: 'temurin'
           cache: 'gradle'
 
@@ -40,22 +40,16 @@ jobs:
           echo -e "\n8933bad161af4178b1185d1a37fbf41ea5269c55\nd56267bc2600a0f807eca733ef4187d334fa2506\n24333f8a63b6825ea9d5513f83c2829b004d1fee" > $ANDROID_HOME/licenses/android-sdk-license
           echo -e "\n84831b9409646a918e30573bab4c9c91346d8abd" > $ANDROID_HOME/licenses/android-sdk-preview-license
 
-
       - name: Install dependencies
         run: flutter pub get
 
-      - name: Clean build environment
+      - name: Clean and Build APKs
         run: |
           cd android
           ./gradlew clean
-          rm -rf .gradle/
           cd ..
-
-      - name: Build Debug APK
-        run: flutter build apk --debug --verbose --split-per-abi
-
-      - name: Build Release APK
-        run: flutter build apk --release --verbose --split-per-abi
+          flutter build apk --debug --verbose --split-per-abi
+          flutter build apk --release --verbose --split-per-abi
 
       - name: Upload Debug APK
         uses: actions/upload-artifact@v4
