@@ -27,6 +27,10 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
+      - name: Create dummy local.properties
+        run: |
+          echo "flutter.sdk=$FLUTTER_ROOT" > android/local.properties
+
       - name: Build Debug APK
         run: flutter build apk --debug --verbose
 
