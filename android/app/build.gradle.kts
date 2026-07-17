@@ -9,7 +9,7 @@ plugins {
 
 android {
     namespace = "com.example.timer"
-    compileSdk = 34
+    compileSdk = 36
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -20,19 +20,19 @@ android {
 
     defaultConfig {
         applicationId = "com.ignitech.ignitebill"
-        minSdk = 21
-        targetSdk = 34
+        minSdk = 24
+        targetSdk = 36
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
 
     signingConfigs {
-        getByName("release") {
+        create("release") {
             val keyProperties = Properties()
             val keyPropertiesFile = rootProject.file("key.properties")
             if (keyPropertiesFile.exists()) {
                 keyProperties.load(keyPropertiesFile.inputStream())
-                storeFile = rootProject.file(keyProperties.getProperty("storeFile"))
+                storeFile = rootProject.file(keyProperties.getProperty("storeFile") as String)
                 storePassword = keyProperties.getProperty("storePassword")
                 keyAlias = keyProperties.getProperty("keyAlias")
                 keyPassword = keyProperties.getProperty("keyPassword")
@@ -69,7 +69,7 @@ flutter {
 
 // CORRECTION 2 : On rajoute le bloc manquant tout à la fin, avec la syntaxe Kotlin (parenthèses et guillemets)
 dependencies {
-    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
 }
 
 configurations.all {
