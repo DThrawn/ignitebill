@@ -9,7 +9,7 @@ plugins {
 
 android {
     namespace = "com.example.timer"
-    compileSdk = 35
+    compileSdk = 36
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -21,7 +21,7 @@ android {
     defaultConfig {
         applicationId = "com.ignitech.ignitebill"
         minSdk = 24
-        targetSdk = 35
+        targetSdk = 36
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
@@ -73,13 +73,14 @@ flutter {
 
 // CORRECTION 2 : On rajoute le bloc manquant tout à la fin, avec la syntaxe Kotlin (parenthèses et guillemets)
 dependencies {
-    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.5")
 }
 
 configurations.all {
     resolutionStrategy {
-        force("androidx.browser:browser:1.8.0")
-        force("androidx.core:core:1.13.1")
-        force("androidx.core:core-ktx:1.13.1")
+        // Updated to versions compatible with SDK 36
+        force("androidx.browser:browser:1.9.0")
+        force("androidx.core:core:1.17.0")
+        force("androidx.core:core-ktx:1.17.0")
     }
 }
