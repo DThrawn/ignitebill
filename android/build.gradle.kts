@@ -1,5 +1,5 @@
 buildscript {
-    val kotlin_version = "2.4.10"
+    val kotlin_version = "1.9.24"
     repositories {
         google()
         mavenCentral()
@@ -21,7 +21,7 @@ subprojects {
         resolutionStrategy {
             eachDependency {
                 if (requested.group == "org.jetbrains.kotlin") {
-                    useVersion("2.4.10")
+                    useVersion("1.9.24")
                 }
             }
         }
