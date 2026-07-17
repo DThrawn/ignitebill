@@ -21,6 +21,7 @@ jobs:
 
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
+        id: flutter-action
         with:
           channel: 'stable'
 
@@ -29,7 +30,7 @@ jobs:
 
       - name: Create dummy local.properties
         run: |
-          echo "flutter.sdk=$FLUTTER_ROOT" > android/local.properties
+          echo "flutter.sdk=${{ steps.flutter-action.outputs.flutter-path }}" > android/local.properties
 
       - name: Build Debug APK
         run: flutter build apk --debug --verbose

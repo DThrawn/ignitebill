@@ -27,7 +27,7 @@ android {
     }
 
     signingConfigs {
-        create("release") {
+        getByName("release") {
             val keyProperties = Properties()
             val keyPropertiesFile = rootProject.file("key.properties")
             if (keyPropertiesFile.exists()) {
@@ -59,7 +59,7 @@ android {
 
 kotlin {
     compilerOptions {
-        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
+        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
     }
 }
 
@@ -69,7 +69,7 @@ flutter {
 
 // CORRECTION 2 : On rajoute le bloc manquant tout à la fin, avec la syntaxe Kotlin (parenthèses et guillemets)
 dependencies {
-    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.5")
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")
 }
 
 configurations.all {
