@@ -1,4 +1,4 @@
-name: Build Flutter APKs
+name: Build Flutter APKs # Triggering manual refresh
 
 on:
   push:
