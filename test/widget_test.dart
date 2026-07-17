@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:timer/main.dart';
+import 'package:ignite_bill/main.dart';
 
 void main() {
   testWidgets('App load smoke test', (WidgetTester tester) async {
