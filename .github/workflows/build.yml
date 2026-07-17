@@ -9,6 +9,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    
+    env:
+      ANDROID_USER_HOME: ${{ github.workspace }}/.android
+      GRADLE_OPTS: "-Dorg.gradle.daemon=false -Dorg.gradle.parallel=true -Dorg.gradle.jvmargs=-Xmx4G"
 
     steps:
       - uses: actions/checkout@v4
@@ -16,27 +20,25 @@ jobs:
       - name: Set up Java
         uses: actions/setup-java@v4
         with:
-          java-version: '21'
+          java-version: '17'
           distribution: 'temurin'
+          cache: 'gradle'
 
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         id: flutter-action
         with:
           channel: 'stable'
+          cache: true
 
       - name: Install dependencies
         run: flutter pub get
-
-      - name: Create dummy local.properties
-        run: |
-          echo "flutter.sdk=${{ steps.flutter-action.outputs.flutter-path }}" > android/local.properties
 
       - name: Build Debug APK
         run: flutter build apk --debug --verbose
 
       - name: Build Release APK
-        run: flutter build apk --release --no-shrink --verbose
+        run: flutter build apk --release --verbose
 
       - name: Upload Debug APK
         uses: actions/upload-artifact@v4
