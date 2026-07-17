@@ -43,3 +43,6 @@ app.*.map.json
 /android/app/build/
 /android/build/
 .android/
+
+# Studio Bot artifacts
+.artifacts/
