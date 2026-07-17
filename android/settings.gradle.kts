@@ -8,6 +8,7 @@ pluginManagement {
             }
             val flutterSdkPath = properties.getProperty("flutter.sdk")
                 ?: System.getenv("FLUTTER_ROOT")
+                ?: System.getenv("FLUTTER_HOME")
                 ?: throw GradleException("Flutter SDK not found. Define flutter.sdk in local.properties or FLUTTER_ROOT in environment variables.")
             flutterSdkPath
         }
