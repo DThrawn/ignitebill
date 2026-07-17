@@ -55,13 +55,17 @@ android {
             }
         }
     }
-}
-
-kotlin {
-    compilerOptions {
-        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
+    kotlinOptions {
+        jvmTarget = "17"
     }
 }
+
+// Removing the separate kotlin block which is for Kotlin 2.x DSL
+// kotlin {
+//     compilerOptions {
+//         jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
+//     }
+// }
 
 flutter {
     source = "../.."

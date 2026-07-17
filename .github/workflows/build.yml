@@ -10,9 +10,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     env:
-      ANDROID_USER_HOME: ${{ github.workspace }}/.android
       GRADLE_OPTS: "-Dorg.gradle.daemon=false -Dorg.gradle.parallel=true -Dorg.gradle.jvmargs=-Xmx4G -Dorg.gradle.configuration-cache=false"
 
     steps:
@@ -25,14 +26,10 @@ jobs:
           distribution: 'temurin'
 
       - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v3
-
-      - name: Prepare Android User Home
-        run: mkdir -p ${{ env.ANDROID_USER_HOME }}
+        uses: gradle/actions/setup-gradle@v4
 
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
-        id: flutter-action
         with:
           channel: 'stable'
           cache: true
@@ -41,28 +38,28 @@ jobs:
         run: flutter pub get
 
       - name: Build Debug APK
-        run: flutter build apk --debug --verbose
+        run: flutter build apk --debug --verbose --split-per-abi
 
       - name: Build Release APK
-        run: flutter build apk --release --verbose
+        run: flutter build apk --release --verbose --split-per-abi
 
       - name: Upload Debug APK
         uses: actions/upload-artifact@v4
         with:
           name: app-debug
-          path: build/app/outputs/flutter-apk/app-debug.apk
+          path: build/app/outputs/flutter-apk/app-debug*.apk
 
       - name: Upload Release APK
         uses: actions/upload-artifact@v4
         with:
           name: app-release
-          path: build/app/outputs/flutter-apk/app-release.apk
+          path: build/app/outputs/flutter-apk/app-release*.apk
 
       - name: Create Release
         if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
         uses: softprops/action-gh-release@v2
         with:
-          files: build/app/outputs/flutter-apk/app-release.apk
+          files: build/app/outputs/flutter-apk/app-release*.apk
           tag_name: v${{ github.run_number }}
           name: Release v${{ github.run_number }}
           draft: false
