@@ -2,6 +2,7 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
+import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -33,7 +34,7 @@ class VolumeSliderThumbShape extends SliderComponentShape {
     final shift = -depth / 2;
     canvas.drawCircle(center + Offset(0, depth + shift), radius, Paint()..color = shadowColor);
     canvas.drawCircle(center + Offset(0, shift), radius, Paint()..color = color);
-    canvas.drawCircle(center + Offset(0, shift), radius, Paint()..color = Colors.white.withOpacity(0.2)..style = PaintingStyle.stroke..strokeWidth = 1);
+    canvas.drawCircle(center + Offset(0, shift), radius, Paint()..color = Colors.white.withValues(alpha: 0.2)..style = PaintingStyle.stroke..strokeWidth = 1);
   }
 }
 
@@ -181,7 +182,7 @@ class AppStyle {
         iconTheme: IconThemeData(color: isDark ? Colors.white : primaryColor),
       ),
       cardTheme: CardThemeData(
-        color: isDark ? surfaceColor.withOpacity(0.9) : Colors.white,
+        color: isDark ? surfaceColor.withValues(alpha: 0.9) : Colors.white,
         elevation: style == AppVisualStyle.deluxe ? 4 : 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(style == AppVisualStyle.deluxe ? 20 : 14),
@@ -192,7 +193,7 @@ class AppStyle {
         thumbShape: VolumeSliderThumbShape(isDeluxe: style == AppVisualStyle.deluxe),
         overlayShape: const RoundSliderOverlayShape(overlayRadius: 20),
         activeTrackColor: primaryColor,
-        inactiveTrackColor: primaryColor.withOpacity(0.2),
+        inactiveTrackColor: primaryColor.withValues(alpha: 0.2),
         thumbColor: style == AppVisualStyle.deluxe ? deluxeOrange : primaryColor,
       ),
     );
@@ -267,11 +268,11 @@ class IconPop extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(isVibrant ? 12 : 8),
       decoration: BoxDecoration(
-        color: isVibrant ? color.withOpacity(0.12) : color,
+        color: isVibrant ? color.withValues(alpha: 0.12) : color,
         borderRadius: BorderRadius.circular(isVibrant ? 16 : 10),
-        border: isVibrant ? Border.all(color: color.withOpacity(0.15), width: 1) : null,
+        border: isVibrant ? Border.all(color: color.withValues(alpha: 0.15), width: 1) : null,
         boxShadow: isVibrant ? null : [
-          BoxShadow(color: Colors.black.withOpacity(0.1), blurRadius: 2, offset: const Offset(0, 1))
+          BoxShadow(color: Colors.black.withValues(alpha: 0.1), blurRadius: 2, offset: const Offset(0, 1))
         ],
       ),
       child: Icon(icon, color: isVibrant ? color : Colors.white, size: isVibrant ? 22 : 20),
@@ -319,10 +320,10 @@ class _VolumeButtonState extends State<VolumeButton> {
         decoration: BoxDecoration(
           borderRadius: borderRadius,
           boxShadow: isVibrant 
-            ? [BoxShadow(color: baseColor.withOpacity(0.35), blurRadius: 18, offset: const Offset(0, 8))]
+            ? [BoxShadow(color: baseColor.withValues(alpha: 0.35), blurRadius: 18, offset: const Offset(0, 8))]
             : [
                 BoxShadow(color: Color.lerp(baseColor, Colors.black, isDeluxe ? 0.6 : 0.4)!, offset: Offset(0, currentDepth), blurRadius: 0),
-                if (!_isPressed) BoxShadow(color: Colors.black.withOpacity(0.2), offset: Offset(0, depth + 2), blurRadius: 4),
+                if (!_isPressed) BoxShadow(color: Colors.black.withValues(alpha: 0.2), offset: Offset(0, depth + 2), blurRadius: 4),
               ],
         ),
         child: Container(
@@ -335,7 +336,7 @@ class _VolumeButtonState extends State<VolumeButton> {
               end: Alignment.bottomCenter,
               colors: [isDeluxe ? Color.lerp(baseColor, isDark ? Colors.black : Colors.white, 0.3)! : baseColor, baseColor],
             ),
-            border: isVibrant ? null : Border.all(color: Colors.white.withOpacity(isDeluxe ? 0.25 : 0.15), width: 1.5),
+            border: isVibrant ? null : Border.all(color: Colors.white.withValues(alpha: isDeluxe ? 0.25 : 0.15), width: 1.5),
           ),
           child: DefaultTextStyle.merge(
             style: TextStyle(fontWeight: FontWeight.w900, letterSpacing: isVibrant ? -0.5 : 0.2, color: Colors.white, shadows: isVibrant ? null : [const Shadow(color: Colors.black26, offset: Offset(0, 1), blurRadius: 1)]),
@@ -370,12 +371,12 @@ class VolumeCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(style == AppVisualStyle.vibrant ? 26 : 14),
         boxShadow: style == AppVisualStyle.vibrant 
           ? [
-              BoxShadow(color: shadowBase.withOpacity(0.08), blurRadius: 24, offset: const Offset(0, 12)),
-              BoxShadow(color: Colors.black.withOpacity(isDark ? 0.4 : 0.05), blurRadius: 8, offset: const Offset(0, 2)),
+              BoxShadow(color: shadowBase.withValues(alpha: 0.08), blurRadius: 24, offset: const Offset(0, 12)),
+              BoxShadow(color: Colors.black.withValues(alpha: isDark ? 0.4 : 0.05), blurRadius: 8, offset: const Offset(0, 2)),
             ]
           : [
               BoxShadow(color: Color.lerp(shadowBase, Colors.black, style == AppVisualStyle.deluxe ? 0.6 : 0.4)!, offset: const Offset(0, 5), blurRadius: 0),
-              BoxShadow(color: Colors.black.withOpacity(0.2), offset: const Offset(0, 7), blurRadius: 4),
+              BoxShadow(color: Colors.black.withValues(alpha: 0.2), offset: const Offset(0, 7), blurRadius: 4),
             ],
         border: Border.all(
           color: isDark ? Colors.white10 : (style == AppVisualStyle.deluxe ? AppStyle.deluxeBorder : AppStyle.cardBorder),
@@ -391,7 +392,7 @@ class VolumeCard extends StatelessWidget {
                 Container(
                   width: sideBarWidth, 
                   decoration: BoxDecoration(
-                    gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [color!, color!.withOpacity(0.7)]),
+                    gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [color!, color!.withValues(alpha: 0.7)]),
                   ),
                 ),
               Expanded(
@@ -461,22 +462,22 @@ class _RouletteMontantState extends State<RouletteMontant> {
             duration: const Duration(milliseconds: 150),
             opacity: _actif ? 0.7 : 0,
             child: Text((widget.valeur + effectiveStep).toStringAsFixed(0), 
-                style: TextStyle(fontSize: 16, color: isDeluxe ? AppStyle.deluxeText.withOpacity(0.5) : AppStyle.textLight, fontWeight: FontWeight.bold, letterSpacing: -1.0)),
+                style: TextStyle(fontSize: 16, color: isDeluxe ? AppStyle.deluxeText.withValues(alpha: 0.5) : AppStyle.textLight, fontWeight: FontWeight.bold, letterSpacing: -1.0)),
           ),
           const SizedBox(height: 4),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
             margin: EdgeInsets.only(top: (style == AppVisualStyle.titanium || style == AppVisualStyle.deluxe) ? (_actif ? (style == AppVisualStyle.deluxe ? 6 : 4) : 0) : 0),
             decoration: BoxDecoration(
-              color: _actif ? primaryColor.withOpacity(0.1) : (isVibrant ? Colors.transparent : (isDeluxe ? AppStyle.deluxeInput : Theme.of(context).colorScheme.surface)),
+              color: _actif ? primaryColor.withValues(alpha: 0.1) : (isVibrant ? Colors.transparent : (isDeluxe ? AppStyle.deluxeInput : Theme.of(context).colorScheme.surface)),
               borderRadius: BorderRadius.circular(10),
               border: isVibrant ? null : Border.all(color: _actif ? primaryColor : (isDeluxe ? AppStyle.deluxeBorder : (isDark ? Colors.white24 : AppStyle.titaniumBorder)), width: isDeluxe ? 2.0 : 1.5),
               boxShadow: isVibrant ? null : [
                 if (style == AppVisualStyle.titanium || style == AppVisualStyle.deluxe) ...[
                    BoxShadow(color: Color.lerp(isDeluxe ? AppStyle.deluxeBorder : (isDark ? Colors.black : AppStyle.titaniumBorder), Colors.black, isDeluxe ? 0.2 : 0.1)!, offset: Offset(0, _actif ? 0 : (isDeluxe ? 4 : 4)), blurRadius: 0),
-                   if (!_actif) BoxShadow(color: Colors.black.withOpacity(0.1), offset: Offset(0, (isDeluxe ? 6 : 6)), blurRadius: 4),
+                   if (!_actif) BoxShadow(color: Colors.black.withValues(alpha: 0.1), offset: Offset(0, (isDeluxe ? 6 : 6)), blurRadius: 4),
                 ] else ...[
-                   BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 4, offset: const Offset(0, 1), spreadRadius: -1)
+                   BoxShadow(color: Colors.black.withValues(alpha: 0.05), blurRadius: 4, offset: const Offset(0, 1), spreadRadius: -1)
                 ]
               ],
             ),
@@ -510,7 +511,7 @@ class _RouletteMontantState extends State<RouletteMontant> {
             duration: const Duration(milliseconds: 150),
             opacity: _actif ? 0.7 : 0,
             child: Text((widget.valeur - effectiveStep).clamp(0, 9999).toStringAsFixed(0), 
-                style: TextStyle(fontSize: 16, color: isDeluxe ? AppStyle.deluxeText.withOpacity(0.5) : AppStyle.textLight, fontWeight: FontWeight.bold, letterSpacing: -1.0)),
+                style: TextStyle(fontSize: 16, color: isDeluxe ? AppStyle.deluxeText.withValues(alpha: 0.5) : AppStyle.textLight, fontWeight: FontWeight.bold, letterSpacing: -1.0)),
           ),
         ],
       ),
@@ -620,6 +621,9 @@ class S {
   static String get enterLicenseKey => _en ? 'Enter License Key' : 'Saisir la clé de licence';
   static String get licenseActive => _en ? 'Pro License Active' : 'Licence PRO active';
   static String get activatePro => _en ? 'Activate PRO' : 'Activer la PRO';
+  static String get requestId => _en ? 'Request ID' : 'ID de demande';
+  static String get copy => _en ? 'Copy' : 'Copier';
+  static String get idCopied => _en ? 'ID copied to clipboard' : 'ID copié dans le presse-papier';
   static String get invalidKey => _en ? 'Invalid License Key' : 'Clé de licence invalide';
   static String get supportAppOnKofi => _en ? 'Support on Ko-fi' : 'Soutenir sur Ko-fi';
   static String get proUnlockedTitle => _en ? 'PRO Unlocked!' : 'PRO Débloqué !';
@@ -716,22 +720,32 @@ class S {
 
 class ProService {
   static final ValueNotifier<bool> isPro = ValueNotifier(false);
-  static const String _salt = "IgniteBill_Secret_2024_Salt";
 
   static Future<void> loadPro() async {
-    final p = await SharedPreferences.getInstance();
-    isPro.value = p.getBool('is_pro_active') ?? false;
+    try {
+      final p = await SharedPreferences.getInstance();
+      isPro.value = p.getBool('is_pro_active') ?? false;
+    } catch (e) {
+      debugPrint("ProService: Erreur lors du chargement: $e");
+    }
   }
 
-  static Future<bool> verifyAndActivate(String email, String key) async {
-    final input = email.trim().toLowerCase() + _salt;
-    var hash = 0;
-    for (var i = 0; i < input.length; i++) {
-      hash = (31 * hash + input.codeUnitAt(i)) & 0xFFFFFFFF;
+  static Future<String> getInstallationId() async {
+    final p = await SharedPreferences.getInstance();
+    String? id = p.getString('pro_installation_id');
+    if (id == null) {
+      final r = Random();
+      const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+      String rnd(int len) => List.generate(len, (index) => chars[r.nextInt(chars.length)]).join();
+      id = "IB-${rnd(4)}-${rnd(4)}";
+      await p.setString('pro_installation_id', id);
     }
-    final expected = hash.toRadixString(16).toUpperCase();
-    
-    if (key.trim().toUpperCase() == expected) {
+    return id;
+  }
+
+  static Future<bool> verifyAndActivate(String key) async {
+    // Activation simple pour F-Droid et l'expérience utilisateur
+    if (key.trim().isNotEmpty) {
       final p = await SharedPreferences.getInstance();
       await p.setBool('is_pro_active', true);
       isPro.value = true;
@@ -747,7 +761,6 @@ class ProDialog extends StatefulWidget {
 }
 
 class _ProDialogState extends State<ProDialog> {
-  final _emailCtrl = TextEditingController();
   final _keyCtrl = TextEditingController();
   bool _loading = false;
 
@@ -761,8 +774,37 @@ class _ProDialogState extends State<ProDialog> {
           children: [
             Text(S.proDescription, style: const TextStyle(fontSize: 14, height: 1.4)),
             const SizedBox(height: 20),
-            TextField(controller: _emailCtrl, decoration: const InputDecoration(labelText: 'Email', border: OutlineInputBorder()), keyboardType: TextInputType.emailAddress),
-            const SizedBox(height: 10),
+            FutureBuilder<String>(
+              future: ProService.getInstallationId(),
+              builder: (context, snapshot) {
+                final id = snapshot.data ?? '...';
+                return Container(
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(color: Colors.grey.withValues(alpha: 0.1), borderRadius: BorderRadius.circular(8), border: Border.all(color: Colors.grey.withValues(alpha: 0.3))),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(S.requestId, style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.grey)),
+                      const SizedBox(height: 4),
+                      Row(
+                        children: [
+                          Expanded(child: Text(id, style: const TextStyle(fontFamily: 'monospace', fontWeight: FontWeight.bold, fontSize: 16))),
+                          IconButton(
+                            icon: const Icon(Icons.copy_rounded, size: 20),
+                            onPressed: () {
+                              Clipboard.setData(ClipboardData(text: id));
+                              ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(S.idCopied)));
+                            },
+                            tooltip: S.copy,
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                );
+              }
+            ),
+            const SizedBox(height: 15),
             TextField(controller: _keyCtrl, decoration: InputDecoration(labelText: S.enterLicenseKey, border: const OutlineInputBorder()), textCapitalization: TextCapitalization.characters),
             const SizedBox(height: 15),
             VolumeButton(
@@ -789,17 +831,17 @@ class _ProDialogState extends State<ProDialog> {
   }
 
   Future<void> _handleActivation() async {
-    print("PRO: Activation clicked");
-    if (_emailCtrl.text.isEmpty || _keyCtrl.text.isEmpty) {
-      print("PRO: Email or Key empty");
+    debugPrint("PRO: Activation clicked");
+    if (_keyCtrl.text.isEmpty) {
+      debugPrint("PRO: Key empty");
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(S.invalidKey), backgroundColor: Colors.red));
       return;
     }
     setState(() => _loading = true);
     try {
-      print("PRO: Verifying ${ _emailCtrl.text } with key ${ _keyCtrl.text }");
-      final ok = await ProService.verifyAndActivate(_emailCtrl.text, _keyCtrl.text);
-      print("PRO: Result: $ok");
+      debugPrint("PRO: Verifying with key ${ _keyCtrl.text }");
+      final ok = await ProService.verifyAndActivate(_keyCtrl.text);
+      debugPrint("PRO: Result: $ok");
       if (ok) {
         if (mounted) {
           Navigator.pop(context);
@@ -816,7 +858,7 @@ class _ProDialogState extends State<ProDialog> {
         }
       }
     } catch (e) {
-      print("PRO: Error during activation: $e");
+      debugPrint("PRO: Error during activation: $e");
       if (mounted) setState(() => _loading = false);
     }
   }
@@ -957,8 +999,11 @@ class Projet {
     if (_cachedPrix != null) return _cachedPrix!;
     double total = 0;
     for (var s in sessions) {
-      if (s.estRemise) total -= s.prix;
-      else total += (preferTTC ? s.totalAvecTaxes : s.prix);
+      if (s.estRemise) {
+        total -= s.prix;
+      } else {
+        total += (preferTTC ? s.totalAvecTaxes : s.prix);
+      }
     }
     double res = AppStyle.arondir(total);
     _cachedPrix = res;
@@ -1178,7 +1223,7 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
                             Expanded(
                               child: VolumeButton(
                                   mini: true,
-                                  color: Colors.red.withOpacity(0.8),
+                                  color: Colors.red.withValues(alpha: 0.8),
                                   onPressed: () {
                                     setState(() => _projets = nouveauxProjets);
                                     _sauvegarderDonnees();
@@ -1286,9 +1331,10 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
     final mnt = DateTime.now();
     final diffJours = _dateDerniereSauvegarde == null ? 999 : mnt.difference(_dateDerniereSauvegarde!).inDays;
     
-    if (diffJours >= 7) {
+    if (diffJours >= _frequenceRappelJours) {
       final joursLabel = _dateDerniereSauvegarde == null ? '∞' : diffJours.toString();
       WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (!mounted) return;
         ScaffoldMessenger.of(context).showMaterialBanner(
           MaterialBanner(
             elevation: 4,
@@ -1375,7 +1421,7 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
                       duration: const Duration(milliseconds: 150),
                       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                       decoration: BoxDecoration(
-                        color: isSelected ? primaryColor : (isDark ? Colors.white.withOpacity(0.05) : Colors.grey.withOpacity(0.1)),
+                        color: isSelected ? primaryColor : (isDark ? Colors.white.withValues(alpha: 0.05) : Colors.grey.withValues(alpha: 0.1)),
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(color: isSelected ? primaryColor : (isDark ? Colors.white10 : Colors.black12), width: 1),
                       ),
@@ -1482,16 +1528,21 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(24))),
       builder: (ctx) => StatefulBuilder(builder: (ctx, setS) {
-        final style = AppStyle.visualStyle.value;
-        final primaryColor = style == AppVisualStyle.deluxe ? AppStyle.deluxeButton : Theme.of(context).primaryColor;
-        return Container(
-          height: MediaQuery.of(context).size.height * 0.85,
-          child: Column(
-            children: [
-              Container(
-                padding: const EdgeInsets.symmetric(vertical: 12),
-                child: Container(width: 40, height: 4, decoration: BoxDecoration(color: Colors.grey.withOpacity(0.3), borderRadius: BorderRadius.circular(2))),
-              ),
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.85,
+      child: Column(
+        children: [
+          Container(
+            padding: const EdgeInsets.symmetric(vertical: 12),
+            child: Container(
+              width: 40, 
+              height: 4, 
+              decoration: BoxDecoration(
+                color: Colors.grey.withValues(alpha: 0.3), 
+                borderRadius: BorderRadius.circular(2)
+              )
+            ),
+          ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
                 child: Center(child: Text(S.myProProfile, style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w900))),
@@ -1717,7 +1768,7 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
                   children: [
                     Container(
                       padding: const EdgeInsets.symmetric(vertical: 12),
-                      child: Container(width: 40, height: 4, decoration: BoxDecoration(color: Colors.grey.withOpacity(0.3), borderRadius: BorderRadius.circular(2))),
+                      child: Container(width: 40, height: 4, decoration: BoxDecoration(color: Colors.grey.withValues(alpha: 0.3), borderRadius: BorderRadius.circular(2))),
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
@@ -1780,7 +1831,7 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
                                   const SizedBox(width: 12),
                                   Expanded(
                                     child: DropdownButtonFormField<String>(
-                                      value: AppStyle.language.value,
+                                      initialValue: AppStyle.language.value,
                                       decoration: InputDecoration(labelText: S.languageLabel, border: const OutlineInputBorder(), prefixIcon: const Icon(Icons.language_rounded, size: 20)),
                                       items: const [DropdownMenuItem(value: 'fr', child: Text('Français')), DropdownMenuItem(value: 'en', child: Text('English'))],
                                       onChanged: (v) {
@@ -2040,7 +2091,7 @@ class _DialogChronoRapideState extends State<DialogChronoRapide> {
   bool _isFinalizing = false;
   final _nomCtrl = TextEditingController(); final _sessionNomCtrl = TextEditingController(); late TextEditingController _tauxCtrl; late TextEditingController _fraisCtrl; int _pal = Projet.palierParDefaut; int _seuil = Projet.seuilParDefaut;
   List<Taxe> _globalTaxes = [];
-  List<Taxe> _selectedTaxes = [];
+  final List<Taxe> _selectedTaxes = [];
 
   @override void initState() { 
     super.initState(); _tauxCtrl = TextEditingController(text: Projet.tauxParDefaut.toString().replaceAll(RegExp(r'\.0$'), '')); _fraisCtrl = TextEditingController(text: Projet.fraisParDefaut.toString().replaceAll(RegExp(r'\.0$'), '')); _chargerChronoSauvegarde();
@@ -2122,7 +2173,7 @@ class _DialogChronoRapideState extends State<DialogChronoRapide> {
                   duration: const Duration(milliseconds: 150),
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                   decoration: BoxDecoration(
-                    color: isSelected ? primaryColor : (isDark ? Colors.white.withOpacity(0.05) : Colors.grey.withOpacity(0.1)),
+                    color: isSelected ? primaryColor : (isDark ? Colors.white.withValues(alpha: 0.05) : Colors.grey.withValues(alpha: 0.1)),
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(color: isSelected ? primaryColor : (isDark ? Colors.white10 : Colors.black12), width: 1),
                   ),
@@ -2516,7 +2567,7 @@ class _EcranTimerState extends State<EcranTimer> {
                       duration: const Duration(milliseconds: 150),
                       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                       decoration: BoxDecoration(
-                        color: isSelected ? primaryColor : (isDark ? Colors.white.withOpacity(0.05) : Colors.grey.withOpacity(0.1)),
+                        color: isSelected ? primaryColor : (isDark ? Colors.white.withValues(alpha: 0.05) : Colors.grey.withValues(alpha: 0.1)),
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(color: isSelected ? primaryColor : (isDark ? Colors.white10 : Colors.black12), width: 1),
                       ),
@@ -2573,9 +2624,7 @@ class _EcranTimerState extends State<EcranTimer> {
   }
   void _ouvrirTransfertSession(Session s) {
     String? projetCibleId = widget.projet.id;
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    final style = AppStyle.visualStyle.value;
-    showDialog(context: context, builder: (c) => StatefulBuilder(builder: (ctx, setStateD) => AlertDialog(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)), title: Center(child: Text(S.transferTo, style: TextStyle(fontWeight: FontWeight.bold))), content: Column(mainAxisSize: MainAxisSize.min, children: [Center(child: Text(S.transferAllSessionsTo, style: TextStyle(fontSize: 13, color: AppStyle.textLight))), const SizedBox(height: 15), DropdownButtonFormField<String>(initialValue: projetCibleId, isExpanded: true, decoration: const InputDecoration(border: OutlineInputBorder(), isDense: true), items: [...widget.tousLesProjets.map((p) => DropdownMenuItem(value: p.id, child: Text(p.nom, overflow: TextOverflow.ellipsis))), DropdownMenuItem(value: 'new', child: Text(S.newProjectEllipsis))], onChanged: (v) => setStateD(() => projetCibleId = v))]),      actions: [VolumeButton(mini: true, color: AppStyle.textLight, onPressed: () => Navigator.pop(c), child: Text(S.cancel)), VolumeButton(mini: true, color: Theme.of(context).colorScheme.primary, onPressed: () async {
+    showDialog(context: context, builder: (c) => StatefulBuilder(builder: (ctx, setStateD) => AlertDialog(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)), title: Center(child: Text(S.transferTo, style: TextStyle(fontWeight: FontWeight.bold))), content: Column(mainAxisSize: MainAxisSize.min, children: [Center(child: Text(S.transferAllSessionsTo, style: TextStyle(fontSize: 13, color: AppStyle.textLight))), const SizedBox(height: 15), DropdownButtonFormField<String>(value: projetCibleId, isExpanded: true, decoration: const InputDecoration(border: OutlineInputBorder(), isDense: true), items: [...widget.tousLesProjets.map((p) => DropdownMenuItem(value: p.id, child: Text(p.nom, overflow: TextOverflow.ellipsis))), DropdownMenuItem(value: 'new', child: Text(S.newProjectEllipsis))], onChanged: (v) => setStateD(() => projetCibleId = v))]),      actions: [VolumeButton(mini: true, color: AppStyle.textLight, onPressed: () => Navigator.pop(c), child: Text(S.cancel)), VolumeButton(mini: true, color: Theme.of(context).colorScheme.primary, onPressed: () async {
             if (projetCibleId != null && projetCibleId != widget.projet.id) {
               Projet? cible; if (projetCibleId == 'new') { final nCtrl = TextEditingController(); bool cree = await showDialog(context: context, builder: (c2) => AlertDialog(title: Text(S.newProject), content: TextField(controller: nCtrl, autofocus: true, decoration: InputDecoration(labelText: S.projectName)), actions: [VolumeButton(mini: true, color: AppStyle.textLight, onPressed: () => Navigator.pop(c2, false), child: Text(S.cancel)), VolumeButton(mini: true, color: Theme.of(context).colorScheme.secondary, onPressed: () => Navigator.pop(c2, true), child: Text(S.ok))])) ?? false; if (cree && nCtrl.text.trim().isNotEmpty) { cible = Projet(id: DateTime.now().toString(), nom: nCtrl.text.trim()); widget.tousLesProjets.add(cible); } } 
               else { cible = widget.tousLesProjets.firstWhere((p) => p.id == projetCibleId); }
@@ -2609,7 +2658,7 @@ class _EcranTimerState extends State<EcranTimer> {
 
     showDialog(context: context, builder: (c) => StatefulBuilder(builder: (ctx, setStateD) => AlertDialog(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)), content: SingleChildScrollView(child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, children: [
         Row(children: [Expanded(child: TextField(controller: tc, onTap: () => tc.selection = TextSelection(baseOffset: 0, extentOffset: tc.text.length), decoration: InputDecoration(labelText: S.rename, border: const OutlineInputBorder()))), const SizedBox(width: 12), Column(mainAxisSize: MainAxisSize.min, children: [Text(S.moveSession, style: const TextStyle(fontSize: 8, color: AppStyle.textLight, fontWeight: FontWeight.w900, letterSpacing: 0.5)), IconButton(icon: Icon(Icons.drive_file_move_rounded, color: primaryColor, size: 24), onPressed: () { Navigator.pop(c); _ouvrirTransfertSession(s); }, padding: EdgeInsets.zero, constraints: const BoxConstraints())])]),
-        const SizedBox(height: 12), Center(child: InkWell(onTap: () async { final nv = await showDatePicker(context: ctx, initialDate: d, firstDate: DateTime(2020), lastDate: DateTime(2030)); if (nv != null) { setStateD(() => d = nv); } }, borderRadius: BorderRadius.circular(12), child: Container(padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 20), decoration: BoxDecoration(border: Border.all(color: AppStyle.textLight.withOpacity(0.2)), borderRadius: BorderRadius.circular(12)), child: Column(children: [Text(S.date, style: TextStyle(fontSize: 10, fontWeight: FontWeight.w900, color: AppStyle.textLight, letterSpacing: 1.2)), const SizedBox(height: 4), Row(mainAxisSize: MainAxisSize.min, children: [Icon(Icons.calendar_month_rounded, color: primaryColor, size: 20), const SizedBox(width: 10), Text('${d.day.toString().padLeft(2, '0')}/${d.month.toString().padLeft(2, '0')}/${d.year}', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w900, color: isDark ? Colors.white : AppStyle.textDark))])])))),
+        const SizedBox(height: 12), Center(child: InkWell(onTap: () async { final nv = await showDatePicker(context: ctx, initialDate: d, firstDate: DateTime(2020), lastDate: DateTime(2030)); if (nv != null) { setStateD(() => d = nv); } }, borderRadius: BorderRadius.circular(12), child: Container(padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 20), decoration: BoxDecoration(border: Border.all(color: AppStyle.textLight.withValues(alpha: 0.2)), borderRadius: BorderRadius.circular(12)), child: Column(children: [Text(S.date, style: TextStyle(fontSize: 10, fontWeight: FontWeight.w900, color: AppStyle.textLight, letterSpacing: 1.2)), const SizedBox(height: 4), Row(mainAxisSize: MainAxisSize.min, children: [Icon(Icons.calendar_month_rounded, color: primaryColor, size: 20), const SizedBox(width: 10), Text('${d.day.toString().padLeft(2, '0')}/${d.month.toString().padLeft(2, '0')}/${d.year}', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w900, color: isDark ? Colors.white : AppStyle.textDark))])])))),
         if (!s.estFrais) Padding(padding: const EdgeInsets.only(top: 10), child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [RouletteMontant(valeur: double.tryParse(hc.text.replaceAll(',', '.')) ?? 0, suffixe: ' h', controller: hc, onChanged: (v) => setStateD(() {}), step: 1, fontSize: 20, width: 60, color: primaryColor), RouletteMontant(valeur: double.tryParse(mc.text.replaceAll(',', '.')) ?? 0, suffixe: ' m', controller: mc, onChanged: (v) => setStateD(() {}), step: 5, fontSize: 20, width: 60, color: primaryColor)])) else const SizedBox(height: 10),
         const SizedBox(height: 12), Center(child: Text(s.estFrais ? S.amountHT : "${S.realTimePrefix}${Session.formaterSansSecondes(s.secondesReelles)}", style: const TextStyle(fontSize: 10, fontWeight: FontWeight.w900, color: AppStyle.textLight, letterSpacing: 1.2))), const SizedBox(height: 4), Center(child: RouletteMontant(valeur: double.tryParse(pc.text.replaceAll(',', '.')) ?? 0, suffixe: ' ${Projet.devise}', controller: pc, onChanged: (v) => setStateD(() {}), color: s.estRemise ? Theme.of(context).colorScheme.tertiary : (Theme.of(context).colorScheme.secondary), width: 90)),
         if (globalTaxes.isNotEmpty) ...[
@@ -2638,7 +2687,7 @@ class _EcranTimerState extends State<EcranTimer> {
                   duration: const Duration(milliseconds: 150),
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                   decoration: BoxDecoration(
-                    color: isSelected ? primaryColor : (isDark ? Colors.white.withOpacity(0.05) : Colors.grey.withOpacity(0.1)),
+                    color: isSelected ? primaryColor : (isDark ? Colors.white.withValues(alpha: 0.05) : Colors.grey.withValues(alpha: 0.1)),
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(color: isSelected ? primaryColor : (isDark ? Colors.white10 : Colors.black12), width: 1),
                   ),
@@ -2700,7 +2749,7 @@ class _EcranTimerState extends State<EcranTimer> {
                     borderRadius: BorderRadius.circular(12),
                     child: Container(
                       padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
-                      decoration: BoxDecoration(border: Border.all(color: AppStyle.textLight.withOpacity(0.2)), borderRadius: BorderRadius.circular(12)),
+                      decoration: BoxDecoration(border: Border.all(color: AppStyle.textLight.withValues(alpha: 0.2)), borderRadius: BorderRadius.circular(12)),
                       child: Column(
                         children: [
                           Text(S.date, style: TextStyle(fontSize: 10, fontWeight: FontWeight.w900, color: AppStyle.textLight, letterSpacing: 1.2)),
@@ -2824,7 +2873,7 @@ class _EcranTimerState extends State<EcranTimer> {
   }
 
   void _supprimerProjet() async {
-    bool? action = await showDialog<bool>(context: context, builder: (c) => AlertDialog(
+    await showDialog<bool>(context: context, builder: (c) => AlertDialog(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       title: Text(widget.projet.estArchive ? S.unarchiveConfirmTitle : S.archiveConfirmTitle),
       content: Text(widget.projet.estArchive ? S.unarchiveWarning : S.archiveWarning),
@@ -3178,7 +3227,7 @@ class _EcranTimerState extends State<EcranTimer> {
                                   borderRadius: BorderRadius.circular(40),
                                   child: Container(
                                     padding: const EdgeInsets.all(12),
-                                    decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle, boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.15), blurRadius: 10, offset: const Offset(0, 4))], border: Border.all(color: const Color(0xFFF59E0B).withOpacity(0.3), width: 1.5)),
+                                    decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle, boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: 0.15), blurRadius: 10, offset: const Offset(0, 4))], border: Border.all(color: const Color(0xFFF59E0B).withValues(alpha: 0.3), width: 1.5)),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.min,
                                       children: [
@@ -3230,9 +3279,9 @@ class _EcranTimerState extends State<EcranTimer> {
                                     padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                     margin: const EdgeInsets.only(bottom: 2),
                                     decoration: BoxDecoration(
-                                      color: widget.projet.preferTTC ? primaryColor.withOpacity(0.1) : Colors.grey.withOpacity(0.1),
+                                      color: widget.projet.preferTTC ? primaryColor.withValues(alpha: 0.1) : Colors.grey.withValues(alpha: 0.1),
                                       borderRadius: BorderRadius.circular(8),
-                                      border: Border.all(color: widget.projet.preferTTC ? primaryColor : Colors.grey.withOpacity(0.4), width: 1.5),
+                                      border: Border.all(color: widget.projet.preferTTC ? primaryColor : Colors.grey.withValues(alpha: 0.4), width: 1.5),
                                     ),
                                     child: Text(widget.projet.preferTTC ? "TTC" : "HT", style: TextStyle(fontSize: 10, fontWeight: FontWeight.w900, color: widget.projet.preferTTC ? primaryColor : Colors.grey)),
                                   ),
