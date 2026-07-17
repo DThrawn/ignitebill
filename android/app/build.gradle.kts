@@ -13,8 +13,8 @@ android {
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
         isCoreLibraryDesugaringEnabled = true
     }
 
@@ -55,23 +55,18 @@ android {
             }
         }
     }
-    kotlinOptions {
-        jvmTarget = "17"
-    }
 }
 
-// Removing the separate kotlin block which is for Kotlin 2.x DSL
-// kotlin {
-//     compilerOptions {
-//         jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
-//     }
-// }
+kotlin {
+    compilerOptions {
+        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21)
+    }
+}
 
 flutter {
     source = "../.."
 }
 
-// CORRECTION 2 : On rajoute le bloc manquant tout à la fin, avec la syntaxe Kotlin (parenthèses et guillemets)
 dependencies {
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.5")
 }
