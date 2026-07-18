@@ -15,6 +15,10 @@ jobs:
     
     env:
       GRADLE_OPTS: "-Dorg.gradle.daemon=false -Dorg.gradle.parallel=true -Dorg.gradle.jvmargs=-Xmx6G -Dorg.gradle.configuration-cache=false"
+      # Unify Android environment variables to avoid AndroidLocationsBuildService conflicts
+      ANDROID_USER_HOME: "/home/runner/.android"
+      ANDROID_SDK_HOME: "/home/runner/.android"
+      ANDROID_PREFS_ROOT: "/home/runner/.android"
 
     steps:
       - name: Checkout code
@@ -46,11 +50,7 @@ jobs:
 
       - name: Build APKs
         run: |
-          # Sanitize environment to avoid AndroidLocationsBuildService conflicts
-          unset ANDROID_PREFS_ROOT
-          unset ANDROID_SDK_HOME
-          export ANDROID_USER_HOME="$HOME/.android"
-          
+          mkdir -p $ANDROID_USER_HOME
           flutter clean
           flutter pub get
           
@@ -60,38 +60,41 @@ jobs:
           echo "Building Release APKs..."
           flutter build apk --release --split-per-abi --no-pub
           
-          echo "Discovery of generated APKs:"
+          echo "Listing all generated APKs for debugging:"
           find . -name "*.apk"
 
       - name: Prepare Release Assets
         run: |
           mkdir -p release_apks
-          # Find all APKs and copy them with their directory name to avoid collisions
-          # e.g., debug/app-debug.apk and release/app-release.apk
-          find android/app/build/outputs/apk/ -name "*.apk" -exec cp {} release_apks/ \;
-          find build/app/outputs/flutter-apk/ -name "*.apk" -exec cp -n {} release_apks/ \;
+          # Recursively find all APKs and copy them with unique names to avoid collisions
+          # We prefix with the parent folder name (e.g. debug_app-debug.apk)
+          find . -name "*.apk" -not -path "*/.pub-cache/*" -not -path "*/.dart_tool/*" | while read -r apk; do
+            filename=$(basename "$apk")
+            parent=$(basename $(dirname "$apk"))
+            cp "$apk" "release_apks/${parent}_${filename}"
+          done
+          
           ls -l release_apks/
           
-          # Final check: if no APKs, fail the build
           if [ $(ls release_apks/*.apk | wc -l) -eq 0 ]; then
-            echo "No APKs found to release!"
+            echo "Error: No APKs were found after build!"
             exit 1
           fi
 
-      - name: Upload APKs to Artifacts
+      - name: Upload APKs to GitHub Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: app-apks
           path: release_apks/*.apk
 
-      - name: Create Release
+      - name: Create GitHub Release
         if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
         uses: softprops/action-gh-release@v2
         with:
           files: release_apks/*.apk
           tag_name: v${{ github.run_number }}
           name: Release v${{ github.run_number }}
-          body: "Automated release from GitHub Actions (Build #${{ github.run_number }})"
+          body: "Automated build and release from GitHub Actions (Build #${{ github.run_number }})"
           draft: false
           prerelease: false
           fail_on_unmatched_files: true
