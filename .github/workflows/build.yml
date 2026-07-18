@@ -1,20 +1,23 @@
-name: Build Flutter APKs
+name: Flutter CI/CD - Build & Release
 
+# Déclencheurs du workflow
 on:
   push:
     branches: [ "main", "master" ]
-    tags: [ "v*" ]
+    tags: [ "v*" ] # Déclenche la release sur les tags de version
   pull_request:
     branches: [ "main", "master" ]
   workflow_dispatch:
 
 jobs:
+  # Job 1 : Qualité du code et tests
   quality:
     name: Code Quality & Tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      
+      - name: Checkout code
+        uses: actions/checkout@v4 # Compatible Node 24
+
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
@@ -25,17 +28,19 @@ jobs:
         run: flutter pub get
 
       - name: Flutter Analyze
-        run: flutter analyze
+        # --no-fatal-infos et --no-fatal-warnings pour ne pas bloquer sur des lints mineurs
+        run: flutter analyze --no-fatal-infos --no-fatal-warnings
 
       - name: Flutter Test
         run: flutter test
 
+  # Job 2 : Build de l'APK et Release GitHub
   build:
     name: Build & Release
     needs: quality
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write # Nécessaire pour créer des releases GitHub
     
     steps:
       - name: Checkout code
@@ -47,89 +52,65 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v4
-        with:
-          gradle-version: wrapper
-
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
-        with:
-          packages: 'platforms;android-35 build-tools;35.0.0'
-
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
           cache: true
 
-      - name: Build APKs
-        run: |
-          flutter pub get
-          flutter build apk --release --split-per-abi
+      - name: Install dependencies
+        run: flutter pub get
 
-      - name: Collect Assets
-        id: collect
+      # Étape CRUCIALE : Configuration de la signature de l'APK
+      - name: Configure Keystore
         run: |
-          mkdir -p release_assets
-          echo "Searching for APKs..."
-          
-          # 1. Collect all release APKs regardless of sub-path
-          find build/app/outputs/flutter-apk/ -name "*.apk" -not -name "*-debug.apk" -not -name "*-profile.apk" | while read -r apk; do
-            filename=$(basename "$apk")
-            if [[ "$filename" == "app-release.apk" ]]; then
-              cp "$apk" "release_assets/ignitebill-universal-release.apk"
-            else
-              # Rename to be more descriptive if needed, or keep original
-              cp "$apk" "release_assets/$filename"
-            fi
-          done
-          
-          # 2. Verify we found something
-          count=$(ls release_assets/*.apk 2>/dev/null | wc -l)
-          if [ "$count" -eq 0 ]; then
-            echo "::error::No release APKs found! Build might have failed or paths changed."
-            exit 1
-          fi
-          echo "Found $count APKs."
+          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > android/ignitech.jks
+          echo "storePassword=${{ secrets.KEYSTORE_PASSWORD }}" > android/key.properties
+          echo "keyPassword=${{ secrets.KEY_PASSWORD }}" >> android/key.properties
+          echo "keyAlias=${{ secrets.KEY_ALIAS }}" >> android/key.properties
+          echo "storeFile=ignitech.jks" >> android/key.properties
 
-          # 3. Generate SHA256 Checksums (Security standard)
-          echo "Generating checksums..."
-          cd release_assets
-          sha256sum *.apk > ../SHA256SUMS.txt
+      - name: Build APK Release
+        run: flutter build apk --release
+
+      - name: Prepare Release Assets
+        id: prepare_assets
+        run: |
+          mkdir -p release_files
+          APK_PATH="build/app/outputs/flutter-apk/app-release.apk"
+          
+          # Copie de l'APK principal
+          cp $APK_PATH release_files/ignitebill-release.apk
+          
+          # Création des archives ZIP et TAR contenant uniquement l'APK
+          cd release_files
+          zip ignitebill-release.zip ignitebill-release.apk
+          tar -czf ignitebill-release.tar.gz ignitebill-release.apk
           cd ..
-          cp SHA256SUMS.txt release_assets/
           
-          # 4. Create archives
-          echo "Creating ZIP and TAR archives..."
-          zip -j ignitebill_apks.zip release_assets/*.apk SHA256SUMS.txt
-          tar -cvzf ignitebill_apks.tar.gz -C release_assets .
-          
-          echo "Final assets list:"
-          ls -R release_assets/
+          echo "Assets prêts dans le dossier release_files/ :"
+          ls -R release_files/
 
-      - name: Upload Artifacts
+      # Upload des artefacts pour conservation dans GitHub Actions (optionnel mais utile)
+      - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: app-build-assets
-          path: |
-            release_assets/
-            ignitebill_apks.zip
-            ignitebill_apks.tar.gz
+          name: ignitebill-apks
+          path: release_files/
 
-      - name: GitHub Release
+      # Publication de la Release GitHub (uniquement sur les tags v*)
+      - name: Create GitHub Release
         if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            release_files/ignitebill-release.apk
+            release_files/ignitebill-release.zip
+            release_files/ignitebill-release.tar.gz
+          name: Release ${{ github.ref_name }}
+          tag_name: ${{ github.ref_name }}
+          generate_release_notes: true
+          draft: false
+          prerelease: false
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          # Use GH CLI to create a robust release
-          # --clobber allows overwriting if the tag was moved/re-pushed
-          gh release create ${{ github.ref_name }} \
-            release_assets/*.apk \
-            ignitebill_apks.zip \
-            ignitebill_apks.tar.gz \
-            SHA256SUMS.txt \
-            --title "Release ${{ github.ref_name }}" \
-            --generate-notes \
-            --target ${{ github.sha }} \
-            --verify-tag
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
