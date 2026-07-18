@@ -16,7 +16,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4 # Compatible Node 24
+        uses: actions/checkout@v4
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: 'gradle'
 
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
@@ -28,16 +35,17 @@ jobs:
         run: flutter pub get
 
       - name: Flutter Analyze
-        # --no-fatal-infos et --no-fatal-warnings pour ne pas bloquer sur des lints mineurs
         run: flutter analyze --no-fatal-infos --no-fatal-warnings
 
       - name: Flutter Test
         run: flutter test
 
   # Job 2 : Build de l'APK et Release GitHub
+  # Déclenché uniquement sur les tags pour éviter de créer des releases à chaque push
   build:
     name: Build & Release
     needs: quality
+    if: startsWith(github.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
     permissions:
       contents: write # Nécessaire pour créer des releases GitHub
@@ -46,11 +54,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Java 17
+      - name: Set up Java 21
         uses: actions/setup-java@v4
         with:
-          java-version: '17'
+          java-version: '21'
           distribution: 'temurin'
+          cache: 'gradle'
 
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
@@ -61,10 +70,9 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      # Étape CRUCIALE : Configuration de la signature de l'APK
+      # Étape : Configuration de la signature de l'APK
       - name: Configure Keystore
         run: |
-          # Utilisation de printf et tr pour nettoyer tout caractère indésirable (espaces, retours à la ligne)
           printf '%s' "${{ secrets.KEYSTORE_BASE64 }}" | tr -d '\n ' | base64 --decode > android/ignitech.jks
           echo "storePassword=${{ secrets.KEYSTORE_PASSWORD }}" > android/key.properties
           echo "keyPassword=${{ secrets.KEY_PASSWORD }}" >> android/key.properties
@@ -92,16 +100,15 @@ jobs:
           echo "Assets prêts dans le dossier release_files/ :"
           ls -R release_files/
 
-      # Upload des artefacts pour conservation dans GitHub Actions (optionnel mais utile)
+      # Upload des artefacts pour conservation dans GitHub Actions
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: ignitebill-apks
           path: release_files/
 
-      # Publication de la Release GitHub (uniquement sur les tags v*)
+      # Publication de la Release GitHub (via softprops/action-gh-release@v2)
       - name: Create GitHub Release
-        if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v2
         with:
           files: |
