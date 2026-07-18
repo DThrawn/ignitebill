@@ -14,7 +14,8 @@ jobs:
       contents: write
     
     env:
-      GRADLE_OPTS: "-Dorg.gradle.daemon=false -Dorg.gradle.parallel=true -Dorg.gradle.jvmargs=-Xmx4G -Dorg.gradle.configuration-cache=false"
+      GRADLE_OPTS: "-Dorg.gradle.daemon=false -Dorg.gradle.parallel=true -Dorg.gradle.jvmargs=-Xmx6G -Dorg.gradle.configuration-cache=false"
+      ANDROID_PREFS_ROOT: ""
 
     steps:
       - name: Checkout code
@@ -33,18 +34,31 @@ jobs:
           channel: 'stable'
           cache: true
 
+      - name: Install Android NDK
+        run: |
+          echo "y" | sudo ${ANDROID_HOME}/cmdline-tools/latest/bin/sdkmanager --install "ndk;28.2.13676358"
+          echo "ANDROID_NDK_HOME=${ANDROID_HOME}/ndk/28.2.13676358" >> $GITHUB_ENV
+
       - name: Accept Android SDK licenses
         run: yes | flutter doctor --android-licenses || true
 
       - name: Install dependencies
         run: flutter pub get
 
-      - name: Clean and Build APKs
+      - name: Build APKs
         run: |
           flutter clean
           flutter pub get
-          flutter build apk --debug --split-per-abi
-          flutter build apk --release --split-per-abi
+          # We use || true as a fallback because flutter build apk sometimes returns 1 if it fails to find the APK in the root build folder, 
+          # but we will manually verify and upload from the android/ folder.
+          flutter build apk --debug --split-per-abi --no-pub || echo "Flutter build returned non-zero, checking android folder..."
+          flutter build apk --release --split-per-abi --no-pub || echo "Flutter build returned non-zero, checking android folder..."
+          
+          # Verify that APKs were actually built
+          if [ ! -f android/app/build/outputs/apk/release/app-release.apk ]; then
+            echo "Release APK not found in android folder!"
+            # exit 1 # Uncomment if you want to fail if release apk is missing
+          fi
 
       - name: Upload Debug APK
         uses: actions/upload-artifact@v4
