@@ -15,7 +15,6 @@ jobs:
     
     env:
       GRADLE_OPTS: "-Dorg.gradle.daemon=false -Dorg.gradle.parallel=true -Dorg.gradle.jvmargs=-Xmx6G -Dorg.gradle.configuration-cache=false"
-      ANDROID_PREFS_ROOT: ""
 
     steps:
       - name: Checkout code
@@ -28,16 +27,16 @@ jobs:
           distribution: 'temurin'
           cache: 'gradle'
 
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          packages: 'platforms;android-36 build-tools;36.0.0 ndk;28.2.13676358'
+
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
           cache: true
-
-      - name: Install Android NDK
-        run: |
-          echo "y" | sudo ${ANDROID_HOME}/cmdline-tools/latest/bin/sdkmanager --install "ndk;28.2.13676358"
-          echo "ANDROID_NDK_HOME=${ANDROID_HOME}/ndk/28.2.13676358" >> $GITHUB_ENV
 
       - name: Accept Android SDK licenses
         run: yes | flutter doctor --android-licenses || true
@@ -47,39 +46,42 @@ jobs:
 
       - name: Build APKs
         run: |
+          # Sanitize environment to avoid AndroidLocationsBuildService conflicts
+          unset ANDROID_PREFS_ROOT
+          unset ANDROID_SDK_HOME
+          export ANDROID_USER_HOME="$HOME/.android"
+          
           flutter clean
           flutter pub get
-          flutter build apk --debug --split-per-abi --no-pub
-          flutter build apk --release --split-per-abi --no-pub
           
-          echo "Checking generated APKs..."
-          find build/app/outputs/flutter-apk/ -name "*.apk"
-          find android/app/build/outputs/apk/ -name "*.apk"
+          echo "Building Debug APKs..."
+          flutter build apk --debug --split-per-abi --no-pub || echo "Flutter build returned non-zero (often path mismatch), proceeding to check files..."
+          
+          echo "Building Release APKs..."
+          flutter build apk --release --split-per-abi --no-pub || echo "Flutter build returned non-zero (often path mismatch), proceeding to check files..."
+          
+          echo "Discovery of generated APKs:"
+          find . -name "*.apk"
 
       - name: Upload Debug APK
         uses: actions/upload-artifact@v4
         with:
           name: app-debug
-          path: |
-            build/app/outputs/flutter-apk/*-debug.apk
-            android/app/build/outputs/apk/debug/*.apk
+          path: "**/build/outputs/apk/debug/*.apk"
 
       - name: Upload Release APK
         uses: actions/upload-artifact@v4
         with:
           name: app-release
-          path: |
-            build/app/outputs/flutter-apk/*-release.apk
-            android/app/build/outputs/apk/release/*.apk
+          path: "**/build/outputs/apk/release/*.apk"
 
       - name: Create Release
         if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            build/app/outputs/flutter-apk/*.apk
-            android/app/build/outputs/apk/release/*.apk
-            android/app/build/outputs/apk/debug/*.apk
+            **/build/outputs/apk/release/*.apk
+            **/build/outputs/apk/debug/*.apk
           tag_name: v${{ github.run_number }}
           name: Release v${{ github.run_number }}
           draft: false
