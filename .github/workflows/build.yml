@@ -63,29 +63,29 @@ jobs:
           echo "Discovery of generated APKs:"
           find . -name "*.apk"
 
-      - name: Upload Debug APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: app-debug
-          path: "**/build/outputs/apk/debug/*.apk"
+      - name: Prepare Release Assets
+        run: |
+          mkdir -p release_apks
+          find . -name "*.apk" -exec cp {} release_apks/ \;
+          ls -l release_apks/
 
-      - name: Upload Release APK
+      - name: Upload APKs
         uses: actions/upload-artifact@v4
         with:
-          name: app-release
-          path: "**/build/outputs/apk/release/*.apk"
+          name: app-apks
+          path: release_apks/*.apk
+
+      - name: Create Release
 
       - name: Create Release
         if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
         uses: softprops/action-gh-release@v2
         with:
-          files: |
-            **/build/outputs/apk/release/*.apk
-            **/build/outputs/apk/debug/*.apk
+          files: release_apks/*.apk
           tag_name: v${{ github.run_number }}
           name: Release v${{ github.run_number }}
           draft: false
           prerelease: false
-          fail_on_unmatched_files: false
+          fail_on_unmatched_files: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
