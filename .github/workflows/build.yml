@@ -49,43 +49,41 @@ jobs:
         run: |
           flutter clean
           flutter pub get
-          # We use || true as a fallback because flutter build apk sometimes returns 1 if it fails to find the APK in the root build folder, 
-          # but we will manually verify and upload from the android/ folder.
-          flutter build apk --debug --split-per-abi --no-pub || echo "Flutter build returned non-zero, checking android folder..."
-          flutter build apk --release --split-per-abi --no-pub || echo "Flutter build returned non-zero, checking android folder..."
+          flutter build apk --debug --split-per-abi --no-pub
+          flutter build apk --release --split-per-abi --no-pub
           
-          # Verify that APKs were actually built
-          if [ ! -f android/app/build/outputs/apk/release/app-release.apk ]; then
-            echo "Release APK not found in android folder!"
-            # exit 1 # Uncomment if you want to fail if release apk is missing
-          fi
+          echo "Checking generated APKs..."
+          find build/app/outputs/flutter-apk/ -name "*.apk"
+          find android/app/build/outputs/apk/ -name "*.apk"
 
       - name: Upload Debug APK
         uses: actions/upload-artifact@v4
         with:
           name: app-debug
           path: |
-            build/app/outputs/flutter-apk/app-*-debug.apk
-            android/app/build/outputs/apk/debug/app-*-debug.apk
+            build/app/outputs/flutter-apk/*-debug.apk
+            android/app/build/outputs/apk/debug/*.apk
 
       - name: Upload Release APK
         uses: actions/upload-artifact@v4
         with:
           name: app-release
           path: |
-            build/app/outputs/flutter-apk/app-*-release.apk
-            android/app/build/outputs/apk/release/app-*-release.apk
+            build/app/outputs/flutter-apk/*-release.apk
+            android/app/build/outputs/apk/release/*.apk
 
       - name: Create Release
         if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            build/app/outputs/flutter-apk/app-*-release.apk
-            android/app/build/outputs/apk/release/app-*-release.apk
+            build/app/outputs/flutter-apk/*.apk
+            android/app/build/outputs/apk/release/*.apk
+            android/app/build/outputs/apk/debug/*.apk
           tag_name: v${{ github.run_number }}
           name: Release v${{ github.run_number }}
           draft: false
           prerelease: false
+          fail_on_unmatched_files: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
