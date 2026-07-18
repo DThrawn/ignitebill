@@ -80,7 +80,34 @@ jobs:
           echo "storeFile=ignitech.jks" >> android/key.properties
 
       - name: Build APK Release
-        run: flutter build apk --release
+        run: |
+          flutter build apk --release --verbose 2>&1 | tee flutter_build.log
+          echo "EXIT_CODE=${PIPESTATUS[0]}" >> $GITHUB_ENV
+
+      - name: Check build result
+        run: |
+          if [ "$EXIT_CODE" != "0" ]; then
+            echo "Build failed, see logs above"
+            exit 1
+          fi
+
+      - name: Debug build output
+        if: always()
+        run: |
+          echo "=== Contenu de build/ ==="
+          find build -type f -iname "*.apk" -o -type d 2>/dev/null || echo "build/ introuvable"
+          echo "=== Contenu de android/app/build/ ==="
+          find android/app/build -type f -iname "*.apk" 2>/dev/null || echo "android/app/build/ introuvable"
+          echo "=== Contenu de android/build.gradle.kts ==="
+          cat android/build.gradle.kts
+
+      - name: Upload build log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: flutter-build-log
+          path: flutter_build.log
+          retention-days: 3
 
       - name: Prepare Release Assets
         id: prepare_assets
