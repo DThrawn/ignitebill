@@ -15,7 +15,6 @@ jobs:
     
     env:
       GRADLE_OPTS: "-Dorg.gradle.daemon=false -Dorg.gradle.parallel=true -Dorg.gradle.jvmargs=-Xmx6G -Dorg.gradle.configuration-cache=false"
-      # Unify Android environment variables to avoid AndroidLocationsBuildService conflicts
       ANDROID_USER_HOME: "/home/runner/.android"
       ANDROID_SDK_HOME: "/home/runner/.android"
       ANDROID_PREFS_ROOT: "/home/runner/.android"
@@ -46,13 +45,14 @@ jobs:
         run: yes | flutter doctor --android-licenses || true
 
       - name: Install dependencies
-        run: flutter pub get
+        run: |
+          flutter pub get
+          flutter pub upgrade
 
       - name: Build APKs
         run: |
           mkdir -p $ANDROID_USER_HOME
           flutter clean
-          flutter pub get
           
           echo "Building Debug APKs..."
           flutter build apk --debug --split-per-abi --no-pub
@@ -60,24 +60,26 @@ jobs:
           echo "Building Release APKs..."
           flutter build apk --release --split-per-abi --no-pub
           
-          echo "Listing all generated APKs for debugging:"
+          echo "Listing all files for debugging (recursive find):"
           find . -name "*.apk"
 
       - name: Prepare Release Assets
         run: |
           mkdir -p release_apks
-          # Recursively find all APKs and copy them with unique names to avoid collisions
-          # We prefix with the parent folder name (e.g. debug_app-debug.apk)
-          find . -name "*.apk" -not -path "*/.pub-cache/*" -not -path "*/.dart_tool/*" | while read -r apk; do
-            filename=$(basename "$apk")
-            parent=$(basename $(dirname "$apk"))
-            cp "$apk" "release_apks/${parent}_${filename}"
+          # Find all APKs, excluding cache and tool directories
+          # Prefix each APK with its relative path flattened to avoid collisions
+          find . -name "*.apk" -not -path "*/.pub-cache/*" -not -path "*/.dart_tool/*" | while read -r apk_path; do
+            # Create a unique name: e.g. ./build/app/outputs/flutter-apk/app-release.apk -> build_app_outputs_flutter-apk_app-release.apk
+            # But let's keep it simpler: use the last 2 directory names + filename
+            rel_path=$(echo "$apk_path" | sed 's|^\./||' | sed 's|/|_|g')
+            cp "$apk_path" "release_apks/$rel_path"
           done
           
-          ls -l release_apks/
+          echo "Assets collected in release_apks/:"
+          ls -lh release_apks/
           
-          if [ $(ls release_apks/*.apk | wc -l) -eq 0 ]; then
-            echo "Error: No APKs were found after build!"
+          if [ $(ls release_apks/*.apk 2>/dev/null | wc -l) -eq 0 ]; then
+            echo "CRITICAL ERROR: No APKs found!"
             exit 1
           fi
 
@@ -92,12 +94,14 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: release_apks/*.apk
-          tag_name: v${{ github.run_number }}
-          name: Release v${{ github.run_number }}
-          body: "Automated build and release from GitHub Actions (Build #${{ github.run_number }})"
+          tag_name: v${{ github.run_number }}-${{ github.sha }}
+          name: Release Build #${{ github.run_number }}
+          body: |
+            Automated build and release.
+            Commit: ${{ github.sha }}
+            Branch: ${{ github.ref }}
           draft: false
           prerelease: false
           fail_on_unmatched_files: true
-          generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
