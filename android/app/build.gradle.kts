@@ -9,7 +9,7 @@ plugins {
 
 android {
     namespace = "com.dthrawn.ignitebill"
-    compileSdk = 34
+    compileSdk = 35
     ndkVersion = "27.0.12077973"
 
     packaging {
@@ -27,7 +27,7 @@ android {
     defaultConfig {
         applicationId = "com.dthrawn.ignitebill"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
@@ -64,6 +64,7 @@ android {
 }
 
 kotlin {
+    jvmToolchain(21)
     compilerOptions {
         jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21)
     }
