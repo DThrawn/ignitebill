@@ -55,7 +55,7 @@
                 android:value="Chronométrage de sessions de travail pour facturation en temps réel même lorsque l'application est fermée."/>
         </service>
 
-        <receiver android:name=".IgniteBillWidget" android:exported="true">
+        <receiver android:name="com.dthrawn.ignitebill.IgniteBillWidget" android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>

@@ -1,4 +1,4 @@
-package com.example.timer
+package com.dthrawn.ignitebill
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
@@ -7,11 +7,12 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.widget.RemoteViews
 import es.antonborri.home_widget.HomeWidgetProvider
+import com.dthrawn.ignitebill.R
 
 class IgniteBillWidget : HomeWidgetProvider() {
     
     override fun onReceive(context: Context, intent: Intent) {
-        if (intent.action == "com.example.timer.WIDGET_CLICK") {
+        if (intent.action == "com.dthrawn.ignitebill.WIDGET_CLICK") {
             // 1. LEVER LE DRAPEAU (A chaque clic !)
             val widgetData = context.getSharedPreferences("HomeWidgetPreferences", Context.MODE_PRIVATE)
             widgetData.edit().putBoolean("DATA_WIDGET_CLICKED_FLAG", true).apply()
@@ -45,7 +46,7 @@ class IgniteBillWidget : HomeWidgetProvider() {
 
                 // Clic : On envoie l'action personnalisée à ce Receiver
                 val clickIntent = Intent(context, IgniteBillWidget::class.java).apply {
-                    action = "com.example.timer.WIDGET_CLICK"
+                    action = "com.dthrawn.ignitebill.WIDGET_CLICK"
                 }
                 
                 val pendingIntent = PendingIntent.getBroadcast(

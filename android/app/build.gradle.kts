@@ -8,9 +8,9 @@ plugins {
 }
 
 android {
-    namespace = "com.example.timer"
-    compileSdk = 36
-    ndkVersion = "28.2.13676358"
+    namespace = "com.dthrawn.ignitebill"
+    compileSdk = 35
+    ndkVersion = "27.0.12077973"
 
     packaging {
         jniLibs {
@@ -27,7 +27,7 @@ android {
     defaultConfig {
         applicationId = "com.dthrawn.ignitebill"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 35
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
