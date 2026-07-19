@@ -1,7 +1,7 @@
 image: "ghcr.io/cirruslabs/flutter:stable"
 
 variables:
-  JAVA_VERSION: "17"
+  JAVA_VERSION: "21"
 
 cache:
   key: ${CI_COMMIT_REF_SLUG}

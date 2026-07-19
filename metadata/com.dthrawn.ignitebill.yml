@@ -1,0 +1,40 @@
+Categories:
+  - Productivity
+  - Office
+License: MIT
+AuthorName: Dthrawn
+WebSite: https://github.com/DThrawn/ignitebill
+SourceCode: https://github.com/DThrawn/ignitebill
+IssueTracker: https://github.com/DThrawn/ignitebill/issues
+
+Summary: A simple and efficient billing timer for freelancers.
+Description: |-
+  IgniteBill helps freelancers and professionals track their work sessions in real-time
+  to generate accurate billing. Features include background timing, local notifications,
+  and PDF invoice generation.
+
+  Key Features:
+  * Real-time work session tracking
+  * Background service support
+  * Home screen widget for quick access
+  * PDF report and invoice generation
+  * 100% Free and Open Source
+
+RepoType: git
+Repo: https://github.com/DThrawn/ignitebill.git
+
+Builds:
+  - versionName: 1.1.4
+    versionCode: 7
+    commit: v1.1.4
+    subdir: android/app
+    gradle:
+      - foss
+    scanned:
+      - android/app/build.gradle.kts
+      - pubspec.yaml
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.1.4
+CurrentVersionCode: 7
