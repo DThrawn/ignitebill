@@ -9,8 +9,7 @@ plugins {
 
 android {
     namespace = "com.dthrawn.ignitebill"
-    compileSdk = 35
-    ndkVersion = "27.0.12077973"
+    compileSdk = 34
 
     packaging {
         jniLibs {
@@ -19,15 +18,15 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_21
-        targetCompatibility = JavaVersion.VERSION_21
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
         isCoreLibraryDesugaringEnabled = true
     }
 
     defaultConfig {
         applicationId = "com.dthrawn.ignitebill"
         minSdk = 24
-        targetSdk = 35
+        targetSdk = 34
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
@@ -64,9 +63,9 @@ android {
 }
 
 kotlin {
-    jvmToolchain(21)
+    jvmToolchain(17)
     compilerOptions {
-        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21)
+        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
     }
 }
 
