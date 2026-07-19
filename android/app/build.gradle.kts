@@ -9,7 +9,7 @@ plugins {
 
 android {
     namespace = "com.dthrawn.ignitebill"
-    compileSdk = 35
+    compileSdk = 34
     ndkVersion = "27.0.12077973"
 
     packaging {
@@ -27,7 +27,7 @@ android {
     defaultConfig {
         applicationId = "com.dthrawn.ignitebill"
         minSdk = 24
-        targetSdk = 35
+        targetSdk = 34
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
