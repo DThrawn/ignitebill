@@ -1,0 +1,22 @@
+image: mobiledevops/flutter-sdk-image:latest
+
+variables:
+  JAVA_VERSION: "17"
+
+cache:
+  paths:
+    - .gradle/wrapper
+    - .gradle/caches
+    - build/
+
+before_script:
+  - flutter doctor
+  - flutter pub get
+
+build_apk:
+  stage: build
+  script:
+    - flutter build apk --release --no-codesign
+  artifacts:
+    paths:
+      - build/app/outputs/flutter-apk/app-release.apk

@@ -30,6 +30,13 @@
 -dontwarn androidx.**
 -dontwarn com.google.android.material.**
 -dontwarn com.google.android.play.core.**
+-dontwarn com.google.android.gms.**
+-dontwarn com.google.firebase.**
+
+# Support du Java 8+ desugaring
+-keep class j$.** { *; }
+-keep interface j$.** { *; }
+-dontwarn j$.**
 
 # JNI & Reflection Protection
 -keepclasseswithmembernames class * {
