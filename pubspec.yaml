@@ -2,8 +2,7 @@ name: ignite_bill
 description: "A new Flutter project."
 publish_to: 'none'
 
-CurrentVersion: 1.0.1
-CurrentVersionCode: 2
+version: 1.0.7+1
 
 environment:
   sdk: ^3.12.2
