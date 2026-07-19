@@ -34,7 +34,7 @@ class VolumeSliderThumbShape extends SliderComponentShape {
     final shift = -depth / 2;
     canvas.drawCircle(center + Offset(0, depth + shift), radius, Paint()..color = shadowColor);
     canvas.drawCircle(center + Offset(0, shift), radius, Paint()..color = color);
-    canvas.drawCircle(center + Offset(0, shift), radius, Paint()..color = Colors.white.withValues(alpha: 0.2)..style = PaintingStyle.stroke..strokeWidth = 1);
+    canvas.drawCircle(center + Offset(0, shift), radius, Paint()..color = Colors.white.withOpacity(0.2)..style = PaintingStyle.stroke..strokeWidth = 1);
   }
 }
 
@@ -182,7 +182,7 @@ class AppStyle {
         iconTheme: IconThemeData(color: isDark ? Colors.white : primaryColor),
       ),
       cardTheme: CardThemeData(
-        color: isDark ? surfaceColor.withValues(alpha: 0.9) : Colors.white,
+        color: isDark ? surfaceColor.withOpacity(0.9) : Colors.white,
         elevation: style == AppVisualStyle.deluxe ? 4 : 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(style == AppVisualStyle.deluxe ? 20 : 14),
@@ -193,7 +193,7 @@ class AppStyle {
         thumbShape: VolumeSliderThumbShape(isDeluxe: style == AppVisualStyle.deluxe),
         overlayShape: const RoundSliderOverlayShape(overlayRadius: 20),
         activeTrackColor: primaryColor,
-        inactiveTrackColor: primaryColor.withValues(alpha: 0.2),
+        inactiveTrackColor: primaryColor.withOpacity(0.2),
         thumbColor: style == AppVisualStyle.deluxe ? deluxeOrange : primaryColor,
       ),
     );
@@ -268,11 +268,11 @@ class IconPop extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(isVibrant ? 12 : 8),
       decoration: BoxDecoration(
-        color: isVibrant ? color.withValues(alpha: 0.12) : color,
+        color: isVibrant ? color.withOpacity(0.12) : color,
         borderRadius: BorderRadius.circular(isVibrant ? 16 : 10),
-        border: isVibrant ? Border.all(color: color.withValues(alpha: 0.15), width: 1) : null,
+        border: isVibrant ? Border.all(color: color.withOpacity(0.15), width: 1) : null,
         boxShadow: isVibrant ? null : [
-          BoxShadow(color: Colors.black.withValues(alpha: 0.1), blurRadius: 2, offset: const Offset(0, 1))
+          BoxShadow(color: Colors.black.withOpacity(0.1), blurRadius: 2, offset: const Offset(0, 1))
         ],
       ),
       child: Icon(icon, color: isVibrant ? color : Colors.white, size: isVibrant ? 22 : 20),
@@ -320,10 +320,10 @@ class _VolumeButtonState extends State<VolumeButton> {
         decoration: BoxDecoration(
           borderRadius: borderRadius,
           boxShadow: isVibrant 
-            ? [BoxShadow(color: baseColor.withValues(alpha: 0.35), blurRadius: 18, offset: const Offset(0, 8))]
+            ? [BoxShadow(color: baseColor.withOpacity(0.35), blurRadius: 18, offset: const Offset(0, 8))]
             : [
                 BoxShadow(color: Color.lerp(baseColor, Colors.black, isDeluxe ? 0.6 : 0.4)!, offset: Offset(0, currentDepth), blurRadius: 0),
-                if (!_isPressed) BoxShadow(color: Colors.black.withValues(alpha: 0.2), offset: Offset(0, depth + 2), blurRadius: 4),
+                if (!_isPressed) BoxShadow(color: Colors.black.withOpacity(0.2), offset: Offset(0, depth + 2), blurRadius: 4),
               ],
         ),
         child: Container(
@@ -336,7 +336,7 @@ class _VolumeButtonState extends State<VolumeButton> {
               end: Alignment.bottomCenter,
               colors: [isDeluxe ? Color.lerp(baseColor, isDark ? Colors.black : Colors.white, 0.3)! : baseColor, baseColor],
             ),
-            border: isVibrant ? null : Border.all(color: Colors.white.withValues(alpha: isDeluxe ? 0.25 : 0.15), width: 1.5),
+            border: isVibrant ? null : Border.all(color: Colors.white.withOpacity(isDeluxe ? 0.25 : 0.15), width: 1.5),
           ),
           child: DefaultTextStyle.merge(
             style: TextStyle(fontWeight: FontWeight.w900, letterSpacing: isVibrant ? -0.5 : 0.2, color: Colors.white, shadows: isVibrant ? null : [const Shadow(color: Colors.black26, offset: Offset(0, 1), blurRadius: 1)]),
@@ -371,12 +371,12 @@ class VolumeCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(style == AppVisualStyle.vibrant ? 26 : 14),
         boxShadow: style == AppVisualStyle.vibrant 
           ? [
-              BoxShadow(color: shadowBase.withValues(alpha: 0.08), blurRadius: 24, offset: const Offset(0, 12)),
-              BoxShadow(color: Colors.black.withValues(alpha: isDark ? 0.4 : 0.05), blurRadius: 8, offset: const Offset(0, 2)),
+              BoxShadow(color: shadowBase.withOpacity(0.08), blurRadius: 24, offset: const Offset(0, 12)),
+              BoxShadow(color: Colors.black.withOpacity(isDark ? 0.4 : 0.05), blurRadius: 8, offset: const Offset(0, 2)),
             ]
           : [
               BoxShadow(color: Color.lerp(shadowBase, Colors.black, style == AppVisualStyle.deluxe ? 0.6 : 0.4)!, offset: const Offset(0, 5), blurRadius: 0),
-              BoxShadow(color: Colors.black.withValues(alpha: 0.2), offset: const Offset(0, 7), blurRadius: 4),
+              BoxShadow(color: Colors.black.withOpacity(0.2), offset: const Offset(0, 7), blurRadius: 4),
             ],
         border: Border.all(
           color: isDark ? Colors.white10 : (style == AppVisualStyle.deluxe ? AppStyle.deluxeBorder : AppStyle.cardBorder),
@@ -392,7 +392,7 @@ class VolumeCard extends StatelessWidget {
                 Container(
                   width: sideBarWidth, 
                   decoration: BoxDecoration(
-                    gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [color!, color!.withValues(alpha: 0.7)]),
+                    gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [color!, color!.withOpacity(0.7)]),
                   ),
                 ),
               Expanded(
@@ -462,22 +462,22 @@ class _RouletteMontantState extends State<RouletteMontant> {
             duration: const Duration(milliseconds: 150),
             opacity: _actif ? 0.7 : 0,
             child: Text((widget.valeur + effectiveStep).toStringAsFixed(0), 
-                style: TextStyle(fontSize: 16, color: isDeluxe ? AppStyle.deluxeText.withValues(alpha: 0.5) : AppStyle.textLight, fontWeight: FontWeight.bold, letterSpacing: -1.0)),
+                style: TextStyle(fontSize: 16, color: isDeluxe ? AppStyle.deluxeText.withOpacity(0.5) : AppStyle.textLight, fontWeight: FontWeight.bold, letterSpacing: -1.0)),
           ),
           const SizedBox(height: 4),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
             margin: EdgeInsets.only(top: (style == AppVisualStyle.titanium || style == AppVisualStyle.deluxe) ? (_actif ? (style == AppVisualStyle.deluxe ? 6 : 4) : 0) : 0),
             decoration: BoxDecoration(
-              color: _actif ? primaryColor.withValues(alpha: 0.1) : (isVibrant ? Colors.transparent : (isDeluxe ? AppStyle.deluxeInput : Theme.of(context).colorScheme.surface)),
+              color: _actif ? primaryColor.withOpacity(0.1) : (isVibrant ? Colors.transparent : (isDeluxe ? AppStyle.deluxeInput : Theme.of(context).colorScheme.surface)),
               borderRadius: BorderRadius.circular(10),
               border: isVibrant ? null : Border.all(color: _actif ? primaryColor : (isDeluxe ? AppStyle.deluxeBorder : (isDark ? Colors.white24 : AppStyle.titaniumBorder)), width: isDeluxe ? 2.0 : 1.5),
               boxShadow: isVibrant ? null : [
                 if (style == AppVisualStyle.titanium || style == AppVisualStyle.deluxe) ...[
                    BoxShadow(color: Color.lerp(isDeluxe ? AppStyle.deluxeBorder : (isDark ? Colors.black : AppStyle.titaniumBorder), Colors.black, isDeluxe ? 0.2 : 0.1)!, offset: Offset(0, _actif ? 0 : (isDeluxe ? 4 : 4)), blurRadius: 0),
-                   if (!_actif) BoxShadow(color: Colors.black.withValues(alpha: 0.1), offset: Offset(0, (isDeluxe ? 6 : 6)), blurRadius: 4),
+                   if (!_actif) BoxShadow(color: Colors.black.withOpacity(0.1), offset: Offset(0, (isDeluxe ? 6 : 6)), blurRadius: 4),
                 ] else ...[
-                   BoxShadow(color: Colors.black.withValues(alpha: 0.05), blurRadius: 4, offset: const Offset(0, 1), spreadRadius: -1)
+                   BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 4, offset: const Offset(0, 1), spreadRadius: -1)
                 ]
               ],
             ),
@@ -511,7 +511,7 @@ class _RouletteMontantState extends State<RouletteMontant> {
             duration: const Duration(milliseconds: 150),
             opacity: _actif ? 0.7 : 0,
             child: Text((widget.valeur - effectiveStep).clamp(0, 9999).toStringAsFixed(0), 
-                style: TextStyle(fontSize: 16, color: isDeluxe ? AppStyle.deluxeText.withValues(alpha: 0.5) : AppStyle.textLight, fontWeight: FontWeight.bold, letterSpacing: -1.0)),
+                style: TextStyle(fontSize: 16, color: isDeluxe ? AppStyle.deluxeText.withOpacity(0.5) : AppStyle.textLight, fontWeight: FontWeight.bold, letterSpacing: -1.0)),
           ),
         ],
       ),
@@ -780,7 +780,7 @@ class _ProDialogState extends State<ProDialog> {
                 final id = snapshot.data ?? '...';
                 return Container(
                   padding: const EdgeInsets.all(12),
-                  decoration: BoxDecoration(color: Colors.grey.withValues(alpha: 0.1), borderRadius: BorderRadius.circular(8), border: Border.all(color: Colors.grey.withValues(alpha: 0.3))),
+                  decoration: BoxDecoration(color: Colors.grey.withOpacity(0.1), borderRadius: BorderRadius.circular(8), border: Border.all(color: Colors.grey.withOpacity(0.3))),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -1223,7 +1223,7 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
                             Expanded(
                               child: VolumeButton(
                                   mini: true,
-                                  color: Colors.red.withValues(alpha: 0.8),
+                                  color: Colors.red.withOpacity(0.8),
                                   onPressed: () {
                                     setState(() => _projets = nouveauxProjets);
                                     _sauvegarderDonnees();
@@ -1421,7 +1421,7 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
                       duration: const Duration(milliseconds: 150),
                       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                       decoration: BoxDecoration(
-                        color: isSelected ? primaryColor : (isDark ? Colors.white.withValues(alpha: 0.05) : Colors.grey.withValues(alpha: 0.1)),
+                        color: isSelected ? primaryColor : (isDark ? Colors.white.withOpacity(0.05) : Colors.grey.withOpacity(0.1)),
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(color: isSelected ? primaryColor : (isDark ? Colors.white10 : Colors.black12), width: 1),
                       ),
@@ -1538,7 +1538,7 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
               width: 40, 
               height: 4, 
               decoration: BoxDecoration(
-                color: Colors.grey.withValues(alpha: 0.3), 
+                color: Colors.grey.withOpacity(0.3), 
                 borderRadius: BorderRadius.circular(2)
               )
             ),
@@ -1768,7 +1768,7 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
                   children: [
                     Container(
                       padding: const EdgeInsets.symmetric(vertical: 12),
-                      child: Container(width: 40, height: 4, decoration: BoxDecoration(color: Colors.grey.withValues(alpha: 0.3), borderRadius: BorderRadius.circular(2))),
+                      child: Container(width: 40, height: 4, decoration: BoxDecoration(color: Colors.grey.withOpacity(0.3), borderRadius: BorderRadius.circular(2))),
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
@@ -2173,7 +2173,7 @@ class _DialogChronoRapideState extends State<DialogChronoRapide> {
                   duration: const Duration(milliseconds: 150),
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                   decoration: BoxDecoration(
-                    color: isSelected ? primaryColor : (isDark ? Colors.white.withValues(alpha: 0.05) : Colors.grey.withValues(alpha: 0.1)),
+                    color: isSelected ? primaryColor : (isDark ? Colors.white.withOpacity(0.05) : Colors.grey.withOpacity(0.1)),
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(color: isSelected ? primaryColor : (isDark ? Colors.white10 : Colors.black12), width: 1),
                   ),
@@ -2567,7 +2567,7 @@ class _EcranTimerState extends State<EcranTimer> {
                       duration: const Duration(milliseconds: 150),
                       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                       decoration: BoxDecoration(
-                        color: isSelected ? primaryColor : (isDark ? Colors.white.withValues(alpha: 0.05) : Colors.grey.withValues(alpha: 0.1)),
+                        color: isSelected ? primaryColor : (isDark ? Colors.white.withOpacity(0.05) : Colors.grey.withOpacity(0.1)),
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(color: isSelected ? primaryColor : (isDark ? Colors.white10 : Colors.black12), width: 1),
                       ),
@@ -2658,7 +2658,7 @@ class _EcranTimerState extends State<EcranTimer> {
 
     showDialog(context: context, builder: (c) => StatefulBuilder(builder: (ctx, setStateD) => AlertDialog(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)), content: SingleChildScrollView(child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, children: [
         Row(children: [Expanded(child: TextField(controller: tc, onTap: () => tc.selection = TextSelection(baseOffset: 0, extentOffset: tc.text.length), decoration: InputDecoration(labelText: S.rename, border: const OutlineInputBorder()))), const SizedBox(width: 12), Column(mainAxisSize: MainAxisSize.min, children: [Text(S.moveSession, style: const TextStyle(fontSize: 8, color: AppStyle.textLight, fontWeight: FontWeight.w900, letterSpacing: 0.5)), IconButton(icon: Icon(Icons.drive_file_move_rounded, color: primaryColor, size: 24), onPressed: () { Navigator.pop(c); _ouvrirTransfertSession(s); }, padding: EdgeInsets.zero, constraints: const BoxConstraints())])]),
-        const SizedBox(height: 12), Center(child: InkWell(onTap: () async { final nv = await showDatePicker(context: ctx, initialDate: d, firstDate: DateTime(2020), lastDate: DateTime(2030)); if (nv != null) { setStateD(() => d = nv); } }, borderRadius: BorderRadius.circular(12), child: Container(padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 20), decoration: BoxDecoration(border: Border.all(color: AppStyle.textLight.withValues(alpha: 0.2)), borderRadius: BorderRadius.circular(12)), child: Column(children: [Text(S.date, style: TextStyle(fontSize: 10, fontWeight: FontWeight.w900, color: AppStyle.textLight, letterSpacing: 1.2)), const SizedBox(height: 4), Row(mainAxisSize: MainAxisSize.min, children: [Icon(Icons.calendar_month_rounded, color: primaryColor, size: 20), const SizedBox(width: 10), Text('${d.day.toString().padLeft(2, '0')}/${d.month.toString().padLeft(2, '0')}/${d.year}', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w900, color: isDark ? Colors.white : AppStyle.textDark))])])))),
+        const SizedBox(height: 12), Center(child: InkWell(onTap: () async { final nv = await showDatePicker(context: ctx, initialDate: d, firstDate: DateTime(2020), lastDate: DateTime(2030)); if (nv != null) { setStateD(() => d = nv); } }, borderRadius: BorderRadius.circular(12), child: Container(padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 20), decoration: BoxDecoration(border: Border.all(color: AppStyle.textLight.withOpacity(0.2)), borderRadius: BorderRadius.circular(12)), child: Column(children: [Text(S.date, style: TextStyle(fontSize: 10, fontWeight: FontWeight.w900, color: AppStyle.textLight, letterSpacing: 1.2)), const SizedBox(height: 4), Row(mainAxisSize: MainAxisSize.min, children: [Icon(Icons.calendar_month_rounded, color: primaryColor, size: 20), const SizedBox(width: 10), Text('${d.day.toString().padLeft(2, '0')}/${d.month.toString().padLeft(2, '0')}/${d.year}', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w900, color: isDark ? Colors.white : AppStyle.textDark))])])))),
         if (!s.estFrais) Padding(padding: const EdgeInsets.only(top: 10), child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [RouletteMontant(valeur: double.tryParse(hc.text.replaceAll(',', '.')) ?? 0, suffixe: ' h', controller: hc, onChanged: (v) => setStateD(() {}), step: 1, fontSize: 20, width: 60, color: primaryColor), RouletteMontant(valeur: double.tryParse(mc.text.replaceAll(',', '.')) ?? 0, suffixe: ' m', controller: mc, onChanged: (v) => setStateD(() {}), step: 5, fontSize: 20, width: 60, color: primaryColor)])) else const SizedBox(height: 10),
         const SizedBox(height: 12), Center(child: Text(s.estFrais ? S.amountHT : "${S.realTimePrefix}${Session.formaterSansSecondes(s.secondesReelles)}", style: const TextStyle(fontSize: 10, fontWeight: FontWeight.w900, color: AppStyle.textLight, letterSpacing: 1.2))), const SizedBox(height: 4), Center(child: RouletteMontant(valeur: double.tryParse(pc.text.replaceAll(',', '.')) ?? 0, suffixe: ' ${Projet.devise}', controller: pc, onChanged: (v) => setStateD(() {}), color: s.estRemise ? Theme.of(context).colorScheme.tertiary : (Theme.of(context).colorScheme.secondary), width: 90)),
         if (globalTaxes.isNotEmpty) ...[
@@ -2687,7 +2687,7 @@ class _EcranTimerState extends State<EcranTimer> {
                   duration: const Duration(milliseconds: 150),
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                   decoration: BoxDecoration(
-                    color: isSelected ? primaryColor : (isDark ? Colors.white.withValues(alpha: 0.05) : Colors.grey.withValues(alpha: 0.1)),
+                    color: isSelected ? primaryColor : (isDark ? Colors.white.withOpacity(0.05) : Colors.grey.withOpacity(0.1)),
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(color: isSelected ? primaryColor : (isDark ? Colors.white10 : Colors.black12), width: 1),
                   ),
@@ -2749,7 +2749,7 @@ class _EcranTimerState extends State<EcranTimer> {
                     borderRadius: BorderRadius.circular(12),
                     child: Container(
                       padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
-                      decoration: BoxDecoration(border: Border.all(color: AppStyle.textLight.withValues(alpha: 0.2)), borderRadius: BorderRadius.circular(12)),
+                      decoration: BoxDecoration(border: Border.all(color: AppStyle.textLight.withOpacity(0.2)), borderRadius: BorderRadius.circular(12)),
                       child: Column(
                         children: [
                           Text(S.date, style: TextStyle(fontSize: 10, fontWeight: FontWeight.w900, color: AppStyle.textLight, letterSpacing: 1.2)),
@@ -3227,7 +3227,7 @@ class _EcranTimerState extends State<EcranTimer> {
                                   borderRadius: BorderRadius.circular(40),
                                   child: Container(
                                     padding: const EdgeInsets.all(12),
-                                    decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle, boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: 0.15), blurRadius: 10, offset: const Offset(0, 4))], border: Border.all(color: const Color(0xFFF59E0B).withValues(alpha: 0.3), width: 1.5)),
+                                    decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle, boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.15), blurRadius: 10, offset: const Offset(0, 4))], border: Border.all(color: const Color(0xFFF59E0B).withOpacity(0.3), width: 1.5)),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.min,
                                       children: [
@@ -3279,9 +3279,9 @@ class _EcranTimerState extends State<EcranTimer> {
                                     padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                     margin: const EdgeInsets.only(bottom: 2),
                                     decoration: BoxDecoration(
-                                      color: widget.projet.preferTTC ? primaryColor.withValues(alpha: 0.1) : Colors.grey.withValues(alpha: 0.1),
+                                      color: widget.projet.preferTTC ? primaryColor.withOpacity(0.1) : Colors.grey.withOpacity(0.1),
                                       borderRadius: BorderRadius.circular(8),
-                                      border: Border.all(color: widget.projet.preferTTC ? primaryColor : Colors.grey.withValues(alpha: 0.4), width: 1.5),
+                                      border: Border.all(color: widget.projet.preferTTC ? primaryColor : Colors.grey.withOpacity(0.4), width: 1.5),
                                     ),
                                     child: Text(widget.projet.preferTTC ? "TTC" : "HT", style: TextStyle(fontSize: 10, fontWeight: FontWeight.w900, color: widget.projet.preferTTC ? primaryColor : Colors.grey)),
                                   ),

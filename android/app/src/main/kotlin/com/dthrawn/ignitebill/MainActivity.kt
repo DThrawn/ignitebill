@@ -1,4 +1,4 @@
-package com.example.timer
+package com.dthrawn.ignitebill
 
 import android.content.Intent
 import io.flutter.embedding.android.FlutterActivity

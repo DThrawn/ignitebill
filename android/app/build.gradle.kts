@@ -25,7 +25,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.ignitech.ignitebill"
+        applicationId = "com.dthrawn.ignitebill"
         minSdk = 24
         targetSdk = 36
         versionCode = flutter.versionCode
