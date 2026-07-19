@@ -34,20 +34,20 @@ jobs:
       - name: Get dependencies
         run: flutter pub get
 
-      - name: Build APK
-        run: flutter build apk --release --no-codesign
+      - name: Build FOSS APK
+        run: flutter build apk --flavor foss --release --no-codesign
 
-      - name: Upload Artifact
+      - name: Upload FOSS Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: release-apk
-          path: build/app/outputs/flutter-apk/app-release.apk
+          name: release-foss-apk
+          path: build/app/outputs/flutter-apk/app-foss-release.apk
 
       - name: Create Release
         if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v2
         with:
-          files: build/app/outputs/flutter-apk/app-release.apk
+          files: build/app/outputs/flutter-apk/app-foss-release.apk
           name: Release ${{ github.ref_name }}
           tag_name: ${{ github.ref_name }}
           draft: false

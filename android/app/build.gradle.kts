@@ -37,11 +37,26 @@ android {
             val keyPropertiesFile = rootProject.file("key.properties")
             if (keyPropertiesFile.exists()) {
                 keyProperties.load(keyPropertiesFile.inputStream())
-                storeFile = rootProject.file(keyProperties.getProperty("storeFile") as String)
-                storePassword = keyProperties.getProperty("storePassword")
-                keyAlias = keyProperties.getProperty("keyAlias")
-                keyPassword = keyProperties.getProperty("keyPassword")
+                val storeFileStr = keyProperties.getProperty("storeFile")
+                if (storeFileStr != null) {
+                    storeFile = rootProject.file(storeFileStr)
+                    storePassword = keyProperties.getProperty("storePassword")
+                    keyAlias = keyProperties.getProperty("keyAlias")
+                    keyPassword = keyProperties.getProperty("keyPassword")
+                }
             }
+        }
+    }
+
+    flavorDimensions += "type"
+    productFlavors {
+        create("foss") {
+            dimension = "type"
+            // No suffix to maintain compatibility with existing installs
+            versionNameSuffix = "-foss"
+        }
+        create("play") {
+            dimension = "type"
         }
     }
 
@@ -55,9 +70,6 @@ android {
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            ndk {
-                debugSymbolLevel = "none"
-            }
         }
     }
 }

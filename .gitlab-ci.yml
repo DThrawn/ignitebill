@@ -1,22 +1,25 @@
-image: mobiledevops/flutter-sdk-image:latest
+image: "ghcr.io/cirruslabs/flutter:stable"
 
 variables:
   JAVA_VERSION: "17"
 
 cache:
+  key: ${CI_COMMIT_REF_SLUG}
   paths:
     - .gradle/wrapper
     - .gradle/caches
+    - .pub-cache/
     - build/
 
 before_script:
+  - export PATH="$PATH:$HOME/.pub-cache/bin"
   - flutter doctor
   - flutter pub get
 
-build_apk:
+build_foss_release:
   stage: build
   script:
-    - flutter build apk --release --no-codesign
+    - flutter build apk --flavor foss --release --no-codesign
   artifacts:
     paths:
-      - build/app/outputs/flutter-apk/app-release.apk
+      - build/app/outputs/flutter-apk/app-foss-release.apk
