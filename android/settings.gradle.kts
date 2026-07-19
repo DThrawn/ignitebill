@@ -27,7 +27,7 @@ plugins {
     id("com.android.application") version "8.11.1" apply false
     id("org.jetbrains.kotlin.android") version "2.2.20" apply false
     // Plugin pour la résolution automatique des toolchains Java (Foojay)
-    id("org.gradle.toolchains.foojay-resolver-convention") version "0.9.0"
+    // id("org.gradle.toolchains.foojay-resolver-convention") version "0.9.0"
 }
 
 include(":app")
