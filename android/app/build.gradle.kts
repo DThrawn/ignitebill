@@ -62,10 +62,12 @@ android {
 
     buildTypes {
         release {
-            // Only use the release signing config if it was properly configured
+            // F-Droid compatibility: only sign if keystore is present, otherwise build unsigned
             val releaseConfig = signingConfigs.getByName("release")
             if (releaseConfig.storeFile != null) {
                 signingConfig = releaseConfig
+            } else {
+                signingConfig = null
             }
             isMinifyEnabled = true
             isShrinkResources = true

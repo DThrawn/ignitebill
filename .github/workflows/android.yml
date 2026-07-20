@@ -35,7 +35,7 @@ jobs:
         run: flutter pub get
 
       - name: Build FOSS APK
-        run: flutter build apk --flavor foss --release --no-codesign
+        run: flutter build apk --flavor foss --release
 
       - name: Upload FOSS Artifact
         uses: actions/upload-artifact@v4

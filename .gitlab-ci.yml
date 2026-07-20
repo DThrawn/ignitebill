@@ -19,7 +19,7 @@ before_script:
 build_foss_release:
   stage: build
   script:
-    - flutter build apk --flavor foss --release --no-codesign
+    - flutter build apk --flavor foss --release
   artifacts:
     paths:
       - build/app/outputs/flutter-apk/app-foss-release.apk
