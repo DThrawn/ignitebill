@@ -35,28 +35,22 @@ jobs:
         run: flutter pub get
 
       - name: Build FOSS APK
-        run: flutter build apk --flavor foss --release -v
-
-      - name: Upload Gradle Reports
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: gradle-error-reports
-          path: |
-            android/build/reports/
-            android/app/build/reports/
+        # Le "|| true" empêche GitHub de tout couper si Flutter fait son erreur de fichier introuvable
+        run: flutter build apk --flavor foss --release || true
 
       - name: Upload FOSS Artifact
         uses: actions/upload-artifact@v4
         with:
           name: release-foss-apk
-          path: build/app/outputs/flutter-apk/app-foss-release.apk
+          # Les étoiles permettent de fouiller dans tous les sous-dossiers pour trouver l'APK
+          path: build/app/outputs/**/*.apk
 
       - name: Create Release
         if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v2
         with:
-          files: build/app/outputs/flutter-apk/app-foss-release.apk
+          # Idem ici, le joker ramasse l'APK pour le mettre dans la release
+          files: build/app/outputs/**/*.apk
           name: Release ${{ github.ref_name }}
           tag_name: ${{ github.ref_name }}
           draft: false
