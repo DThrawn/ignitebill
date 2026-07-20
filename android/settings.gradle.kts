@@ -1,6 +1,3 @@
-// Fix for AndroidLocationsException: Clear conflicting variables before build starts
-System.clearProperty("android.prefs.root")
-
 pluginManagement {
     val flutterSdkPath =
         run {
