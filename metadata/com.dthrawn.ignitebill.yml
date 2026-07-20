@@ -24,9 +24,9 @@ RepoType: git
 Repo: https://github.com/DThrawn/ignitebill.git
 
 Builds:
-  - versionName: 1.1.10
-    versionCode: 13
-    commit: v1.1.10
+  - versionName: 1.1.12
+    versionCode: 15
+    commit: v1.1.12
     subdir: android/app
     gradle:
       - foss
@@ -36,5 +36,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.1.10
-CurrentVersionCode: 13
+CurrentVersion: 1.1.12
+CurrentVersionCode: 15
