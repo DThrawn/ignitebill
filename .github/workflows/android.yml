@@ -35,7 +35,16 @@ jobs:
         run: flutter pub get
 
       - name: Build FOSS APK
-        run: flutter build apk --flavor foss --release
+        run: flutter build apk --flavor foss --release -v
+
+      - name: Upload Gradle Reports
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gradle-error-reports
+          path: |
+            android/build/reports/
+            android/app/build/reports/
 
       - name: Upload FOSS Artifact
         uses: actions/upload-artifact@v4
