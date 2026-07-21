@@ -70,18 +70,24 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      # Étape : Configuration de la signature de l'APK
+      # Étape : Configuration de la signature de l'APK (Optionnelle pour F-Droid / FOSS)
       - name: Configure Keystore
+        id: keystore_config
+        continue-on-error: true
         run: |
+          if [ -z "${{ secrets.KEYSTORE_BASE64 }}" ]; then
+            echo "Keystore secret not found. Building unsigned APK (FOSS compliant)."
+            exit 0
+          fi
           printf '%s' "${{ secrets.KEYSTORE_BASE64 }}" | tr -d '\n ' | base64 --decode > android/ignitech.jks
           echo "storePassword=${{ secrets.KEYSTORE_PASSWORD }}" > android/key.properties
           echo "keyPassword=${{ secrets.KEY_PASSWORD }}" >> android/key.properties
           echo "keyAlias=${{ secrets.KEY_ALIAS }}" >> android/key.properties
           echo "storeFile=ignitech.jks" >> android/key.properties
 
-      - name: Build APK Release
+      - name: Build APK Release (FOSS Flavor)
         run: |
-          flutter build apk --release --verbose 2>&1 | tee flutter_build.log
+          flutter build apk --flavor foss --release --verbose 2>&1 | tee flutter_build.log
           echo "EXIT_CODE=${PIPESTATUS[0]}" >> $GITHUB_ENV
 
       - name: Check build result
@@ -94,12 +100,10 @@ jobs:
       - name: Debug build output
         if: always()
         run: |
-          echo "=== Contenu de build/ ==="
-          find build -type f -iname "*.apk" -o -type d 2>/dev/null || echo "build/ introuvable"
-          echo "=== Contenu de android/app/build/ ==="
-          find android/app/build -type f -iname "*.apk" 2>/dev/null || echo "android/app/build/ introuvable"
-          echo "=== Contenu de android/build.gradle.kts ==="
-          cat android/build.gradle.kts
+          echo "=== Localisation des APKs générés ==="
+          find build/app/outputs -name "*.apk"
+          echo "=== Contenu de build/app/outputs/flutter-apk/ ==="
+          ls -R build/app/outputs/flutter-apk/ 2>/dev/null || echo "Dossier introuvable"
 
       - name: Upload build log
         if: always()
@@ -113,15 +117,26 @@ jobs:
         id: prepare_assets
         run: |
           mkdir -p release_files
-          APK_PATH="build/app/outputs/flutter-apk/app-release.apk"
+          # Flutter place l'APK du flavor dans flutter-apk/
+          APK_PATH=$(find build/app/outputs/flutter-apk -name "app-foss-release.apk" | head -n 1)
           
-          # Copie de l'APK principal
-          cp $APK_PATH release_files/ignitebill-release.apk
+          if [ -z "$APK_PATH" ] || [ ! -f "$APK_PATH" ]; then
+            echo "APK non trouvé dans flutter-apk, recherche dans les dossiers Gradle..."
+            APK_PATH=$(find build/app/outputs/apk/foss/release -name "*.apk" | head -n 1)
+          fi
+
+          if [ -z "$APK_PATH" ]; then
+            echo "Erreur : Impossible de localiser l'APK de release."
+            exit 1
+          fi
+
+          echo "APK trouvé à : $APK_PATH"
+          cp "$APK_PATH" release_files/ignitebill-foss-release.apk
           
-          # Création des archives ZIP et TAR contenant uniquement l'APK
+          # Création des archives
           cd release_files
-          zip ignitebill-release.zip ignitebill-release.apk
-          tar -czf ignitebill-release.tar.gz ignitebill-release.apk
+          zip ignitebill-foss-release.zip ignitebill-foss-release.apk
+          tar -czf ignitebill-foss-release.tar.gz ignitebill-foss-release.apk
           cd ..
           
           echo "Assets prêts dans le dossier release_files/ :"
@@ -139,9 +154,9 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            release_files/ignitebill-release.apk
-            release_files/ignitebill-release.zip
-            release_files/ignitebill-release.tar.gz
+            release_files/ignitebill-foss-release.apk
+            release_files/ignitebill-foss-release.zip
+            release_files/ignitebill-foss-release.tar.gz
           name: Release ${{ github.ref_name }}
           tag_name: ${{ github.ref_name }}
           generate_release_notes: true

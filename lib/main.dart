@@ -32,9 +32,9 @@ class VolumeSliderThumbShape extends SliderComponentShape {
     final shadowColor = Color.lerp(color, Colors.black, isDeluxe ? 0.5 : 0.4)!;
     final depth = isDeluxe ? 4.0 : 3.0;
     final shift = -depth / 2;
-    canvas.drawCircle(center + Offset(0, depth + shift), radius, Paint()..color = shadowColor);
+    canvas.drawCircle(center + Offset(0, shift), radius, Paint()..color = shadowColor);
     canvas.drawCircle(center + Offset(0, shift), radius, Paint()..color = color);
-    canvas.drawCircle(center + Offset(0, shift), radius, Paint()..color = Colors.white.withOpacity(0.2)..style = PaintingStyle.stroke..strokeWidth = 1);
+    canvas.drawCircle(center + Offset(0, shift), radius, Paint()..color = Colors.white.withValues(alpha: 0.2)..style = PaintingStyle.stroke..strokeWidth = 1);
   }
 }
 
@@ -182,7 +182,7 @@ class AppStyle {
         iconTheme: IconThemeData(color: isDark ? Colors.white : primaryColor),
       ),
       cardTheme: CardThemeData(
-        color: isDark ? surfaceColor.withOpacity(0.9) : Colors.white,
+        color: isDark ? surfaceColor.withValues(alpha: 0.9) : Colors.white,
         elevation: style == AppVisualStyle.deluxe ? 4 : 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(style == AppVisualStyle.deluxe ? 20 : 14),
@@ -193,7 +193,7 @@ class AppStyle {
         thumbShape: VolumeSliderThumbShape(isDeluxe: style == AppVisualStyle.deluxe),
         overlayShape: const RoundSliderOverlayShape(overlayRadius: 20),
         activeTrackColor: primaryColor,
-        inactiveTrackColor: primaryColor.withOpacity(0.2),
+        inactiveTrackColor: primaryColor.withValues(alpha: 0.2),
         thumbColor: style == AppVisualStyle.deluxe ? deluxeOrange : primaryColor,
       ),
     );
@@ -268,11 +268,11 @@ class IconPop extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(isVibrant ? 12 : 8),
       decoration: BoxDecoration(
-        color: isVibrant ? color.withOpacity(0.12) : color,
+        color: isVibrant ? color.withValues(alpha: 0.12) : color,
         borderRadius: BorderRadius.circular(isVibrant ? 16 : 10),
-        border: isVibrant ? Border.all(color: color.withOpacity(0.15), width: 1) : null,
+        border: isVibrant ? Border.all(color: color.withValues(alpha: 0.15), width: 1) : null,
         boxShadow: isVibrant ? null : [
-          BoxShadow(color: Colors.black.withOpacity(0.1), blurRadius: 2, offset: const Offset(0, 1))
+          BoxShadow(color: Colors.black.withValues(alpha: 0.1), blurRadius: 2, offset: const Offset(0, 1))
         ],
       ),
       child: Icon(icon, color: isVibrant ? color : Colors.white, size: isVibrant ? 22 : 20),
@@ -320,10 +320,10 @@ class _VolumeButtonState extends State<VolumeButton> {
         decoration: BoxDecoration(
           borderRadius: borderRadius,
           boxShadow: isVibrant 
-            ? [BoxShadow(color: baseColor.withOpacity(0.35), blurRadius: 18, offset: const Offset(0, 8))]
+            ? [BoxShadow(color: baseColor.withValues(alpha: 0.35), blurRadius: 18, offset: const Offset(0, 8))]
             : [
                 BoxShadow(color: Color.lerp(baseColor, Colors.black, isDeluxe ? 0.6 : 0.4)!, offset: Offset(0, currentDepth), blurRadius: 0),
-                if (!_isPressed) BoxShadow(color: Colors.black.withOpacity(0.2), offset: Offset(0, depth + 2), blurRadius: 4),
+                if (!_isPressed) BoxShadow(color: Colors.black.withValues(alpha: 0.2), offset: Offset(0, depth + 2), blurRadius: 4),
               ],
         ),
         child: Container(
@@ -336,7 +336,7 @@ class _VolumeButtonState extends State<VolumeButton> {
               end: Alignment.bottomCenter,
               colors: [isDeluxe ? Color.lerp(baseColor, isDark ? Colors.black : Colors.white, 0.3)! : baseColor, baseColor],
             ),
-            border: isVibrant ? null : Border.all(color: Colors.white.withOpacity(isDeluxe ? 0.25 : 0.15), width: 1.5),
+            border: isVibrant ? null : Border.all(color: Colors.white.withValues(alpha: isDeluxe ? 0.25 : 0.15), width: 1.5),
           ),
           child: DefaultTextStyle.merge(
             style: TextStyle(fontWeight: FontWeight.w900, letterSpacing: isVibrant ? -0.5 : 0.2, color: Colors.white, shadows: isVibrant ? null : [const Shadow(color: Colors.black26, offset: Offset(0, 1), blurRadius: 1)]),
@@ -371,12 +371,12 @@ class VolumeCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(style == AppVisualStyle.vibrant ? 26 : 14),
         boxShadow: style == AppVisualStyle.vibrant 
           ? [
-              BoxShadow(color: shadowBase.withOpacity(0.08), blurRadius: 24, offset: const Offset(0, 12)),
-              BoxShadow(color: Colors.black.withOpacity(isDark ? 0.4 : 0.05), blurRadius: 8, offset: const Offset(0, 2)),
+              BoxShadow(color: shadowBase.withValues(alpha: 0.08), blurRadius: 24, offset: const Offset(0, 12)),
+              BoxShadow(color: Colors.black.withValues(alpha: isDark ? 0.4 : 0.05), blurRadius: 8, offset: const Offset(0, 2)),
             ]
           : [
               BoxShadow(color: Color.lerp(shadowBase, Colors.black, style == AppVisualStyle.deluxe ? 0.6 : 0.4)!, offset: const Offset(0, 5), blurRadius: 0),
-              BoxShadow(color: Colors.black.withOpacity(0.2), offset: const Offset(0, 7), blurRadius: 4),
+              BoxShadow(color: Colors.black.withValues(alpha: 0.2), offset: const Offset(0, 7), blurRadius: 4),
             ],
         border: Border.all(
           color: isDark ? Colors.white10 : (style == AppVisualStyle.deluxe ? AppStyle.deluxeBorder : AppStyle.cardBorder),
@@ -392,7 +392,7 @@ class VolumeCard extends StatelessWidget {
                 Container(
                   width: sideBarWidth, 
                   decoration: BoxDecoration(
-                    gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [color!, color!.withOpacity(0.7)]),
+                    gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [color!, color!.withValues(alpha: 0.7)]),
                   ),
                 ),
               Expanded(
@@ -462,22 +462,22 @@ class _RouletteMontantState extends State<RouletteMontant> {
             duration: const Duration(milliseconds: 150),
             opacity: _actif ? 0.7 : 0,
             child: Text((widget.valeur + effectiveStep).toStringAsFixed(0), 
-                style: TextStyle(fontSize: 16, color: isDeluxe ? AppStyle.deluxeText.withOpacity(0.5) : AppStyle.textLight, fontWeight: FontWeight.bold, letterSpacing: -1.0)),
+                style: TextStyle(fontSize: 16, color: isDeluxe ? AppStyle.deluxeText.withValues(alpha: 0.5) : AppStyle.textLight, fontWeight: FontWeight.bold, letterSpacing: -1.0)),
           ),
           const SizedBox(height: 4),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
             margin: EdgeInsets.only(top: (style == AppVisualStyle.titanium || style == AppVisualStyle.deluxe) ? (_actif ? (style == AppVisualStyle.deluxe ? 6 : 4) : 0) : 0),
             decoration: BoxDecoration(
-              color: _actif ? primaryColor.withOpacity(0.1) : (isVibrant ? Colors.transparent : (isDeluxe ? AppStyle.deluxeInput : Theme.of(context).colorScheme.surface)),
+              color: _actif ? primaryColor.withValues(alpha: 0.1) : (isVibrant ? Colors.transparent : (isDeluxe ? AppStyle.deluxeInput : Theme.of(context).colorScheme.surface)),
               borderRadius: BorderRadius.circular(10),
               border: isVibrant ? null : Border.all(color: _actif ? primaryColor : (isDeluxe ? AppStyle.deluxeBorder : (isDark ? Colors.white24 : AppStyle.titaniumBorder)), width: isDeluxe ? 2.0 : 1.5),
               boxShadow: isVibrant ? null : [
                 if (style == AppVisualStyle.titanium || style == AppVisualStyle.deluxe) ...[
                    BoxShadow(color: Color.lerp(isDeluxe ? AppStyle.deluxeBorder : (isDark ? Colors.black : AppStyle.titaniumBorder), Colors.black, isDeluxe ? 0.2 : 0.1)!, offset: Offset(0, _actif ? 0 : (isDeluxe ? 4 : 4)), blurRadius: 0),
-                   if (!_actif) BoxShadow(color: Colors.black.withOpacity(0.1), offset: Offset(0, (isDeluxe ? 6 : 6)), blurRadius: 4),
+                   if (!_actif) BoxShadow(color: Colors.black.withValues(alpha: 0.1), offset: Offset(0, (isDeluxe ? 6 : 6)), blurRadius: 4),
                 ] else ...[
-                   BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 4, offset: const Offset(0, 1), spreadRadius: -1)
+                   BoxShadow(color: Colors.black.withValues(alpha: 0.05), blurRadius: 4, offset: const Offset(0, 1), spreadRadius: -1)
                 ]
               ],
             ),
@@ -511,7 +511,7 @@ class _RouletteMontantState extends State<RouletteMontant> {
             duration: const Duration(milliseconds: 150),
             opacity: _actif ? 0.7 : 0,
             child: Text((widget.valeur - effectiveStep).clamp(0, 9999).toStringAsFixed(0), 
-                style: TextStyle(fontSize: 16, color: isDeluxe ? AppStyle.deluxeText.withOpacity(0.5) : AppStyle.textLight, fontWeight: FontWeight.bold, letterSpacing: -1.0)),
+                style: TextStyle(fontSize: 16, color: isDeluxe ? AppStyle.deluxeText.withValues(alpha: 0.5) : AppStyle.textLight, fontWeight: FontWeight.bold, letterSpacing: -1.0)),
           ),
         ],
       ),
@@ -780,7 +780,7 @@ class _ProDialogState extends State<ProDialog> {
                 final id = snapshot.data ?? '...';
                 return Container(
                   padding: const EdgeInsets.all(12),
-                  decoration: BoxDecoration(color: Colors.grey.withOpacity(0.1), borderRadius: BorderRadius.circular(8), border: Border.all(color: Colors.grey.withOpacity(0.3))),
+                  decoration: BoxDecoration(color: Colors.grey.withValues(alpha: 0.1), borderRadius: BorderRadius.circular(8), border: Border.all(color: Colors.grey.withValues(alpha: 0.3))),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -793,7 +793,9 @@ class _ProDialogState extends State<ProDialog> {
                             icon: const Icon(Icons.copy_rounded, size: 20),
                             onPressed: () {
                               Clipboard.setData(ClipboardData(text: id));
-                              ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(S.idCopied)));
+                              if (context.mounted) {
+                                ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(S.idCopied)));
+                              }
                             },
                             tooltip: S.copy,
                           ),
@@ -1223,14 +1225,14 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
                             Expanded(
                               child: VolumeButton(
                                   mini: true,
-                                  color: Colors.red.withOpacity(0.8),
+                                  color: Colors.red.withValues(alpha: 0.8),
                                   onPressed: () {
                                     setState(() => _projets = nouveauxProjets);
                                     _sauvegarderDonnees();
                                     Navigator.pop(context);
                                     ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(S.everythingReplaced)));
                                   },
-                                  child: Text(S.replaceEverything, style: TextStyle(color: Colors.white, fontSize: 10))),
+                                  child: Text(S.replaceEverything, style: const TextStyle(color: Colors.white, fontSize: 10))),
                             ),
                             const SizedBox(width: 8),
                             Expanded(
@@ -1238,18 +1240,20 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
                                   mini: true,
                                   color: AppStyle.gain,
                                   onPressed: () {
-                                    setState(() {
-                                      for (var np in nouveauxProjets) {
-                                        _projets.removeWhere((p) => p.id == np.id);
-                                        _projets.add(np);
-                                      }
-                                    });
-                                    _trierProjets();
-                                    _sauvegarderDonnees();
-                                    Navigator.pop(context);
-                                    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('${nouveauxProjets.length} ${S.projectsAdded}')));
+                                    if (mounted) {
+                                      setState(() {
+                                        for (var np in nouveauxProjets) {
+                                          _projets.removeWhere((p) => p.id == np.id);
+                                          _projets.add(np);
+                                        }
+                                      });
+                                      _trierProjets();
+                                      _sauvegarderDonnees();
+                                      Navigator.pop(context);
+                                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('${nouveauxProjets.length} ${S.projectsAdded}')));
+                                    }
                                   },
-                                  child: Text(S.add, style: TextStyle(color: Colors.white))),
+                                  child: Text(S.add, style: const TextStyle(color: Colors.white))),
                             ),
                           ],
                         ),
@@ -1421,7 +1425,7 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
                       duration: const Duration(milliseconds: 150),
                       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                       decoration: BoxDecoration(
-                        color: isSelected ? primaryColor : (isDark ? Colors.white.withOpacity(0.05) : Colors.grey.withOpacity(0.1)),
+                        color: isSelected ? primaryColor : (isDark ? Colors.white.withValues(alpha: 0.05) : Colors.grey.withValues(alpha: 0.1)),
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(color: isSelected ? primaryColor : (isDark ? Colors.white10 : Colors.black12), width: 1),
                       ),
@@ -1496,7 +1500,7 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
                     setState(() { 
                       cible!.sessions.insertAll(0, pSource.sessions); 
                       pSource.sessions.clear(); 
-                      cible!.invalidate();
+                      cible.invalidate();
                       pSource.invalidate();
                     }); 
                     _sauvegarderDonnees(); 
@@ -1538,7 +1542,7 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
               width: 40, 
               height: 4, 
               decoration: BoxDecoration(
-                color: Colors.grey.withOpacity(0.3), 
+                color: Colors.grey.withValues(alpha: 0.3), 
                 borderRadius: BorderRadius.circular(2)
               )
             ),
@@ -1634,9 +1638,11 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
                         await prefs.setString('pro_banque', bCtrl.text);
                         await prefs.setString('pro_mentions', mCtrl.text);
                         await prefs.setString('pro_taxes', jsonEncode(taxes.map((t) => t.toJson()).toList()));
-                        if (!context.mounted) return;
+                        if (!context.mounted) {
+                          return;
+                        }
                         Navigator.pop(ctx);
-                      }, child: Text(S.save, textAlign: TextAlign.center, style: TextStyle(color: Colors.white))),
+                      }, child: Text(S.save, textAlign: TextAlign.center, style: const TextStyle(color: Colors.white))),
                     ),
                   ],
                 ),
@@ -1768,7 +1774,7 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
                   children: [
                     Container(
                       padding: const EdgeInsets.symmetric(vertical: 12),
-                      child: Container(width: 40, height: 4, decoration: BoxDecoration(color: Colors.grey.withOpacity(0.3), borderRadius: BorderRadius.circular(2))),
+                      child: Container(width: 40, height: 4, decoration: BoxDecoration(color: Colors.grey.withValues(alpha: 0.3), borderRadius: BorderRadius.circular(2))),
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
@@ -1789,7 +1795,9 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
                             await prefs.setInt('palierParDefaut', pt);
                             await prefs.setInt('seuilParDefaut', st);
                             await prefs.setString('devise', Projet.devise);
-                            if (context.mounted) Navigator.pop(context);
+                            if (context.mounted) {
+                              Navigator.pop(context);
+                            }
                           }, child: Text(S.ok, style: TextStyle(color: Colors.white))),
                         ],
                       ),
@@ -1829,19 +1837,21 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
                                     ),
                                   ),
                                   const SizedBox(width: 12),
-                                  Expanded(
-                                    child: DropdownButtonFormField<String>(
-                                      initialValue: AppStyle.language.value,
-                                      decoration: InputDecoration(labelText: S.languageLabel, border: const OutlineInputBorder(), prefixIcon: const Icon(Icons.language_rounded, size: 20)),
-                                      items: const [DropdownMenuItem(value: 'fr', child: Text('Français')), DropdownMenuItem(value: 'en', child: Text('English'))],
-                                      onChanged: (v) {
-                                        if (v != null) {
-                                          AppStyle.saveLanguage(v);
-                                          setS(() {});
-                                        }
-                                      },
-                                    ),
-                                  ),
+                  Expanded(
+                    child: DropdownButtonFormField<String>(
+                      initialValue: AppStyle.language.value,
+                      decoration: InputDecoration(labelText: S.languageLabel, border: const OutlineInputBorder(), prefixIcon: const Icon(Icons.language_rounded, size: 20)),
+                      items: const [DropdownMenuItem(value: 'fr', child: Text('Français')), DropdownMenuItem(value: 'en', child: Text('English'))],
+                      onChanged: (v) {
+                        if (v != null) {
+                          AppStyle.saveLanguage(v);
+                          if (mounted) {
+                            setState(() {});
+                          }
+                        }
+                      },
+                    ),
+                  ),
                                 ],
                               ),
                             ),
@@ -2032,10 +2042,10 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
                       contentPadding: EdgeInsets.zero,
                       leading: IconPop(icon: Icons.folder_copy_rounded, color: primaryColor), 
                       title: Text(p.nom, style: TextStyle(fontWeight: FontWeight.w900, fontSize: 19, color: isDark ? Colors.white : (style == AppVisualStyle.deluxe ? AppStyle.deluxeText : null))), 
-                      subtitle: Text(p.sessions.isEmpty ? S.noSessions : "${S.lastSession} ${p.sessions.first.dateFormatee}", style: TextStyle(color: isDark ? Colors.white70 : (style == AppVisualStyle.deluxe ? AppStyle.deluxeText.withOpacity(0.6) : AppStyle.textLight), fontWeight: FontWeight.w600)), 
+                      subtitle: Text(p.sessions.isEmpty ? S.noSessions : "${S.lastSession} ${p.sessions.first.dateFormatee}", style: TextStyle(color: isDark ? Colors.white70 : (style == AppVisualStyle.deluxe ? AppStyle.deluxeText.withValues(alpha: 0.6) : AppStyle.textLight), fontWeight: FontWeight.w600)), 
                       trailing: Column(mainAxisAlignment: MainAxisAlignment.center, crossAxisAlignment: CrossAxisAlignment.end, children: [
                         Text('${AppStyle.n(p.prixTotalHistorique)} ${Projet.devise}', style: TextStyle(fontWeight: FontWeight.w900, color: Theme.of(context).colorScheme.secondary, fontSize: 18, letterSpacing: -0.8)), 
-                        Text(Session.formaterSansSecondes(p.secondesHistorique), style: TextStyle(fontWeight: FontWeight.w800, color: isDark ? Colors.white54 : (style == AppVisualStyle.deluxe ? AppStyle.deluxeText.withOpacity(0.6) : AppStyle.textLight), fontSize: 13))
+                        Text(Session.formaterSansSecondes(p.secondesHistorique), style: TextStyle(fontWeight: FontWeight.w800, color: isDark ? Colors.white54 : (style == AppVisualStyle.deluxe ? AppStyle.deluxeText.withValues(alpha: 0.6) : AppStyle.textLight), fontSize: 13))
                       ]),
                     ),
                   )));
@@ -2118,8 +2128,8 @@ class _DialogChronoRapideState extends State<DialogChronoRapide> {
   @override Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final style = AppStyle.visualStyle.value;
-    final displayColor = Theme.of(context).colorScheme.tertiary;
     final primaryColor = Theme.of(context).colorScheme.primary;
+    final displayColor = Theme.of(context).colorScheme.tertiary;
 
     if (!_isFinalizing) {
       return AlertDialog(
@@ -2132,7 +2142,7 @@ class _DialogChronoRapideState extends State<DialogChronoRapide> {
           ],
         ),
         actions: [
-          VolumeButton(mini: true, color: AppStyle.textLight, onPressed: () async { await _nettoyerChronoSauvegarde(); if (context.mounted) { Navigator.pop(context); } }, child: Text(S.cancel, style: TextStyle(fontWeight: FontWeight.bold))),
+          VolumeButton(mini: true, color: AppStyle.textLight, onPressed: () async { await _nettoyerChronoSauvegarde(); if (context.mounted) { Navigator.pop(context); } }, child: Text(S.cancel, style: const TextStyle(fontWeight: FontWeight.bold))),
           VolumeButton(mini: true, color: style == AppVisualStyle.deluxe ? AppStyle.deluxeButton : (Theme.of(context).colorScheme.secondary), onPressed: () => setState(() { _isFinalizing = true; _actif = false; }), child: Text(S.finish, style: TextStyle(fontWeight: FontWeight.w900, color: Colors.white)))
         ],
       );
@@ -2173,7 +2183,7 @@ class _DialogChronoRapideState extends State<DialogChronoRapide> {
                   duration: const Duration(milliseconds: 150),
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                   decoration: BoxDecoration(
-                    color: isSelected ? primaryColor : (isDark ? Colors.white.withOpacity(0.05) : Colors.grey.withOpacity(0.1)),
+                    color: isSelected ? primaryColor : (isDark ? Colors.white.withValues(alpha: 0.05) : Colors.grey.withValues(alpha: 0.1)),
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(color: isSelected ? primaryColor : (isDark ? Colors.white10 : Colors.black12), width: 1),
                   ),
@@ -2540,7 +2550,7 @@ class _EcranTimerState extends State<EcranTimer> {
       content: SingleChildScrollView(child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          TextField(controller: tc, onTap: () => tc.selection = TextSelection(baseOffset: 0, extentOffset: tc.text.length), decoration: InputDecoration(labelText: S.sessionTitle, border: OutlineInputBorder())),
+          TextField(controller: tc, onTap: () => tc.selection = TextSelection(baseOffset: 0, extentOffset: tc.text.length), decoration: InputDecoration(labelText: S.sessionTitle, border: const OutlineInputBorder())),
           if (globalTaxes.isNotEmpty) ...[
             const SizedBox(height: 20),
             Center(child: Text(S.taxesToApply, style: TextStyle(fontSize: 10, fontWeight: FontWeight.w900, color: AppStyle.textLight, letterSpacing: 1.2))),
@@ -2567,7 +2577,7 @@ class _EcranTimerState extends State<EcranTimer> {
                       duration: const Duration(milliseconds: 150),
                       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                       decoration: BoxDecoration(
-                        color: isSelected ? primaryColor : (isDark ? Colors.white.withOpacity(0.05) : Colors.grey.withOpacity(0.1)),
+                        color: isSelected ? primaryColor : (isDark ? Colors.white.withValues(alpha: 0.05) : Colors.grey.withValues(alpha: 0.1)),
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(color: isSelected ? primaryColor : (isDark ? Colors.white10 : Colors.black12), width: 1),
                       ),
@@ -2624,7 +2634,7 @@ class _EcranTimerState extends State<EcranTimer> {
   }
   void _ouvrirTransfertSession(Session s) {
     String? projetCibleId = widget.projet.id;
-    showDialog(context: context, builder: (c) => StatefulBuilder(builder: (ctx, setStateD) => AlertDialog(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)), title: Center(child: Text(S.transferTo, style: TextStyle(fontWeight: FontWeight.bold))), content: Column(mainAxisSize: MainAxisSize.min, children: [Center(child: Text(S.transferAllSessionsTo, style: TextStyle(fontSize: 13, color: AppStyle.textLight))), const SizedBox(height: 15), DropdownButtonFormField<String>(value: projetCibleId, isExpanded: true, decoration: const InputDecoration(border: OutlineInputBorder(), isDense: true), items: [...widget.tousLesProjets.map((p) => DropdownMenuItem(value: p.id, child: Text(p.nom, overflow: TextOverflow.ellipsis))), DropdownMenuItem(value: 'new', child: Text(S.newProjectEllipsis))], onChanged: (v) => setStateD(() => projetCibleId = v))]),      actions: [VolumeButton(mini: true, color: AppStyle.textLight, onPressed: () => Navigator.pop(c), child: Text(S.cancel)), VolumeButton(mini: true, color: Theme.of(context).colorScheme.primary, onPressed: () async {
+    showDialog(context: context, builder: (c) => StatefulBuilder(builder: (ctx, setStateD) => AlertDialog(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)), title: Center(child: Text(S.transferTo, style: TextStyle(fontWeight: FontWeight.bold))), content: Column(mainAxisSize: MainAxisSize.min, children: [Center(child: Text(S.transferAllSessionsTo, style: const TextStyle(fontSize: 13, color: AppStyle.textLight))), const SizedBox(height: 15), DropdownButtonFormField<String>(initialValue: projetCibleId, isExpanded: true, decoration: const InputDecoration(border: OutlineInputBorder(), isDense: true), items: [...widget.tousLesProjets.map((p) => DropdownMenuItem(value: p.id, child: Text(p.nom, overflow: TextOverflow.ellipsis))), DropdownMenuItem(value: 'new', child: Text(S.newProjectEllipsis))], onChanged: (v) => setStateD(() => projetCibleId = v))]),      actions: [VolumeButton(mini: true, color: AppStyle.textLight, onPressed: () => Navigator.pop(c), child: Text(S.cancel)), VolumeButton(mini: true, color: Theme.of(context).colorScheme.primary, onPressed: () async {
             if (projetCibleId != null && projetCibleId != widget.projet.id) {
               Projet? cible; if (projetCibleId == 'new') { final nCtrl = TextEditingController(); bool cree = await showDialog(context: context, builder: (c2) => AlertDialog(title: Text(S.newProject), content: TextField(controller: nCtrl, autofocus: true, decoration: InputDecoration(labelText: S.projectName)), actions: [VolumeButton(mini: true, color: AppStyle.textLight, onPressed: () => Navigator.pop(c2, false), child: Text(S.cancel)), VolumeButton(mini: true, color: Theme.of(context).colorScheme.secondary, onPressed: () => Navigator.pop(c2, true), child: Text(S.ok))])) ?? false; if (cree && nCtrl.text.trim().isNotEmpty) { cible = Projet(id: DateTime.now().toString(), nom: nCtrl.text.trim()); widget.tousLesProjets.add(cible); } } 
               else { cible = widget.tousLesProjets.firstWhere((p) => p.id == projetCibleId); }
@@ -2633,7 +2643,7 @@ class _EcranTimerState extends State<EcranTimer> {
                   widget.projet.sessions.remove(s); 
                   widget.projet.invalidate();
                   cible!.sessions.insert(0, s); 
-                  cible!.invalidate();
+                  cible.invalidate();
                 });
                 widget.onSave(); 
                 if (mounted) { Navigator.of(context).pop(); } 
@@ -2653,12 +2663,11 @@ class _EcranTimerState extends State<EcranTimer> {
     
     if (!mounted) return;
     final isDark = Theme.of(context).brightness == Brightness.dark;
-    final style = AppStyle.visualStyle.value;
     final primaryColor = Theme.of(context).colorScheme.primary;
 
     showDialog(context: context, builder: (c) => StatefulBuilder(builder: (ctx, setStateD) => AlertDialog(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)), content: SingleChildScrollView(child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, children: [
         Row(children: [Expanded(child: TextField(controller: tc, onTap: () => tc.selection = TextSelection(baseOffset: 0, extentOffset: tc.text.length), decoration: InputDecoration(labelText: S.rename, border: const OutlineInputBorder()))), const SizedBox(width: 12), Column(mainAxisSize: MainAxisSize.min, children: [Text(S.moveSession, style: const TextStyle(fontSize: 8, color: AppStyle.textLight, fontWeight: FontWeight.w900, letterSpacing: 0.5)), IconButton(icon: Icon(Icons.drive_file_move_rounded, color: primaryColor, size: 24), onPressed: () { Navigator.pop(c); _ouvrirTransfertSession(s); }, padding: EdgeInsets.zero, constraints: const BoxConstraints())])]),
-        const SizedBox(height: 12), Center(child: InkWell(onTap: () async { final nv = await showDatePicker(context: ctx, initialDate: d, firstDate: DateTime(2020), lastDate: DateTime(2030)); if (nv != null) { setStateD(() => d = nv); } }, borderRadius: BorderRadius.circular(12), child: Container(padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 20), decoration: BoxDecoration(border: Border.all(color: AppStyle.textLight.withOpacity(0.2)), borderRadius: BorderRadius.circular(12)), child: Column(children: [Text(S.date, style: TextStyle(fontSize: 10, fontWeight: FontWeight.w900, color: AppStyle.textLight, letterSpacing: 1.2)), const SizedBox(height: 4), Row(mainAxisSize: MainAxisSize.min, children: [Icon(Icons.calendar_month_rounded, color: primaryColor, size: 20), const SizedBox(width: 10), Text('${d.day.toString().padLeft(2, '0')}/${d.month.toString().padLeft(2, '0')}/${d.year}', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w900, color: isDark ? Colors.white : AppStyle.textDark))])])))),
+        const SizedBox(height: 12), Center(child: InkWell(onTap: () async { final nv = await showDatePicker(context: ctx, initialDate: d, firstDate: DateTime(2020), lastDate: DateTime(2030)); if (nv != null) { setStateD(() => d = nv); } }, borderRadius: BorderRadius.circular(12), child: Container(padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 20), decoration: BoxDecoration(border: Border.all(color: AppStyle.textLight.withValues(alpha: 0.2)), borderRadius: BorderRadius.circular(12)), child: Column(children: [Text(S.date, style: TextStyle(fontSize: 10, fontWeight: FontWeight.w900, color: AppStyle.textLight, letterSpacing: 1.2)), const SizedBox(height: 4), Row(mainAxisSize: MainAxisSize.min, children: [Icon(Icons.calendar_month_rounded, color: primaryColor, size: 20), const SizedBox(width: 10), Text('${d.day.toString().padLeft(2, '0')}/${d.month.toString().padLeft(2, '0')}/${d.year}', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w900, color: isDark ? Colors.white : AppStyle.textDark))])])))),
         if (!s.estFrais) Padding(padding: const EdgeInsets.only(top: 10), child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [RouletteMontant(valeur: double.tryParse(hc.text.replaceAll(',', '.')) ?? 0, suffixe: ' h', controller: hc, onChanged: (v) => setStateD(() {}), step: 1, fontSize: 20, width: 60, color: primaryColor), RouletteMontant(valeur: double.tryParse(mc.text.replaceAll(',', '.')) ?? 0, suffixe: ' m', controller: mc, onChanged: (v) => setStateD(() {}), step: 5, fontSize: 20, width: 60, color: primaryColor)])) else const SizedBox(height: 10),
         const SizedBox(height: 12), Center(child: Text(s.estFrais ? S.amountHT : "${S.realTimePrefix}${Session.formaterSansSecondes(s.secondesReelles)}", style: const TextStyle(fontSize: 10, fontWeight: FontWeight.w900, color: AppStyle.textLight, letterSpacing: 1.2))), const SizedBox(height: 4), Center(child: RouletteMontant(valeur: double.tryParse(pc.text.replaceAll(',', '.')) ?? 0, suffixe: ' ${Projet.devise}', controller: pc, onChanged: (v) => setStateD(() {}), color: s.estRemise ? Theme.of(context).colorScheme.tertiary : (Theme.of(context).colorScheme.secondary), width: 90)),
         if (globalTaxes.isNotEmpty) ...[
@@ -2687,7 +2696,7 @@ class _EcranTimerState extends State<EcranTimer> {
                   duration: const Duration(milliseconds: 150),
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                   decoration: BoxDecoration(
-                    color: isSelected ? primaryColor : (isDark ? Colors.white.withOpacity(0.05) : Colors.grey.withOpacity(0.1)),
+                    color: isSelected ? primaryColor : (isDark ? Colors.white.withValues(alpha: 0.05) : Colors.grey.withValues(alpha: 0.1)),
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(color: isSelected ? primaryColor : (isDark ? Colors.white10 : Colors.black12), width: 1),
                   ),
@@ -2720,7 +2729,6 @@ class _EcranTimerState extends State<EcranTimer> {
     DateTime d = DateTime.now();
     bool appliquerPaliers = true;
     final isDark = Theme.of(context).brightness == Brightness.dark;
-    final style = AppStyle.visualStyle.value;
     final primaryColor = Theme.of(context).colorScheme.primary;
 
     showDialog(
@@ -2749,7 +2757,7 @@ class _EcranTimerState extends State<EcranTimer> {
                     borderRadius: BorderRadius.circular(12),
                     child: Container(
                       padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
-                      decoration: BoxDecoration(border: Border.all(color: AppStyle.textLight.withOpacity(0.2)), borderRadius: BorderRadius.circular(12)),
+                      decoration: BoxDecoration(border: Border.all(color: AppStyle.textLight.withValues(alpha: 0.2)), borderRadius: BorderRadius.circular(12)),
                       child: Column(
                         children: [
                           Text(S.date, style: TextStyle(fontSize: 10, fontWeight: FontWeight.w900, color: AppStyle.textLight, letterSpacing: 1.2)),
@@ -2901,8 +2909,6 @@ class _EcranTimerState extends State<EcranTimer> {
   }
 
   void _afficherReglesProjet() {
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    final style = AppStyle.visualStyle.value;
     final primaryColor = Theme.of(context).colorScheme.primary;
     int pt = widget.projet.palierMinutes;
     int st = widget.projet.seuilMinutes;
@@ -3227,7 +3233,7 @@ class _EcranTimerState extends State<EcranTimer> {
                                   borderRadius: BorderRadius.circular(40),
                                   child: Container(
                                     padding: const EdgeInsets.all(12),
-                                    decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle, boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.15), blurRadius: 10, offset: const Offset(0, 4))], border: Border.all(color: const Color(0xFFF59E0B).withOpacity(0.3), width: 1.5)),
+                                    decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle, boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: 0.15), blurRadius: 10, offset: const Offset(0, 4))], border: Border.all(color: const Color(0xFFF59E0B).withValues(alpha: 0.3), width: 1.5)),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.min,
                                       children: [
@@ -3250,8 +3256,11 @@ class _EcranTimerState extends State<EcranTimer> {
                       double prixS = (widget.projet.calculerSecondesFacturees(sec) / 3600) * widget.projet.tauxHoraire;
                       double totalHistorique = 0;
                       for (var s in widget.projet.sessions) {
-                        if (s.estRemise) totalHistorique -= s.prix;
-                        else totalHistorique += (widget.projet.preferTTC ? s.totalAvecTaxes : s.prix);
+                        if (s.estRemise) {
+                          totalHistorique -= s.prix;
+                        } else {
+                          totalHistorique += (widget.projet.preferTTC ? s.totalAvecTaxes : s.prix);
+                        }
                       }
                       
                       return Row(
@@ -3279,9 +3288,9 @@ class _EcranTimerState extends State<EcranTimer> {
                                     padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                     margin: const EdgeInsets.only(bottom: 2),
                                     decoration: BoxDecoration(
-                                      color: widget.projet.preferTTC ? primaryColor.withOpacity(0.1) : Colors.grey.withOpacity(0.1),
+                                      color: widget.projet.preferTTC ? primaryColor.withValues(alpha: 0.1) : Colors.grey.withValues(alpha: 0.1),
                                       borderRadius: BorderRadius.circular(8),
-                                      border: Border.all(color: widget.projet.preferTTC ? primaryColor : Colors.grey.withOpacity(0.4), width: 1.5),
+                                      border: Border.all(color: widget.projet.preferTTC ? primaryColor : Colors.grey.withValues(alpha: 0.4), width: 1.5),
                                     ),
                                     child: Text(widget.projet.preferTTC ? "TTC" : "HT", style: TextStyle(fontSize: 10, fontWeight: FontWeight.w900, color: widget.projet.preferTTC ? primaryColor : Colors.grey)),
                                   ),
@@ -3308,13 +3317,32 @@ class _EcranTimerState extends State<EcranTimer> {
                   background: Container(padding: const EdgeInsets.symmetric(horizontal: 20), alignment: Alignment.centerLeft, decoration: BoxDecoration(color: pColor, borderRadius: BorderRadius.circular(12)), child: const Icon(Icons.drive_file_move_rounded, color: Colors.white)),
                   secondaryBackground: Container(padding: const EdgeInsets.symmetric(horizontal: 20), alignment: Alignment.centerRight, decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(12)), child: const Icon(Icons.delete_sweep_rounded, color: Colors.white)),
                   confirmDismiss: (direction) async {
-                    if (direction == DismissDirection.startToEnd) { _ouvrirTransfertSession(s); return false; }
-                    else {
-                      bool delete = await showDialog(context: context, builder: (c) => AlertDialog(title: Text(S.delete), content: Text(S.deleteSessionConfirm), actions: [VolumeButton(mini: true, color: AppStyle.textLight, onPressed: () => Navigator.pop(c, false), child: Text(S.cancel)), VolumeButton(mini: true, color: Colors.red, onPressed: () => Navigator.pop(c, true), child: Text(S.delete, style: TextStyle(color: Colors.white)))])) ?? false;
-                      if (delete) { setState(() => widget.projet.sessions.remove(s)); widget.onSave(); return true; }
+                    if (direction == DismissDirection.startToEnd) {
+                      _ouvrirTransfertSession(s);
+                      return false;
+                    } else {
+                      bool delete = await showDialog(
+                              context: context,
+                              builder: (c) => AlertDialog(
+                                  title: Text(S.delete),
+                                  content: Text(S.deleteSessionConfirm),
+                                  actions: [
+                                    VolumeButton(mini: true, color: AppStyle.textLight, onPressed: () => Navigator.pop(c, false), child: Text(S.cancel)),
+                                    VolumeButton(
+                                        mini: true,
+                                        color: Colors.red,
+                                        onPressed: () => Navigator.pop(c, true),
+                                        child: Text(S.delete, style: const TextStyle(color: Colors.white)))
+                                  ])) ??
+                          false;
+                      if (delete) {
+                        setState(() => widget.projet.sessions.remove(s));
+                        widget.onSave();
+                        return true;
+                      }
                       return false;
                     }
-                  }, 
+                  },
                   child: VolumeCard(
                     color: s.estRemise ? Theme.of(context).colorScheme.tertiary : (s.estFrais ? (Theme.of(context).colorScheme.secondary) : pColor), 
                     onTap: () => _ouvrirEditionSession(s), 
@@ -3353,10 +3381,6 @@ class _EcranTimerState extends State<EcranTimer> {
   }
 
   void _afficherMenuAjout(BuildContext context) {
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    final style = AppStyle.visualStyle.value;
-    final primaryColor = Theme.of(context).colorScheme.primary;
-
     showModalBottomSheet(context: context, backgroundColor: Colors.transparent, elevation: 0, builder: (c) => Container(padding: const EdgeInsets.all(24), child: SafeArea(child: Column(mainAxisSize: MainAxisSize.min, children: [
                   Row(children: [
                       Expanded(child: VolumeButton(color: Theme.of(context).colorScheme.primary, onPressed: () { Navigator.pop(c); _ajouterMenu(0); }, child: Column(children: [Icon(Icons.timer_rounded, size: 32, color: Colors.white), SizedBox(height: 8), Text(S.manualTime, textAlign: TextAlign.center, style: TextStyle(fontWeight: FontWeight.w900, color: Colors.white, fontSize: 13))]))), const SizedBox(width: 16),
@@ -3376,9 +3400,8 @@ class _DialogRepriseChronoState extends State<DialogRepriseChrono> {
     setState(() { widget.session.secondesReelles = _sec + DateTime.now().difference(_h!).inSeconds; widget.session.secondesFacturees = widget.projet.calculerSecondesFacturees(widget.session.secondesReelles); widget.session.prix = AppStyle.arondir((widget.session.secondesFacturees / 3600) * widget.projet.tauxHoraire); });
   } }); }
   @override void dispose() { _t?.cancel(); FlutterBackgroundService().invoke('stopService'); widget.onSave(); super.dispose(); }
-  @override Widget build(BuildContext context) { 
+  @override Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
-    final style = AppStyle.visualStyle.value;
     final pColor = Theme.of(context).colorScheme.primary;
-    return AlertDialog(title: Center(child: Text(widget.session.titre, style: TextStyle(color: isDark ? Colors.white : AppStyle.textDark))), content: Column(mainAxisSize: MainAxisSize.min, children: [Center(child: Text(Session.formater(widget.session.secondesReelles), style: TextStyle(fontSize: 48, fontWeight: FontWeight.w900, color: isDark ? Colors.white : AppStyle.textDark, letterSpacing: -1.5))), Center(child: Text('${AppStyle.n(widget.session.prix)} ${Projet.devise}', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Theme.of(context).colorScheme.secondary)))]), actions: [Center(child: Row(mainAxisSize: MainAxisSize.min, children: [IconButton(icon: Icon(_a ? Icons.pause_circle_filled_rounded : Icons.play_circle_filled_rounded, size: 48, color: pColor), onPressed: () { setState(() { _a = !_a; if (_a) { _h = DateTime.now(); _sec = widget.session.secondesReelles; FlutterBackgroundService().startService(); } else { FlutterBackgroundService().invoke('stopService'); } }); }), const SizedBox(width: 20), VolumeButton(mini: true, color: Theme.of(context).colorScheme.secondary, onPressed: () { if (context.mounted) { Navigator.pop(context); } }, child: Text(S.finish, style: TextStyle(color: Colors.white)))]))]); }
+    return AlertDialog(title: Center(child: Text(widget.session.titre, style: TextStyle(color: isDark ? Colors.white : AppStyle.textDark))), content: Column(mainAxisSize: MainAxisSize.min, children: [Center(child: Text(Session.formater(widget.session.secondesReelles), style: TextStyle(fontSize: 48, fontWeight: FontWeight.w900, color: isDark ? Colors.white : AppStyle.textDark, letterSpacing: -1.5))), Center(child: Text('${AppStyle.n(widget.session.prix)} ${Projet.devise}', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Theme.of(context).colorScheme.secondary)))]), actions: [Center(child: Row(mainAxisSize: MainAxisSize.min, children: [IconButton(icon: Icon(_a ? Icons.pause_circle_filled_rounded : Icons.play_circle_filled_rounded, size: 48, color: pColor), onPressed: () { setState(() { _a = !_a; if (_a) { _h = DateTime.now(); _sec = widget.session.secondesReelles; FlutterBackgroundService().startService(); } else { FlutterBackgroundService().invoke('stopService'); } }); }), const SizedBox(width: 20), VolumeButton(mini: true, color: Theme.of(context).colorScheme.secondary, onPressed: () { if (context.mounted) { Navigator.pop(context); } }, child: Text(S.finish, style: const TextStyle(color: Colors.white)))]))]); }
 }
