@@ -4,6 +4,8 @@ name: Flutter CI/CD - Build & Release
 on:
   push:
     branches: [ "main", "master" ]
+    tags:
+      - 'v*'
   workflow_dispatch:
 
 jobs:
@@ -86,13 +88,13 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: ${{ steps.locate_apk.outputs.path }}
-          tag_name: latest
-          name: "Latest Rolling Release (Auto-build)"
+          tag_name: ${{ github.ref_type == 'tag' && github.ref_name || 'latest' }}
+          name: ${{ github.ref_type == 'tag' && github.ref_name || 'Latest Rolling Release (Auto-build)' }}
           body: |
-            Build automatique généré le ${{ github.event.head_commit.timestamp }}.
+            ${{ github.ref_type == 'tag' && format('Release officielle {0}', github.ref_name) || format('Build automatique généré le {0}.', github.event.head_commit.timestamp) }}
             Version : ${{ github.sha }}
             Flavor : FOSS
-          prerelease: true
-          allowUpdates: true # Écrase l'ancien APK par le nouveau
+          prerelease: ${{ github.ref_type != 'tag' }}
+          allowUpdates: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

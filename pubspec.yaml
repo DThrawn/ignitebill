@@ -2,7 +2,7 @@ name: ignite_bill
 description: "A new Flutter project."
 publish_to: 'none'
 
-version: 1.1.12+15
+version: 1.2.1+16
 homepage: https://github.com/DThrawn/ignitebill
 repository: https://github.com/DThrawn/ignitebill
 issue_tracker: https://github.com/DThrawn/ignitebill/issues
