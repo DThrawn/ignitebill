@@ -2,6 +2,7 @@ image: "ghcr.io/cirruslabs/flutter:stable"
 
 variables:
   JAVA_VERSION: "21"
+  KOTLIN_VERSION: "2.2.20"
 
 cache:
   key: ${CI_COMMIT_REF_SLUG}
@@ -13,13 +14,14 @@ cache:
 
 before_script:
   - export PATH="$PATH:$HOME/.pub-cache/bin"
-  - flutter doctor
+  - flutter doctor -v
   - flutter pub get
 
 build_foss_release:
   stage: build
   script:
-    - flutter build apk --flavor foss --release || [ -f android/app/build/outputs/apk/foss/release/app-foss-release.apk ]
+    - flutter build apk --flavor foss --release --android-skip-build-dependency-validation || [ -f android/app/build/outputs/apk/foss/release/app-foss-release.apk ]
   artifacts:
     paths:
       - android/app/build/outputs/apk/foss/release/app-foss-release.apk
+    expire_in: 1 week

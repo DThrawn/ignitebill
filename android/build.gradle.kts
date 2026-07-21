@@ -32,6 +32,7 @@ subprojects {
                 jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
                 // Add freeCompilerArgs to handle some metadata issues if needed
                 freeCompilerArgs.add("-Xskip-metadata-version-check")
+                freeCompilerArgs.add("-Xallow-unstable-dependencies")
             }
         }
     }
