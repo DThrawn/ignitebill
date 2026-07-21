@@ -18,7 +18,7 @@ subprojects {
             configure<com.android.build.gradle.BaseExtension> {
                 compileSdkVersion(35)
                 defaultConfig {
-                    targetSdkVersion(35)
+                    targetSdk = 35
                 }
                 compileOptions {
                     sourceCompatibility = JavaVersion.VERSION_17

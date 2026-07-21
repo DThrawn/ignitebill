@@ -58,6 +58,8 @@ jobs:
           ANDROID_USER_HOME: ${{ github.workspace }}/.android
         run: |
           mkdir -p $ANDROID_USER_HOME
+          flutter clean
+          flutter pub get
           flutter build apk --flavor foss --release --verbose
 
       - name: Locate APK
