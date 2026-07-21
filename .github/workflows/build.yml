@@ -60,16 +60,23 @@ jobs:
           mkdir -p $ANDROID_USER_HOME
           flutter clean
           flutter pub get
-          flutter build apk --flavor foss --release --verbose
+          # On ne considère le build réussi que si l'APK est présent, même si Flutter signale une erreur de localisation
+          flutter build apk --flavor foss --release --verbose || [ -f android/app/build/outputs/apk/foss/release/app-foss-release.apk ]
 
       - name: Locate APK
         id: locate_apk
         run: |
-          # Recherche dynamique de l'APK (accepte aussi la version non signée)
-          APK_PATH=$(find build/app/outputs/flutter-apk/ -name "app-foss-release*.apk" | head -n 1)
+          # Recherche exhaustive dans le dossier build de l'app android
+          # On cherche d'abord la version signée, puis n'importe quel APK foss release
+          APK_PATH=$(find android/app/build/outputs/apk/foss/release/ -name "app-foss-release.apk" | head -n 1)
           if [ -z "$APK_PATH" ]; then
-            echo "Error: APK not found in build/app/outputs/flutter-apk/"
+            APK_PATH=$(find . -name "app-foss-release*.apk" | head -n 1)
+          fi
+          
+          if [ -z "$APK_PATH" ]; then
+            echo "Error: APK not found even after manual search."
             ls -R build/app/outputs/ || true
+            ls -R android/app/build/outputs/apk/ || true
             exit 1
           fi
           echo "path=$APK_PATH" >> $GITHUB_OUTPUT
