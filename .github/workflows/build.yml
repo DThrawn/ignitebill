@@ -29,7 +29,7 @@ jobs:
         with:
           channel: 'stable'
           cache: true
-          cache-key: 'flutter-v2' # Forcer le refresh du cache
+          cache-key: 'flutter-v3' # Force total reset
           cache-path: ${{ runner.tool_cache }}/flutter
 
       - name: Install dependencies
