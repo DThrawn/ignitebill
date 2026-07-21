@@ -1,54 +1,17 @@
 name: Flutter CI/CD - Build & Release
 
-# Déclencheurs du workflow
+# Déclenchement à CHAQUE push sur main ou master
 on:
   push:
-    branches: [ "main", "master" ]
-    tags: [ "v*" ] # Déclenche la release sur les tags de version
-  pull_request:
     branches: [ "main", "master" ]
   workflow_dispatch:
 
 jobs:
-  # Job 1 : Qualité du code et tests
-  quality:
-    name: Code Quality & Tests
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up Java 17
-        uses: actions/setup-java@v4
-        with:
-          java-version: '17'
-          distribution: 'temurin'
-          cache: 'gradle'
-
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          channel: 'stable'
-          cache: true
-
-      - name: Install dependencies
-        run: flutter pub get
-
-      - name: Flutter Analyze
-        run: flutter analyze --no-fatal-infos --no-fatal-warnings
-
-      - name: Flutter Test
-        run: flutter test
-
-  # Job 2 : Build de l'APK et Release GitHub
-  # Déclenché uniquement sur les tags pour éviter de créer des releases à chaque push
-  build:
-    name: Build & Release
-    needs: quality
-    if: startsWith(github.ref, 'refs/tags/v')
+  build_and_release:
+    name: Build & Release (Rolling)
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Nécessaire pour créer des releases GitHub
+      contents: write # Requis pour modifier les releases
     
     steps:
       - name: Checkout code
@@ -70,97 +33,50 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      # Étape : Configuration de la signature de l'APK (Optionnelle pour F-Droid / FOSS)
-      - name: Configure Keystore
-        id: keystore_config
-        continue-on-error: true
-        run: |
-          if [ -z "${{ secrets.KEYSTORE_BASE64 }}" ]; then
-            echo "Keystore secret not found. Building unsigned APK (FOSS compliant)."
-            exit 0
-          fi
-          printf '%s' "${{ secrets.KEYSTORE_BASE64 }}" | tr -d '\n ' | base64 --decode > android/ignitech.jks
-          echo "storePassword=${{ secrets.KEYSTORE_PASSWORD }}" > android/key.properties
-          echo "keyPassword=${{ secrets.KEY_PASSWORD }}" >> android/key.properties
-          echo "keyAlias=${{ secrets.KEY_ALIAS }}" >> android/key.properties
-          echo "storeFile=ignitech.jks" >> android/key.properties
+      - name: Flutter Analyze
+        run: flutter analyze
 
-      - name: Build APK Release (FOSS Flavor)
-        run: |
-          flutter build apk --flavor foss --release --verbose 2>&1 | tee flutter_build.log
-          echo "EXIT_CODE=${PIPESTATUS[0]}" >> $GITHUB_ENV
+      - name: Flutter Test
+        run: flutter test
 
-      - name: Check build result
+      - name: Configure Keystore (Optional)
         run: |
-          if [ "$EXIT_CODE" != "0" ]; then
-            echo "Build failed, see logs above"
-            exit 1
+          if [ -n "${{ secrets.KEYSTORE_BASE64 }}" ]; then
+            printf '%s' "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > android/ignitech.jks
+            echo "storePassword=${{ secrets.KEYSTORE_PASSWORD }}" > android/key.properties
+            echo "keyPassword=${{ secrets.KEY_PASSWORD }}" >> android/key.properties
+            echo "keyAlias=${{ secrets.KEY_ALIAS }}" >> android/key.properties
+            echo "storeFile=ignitech.jks" >> android/key.properties
+          else
+            echo "No keystore secret found, building unsigned APK."
           fi
 
-      - name: Debug build output
-        if: always()
+      - name: Build APK Release (FOSS)
+        run: flutter build apk --flavor foss --release --verbose
+
+      - name: Locate APK
+        id: locate_apk
         run: |
-          echo "=== Localisation des APKs générés ==="
-          find build/app/outputs -name "*.apk"
-          echo "=== Contenu de build/app/outputs/flutter-apk/ ==="
-          ls -R build/app/outputs/flutter-apk/ 2>/dev/null || echo "Dossier introuvable"
-
-      - name: Upload build log
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: flutter-build-log
-          path: flutter_build.log
-          retention-days: 3
-
-      - name: Prepare Release Assets
-        id: prepare_assets
-        run: |
-          mkdir -p release_files
-          # Flutter place l'APK du flavor dans flutter-apk/
-          APK_PATH=$(find build/app/outputs/flutter-apk -name "app-foss-release.apk" | head -n 1)
-          
-          if [ -z "$APK_PATH" ] || [ ! -f "$APK_PATH" ]; then
-            echo "APK non trouvé dans flutter-apk, recherche dans les dossiers Gradle..."
-            APK_PATH=$(find build/app/outputs/apk/foss/release -name "*.apk" | head -n 1)
-          fi
-
+          # Recherche dynamique de l'APK (robuste aux changements de dossiers)
+          APK_PATH=$(find . -name "app-foss-release.apk" | head -n 1)
           if [ -z "$APK_PATH" ]; then
-            echo "Erreur : Impossible de localiser l'APK de release."
+            echo "Error: APK not found"
             exit 1
           fi
+          echo "path=$APK_PATH" >> $GITHUB_OUTPUT
+          echo "Found APK at: $APK_PATH"
 
-          echo "APK trouvé à : $APK_PATH"
-          cp "$APK_PATH" release_files/ignitebill-foss-release.apk
-          
-          # Création des archives
-          cd release_files
-          zip ignitebill-foss-release.zip ignitebill-foss-release.apk
-          tar -czf ignitebill-foss-release.tar.gz ignitebill-foss-release.apk
-          cd ..
-          
-          echo "Assets prêts dans le dossier release_files/ :"
-          ls -R release_files/
-
-      # Upload des artefacts pour conservation dans GitHub Actions
-      - name: Upload Build Artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: ignitebill-apks
-          path: release_files/
-
-      # Publication de la Release GitHub (via softprops/action-gh-release@v2)
-      - name: Create GitHub Release
+      - name: Create or Update Release
         uses: softprops/action-gh-release@v2
         with:
-          files: |
-            release_files/ignitebill-foss-release.apk
-            release_files/ignitebill-foss-release.zip
-            release_files/ignitebill-foss-release.tar.gz
-          name: Release ${{ github.ref_name }}
-          tag_name: ${{ github.ref_name }}
-          generate_release_notes: true
-          draft: false
-          prerelease: false
+          files: ${{ steps.locate_apk.outputs.path }}
+          tag_name: latest
+          name: "Latest Rolling Release (Auto-build)"
+          body: |
+            Build automatique généré le ${{ github.event.head_commit.timestamp }}.
+            Version : ${{ github.sha }}
+            Flavor : FOSS
+          prerelease: true
+          allowUpdates: true # Écrase l'ancien APK par le nouveau
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
