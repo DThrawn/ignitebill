@@ -3,6 +3,8 @@ image: "ghcr.io/cirruslabs/flutter:stable"
 variables:
   JAVA_VERSION: "21"
   KOTLIN_VERSION: "2.2.20"
+  ANDROID_USER_HOME: "${CI_PROJECT_DIR}/.android"
+  GRADLE_OPTS: "-Dorg.gradle.daemon=false -Dorg.gradle.jvmargs='-Xmx2048m'"
 
 cache:
   key: ${CI_COMMIT_REF_SLUG}
@@ -14,14 +16,40 @@ cache:
 
 before_script:
   - export PATH="$PATH:$HOME/.pub-cache/bin"
+  - mkdir -p $ANDROID_USER_HOME
+  - |
+    if [ -n "$KEYSTORE_BASE64" ]; then
+      echo "Configuring Keystore for GitLab CI..."
+      echo "$KEYSTORE_BASE64" | base64 -d > android/ignitech.jks
+      echo "storePassword=$KEYSTORE_PASSWORD" > android/key.properties
+      echo "keyPassword=$KEY_PASSWORD" >> android/key.properties
+      echo "keyAlias=$KEY_ALIAS" >> android/key.properties
+      echo "storeFile=ignitech.jks" >> android/key.properties
+    else
+      echo "No keystore variables found, build will be unsigned."
+    fi
   - flutter doctor -v
   - flutter pub get
 
 build_foss_release:
   stage: build
   script:
-    - flutter build apk --flavor foss --release --android-skip-build-dependency-validation || [ -f android/app/build/outputs/apk/foss/release/app-foss-release.apk ]
+    - flutter build apk --flavor foss --release --verbose --android-skip-build-dependency-validation
+    - |
+      echo "Locating generated APK..."
+      APK_PATH=$(find build/app/outputs/flutter-apk/ -name "*.apk" | head -n 1)
+      if [ -z "$APK_PATH" ]; then
+        APK_PATH=$(find android/app/build/outputs/apk/ -name "*.apk" | head -n 1)
+      fi
+      if [ -n "$APK_PATH" ]; then
+        echo "Found APK at: $APK_PATH"
+        cp "$APK_PATH" ignitebill-foss-release.apk
+      else
+        echo "ERROR: APK not produced by build."
+        ls -R build/app/outputs/ || true
+        exit 1
+      fi
   artifacts:
     paths:
-      - android/app/build/outputs/apk/foss/release/app-foss-release.apk
+      - ignitebill-foss-release.apk
     expire_in: 1 week
