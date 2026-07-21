@@ -61,10 +61,11 @@ jobs:
       - name: Locate APK
         id: locate_apk
         run: |
-          # Recherche dynamique de l'APK (robuste aux changements de dossiers)
-          APK_PATH=$(find . -name "app-foss-release.apk" | head -n 1)
+          # Recherche dynamique de l'APK (accepte aussi la version non signée)
+          APK_PATH=$(find build/app/outputs/flutter-apk/ -name "app-foss-release*.apk" | head -n 1)
           if [ -z "$APK_PATH" ]; then
-            echo "Error: APK not found"
+            echo "Error: APK not found in build/app/outputs/flutter-apk/"
+            ls -R build/app/outputs/ || true
             exit 1
           fi
           echo "path=$APK_PATH" >> $GITHUB_OUTPUT
