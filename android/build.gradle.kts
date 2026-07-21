@@ -26,5 +26,13 @@ subprojects {
                 }
             }
         }
+        // Force JVM target 17 for all Kotlin compilation tasks
+        tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
+            compilerOptions {
+                jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
+                // Add freeCompilerArgs to handle some metadata issues if needed
+                freeCompilerArgs.add("-Xskip-metadata-version-check")
+            }
+        }
     }
 }
