@@ -1,0 +1,8 @@
+Ignite Bill est une application complète conçue pour aider les entrepreneurs et les professionnels à gérer leurs factures et à suivre leur temps de travail.
+
+Fonctionnalités clés :
+- Création et gestion de factures professionnelles.
+- Suivi du temps de travail intégré.
+- Exportation au format PDF pour un partage facile.
+- Interface intuitive et moderne.
+- Respect de la vie privée (pas de tracking).
