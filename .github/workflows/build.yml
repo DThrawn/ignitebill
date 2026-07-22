@@ -68,16 +68,20 @@ jobs:
       - name: Locate APK
         id: locate_apk
         run: |
-          # Recherche exhaustive dans le dossier build de l'app android
-          # On cherche d'abord la version signée, puis n'importe quel APK foss release
-          APK_PATH=$(find android/app/build/outputs/apk/foss/release/ -name "app-foss-release.apk" | head -n 1)
+          # On cherche dans l'ordre de préférence :
+          # 1. APK universel (si généré)
+          # 2. APK foss-release standard
+          # 3. N'importe quel APK de la release foss
+          APK_PATH=$(find android/app/build/outputs/apk/foss/release/ -name "*universal*.apk" | head -n 1)
           if [ -z "$APK_PATH" ]; then
-            APK_PATH=$(find . -name "app-foss-release*.apk" | head -n 1)
+            APK_PATH=$(find android/app/build/outputs/apk/foss/release/ -name "app-foss-release.apk" | head -n 1)
+          fi
+          if [ -z "$APK_PATH" ]; then
+            APK_PATH=$(find android/app/build/outputs/apk/foss/release/ -name "app-foss-*-release.apk" | head -n 1)
           fi
           
           if [ -z "$APK_PATH" ]; then
             echo "Error: APK not found even after manual search."
-            ls -R build/app/outputs/ || true
             ls -R android/app/build/outputs/apk/ || true
             exit 1
           fi
