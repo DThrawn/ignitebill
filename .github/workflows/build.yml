@@ -62,36 +62,34 @@ jobs:
           mkdir -p $ANDROID_USER_HOME
           flutter clean
           flutter pub get
-          # On ne considère le build réussi que si l'APK est présent, même si Flutter signale une erreur de localisation
-          flutter build apk --flavor foss --release --verbose || [ -f android/app/build/outputs/apk/foss/release/app-foss-release.apk ]
+          # The build is successful if at least one APK is produced, regardless of Flutter's return code
+          # Flutter tool often exits with 1 when multiple APKs (splits) are produced.
+          flutter build apk --flavor foss --release --verbose || find android/app/build/outputs/apk/foss/release/ -name "*.apk" | grep -q .
 
       - name: Locate APK
         id: locate_apk
         run: |
-          # On cherche dans l'ordre de préférence :
-          # 1. APK universel (si généré)
-          # 2. APK foss-release standard
-          # 3. N'importe quel APK de la release foss
-          APK_PATH=$(find android/app/build/outputs/apk/foss/release/ -name "*universal*.apk" | head -n 1)
-          if [ -z "$APK_PATH" ]; then
-            APK_PATH=$(find android/app/build/outputs/apk/foss/release/ -name "app-foss-release.apk" | head -n 1)
-          fi
-          if [ -z "$APK_PATH" ]; then
-            APK_PATH=$(find android/app/build/outputs/apk/foss/release/ -name "app-foss-*-release.apk" | head -n 1)
-          fi
-          
-          if [ -z "$APK_PATH" ]; then
+          # Collect all generated APKs (Universal + Splits)
+          APKS=$(find android/app/build/outputs/apk/foss/release/ -name "*.apk" -not -name "*-unsigned.apk")
+          if [ -z "$APKS" ]; then
             echo "Error: APK not found even after manual search."
             ls -R android/app/build/outputs/apk/ || true
             exit 1
           fi
-          echo "path=$APK_PATH" >> $GITHUB_OUTPUT
-          echo "Found APK at: $APK_PATH"
+          
+          # Join paths with newlines for action-gh-release
+          {
+            echo "paths<<EOF"
+            echo "$APKS"
+            echo "EOF"
+          } >> $GITHUB_OUTPUT
+          echo "Found APKs:"
+          echo "$APKS"
 
       - name: Create or Update Release
         uses: softprops/action-gh-release@v2
         with:
-          files: ${{ steps.locate_apk.outputs.path }}
+          files: ${{ steps.locate_apk.outputs.paths }}
           tag_name: ${{ github.ref_type == 'tag' && github.ref_name || 'latest' }}
           name: ${{ github.ref_type == 'tag' && github.ref_name || 'Latest Rolling Release (Auto-build)' }}
           body: |
