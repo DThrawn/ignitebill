@@ -34,10 +34,11 @@ before_script:
 build_foss_release:
   stage: build
   script:
-    - flutter build apk --flavor foss --release --verbose --android-skip-build-dependency-validation
+    - flutter build apk --flavor foss --release --android-skip-build-dependency-validation || echo "Flutter tool reported an error, checking if APK was still produced..."
     - |
       echo "Locating generated APK..."
-      APK_PATH=$(find build/app/outputs/flutter-apk/ -name "*.apk" | head -n 1)
+      # Search more broadly in build/ to catch flavored APKs that Flutter tool might miss
+      APK_PATH=$(find build/ -name "*foss-release.apk" | head -n 1)
       if [ -z "$APK_PATH" ]; then
         APK_PATH=$(find android/app/build/outputs/apk/ -name "*.apk" | head -n 1)
       fi
