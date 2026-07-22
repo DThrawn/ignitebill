@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.2] - 2026-07-22
+
+### Added
+- Optimized build configuration for F-Droid (ABI split support for armeabi-v7a, arm64-v8a, x86, x86_64).
+- Added Fastlane metadata (short/full descriptions) for better store presence.
+
 ## [1.2.1] - 2026-07-21
 
 ### Fixed

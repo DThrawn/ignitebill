@@ -1,0 +1,1 @@
+Optimisation de la configuration pour F-Droid et ajout des métadonnées du store.
