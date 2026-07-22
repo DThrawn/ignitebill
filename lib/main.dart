@@ -1124,7 +1124,7 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
           if (mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(S.backupSavedLocally)));
         }
       } else {
-        await Share.shareXFiles([XFile(file.path)], text: S.shareBackupText);
+        await SharePlus.instance.share(ShareParams(files: [XFile(file.path)], text: S.shareBackupText));
       }
     } catch (e) { if (mounted) { ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("${S.errorPrefix}$e"), backgroundColor: Colors.red)); } }
   }
@@ -1157,7 +1157,7 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
           if (mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(S.excelFileSaved)));
         }
       } else {
-        await Share.shareXFiles([XFile(file.path)], text: 'Export CSV.');
+        await SharePlus.instance.share(ShareParams(files: [XFile(file.path)], text: 'Export CSV.'));
       }
     } catch (e) { if (mounted) { ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("${S.errorPrefix}$e"), backgroundColor: Colors.red)); } }
   }
@@ -1190,7 +1190,7 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
           if (mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(S.reportSaved)));
         }
       } else {
-        await Share.shareXFiles([XFile(file.path)], text: 'Rapport.');
+        await SharePlus.instance.share(ShareParams(files: [XFile(file.path)], text: 'Rapport.'));
       }
     } catch (e) { if (mounted) { ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("${S.errorPrefix}$e"), backgroundColor: Colors.red)); } }
   }
@@ -1657,7 +1657,7 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
   Future<void> _ouvrirLienSoutien() async {
     final url = Uri.parse('https://ko-fi.com/dthrawn');
     if (await canLaunchUrl(url)) { await launchUrl(url, mode: LaunchMode.externalApplication); } 
-    else { Share.share(url.toString()); }
+    else { SharePlus.instance.share(ShareParams(text: url.toString())); }
   }
 
   void _sectSkin() {
@@ -2461,7 +2461,7 @@ class _EcranTimerState extends State<EcranTimer> {
           if (mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(S.projectExportedJson)));
         }
       } else {
-        await Share.shareXFiles([XFile(file.path)], text: 'Export JSON');
+        await SharePlus.instance.share(ShareParams(files: [XFile(file.path)], text: 'Export JSON'));
       }
     } catch (e) { if (mounted) { ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("${S.errorPrefix}$e"), backgroundColor: Colors.red)); } } 
   }
@@ -2492,7 +2492,7 @@ class _EcranTimerState extends State<EcranTimer> {
           if (mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(S.projectExportedCsv)));
         }
       } else {
-        await Share.shareXFiles([XFile(file.path)], text: "${S.projectCsvExportText} ${widget.projet.nom}");
+        await SharePlus.instance.share(ShareParams(files: [XFile(file.path)], text: "${S.projectCsvExportText} ${widget.projet.nom}"));
       }
     } catch (e) { if (mounted) { ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("${S.errorPrefix}$e"), backgroundColor: Colors.red)); } } 
   }
@@ -2521,7 +2521,7 @@ class _EcranTimerState extends State<EcranTimer> {
           if (mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(S.projectExportedText)));
         }
       } else {
-        await Share.shareXFiles([XFile(file.path)], text: "${S.projectReportText} ${widget.projet.nom}");
+        await SharePlus.instance.share(ShareParams(files: [XFile(file.path)], text: "${S.projectReportText} ${widget.projet.nom}"));
       }
     } catch (e) { if (mounted) { ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("${S.errorPrefix}$e"), backgroundColor: Colors.red)); } }
   }
