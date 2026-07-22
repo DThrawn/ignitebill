@@ -34,20 +34,35 @@ before_script:
 build_foss_release:
   stage: build
   script:
-    - flutter build apk --flavor foss --release --android-skip-build-dependency-validation || echo "Flutter tool reported an error, checking if APK was still produced..."
     - |
-      echo "Locating generated APK..."
-      # Search more broadly in build/ to catch flavored APKs that Flutter tool might miss
-      APK_PATH=$(find build/ -name "*foss-release.apk" | head -n 1)
-      if [ -z "$APK_PATH" ]; then
-        APK_PATH=$(find android/app/build/outputs/apk/ -name "*.apk" | head -n 1)
+      echo "Checking if APK already exists..."
+      APK_PATH=$(find . -name "*foss-release.apk" | head -n 1)
+      if [ -n "$APK_PATH" ] && [ -f "$APK_PATH" ]; then
+        echo "APK already found at $APK_PATH, skipping build."
+        cp "$APK_PATH" ignitebill-foss-release.apk
+        exit 0
       fi
-      if [ -n "$APK_PATH" ]; then
+    - flutter pub get
+    - cd android
+    - chmod +x gradlew
+    - ./gradlew assembleFossRelease --no-daemon
+    - cd ..
+    - |
+      echo "Locating generated APK in standard Gradle output..."
+      # Target the standard Gradle output path for the 'foss' flavor release
+      APK_PATH=$(find android/app/build/outputs/apk/foss/release/ -name "*.apk" | head -n 1)
+      if [ -z "$APK_PATH" ]; then
+        echo "Not found in standard path, searching everywhere..."
+        APK_PATH=$(find . -name "*foss-release.apk" | head -n 1)
+      fi
+      
+      if [ -n "$APK_PATH" ] && [ -f "$APK_PATH" ]; then
         echo "Found APK at: $APK_PATH"
         cp "$APK_PATH" ignitebill-foss-release.apk
       else
-        echo "ERROR: APK not produced by build."
-        ls -R build/app/outputs/ || true
+        echo "ERROR: APK not produced by Gradle build."
+        echo "Project structure for diagnostics:"
+        find . -maxdepth 5 -not -path '*/.*'
         exit 1
       fi
   artifacts:
