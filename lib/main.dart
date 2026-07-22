@@ -1114,7 +1114,7 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
       setState(() => _dateDerniereSauvegarde = now);
       
       if (saveAsFile) {
-        String? result = await FilePicker.platform.saveFile(
+        String? result = await FilePicker.saveFile(
           fileName: fileName,
           type: FileType.custom,
           allowedExtensions: ['json'],
@@ -1147,7 +1147,7 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
       await file.writeAsString(csv);
       
       if (saveAsFile) {
-        String? result = await FilePicker.platform.saveFile(
+        String? result = await FilePicker.saveFile(
           fileName: fileName,
           type: FileType.custom,
           allowedExtensions: ['csv'],
@@ -1180,7 +1180,7 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
       await file.writeAsString(rapport); 
       
       if (saveAsFile) {
-        String? result = await FilePicker.platform.saveFile(
+        String? result = await FilePicker.saveFile(
           fileName: fileName,
           type: FileType.custom,
           allowedExtensions: ['txt'],
@@ -1196,7 +1196,7 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
   }
   void _importerSauvegarde() async {
     try {
-      FilePickerResult? result = await FilePicker.platform.pickFiles(
+      FilePickerResult? result = await FilePicker.pickFiles(
         type: FileType.custom,
         allowedExtensions: ['json'],
       );
@@ -2451,7 +2451,7 @@ class _EcranTimerState extends State<EcranTimer> {
       await file.writeAsString(jsonStr); 
       
       if (saveAsFile) {
-        String? result = await FilePicker.platform.saveFile(
+        String? result = await FilePicker.saveFile(
           fileName: fileName,
           type: FileType.custom,
           allowedExtensions: ['json'],
@@ -2482,7 +2482,7 @@ class _EcranTimerState extends State<EcranTimer> {
       await file.writeAsString(csv); 
       
       if (saveAsFile) {
-        String? result = await FilePicker.platform.saveFile(
+        String? result = await FilePicker.saveFile(
           fileName: fileName,
           type: FileType.custom,
           allowedExtensions: ['csv'],
@@ -2511,7 +2511,7 @@ class _EcranTimerState extends State<EcranTimer> {
       await file.writeAsString(rapport); 
       
       if (saveAsFile) {
-        String? result = await FilePicker.platform.saveFile(
+        String? result = await FilePicker.saveFile(
           fileName: fileName,
           type: FileType.custom,
           allowedExtensions: ['txt'],

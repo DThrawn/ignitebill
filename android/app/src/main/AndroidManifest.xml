@@ -1,6 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.dthrawn.ignitebill">
+    xmlns:tools="http://schemas.android.com/tools">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -50,7 +49,7 @@
             android:name="id.flutter.flutter_background_service.BackgroundService"
             android:foregroundServiceType="dataSync|specialUse"
             android:exported="false"
-            tools:replace="android:exported">
+            tools:replace="android:exported,android:foregroundServiceType">
             <property
                 android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
                 android:value="Chronométrage de sessions de travail pour facturation en temps réel même lorsque l'application est fermée."/>

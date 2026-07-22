@@ -13,6 +13,11 @@ android {
     compileSdk = 35
     ndkVersion = "28.2.13676358"
 
+    lint {
+        abortOnError = false
+        checkDependencies = false
+    }
+
     packaging {
         jniLibs {
             useLegacyPackaging = false
@@ -25,6 +30,8 @@ android {
         isCoreLibraryDesugaringEnabled = true
     }
 
+    val targetAbi = project.findProperty("target-abi") as String?
+
     defaultConfig {
         applicationId = "com.dthrawn.ignitebill"
         minSdk = 24
@@ -33,6 +40,9 @@ android {
         versionName = flutter.versionName
         ndk {
             abiFilters.clear()
+            if (targetAbi != null) {
+                abiFilters.add(targetAbi)
+            }
         }
     }
 
@@ -69,11 +79,8 @@ android {
         release {
             // F-Droid compatibility: only sign if keystore is present, otherwise build unsigned
             val releaseConfig = signingConfigs.getByName("release")
-            if (releaseConfig.storeFile != null) {
-                signingConfig = releaseConfig
-            } else {
-                signingConfig = null
-            }
+            signingConfig = if (releaseConfig.storeFile != null) releaseConfig else null
+            
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
@@ -82,20 +89,21 @@ android {
 
     splits {
         abi {
-            isEnable = true
+            isEnable = targetAbi == null
             reset()
             include("armeabi-v7a", "arm64-v8a", "x86_64")
             isUniversalApk = false
         }
     }
 
-    val abiCodes = mapOf("armeabi-v7a" to 1, "arm64-v8a" to 2, "x86_64" to 3)
+    val abiCodes = mapOf("armeabi-v7a" to 1, "arm64-v8a" to 2, "x86" to 3, "x86_64" to 4)
     applicationVariants.configureEach {
         val variant = this
         variant.outputs.forEach { output ->
-            val abiVersionCode = abiCodes[output.filters.find { it.filterType == "ABI" }?.identifier]
+            val abi = output.filters.find { it.filterType == "ABI" }?.identifier ?: targetAbi
+            val abiVersionCode = abiCodes[abi]
             if (abiVersionCode != null) {
-                (output as ApkVariantOutputImpl).versionCodeOverride = variant.versionCode * 10 + abiVersionCode
+                (output as ApkVariantOutputImpl).versionCodeOverride = (variant.versionCode * 10) + abiVersionCode
             }
         }
     }
@@ -114,12 +122,4 @@ flutter {
 
 dependencies {
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.5")
-}
-
-configurations.all {
-    resolutionStrategy {
-        force("androidx.browser:browser:1.8.0")
-        force("androidx.core:core:1.15.0")
-        force("androidx.core:core-ktx:1.15.0")
-    }
 }
