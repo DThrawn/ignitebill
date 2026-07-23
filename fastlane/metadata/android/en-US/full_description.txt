@@ -1,8 +1,13 @@
-Ignite Bill est une application complète conçue pour aider les entrepreneurs et les professionnels à gérer leurs factures et à suivre leur temps de travail.
+IgniteBill is an open-source time and fee tracking application designed for freelancers, consultants, and independent professionals.
 
-Fonctionnalités clés :
-- Création et gestion de factures professionnelles.
-- Suivi du temps de travail intégré.
-- Exportation au format PDF pour un partage facile.
-- Interface intuitive et moderne.
-- Respect de la vie privée (pas de tracking).
+Your data stays entirely on your device: no account, no ads, no telemetry, and no forced cloud.
+
+Create clients, missions, or projects, then start a timer to accurately track your work. Associate each session with pricing and visualize the time worked as well as the amount generated. The timer continues to run in the background.
+
+Manage your clients and rates — hourly, vacation, or flat rate — then generate professional PDF reports including your identity, legal notices, and payment terms. Once your professional information is filled in, apply your custom taxes or add fixed fees to your sessions with a single click.
+
+A home screen widget allows you to quickly launch or track a session. You can then print, save, or share your reports using Android tools.
+
+All work features are free. Optional visual themes (skins) are aesthetic customizations intended to support development and do not block any management functionality.
+
+Created in my spare time to meet my own needs, I am sharing it so it can serve other professionals.

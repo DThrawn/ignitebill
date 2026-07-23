@@ -1,0 +1,13 @@
+IgniteBill est une application open source de suivi du temps et des honoraires, conçue pour les freelances, consultants et indépendants.
+
+Vos données restent entièrement sur votre appareil : sans compte, sans publicité, sans télémétrie et sans cloud imposé.
+
+Créez des clients, des missions ou des projets, puis lancez un chronomètre pour suivre précisément votre travail. Associez chaque session à une tarification et visualisez le temps travaillé ainsi que le montant généré. Le compteur continue de fonctionner en arrière-plan.
+
+Gérez vos clients et vos tarifs — taux horaire, vacation ou forfait — puis générez des rapports PDF professionnels incluant votre identité, vos mentions légales et vos modalités de règlement. Une fois vos informations professionnelles renseignées, appliquez vos taxes personnalisées ou ajoutez des frais fixes en un clic à vos sessions.
+
+Un widget d’écran d’accueil permet de lancer ou de suivre une session rapidement. Vous pouvez ensuite imprimer, enregistrer ou partager vos rapports avec les outils Android.
+
+Toutes les fonctions de travail sont gratuites. Les thèmes visuels (skins) optionnels sont des personnalisations esthétiques destinées à soutenir le développement et ne bloquent aucune fonctionnalité de gestion.
+
+Créée sur mon temps libre pour répondre à mes propres besoins, je la partage afin qu’elle puisse servir à d’autres professionnels.
