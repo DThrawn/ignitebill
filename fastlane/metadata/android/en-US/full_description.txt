@@ -4,10 +4,10 @@ Your data stays entirely on your device: no account, no ads, no telemetry, and n
 
 Create clients, missions, or projects, then start a timer to accurately track your work. Associate each session with pricing and visualize the time worked as well as the amount generated. The timer continues to run in the background.
 
-Manage your clients and rates — hourly, vacation, or flat rate — then generate professional PDF reports including your identity, legal notices, and payment terms. Once your professional information is filled in, apply your custom taxes or add fixed fees to your sessions with a single click.
+Manage your clients and rates — hourly, vacation, or flat rate — then generate summary documents including your identity, legal notices, and payment terms. Once your professional information is filled in, apply your custom taxes or add fixed fees to your sessions with a single click.
 
-A home screen widget allows you to quickly launch or track a session. You can then print, save, or share your reports using Android tools.
+A home screen widget allows you to quickly launch or track a session. You can then save or share your reports using Android tools.
 
-All work features are free. Optional visual themes (skins) are aesthetic customizations intended to support development and do not block any management functionality.
+All tracking, client management, and data export (CSV, JSON, Text) features are free and unlimited. Professional PDF export as well as certain visual themes are offered via a PRO license to support development.
 
 Created in my spare time to meet my own needs, I am sharing it so it can serve other professionals.

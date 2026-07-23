@@ -17,9 +17,10 @@ Description: |-
   * Accurate time tracking with background support.
   * Flexible pricing: hourly, vacation, or flat rate.
   * One-click application of custom taxes and fixed fees.
-  * Professional PDF reports with your own branding and legal terms.
+  * Free data exports (CSV, JSON, Text).
+  * Professional PDF reports and advanced themes via PRO license.
   * Home screen widget for quick session control.
-  * 100% Free and Open Source (optional skins to support the dev).
+  * 100% Free and Open Source core features.
 
 RepoType: git
 Repo: https://github.com/DThrawn/ignitebill.git
