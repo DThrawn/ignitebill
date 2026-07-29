@@ -7,7 +7,7 @@ I created this because most billing tools are either too complex or greedy with 
 ## Philosophy & Support
 
 The entire application and its APK are **100% open-source and free**.
-To support the project and thank me for the time spent developing it, you can purchase **custom skins (themes)** within the app. It's the only paid feature, designed for those who want to contribute to the project's existence while customizing their experience.
+To support the project and thank me for the time spent developing it, you can make a **donation** to unlock **custom skins (themes)** within the app. It's the only feature requiring support, designed for those who want to contribute to the project's existence while customizing their experience.
 
 ## What it does
 

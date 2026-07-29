@@ -17,7 +17,7 @@ void main(List<String> args) {
     hash = (31 * hash + input.codeUnitAt(i)) & 0xFFFFFFFF;
   }
   
-  final String key = hash.toRadixString(16).toUpperCase();
+  final String key = hash.toUnsigned(32).toRadixString(16).toUpperCase();
   
   print('-----------------------------------------');
   print('ID Demande : $requestId');

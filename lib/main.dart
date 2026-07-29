@@ -544,6 +544,7 @@ class S {
   static String get pause => 'Pause';
   static String get resumeTimer => _en ? 'Start' : 'Démarrer';
   static String get delete => _en ? 'Delete' : 'Supprimer';
+  static String get clearHistory => _en ? 'Clear history' : 'Effacer l\'historique';
   static String get archive => _en ? 'Archive' : 'Archiver';
   static String get archives => _en ? 'Archives' : 'Archives';
   static String get unarchive => _en ? 'Unarchive' : 'Désarchiver';
@@ -616,8 +617,11 @@ class S {
   static String get dataAndSecurity => _en ? 'Data & Security' : 'Données & Sécurité';
   static String get proVersion => _en ? 'PRO Version (Support)' : 'Version PRO (Soutien)';
   static String get proDescription => _en 
-    ? "Unlock the 'Deluxe' style, the 'Ocean' palette and PDF Export/Print. Support helps keep IgniteBill free and open source!" 
-    : "Débloquez le style 'Deluxe', la palette 'Ocean' et l'Export/Impression PDF. Votre soutien aide à maintenir IgniteBill libre et open source !";
+    ? "Unlock the 'Deluxe' style, the 'Ocean' palette and PDF Export/Print. Support helps keep IgniteBill free and open source! Provide your Request ID and Email with your donation. You will receive your key via email or Ko-fi message within 24 hours." 
+    : "Débloquez le style 'Deluxe', la palette 'Ocean' et l'Export/Impression PDF. Votre soutien aide à maintenir IgniteBill libre et open source ! Précisez votre ID de demande et votre Email lors de votre don. Vous recevrez votre clé par email ou message Ko-fi sous 24h.";
+  static String get proMoveNote => _en
+    ? "Moving to a new phone? Just transfer a JSON backup to keep your PRO version! ✨ You can also send a proof of donation if you need a new key."
+    : "Si vous changez de téléphone, faites suivre une sauvegarde JSON pour garder la version PRO ! ✨ Vous pouvez aussi envoyer une preuve de don si besoin d'une nouvelle clé.";
   static String get enterLicenseKey => _en ? 'Enter License Key' : 'Saisir la clé de licence';
   static String get licenseActive => _en ? 'Pro License Active' : 'Licence PRO active';
   static String get activatePro => _en ? 'Activate PRO' : 'Activer la PRO';
@@ -628,8 +632,12 @@ class S {
   static String get supportAppOnKofi => _en ? 'Support on Ko-fi' : 'Soutenir sur Ko-fi';
   static String get proUnlockedTitle => _en ? 'PRO Unlocked!' : 'PRO Débloqué !';
   static String get proUnlockedMessage => _en 
-    ? 'Thank you for your support! All features are now unlocked.' 
-    : 'Merci pour votre soutien ! Toutes les fonctions sont débloquées.';
+    ? "Thank you so much for your support! 🥳🎉\n\nAll features are now unlocked. If you change phones, just transfer a JSON backup to keep your PRO version! ✨\n\nAny issues? Contact me at ignitech@posteo.net." 
+    : "Merci infiniment pour votre soutien ! 🥳🎉\n\nToutes les fonctionnalités sont maintenant débloquées. Si vous changez de téléphone, faites suivre une sauvegarde JSON pour garder la version PRO ! ✨\n\nUn souci ? Contactez-moi sur ignitech@posteo.net.";
+  static String get proActiveHelpTitle => _en ? 'Your PRO License' : 'Votre Licence PRO';
+  static String get proActiveHelpMessage => _en
+    ? "You are a PRO user! Thank you again for your donation. 🥳\n\n💡 Good to know:\n• To keep PRO on a new phone, just transfer a JSON backup file. ✨\n• Without a backup, send a proof of donation to ignitech@posteo.net with your new Request ID.\n• Your precious support helps IgniteBill stay free and independent."
+    : "Vous êtes un utilisateur PRO ! Merci encore pour votre don. 🥳\n\n💡 À savoir :\n• Pour garder la PRO sur un nouveau téléphone, faites simplement suivre une sauvegarde JSON. ✨\n• Sans sauvegarde, envoyez une preuve de don à ignitech@posteo.net avec votre nouvel ID de demande.\n• Votre soutien précieux aide IgniteBill à rester libre et indépendant.";
   static String get licenseSection => _en ? 'License' : 'Licence';
   static String get exportShare => _en ? 'Export / Share' : 'Exporter / Partager';
   static String get jsonCsvTextReport => _en ? 'JSON, CSV or text Report' : 'JSON, CSV ou Rapport texte';
@@ -649,9 +657,13 @@ class S {
   static String get buyDthrawnACoffee => _en ? 'Buy a coffee for Dthrawn' : 'Offrir un café à Dthrawn';
   static String get noArchivedProjects => _en ? 'No archived projects' : 'Aucun projet archivé';
   static String get supportDthrawn => _en ? 'Support Dthrawn' : 'Soutenir Dthrawn';
-  static String get archiveConfirmTitle => _en ? 'Archive / Delete?' : 'Archiver / Supprimer ?';
+  static String get archiveConfirmTitle => _en ? 'Project Management' : 'Gestion du Projet';
   static String get unarchiveConfirmTitle => _en ? 'Unarchive / Delete?' : 'Désarchiver / Supprimer ?';
-  static String get archiveWarning => _en ? 'Archiving hides the project from the active list. Deletion is irreversible and will erase all sessions.' : 'L\'archivage masque le projet de la liste active. La suppression est irréversible et effacera toutes les sessions.';
+  static String get archiveWarning => _en 
+    ? '• Archive: Hides the project.\n• Clear History: Erases all sessions but keeps settings.\n• Delete: Permanently removes everything.' 
+    : '• Archiver : Masque le projet.\n• Effacer l\'historique : Vide les sessions mais garde les réglages.\n• Supprimer : Efface tout définitivement.';
+  static String get deleteConfirmTitle => _en ? 'Permanent Delete' : 'Suppression Définitive';
+  static String get deleteConfirmWarning => _en ? 'Are you sure? This action is irreversible and will erase all data for this project.' : 'Êtes-vous sûr ? Cette action est irréversible et effacera toutes les données de ce projet.';
   static String get unarchiveWarning => _en ? 'Do you want to restore this project or delete it permanently?' : 'Voulez-vous restaurer ce projet ou le supprimer définitivement ?';
   static String get activeProjects => _en ? 'Active Projects' : 'Projets Actifs';
   static String get seeArchives => _en ? 'See Archives' : 'Voir les Archives';
@@ -720,6 +732,7 @@ class S {
 
 class ProService {
   static final ValueNotifier<bool> isPro = ValueNotifier(false);
+  static const String _salt = "IgniteBill_Secret_2024_Salt";
 
   static Future<void> loadPro() async {
     try {
@@ -743,13 +756,65 @@ class ProService {
     return id;
   }
 
+  static Future<String?> getBackupSignature() async {
+    if (!isPro.value) return null;
+    final id = await getInstallationId();
+    final String input = "PRO_$id$_salt";
+    var hash = 0;
+    for (var i = 0; i < input.length; i++) {
+      hash = (31 * hash + input.codeUnitAt(i)) & 0xFFFFFFFF;
+    }
+    return "sig_${hash.toUnsigned(32).toRadixString(16).toUpperCase()}_$id";
+  }
+
+  static Future<bool> restoreFromSignature(String sig) async {
+    try {
+      if (!sig.startsWith("sig_")) return false;
+      final parts = sig.split("_");
+      if (parts.length != 3) return false;
+      
+      final expectedHash = parts[1];
+      final originalId = parts[2];
+      
+      final String input = "PRO_$originalId$_salt";
+      var hash = 0;
+      for (var i = 0; i < input.length; i++) {
+        hash = (31 * hash + input.codeUnitAt(i)) & 0xFFFFFFFF;
+      }
+      final String calculatedHash = hash.toUnsigned(32).toRadixString(16).toUpperCase();
+      
+      if (calculatedHash == expectedHash) {
+        final p = await SharedPreferences.getInstance();
+        await p.setString('pro_installation_id', originalId); // On "adopte" l'ancien ID pour que la clé reste valide
+        await p.setBool('is_pro_active', true);
+        isPro.value = true;
+        return true;
+      }
+    } catch (e) {
+      debugPrint("ProService: Erreur restauration: $e");
+    }
+    return false;
+  }
+
   static Future<bool> verifyAndActivate(String key) async {
-    // Activation simple pour F-Droid et l'expérience utilisateur
-    if (key.trim().isNotEmpty) {
-      final p = await SharedPreferences.getInstance();
-      await p.setBool('is_pro_active', true);
-      isPro.value = true;
-      return true;
+    try {
+      final id = await getInstallationId();
+      final String input = id + _salt;
+      var hash = 0;
+      for (var i = 0; i < input.length; i++) {
+        hash = (31 * hash + input.codeUnitAt(i)) & 0xFFFFFFFF;
+      }
+      
+      final String expectedKey = hash.toUnsigned(32).toRadixString(16).toUpperCase();
+
+      if (key.trim().toUpperCase() == expectedKey) {
+        final p = await SharedPreferences.getInstance();
+        await p.setBool('is_pro_active', true);
+        isPro.value = true;
+        return true;
+      }
+    } catch (e) {
+      debugPrint("ProService: Erreur activation: $e");
     }
     return false;
   }
@@ -814,6 +879,16 @@ class _ProDialogState extends State<ProDialog> {
               color: Colors.brown,
               onPressed: () => launchUrl(Uri.parse('https://ko-fi.com/dthrawn'), mode: LaunchMode.externalApplication),
               child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [const Icon(Icons.coffee_rounded, size: 18), const SizedBox(width: 8), Text(S.supportAppOnKofi)]),
+            ),
+            const SizedBox(height: 15),
+            Container(
+              padding: const EdgeInsets.all(10),
+              decoration: BoxDecoration(color: Colors.blue.withValues(alpha: 0.1), borderRadius: BorderRadius.circular(8)),
+              child: Row(children: [
+                const Icon(Icons.info_outline_rounded, color: Colors.blue, size: 20),
+                const SizedBox(width: 10),
+                Expanded(child: Text(S.proMoveNote, style: const TextStyle(fontSize: 11, fontStyle: FontStyle.italic, color: Colors.blue))),
+              ]),
             ),
           ],
         ),
@@ -1104,7 +1179,13 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
       final dateStr = '${now.day.toString().padLeft(2, '0')}${now.month.toString().padLeft(2, '0')}${now.year.toString().substring(2)}';
       final fileName = 'ignitebill_$dateStr.json';
       
-      final jsonStr = jsonEncode(_projets.map((p) => p.toJson()).toList()); 
+      final signature = await ProService.getBackupSignature();
+      final Map<String, dynamic> backup = {
+        'version': 2,
+        'data': _projets.map((p) => p.toJson()).toList(),
+        'meta': signature,
+      };
+      final jsonStr = jsonEncode(backup); 
       final directory = await getTemporaryDirectory(); 
       final file = File('${directory.path}/$fileName'); 
       await file.writeAsString(jsonStr); 
@@ -1205,8 +1286,36 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
 
       File file = File(result.files.single.path!);
       String content = await file.readAsString();
-      final decoded = jsonDecode(content.trim()) as List;
-      final nouveauxProjets = decoded.map((p) => Projet.fromJson(p)).toList();
+      final decoded = jsonDecode(content.trim());
+      
+      List<Projet> nouveauxProjets;
+      String? signature;
+      
+      if (decoded is Map && decoded.containsKey('data')) {
+        nouveauxProjets = (decoded['data'] as List).map((p) => Projet.fromJson(p)).toList();
+        signature = decoded['meta'] as String?;
+      } else {
+        nouveauxProjets = (decoded as List).map((p) => Projet.fromJson(p)).toList();
+      }
+
+      if (signature != null) {
+        final restored = await ProService.restoreFromSignature(signature);
+        if (restored && mounted) {
+           Future.delayed(const Duration(milliseconds: 500), () {
+             if (mounted) {
+               showDialog(
+                 context: context, 
+                 builder: (c) => AlertDialog(
+                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                   title: Row(children: [const Icon(Icons.diamond_rounded, color: Colors.green), const SizedBox(width: 10), Text(S.proUnlockedTitle)]),
+                   content: Text(S.proUnlockedMessage),
+                   actions: [TextButton(onPressed: () => Navigator.pop(c), child: Text(S.ok))],
+                 )
+               );
+             }
+           });
+        }
+      }
 
       if (!mounted) return;
 
@@ -1905,7 +2014,21 @@ class _EcranAccueilState extends State<EcranAccueil> with WidgetsBindingObserver
                           leading: IconPop(icon: Icons.diamond_rounded, color: ProService.isPro.value ? Colors.green : Colors.orange),
                           title: Text(S.licenseSection, style: const TextStyle(fontWeight: FontWeight.bold)),
                           subtitle: Text(ProService.isPro.value ? S.licenseActive : S.activatePro),
-                          onTap: () => showDialog(context: context, builder: (c) => const ProDialog()),
+                          onTap: () {
+                            if (ProService.isPro.value) {
+                              showDialog(
+                                context: context,
+                                builder: (c) => AlertDialog(
+                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                                  title: Row(children: [const Icon(Icons.diamond_rounded, color: Colors.green), const SizedBox(width: 10), Text(S.proActiveHelpTitle)]),
+                                  content: Text(S.proActiveHelpMessage),
+                                  actions: [TextButton(onPressed: () => Navigator.pop(c), child: Text(S.ok))],
+                                )
+                              );
+                            } else {
+                              showDialog(context: context, builder: (c) => const ProDialog());
+                            }
+                          },
                         ),
                         ListTile(
                           leading: const IconPop(icon: Icons.coffee_rounded, color: Colors.brown),
@@ -2883,8 +3006,8 @@ class _EcranTimerState extends State<EcranTimer> {
   void _supprimerProjet() async {
     await showDialog<bool>(context: context, builder: (c) => AlertDialog(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-      title: Text(widget.projet.estArchive ? S.unarchiveConfirmTitle : S.archiveConfirmTitle),
-      content: Text(widget.projet.estArchive ? S.unarchiveWarning : S.archiveWarning),
+      title: Center(child: Text(widget.projet.estArchive ? S.unarchiveConfirmTitle : S.archiveConfirmTitle, style: const TextStyle(fontWeight: FontWeight.bold))),
+      content: Text(widget.projet.estArchive ? S.unarchiveWarning : S.archiveWarning, style: const TextStyle(fontSize: 14, height: 1.5)),
       actionsPadding: const EdgeInsets.fromLTRB(16, 8, 16, 20),
       actions: [
         Column(children: [
@@ -2895,14 +3018,38 @@ class _EcranTimerState extends State<EcranTimer> {
             Navigator.pop(context);
           }, child: Text(widget.projet.estArchive ? S.unarchive : S.archive, textAlign: TextAlign.center, style: const TextStyle(color: Colors.white)))),
           const SizedBox(height: 8),
-          SizedBox(width: double.infinity, child: VolumeButton(mini: true, color: AppStyle.textLight, onPressed: () => Navigator.pop(c, false), child: Text(S.cancel, textAlign: TextAlign.center))),
-          const SizedBox(height: 8),
-          SizedBox(width: double.infinity, child: VolumeButton(mini: true, color: Colors.red, onPressed: () {
-            widget.tousLesProjets.remove(widget.projet);
+          SizedBox(width: double.infinity, child: VolumeButton(mini: true, color: Theme.of(context).colorScheme.tertiary, onPressed: () {
+            setState(() { 
+              widget.projet.sessions.clear(); 
+              widget.projet.invalidate();
+            });
             widget.onSave();
             Navigator.pop(c, true);
-            Navigator.pop(context);
-          }, child: Text(S.delete, textAlign: TextAlign.center, style: TextStyle(color: Colors.white)))),
+          }, child: Text(S.clearHistory, textAlign: TextAlign.center, style: const TextStyle(color: Colors.white)))),
+          const SizedBox(height: 8),
+          SizedBox(width: double.infinity, child: VolumeButton(mini: true, color: AppStyle.textLight, onPressed: () => Navigator.pop(c, false), child: Text(S.cancel, textAlign: TextAlign.center))),
+          const SizedBox(height: 8),
+          SizedBox(width: double.infinity, child: VolumeButton(mini: true, color: Colors.red, onPressed: () async {
+            bool confirm = await showDialog(context: context, builder: (c2) => AlertDialog(
+              title: Text(S.deleteConfirmTitle),
+              content: Text(S.deleteConfirmWarning),
+              actions: [
+                TextButton(onPressed: () => Navigator.pop(c2, false), child: Text(S.cancel)),
+                VolumeButton(mini: true, color: Colors.red, onPressed: () => Navigator.pop(c2, true), child: Text(S.delete))
+              ],
+            )) ?? false;
+            
+            if (confirm) {
+              widget.tousLesProjets.remove(widget.projet);
+              widget.onSave();
+              if (c.mounted) {
+                Navigator.pop(c, true);
+              }
+              if (mounted) {
+                Navigator.pop(context);
+              }
+            }
+          }, child: Text(S.delete, textAlign: TextAlign.center, style: const TextStyle(color: Colors.white)))),
         ])
       ]
     ));
