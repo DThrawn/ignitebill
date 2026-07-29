@@ -8,6 +8,6 @@ Gérez vos clients et vos tarifs — taux horaire, vacation ou forfait — puis 
 
 Un widget d’écran d’accueil permet de lancer ou de suivre une session rapidement. Vous pouvez ensuite sauvegarder ou partager vos rapports avec les outils Android.
 
-Toutes les fonctions de suivi, de gestion clients et d'exports de données (CSV, JSON, Texte) sont gratuites et illimitées. L'export PDF professionnel ainsi que certains thèmes visuels sont proposés via une licence PRO pour soutenir le développement.
+Toutes les fonctions de suivi, de gestion clients et d'exports de données (CSV, JSON, Texte) sont gratuites et illimitées. L'export PDF professionnel ainsi que certains thèmes visuels sont débloqués via un don pour soutenir le développement.
 
 Créée sur mon temps libre pour répondre à mes propres besoins, je la partage afin qu’elle puisse servir à d’autres professionnels.

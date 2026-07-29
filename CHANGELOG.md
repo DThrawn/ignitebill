@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.2.3] - 2026-07-29
+
+### Fixed
+- Guarded BuildContext usage after async gaps to prevent potential crashes.
+- Removed Foojay Java toolchain plugin for better compatibility with restricted build environments (F-Droid).
+
+### Changed
+- Transitioned PRO version to a donation-based model for transparency.
+- Updated F-Droid metadata and localization (FR/EN).
+
 ## [1.2.2] - 2026-07-22
 
 ### Added
