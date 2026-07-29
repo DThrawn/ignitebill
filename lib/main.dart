@@ -3042,8 +3042,10 @@ class _EcranTimerState extends State<EcranTimer> {
             if (confirm) {
               widget.tousLesProjets.remove(widget.projet);
               widget.onSave();
-              if (mounted) {
+              if (c.mounted) {
                 Navigator.pop(c, true);
+              }
+              if (mounted) {
                 Navigator.pop(context);
               }
             }
