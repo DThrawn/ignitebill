@@ -18,7 +18,7 @@ Builds:
   - versionName: 1.2.3
     versionCode: 181
     commit: f19725b2e2c3f37677d3fb345e84f592bdb7c0b4
-    output: build/app/outputs/flutter-apk/app-foss-armeabi-v7a-release.apk
+    output: build/app/outputs/flutter-apk/app-foss-release.apk
     srclibs:
       - flutter@stable
     rm:
@@ -26,6 +26,7 @@ Builds:
     prebuild:
       - sed -i 's/jvmToolchain(17)/jvmToolchain(21)/' android/app/build.gradle.kts
       - sed -i 's/JvmTarget.JVM_17/JvmTarget.JVM_21/' android/app/build.gradle.kts
+      - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/' android/app/build.gradle.kts
       - sed -i '/signingConfig.*release/d' android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
@@ -34,13 +35,13 @@ Builds:
       - .pub-cache
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
-      - $$flutter$$/bin/flutter build apk --release --flavor foss --split-per-abi
-        --target-platform="android-arm"
+      - $$flutter$$/bin/flutter build apk --release --flavor foss --target-platform="android-arm"
+      - ls -l build/app/outputs/flutter-apk/app-foss-release.apk
 
   - versionName: 1.2.3
     versionCode: 182
     commit: f19725b2e2c3f37677d3fb345e84f592bdb7c0b4
-    output: build/app/outputs/flutter-apk/app-foss-arm64-v8a-release.apk
+    output: build/app/outputs/flutter-apk/app-foss-release.apk
     srclibs:
       - flutter@stable
     rm:
@@ -48,6 +49,7 @@ Builds:
     prebuild:
       - sed -i 's/jvmToolchain(17)/jvmToolchain(21)/' android/app/build.gradle.kts
       - sed -i 's/JvmTarget.JVM_17/JvmTarget.JVM_21/' android/app/build.gradle.kts
+      - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/' android/app/build.gradle.kts
       - sed -i '/signingConfig.*release/d' android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
@@ -56,13 +58,13 @@ Builds:
       - .pub-cache
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
-      - $$flutter$$/bin/flutter build apk --release --flavor foss --split-per-abi
-        --target-platform="android-arm64"
+      - $$flutter$$/bin/flutter build apk --release --flavor foss --target-platform="android-arm64"
+      - ls -l build/app/outputs/flutter-apk/app-foss-release.apk
 
   - versionName: 1.2.3
     versionCode: 183
     commit: f19725b2e2c3f37677d3fb345e84f592bdb7c0b4
-    output: build/app/outputs/flutter-apk/app-foss-x86_64-release.apk
+    output: build/app/outputs/flutter-apk/app-foss-release.apk
     srclibs:
       - flutter@stable
     rm:
@@ -70,6 +72,7 @@ Builds:
     prebuild:
       - sed -i 's/jvmToolchain(17)/jvmToolchain(21)/' android/app/build.gradle.kts
       - sed -i 's/JvmTarget.JVM_17/JvmTarget.JVM_21/' android/app/build.gradle.kts
+      - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/' android/app/build.gradle.kts
       - sed -i '/signingConfig.*release/d' android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
@@ -78,8 +81,8 @@ Builds:
       - .pub-cache
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
-      - $$flutter$$/bin/flutter build apk --release --flavor foss --split-per-abi
-        --target-platform="android-x64"
+      - $$flutter$$/bin/flutter build apk --release --flavor foss --target-platform="android-x64"
+      - ls -l build/app/outputs/flutter-apk/app-foss-release.apk
 
 AllowedAPKSigningKeys: aa598653de0f759deb0319c0e9564486231bbd1a7f1b04e75f00b6b74dadf75f
 
