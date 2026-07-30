@@ -36,7 +36,6 @@ Builds:
   - versionName: 1.2.3
     versionCode: 181
     commit: v1.2.3
-    subdir: android/app
     srclibs:
       - flutter@stable
     rm:
@@ -62,7 +61,6 @@ Builds:
   - versionName: 1.2.3
     versionCode: 182
     commit: v1.2.3
-    subdir: android/app
     srclibs:
       - flutter@stable
     rm:
@@ -88,7 +86,6 @@ Builds:
   - versionName: 1.2.3
     versionCode: 183
     commit: v1.2.3
-    subdir: android/app
     srclibs:
       - flutter@stable
     rm:
@@ -115,4 +112,4 @@ AutoUpdateMode: Version
 UpdateCheckMode: Tags
 UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: 1.2.3
-CurrentVersionCode: 18
+CurrentVersionCode: 183
