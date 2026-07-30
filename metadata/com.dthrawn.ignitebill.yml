@@ -18,7 +18,7 @@ Builds:
   - versionName: 1.2.3
     versionCode: 181
     commit: f19725b2e2c3f37677d3fb345e84f592bdb7c0b4
-    output: build/app/outputs/flutter-apk/app-foss-release.apk
+    output: android/app/build/outputs/apk/foss/release/*.apk
     srclibs:
       - flutter@stable
     rm:
@@ -36,12 +36,12 @@ Builds:
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter build apk --release --flavor foss --target-platform="android-arm"
-      - ls -l build/app/outputs/flutter-apk/app-foss-release.apk
+      - find . -name "*.apk"
 
   - versionName: 1.2.3
     versionCode: 182
     commit: f19725b2e2c3f37677d3fb345e84f592bdb7c0b4
-    output: build/app/outputs/flutter-apk/app-foss-release.apk
+    output: android/app/build/outputs/apk/foss/release/*.apk
     srclibs:
       - flutter@stable
     rm:
@@ -59,12 +59,12 @@ Builds:
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter build apk --release --flavor foss --target-platform="android-arm64"
-      - ls -l build/app/outputs/flutter-apk/app-foss-release.apk
+      - find . -name "*.apk"
 
   - versionName: 1.2.3
     versionCode: 183
     commit: f19725b2e2c3f37677d3fb345e84f592bdb7c0b4
-    output: build/app/outputs/flutter-apk/app-foss-release.apk
+    output: android/app/build/outputs/apk/foss/release/*.apk
     srclibs:
       - flutter@stable
     rm:
@@ -82,7 +82,7 @@ Builds:
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter build apk --release --flavor foss --target-platform="android-x64"
-      - ls -l build/app/outputs/flutter-apk/app-foss-release.apk
+      - find . -name "*.apk"
 
 AllowedAPKSigningKeys: aa598653de0f759deb0319c0e9564486231bbd1a7f1b04e75f00b6b74dadf75f
 
