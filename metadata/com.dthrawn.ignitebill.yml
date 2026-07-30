@@ -18,15 +18,15 @@ Builds:
   - versionName: 1.2.3
     versionCode: 181
     commit: f19725b2e2c3f37677d3fb345e84f592bdb7c0b4
-    output: android/app/build/outputs/apk/foss/release/*.apk
+    output: build/app/outputs/flutter-apk/app-foss-release.apk
     srclibs:
       - flutter@stable
     rm:
       - ios
     prebuild:
-      - sed -i 's/jvmToolchain(17)/jvmToolchain(21)/' android/app/build.gradle.kts
-      - sed -i 's/JvmTarget.JVM_17/JvmTarget.JVM_21/' android/app/build.gradle.kts
-      - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/' android/app/build.gradle.kts
+      - sed -i -E 's/jvmToolchain\s*\(\s*[0-9]+\s*\)/jvmToolchain(21)/g' android/app/build.gradle.kts
+      - sed -i -E 's/JvmTarget.JVM_[0-9]+/JvmTarget.JVM_21/g' android/app/build.gradle.kts
+      - sed -i -E 's/JavaVersion.VERSION_[0-9]+/JavaVersion.VERSION_21/g' android/app/build.gradle.kts
       - sed -i '/signingConfig.*release/d' android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
@@ -36,20 +36,19 @@ Builds:
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter build apk --release --flavor foss --target-platform="android-arm"
-      - find . -name "*.apk"
 
   - versionName: 1.2.3
     versionCode: 182
     commit: f19725b2e2c3f37677d3fb345e84f592bdb7c0b4
-    output: android/app/build/outputs/apk/foss/release/*.apk
+    output: build/app/outputs/flutter-apk/app-foss-release.apk
     srclibs:
       - flutter@stable
     rm:
       - ios
     prebuild:
-      - sed -i 's/jvmToolchain(17)/jvmToolchain(21)/' android/app/build.gradle.kts
-      - sed -i 's/JvmTarget.JVM_17/JvmTarget.JVM_21/' android/app/build.gradle.kts
-      - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/' android/app/build.gradle.kts
+      - sed -i -E 's/jvmToolchain\s*\(\s*[0-9]+\s*\)/jvmToolchain(21)/g' android/app/build.gradle.kts
+      - sed -i -E 's/JvmTarget.JVM_[0-9]+/JvmTarget.JVM_21/g' android/app/build.gradle.kts
+      - sed -i -E 's/JavaVersion.VERSION_[0-9]+/JavaVersion.VERSION_21/g' android/app/build.gradle.kts
       - sed -i '/signingConfig.*release/d' android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
@@ -59,20 +58,19 @@ Builds:
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter build apk --release --flavor foss --target-platform="android-arm64"
-      - find . -name "*.apk"
 
   - versionName: 1.2.3
     versionCode: 183
     commit: f19725b2e2c3f37677d3fb345e84f592bdb7c0b4
-    output: android/app/build/outputs/apk/foss/release/*.apk
+    output: build/app/outputs/flutter-apk/app-foss-release.apk
     srclibs:
       - flutter@stable
     rm:
       - ios
     prebuild:
-      - sed -i 's/jvmToolchain(17)/jvmToolchain(21)/' android/app/build.gradle.kts
-      - sed -i 's/JvmTarget.JVM_17/JvmTarget.JVM_21/' android/app/build.gradle.kts
-      - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/' android/app/build.gradle.kts
+      - sed -i -E 's/jvmToolchain\s*\(\s*[0-9]+\s*\)/jvmToolchain(21)/g' android/app/build.gradle.kts
+      - sed -i -E 's/JvmTarget.JVM_[0-9]+/JvmTarget.JVM_21/g' android/app/build.gradle.kts
+      - sed -i -E 's/JavaVersion.VERSION_[0-9]+/JavaVersion.VERSION_21/g' android/app/build.gradle.kts
       - sed -i '/signingConfig.*release/d' android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
@@ -82,7 +80,6 @@ Builds:
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter build apk --release --flavor foss --target-platform="android-x64"
-      - find . -name "*.apk"
 
 AllowedAPKSigningKeys: aa598653de0f759deb0319c0e9564486231bbd1a7f1b04e75f00b6b74dadf75f
 
