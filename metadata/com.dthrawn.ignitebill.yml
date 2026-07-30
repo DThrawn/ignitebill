@@ -36,6 +36,7 @@ Builds:
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter build apk --release --flavor foss --target-platform="android-arm"
+    output: build/app/outputs/flutter-apk/*.apk
 
   - versionName: 1.2.3
     versionCode: 182
@@ -58,6 +59,7 @@ Builds:
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter build apk --release --flavor foss --target-platform="android-arm64"
+    output: build/app/outputs/flutter-apk/*.apk
 
   - versionName: 1.2.3
     versionCode: 183
@@ -80,6 +82,7 @@ Builds:
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter build apk --release --flavor foss --target-platform="android-x64"
+    output: build/app/outputs/flutter-apk/*.apk
 
 AllowedAPKSigningKeys: aa598653de0f759deb0319c0e9564486231bbd1a7f1b04e75f00b6b74dadf75f
 
