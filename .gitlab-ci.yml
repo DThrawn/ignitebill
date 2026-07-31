@@ -226,8 +226,8 @@ YAML 1.2:
       for f in config.yml config/*.yml config/*/*.yml; do
           test -f $f || continue
           python3 -c "import yaml; yaml.dump(yaml.load(open('$f'), Loader=yaml.SafeLoader), open('canonical.yml', 'w'))"
-          yq --output-format json canonical.yml > canonical.json
-          yq --output-format json $f > current.json
+          yq . canonical.yml > canonical.json
+          yq . "$f" > current.json
           diff -u canonical.json current.json || {
               printf "\x1b[31mERROR $f is not YAML 1.2 JSON Schema compliant!\x1b[0m\n";
               exit 1;
@@ -368,8 +368,7 @@ fdroid build:
     - |
       if [ -n "$CHANGED" ]; then
         for appid in $CHANGED; do
-          fdroid build --verbose --scan-only $appid || set_error
-          fdroid build --verbose --latest --no-sync $appid || set_error
+          fdroid build --verbose --latest $appid || set_error
         done
       fi
     - exit $EXITVALUE

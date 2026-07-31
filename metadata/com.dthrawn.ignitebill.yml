@@ -16,7 +16,7 @@ Builds:
   - versionName: 1.2.3
     versionCode: 181
     commit: f19725b2e2c3f37677d3fb345e84f592bdb7c0b4
-    output: build/app/outputs/apk/foss/release/app-foss-armeabi-v7a-release.apk
+    output: android/app/build/outputs/apk/foss/release/app-foss-armeabi-v7a-release.apk
     srclibs:
       - flutter@stable
     rm:
@@ -42,7 +42,7 @@ Builds:
   - versionName: 1.2.3
     versionCode: 182
     commit: f19725b2e2c3f37677d3fb345e84f592bdb7c0b4
-    output: build/app/outputs/apk/foss/release/app-foss-arm64-v8a-release.apk
+    output: android/app/build/outputs/apk/foss/release/app-foss-arm64-v8a-release.apk
     srclibs:
       - flutter@stable
     rm:
@@ -68,7 +68,7 @@ Builds:
   - versionName: 1.2.3
     versionCode: 183
     commit: f19725b2e2c3f37677d3fb345e84f592bdb7c0b4
-    output: build/app/outputs/apk/foss/release/app-foss-x86_64-release.apk
+    output: android/app/build/outputs/apk/foss/release/app-foss-x86_64-release.apk
     srclibs:
       - flutter@stable
     rm:
