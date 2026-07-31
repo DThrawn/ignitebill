@@ -1,30 +1,22 @@
 Categories:
-  - Money
-  - Time
+  - Finance Manager
+  - Time Tracker
 License: MIT
-AuthorName: DThrawn
+AuthorName: Dthrawn
 WebSite: https://github.com/DThrawn/ignitebill
 SourceCode: https://github.com/DThrawn/ignitebill
 IssueTracker: https://github.com/DThrawn/ignitebill/issues
-AutoName: IgniteBill
-
-Summary: Finance Manager & Time Tracker
-Description: |-
-  IgniteBill is a minimalist, open-source application designed to help you track your finances and manage your time effectively.
-
-  Features:
-  - Track daily expenses.
-  - Manage time logs for projects.
-  - Simple and intuitive interface.
-  - Open-source and privacy-focused.
 
 RepoType: git
 Repo: https://github.com/DThrawn/ignitebill.git
+Binaries:
+  https://github.com/DThrawn/ignitebill/releases/download/v%v/app-foss-%a-release.apk
 
 Builds:
   - versionName: 1.2.3
     versionCode: 181
     commit: f19725b2e2c3f37677d3fb345e84f592bdb7c0b4
+    output: build/app/outputs/apk/foss/release/app-foss-armeabi-v7a-release.apk
     srclibs:
       - flutter@stable
     rm:
@@ -44,13 +36,13 @@ Builds:
       - .pub-cache
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
-      - $$flutter$$/bin/flutter build apk --release --flavor foss --split-per-abi --target-platform="android-arm"
-    output: build/app/outputs/apk/foss/release/app-foss-armeabi-v7a-release.apk
-    binary: https://github.com/DThrawn/ignitebill/releases/download/v%v/app-foss-armeabi-v7a-release.apk
+      - $$flutter$$/bin/flutter build apk --release --flavor foss --split-per-abi
+        --target-platform="android-arm"
 
   - versionName: 1.2.3
     versionCode: 182
     commit: f19725b2e2c3f37677d3fb345e84f592bdb7c0b4
+    output: build/app/outputs/apk/foss/release/app-foss-arm64-v8a-release.apk
     srclibs:
       - flutter@stable
     rm:
@@ -70,13 +62,13 @@ Builds:
       - .pub-cache
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
-      - $$flutter$$/bin/flutter build apk --release --flavor foss --split-per-abi --target-platform="android-arm64"
-    output: build/app/outputs/apk/foss/release/app-foss-arm64-v8a-release.apk
-    binary: https://github.com/DThrawn/ignitebill/releases/download/v%v/app-foss-arm64-v8a-release.apk
+      - $$flutter$$/bin/flutter build apk --release --flavor foss --split-per-abi
+        --target-platform="android-arm64"
 
   - versionName: 1.2.3
     versionCode: 183
     commit: f19725b2e2c3f37677d3fb345e84f592bdb7c0b4
+    output: build/app/outputs/apk/foss/release/app-foss-x86_64-release.apk
     srclibs:
       - flutter@stable
     rm:
@@ -96,21 +88,13 @@ Builds:
       - .pub-cache
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
-      - $$flutter$$/bin/flutter build apk --release --flavor foss --split-per-abi --target-platform="android-x64"
-    output: build/app/outputs/apk/foss/release/app-foss-x86_64-release.apk
-    binary: https://github.com/DThrawn/ignitebill/releases/download/v%v/app-foss-x86_64-release.apk
+      - $$flutter$$/bin/flutter build apk --release --flavor foss --split-per-abi
+        --target-platform="android-x64"
 
-AllowedAPKSigningKeys:
-  - 'aa598653de0f759deb0319c0e9564486231bbd1a7f1b04e75f00b6b74dadf75f'
-
-Binaries: https://github.com/DThrawn/ignitebill/releases/download/v%v/ignitebill-v%v-foss.apk
+AllowedAPKSigningKeys: aa598653de0f759deb0319c0e9564486231bbd1a7f1b04e75f00b6b74dadf75f
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-VercodeOperation:
-  - '%c * 10 + 1'
-  - '%c * 10 + 2'
-  - '%c * 10 + 3'
 UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: 1.2.3
 CurrentVersionCode: 183

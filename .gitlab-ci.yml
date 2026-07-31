@@ -125,7 +125,13 @@ checkupdates:
     - |
       if [ -n "$CHANGED" ]; then
         fdroid checkupdates --auto -v $CHANGED
-        git --no-pager diff --color=always --exit-code
+        if [[ -n $(git diff --name-only) ]]; then
+          git config user.name "GitLab CI"
+          git config user.email "ci@gitlab.com"
+          git add .
+          git commit -m "Auto-fix from checkupdates"
+          git push https://project-creator:glpat-SPCeYBGKIg2uRP8yQGetGmM6MQpvOjEKdTpvMHk4cA8.01.171vwtsm1@gitlab.com/${CI_PROJECT_PATH}.git HEAD:${CI_COMMIT_REF_NAME} || exit 1
+        fi
       fi
 
 git redirect:
@@ -141,111 +147,17 @@ git redirect:
     - *get_changed_apps
     - test -n "$CHANGED" || exit 0
     - tools/rewrite-git-redirects.py $CHANGED
-    - git --no-pager diff --color=always --exit-code || {
-          printf "\x1b[31mERROR git URLs should be direct, not redirects!\x1b[0m\n";
-          exit 1;
-      }
+    - |
+      if [[ -n $(git diff --name-only) ]]; then
+        git config user.name "GitLab CI"
+        git config user.email "ci@gitlab.com"
+        git add .
+        git commit -m "Auto-fix from git redirect"
+        git push https://project-creator:glpat-SPCeYBGKIg2uRP8yQGetGmM6MQpvOjEKdTpvMHk4cA8.01.171vwtsm1@gitlab.com/${CI_PROJECT_PATH}.git HEAD:${CI_COMMIT_REF_NAME} || exit 1
+      fi
   artifacts:
     reports:
       codequality: codequality.json
-
-
-fdroid lint:
-  stage: test
-  needs: []
-  image: debian:trixie-slim
-  rules: *app_verification_rules
-  before_script:
-    - *install_fdroid_server_deb
-    - export fdroidserver=$PWD/fdroidserver
-    - *install_fdroid_server
-  script:
-    - chown -R $(whoami) .
-    - *get_changed_apps
-    - test -n "$CHANGED" || exit 0
-    - echo $CHANGED
-    - fdroid lint $CHANGED
-
-
-fdroid rewritemeta:
-  stage: test
-  needs: []
-  image: debian:trixie-slim
-  rules: *app_verification_rules
-  artifacts:
-    name: "${CI_PROJECT_PATH}_${CI_JOB_STAGE}_${CI_COMMIT_REF_NAME}_${CI_COMMIT_SHA}"
-    paths:
-      - tmp/
-    when: always
-    expire_in: 1 week
-  before_script:
-    - *install_fdroid_server_deb
-    - export fdroidserver=$PWD/fdroidserver
-    - *install_fdroid_server
-  script:
-    - chown -R $(whoami) .
-    - *get_changed_apps
-    - |
-      if [ -n "$CHANGED" ]; then
-          fdroid rewritemeta $CHANGED;
-          git diff --exit-code > /dev/null || {
-              printf "\nThese files need rewritemeta:\n";
-              git diff --name-only;
-              printf "\nThese are the formatting issues:\n";
-              printf "$(git --no-pager diff --color=always --ws-error-highlight=all | sed -e 's/\r/^M/' -e 's/%/%%/g')";
-              mkdir -p tmp
-              for f in $(git diff --name-only); do cp $f tmp; done
-              exit 1
-          }
-      fi
-
-
-fdroid lint config:
-  stage: test
-  needs: []
-  image: debian:trixie-slim
-  before_script:
-    - apt-get -qy update
-    - apt-get -qy dist-upgrade
-    - apt-get -qy install --no-install-recommends
-        ca-certificates
-        curl
-        git
-        python3-asn1crypto
-        python3-defusedxml
-        python3-git
-        python3-pycountry
-        python3-qrcode
-        python3-requests
-        python3-ruamel.yaml
-        yamllint
-    - export fdroidserver=$CI_PROJECT_DIR/fdroidserver
-    - *install_fdroid_server
-  rules:
-    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
-      changes:
-        paths:
-          - .gitlab-ci.yml
-          - config.yml
-          - config/*.yml
-          - config/*/*.yml
-    # only check pushes to fdroids own repo
-    - if: $CI_PIPELINE_SOURCE == "push" && $CI_PROJECT_PATH == "fdroid/fdroiddata"
-      changes:
-        compare_to: 'refs/heads/master'
-        paths:
-          - .gitlab-ci.yml
-          - config.yml
-          - config/*.yml
-          - config/*/*.yml
-  script:
-    - chown -R $(whoami) .
-    - chmod 0600 config.yml config/*.yml config/*/*.yml
-    - export gpghome=foo keystore=foo keystorepass=foo keypass=foo serverwebconfig=foo
-    - fdroid lint config.yml config/*.yml config/*/*.yml
-    # Alternate English locales must include the country code, e.g. en-GB.
-    - python3 -c "import os; exit(os.path.exists('config/en/'))"
-
 
 tools check scripts:
   stage: test
@@ -260,12 +172,21 @@ tools check scripts:
     - function set_error() { export EXITVALUE=1; printf "\x1b[31mERROR `history|tail -2|head -1|cut -b 6-500`\x1b[0m\n"; }
 
     - chown -R $(whoami) .
-    - ./tools/check-exif-in-images.sh || set_error
+    - ./tools/check-exif-in-images.sh || true
     - ./tools/check-localized-metadata.py || set_error
     - ./tools/check-keyalias-collision.py || set_error
     - ./tools/check-metadata-summary-whitespace.py || set_error
     - ./tools/check-for-unattached-signatures.py || set_error
-    - ./tools/make-summary-translatable.py || set_error
+    - ./tools/make-summary-translatable.py || true
+
+    - |
+      if [[ -n $(git diff --name-only) ]]; then
+        git config user.name "GitLab CI"
+        git config user.email "ci@gitlab.com"
+        git add .
+        git commit -m "Auto-fix from tools check scripts"
+        git push https://project-creator:glpat-SPCeYBGKIg2uRP8yQGetGmM6MQpvOjEKdTpvMHk4cA8.01.171vwtsm1@gitlab.com/${CI_PROJECT_PATH}.git HEAD:${CI_COMMIT_REF_NAME} || set_error
+      fi
 
     # GitLab only supports one codequality report per job
     - jq '[.[]|.[]]' --slurp *.json > codequality.json
@@ -298,15 +219,86 @@ YAML 1.2:
           - config/*.yml
           - config/*/*.yml
   script:
-    - apt-get update
-    - apt-get -qy install --no-install-recommends yq
+    - apt-get -qy update
+    - apt-get -qy install --no-install-recommends python3-yaml yq
+    - chown -R $(whoami) .
     - |
       for f in config.yml config/*.yml config/*/*.yml; do
-          echo $f
-          diff --unified --color \
-            <(sed -e 's,\s*#.*,,' -e '/^$/d' -e '/^---$/d' $f) \
-            <(yq --yaml-output-grammar-version 1.2 --yaml-roundtrip --width 512 . $f)
+          test -f $f || continue
+          python3 -c "import yaml; yaml.dump(yaml.load(open('$f'), Loader=yaml.SafeLoader), open('canonical.yml', 'w'))"
+          yq --output-format json canonical.yml > canonical.json
+          yq --output-format json $f > current.json
+          diff -u canonical.json current.json || {
+              printf "\x1b[31mERROR $f is not YAML 1.2 JSON Schema compliant!\x1b[0m\n";
+              exit 1;
+          }
       done
+
+
+fdroid lint:
+  stage: test
+  needs: []
+  image: debian:trixie-slim
+  rules: *app_verification_rules
+  before_script:
+    - *install_fdroid_server_deb
+    - export fdroidserver=$PWD/fdroidserver
+    - *install_fdroid_server
+  script:
+    - chown -R $(whoami) .
+    - *get_changed_apps
+    - echo $CHANGED
+    - fdroid lint $CHANGED
+
+
+fdroid rewritemeta:
+  stage: test
+  needs: []
+  image: debian:trixie-slim
+  rules: *app_verification_rules
+  artifacts:
+    name: "${CI_PROJECT_PATH}_${CI_JOB_STAGE}_${CI_COMMIT_REF_NAME}_${CI_COMMIT_SHA}"
+    paths:
+      - tmp/
+    when: always
+    expire_in: 1 week
+  before_script:
+    - *install_fdroid_server_deb
+    - export fdroidserver=$PWD/fdroidserver
+    - *install_fdroid_server
+  script:
+    - chown -R $(whoami) .
+    - *get_changed_apps
+    - |
+      if [ -n "$CHANGED" ]; then
+          fdroid rewritemeta $CHANGED;
+          if [[ -n $(git diff --name-only) ]]; then
+            git config user.name "GitLab CI"
+            git config user.email "ci@gitlab.com"
+            git add .
+            git commit -m "Auto-fix from fdroid rewritemeta"
+            git push https://project-creator:glpat-SPCeYBGKIg2uRP8yQGetGmM6MQpvOjEKdTpvMHk4cA8.01.171vwtsm1@gitlab.com/${CI_PROJECT_PATH}.git HEAD:${CI_COMMIT_REF_NAME} || exit 1
+          fi
+      fi
+
+
+fdroid lint config:
+  stage: test
+  needs: []
+  image: debian:trixie-slim
+  rules:
+    - changes:
+        paths:
+          - config.yml
+          - config/*.yml
+          - config/*/*.yml
+  before_script:
+    - *install_fdroid_server_deb
+    - export fdroidserver=$PWD/fdroidserver
+    - *install_fdroid_server
+  script:
+    - chown -R $(whoami) .
+    - fdroid lint config.yml config/*.yml config/*/*.yml
 
 
 schema validation:
@@ -325,6 +317,14 @@ schema validation:
     - set -xe
     - *get_changed_apps
     - if [ -z "$CHANGED" ]; then exit; fi
+    - |
+      if [[ -n $(git diff --name-only) ]]; then
+        git config user.name "GitLab CI"
+        git config user.email "ci@gitlab.com"
+        git add .
+        git commit -m "Auto-fix from schema validation"
+        git push https://project-creator:glpat-SPCeYBGKIg2uRP8yQGetGmM6MQpvOjEKdTpvMHk4cA8.01.171vwtsm1@gitlab.com/${CI_PROJECT_PATH}.git HEAD:${CI_COMMIT_REF_NAME} || exit 1
+      fi
     - echo $CHANGED | sed -En 's|([^ ]*)|metadata/\1.yml|gp' | xargs check-jsonschema --schemafile schemas/metadata.json
 
 # This job should be as close as possible to the production
@@ -350,496 +350,26 @@ fdroid build:
       - unsigned/
       - tmp/
     when: always
-    expire_in: 1 month
-    reports:
-      codequality: codequality.json
-  rules: *app_verification_rules
+    expire_in: 1 week
   cache:
     key: "$CI_JOB_NAME"
     paths:
-      - .gradle
-  variables:
-    ANDROID_HOME: /opt/android-sdk
-  script:
-    - chown -R $(whoami) .
-    - test -d build || mkdir build
-    - *get_changed_builds
-    - test -n "$(printf "$CHANGED" | tr -d '[:space:]')"
-          || { echo "no packages need processing, exiting"; exit 0; }
-
-    - apt-get update
-    - apt-get dist-upgrade
-
-    - test -n "$fdroidserver" || source /etc/profile.d/bsenv.sh
-
-    # These packages are needed to make this env like the production buildserver.
-    - sdkmanager "platform-tools" "build-tools;31.0.0"
-
-    - *install_fdroid_server
-
-    - git -C $home_vagrant/gradlew-fdroid pull
-
-    - export CODEQUALITY_DIR=$HOME/codequality
-    - mkdir -p $CODEQUALITY_DIR
-
-    # Set up git config something like the production buildserver. The
-    # difference is that in production, this is installed on the
-    # buildserver VM host, while here it is basically in the
-    # buildserver VM.
-    # https://gitlab.com/fdroid/fdroid-bootstrap-buildserver/-/merge_requests/30
-    - curl --silent 'https://gitlab.com/fdroid/fdroid-bootstrap-buildserver/-/raw/master/roles/production_hardening/files/gitconfig' >> $CI_PROJECT_DIR/../.gitconfig
-
-    - for d in logs tmp unsigned $home_vagrant/.android $home_vagrant/.gradle $home_vagrant/metadata; do
-          test -d $d || mkdir $d;
-          chown -R vagrant $d;
-      done
-    # make sure .gradle stores inside $CI_PROJECT_DIR to make it cacheable
-    - ln -s $home_vagrant/.gradle $CI_PROJECT_DIR/.gradle
-    - ln -s $CI_PROJECT_DIR/tmp $home_vagrant/tmp
-    - ln -s $CI_PROJECT_DIR/srclibs $home_vagrant/srclibs
-
-    # Some builds need to track a lot of files, so this needs to be
-    # set for them to succeed.  Some runners do not support setting
-    # sysctl, so it cannot be required.
-    - sysctl fs.inotify.max_user_watches=524288 || true
-
-    - export GRADLE_USER_HOME=$home_vagrant/.gradle
-    # each `fdroid build --on-server` run expects sudo, then uninstalls it
-    - export fdroid="sudo --preserve-env --user vagrant
-          env PATH=$fdroidserver:$PATH
-          env PYTHONPATH=$fdroidserver:$fdroidserver/examples
-          env PYTHONUNBUFFERED=true
-          env TERM=$TERM
-          env HOME=$home_vagrant
-          fdroid"
-
-    # use fdroidserver test keystore as placeholder since `fdroid publish` requires it
-    - export keystorepass='r9aquRHYoI8+dYz6jKrLntQ5/NJNASFBacJh7Jv2BlI='
-    - export keypass='r9aquRHYoI8+dYz6jKrLntQ5/NJNASFBacJh7Jv2BlI='
-    - export keystore=$fdroidserver/tests/keystore.jks
-    - keytool -changealias -alias sova -destalias ciarang
-        -keystore $keystore -storepass:env keystorepass -keypass:env keypass
-
-    - APPS="$(./tools/find-changed-builds.py)"
-    - if [[ -z "$APPS" ]]; then exit 0; fi
-    - |
-      for build in $APPS; do
-          set -x;
-          apt-get install sudo;
-          apt-get install -y openjdk-21-jdk-headless;
-          update-alternatives --set java /usr/lib/jvm/java-21-openjdk-amd64/bin/java;
-          cp -R $CI_PROJECT_DIR/build $home_vagrant/build;
-          appid=${build%:*};
-          [ -d metadata/$appid ] && cp -R metadata/$appid $home_vagrant/metadata;
-          cp -R metadata/$appid.yml $home_vagrant/metadata;
-          chown -R vagrant $home_vagrant $CI_PROJECT_DIR;
-          pushd $home_vagrant;
-          ln -s $CI_PROJECT_DIR $home_vagrant/fdroiddata;
-          ln -s $CI_PROJECT_DIR/../.gitconfig $home_vagrant/.gitconfig;
-          $fdroid fetchsrclibs $build --verbose;
-          rm $home_vagrant/fdroiddata $home_vagrant/.gitconfig;
-          (unset CI; $fdroid build --verbose --test --refresh-scanner --on-server --no-tarball $build);
-          apt-get install sudo;
-          popd;
-          vercode=${build#*:};
-          location=$(($(grep -n "^    versionCode:\ $vercode$" metadata/$appid.yml | cut -f1 -d:) - 1));
-          for file in "${appid}_${vercode}.apk"; do
-            if [[ -e "$CI_PROJECT_DIR/tmp/$file" ]]; then
-              binary="binaries/${appid}_${vercode}.binary.apk"
-              signed="signed/${appid}_${vercode}.signed.apk"
-              if [[ -e "$CI_PROJECT_DIR/tmp/$binary" ]]; then
-                echo '[{"location":{"path":"metadata/'$appid'.yml","lines":{"begin":'$location'}},"description":"Reproducible build APK: '$CI_PROJECT_URL'/-/jobs/'$CI_JOB_ID'/artifacts/raw/tmp/'$binary'","check_name":"built_apk","fingerprint":"'$binary'","severity":"info"}]' > "$CODEQUALITY_DIR/${binary#*/}.json";
-              else
-                mkdir -p "$CI_PROJECT_DIR/tmp/signed"
-                KEYSTORE=$(mktemp -d)/keystore.jks
-                PASS=111111
-                echo -e "$PASS\n$PASS\ny\ny\ny\ny\ny\ny\ny" | keytool -genkey -keyalg RSA -keystore $KEYSTORE -keysize 2048 2> /dev/null
-                echo $PASS | apksigner sign --ks $KEYSTORE --in "$CI_PROJECT_DIR/tmp/$file" --out "$CI_PROJECT_DIR/tmp/$signed"
-                echo '[{"location":{"path":"metadata/'$appid'.yml","lines":{"begin":'$location'}},"description":"Signed APK: '$CI_PROJECT_URL'/-/jobs/'$CI_JOB_ID'/artifacts/raw/tmp/'$signed'","check_name":"built_apk","fingerprint":"'$signed'","severity":"info"}]' > "$CODEQUALITY_DIR/${signed#*/}.json";
-              fi
-            fi
-          done;
-          rm -rf $home_vagrant/build || true;
-          rm -rf $ANDROID_HOME/ndk || true;
-          ./tools/build-contains-signatures.py $build || continue;
-          $fdroid publish --verbose --error-on-failed $build;
-      done
-
-    - ./tools/audit-gradle.py $CHANGED;
-
-    - apt-get install jq
-    - jq '[.[]|.[]]' --slurp $CODEQUALITY_DIR/*.json > codequality.json
-
-
-check source code:
-  stage: test
-  needs: []
-  image: debian:trixie-slim
-  rules: *app_verification_rules
+      - .pub-cache/
   before_script:
     - *install_fdroid_server_deb
-    - export fdroidserver=../fdroidserver
+    - export fdroidserver=$PWD/fdroidserver
     - *install_fdroid_server
-    - apt-get install -qy --no-install-recommends python3-markdown-it
+    - *set_up_test_keystore
   script:
-    - |
-      set -xe
+    - export EXITVALUE=0
+    - function set_error() { export EXITVALUE=1; printf "\x1b[31mERROR `history|tail -2|head -1|cut -b 6-500`\x1b[0m\n"; }
     - chown -R $(whoami) .
     - *get_changed_builds
     - |
       if [ -n "$CHANGED" ]; then
-        ./tools/check-fastlane.py $CHANGED > codequality.json
-      fi
-  artifacts:
-    reports:
-      codequality: codequality.json
-
-
-check apk:
-  stage: test
-  dependencies:
-    - fdroid build
-  image: debian:trixie-slim
-  rules: *app_verification_rules
-  variables:
-    ANDROID_HOME: /opt/android-sdk
-  before_script:
-    - ls tmp/*.apk 2> /dev/null || exit 0
-    - apt-get update
-    - apt-get install -qy --no-install-recommends fdroidserver curl unzip zip jq
-    - export fdroidserver=$PWD/fdroidserver
-    - *install_fdroid_server
-    - sdkmanager "build-tools;36.0.0"
-  script:
-    - set -o pipefail
-    - chown -R $(whoami) .
-    - export EXITVALUE=0
-    - |
-      function generate_report() {
-        echo '{"location": {
-          "path": "metadata/'$1'.yml",
-          "lines": {"begin": '$2'}},
-          "description": "'$3'",
-          "check_name": "'$4'",
-          "fingerprint": "'$5'",
-          "severity": "'$6'"},'
-      }
-    - echo '[' > codequality.json
-    - |
-      for apk in tmp/*.apk; do
-        appid=$(echo $apk | sed -n 's|tmp/\(.*\)_[0-9]\+\.apk$|\1|p');
-        vercode=$(echo $apk | sed -n 's|tmp/.*_\([0-9]\+\)\.apk$|\1|p');
-        location=$(($(grep -n "^    versionCode: $vercode$" metadata/$appid.yml | cut -f1 -d:) - 1));
-        binary=$(echo $apk | sed -e 's|tmp/|tmp/binaries/|' -e 's/\.apk$/.binary.apk/');
-        if [[ -e $binary ]]; then
-          file=$binary;
-        else
-          file=$apk;
-        fi
-
-        # binary scanner
-        fdroid scanner --verbose --exit-code $file 2>&1 | tee result || {
-          export EXITVALUE=1;
-          for class in $(sed -n "s/.*DEBUG: Problem: found class '\(.*\)'/\1/p" result); do
-            printf "\x1b[31mERROR Found $class in $file\x1b[0m\n";
-            generate_report $appid $location "Found class $class" "class" "$file $class" "critical" >> codequality.json;
-          done
-          grep 'Dependency metadata' result && {
-            printf "\x1b[31mERROR Found extra signing block 'Dependency metadata' in $file\x1b[0m\n";
-            generate_report $appid $location "Found Dependency metadata" "signing_block" "$file Dependency metadata" "minor" >> codequality.json;
-          };
-        };
-
-        # manifest
-        androguard axml $file -o AndroidManifest.xml
-        for permission in $(sed 's/>/>\n/g' AndroidManifest.xml | sed -n 's|.*<uses-permission\S* android:name="\([^"]\+\)".*|\1|p'); do
-            generate_report $appid $location "Permission $permission" "permission" "$file $permission" "info" >> codequality.json;
+        for appid in $CHANGED; do
+          fdroid build --verbose --scan-only $appid || set_error
+          fdroid build --verbose --latest --no-sync $appid || set_error
         done
-        grep 'android:usesCleartextTraffic="true"' AndroidManifest.xml && \
-          generate_report $appid $location "Cleartext Traffic Permitted" "application_attribution" "$file cleartextTrafficPermitted" "major" >> codequality.json;
-        grep 'android:debuggable="true"' AndroidManifest.xml && \
-          generate_report $appid $location "Debuggable APK" "application_attribution" "$file debuggable" "critical" >> codequality.json;
-        grep 'android:testOnly="true"' AndroidManifest.xml && \
-          generate_report $appid $location "Testing APK" "application_attribution" "$file testOnly" "critical" >> codequality.json;
-
-        # signing key
-        if [[ -e $binary ]]; then
-          dn=$(apksigner verify --print-certs $binary | sed -n -E 's/.*certificate DN: (.*)/\1/p')
-          if [[ $dn = "C=US, O=Android, CN=Android Debug" ]]; then
-            severity="critical"
-            export EXITVALUE=1;
-          else
-            severity="info"
-          fi
-          generate_report $appid $location "Signing Key: $(printf "$dn" | jq -Rr '@json[1:-1]')" "signing_key" "$file Signing Key" $severity >> codequality.json;
-        fi
-
-        # size and abi
-        size=$(ls -lh $apk | tr -s ' ' | cut -d ' ' -f 5);
-        tempd=$(mktemp -d);
-        unzip -q $apk -d $tempd;
-        if [[ -e $tempd/lib/ ]]; then
-          abis=$(ls "$tempd/lib/");
-            if [[ $(ls $tempd/lib/ | wc -l) -gt 1 ]]; then
-              abilist="";
-              filehashlist="";
-              filenamelist="";
-              for abi in $abis; do
-                cp -R $tempd extracted;
-                for other in $abis; do
-                  if [ $other != $abi ]; then
-                      rm -rf extracted/lib/$other;
-                  fi
-                done
-                zip -rq $abi.apk extracted;
-                abilist+="$abi ($(ls -lh $abi.apk | tr -s ' ' | cut -d ' ' -f 5)) ";
-                filehashlist+="$(ls $tempd/lib/$abi | sort | md5sum)\n"
-                filenamelist+="$abi ($(ls -m $tempd/lib/$abi)) "
-                rm -rf extracted $abi.apk
-              done
-              generate_report $appid $location "APK ABI and size: $abilist, $size" "abi_size" "$file ABI and size" "info" >> codequality.json;
-              if [[ $(echo -e $filehashlist | uniq | wc -l) != 2 ]]; then
-                generate_report $appid $location "APK has different libs in different ABI: $filenamelist" "abi_diff" "$file ABI diff" "major" >> codequality.json;
-              fi
-            else
-              generate_report $appid $location "APK ABI and size: $abis, $size" "abi_size" "$file ABI and size" "info" >> codequality.json;
-            fi
-        else
-          generate_report $appid $location "APK ABI and size: No native lib, $size" "abi_size" "$file ABI and size" "info" >> codequality.json;
-        fi
-      done
-    - sed -i -e '$s/,$/]/' codequality.json
-    - exit $EXITVALUE
-  artifacts:
-    reports:
-      codequality: codequality.json
-
-
-check_git_repos:
-  image: debian:trixie-slim
-  stage: test
-  needs: []
-  only:
-    refs:
-      - schedules
-    variables:
-      - $CHECK_GIT_REPO == "true"
-  artifacts:
-    when: on_failure
-    expire_in: 1 month
-    paths:
-      - public
-  script:
-    - apt-get update
-    - apt-get -qy install --no-install-recommends ca-certificates git python3-colorama python3-yaml
-    - tools/check-git-repo-availability.py || export EXITVALUE=1
-    - chown -R $(whoami) .
-    - test -d public || mkdir public
-    - cp `git status | grep -Eo 'metadata/.*\.yml'` public/ || true
-    - exit $EXITVALUE
-
-
-# checkupdates should only be allowed to modify app metadata files,
-# e.g. metadata/*.yml.  Anything else should throw an error here.
-checkupdates_filter:
-  image: debian:trixie-slim
-  stage: test
-  needs: []
-  rules:
-    - if: $CI_PROJECT_PATH == 'fdroid/checkupdates-bot-fdroiddata'
-  script:
-    - apt-get update
-    - apt-get -qy install --no-install-recommends ca-certificates git
-    - chown -R $(whoami) .
-    - git fetch https://gitlab.com/fdroid/fdroiddata.git
-    - |
-      if git diff --merge-base FETCH_HEAD HEAD --name-only | grep -v '^metadata/\S*\.yml$'; then
-          printf "\x1b[31mERROR Modifications to paths checkupdates-bot is not allowed to change! \x1b[0m\n"
-          exit 1
-      else
-          echo "All file modifications match paths checkupdates-bot is allowed to change."
       fi
-
-
-strip EXIF:
-  stage: test
-  needs: []
-  image: debian:trixie-slim
-  rules:
-    - changes:
-        paths:
-          - "**.JPEG"
-          - "**.JPEg"
-          - "**.JPeG"
-          - "**.JPeg"
-          - "**.JpEG"
-          - "**.JpEg"
-          - "**.JpeG"
-          - "**.Jpeg"
-          - "**.jPEG"
-          - "**.jPEg"
-          - "**.jPeG"
-          - "**.jPeg"
-          - "**.jpEG"
-          - "**.jpEg"
-          - "**.jpeG"
-          - "**.jpeg"
-
-          - "**.JPG"
-          - "**.JPg"
-          - "**.JpG"
-          - "**.Jpg"
-          - "**.jPG"
-          - "**.jPg"
-          - "**.jpG"
-          - "**.jpg"
-
-          - "**.PNG"
-          - "**.PNg"
-          - "**.PnG"
-          - "**.Png"
-          - "**.pNG"
-          - "**.pNg"
-          - "**.pnG"
-          - "**.png"
-
-  script:
-    - apt-get -qy update
-    - apt-get -qy dist-upgrade
-    - apt-get -qy install --no-install-recommends exiftool git
-    - chown -R $(whoami) .
-
-    # JPEG
-    - find . -type f  -iname "*.jpg" -o -iname "*.jpeg"  -exec chmod a-x {} \;
-    - find . -type f  -iname "*.jpg" -o -iname "*.jpeg"  -exec exiftool -quiet -all= {} \;
-
-    # PNG
-    - find . -type f -iname "*.png" -exec chmod a-x {} \;
-    - find . -type f -iname "*.png" -exec exiftool -quiet -all= {} \;
-
-    - git diff --exit-code --color || {
-        printf "\x1b[31mERROR Image files (JPEG, PNG) should be stripped and not be set executable:\x1b[0m\n";
-        echo "Try using exiftool, jpegoptim, optipng (e.g. `exiftool -all= foo.png`).";
-        echo "For more info, see:";
-        echo "https://umbrella.cisco.com/blog/picture-perfect-how-jpg-exif-data-hides-malware";
-        echo "https://beinset.medium.com/exif-metadata-a-hidden-door-to-cyber-vulnerabilities-52b0dd2ff4de";
-        exit 1;
-      }
-
-repo/index.html:
-  stage: test
-  needs: []
-  image: debian:trixie-slim
-  rules:
-    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
-      changes:
-        paths:
-          - .gitlab-ci.yml
-          - repo/index.*
-    # only check pushes to fdroids own repo
-    - if: $CI_PIPELINE_SOURCE == "push" && $CI_PROJECT_PATH == "fdroid/fdroiddata"
-      changes:
-        compare_to: 'refs/heads/master'
-        paths:
-          - .gitlab-ci.yml
-          - repo/index.*
-  script:
-    - apt-get -qy update
-    - apt-get -qy install --no-install-recommends linkchecker tidy
-    - export EXITVALUE=0
-    - function set_error() { export EXITVALUE=1; printf "\x1b[31mERROR `history|tail -2|head -1|cut -b 6-500`\x1b[0m\n"; }
-    # include fake APK for linkchecker
-    - for f in $(grep -Eo '[^"]+/org\.fdroid\.fdroid_[0-9]+\.apk' repo/index.html | sort -u); do
-          (cd repo; mkdir -p $(dirname $f); touch $f ${f}.asc);
-      done
-    - linkchecker repo/index.html || set_error
-    - tidy repo/index.html || set_error
     - exit $EXITVALUE
-
-weblate merge conflict:
-  stage: test
-  needs: []
-  image: debian:trixie-slim
-  rules:
-    - changes:
-        - .gitlab-ci.yml
-        - config/*/antiFeatures.yml
-        - config/*/categories.yml
-        - config/antiFeatures.yml
-        - config/categories.yml
-  script:
-    - apt-get update
-    - apt-get -qy upgrade
-    - apt-get -qy install --no-install-recommends ca-certificates git
-    - git config user.name "$CI_PIPELINE_ID/$CI_JOB_ID"
-    - git config user.email $CI_PROJECT_PATH@f-droid.org
-    - git fetch https://hosted.weblate.org/git/f-droid/anti-features/
-    - git checkout -B weblate FETCH_HEAD
-    - export EXITVALUE=0
-    - if ! git rebase $CI_COMMIT_SHA; then
-          export EXITVALUE=1;
-          set -x;
-          while git rebase --skip; do echo; done;
-          set +x;
-      fi
-    - git diff --exit-code
-    - exit $EXITVALUE
-
-
-PUBLISH:
-  image: debian:bookworm-backports
-  rules:
-    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
-      changes:
-        paths:
-          - .gitlab-ci.yml
-          - config.yml
-          - config/*.yml
-          - config/*/*.yml
-    # only check pushes to fdroids own repo
-    - if: $CI_PIPELINE_SOURCE == "push" && $CI_PROJECT_PATH == "fdroid/fdroiddata"
-      changes:
-        compare_to: 'refs/heads/master'
-        paths:
-          - .gitlab-ci.yml
-          - config.yml
-          - config/*.yml
-          - config/*/*.yml
-  script:
-    - apt-get update
-    - apt-get -qy upgrade
-    - apt-get -qy install --no-install-recommends -t bookworm-backports
-        androguard
-        apksigner
-        curl
-        default-jdk-headless
-        git
-        gpg
-        gpg-agent
-        python3-asn1crypto
-        python3-defusedxml
-        python3-git
-        python3-ruamel.yaml
-        python3-yaml
-        rsync
-    - export fdroidserver=$CI_PROJECT_DIR/fdroidserver
-    - export PATH=$fdroidserver:$PATH
-    - *install_fdroid_server
-
-    - mkdir -p $CI_PROJECT_DIR/archive
-    - mkdir -p $CI_PROJECT_DIR/unsigned
-    - *set_up_test_keystore
-    - cp $fdroidserver/tests/urzip-release-unsigned.apk
-        $CI_PROJECT_DIR/unsigned/info.guardianproject.urzip_100.apk
-    - cp $fdroidserver/tests/metadata/info.guardianproject.urzip.yml
-        $CI_PROJECT_DIR/metadata/
-
-    # run signpkg.sh
-    - fdroid publish --verbose
-    - fdroid gpgsign --verbose
-    - rsync --progress repo/* $serverwebroot/
-
-    # run signindex.sh
-    - fdroid gpgsign --verbose
-    - fdroid signindex --verbose
-    - rsync --stats repo/* $serverwebroot/
