@@ -1,4 +1,4 @@
-- [ ] Canonicalize `metadata/com.dthrawn.ignitebill.yml` formatting
-- [ ] Add JVM toolchain override to `metadata/com.dthrawn.ignitebill.yml` prebuild section
-- [ ] Push changes to GitLab `f-droid-clean-sync` branch
-- [ ] Verify pipeline execution on GitLab
+- [x] Canonicalize `metadata/com.dthrawn.ignitebill.yml` formatting
+- [x] Add JVM toolchain override to `metadata/com.dthrawn.ignitebill.yml` prebuild section
+- [x] Push changes to GitLab `f-droid-clean-sync` branch
+- [/] Verify pipeline execution on GitLab

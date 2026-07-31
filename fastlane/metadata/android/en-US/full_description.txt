@@ -1,0 +1,7 @@
+IgniteBill is a minimalist, open-source application designed to help you track your finances and manage your time effectively.
+
+Features:
+- Track daily expenses.
+- Manage time logs for projects.
+- Simple and intuitive interface.
+- Open-source and privacy-focused.
