@@ -1,0 +1,35 @@
+Ads:
+  description: Diese App enthält Werbung
+  icon: ic_antifeature_ads.xml
+  name: Werbung
+DisabledAlgorithm:
+  description: Diese App hat eine schwache Sicherheitssignatur
+  icon: ic_antifeature_disabledalgorithm.xml
+  name: Mit einem unsicheren Algorithmus signiert
+KnownVuln:
+  description: Diese App enthält eine bekannte Sicherheitslücke
+  icon: ic_antifeature_knownvuln.xml
+  name: Bekannte Sicherheitslücke
+NoSourceSince:
+  icon: ic_antifeature_nosourcesince.xml
+  name: Der Quellcode ist nicht mehr erhältlich, keine Aktualisierungen möglich.
+NonFreeAdd:
+  description: Diese App bewirbt nicht-quelloffene Erweiterungen
+  icon: ic_antifeature_nonfreeadd.xml
+  name: Nicht-quelloffene Erweiterungen
+NonFreeAssets:
+  description: Diese App enthält nicht-quelloffene Bestandteile
+  icon: ic_antifeature_nonfreeassets.xml
+  name: Nicht-quelloffene Bestandteile
+NonFreeDep:
+  description: Diese App ist abhängig von anderen nicht-quelloffenen Apps
+  icon: ic_antifeature_nonfreedep.xml
+  name: Nicht-quelloffene Abhängigkeiten
+NonFreeNet:
+  description: Diese App bewirbt nicht-quelloffene Netzwerkdienste
+  icon: ic_antifeature_nonfreenet.xml
+  name: Nicht-quelloffene Netzwerkdienste
+Tracking:
+  description: Diese App verfolgt und versendet Ihre Aktivitäten
+  icon: ic_antifeature_tracking.xml
+  name: Tracking

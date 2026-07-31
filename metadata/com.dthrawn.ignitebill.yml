@@ -9,7 +9,7 @@ IssueTracker: https://github.com/DThrawn/ignitebill/issues
 
 RepoType: git
 Repo: https://github.com/DThrawn/ignitebill.git
-Binaries:
+Binaries: 
   https://github.com/DThrawn/ignitebill/releases/download/v%v/app-foss-%a-release.apk
 
 Builds:

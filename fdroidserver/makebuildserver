@@ -1,0 +1,325 @@
+#!/usr/bin/env python3
+
+import hashlib
+import json
+import logging
+import os
+import re
+import shutil
+import stat
+import subprocess
+import sys
+from optparse import OptionParser
+
+import vagrant
+import yaml
+
+import fdroidserver.tail
+import fdroidserver.vmtools
+
+parser = OptionParser()
+parser.add_option('-v', '--verbose', action="count", dest='verbosity', default=1,
+                  help="Spew out even more information than normal")
+parser.add_option('-q', action='store_const', const=0, dest='verbosity')
+parser.add_option("-c", "--clean", action="store_true", default=False,
+                  help="Build from scratch, rather than attempting to update the existing server")
+parser.add_option('--skip-box-verification', action="store_true", default=False,
+                  help="""Skip verifying the downloaded base box.""")
+parser.add_option('--keep-box-file', action="store_true", default=False,
+                  help="""Box file will not be deleted after adding it to box storage"""
+                       """ (KVM-only).""")
+options, args = parser.parse_args()
+
+
+logformat = '%(levelname)s: %(message)s'
+loglevel = logging.DEBUG
+if options.verbosity == 1:
+    loglevel = logging.INFO
+elif options.verbosity <= 0:
+    loglevel = logging.WARNING
+logging.basicConfig(format=logformat, level=loglevel)
+
+tail = None
+
+BASEBOX_DEFAULT = 'debian/trixie64'
+BASEBOX_VERSION_DEFAULT = "13.20260519.1"
+BASEBOX_CHECKSUMS = {
+    "13.20260519.1": {
+        "libvirt": {
+            "box.img": "57f9d4139f5d2b1abb683da5e32b585933ed8a4115c6538289dc665765801b07",
+            "metadata.json": "20dc0268a79410dbf01c7e544ba5138f6f695a298b53c56c87a25f68c5031173",
+            "Vagrantfile": "f9c6fcbb47a4d0d33eb066859c8e87efd642287a638bd7da69a9e7a6f25fec47",
+        },
+    },
+}
+
+configfile = 'buildserver/Vagrantfile.yaml'
+if not os.path.exists(configfile):
+    logging.warning('%s does not exist, copying template file.' % configfile)
+    shutil.copy('examples/Vagrantfile.yaml', configfile)
+with open(configfile) as fp:
+    config = yaml.safe_load(fp)
+    if not isinstance(config, dict):
+        logging.info("config is empty or not a dict, using default.")
+        config = {}
+with open('buildserver/Vagrantfile') as fp:
+    m = re.search(r"""\.vm\.box\s*=\s*["'](.*)["']""", fp.read())
+    if not m:
+        logging.error('Cannot find box name in buildserver/Vagrantfile!')
+        sys.exit(1)
+    config['basebox'] = m.group(1)
+config['basebox_version'] = BASEBOX_VERSION_DEFAULT
+config['cachedir'] = os.path.join(os.getenv('HOME'), '.cache', 'fdroidserver')
+
+show_config_deprecation = False
+if os.path.exists('makebuildserver.config.py'):
+    show_config_deprecation = True
+    logging.error('makebuildserver.config.py exists!')
+elif os.path.exists('makebs.config.py'):
+    show_config_deprecation = True
+    # this is the old name for the config file
+    logging.error('makebs.config.py exists!')
+if show_config_deprecation:
+    logging.error('Config is via %s and command line flags.' % configfile)
+    parser.print_help()
+    sys.exit(1)
+
+logging.debug("Vagrantfile.yaml parsed -> %s", json.dumps(config, indent=4, sort_keys=True))
+
+# Update cached files.
+if not os.path.exists(config['cachedir']):
+    os.makedirs(config['cachedir'], 0o755)
+    logging.debug('created cachedir {} because it did not exists.'.format(config['cachedir']))
+
+if config['vm_provider'] == 'libvirt':
+    tmp = config['cachedir']
+    while tmp != '/':
+        mode = os.stat(tmp).st_mode
+        if not (stat.S_IXUSR & mode and stat.S_IXGRP & mode and stat.S_IXOTH & mode):
+            logging.critical('ERROR: %s will not be accessible to the VM!  To fix, run:', tmp)
+            logging.critical('  chmod a+X %s', tmp)
+            sys.exit(1)
+        tmp = os.path.dirname(tmp)
+    logging.debug('cache dir %s is accessible for libvirt vm.', config['cachedir'])
+
+
+def sha256_for_file(path):
+    with open(path, 'rb') as f:
+        s = hashlib.sha256()
+        while True:
+            data = f.read(4096)
+            if not data:
+                break
+            s.update(data)
+        return s.hexdigest()
+
+
+def verify_file_sha256(path, sha256):
+    if sha256_for_file(path) != sha256:
+        logging.critical("File verification for '{path}' failed! "
+                         "expected sha256 checksum: {checksum}"
+                         .format(path=path, checksum=sha256))
+        sys.exit(1)
+    else:
+        logging.debug("sucessfully verifyed file '{path}' "
+                      "('{checksum}')".format(path=path,
+                                              checksum=sha256))
+
+
+def get_vagrant_home():
+    return os.environ.get('VAGRANT_HOME',
+                          os.path.join(os.path.expanduser('~'),
+                                       '.vagrant.d'))
+
+
+def run_via_vagrant_ssh(v, cmdlist):
+    if (isinstance(cmdlist, str) or isinstance(cmdlist, bytes)):
+        cmd = cmdlist
+    else:
+        cmd = ' '.join(cmdlist)
+    v._run_vagrant_command(['ssh', '-c', cmd])
+
+
+def debug_log_vagrant_vm(vm_dir, config):
+    if options.verbosity >= 3:
+        _vagrant_dir = os.path.join(vm_dir, '.vagrant')
+        logging.debug('check %s dir exists? -> %r', _vagrant_dir, os.path.isdir(_vagrant_dir))
+        logging.debug('> vagrant status')
+        subprocess.call(['vagrant', 'status'], cwd=vm_dir)
+        logging.debug('> vagrant box list')
+        subprocess.call(['vagrant', 'box', 'list'])
+        if config['vm_provider'] == 'libvirt':
+            logging.debug('> virsh -c qmeu:///system list --all')
+            subprocess.call(['virsh', '-c', 'qemu:///system', 'list', '--all'])
+            domain = 'buildserver_default'
+            logging.debug('> virsh -c qemu:///system snapshot-list %s', domain)
+            subprocess.call(['virsh', '-c', 'qemu:///system', 'snapshot-list', domain])
+
+
+def main():
+    global config, tail
+
+    # use VirtualBox software virtualization if hardware is not available,
+    # like if this is being run in kvm or some other VM platform, like
+    # http://jenkins.debian.net, the values are 'on' or 'off'
+    if config.get('hwvirtex') != 'off' and os.path.exists('/proc/cpuinfo'):
+        with open('/proc/cpuinfo') as f:
+            contents = f.read()
+        if 'vmx' in contents or 'svm' in contents:
+            logging.debug('found \'vmx\' or \'svm\' in /proc/cpuinfo -> hwvirtex = \'on\'')
+        else:
+            logging.error('hwvirtex = \'on\' and no \'vmx\' or \'svm\' found in /proc/cpuinfo!')
+            sys.exit(1)
+
+    serverdir = os.path.join(os.getcwd(), 'buildserver')
+    logfilename = os.path.join(serverdir, 'up.log')
+    if not os.path.exists(logfilename):
+        open(logfilename, 'a').close()  # create blank file
+    log_cm = vagrant.make_file_cm(logfilename)
+    v = vagrant.Vagrant(root=serverdir, out_cm=log_cm, err_cm=log_cm)
+    # https://phoenhex.re/2018-03-25/not-a-vagrant-bug
+    os_env = os.environ.copy()
+    os_env['VAGRANT_DISABLE_VBOXSYMLINKCREATE'] = '1'
+    os_env['VAGRANT_SERVER_URL'] = 'https://vagrantcloud.com/api/v2/vagrant'
+    v.env = os_env
+
+    if options.verbosity >= 2:
+        tail = fdroidserver.tail.Tail(logfilename)
+        tail.start()
+
+    vm = fdroidserver.vmtools.get_build_vm(serverdir, provider=config['vm_provider'])
+    if options.clean:
+        vm.destroy()
+
+    # Check if selected provider is supported
+    if config['vm_provider'] not in ['libvirt', 'virtualbox']:
+        logging.critical("Currently selected VM provider '{vm_provider}' "
+                         "is not supported. (please choose from: "
+                         "virtualbox, libvirt)"
+                         .format(vm_provider=config['cm_provider']))
+        sys.exit(1)
+
+    # Download and verify pre-built Vagrant boxes
+    if not options.skip_box_verification:
+        buildserver_not_created = any([True for x in v.status() if x.state == 'not_created' and x.name == 'default'])
+        if buildserver_not_created or options.clean:
+            # make vagrant download and add basebox
+            target_basebox_installed = any([x for x in v.box_list() if x.name == config['basebox'] and x.provider == config['vm_provider'] and x.version == config['basebox_version']])
+            if not target_basebox_installed:
+                cmd = [shutil.which('vagrant'), 'box', 'add', config['basebox'],
+                       '--box-version=' + config['basebox_version'],
+                       '--provider=' + config['vm_provider']]
+                ret_val = subprocess.call(cmd)
+                if ret_val != 0:
+                    logging.critical("downloading basebox '{box}' "
+                                     "({provider}, version {version}) failed."
+                                     .format(box=config['basebox'],
+                                             provider=config['vm_provider'],
+                                             version=config['basebox_version']))
+                    sys.exit(1)
+            # verify box
+            if config['basebox_version'] not in BASEBOX_CHECKSUMS:
+                logging.critical("can not verify '{box}', "
+                                 "unknown basebox version '{version}'"
+                                 .format(box=config['basebox'],
+                                         version=config['basebox_version']))
+                sys.exit(1)
+            for filename, sha256 in BASEBOX_CHECKSUMS[config['basebox_version']][config['vm_provider']].items():
+                verify_file_sha256(os.path.join(get_vagrant_home(),
+                                                'boxes',
+                                                config['basebox'].replace('/', '-VAGRANTSLASH-'),
+                                                config['basebox_version'],
+                                                config['vm_provider'],
+                                                filename),
+                                   sha256)
+            logging.info("successfully verified: '{box}' "
+                         "({provider}, version {version})"
+                         .format(box=config['basebox'],
+                                 provider=config['vm_provider'],
+                                 version=config['basebox_version']))
+    else:
+        logging.debug('using unverified basebox ...')
+
+    logging.info("Configuring build server VM")
+    debug_log_vagrant_vm(serverdir, config)
+    try:
+        v.up(provision=True)
+    except subprocess.CalledProcessError:
+        debug_log_vagrant_vm(serverdir, config)
+        logging.error("'vagrant up' failed. Consult %s", logfilename)
+        sys.exit(1)
+
+    logging.info("Stopping build server VM")
+    v.halt()
+
+    logging.info("Packaging")
+    boxfile = os.path.join(os.getcwd(), 'buildserver.box')
+    if os.path.exists(boxfile):
+        logging.debug("Deleting box: %s", boxfile)
+        os.remove(boxfile)
+
+    v.package(output=boxfile)
+
+    logging.info("Adding box: %s" % boxfile)
+    vm.box_add('buildserver', boxfile, force=True)
+    logging.debug("Added box: %s", boxfile)
+
+    if 'buildserver' not in subprocess.check_output(['vagrant', 'box', 'list']).decode('utf-8'):
+        logging.critical('could not add box \'%s\' as \'buildserver\', terminating', boxfile)
+        sys.exit(1)
+    logging.debug("Found box")
+
+    # Boxes are stored in two places when using vagrant-libvirt:
+    #
+    #  1. `vagrant box add` -> ~/.vagrant.d/boxes/buildserver/0/libvirt/
+    #  2. `vagrant up` -> /var/lib/libvirt/images/buildserver_vagrant_box_image_0_box.img
+    #
+    # If the second box is not cleaned up, then `fdroid build` will
+    # continue to use that one from the second location, thereby
+    # ignoring the updated one at the first location.  This process
+    # keeps the second one around until the new box is ready in case
+    # `fdroid build` is using it while this script is running.
+    img = 'buildserver_vagrant_box_image_0_box.img'
+    imgpath = os.path.join('/var/lib/libvirt/images', img)
+    if os.path.exists(imgpath):
+        logging.debug("Found img: %s", imgpath)
+        subprocess.call(
+            ['virsh', '-c', 'qemu:///system', 'vol-delete', '--pool', 'default', '--vol', img]
+        )
+    logging.debug("Processed vagrant-libvirt")
+
+    if not options.keep_box_file:
+        logging.debug("""box added to vagrant, removing generated box file '%s'""",
+                      boxfile)
+        os.remove(boxfile)
+
+        # This was needed just to create the box, after that, it is unused.
+        logging.debug("destroying box")
+        vm.destroy()
+
+    logging.info("Done")
+
+
+if __name__ == '__main__':
+
+    if not os.path.exists('makebuildserver') and not os.path.exists('buildserver'):
+        logging.critical('This must be run as ./makebuildserver in fdroidserver.git!')
+        sys.exit(1)
+
+    if os.path.isfile('/usr/bin/systemd-detect-virt'):
+        try:
+            virt = subprocess.check_output('/usr/bin/systemd-detect-virt').strip().decode('utf-8')
+        except subprocess.CalledProcessError:
+            virt = 'none'
+        if virt in ('qemu', 'kvm', 'bochs'):
+            logging.info('Running in a VM guest, defaulting to QEMU/KVM via libvirt')
+            config['vm_provider'] = 'libvirt'
+        elif virt != 'none':
+            logging.info('Running in an unsupported VM guest (%s)!', virt)
+        logging.debug('detected virt: %s', virt)
+
+    try:
+        main()
+    finally:
+        if tail is not None:
+            tail.stop()

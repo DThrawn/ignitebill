@@ -1,0 +1,29 @@
+#!/bin/bash
+
+set -ex
+
+git clone --depth 1 https://gitlab.com/fdroid/gradlew-fdroid.git /home/vagrant/gradlew-fdroid/
+chmod 0755 /home/vagrant/gradlew-fdroid/gradlew-fdroid
+chmod -R u+rwX,a+rX,go-w /home/vagrant/gradlew-fdroid/
+ln -fs /home/vagrant/gradlew-fdroid/gradlew-fdroid /usr/local/bin/
+ln -fs /home/vagrant/gradlew-fdroid/gradlew-fdroid /usr/local/bin/gradle
+
+GRADLE_HOME=/home/vagrant/.gradle
+test -d $GRADLE_HOME/ || mkdir $GRADLE_HOME/
+cat <<EOF > $GRADLE_HOME/gradle.properties
+# builds are not reused, so the daemon is a waste of time
+org.gradle.daemon=false
+
+# disable jvm auto-provisioning
+org.gradle.java.installations.auto-download=false
+
+# set network timeouts to 10 minutes
+# https://github.com/gradle/gradle/pull/3371/files
+systemProp.http.connectionTimeout=600000
+systemProp.http.socketTimeout=600000
+systemProp.org.gradle.internal.http.connectionTimeout=600000
+systemProp.org.gradle.internal.http.socketTimeout=600000
+EOF
+
+chown -R vagrant:vagrant $GRADLE_HOME/
+chmod -R a+rX $GRADLE_HOME/
