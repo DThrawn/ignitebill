@@ -30,11 +30,11 @@ NonFreeNet:
   description: This app promotes or depends entirely on a non-free network service
   icon: ic_antifeature_nonfreenet.png
   name: Non-Free Network Services
-Tracking:
-  description: This app tracks and reports your activity
-  icon: ic_antifeature_tracking.png
-  name: Tracking
 TetheredNet:
   description: This app depends entirely on a certain instance of a network service
   icon: ic_antifeature_tetherednet.png
   name: Tethered Network Services
+Tracking:
+  description: This app tracks and reports your activity
+  icon: ic_antifeature_tracking.png
+  name: Tracking
