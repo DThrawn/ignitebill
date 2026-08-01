@@ -7,6 +7,8 @@ WebSite: https://github.com/DThrawn/ignitebill
 SourceCode: https://github.com/DThrawn/ignitebill
 IssueTracker: https://github.com/DThrawn/ignitebill/issues
 
+AutoName: IgniteBill
+
 RepoType: git
 Repo: https://github.com/DThrawn/ignitebill.git
 Binaries: 
@@ -101,4 +103,4 @@ VercodeOperation:
   - '%c * 10 + 3'
 UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: 1.2.3
-CurrentVersionCode: 18
+CurrentVersionCode: 183
