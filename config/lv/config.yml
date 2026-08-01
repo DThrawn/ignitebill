@@ -1,6 +1,9 @@
 archive:
-  name: F-Droid arhīvs
-  description: Oficiālās F-Droid brīvās programmatūras glabātavas arhīvs. Šeit esošās lietotnes ir vecas un var saturēt zināmas ievainojamības un drošības nepilnības.
+  description: "Ofici\u0101l\u0101s F-Droid br\u012Bv\u0101s programmat\u016Bras glab\u0101\
+    tavas arh\u012Bvs. \u0160eit eso\u0161\u0101s lietotnes ir vecas un var satur\u0113\
+    t zin\u0101mas ievainojam\u012Bbas un dro\u0161\u012Bbas nepiln\u012Bbas."
+  name: "F-Droid arh\u012Bvs"
 repo:
-  description: Oficiālā F-Droid brīvās programmatūras glabātava. Viss šeit tiek vienmēr būvēts no pirmkoda.
+  description: "Ofici\u0101l\u0101 F-Droid br\u012Bv\u0101s programmat\u016Bras glab\u0101\
+    tava. Viss \u0161eit tiek vienm\u0113r b\u016Bv\u0113ts no pirmkoda."
   name: F-Droid

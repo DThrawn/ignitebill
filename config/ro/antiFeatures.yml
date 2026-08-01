@@ -1,30 +1,36 @@
 Ads:
-  description: Aplicația conține reclamă
+  description: "Aplica\u021Bia con\u021Bine reclam\u0103"
   name: Reclame
 DisabledAlgorithm:
-  description: Aplicația are o semnătură slab securizată
-  name: Algoritm nesigur semnătură
+  description: "Aplica\u021Bia are o semn\u0103tur\u0103 slab securizat\u0103"
+  name: "Algoritm nesigur semn\u0103tur\u0103"
 KnownVuln:
-  description: Aplicația conține o vulnerabilitate de securitate cunoscută
-  name: Vulnerabilitate cunoscută
+  description: "Aplica\u021Bia con\u021Bine o vulnerabilitate de securitate cunoscut\u0103"
+  name: "Vulnerabilitate cunoscut\u0103"
 NoSourceSince:
-  name: Nicio Sursă Din
-  description: Codul sursă nu mai este disponibil, nu mai există posibilitatea de a actualiza
+  description: "Codul surs\u0103 nu mai este disponibil, nu mai exist\u0103 posibilitatea\
+    \ de a actualiza"
+  name: "Nicio Surs\u0103 Din"
 NonFreeAdd:
-  description: Aplicația promovează anexe ce nu sunt software liber
+  description: "Aplica\u021Bia promoveaz\u0103 anexe ce nu sunt software liber"
   name: Anexe ne-libere
 NonFreeAssets:
-  description: Aceasta aplicație conține resurse ce nu sunt la disponibile la liber
+  description: "Aceasta aplica\u021Bie con\u021Bine resurse ce nu sunt la disponibile\
+    \ la liber"
   name: Resurse ne-libere
 NonFreeDep:
-  description: Aplicația depinde de alte aplicații ce nu sunt software liber
-  name: Dependențe ne-libere
+  description: "Aplica\u021Bia depinde de alte aplica\u021Bii ce nu sunt software\
+    \ liber"
+  name: "Dependen\u021Be ne-libere"
 NonFreeNet:
-  description: Aplicația promovează sau depinde în întregime de un serviciu de rețea care nu este liber
-  name: Servicii de rețea ne-libere
-Tracking:
-  description: Aplicația îți înregistrează și raportează activitatea undeva
-  name: Urmărire
+  description: "Aplica\u021Bia promoveaz\u0103 sau depinde \xEEn \xEEntregime de un\
+    \ serviciu de re\u021Bea care nu este liber"
+  name: "Servicii de re\u021Bea ne-libere"
 TetheredNet:
-  description: Această aplicație depinde în întregime de o anumită instanță a unui serviciu de rețea
-  name: Servicii de rețea captive
+  description: "Aceast\u0103 aplica\u021Bie depinde \xEEn \xEEntregime de o anumit\u0103\
+    \ instan\u021B\u0103 a unui serviciu de re\u021Bea"
+  name: "Servicii de re\u021Bea captive"
+Tracking:
+  description: "Aplica\u021Bia \xEE\u021Bi \xEEnregistreaz\u0103 \u0219i raporteaz\u0103\
+    \ activitatea undeva"
+  name: "Urm\u0103rire"

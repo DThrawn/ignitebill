@@ -1,42 +1,42 @@
-Development:
-  name: Diorren
+Browser:
+  name: Merdeer
+Clock:
+  name: Horolaj
 Connectivity:
   name: Kevreadusted
-Reading:
-  name: Lenn
+Development:
+  name: Diorren
+Email:
+  name: Postel
+Forum:
+  name: Forom
 Graphics:
   name: Graferezh
+Internet:
+  name: Internet
 Multimedia:
   name: Liesvedia
 Navigation:
-  name: Merdeiñ
+  name: "Merdei\xF1"
+News:
+  name: Keleier
 Phone & SMS:
   name: Pellgomz hag SMS
+Podcast:
+  name: Podskign
+Reading:
+  name: Lenn
+Science & Education:
+  name: "Skianto\xF9 ha deskadurezh"
 Security:
   name: Diogelroez
 Sports & Health:
-  name: Sportoù ha yec'hed
+  name: "Sporto\xF9 ha yec'hed"
 System:
   name: Reizhiad
 Theming:
   name: Neuz
-Writing:
-  name: Skrivañ
-Internet:
-  name: Internet
-Science & Education:
-  name: Skiantoù ha deskadurezh
-Email:
-  name: Postel
-Clock:
-  name: Horolaj
-Browser:
-  name: Merdeer
-Forum:
-  name: Forom
-News:
-  name: Keleier
-Podcast:
-  name: Podskign
 Weather:
   name: Amzer
+Writing:
+  name: "Skriva\xF1"

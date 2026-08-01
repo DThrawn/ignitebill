@@ -1,112 +1,154 @@
+AI Chat:
+  description: "Assistents d'IA, robots de xat i interf\xEDcies de models de llenguatge\
+    \ grans (LLM)"
+  name: Xat d'IA
+App Manager:
+  description: "Gestiona, organitza i controla aplicacions instal\xB7lades, proposits\
+    \ i permisos"
+  name: Gestor d'aplicacions
+App Store & Updater:
+  description: "Descobreix, instal\xB7la i actualitza aplicacions des de repositoris\
+    \ de programari"
+  name: Botiga d'aplicacions i actualitzador
+Battery:
+  description: "Monitora i optimitza la vida de la bateria, l'\xFAs d'energia i la\
+    \ c\xE0rrega"
+  name: Bateria
+Bookmark:
+  description: "Guarda, organitza i gestiona els teus enlla\xE7os i llistes de lectura\
+    \ preferides"
+  name: "Adre\xE7a d'inter\xE8s"
+Browser:
+  description: "Navegadors web per navegar per internet i visualitzar les p\xE0gines\
+    \ web"
+  name: Navegador
+Calculator:
+  description: "Eines de c\xE0lcul aritm\xE8tic, cient\xEDfic i matem\xE0tic"
+  name: Calculadora
+Calendar & Agenda:
+  description: Agenda d'esdeveniments, recordatoris, cites i planificadors diaris
+  name: Calendaris i Agendes
+Clock:
+  name: Rellotge
+Cloud Storage & File Sync:
+  description: "Fes c\xF2pies de seguretat, sincronitza i accedeix a fitxers remotament\
+    \ a trav\xE9s de serveis en el n\xFAvol"
+  name: "Emmagatzematge al n\xFAvol i sincronitzaci\xF3 d'arxius"
 Connectivity:
   name: Connectivitat
-Development:
-  name: Desenvolupament
-  description: Eines de programació, IDE, consola/terminal i desenvolupament
-Graphics:
-  name: Gràfics
-Internet:
-  name: Internet
-Multimedia:
-  name: Multimèdia
-Navigation:
-  name: Navegació
-Phone & SMS:
-  name: Mòbil i missatgeria
-Reading:
-  name: Lectura
-Science & Education:
-  name: Ciència i educació
-Security:
-  name: Seguretat
-Sports & Health:
-  name: Esports i Salut
-System:
-  name: Sistema
-Theming:
-  name: Temes
-Writing:
-  name: Escriptura
-App Store & Updater:
-  name: Botiga d'aplicacions i actualitzador
-  description: Descobreix, instal·la i actualitza aplicacions des de repositoris de programari
-Bookmark:
-  name: Adreça d'interès
-  description: Guarda, organitza i gestiona els teus enllaços i llistes de lectura preferides
-Browser:
-  name: Navegador
-  description: Navegadors web per navegar per internet i visualitzar les pàgines web
-Calculator:
-  name: Calculadora
-  description: Eines de càlcul aritmètic, científic i matemàtic
-Calendar & Agenda:
-  name: Calendaris i Agendes
-  description: Agenda d'esdeveniments, recordatoris, cites i planificadors diaris
-Cloud Storage & File Sync:
-  name: Emmagatzematge al núvol i sincronització d'arxius
-  description: Fes còpies de seguretat, sincronitza i accedeix a fitxers remotament a través de serveis en el núvol
+Contact:
+  name: Contacte
 DNS & Hosts:
-  name: DNS i Allotjament
   description: Configura DNS, bloqueig d'anuncis, fitxers hosts i enrutament de domini
+  name: DNS i Allotjament
+Development:
+  description: "Eines de programaci\xF3, IDE, consola/terminal i desenvolupament"
+  name: Desenvolupament
 Draw:
   name: Dibuix
 Ebook Reader:
-  name: Lector de llibres electrònics
-  description: Llegeix llibres electrònics, EPUB, PDF i llibres i publicacions digitals
+  description: "Llegeix llibres electr\xF2nics, EPUB, PDF i llibres i publicacions\
+    \ digitals"
+  name: "Lector de llibres electr\xF2nics"
 Email:
-  name: Correu electrònic
-  description: Clients de correu per enviar, rebre i gestionar missatges de correu electrònic
+  description: "Clients de correu per enviar, rebre i gestionar missatges de correu\
+    \ electr\xF2nic"
+  name: "Correu electr\xF2nic"
 File Encryption & Vault:
-  name: Xifratge de fitxers i caixa forta
   description: Encripta, bloqueja i amaga fitxers i carpetes privades
+  name: Xifratge de fitxers i caixa forta
 File Transfer:
-  name: Transferències de fitxers
+  name: "Transfer\xE8ncies de fitxers"
 Finance Manager:
-  name: Gestor de finances
   description: Controla despeses, pressupostos, ingressos i comptes personals
+  name: Gestor de finances
+Firewall:
+  description: "Bloqueja tr\xE0nsit de xarxa no desitjat i controla l'acc\xE9s a internet\
+    \ de les aplicacions"
+  name: Tallafoc
+Flashlight:
+  name: Llanterna
+Forum:
+  name: "F\xF2rum"
 Gallery:
+  description: "Navega, visualitza i organitza fotos, imatges i v\xEDdeos"
   name: Galeria
-  description: Navega, visualitza i organitza fotos, imatges i vídeos
+Graphics:
+  name: "Gr\xE0fics"
+Habit Tracker:
+  name: "Registre d'h\xE0bits"
 Icon Pack:
   name: Pack d'icones
+Internet:
+  name: Internet
+Inventory:
+  name: Inventari
 Keyboard & IME:
   name: Teclat i IME
+Launcher:
+  name: "Llan\xE7ador"
 Local Media Player:
   name: Reproductor local de mitjans
+Location Tracker & Sharer:
+  name: "Seguiment i compartici\xF3 d'ubicaci\xF3"
 Messaging:
   name: Missatges
+Multimedia:
+  name: "Multim\xE8dia"
+Music Practice Tool:
+  name: "Eina de pr\xE0ctica musical"
+Navigation:
+  name: "Navegaci\xF3"
+Network Analyzer:
+  name: Analitzador de xarxa
 News:
-  name: Notícies
+  name: "Not\xEDcies"
 Note:
   name: Notes
 Online Media Player:
-  name: Reproductor de mitjans en línia
+  name: "Reproductor de mitjans en l\xEDnia"
 Pass Wallet:
   name: Cartera de paraules de pas
 Password & 2FA:
-  name: Paraules de pas i autenticació de dos factors
+  name: "Paraules de pas i autenticaci\xF3 de dos factors"
+Phone & SMS:
+  name: "M\xF2bil i missatgeria"
 Podcast:
   name: Podcast
 Public Transport:
-  name: Mapa de transport públic i horaris
+  name: "Mapa de transport p\xFAblic i horaris"
+Reading:
+  name: Lectura
 Recipe Manager:
   name: Gestor de receptes
+Religion:
+  name: "Religi\xF3"
+Science & Education:
+  name: "Ci\xE8ncia i educaci\xF3"
+Security:
+  name: Seguretat
 Shopping List:
   name: Llista de la compra
 Social Network:
   name: Xarxes socials
+Sports & Health:
+  name: Esports i Salut
+System:
+  name: Sistema
 Task:
   name: Tasques
 Text Editor:
   name: Editor de text
+Theming:
+  name: Temes
 Translation & Dictionary:
-  name: Traducció i diccionari
+  name: "Traducci\xF3 i diccionari"
 Unit Convertor:
   name: Convertidor d'unitats
-Voice & Video Chat:
-  name: Xat de veu i vídeo
 VPN & Proxy:
   name: VPN i Proxy
+Voice & Video Chat:
+  name: "Xat de veu i v\xEDdeo"
 Wallet:
   name: Cartera
 Wallpaper:
@@ -115,37 +157,5 @@ Weather:
   name: Clima
 Workout:
   name: Entrenament
-Forum:
-  name: Fòrum
-Habit Tracker:
-  name: Registre d'hàbits
-Launcher:
-  name: Llançador
-Music Practice Tool:
-  name: Eina de pràctica musical
-Location Tracker & Sharer:
-  name: Seguiment i compartició d'ubicació
-AI Chat:
-  name: Xat d'IA
-  description: Assistents d'IA, robots de xat i interfícies de models de llenguatge grans (LLM)
-App Manager:
-  name: Gestor d'aplicacions
-  description: Gestiona, organitza i controla aplicacions instal·lades, proposits i permisos
-Religion:
-  name: Religió
-Clock:
-  name: Rellotge
-Firewall:
-  name: Tallafoc
-  description: Bloqueja trànsit de xarxa no desitjat i controla l'accés a internet de les aplicacions
-Contact:
-  name: Contacte
-Inventory:
-  name: Inventari
-Network Analyzer:
-  name: Analitzador de xarxa
-Battery:
-  description: Monitora i optimitza la vida de la bateria, l'ús d'energia i la càrrega
-  name: Bateria
-Flashlight:
-  name: Llanterna
+Writing:
+  name: Escriptura

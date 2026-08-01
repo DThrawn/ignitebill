@@ -1,134 +1,134 @@
-Connectivity:
-  name: Aftësi lidhjeje
-Development:
-  name: Zhvillim
-Graphics:
-  name: Grafika
-Internet:
-  name: Internet
-Multimedia:
-  name: Multimedia
-Navigation:
-  name: Lëvizje
-Phone & SMS:
-  name: Telefon & SMS
-Reading:
-  name: Lexim
-Science & Education:
-  name: Shkencë & Arsim
-Security:
-  name: Siguri
-Sports & Health:
-  name: Sporte & Shëndet
-System:
-  name: Sistem
-Theming:
-  name: Ndryshim teme grafike
-Writing:
-  name: Shkrim
-Email:
-  name: Email
-VPN & Proxy:
-  name: VPN & Ndërmjetës
-DNS & Hosts:
-  name: DNS & Strehë
 AI Chat:
   name: Fjalosje IA
 App Manager:
-  name: Përgjegjës Aplikacionesh
+  name: "P\xEBrgjegj\xEBs Aplikacionesh"
 App Store & Updater:
-  name: Shitore & Përditësues Aplikacionesh
+  name: "Shitore & P\xEBrdit\xEBsues Aplikacionesh"
+Battery:
+  name: Bateri
 Bookmark:
-  name: Faqerojtës
+  name: "Faqerojt\xEBs"
 Browser:
   name: Shfletues
 Calculator:
-  name: Makinë Llogaritëse
+  name: "Makin\xEB Llogarit\xEBse"
 Calendar & Agenda:
   name: Kalendar & Plane
+Clock:
+  name: Sahat
 Cloud Storage & File Sync:
-  name: Depozitim Në Re & Njëkohësim Kartelash
+  name: "Depozitim N\xEB Re & Nj\xEBkoh\xEBsim Kartelash"
+Connectivity:
+  name: "Aft\xEBsi lidhjeje"
+Contact:
+  name: Kontakt
+DNS & Hosts:
+  name: "DNS & Streh\xEB"
+Development:
+  name: Zhvillim
 Draw:
   name: Vizatim
 Ebook Reader:
   name: Lexues Elibrash
+Email:
+  name: Email
 File Encryption & Vault:
-  name: Fshehtëzim & Kasafortë Kartelash
+  name: "Fsheht\xEBzim & Kasafort\xEB Kartelash"
 File Transfer:
-  name: Shpërngulje Kartelash
+  name: "Shp\xEBrngulje Kartelash"
 Finance Manager:
-  name: Përgjegjës Financash
+  name: "P\xEBrgjegj\xEBs Financash"
+Firewall:
+  name: Firewall
 Forum:
   name: Forum
 Gallery:
   name: Galeri
+Graphics:
+  name: Grafika
 Habit Tracker:
-  name: Ndjekës Zakonesh
+  name: "Ndjek\xEBs Zakonesh"
 Icon Pack:
-  name: Paketë Ikonash
+  name: "Paket\xEB Ikonash"
+Internet:
+  name: Internet
+Inventory:
+  name: Inventar
 Keyboard & IME:
-  name: Tastierë & IME
+  name: "Tastier\xEB & IME"
 Launcher:
-  name: Nisës
+  name: "Nis\xEBs"
 Local Media Player:
-  name: Lojtës Mediash Vendore
+  name: "Lojt\xEBs Mediash Vendore"
 Location Tracker & Sharer:
-  name: Gjurmues & Dhënës Vendndodhjesh
+  name: "Gjurmues & Dh\xEBn\xEBs Vendndodhjesh"
 Messaging:
-  name: Shkëmbim Mesazhesh
+  name: "Shk\xEBmbim Mesazhesh"
+Multimedia:
+  name: Multimedia
 Music Practice Tool:
   name: Mjet Praktimi Muzike
+Navigation:
+  name: "L\xEBvizje"
+Network Analyzer:
+  name: Analizues Rrjeti
 News:
   name: Lajme
 Note:
-  name: Shënim
+  name: "Sh\xEBnim"
 Online Media Player:
-  name: Lojtës Mediash Në Internet
+  name: "Lojt\xEBs Mediash N\xEB Internet"
 Pass Wallet:
-  name: Kuletë Fjalëkalimesh
+  name: "Kulet\xEB Fjal\xEBkalimesh"
 Password & 2FA:
-  name: Fjalëkalime & 2FA
+  name: "Fjal\xEBkalime & 2FA"
+Phone & SMS:
+  name: Telefon & SMS
 Podcast:
   name: Podkast
 Public Transport:
   name: Transport Publik
+Radio:
+  name: Radio
+Reading:
+  name: Lexim
 Recipe Manager:
-  name: Përgjegjës Recetash Gatimi
+  name: "P\xEBrgjegj\xEBs Recetash Gatimi"
 Religion:
   name: Fe
+Science & Education:
+  name: "Shkenc\xEB & Arsim"
+Security:
+  name: Siguri
 Shopping List:
-  name: Listë Blerjesh
+  name: "List\xEB Blerjesh"
 Social Network:
-  name: Rrjet Shoqëror
+  name: "Rrjet Shoq\xEBror"
+Sports & Health:
+  name: "Sporte & Sh\xEBndet"
+System:
+  name: Sistem
 Task:
-  name: Punë
+  name: "Pun\xEB"
 Text Editor:
-  name: Përpunues Tekstesh
+  name: "P\xEBrpunues Tekstesh"
+Theming:
+  name: Ndryshim teme grafike
 Translation & Dictionary:
-  name: Përkthim & Fjalor
+  name: "P\xEBrkthim & Fjalor"
 Unit Convertor:
-  name: Shndërrues Njësish
+  name: "Shnd\xEBrrues Nj\xEBsish"
+VPN & Proxy:
+  name: "VPN & Nd\xEBrmjet\xEBs"
 Voice & Video Chat:
-  name: Fjalosje Me Zë & Video
+  name: "Fjalosje Me Z\xEB & Video"
 Wallet:
-  name: Kuletë
+  name: "Kulet\xEB"
 Wallpaper:
   name: Sfond
 Weather:
   name: Mot
-Clock:
-  name: Sahat
-Firewall:
-  name: Firewall
-Network Analyzer:
-  name: Analizues Rrjeti
-Contact:
-  name: Kontakt
-Inventory:
-  name: Inventar
 Workout:
-  name: Stërvitje
-Battery:
-  name: Bateri
-Radio:
-  name: Radio
+  name: "St\xEBrvitje"
+Writing:
+  name: Shkrim

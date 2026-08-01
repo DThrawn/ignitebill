@@ -1,30 +1,33 @@
 Ads:
-  description: Diese App enthält Werbung
+  description: "Diese App enth\xE4lt Werbung"
   name: Werbung
 DisabledAlgorithm:
   description: Diese App hat eine schwache Sicherheitssignatur
   name: Mit einem unsicheren Algorithmus signiert
 KnownVuln:
-  description: Diese App enthält eine bekannte Sicherheitslücke
-  name: Bekannte Sicherheitslücke
+  description: "Diese App enth\xE4lt eine bekannte Sicherheitsl\xFCcke"
+  name: "Bekannte Sicherheitsl\xFCcke"
 NoSourceSince:
+  description: "Der Quellcode ist nicht mehr verf\xFCgbar, keine Aktualisierungen\
+    \ m\xF6glich"
   name: Keine Quelle seit
-  description: Der Quellcode ist nicht mehr verfügbar, keine Aktualisierungen möglich
 NonFreeAdd:
   description: Diese App bewirbt nicht-quelloffene Erweiterungen
   name: Nicht-quelloffene Erweiterungen
 NonFreeAssets:
-  description: Diese App enthält nicht-quelloffene Bestandteile
+  description: "Diese App enth\xE4lt nicht-quelloffene Bestandteile"
   name: Nicht-quelloffene Bestandteile
 NonFreeDep:
-  description: Diese App ist abhängig von anderen nicht-quelloffenen Apps
-  name: Nicht-quelloffene Abhängigkeiten
+  description: "Diese App ist abh\xE4ngig von anderen nicht-quelloffenen Apps"
+  name: "Nicht-quelloffene Abh\xE4ngigkeiten"
 NonFreeNet:
-  description: Diese App bewirbt oder hängt vollständig von einem nicht-quelloffenen Netzwerkdienst ab
+  description: "Diese App bewirbt oder h\xE4ngt vollst\xE4ndig von einem nicht-quelloffenen\
+    \ Netzwerkdienst ab"
   name: Nicht-quelloffene Netzwerkdienste
-Tracking:
-  description: Diese App verfolgt und versendet deine Aktivitäten
-  name: Tracking
 TetheredNet:
-  description: Diese App hängt vollständig von einer bestimmten Instanz eines Netzwerkdienstes ab
+  description: "Diese App h\xE4ngt vollst\xE4ndig von einer bestimmten Instanz eines\
+    \ Netzwerkdienstes ab"
   name: Verbundene Netzwerkdienste
+Tracking:
+  description: "Diese App verfolgt und versendet deine Aktivit\xE4ten"
+  name: Tracking

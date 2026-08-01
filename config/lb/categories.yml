@@ -1,7 +1,17 @@
+Bookmark:
+  name: Lieszeechen
+Browser:
+  name: Browser
 Connectivity:
   name: Connectioun
 Development:
-  name: Entwécklung
+  name: "Entw\xE9cklung"
+Email:
+  name: E-Mail
+Forum:
+  name: Forum
+Gallery:
+  name: Galerie
 Graphics:
   name: Grafik
 Internet:
@@ -10,35 +20,25 @@ Multimedia:
   name: Multimedia
 Navigation:
   name: Navigatioun
+News:
+  name: Noriichten
+Note:
+  name: Notiz
 Phone & SMS:
   name: Telefon & SMS
+Podcast:
+  name: Podcast
+Public Transport:
+  name: "\xCBffentlechen Transport"
 Reading:
   name: Liesen
 Science & Education:
-  name: Wëssenschaft & Bildung
+  name: "W\xEBssenschaft & Bildung"
 Security:
-  name: Sécherheet
+  name: "S\xE9cherheet"
 Sports & Health:
   name: Sport & Gesondheet
 System:
   name: System
 Writing:
   name: Schreiwen
-Bookmark:
-  name: Lieszeechen
-Browser:
-  name: Browser
-Email:
-  name: E-Mail
-Forum:
-  name: Forum
-Gallery:
-  name: Galerie
-News:
-  name: Noriichten
-Note:
-  name: Notiz
-Podcast:
-  name: Podcast
-Public Transport:
-  name: Ëffentlechen Transport

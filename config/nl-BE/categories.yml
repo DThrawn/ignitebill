@@ -1,31 +1,3 @@
-Connectivity:
-  name: Connectiviteit
-Development:
-  name: Ontwikkeling
-Graphics:
-  name: Grafisch
-Internet:
-  name: Internet
-Multimedia:
-  name: Multimedia
-Navigation:
-  name: Navigatie
-Phone & SMS:
-  name: Telefoon & SMS
-Reading:
-  name: Lezen
-Science & Education:
-  name: Onderwijs & wetenschap
-Security:
-  name: Beveiliging
-Sports & Health:
-  name: Sport & Gezondheid
-System:
-  name: Systeem
-Theming:
-  name: Thema’s
-Writing:
-  name: Schrijven
 AI Chat:
   name: AI Chat
 App Manager:
@@ -44,8 +16,14 @@ Clock:
   name: Klok
 Cloud Storage & File Sync:
   name: Cloud opslag & Bestand Synchronisatie
+Connectivity:
+  name: Connectiviteit
+Contact:
+  name: Contact
 DNS & Hosts:
   name: DNS & Hosts
+Development:
+  name: Ontwikkeling
 Draw:
   name: Teken
 Ebook Reader:
@@ -64,10 +42,14 @@ Forum:
   name: Forum
 Gallery:
   name: Galerij
+Graphics:
+  name: Grafisch
 Habit Tracker:
   name: Gewoonte tracker
 Icon Pack:
   name: Pictogrammenpakket
+Internet:
+  name: Internet
 Inventory:
   name: Voorraad
 Keyboard & IME:
@@ -80,10 +62,12 @@ Location Tracker & Sharer:
   name: Locatietracker en -deler
 Messaging:
   name: Berichten
-Contact:
-  name: Contact
+Multimedia:
+  name: Multimedia
 Music Practice Tool:
   name: Muziek oefentool
+Navigation:
+  name: Navigatie
 Network Analyzer:
   name: Netwerk analysetool
 News:
@@ -94,19 +78,35 @@ Pass Wallet:
   name: Kaarten portemonnee
 Password & 2FA:
   name: Wachtwoord en 2FA
+Phone & SMS:
+  name: Telefoon & SMS
 Podcast:
   name: Podcast
 Public Transport:
   name: Openbaar vervoer
+Reading:
+  name: Lezen
 Recipe Manager:
   name: Receptenbeheerder
 Religion:
   name: Religie
+Science & Education:
+  name: Onderwijs & wetenschap
+Security:
+  name: Beveiliging
 Shopping List:
   name: Boodschappenlijst
 Social Network:
   name: Sociaalnetwerk
+Sports & Health:
+  name: Sport & Gezondheid
+System:
+  name: Systeem
 Task:
   name: Taak
 Text Editor:
   name: Teksteditor
+Theming:
+  name: "Thema\u2019s"
+Writing:
+  name: Schrijven

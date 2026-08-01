@@ -1,122 +1,135 @@
-Connectivity:
-  name: ಸಂಪರ್ಕ
-Development:
-  name: ಅಭಿವೃದ್ಧಿ
-Graphics:
-  name: ಗ್ರಾಫಿಕ್ಸ್
-Internet:
-  name: ಇಂಟರ್ನೆಟ್
-Multimedia:
-  name: ಮಲ್ಟಿಮೀಡಿಯಾ
-Navigation:
-  name: ಸಂಚರಣೆ
-Phone & SMS:
-  name: ಫೋನ್ ಮತ್ತು SMS
-Reading:
-  name: ಓದುವಿಕೆ
-Science & Education:
-  name: ವಿಜ್ಞಾನ ಮತ್ತು ಶಿಕ್ಷಣ
-Security:
-  name: ಭದ್ರತೆ
-Sports & Health:
-  name: ಕ್ರೀಡೆ ಮತ್ತು ಆರೋಗ್ಯ
-System:
-  name: ಸಿಸ್ಟಮ್
-Theming:
-  name: ಥೀಮ್
-Writing:
-  name: ಬರೆಯುವುದು
 AI Chat:
-  name: AI ಚಾಟ್
+  name: "AI \u0C9A\u0CBE\u0C9F\u0CCD"
 App Manager:
-  name: ಅಪ್ಲಿಕೇಶನ್ ಮ್ಯಾನೇಜರ್
+  name: "\u0C85\u0CAA\u0CCD\u0CB2\u0CBF\u0C95\u0CC7\u0CB6\u0CA8\u0CCD \u0CAE\u0CCD\
+    \u0CAF\u0CBE\u0CA8\u0CC7\u0C9C\u0CB0\u0CCD"
 App Store & Updater:
-  name: ಆಪ್ ಸ್ಟೋರ್
+  name: "\u0C86\u0CAA\u0CCD \u0CB8\u0CCD\u0C9F\u0CCB\u0CB0\u0CCD"
 Bookmark:
-  name: ಬುಕ್ಮಾರ್ಕ್
+  name: "\u0CAC\u0CC1\u0C95\u0CCD\u0CAE\u0CBE\u0CB0\u0CCD\u0C95\u0CCD"
 Browser:
-  name: ಬ್ರೌಸರ್
+  name: "\u0CAC\u0CCD\u0CB0\u0CCC\u0CB8\u0CB0\u0CCD"
 Calculator:
-  name: ಕ್ಯಾಲ್ಕುಲೇಟರ್
-Email:
-  name: ಇಮೇಲ್
-Messaging:
-  name: ಸಂದೇಶ ಕಳುಹಿಸುವಿಕೆ
-News:
-  name: ಸುದ್ದಿ
-Podcast:
-  name: ಪಾಡ್ಕ್ಯಾಸ್ಟ್
-Weather:
-  name: ಹವಾಮಾನ
-Wallet:
-  name: ವಾಲೆಟ್
-Draw:
-  name: ಎಳೆಯಿರಿ
-Gallery:
-  name: ಗ್ಯಾಲರಿ
-Launcher:
-  name: ಲಾಂಚರ್
-Note:
-  name: ಗಮನಿಸಿ
-Wallpaper:
-  name: ವಾಲ್ಪೇಪರ್
-Workout:
-  name: ತಾಲೀಮು
-Task:
-  name: ಕಾರ್ಯ
-Forum:
-  name: ವೇದಿಕೆ
-Religion:
-  name: ಧರ್ಮ
+  name: "\u0C95\u0CCD\u0CAF\u0CBE\u0CB2\u0CCD\u0C95\u0CC1\u0CB2\u0CC7\u0C9F\u0CB0\u0CCD"
+Calendar & Agenda:
+  name: "\u0C95\u0CCD\u0CAF\u0CBE\u0CB2\u0CC6\u0C82\u0CA1\u0CB0\u0CCD"
 Clock:
-  name: ಗಡಿಯಾರ
-Firewall:
-  name: ಫೈರ್ವಾಲ್
-Inventory:
-  name: ದಾಸ್ತಾನು
+  name: "\u0C97\u0CA1\u0CBF\u0CAF\u0CBE\u0CB0"
+Connectivity:
+  name: "\u0CB8\u0C82\u0CAA\u0CB0\u0CCD\u0C95"
 Contact:
-  name: ಸಂಪರ್ಕಿಸಿ
-File Transfer:
-  name: ಫೈಲ್ ವರ್ಗಾವಣೆ
-Social Network:
-  name: ಸಾಮಾಜಿಕ ನೆಟ್ವರ್ಕ್
-Ebook Reader:
-  name: ಇಬುಕ್ ರೀಡರ್
-Finance Manager:
-  name: ಹಣಕಾಸು ವ್ಯವಸ್ಥಾಪಕ
-Icon Pack:
-  name: ಐಕಾನ್ ಪ್ಯಾಕ್
-Pass Wallet:
-  name: ಪಾಸ್ ವಾಲೆಟ್
-Recipe Manager:
-  name: ರೆಸಿಪಿ ಮ್ಯಾನೇಜರ್
-Text Editor:
-  name: ಪಠ್ಯ ಸಂಪಾದಕ
-Unit Convertor:
-  name: ಘಟಕ ಪರಿವರ್ತಕ
-Shopping List:
-  name: ಶಾಪಿಂಗ್ ಪಟ್ಟಿ
-Habit Tracker:
-  name: ಅಭ್ಯಾಸ ಟ್ರ್ಯಾಕರ್
-Public Transport:
-  name: ಸಾರ್ವಜನಿಕ ಸಾರಿಗೆ
-Network Analyzer:
-  name: ನೆಟ್‌ವರ್ಕ್ ವಿಶ್ಲೇಷಕ
-VPN & Proxy:
-  name: VPN
+  name: "\u0CB8\u0C82\u0CAA\u0CB0\u0CCD\u0C95\u0CBF\u0CB8\u0CBF"
 DNS & Hosts:
   name: DNS
-Password & 2FA:
-  name: ಪಾಸ್ವರ್ಡ್
-Local Media Player:
-  name: ಸ್ಥಳೀಯ ಮೀಡಿಯಾ ಪ್ಲೇಯರ್
-Online Media Player:
-  name: ಆನ್‌ಲೈನ್ ಮೀಡಿಯಾ ಪ್ಲೇಯರ್
+Development:
+  name: "\u0C85\u0CAD\u0CBF\u0CB5\u0CC3\u0CA6\u0CCD\u0CA7\u0CBF"
+Draw:
+  name: "\u0C8E\u0CB3\u0CC6\u0CAF\u0CBF\u0CB0\u0CBF"
+Ebook Reader:
+  name: "\u0C87\u0CAC\u0CC1\u0C95\u0CCD \u0CB0\u0CC0\u0CA1\u0CB0\u0CCD"
+Email:
+  name: "\u0C87\u0CAE\u0CC7\u0CB2\u0CCD"
+File Transfer:
+  name: "\u0CAB\u0CC8\u0CB2\u0CCD \u0CB5\u0CB0\u0CCD\u0C97\u0CBE\u0CB5\u0CA3\u0CC6"
+Finance Manager:
+  name: "\u0CB9\u0CA3\u0C95\u0CBE\u0CB8\u0CC1 \u0CB5\u0CCD\u0CAF\u0CB5\u0CB8\u0CCD\
+    \u0CA5\u0CBE\u0CAA\u0C95"
+Firewall:
+  name: "\u0CAB\u0CC8\u0CB0\u0CCD\u0CB5\u0CBE\u0CB2\u0CCD"
+Forum:
+  name: "\u0CB5\u0CC7\u0CA6\u0CBF\u0C95\u0CC6"
+Gallery:
+  name: "\u0C97\u0CCD\u0CAF\u0CBE\u0CB2\u0CB0\u0CBF"
+Graphics:
+  name: "\u0C97\u0CCD\u0CB0\u0CBE\u0CAB\u0CBF\u0C95\u0CCD\u0CB8\u0CCD"
+Habit Tracker:
+  name: "\u0C85\u0CAD\u0CCD\u0CAF\u0CBE\u0CB8 \u0C9F\u0CCD\u0CB0\u0CCD\u0CAF\u0CBE\
+    \u0C95\u0CB0\u0CCD"
+Icon Pack:
+  name: "\u0C90\u0C95\u0CBE\u0CA8\u0CCD \u0CAA\u0CCD\u0CAF\u0CBE\u0C95\u0CCD"
+Internet:
+  name: "\u0C87\u0C82\u0C9F\u0CB0\u0CCD\u0CA8\u0CC6\u0C9F\u0CCD"
+Inventory:
+  name: "\u0CA6\u0CBE\u0CB8\u0CCD\u0CA4\u0CBE\u0CA8\u0CC1"
 Keyboard & IME:
-  name: ಕೀಬೋರ್ಡ್
-Calendar & Agenda:
-  name: ಕ್ಯಾಲೆಂಡರ್
-Translation & Dictionary:
-  name: ಅನುವಾದ
+  name: "\u0C95\u0CC0\u0CAC\u0CCB\u0CB0\u0CCD\u0CA1\u0CCD"
+Launcher:
+  name: "\u0CB2\u0CBE\u0C82\u0C9A\u0CB0\u0CCD"
+Local Media Player:
+  name: "\u0CB8\u0CCD\u0CA5\u0CB3\u0CC0\u0CAF \u0CAE\u0CC0\u0CA1\u0CBF\u0CAF\u0CBE\
+    \ \u0CAA\u0CCD\u0CB2\u0CC7\u0CAF\u0CB0\u0CCD"
+Messaging:
+  name: "\u0CB8\u0C82\u0CA6\u0CC7\u0CB6 \u0C95\u0CB3\u0CC1\u0CB9\u0CBF\u0CB8\u0CC1\
+    \u0CB5\u0CBF\u0C95\u0CC6"
+Multimedia:
+  name: "\u0CAE\u0CB2\u0CCD\u0C9F\u0CBF\u0CAE\u0CC0\u0CA1\u0CBF\u0CAF\u0CBE"
 Music Practice Tool:
-  name: ಸಂಗೀತ ಅಭ್ಯಾಸ ಸಾಧನ
+  name: "\u0CB8\u0C82\u0C97\u0CC0\u0CA4 \u0C85\u0CAD\u0CCD\u0CAF\u0CBE\u0CB8 \u0CB8\
+    \u0CBE\u0CA7\u0CA8"
+Navigation:
+  name: "\u0CB8\u0C82\u0C9A\u0CB0\u0CA3\u0CC6"
+Network Analyzer:
+  name: "\u0CA8\u0CC6\u0C9F\u0CCD\u200C\u0CB5\u0CB0\u0CCD\u0C95\u0CCD \u0CB5\u0CBF\
+    \u0CB6\u0CCD\u0CB2\u0CC7\u0CB7\u0C95"
+News:
+  name: "\u0CB8\u0CC1\u0CA6\u0CCD\u0CA6\u0CBF"
+Note:
+  name: "\u0C97\u0CAE\u0CA8\u0CBF\u0CB8\u0CBF"
+Online Media Player:
+  name: "\u0C86\u0CA8\u0CCD\u200C\u0CB2\u0CC8\u0CA8\u0CCD \u0CAE\u0CC0\u0CA1\u0CBF\
+    \u0CAF\u0CBE \u0CAA\u0CCD\u0CB2\u0CC7\u0CAF\u0CB0\u0CCD"
+Pass Wallet:
+  name: "\u0CAA\u0CBE\u0CB8\u0CCD \u0CB5\u0CBE\u0CB2\u0CC6\u0C9F\u0CCD"
+Password & 2FA:
+  name: "\u0CAA\u0CBE\u0CB8\u0CCD\u0CB5\u0CB0\u0CCD\u0CA1\u0CCD"
+Phone & SMS:
+  name: "\u0CAB\u0CCB\u0CA8\u0CCD \u0CAE\u0CA4\u0CCD\u0CA4\u0CC1 SMS"
+Podcast:
+  name: "\u0CAA\u0CBE\u0CA1\u0CCD\u0C95\u0CCD\u0CAF\u0CBE\u0CB8\u0CCD\u0C9F\u0CCD"
+Public Transport:
+  name: "\u0CB8\u0CBE\u0CB0\u0CCD\u0CB5\u0C9C\u0CA8\u0CBF\u0C95 \u0CB8\u0CBE\u0CB0\
+    \u0CBF\u0C97\u0CC6"
+Reading:
+  name: "\u0C93\u0CA6\u0CC1\u0CB5\u0CBF\u0C95\u0CC6"
+Recipe Manager:
+  name: "\u0CB0\u0CC6\u0CB8\u0CBF\u0CAA\u0CBF \u0CAE\u0CCD\u0CAF\u0CBE\u0CA8\u0CC7\
+    \u0C9C\u0CB0\u0CCD"
+Religion:
+  name: "\u0CA7\u0CB0\u0CCD\u0CAE"
+Science & Education:
+  name: "\u0CB5\u0CBF\u0C9C\u0CCD\u0C9E\u0CBE\u0CA8 \u0CAE\u0CA4\u0CCD\u0CA4\u0CC1\
+    \ \u0CB6\u0CBF\u0C95\u0CCD\u0CB7\u0CA3"
+Security:
+  name: "\u0CAD\u0CA6\u0CCD\u0CB0\u0CA4\u0CC6"
+Shopping List:
+  name: "\u0CB6\u0CBE\u0CAA\u0CBF\u0C82\u0C97\u0CCD \u0CAA\u0C9F\u0CCD\u0C9F\u0CBF"
+Social Network:
+  name: "\u0CB8\u0CBE\u0CAE\u0CBE\u0C9C\u0CBF\u0C95 \u0CA8\u0CC6\u0C9F\u0CCD\u0CB5\
+    \u0CB0\u0CCD\u0C95\u0CCD"
+Sports & Health:
+  name: "\u0C95\u0CCD\u0CB0\u0CC0\u0CA1\u0CC6 \u0CAE\u0CA4\u0CCD\u0CA4\u0CC1 \u0C86\
+    \u0CB0\u0CCB\u0C97\u0CCD\u0CAF"
+System:
+  name: "\u0CB8\u0CBF\u0CB8\u0CCD\u0C9F\u0CAE\u0CCD"
+Task:
+  name: "\u0C95\u0CBE\u0CB0\u0CCD\u0CAF"
+Text Editor:
+  name: "\u0CAA\u0CA0\u0CCD\u0CAF \u0CB8\u0C82\u0CAA\u0CBE\u0CA6\u0C95"
+Theming:
+  name: "\u0CA5\u0CC0\u0CAE\u0CCD"
+Translation & Dictionary:
+  name: "\u0C85\u0CA8\u0CC1\u0CB5\u0CBE\u0CA6"
+Unit Convertor:
+  name: "\u0C98\u0C9F\u0C95 \u0CAA\u0CB0\u0CBF\u0CB5\u0CB0\u0CCD\u0CA4\u0C95"
+VPN & Proxy:
+  name: VPN
+Wallet:
+  name: "\u0CB5\u0CBE\u0CB2\u0CC6\u0C9F\u0CCD"
+Wallpaper:
+  name: "\u0CB5\u0CBE\u0CB2\u0CCD\u0CAA\u0CC7\u0CAA\u0CB0\u0CCD"
+Weather:
+  name: "\u0CB9\u0CB5\u0CBE\u0CAE\u0CBE\u0CA8"
+Workout:
+  name: "\u0CA4\u0CBE\u0CB2\u0CC0\u0CAE\u0CC1"
+Writing:
+  name: "\u0CAC\u0CB0\u0CC6\u0CAF\u0CC1\u0CB5\u0CC1\u0CA6\u0CC1"

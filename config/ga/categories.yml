@@ -1,319 +1,382 @@
+AI Chat:
+  description: "C\xFAnt\xF3ir\xED AI, comhr\xE1bots, agus comh\xE9adain mh\xFAnla\
+    \ teanga mh\xF3ir (LLM)"
+  name: "Comhr\xE1 AI"
+Action Game:
+  description: "Cluich\xED gn\xEDomha\xEDochta, sp\xF3irt, r\xE1sa\xEDochta agus ard\xE1\
+    in"
+  name: "Cluiche Gn\xEDomha\xEDochta"
+Alarm Clock:
+  description: "Socraigh al\xE1ram ar am"
+  name: "Clog Al\xE1raim"
+App Manager:
+  description: "Bainistigh, eagraigh agus rialaigh aipeanna, intinn agus ceadanna\
+    \ suite\xE1ilte"
+  name: Bainisteoir Aipeanna
+App Store & Updater:
+  description: "Aimsigh, suite\xE1il agus nuashonraigh aipeanna \xF3 st\xF3rtha bogearra\xED"
+  name: App Store & Nuashonraitheoir
+Battery:
+  description: "D\xE9an monat\xF3ireacht ar shaolr\xE9 na ceallra\xED, ar \xFAs\xE1\
+    id cumhachta agus ar mhuirear\xFA agus d\xE9an iad a bharrfheabhs\xFA"
+  name: "Ceallra\xED"
+Board Game:
+  description: Cluiche boird, ficheall, dul, tic-tac-toe
+  name: Cluiche Boird
+Bookmark:
+  description: "S\xE1bh\xE1il, eagraigh agus bainistigh naisc agus liosta\xED l\xE9\
+    itheoireachta is fearr leat"
+  name: Leabharmharc
+Browser:
+  description: "Brabhs\xE1laithe gr\xE9as\xE1in le haghaidh brabhs\xE1il idirl\xED\
+    n agus f\xE9achaint ar shu\xEDomhanna gr\xE9as\xE1in"
+  name: "Brabhs\xE1la\xED"
+Calculator:
+  description: "Uirlis\xED r\xEDofa uimhr\xEDochta, eola\xEDochta agus matamaitici\xFA\
+    la"
+  name: "\xC1ireamh\xE1n"
+Calendar & Agenda:
+  description: "Sceideal imeachta\xED, meabhr\xFAch\xE1in, coinn\xED agus plean\xE1\
+    laithe laeth\xFAla"
+  name: "F\xE9ilire agus Cl\xE1r Oibre"
+Camera:
+  description: "Ceamara, breathn\xF3ir ceamara IP agus taifead\xE1n f\xEDse"
+  name: Ceamara
+Card Game:
+  description: "Cluiche c\xE1rta\xED, solitaire"
+  name: "Cluiche C\xE1rta\xED"
+Cast:
+  description: Teilgthe, UPnP, DLNA, FCast, AirPlay, Miracast
+  name: Teilgthe
+Casual Game:
+  description: "Cluiche \xF3c\xE1ideach simpl\xED"
+  name: "Cluiche \xD3c\xE1ideach"
+Clock:
+  description: Inis an t-am reatha
+  name: Clog
+Cloud Storage & File Sync:
+  description: "C\xFAltaca, sioncr\xF3n\xFA agus rochtain a fh\xE1il ar chomhaid go\
+    \ cianda tr\xED sheirbh\xEDs\xED scamall"
+  name: "St\xF3r\xE1il N\xE9il & Sioncr\xF3n\xFA Comhad"
+Code & Forge:
+  description: "Git, \xF3st\xE1il c\xF3d foinse, brionn\xFA"
+  name: "C\xF3d & Brionn\xFA"
 Connectivity:
   name: Nascacht
-Development:
-  name: Forbairt
-  description: Códú, ríomhchlárú, IDE, críochfort, agus uirlisí forbróra
-Graphics:
-  name: Grafaicí
-  description: Uirlisí eagarthóireachta íomhá, ionramháil grianghraf, agus dearadh amhairc
-Internet:
-  name: Idirlíon
-Reading:
-  name: Léamh
-  description: Ailt, ábhar fada, léigh níos déanaí é, agus aipeanna léitheoirí gréasáin
-Navigation:
-  name: Loingseoireacht
-  description: Léarscáileanna, GPS, treoracha cas ar chasadh, agus aipeanna pleanála bealaigh
-Phone & SMS:
-  name: Fón & SMS
-  description: Diaileoirí, bainisteoirí glaonna, agus fóntais teachtaireachtaí téacs
-Science & Education:
-  name: Eolaíocht & Oideachas
-  description: Aipeanna foghlama, staidéir, tagartha agus oideachais
-Security:
-  name: Slándáil
-Sports & Health:
-  name: Spóirt & Sláinte
-  description: Rianú aclaíochta, folláine, scóir spóirt, agus monatóireacht sláinte
-System:
-  name: Córas
-Theming:
-  name: Téamaí
-  description: Saincheap cuma do ghléis le téamaí, clónna agus stíleanna UI
-Multimedia:
-  name: Ilmheáin
-Writing:
-  name: Ag scríobh
-  description: Aipeanna próiseálaithe focal, dialannúcháin, dréachtaithe agus scríbhneoireachta fada
-Email:
-  name: Ríomhphost
-  description: Cliant ríomhphoist chun teachtaireachtaí ríomhphoist a sheoladh, a fháil agus a bhainistiú
-VPN & Proxy:
-  name: VPN & Seachfhreastalaí
-  description: Criptigh trácht, seachbhóthar srianta (timpeallacht) agus déan do nasc a anaithnidiú
-DNS & Hosts:
-  name: DNS & Óstaigh
-  description: Cumraigh réitigh DNS, blocáil fógraí, comhad óstaigh, agus ródaireacht fearainn
-App Store & Updater:
-  name: App Store & Nuashonraitheoir
-  description: Aimsigh, suiteáil agus nuashonraigh aipeanna ó stórtha bogearraí
-Browser:
-  name: Brabhsálaí
-  description: Brabhsálaithe gréasáin le haghaidh brabhsáil idirlín agus féachaint ar shuíomhanna gréasáin
-File Encryption & Vault:
-  name: Criptiú Comhad & Cruinneachán
-  description: Criptigh, glasáil agus folaigh comhaid agus fillteáin phríobháideacha
-File Transfer:
-  name: Aistriú Comhad
-  description: Comhroinn agus aistrigh comhaid trí FTP, LAN, Bluetooth, nó piara go piara (p2p)
-Social Network:
-  name: Líonra Sóisialta
-  description: Na meáin shóisialta, micribhlagáil, agus ardáin phobail ar líne
-Local Media Player:
-  name: Seinnteoir Meán Áitiúil
-  description: Seinn comhaid fuaime agus físe as líne atá stóráilte ar do ghléas
-Weather:
-  name: Aimsir
-  description: Aipeanna réamhaisnéisí, radair, teochta agus dálaí atmaisféaracha
-News:
-  name: Nuacht
-  description: Ceannlínte, ailt, fothaí RSS, agus comhiomlánaitheoirí nuachta is déanaí
-Online Media Player:
-  name: Seinnteoir Meán Ar Líne
-  description: Sruthlaigh ceol, físeáin agus ábhar beo ón idirlíon
-Password & 2FA:
-  name: Pasfhocal agus 2FA
-  description: Bainisteoirí pasfhocal, fíordheimhnitheoirí, OTP, TOTP, HOTP, U2F, FIDO agus uirlisí slándála dhá fhachtóir
-Podcast:
-  name: Podchraoladh
-  description: Liostáil le heachtraí agus seónna fuaime podchraoltaí, iad a shruthlú agus a íoslódáil
-Keyboard & IME:
-  name: Méarchlár & IME
-  description: Méarchláir saincheaptha, modhanna ionchuir, uathcheartú, agus aipeanna clóscríofa
-Messaging:
-  name: Teachtaireachtaí
-  description: Aipeanna teachtaireachtaí meandaracha, comhrá agus cumarsáide SMS
-Bookmark:
-  name: Leabharmharc
-  description: Sábháil, eagraigh agus bainistigh naisc agus liostaí léitheoireachta is fearr leat
-Calculator:
-  name: Áireamhán
-  description: Uirlisí ríofa uimhríochta, eolaíochta agus matamaiticiúla
-Calendar & Agenda:
-  name: Féilire agus Clár Oibre
-  description: Sceideal imeachtaí, meabhrúcháin, coinní agus pleanálaithe laethúla
-Cloud Storage & File Sync:
-  name: Stóráil Néil & Sioncrónú Comhad
-  description: Cúltaca, sioncrónú agus rochtain a fháil ar chomhaid go cianda trí sheirbhísí scamall
-Draw:
-  name: Tarraing
-  description: Aipeanna chanbháis sceitseála, péintéireachta, léaráidí agus ealaíne digiteacha
-Ebook Reader:
-  name: Léitheoir Ríomhleabhar
-  description: Léigh ríomhleabhair, EPUB, PDF, agus leabhair agus foilseacháin dhigiteacha
-Finance Manager:
-  name: Bainisteoir Airgeadais
-  description: Rianaigh costais, buiséid, ioncam agus cuntais airgeadais phearsanta
-Gallery:
-  name: Gailearaí
-  description: Brabhsáil, féach ar, agus eagraigh grianghraif, íomhánna agus físeáin
-Icon Pack:
-  name: Pacáiste Deilbhíní
-  description: Tacair deilbhíní saincheaptha chun stíl agus téama deilbhíní aipeanna a chruthú
-Launcher:
-  name: Lainseálaí
-  description: Athsholáthar scáileáin bhaile agus aipeanna timpeallachta deisce
-Note:
-  name: Nóta
-  description: Cláir nótaí, meamraim, agus aipeanna tapa nótaí a thógáil agus a eagrú
-Pass Wallet:
-  name: Sparán Pas
-  description: Pasanna bordála, ticéid, cártaí dílseachta agus cúpóin siopa
-Recipe Manager:
-  name: Bainisteoir Oidis
-  description: Stóráil, eagraigh agus faigh amach oidis chócaireachta agus smaointe béilí
-Text Editor:
-  name: Eagarthóir Téacs
-  description: Eagarthóirí téacs simplí, eagarthóirí Markdown, agus uirlisí scríbhneoireachta
-Translation & Dictionary:
-  name: Aistriúchán & Foclóir
-  description: Aistrigh teangacha, cuardaigh focail, agus faigh rochtain ar thagairtí stór focal
-Unit Convertor:
-  name: Tiontaire Aonaid
-  description: Tiontaigh idir aonaid faid, meáchain, teochta, airgeadra agus níos mó
-Voice & Video Chat:
-  name: Comhrá Gutha & Físeáin
-  description: Aipeanna glaonna fuaime agus físe, comhdhála, agus cumarsáide VoIP
-Wallet:
-  name: Sparán
-  description: Sparán digiteach le haghaidh íocaíochtaí, cártaí, agus bainistíocht cryptocurrency
-Wallpaper:
-  name: Páipéar balla
-  description: Aipeanna cúlra agus páipéar balla beo scáileáin bhaile agus scáileáin ghlasála
-Workout:
-  name: Babhta traenála
-  description: Gnáthaimh aclaíochta, rianú giomnáisiam, rith, agus aipeanna oiliúna aclaíochta
-Public Transport:
-  name: Léarscáil & Amchlár Iompair Phoiblí
-  description: Sceidil agus pleanálaithe taistil busanna, traenacha, meitreo agus iompair phoiblí
-Shopping List:
-  name: Liosta Siopadóireachta
-  description: Liostaí grósaera, rianaitheoirí le ceannach, agus aipeanna siopadóireachta comhoibríocha
-Task:
-  name: Tasc
-  description: Liostaí le déanamh, bainisteoirí tascanna, agus uirlisí táirgiúlachta agus GTD
-Forum:
-  name: Fóram
-  description: Cláir phlé, snáitheanna pobail, agus ardáin C&F
-Habit Tracker:
-  name: Rianaitheoir Nósanna
-  description: Cruthaigh gnáthaimh, rianaigh spriocanna laethúla, agus déan monatóireacht ar shraitheanna pearsanta
-Music Practice Tool:
-  name: Uirlis Cleachtaidh Ceoil
-  description: Tiúnóirí, meitreanóim, uirlisí corda, agus áiseanna cleachtaidh ionstraimí
-Location Tracker & Sharer:
-  name: Rianaitheoir Suímh & Roinnteoir
-  description: Roinn agus déan monatóireacht ar shuíomh GPS fíor-ama le daoine eile
-AI Chat:
-  name: Comhrá AI
-  description: Cúntóirí AI, comhrábots, agus comhéadain mhúnla teanga mhóir (LLM)
-App Manager:
-  name: Bainisteoir Aipeanna
-  description: Bainistigh, eagraigh agus rialaigh aipeanna, intinn agus ceadanna suiteáilte
-Religion:
-  name: Reiligiún
-  description: Amanna paidir, téacsanna naofa, paidreacha agus aipeanna cleachtaidh spioradálta
-Clock:
-  name: Clog
-  description: Inis an t-am reatha
-Firewall:
-  name: Balla dóiteáin
-  description: Blocáil trácht líonra nach dteastaíonn uait agus rialaigh rochtain idirlín an aip
-Inventory:
-  name: Fardal
-  description: Rianaigh, catalógaigh agus bainistigh earraí fisiciúla agus stoc
-Network Analyzer:
-  name: Anailíseoir Líonra
-  description: Wi-Fi a dhiagnóisiú, líonraí a scanadh, agus feidhmíocht nasc a mhonatóiriú
 Contact:
-  name: Teagmháil
-  description: Aipeanna leabhar seoltaí, leabhar teileafóin agus bainistíochta daoine
-Battery:
-  name: Ceallraí
-  description: Déan monatóireacht ar shaolré na ceallraí, ar úsáid cumhachta agus ar mhuirearú agus déan iad a bharrfheabhsú
-Flashlight:
-  name: Tóirse
-  description: Aipeanna tóirse agus splancsholais LED
-Radio:
-  name: Raidió
-  description: Sruthlaigh stáisiúin raidió FM/AM beo agus craoltaí raidió idirlín
-Remote Controller:
-  name: Rialaitheoir Cianrialtáin
-  description: Cianrialtáin infridhearg agus cliste baile do theilifíseáin, aonaid aerchóirithe, agus gléasanna eile
-Remote Access:
-  name: Rochtain Chianda
-  description: Rialú deasc, freastalaithe agus gléasanna go cianda trí RDP, VNC nó SSH
-Diet:
-  name: Aiste bia
-  description: Cothú, calraí, bainistíocht bia agus rianú
-Health Manager:
-  name: Bainisteoir Sláinte
-  description: Meáchan an bhainisteora, ráta croí, brú fola, míosta agus méadrachtaí sláinte eile
-Schedule:
-  name: Sceideal
-  description: Sceideal don chomhdháil agus don imeacht
-Text to Speech:
-  name: Téacs go Caint
-  description: Uirlisí TTS
-Time Tracker:
-  name: Rianaitheoir Ama
-  description: Rianaigh an t-am a úsáidtear ar ghníomhaíochtaí agus ar am scáileáin
-Action Game:
-  name: Cluiche Gníomhaíochta
-  description: Cluichí gníomhaíochta, spóirt, rásaíochta agus ardáin
-Board Game:
-  name: Cluiche Boird
-  description: Cluiche boird, ficheall, dul, tic-tac-toe
-Card Game:
-  name: Cluiche Cártaí
-  description: Cluiche cártaí, solitaire
-Casual Game:
-  name: Cluiche Ócáideach
-  description: Cluiche ócáideach simplí
+  description: "Aipeanna leabhar seolta\xED, leabhar teileaf\xF3in agus bainist\xED\
+    ochta daoine"
+  name: "Teagmh\xE1il"
+DNS & Hosts:
+  description: "Cumraigh r\xE9itigh DNS, bloc\xE1il f\xF3gra\xED, comhad \xF3staigh,\
+    \ agus r\xF3daireacht fearainn"
+  name: "DNS & \xD3staigh"
+Development:
+  description: "C\xF3d\xFA, r\xEDomhchl\xE1r\xFA, IDE, cr\xEDochfort, agus uirlis\xED\
+    \ forbr\xF3ra"
+  name: Forbairt
 Dice:
-  name: Dísle
-  description: Roghnóir randamach
-Educational Game:
-  name: Cluiche Oideachasúil
-  description: Foghlaim sa chluiche, tráth na gceist
-Emulator:
-  name: Aithriseoir
-  description: Cluiche agus clár a ritheann aithriseoir
-Game Helper:
-  name: Cúntóir Cluiche
-  description: Cúntóir cluiche, cúntóir, compánach, clár scórála, lasc ama
-Party Game:
-  name: Cluiche Cóisire
-  description: Cluiche il-imreoir, cluiche cóisire
-Platformer Game:
-  name: Cluiche Ardáin
-  description: Cluiche ardáin, cluiche scrollaithe taobh
-Puzzle Game:
-  name: Cluiche Puzail
-  description: Puzal, sudoku, cluiche cuimhne
-Role-Playing Game:
-  name: Cluiche Ról-imirt
-  description: RPG, cosúil le bradaí
-Shooter Game:
-  name: Cluiche Lámhachóra
-  description: Sprioc lámhaigh
-Strategy Game:
-  name: Cluiche Straitéise
-  description: Straitéis, insamhalta
-Sport Game:
-  name: Cluiche Spóirt
-  description: Cluichí Spóirt
-Visual Novel:
-  name: Úrscéal Amhairc
-  description: Úrscéal amhairc, galgame, cluiche scéalaíochta
-Word Game:
-  name: Cluiche Focal
-  description: Cluiche puzail focal, crosfhocal, buille faoi thuairim focal
-Meditation:
-  name: Machnamh
-  description: Machnamh, aireachas, cleachtadh análaithe
-Timer:
-  name: Amaireadóir
-  description: Amchlár eatraimh, coimeád ama, comhaireamh síos
+  description: "Roghn\xF3ir randamach"
+  name: "D\xEDsle"
+Diet:
+  description: "Coth\xFA, calra\xED, bainist\xEDocht bia agus rian\xFA"
+  name: Aiste bia
 Download:
-  name: Íoslódáil
-  description: Íoslódálaí, bainisteoir íoslódála, agus cliant torrent
+  description: "\xCDosl\xF3d\xE1la\xED, bainisteoir \xEDosl\xF3d\xE1la, agus cliant\
+    \ torrent"
+  name: "\xCDosl\xF3d\xE1il"
+Draw:
+  description: "Aipeanna chanbh\xE1is sceitse\xE1la, p\xE9int\xE9ireachta, l\xE9ar\xE1\
+    id\xED agus eala\xEDne digiteacha"
+  name: Tarraing
+Ebook Reader:
+  description: "L\xE9igh r\xEDomhleabhair, EPUB, PDF, agus leabhair agus foilseach\xE1\
+    in dhigiteacha"
+  name: "L\xE9itheoir R\xEDomhleabhar"
+Educational Game:
+  description: "Foghlaim sa chluiche, tr\xE1th na gceist"
+  name: "Cluiche Oideachas\xFAil"
+Email:
+  description: "Cliant r\xEDomhphoist chun teachtaireachta\xED r\xEDomhphoist a sheoladh,\
+    \ a fh\xE1il agus a bhainisti\xFA"
+  name: "R\xEDomhphost"
+Emulator:
+  description: "Cluiche agus cl\xE1r a ritheann aithriseoir"
+  name: Aithriseoir
+File Encryption & Vault:
+  description: "Criptigh, glas\xE1il agus folaigh comhaid agus fillte\xE1in phr\xED\
+    obh\xE1ideacha"
+  name: "Cripti\xFA Comhad & Cruinneach\xE1n"
 File Manager:
+  description: "Bainisteoir comhad agus taisc\xE9ala\xED"
   name: Bainisteoir Comhad
-  description: Bainisteoir comhad agus taiscéalaí
-Camera:
-  name: Ceamara
-  description: Ceamara, breathnóir ceamara IP agus taifeadán físe
+File Transfer:
+  description: "Comhroinn agus aistrigh comhaid tr\xED FTP, LAN, Bluetooth, n\xF3\
+    \ piara go piara (p2p)"
+  name: "Aistri\xFA Comhad"
+Finance Manager:
+  description: "Rianaigh costais, buis\xE9id, ioncam agus cuntais airgeadais phearsanta"
+  name: Bainisteoir Airgeadais
+Firewall:
+  description: "Bloc\xE1il tr\xE1cht l\xEDonra nach dteasta\xEDonn uait agus rialaigh\
+    \ rochtain idirl\xEDn an aip"
+  name: "Balla d\xF3ite\xE1in"
+Flashlight:
+  description: "Aipeanna t\xF3irse agus splancsholais LED"
+  name: "T\xF3irse"
+Forum:
+  description: "Cl\xE1ir phl\xE9, sn\xE1itheanna pobail, agus ard\xE1in C&F"
+  name: "F\xF3ram"
+Gallery:
+  description: "Brabhs\xE1il, f\xE9ach ar, agus eagraigh grianghraif, \xEDomh\xE1\
+    nna agus f\xEDse\xE1in"
+  name: "Gaileara\xED"
+Game Helper:
+  description: "C\xFAnt\xF3ir cluiche, c\xFAnt\xF3ir, comp\xE1nach, cl\xE1r sc\xF3\
+    r\xE1la, lasc ama"
+  name: "C\xFAnt\xF3ir Cluiche"
+Graphics:
+  description: "Uirlis\xED eagarth\xF3ireachta \xEDomh\xE1, ionramh\xE1il grianghraf,\
+    \ agus dearadh amhairc"
+  name: "Grafaic\xED"
+Habit Tracker:
+  description: "Cruthaigh gn\xE1thaimh, rianaigh spriocanna laeth\xFAla, agus d\xE9\
+    an monat\xF3ireacht ar shraitheanna pearsanta"
+  name: "Rianaitheoir N\xF3sanna"
+Health Manager:
+  description: "Me\xE1chan an bhainisteora, r\xE1ta cro\xED, br\xFA fola, m\xEDosta\
+    \ agus m\xE9adrachta\xED sl\xE1inte eile"
+  name: "Bainisteoir Sl\xE1inte"
+Icon Pack:
+  description: "Tacair deilbh\xEDn\xED saincheaptha chun st\xEDl agus t\xE9ama deilbh\xED\
+    n\xED aipeanna a chruth\xFA"
+  name: "Pac\xE1iste Deilbh\xEDn\xED"
+Internet:
+  name: "Idirl\xEDon"
+Inventory:
+  description: "Rianaigh, catal\xF3gaigh agus bainistigh earra\xED fisici\xFAla agus\
+    \ stoc"
+  name: Fardal
+Keyboard & IME:
+  description: "M\xE9archl\xE1ir saincheaptha, modhanna ionchuir, uathcheart\xFA,\
+    \ agus aipeanna cl\xF3scr\xEDofa"
+  name: "M\xE9archl\xE1r & IME"
+Launcher:
+  description: "Athshol\xE1thar sc\xE1ile\xE1in bhaile agus aipeanna timpeallachta\
+    \ deisce"
+  name: "Lainse\xE1la\xED"
+Local Media Player:
+  description: "Seinn comhaid fuaime agus f\xEDse as l\xEDne at\xE1 st\xF3r\xE1ilte\
+    \ ar do ghl\xE9as"
+  name: "Seinnteoir Me\xE1n \xC1iti\xFAil"
+Location Tracker & Sharer:
+  description: "Roinn agus d\xE9an monat\xF3ireacht ar shu\xEDomh GPS f\xEDor-ama\
+    \ le daoine eile"
+  name: "Rianaitheoir Su\xEDmh & Roinnteoir"
 Lyrics:
-  name: Liricí
-  description: Féach ar liricí agus cuardaigh iad
+  description: "F\xE9ach ar liric\xED agus cuardaigh iad"
+  name: "Liric\xED"
 Market & Price:
+  description: "Praghas, r\xE1ta malairte, stoc"
   name: Margadh & Praghas
-  description: Praghas, ráta malairte, stoc
-Recorder:
-  name: Taifeadán
-  description: Fuaim, scáileán, taifeadán glaonna
-Alarm Clock:
-  name: Clog Aláraim
-  description: Socraigh aláram ar am
-Cast:
-  name: Teilgthe
-  description: Teilgthe, UPnP, DLNA, FCast, AirPlay, Miracast
+Meditation:
+  description: "Machnamh, aireachas, cleachtadh an\xE1laithe"
+  name: Machnamh
+Messaging:
+  description: "Aipeanna teachtaireachta\xED meandaracha, comhr\xE1 agus cumars\xE1\
+    ide SMS"
+  name: "Teachtaireachta\xED"
+Multimedia:
+  name: "Ilmhe\xE1in"
+Music Practice Tool:
+  description: "Ti\xFAn\xF3ir\xED, meitrean\xF3im, uirlis\xED corda, agus \xE1iseanna\
+    \ cleachtaidh ionstraim\xED"
+  name: Uirlis Cleachtaidh Ceoil
+Navigation:
+  description: "L\xE9arsc\xE1ileanna, GPS, treoracha cas ar chasadh, agus aipeanna\
+    \ plean\xE1la bealaigh"
+  name: Loingseoireacht
+Network Analyzer:
+  description: "Wi-Fi a dhiagn\xF3isi\xFA, l\xEDonra\xED a scanadh, agus feidhm\xED\
+    ocht nasc a mhonat\xF3iri\xFA"
+  name: "Anail\xEDseoir L\xEDonra"
+News:
+  description: "Ceannl\xEDnte, ailt, fotha\xED RSS, agus comhioml\xE1naitheoir\xED\
+    \ nuachta is d\xE9ana\xED"
+  name: Nuacht
+Note:
+  description: "Cl\xE1ir n\xF3ta\xED, meamraim, agus aipeanna tapa n\xF3ta\xED a th\xF3\
+    g\xE1il agus a eagr\xFA"
+  name: "N\xF3ta"
 Notification:
-  name: Fógra
-  description: Bainisteoir fógraí, logálaí, atreoraitheoir, feabhsaitheoir
-Stopwatch:
-  name: Stopuaireadóir
-  description: Tomhais dul chun cinn, caite, lasc ama lap
-Code & Forge:
-  name: Cód & Brionnú
-  description: Git, óstáil cód foinse, brionnú
+  description: "Bainisteoir f\xF3gra\xED, log\xE1la\xED, atreoraitheoir, feabhsaitheoir"
+  name: "F\xF3gra"
 OCR:
+  description: "Scan\xF3ir doicim\xE9ad, aitheantas opt\xFAil carachtar"
   name: OCR
-  description: Scanóir doiciméad, aitheantas optúil carachtar
+Online Media Player:
+  description: "Sruthlaigh ceol, f\xEDse\xE1in agus \xE1bhar beo \xF3n idirl\xEDon"
+  name: "Seinnteoir Me\xE1n Ar L\xEDne"
+Party Game:
+  description: "Cluiche il-imreoir, cluiche c\xF3isire"
+  name: "Cluiche C\xF3isire"
+Pass Wallet:
+  description: "Pasanna bord\xE1la, tic\xE9id, c\xE1rta\xED d\xEDlseachta agus c\xFA\
+    p\xF3in siopa"
+  name: "Spar\xE1n Pas"
+Password & 2FA:
+  description: "Bainisteoir\xED pasfhocal, f\xEDordheimhnitheoir\xED, OTP, TOTP, HOTP,\
+    \ U2F, FIDO agus uirlis\xED sl\xE1nd\xE1la dh\xE1 fhacht\xF3ir"
+  name: Pasfhocal agus 2FA
+Phone & SMS:
+  description: "Diaileoir\xED, bainisteoir\xED glaonna, agus f\xF3ntais teachtaireachta\xED\
+    \ t\xE9acs"
+  name: "F\xF3n & SMS"
+Platformer Game:
+  description: "Cluiche ard\xE1in, cluiche scrollaithe taobh"
+  name: "Cluiche Ard\xE1in"
+Podcast:
+  description: "Liost\xE1il le heachtra\xED agus se\xF3nna fuaime podchraolta\xED\
+    , iad a shruthl\xFA agus a \xEDosl\xF3d\xE1il"
+  name: Podchraoladh
+Public Transport:
+  description: "Sceidil agus plean\xE1laithe taistil busanna, traenacha, meitreo agus\
+    \ iompair phoibl\xED"
+  name: "L\xE9arsc\xE1il & Amchl\xE1r Iompair Phoibl\xED"
 Push:
-  name: Brúigh
-  description: Teachtaireachtaí brú
+  description: "Teachtaireachta\xED br\xFA"
+  name: "Br\xFAigh"
+Puzzle Game:
+  description: Puzal, sudoku, cluiche cuimhne
+  name: Cluiche Puzail
+Radio:
+  description: "Sruthlaigh st\xE1isi\xFAin raidi\xF3 FM/AM beo agus craolta\xED raidi\xF3\
+    \ idirl\xEDn"
+  name: "Raidi\xF3"
+Reading:
+  description: "Ailt, \xE1bhar fada, l\xE9igh n\xEDos d\xE9ana\xED \xE9, agus aipeanna\
+    \ l\xE9itheoir\xED gr\xE9as\xE1in"
+  name: "L\xE9amh"
+Recipe Manager:
+  description: "St\xF3r\xE1il, eagraigh agus faigh amach oidis ch\xF3caireachta agus\
+    \ smaointe b\xE9il\xED"
+  name: Bainisteoir Oidis
+Recorder:
+  description: "Fuaim, sc\xE1ile\xE1n, taifead\xE1n glaonna"
+  name: "Taifead\xE1n"
+Religion:
+  description: "Amanna paidir, t\xE9acsanna naofa, paidreacha agus aipeanna cleachtaidh\
+    \ spiorad\xE1lta"
+  name: "Reiligi\xFAn"
+Remote Access:
+  description: "Rial\xFA deasc, freastalaithe agus gl\xE9asanna go cianda tr\xED RDP,\
+    \ VNC n\xF3 SSH"
+  name: Rochtain Chianda
+Remote Controller:
+  description: "Cianrialt\xE1in infridhearg agus cliste baile do theilif\xEDse\xE1\
+    in, aonaid aerch\xF3irithe, agus gl\xE9asanna eile"
+  name: "Rialaitheoir Cianrialt\xE1in"
+Role-Playing Game:
+  description: "RPG, cos\xFAil le brada\xED"
+  name: "Cluiche R\xF3l-imirt"
+Schedule:
+  description: "Sceideal don chomhdh\xE1il agus don imeacht"
+  name: Sceideal
+Science & Education:
+  description: "Aipeanna foghlama, staid\xE9ir, tagartha agus oideachais"
+  name: "Eola\xEDocht & Oideachas"
+Security:
+  name: "Sl\xE1nd\xE1il"
+Shooter Game:
+  description: "Sprioc l\xE1mhaigh"
+  name: "Cluiche L\xE1mhach\xF3ra"
+Shopping List:
+  description: "Liosta\xED gr\xF3saera, rianaitheoir\xED le ceannach, agus aipeanna\
+    \ siopad\xF3ireachta comhoibr\xEDocha"
+  name: "Liosta Siopad\xF3ireachta"
+Social Network:
+  description: "Na me\xE1in sh\xF3isialta, micribhlag\xE1il, agus ard\xE1in phobail\
+    \ ar l\xEDne"
+  name: "L\xEDonra S\xF3isialta"
+Sport Game:
+  description: "Cluich\xED Sp\xF3irt"
+  name: "Cluiche Sp\xF3irt"
+Sports & Health:
+  description: "Rian\xFA acla\xEDochta, foll\xE1ine, sc\xF3ir sp\xF3irt, agus monat\xF3\
+    ireacht sl\xE1inte"
+  name: "Sp\xF3irt & Sl\xE1inte"
+Stopwatch:
+  description: Tomhais dul chun cinn, caite, lasc ama lap
+  name: "Stopuairead\xF3ir"
+Strategy Game:
+  description: "Strait\xE9is, insamhalta"
+  name: "Cluiche Strait\xE9ise"
+System:
+  name: "C\xF3ras"
+Task:
+  description: "Liosta\xED le d\xE9anamh, bainisteoir\xED tascanna, agus uirlis\xED\
+    \ t\xE1irgi\xFAlachta agus GTD"
+  name: Tasc
+Text Editor:
+  description: "Eagarth\xF3ir\xED t\xE9acs simpl\xED, eagarth\xF3ir\xED Markdown,\
+    \ agus uirlis\xED scr\xEDbhneoireachta"
+  name: "Eagarth\xF3ir T\xE9acs"
+Text to Speech:
+  description: "Uirlis\xED TTS"
+  name: "T\xE9acs go Caint"
+Theming:
+  description: "Saincheap cuma do ghl\xE9is le t\xE9ama\xED, cl\xF3nna agus st\xED\
+    leanna UI"
+  name: "T\xE9ama\xED"
+Time Tracker:
+  description: "Rianaigh an t-am a \xFAs\xE1idtear ar ghn\xEDomha\xEDochta\xED agus\
+    \ ar am sc\xE1ile\xE1in"
+  name: Rianaitheoir Ama
+Timer:
+  description: "Amchl\xE1r eatraimh, coime\xE1d ama, comhaireamh s\xEDos"
+  name: "Amairead\xF3ir"
+Translation & Dictionary:
+  description: "Aistrigh teangacha, cuardaigh focail, agus faigh rochtain ar thagairt\xED\
+    \ st\xF3r focal"
+  name: "Aistri\xFAch\xE1n & Focl\xF3ir"
+Unit Convertor:
+  description: "Tiontaigh idir aonaid faid, me\xE1chain, teochta, airgeadra agus n\xED\
+    os m\xF3"
+  name: Tiontaire Aonaid
+VPN & Proxy:
+  description: "Criptigh tr\xE1cht, seachbh\xF3thar srianta (timpeallacht) agus d\xE9\
+    an do nasc a anaithnidi\xFA"
+  name: "VPN & Seachfhreastala\xED"
+Visual Novel:
+  description: "\xDArsc\xE9al amhairc, galgame, cluiche sc\xE9ala\xEDochta"
+  name: "\xDArsc\xE9al Amhairc"
+Voice & Video Chat:
+  description: "Aipeanna glaonna fuaime agus f\xEDse, comhdh\xE1la, agus cumars\xE1\
+    ide VoIP"
+  name: "Comhr\xE1 Gutha & F\xEDse\xE1in"
 Volume:
-  name: Toirt
   description: Bainistigh socruithe toirte
+  name: Toirt
+Wallet:
+  description: "Spar\xE1n digiteach le haghaidh \xEDoca\xEDochta\xED, c\xE1rta\xED\
+    , agus bainist\xEDocht cryptocurrency"
+  name: "Spar\xE1n"
+Wallpaper:
+  description: "Aipeanna c\xFAlra agus p\xE1ip\xE9ar balla beo sc\xE1ile\xE1in bhaile\
+    \ agus sc\xE1ile\xE1in ghlas\xE1la"
+  name: "P\xE1ip\xE9ar balla"
+Weather:
+  description: "Aipeanna r\xE9amhaisn\xE9is\xED, radair, teochta agus d\xE1la\xED\
+    \ atmaisf\xE9aracha"
+  name: Aimsir
+Word Game:
+  description: Cluiche puzail focal, crosfhocal, buille faoi thuairim focal
+  name: Cluiche Focal
+Workout:
+  description: "Gn\xE1thaimh acla\xEDochta, rian\xFA giomn\xE1isiam, rith, agus aipeanna\
+    \ oili\xFAna acla\xEDochta"
+  name: "Babhta traen\xE1la"
+Writing:
+  description: "Aipeanna pr\xF3ise\xE1laithe focal, dialann\xFAch\xE1in, dr\xE9achtaithe\
+    \ agus scr\xEDbhneoireachta fada"
+  name: "Ag scr\xEDobh"

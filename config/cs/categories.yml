@@ -1,319 +1,381 @@
+AI Chat:
+  description: "Rozhran\xED pro AI asistenty, chatboty a velk\xE9 jazykov\xE9 modely\
+    \ (LLM)"
+  name: AI chat
+Action Game:
+  description: "Ak\u010Dn\xED, sportovn\xED, z\xE1vodn\xED a plo\u0161inov\xE9 hry"
+  name: "Ak\u010Dn\xED hra"
+Alarm Clock:
+  description: "Nastaven\xED bud\xEDku na ur\u010Dit\xFD \u010Das"
+  name: "Bud\xEDk"
+App Manager:
+  description: "Spr\xE1va, organizace a ovl\xE1d\xE1n\xED nainstalovan\xFDch aplikac\xED\
+    \ a opr\xE1vn\u011Bn\xED"
+  name: "Spr\xE1vce aplikac\xED"
+App Store & Updater:
+  description: "Objevov\xE1n\xED, instalace a aktualizace aplikac\xED ze softwarov\xFD\
+    ch repozit\xE1\u0159\u016F"
+  name: "Obchod s aplikacemi a aktualiz\xE1tor"
+Battery:
+  description: "Monitorov\xE1n\xED a optimalizov\xE1n\xED \u017Eivotnosti baterie,\
+    \ vyu\u017Eit\xED energie a nab\xEDjen\xED"
+  name: Baterie
+Board Game:
+  description: "Deskov\xE1 hra, \u0161achy, go, pi\u0161kvorky"
+  name: "Deskov\xE1 hra"
+Bookmark:
+  description: "Ukl\xE1d\xE1n\xED, organizace a spr\xE1va obl\xEDben\xFDch odkaz\u016F\
+    \ a seznam\u016F ke \u010Dten\xED"
+  name: "Z\xE1lo\u017Eka"
+Browser:
+  description: "Webov\xE9 prohl\xED\u017Ee\u010De pro proch\xE1zen\xED internetu a\
+    \ prohl\xED\u017Een\xED web\u016F"
+  name: "Prohl\xED\u017Ee\u010D"
+Calculator:
+  description: "Aritmetick\xE9, v\u011Bdeck\xE9 a matematick\xE9 v\xFDpo\u010Detn\xED\
+    \ n\xE1stroje"
+  name: "Kalkula\u010Dka"
+Calendar & Agenda:
+  description: "Pl\xE1nov\xE1n\xED ud\xE1lost\xED, p\u0159ipom\xEDnek sch\u016Fz\xED\
+    \ a denn\xED pl\xE1nova\u010De"
+  name: "Kalend\xE1\u0159 a agenda"
+Camera:
+  description: "Fotoapar\xE1t, kamera, zobrazen\xED IP kamer a nahr\xE1v\xE1n\xED\
+    \ videa"
+  name: "Fotoapar\xE1t"
+Card Game:
+  description: "Karetn\xED hra, solitaire"
+  name: "Karetn\xED hra"
+Cast:
+  description: "Vys\xEDl\xE1n\xED, UPnP, DLNA, FCast, AirPlay, Miracast"
+  name: "Vys\xEDl\xE1n\xED"
+Casual Game:
+  description: "Jednoduch\xE1 le\u017E\xE9rn\xED hra"
+  name: "Le\u017E\xE9rn\xED hra"
+Clock:
+  description: "Zji\u0161t\u011Bn\xED aktu\xE1ln\xEDho \u010Dasu"
+  name: Hodiny
+Cloud Storage & File Sync:
+  description: "Z\xE1loha, synchronizace a vzd\xE1len\xFD p\u0159\xEDstup k soubor\u016F\
+    m skrze cloudov\xE9 slu\u017Eby"
+  name: "Cloudov\xE9 \xFAlo\u017Ei\u0161t\u011B a synchronizace soubor\u016F"
+Code & Forge:
+  description: "Git, \xFAlo\u017Ei\u0161t\u011B zdrojov\xE9ho k\xF3du, forge"
+  name: "K\xF3d a forge"
 Connectivity:
-  name: Spojení
+  name: "Spojen\xED"
+Contact:
+  description: "Kniha adres, telefonn\xED seznam a aplikace pro spr\xE1vu lid\xED"
+  name: Kontakt
+DNS & Hosts:
+  description: "Nastaven\xED DNS server\u016F, blokov\xE1n\xED reklam, souboru hosts\
+    \ a sm\u011Brov\xE1n\xED dom\xE9n"
+  name: "DNS a hostitel\xE9"
 Development:
-  name: Vývoj
-  description: Kódování, programování, IDE, terminál a nástroje pro vývojáře
+  description: "K\xF3dov\xE1n\xED, programov\xE1n\xED, IDE, termin\xE1l a n\xE1stroje\
+    \ pro v\xFDvoj\xE1\u0159e"
+  name: "V\xFDvoj"
+Dice:
+  description: "N\xE1hodn\xFD v\xFDb\u011Br"
+  name: Kostky
+Diet:
+  description: "V\xFD\u017Eiva, kalorie, spr\xE1va stravy a sledov\xE1n\xED"
+  name: Dieta
+Download:
+  description: "Stahova\u010D, spr\xE1vce stahov\xE1n\xED a torrentov\xFD klient"
+  name: "Stahov\xE1n\xED"
+Draw:
+  description: "Aplikace pro kreslen\xED, malov\xE1n\xED, ilustrace a digit\xE1ln\xED\
+    \ um\u011Bn\xED"
+  name: "Kreslen\xED"
+Ebook Reader:
+  description: "\u010Cten\xED e-knih, EPUB, PDF a digit\xE1ln\xEDch knih a publikac\xED"
+  name: "\u010Cte\u010Dka e-knih"
+Educational Game:
+  description: "U\u010Den\xED hrou, kv\xEDz"
+  name: "Vzd\u011Bl\xE1vac\xED hra"
+Email:
+  description: "E-mailov\xE9 klienty pro odes\xEDl\xE1n\xED, p\u0159ij\xEDm\xE1n\xED\
+    \ a spr\xE1vu e-mailov\xFDch zpr\xE1v"
+  name: E-mail
+Emulator:
+  description: "Emul\xE1tor her a program\u016F"
+  name: "Emul\xE1tor"
+File Encryption & Vault:
+  description: "\u0160ifrov\xE1n\xED, uzamyk\xE1n\xED a skr\xFDv\xE1n\xED soukrom\xFD\
+    ch soubor\u016F a slo\u017Eek"
+  name: "\u0160ifrov\xE1n\xED soubor\u016F a trezor"
+File Manager:
+  description: "Spr\xE1vce a pr\u016Fzkumn\xEDk soubor\u016F"
+  name: "Spr\xE1vce soubor\u016F"
+File Transfer:
+  description: "Sd\xEDlen\xED a p\u0159enos soubor\u016F skrze FTP, LAN, Bluetooth\
+    \ nebo peer-to-peer (p2p)"
+  name: "P\u0159enos soubor\u016F"
+Finance Manager:
+  description: "Sledov\xE1n\xED v\xFDdaj\u016F, rozpo\u010Dt\u016F, p\u0159\xEDjmu\
+    \ a osobn\xEDch finan\u010Dn\xEDch \xFA\u010Dt\u016F"
+  name: "Spr\xE1vce financ\xED"
+Firewall:
+  description: "Blokov\xE1n\xED nevy\u017E\xE1dan\xE9ho s\xED\u0165ov\xE9ho provozu\
+    \ a ovl\xE1d\xE1n\xED p\u0159\xEDstupu aplikac\xED k internetu"
+  name: Firewall
+Flashlight:
+  description: "Aplikace sv\xEDtilny"
+  name: "Sv\xEDtilna"
+Forum:
+  description: "Diskusn\xED f\xF3ra, vl\xE1kna v komunit\xE1ch a platformy pro ot\xE1\
+    zky a odpov\u011Bdi"
+  name: "F\xF3rum"
+Gallery:
+  description: "Proch\xE1zen\xED, prohl\xED\u017Een\xED a t\u0159\xEDd\u011Bn\xED\
+    \ fotografi\xED, obr\xE1zk\u016F a vide\xED"
+  name: Galerie
+Game Helper:
+  description: "Hern\xED pomocn\xEDk, asistent, pr\u016Fvodce, v\xFDsledkov\xE1 tabule,\
+    \ \u010Dasova\u010D"
+  name: "Hern\xED pomocn\xEDk"
 Graphics:
+  description: "N\xE1stroje pro \xFApravu obr\xE1zk\u016F, manipulaci s fotografiemi\
+    \ a vizu\xE1ln\xED design"
   name: Grafika
-  description: Nástroje pro úpravu obrázků, manipulaci s fotografiemi a vizuální design
+Habit Tracker:
+  description: "Vytv\xE1\u0159en\xED rutin, sledov\xE1n\xED denn\xEDch c\xEDl\u016F\
+    \ a osobn\xEDch s\xE9ri\xED"
+  name: "Sledov\xE1n\xED n\xE1vyk\u016F"
+Health Manager:
+  description: "Sledov\xE1n\xED hmotnosti, srde\u010Dn\xED frekvence, krevn\xEDho\
+    \ tlaku, menstruace a dal\u0161\xEDch zdravotn\xEDch ukazatel\u016F"
+  name: "Spr\xE1vce zdrav\xED"
+Icon Pack:
+  description: "Vlastn\xED sady ikon pro stylov\xE1n\xED ikon aplikac\xED"
+  name: "Bal\xED\u010Dek ikon"
 Internet:
   name: Internet
-Multimedia:
-  name: Multimédia
-Navigation:
-  name: Navigace
-  description: Aplikace pro mapy, GPS, navigaci a plánování tras
-Phone & SMS:
-  name: Telefon a SMS
-  description: Aplikace telefonů, správci hovorů a nástroje pro textové zprávy
-Reading:
-  name: Čtení
-  description: Články, delší obsah, aplikace pro odložené čtení a webové čtečky
-Science & Education:
-  name: Věda a vzdělání
-  description: Aplikace pro učení, studium, vyhledávání informací a vzdělávání
-Security:
-  name: Zabezpečení
-Sports & Health:
-  name: Sport a zdraví
-  description: Sledování fyzické kondice, wellness, sportovní výsledky a monitorování zdraví
-System:
-  name: Systém
-Theming:
-  name: Vzhledy
-  description: Přizpůsobení vzhledu zařízení pomocí motivů, písem a stylů uživatelského rozhraní
-Writing:
-  name: Psaní
-  description: Aplikace pro zpracování textu, vedení deníku, tvorbu návrhů a psaní delších textů
-Email:
-  name: E-mail
-  description: E-mailové klienty pro odesílání, přijímání a správu e-mailových zpráv
-VPN & Proxy:
-  name: VPN a proxy
-  description: Šifrování přenosu dat, obcházení omezení a zajištění anonymitu vašeho připojení
-DNS & Hosts:
-  name: DNS a hostitelé
-  description: Nastavení DNS serverů, blokování reklam, souboru hosts a směrování domén
-File Encryption & Vault:
-  name: Šifrování souborů a trezor
-  description: Šifrování, uzamykání a skrývání soukromých souborů a složek
-Browser:
-  name: Prohlížeč
-  description: Webové prohlížeče pro procházení internetu a prohlížení webů
-File Transfer:
-  name: Přenos souborů
-  description: Sdílení a přenos souborů skrze FTP, LAN, Bluetooth nebo peer-to-peer (p2p)
-Online Media Player:
-  name: Přehrávač online médií
-  description: Streamování hudby, videí a živého obsahu z internetu
-Password & 2FA:
-  name: Heslo a 2FA
-  description: Správci hesel, autentifikátory, OTP, TOTP, HOTP, U2F, FIDO a nástroje pro dvoufaktorové ověřování
-Social Network:
-  name: Sociální síť
-  description: Sociální sítě, mikroblogování a platformy online komunit
-Weather:
-  name: Počasí
-  description: Aplikace pro předpovědi počasí, radar, teplotu a stav atmosféry
-Podcast:
-  name: Podcast
-  description: Odebírání, streamování a stahování podcastových epizod a seriálů
-Keyboard & IME:
-  name: Klávesnice a IME
-  description: Vlastní klávesnice, metody zadávání dat, automatická oprava a psací aplikace
-Messaging:
-  name: Posílání zpráv
-  description: Instantní zprávy, chat a SMS komunikační aplikace
-News:
-  name: Zprávy
-  description: Nejnovější titulky, články, RSS kanály a agregátory zpráv
-Local Media Player:
-  name: Přehrávač lokálních médií
-  description: Offline přehrávání zvukových a video souborů uložených na vašem zařízení
-Voice & Video Chat:
-  name: Hlasový a video chat
-  description: Aplikace pro audio a videohovory, konferenční hovory a VoIP komunikaci
-Calendar & Agenda:
-  name: Kalendář a agenda
-  description: Plánování událostí, připomínek schůzí a denní plánovače
-Cloud Storage & File Sync:
-  name: Cloudové úložiště a synchronizace souborů
-  description: Záloha, synchronizace a vzdálený přístup k souborům skrze cloudové služby
-Wallet:
-  name: Peněženka
-  description: Digitální peněženky pro platby, karty a správu kryptoměn
-App Store & Updater:
-  name: Obchod s aplikacemi a aktualizátor
-  description: Objevování, instalace a aktualizace aplikací ze softwarových repozitářů
-Bookmark:
-  name: Záložka
-  description: Ukládání, organizace a správa oblíbených odkazů a seznamů ke čtení
-Calculator:
-  name: Kalkulačka
-  description: Aritmetické, vědecké a matematické výpočetní nástroje
-Draw:
-  name: Kreslení
-  description: Aplikace pro kreslení, malování, ilustrace a digitální umění
-Ebook Reader:
-  name: Čtečka e-knih
-  description: Čtení e-knih, EPUB, PDF a digitálních knih a publikací
-Finance Manager:
-  name: Správce financí
-  description: Sledování výdajů, rozpočtů, příjmu a osobních finančních účtů
-Gallery:
-  name: Galerie
-  description: Procházení, prohlížení a třídění fotografií, obrázků a videí
-Icon Pack:
-  name: Balíček ikon
-  description: Vlastní sady ikon pro stylování ikon aplikací
-Launcher:
-  name: Launcher
-  description: Náhrady domovské obrazovky a aplikace pro desktopová rozhraní
-Note:
-  name: Poznámka
-  description: Bloky, poznámky a aplikace pro rychlé psaní a organizaci poznámek
-Pass Wallet:
-  name: Peněženka na lístky
-  description: Ukládání palubních lístků, vstupenek, věrnostních kartiček a kuponů
-Recipe Manager:
-  name: Správce receptů
-  description: Ukládání, organizace a objevování receptů a nápadů na jídla
-Text Editor:
-  name: Textový editor
-  description: Textové editory, editory Markdownu a nástroje pro psaní
-Translation & Dictionary:
-  name: Překlad a slovník
-  description: Překlad textů, vyhledávání slov a prohlížení slovníků
-Unit Convertor:
-  name: Převodník jednotek
-  description: Převádění jednotek délky, hmotnosti, teploty, měny a dalších
-Wallpaper:
-  name: Tapeta
-  description: Aplikace pro pozadí domovské obrazovky a uzamčené obrazovky a živé tapety
-Workout:
-  name: Cvičení
-  description: Aplikace pro cvičební rutiny, sledování aktivit v posilovně, běh a kondiční trénink
-Public Transport:
-  name: Veřejná doprava
-  description: Jízdní řády autobusů, vlaků, metra a hromadné dopravy a plánovače tras
-Task:
-  name: Úkol
-  description: Seznamy úkolů, správci úkolů a nástroje pro zvýšení produktivity a GTD
-Shopping List:
-  name: Nákupní seznam
-  description: Seznamy potravin, přehledy nákupů a aplikace pro společné nakupování
-Forum:
-  name: Fórum
-  description: Diskusní fóra, vlákna v komunitách a platformy pro otázky a odpovědi
-Habit Tracker:
-  name: Sledování návyků
-  description: Vytváření rutin, sledování denních cílů a osobních sérií
-Music Practice Tool:
-  name: Nástroj pro cvičení hudby
-  description: Ladičky, metronomy, nástroje pro akordy a pomůcky pro cvičení na hudební nástroje
-Location Tracker & Sharer:
-  name: Sledování a sdílení polohy
-  description: Sdílení a monitorování živé GPS polohy s ostatními
-AI Chat:
-  name: AI chat
-  description: Rozhraní pro AI asistenty, chatboty a velké jazykové modely (LLM)
-App Manager:
-  name: Správce aplikací
-  description: Správa, organizace a ovládání nainstalovaných aplikací a oprávnění
-Religion:
-  name: Náboženství
-  description: Aplikace s časy modliteb, svatými texty, modlitebními texty a duchovními cvičeními
-Clock:
-  name: Hodiny
-  description: Zjištění aktuálního času
-Firewall:
-  name: Firewall
-  description: Blokování nevyžádaného síťového provozu a ovládání přístupu aplikací k internetu
 Inventory:
-  name: Inventář
-  description: Sledování, evidence a správa fyzických položek a skladových zásob
-Network Analyzer:
-  name: Analýza sítě
-  description: Diagnostika Wi-Fi, skenování sítí a monitorování výkonu sítě
-Contact:
-  name: Kontakt
-  description: Kniha adres, telefonní seznam a aplikace pro správu lidí
-Battery:
-  name: Baterie
-  description: Monitorování a optimalizování životnosti baterie, využití energie a nabíjení
-Flashlight:
-  name: Svítilna
-  description: Aplikace svítilny
-Radio:
-  name: Rádio
-  description: Streamování živých FM/AM rádiových stanicí a vysílání internetových rádií
-Remote Controller:
-  name: Vzdálené ovládání
-  description: Infračervené a chytré dálkové ovladače pro televizory, klimatizace a další zařízení
-Remote Access:
-  name: Vzdálený přístup
-  description: Vzdálená správa počítačů, serverů a zařízení prostřednictvím protokolů RDP, VNC nebo SSH
-Diet:
-  name: Dieta
-  description: Výživa, kalorie, správa stravy a sledování
-Health Manager:
-  name: Správce zdraví
-  description: Sledování hmotnosti, srdeční frekvence, krevního tlaku, menstruace a dalších zdravotních ukazatelů
-Schedule:
-  name: Plán
-  description: Plán konferencí a událostí
-Text to Speech:
-  name: Text na řeč
-  description: Nástroje převodu textu na řeč
-Time Tracker:
-  name: Sledování času
-  description: Sledování času tráveného jednotlivými činnostmi a u obrazovky
-Action Game:
-  name: Akční hra
-  description: Akční, sportovní, závodní a plošinové hry
-Board Game:
-  name: Desková hra
-  description: Desková hra, šachy, go, piškvorky
-Card Game:
-  name: Karetní hra
-  description: Karetní hra, solitaire
-Casual Game:
-  name: Ležérní hra
-  description: Jednoduchá ležérní hra
-Dice:
-  name: Kostky
-  description: Náhodný výběr
-Educational Game:
-  name: Vzdělávací hra
-  description: Učení hrou, kvíz
-Emulator:
-  name: Emulátor
-  description: Emulátor her a programů
-Game Helper:
-  name: Herní pomocník
-  description: Herní pomocník, asistent, průvodce, výsledková tabule, časovač
-Party Game:
-  name: Párty hra
-  description: Hra pro více hráčů, párty hra
-Platformer Game:
-  name: Plošinová hra
-  description: Plošinová hra, hra s bočním posunem
-Puzzle Game:
-  name: Logická hra
-  description: Logické hry, sudoku, pexeso
-Role-Playing Game:
-  name: Hra na hrdiny
-  description: RPG, rogue-like
-Shooter Game:
-  name: Střílečka
-  description: Střílení cílů
-Strategy Game:
-  name: Strategická hra
-  description: Strategie, simulace
-Sport Game:
-  name: Sportovní hra
-  description: Sportovní hry
-Visual Novel:
-  name: Vizuální román
-  description: Vizuální román, galgame, příběhová hra
-Word Game:
-  name: Slovní hra
-  description: Slovní hádanka, křížovka, hádání slov
-Meditation:
-  name: Meditace
-  description: Meditace, všímavost, dechová cvičení
-Timer:
-  name: Časovač
-  description: Měření intervalů, měření času, odpočítávání
-Download:
-  name: Stahování
-  description: Stahovač, správce stahování a torrentový klient
-File Manager:
-  name: Správce souborů
-  description: Správce a průzkumník souborů
-Camera:
-  name: Fotoaparát
-  description: Fotoaparát, kamera, zobrazení IP kamer a nahrávání videa
-Recorder:
-  name: Záznamník
-  description: Záznamník zvuku, obrazovky, hovorů
+  description: "Sledov\xE1n\xED, evidence a spr\xE1va fyzick\xFDch polo\u017Eek a\
+    \ skladov\xFDch z\xE1sob"
+  name: "Invent\xE1\u0159"
+Keyboard & IME:
+  description: "Vlastn\xED kl\xE1vesnice, metody zad\xE1v\xE1n\xED dat, automatick\xE1\
+    \ oprava a psac\xED aplikace"
+  name: "Kl\xE1vesnice a IME"
+Launcher:
+  description: "N\xE1hrady domovsk\xE9 obrazovky a aplikace pro desktopov\xE1 rozhran\xED"
+  name: Launcher
+Local Media Player:
+  description: "Offline p\u0159ehr\xE1v\xE1n\xED zvukov\xFDch a video soubor\u016F\
+    \ ulo\u017Een\xFDch na va\u0161em za\u0159\xEDzen\xED"
+  name: "P\u0159ehr\xE1va\u010D lok\xE1ln\xEDch m\xE9di\xED"
+Location Tracker & Sharer:
+  description: "Sd\xEDlen\xED a monitorov\xE1n\xED \u017Eiv\xE9 GPS polohy s ostatn\xED\
+    mi"
+  name: "Sledov\xE1n\xED a sd\xEDlen\xED polohy"
 Lyrics:
+  description: "Zobrazen\xED a vyhled\xE1v\xE1n\xED text\u016F"
   name: Texty
-  description: Zobrazení a vyhledávání textů
 Market & Price:
+  description: "Cena, sm\u011Bnn\xFD kurz, akcie"
   name: Obchod a cena
-  description: Cena, směnný kurz, akcie
-Alarm Clock:
-  name: Budík
-  description: Nastavení budíku na určitý čas
-Cast:
-  name: Vysílání
-  description: Vysílání, UPnP, DLNA, FCast, AirPlay, Miracast
+Meditation:
+  description: "Meditace, v\u0161\xEDmavost, dechov\xE1 cvi\u010Den\xED"
+  name: Meditace
+Messaging:
+  description: "Instantn\xED zpr\xE1vy, chat a SMS komunika\u010Dn\xED aplikace"
+  name: "Pos\xEDl\xE1n\xED zpr\xE1v"
+Multimedia:
+  name: "Multim\xE9dia"
+Music Practice Tool:
+  description: "Ladi\u010Dky, metronomy, n\xE1stroje pro akordy a pom\u016Fcky pro\
+    \ cvi\u010Den\xED na hudebn\xED n\xE1stroje"
+  name: "N\xE1stroj pro cvi\u010Den\xED hudby"
+Navigation:
+  description: "Aplikace pro mapy, GPS, navigaci a pl\xE1nov\xE1n\xED tras"
+  name: Navigace
+Network Analyzer:
+  description: "Diagnostika Wi-Fi, skenov\xE1n\xED s\xEDt\xED a monitorov\xE1n\xED\
+    \ v\xFDkonu s\xEDt\u011B"
+  name: "Anal\xFDza s\xEDt\u011B"
+News:
+  description: "Nejnov\u011Bj\u0161\xED titulky, \u010Dl\xE1nky, RSS kan\xE1ly a agreg\xE1\
+    tory zpr\xE1v"
+  name: "Zpr\xE1vy"
+Note:
+  description: "Bloky, pozn\xE1mky a aplikace pro rychl\xE9 psan\xED a organizaci\
+    \ pozn\xE1mek"
+  name: "Pozn\xE1mka"
 Notification:
-  name: Oznámení
-  description: Správa, záznam, přesměrování, zlepšení oznámení
-Stopwatch:
-  name: Stopky
-  description: Měření pokroku, uplynulého času, měření času na kolo
+  description: "Spr\xE1va, z\xE1znam, p\u0159esm\u011Brov\xE1n\xED, zlep\u0161en\xED\
+    \ ozn\xE1men\xED"
+  name: "Ozn\xE1men\xED"
 OCR:
+  description: "Skener dokument\u016F, optick\xE9 rozpozn\xE1v\xE1n\xED znak\u016F"
   name: OCR
-  description: Skener dokumentů, optické rozpoznávání znaků
-Volume:
-  description: Úprava nastavení hlasitosti
-  name: Hlasitost
+Online Media Player:
+  description: "Streamov\xE1n\xED hudby, vide\xED a \u017Eiv\xE9ho obsahu z internetu"
+  name: "P\u0159ehr\xE1va\u010D online m\xE9di\xED"
+Party Game:
+  description: "Hra pro v\xEDce hr\xE1\u010D\u016F, p\xE1rty hra"
+  name: "P\xE1rty hra"
+Pass Wallet:
+  description: "Ukl\xE1d\xE1n\xED palubn\xEDch l\xEDstk\u016F, vstupenek, v\u011B\
+    rnostn\xEDch karti\u010Dek a kupon\u016F"
+  name: "Pen\u011B\u017Eenka na l\xEDstky"
+Password & 2FA:
+  description: "Spr\xE1vci hesel, autentifik\xE1tory, OTP, TOTP, HOTP, U2F, FIDO a\
+    \ n\xE1stroje pro dvoufaktorov\xE9 ov\u011B\u0159ov\xE1n\xED"
+  name: Heslo a 2FA
+Phone & SMS:
+  description: "Aplikace telefon\u016F, spr\xE1vci hovor\u016F a n\xE1stroje pro textov\xE9\
+    \ zpr\xE1vy"
+  name: Telefon a SMS
+Platformer Game:
+  description: "Plo\u0161inov\xE1 hra, hra s bo\u010Dn\xEDm posunem"
+  name: "Plo\u0161inov\xE1 hra"
+Podcast:
+  description: "Odeb\xEDr\xE1n\xED, streamov\xE1n\xED a stahov\xE1n\xED podcastov\xFD\
+    ch epizod a seri\xE1l\u016F"
+  name: Podcast
+Public Transport:
+  description: "J\xEDzdn\xED \u0159\xE1dy autobus\u016F, vlak\u016F, metra a hromadn\xE9\
+    \ dopravy a pl\xE1nova\u010De tras"
+  name: "Ve\u0159ejn\xE1 doprava"
 Push:
-  description: Oznámení typu push
+  description: "Ozn\xE1men\xED typu push"
   name: Push
-Code & Forge:
-  name: Kód a forge
-  description: Git, úložiště zdrojového kódu, forge
+Puzzle Game:
+  description: "Logick\xE9 hry, sudoku, pexeso"
+  name: "Logick\xE1 hra"
+Radio:
+  description: "Streamov\xE1n\xED \u017Eiv\xFDch FM/AM r\xE1diov\xFDch stanic\xED\
+    \ a vys\xEDl\xE1n\xED internetov\xFDch r\xE1di\xED"
+  name: "R\xE1dio"
+Reading:
+  description: "\u010Cl\xE1nky, del\u0161\xED obsah, aplikace pro odlo\u017Een\xE9\
+    \ \u010Dten\xED a webov\xE9 \u010Dte\u010Dky"
+  name: "\u010Cten\xED"
+Recipe Manager:
+  description: "Ukl\xE1d\xE1n\xED, organizace a objevov\xE1n\xED recept\u016F a n\xE1\
+    pad\u016F na j\xEDdla"
+  name: "Spr\xE1vce recept\u016F"
+Recorder:
+  description: "Z\xE1znamn\xEDk zvuku, obrazovky, hovor\u016F"
+  name: "Z\xE1znamn\xEDk"
+Religion:
+  description: "Aplikace s \u010Dasy modliteb, svat\xFDmi texty, modlitebn\xEDmi texty\
+    \ a duchovn\xEDmi cvi\u010Den\xEDmi"
+  name: "N\xE1bo\u017Eenstv\xED"
+Remote Access:
+  description: "Vzd\xE1len\xE1 spr\xE1va po\u010D\xEDta\u010D\u016F, server\u016F\
+    \ a za\u0159\xEDzen\xED prost\u0159ednictv\xEDm protokol\u016F RDP, VNC nebo SSH"
+  name: "Vzd\xE1len\xFD p\u0159\xEDstup"
+Remote Controller:
+  description: "Infra\u010Derven\xE9 a chytr\xE9 d\xE1lkov\xE9 ovlada\u010De pro televizory,\
+    \ klimatizace a dal\u0161\xED za\u0159\xEDzen\xED"
+  name: "Vzd\xE1len\xE9 ovl\xE1d\xE1n\xED"
+Role-Playing Game:
+  description: RPG, rogue-like
+  name: Hra na hrdiny
+Schedule:
+  description: "Pl\xE1n konferenc\xED a ud\xE1lost\xED"
+  name: "Pl\xE1n"
+Science & Education:
+  description: "Aplikace pro u\u010Den\xED, studium, vyhled\xE1v\xE1n\xED informac\xED\
+    \ a vzd\u011Bl\xE1v\xE1n\xED"
+  name: "V\u011Bda a vzd\u011Bl\xE1n\xED"
+Security:
+  name: "Zabezpe\u010Den\xED"
+Shooter Game:
+  description: "St\u0159\xEDlen\xED c\xEDl\u016F"
+  name: "St\u0159\xEDle\u010Dka"
+Shopping List:
+  description: "Seznamy potravin, p\u0159ehledy n\xE1kup\u016F a aplikace pro spole\u010D\
+    n\xE9 nakupov\xE1n\xED"
+  name: "N\xE1kupn\xED seznam"
+Social Network:
+  description: "Soci\xE1ln\xED s\xEDt\u011B, mikroblogov\xE1n\xED a platformy online\
+    \ komunit"
+  name: "Soci\xE1ln\xED s\xED\u0165"
+Sport Game:
+  description: "Sportovn\xED hry"
+  name: "Sportovn\xED hra"
+Sports & Health:
+  description: "Sledov\xE1n\xED fyzick\xE9 kondice, wellness, sportovn\xED v\xFDsledky\
+    \ a monitorov\xE1n\xED zdrav\xED"
+  name: "Sport a zdrav\xED"
+Stopwatch:
+  description: "M\u011B\u0159en\xED pokroku, uplynul\xE9ho \u010Dasu, m\u011B\u0159\
+    en\xED \u010Dasu na kolo"
+  name: Stopky
+Strategy Game:
+  description: Strategie, simulace
+  name: "Strategick\xE1 hra"
+System:
+  name: "Syst\xE9m"
+Task:
+  description: "Seznamy \xFAkol\u016F, spr\xE1vci \xFAkol\u016F a n\xE1stroje pro\
+    \ zv\xFD\u0161en\xED produktivity a GTD"
+  name: "\xDAkol"
+Text Editor:
+  description: "Textov\xE9 editory, editory Markdownu a n\xE1stroje pro psan\xED"
+  name: "Textov\xFD editor"
+Text to Speech:
+  description: "N\xE1stroje p\u0159evodu textu na \u0159e\u010D"
+  name: "Text na \u0159e\u010D"
+Theming:
+  description: "P\u0159izp\u016Fsoben\xED vzhledu za\u0159\xEDzen\xED pomoc\xED motiv\u016F\
+    , p\xEDsem a styl\u016F u\u017Eivatelsk\xE9ho rozhran\xED"
+  name: Vzhledy
+Time Tracker:
+  description: "Sledov\xE1n\xED \u010Dasu tr\xE1ven\xE9ho jednotliv\xFDmi \u010Dinnostmi\
+    \ a u obrazovky"
+  name: "Sledov\xE1n\xED \u010Dasu"
+Timer:
+  description: "M\u011B\u0159en\xED interval\u016F, m\u011B\u0159en\xED \u010Dasu,\
+    \ odpo\u010D\xEDt\xE1v\xE1n\xED"
+  name: "\u010Casova\u010D"
+Translation & Dictionary:
+  description: "P\u0159eklad text\u016F, vyhled\xE1v\xE1n\xED slov a prohl\xED\u017E\
+    en\xED slovn\xEDk\u016F"
+  name: "P\u0159eklad a slovn\xEDk"
+Unit Convertor:
+  description: "P\u0159ev\xE1d\u011Bn\xED jednotek d\xE9lky, hmotnosti, teploty, m\u011B\
+    ny a dal\u0161\xEDch"
+  name: "P\u0159evodn\xEDk jednotek"
+VPN & Proxy:
+  description: "\u0160ifrov\xE1n\xED p\u0159enosu dat, obch\xE1zen\xED omezen\xED\
+    \ a zaji\u0161t\u011Bn\xED anonymitu va\u0161eho p\u0159ipojen\xED"
+  name: VPN a proxy
+Visual Novel:
+  description: "Vizu\xE1ln\xED rom\xE1n, galgame, p\u0159\xEDb\u011Bhov\xE1 hra"
+  name: "Vizu\xE1ln\xED rom\xE1n"
+Voice & Video Chat:
+  description: "Aplikace pro audio a videohovory, konferen\u010Dn\xED hovory a VoIP\
+    \ komunikaci"
+  name: "Hlasov\xFD a video chat"
+Volume:
+  description: "\xDAprava nastaven\xED hlasitosti"
+  name: Hlasitost
+Wallet:
+  description: "Digit\xE1ln\xED pen\u011B\u017Eenky pro platby, karty a spr\xE1vu\
+    \ kryptom\u011Bn"
+  name: "Pen\u011B\u017Eenka"
+Wallpaper:
+  description: "Aplikace pro pozad\xED domovsk\xE9 obrazovky a uzam\u010Den\xE9 obrazovky\
+    \ a \u017Eiv\xE9 tapety"
+  name: Tapeta
+Weather:
+  description: "Aplikace pro p\u0159edpov\u011Bdi po\u010Das\xED, radar, teplotu a\
+    \ stav atmosf\xE9ry"
+  name: "Po\u010Das\xED"
+Word Game:
+  description: "Slovn\xED h\xE1danka, k\u0159\xED\u017Eovka, h\xE1d\xE1n\xED slov"
+  name: "Slovn\xED hra"
+Workout:
+  description: "Aplikace pro cvi\u010Debn\xED rutiny, sledov\xE1n\xED aktivit v posilovn\u011B\
+    , b\u011Bh a kondi\u010Dn\xED tr\xE9nink"
+  name: "Cvi\u010Den\xED"
+Writing:
+  description: "Aplikace pro zpracov\xE1n\xED textu, veden\xED den\xEDku, tvorbu n\xE1\
+    vrh\u016F a psan\xED del\u0161\xEDch text\u016F"
+  name: "Psan\xED"

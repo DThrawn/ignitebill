@@ -1,98 +1,125 @@
+AI Chat:
+  description: "Pomo\u010Dniki umetne inteligence, klepetalni roboti in vmesniki velikih\
+    \ jezikovnih modelov (LLM)"
+  name: Klepet z UI
+Action Game:
+  description: "Akcijske, \u0161portne, dirkalne in platformne igre"
+  name: Akcijska igra
+Alarm Clock:
+  description: "Nastavi budilko na dolo\u010Deno uro"
+  name: Budilka
+App Manager:
+  description: "Upravljanje, organiziranje in nadzor name\u0161\u010Denih aplikacij,\
+    \ namenov in dovoljenj"
+  name: Upravitelj orodij
+App Store & Updater:
+  description: Odkrivanje, namestitev in posodabljanje aplikacij iz repozitorijev
+    programske opreme
+  name: App trgovina in posodobitve
+Battery:
+  description: "Spremljajte in optimizirajte \u017Eivljenjsko dobo baterije, porabo\
+    \ energije in polnjenje"
+  name: Baterija
+Board Game:
+  description: "Namizna igra, \u0161ah, go, kri\u017Eec-kro\u017Eec"
+  name: "Dru\u017Eabna igra"
+Bookmark:
+  description: Shranjevanje, organiziranje in upravljanje priljubljenih povezav in
+    seznamov za branje
+  name: Zaznamek
+Browser:
+  description: Spletni brskalniki za brskanje po internetu in ogled spletnih strani
+  name: Brskalnik
+Calculator:
+  description: "Aritmeti\u010Dna, znanstvena in matemati\u010Dna orodja za izra\u010D\
+    un"
+  name: Kalkulator
+Calendar & Agenda:
+  description: "Na\u010Drtujte dogodke, opomnike, sestanke ..."
+  name: Koledar in urnik
+Camera:
+  description: Kamera, program za pregledovanje posnetkov IP-kamere in videorekorder
+  name: Kamera
+Card Game:
+  description: Igre s kartami, pasjansa
+  name: Igra s kartami
+Cast:
+  description: Cast, UPnP, DLNA, FCast, AirPlay, Miracast
+  name: Oddajanje
+Casual Game:
+  description: "Preprosta spro\u0161\u010Dena igra"
+  name: "Spro\u0161\u010Dena igra"
+Clock:
+  description: Trenutna ura
+  name: Ura
+Cloud Storage & File Sync:
+  description: Varnostno kopiranje, sinhronizacija in dostop do datotek na daljavo
+    prek storitev v oblaku
+  name: Shranjevanje v oblaku in sinhronizacija datotek
 Connectivity:
   name: Povezljivost
-Development:
-  name: Razvijanje
-  description: Orodja za kodiranje, programiranje, integrirano razvojno okolje (IDE), terminal in razvijalska orodja
-Graphics:
-  name: Grafika
-  description: Orodja za urejanje slik, manipulacijo fotografij in vizualno oblikovanje
-Internet:
-  name: Internet
-Multimedia:
-  name: Multimedija
-Navigation:
-  name: Navigacija
-Phone & SMS:
-  name: Telefon & SMS
-Reading:
-  name: Branje
-Science & Education:
-  name: Znanost & Izobrazba
-Security:
-  name: Varnost
-Sports & Health:
-  name: Šport & zdravje
-System:
-  name: Sistem
-Theming:
-  name: Izgled
-Writing:
-  name: Pisanje
-App Store & Updater:
-  name: App trgovina in posodobitve
-  description: Odkrivanje, namestitev in posodabljanje aplikacij iz repozitorijev programske opreme
-Bookmark:
-  name: Zaznamek
-  description: Shranjevanje, organiziranje in upravljanje priljubljenih povezav in seznamov za branje
-Browser:
-  name: Brskalnik
-  description: Spletni brskalniki za brskanje po internetu in ogled spletnih strani
-Calculator:
-  name: Kalkulator
-  description: Aritmetična, znanstvena in matematična orodja za izračun
-Calendar & Agenda:
-  name: Koledar in urnik
-  description: Načrtujte dogodke, opomnike, sestanke ...
-Cloud Storage & File Sync:
-  name: Shranjevanje v oblaku in sinhronizacija datotek
-  description: Varnostno kopiranje, sinhronizacija in dostop do datotek na daljavo prek storitev v oblaku
-DNS & Hosts:
-  name: DNS in gostitelji
-  description: Konfigurirajte razreševalnike DNS, blokiranje oglasov, datoteko gostiteljev in usmerjanje domen
-Draw:
-  name: Riši
-  description: Aplikacije za skiciranje, slikanje, ilustriranje in platna za digitalno umetnost
-Ebook Reader:
-  name: Bralnik e-knjig
-  description: Berite e-knjige, EPUB, PDF in digitalne knjige ter publikacije
-Email:
-  name: E-pošta
-  description: Poštni odjemalci za pošiljanje, prejemanje in upravljanje e-poštnih sporočil
-AI Chat:
-  name: Klepet z UI
-  description: Pomočniki umetne inteligence, klepetalni roboti in vmesniki velikih jezikovnih modelov (LLM)
-App Manager:
-  name: Upravitelj orodij
-  description: Upravljanje, organiziranje in nadzor nameščenih aplikacij, namenov in dovoljenj
-Clock:
-  name: Ura
-  description: Trenutna ura
 Contact:
-  name: Stiki
   description: Aplikacije za imenik, telefonski imenik in upravljanje ljudi
+  name: Stiki
+DNS & Hosts:
+  description: "Konfigurirajte razre\u0161evalnike DNS, blokiranje oglasov, datoteko\
+    \ gostiteljev in usmerjanje domen"
+  name: DNS in gostitelji
+Development:
+  description: Orodja za kodiranje, programiranje, integrirano razvojno okolje (IDE),
+    terminal in razvijalska orodja
+  name: Razvijanje
+Diet:
+  description: Prehrana, kalorije, upravljanje in sledenje hrane
+  name: Dieta
+Draw:
+  description: Aplikacije za skiciranje, slikanje, ilustriranje in platna za digitalno
+    umetnost
+  name: "Ri\u0161i"
+Ebook Reader:
+  description: Berite e-knjige, EPUB, PDF in digitalne knjige ter publikacije
+  name: Bralnik e-knjig
+Email:
+  description: "Po\u0161tni odjemalci za po\u0161iljanje, prejemanje in upravljanje\
+    \ e-po\u0161tnih sporo\u010Dil"
+  name: "E-po\u0161ta"
 File Encryption & Vault:
-  name: Šifriranje datotek in trezor
-  description: Šifrirajte, zaklenite in skrijte zasebne datoteke in mape
+  description: "\u0160ifrirajte, zaklenite in skrijte zasebne datoteke in mape"
+  name: "\u0160ifriranje datotek in trezor"
 File Transfer:
+  description: Deljenje in prenos datotek prek FTP-ja, LAN-a, Bluetootha ali peer-to-peer
+    (p2p)
   name: Posredovanje datotek
-  description: Deljenje in prenos datotek prek FTP-ja, LAN-a, Bluetootha ali peer-to-peer (p2p)
 Finance Manager:
+  description: "Spremljajte stro\u0161ke, prora\u010Dune, prihodke in osebne finan\u010D\
+    ne ra\u010Dune"
   name: Upravitelj financ
-  description: Spremljajte stroške, proračune, prihodke in osebne finančne račune
 Firewall:
-  name: Požarni zid
-  description: Blokirajte neželen omrežni promet in nadzorujte dostop aplikacije do interneta
+  description: "Blokirajte ne\u017Eelen omre\u017Eni promet in nadzorujte dostop aplikacije\
+    \ do interneta"
+  name: "Po\u017Earni zid"
+Flashlight:
+  description: Aplikacije za svetilke in LED bliskavice
+  name: Svetilka
 Forum:
+  description: "Forumi, niti skupnosti in platforme za vpra\u0161anja in odgovore"
   name: Klepetalnica
-  description: Forumi, niti skupnosti in platforme za vprašanja in odgovore
 Gallery:
-  name: Galerija
   description: Brskajte, si oglejte in organizirajte fotografije, slike in videoposnetke
+  name: Galerija
+Graphics:
+  description: Orodja za urejanje slik, manipulacijo fotografij in vizualno oblikovanje
+  name: Grafika
 Habit Tracker:
+  description: "Gradite rutine, sledite dnevnim ciljem in spremljajte osebne dose\u017E\
+    ke"
   name: Sledilnik navad
-  description: Gradite rutine, sledite dnevnim ciljem in spremljajte osebne dosežke
+Health Manager:
+  name: Upravljalnik zdravja
 Icon Pack:
   name: Zbirka ikon
+Internet:
+  name: Internet
 Inventory:
   name: Popis imetja
 Keyboard & IME:
@@ -102,45 +129,65 @@ Launcher:
 Local Media Player:
   name: Lokalni predvajalnik glasbe
 Location Tracker & Sharer:
-  name: Sledilnik in delilnik položaja
+  name: "Sledilnik in delilnik polo\u017Eaja"
 Messaging:
-  name: Sporočila
+  name: "Sporo\u010Dila"
+Multimedia:
+  name: Multimedija
 Music Practice Tool:
   name: Orodje za vadbo glasbe
+Navigation:
+  name: Navigacija
 Network Analyzer:
-  name: Pregledovalnik omrežja
+  name: "Pregledovalnik omre\u017Eja"
 News:
   name: Novice
 Note:
-  name: Beležka
+  name: "Bele\u017Eka"
 Online Media Player:
   name: Predvajalnik spletnih vsebin
+Pass Wallet:
+  name: Denarnica kartic
 Password & 2FA:
   name: Gesla in dvostopenjsko preverjanje pristnosti
+Phone & SMS:
+  name: Telefon & SMS
 Podcast:
   name: Podkast
 Public Transport:
   name: Javni prevoz
+Reading:
+  name: Branje
 Recipe Manager:
   name: Upravitelj receptov
 Religion:
   name: Vera
+Science & Education:
+  name: Znanost & Izobrazba
+Security:
+  name: Varnost
 Shopping List:
   name: Nakupovalni seznam
 Social Network:
-  name: Družabna omrežja
+  name: "Dru\u017Eabna omre\u017Eja"
+Sports & Health:
+  name: "\u0160port & zdravje"
+System:
+  name: Sistem
 Task:
   name: Opravila
 Text Editor:
   name: Urejevalnik besedila
+Theming:
+  name: Izgled
 Translation & Dictionary:
   name: Prevajalec in slovar
 Unit Convertor:
   name: Pretvornik enot
+VPN & Proxy:
+  name: "VPN in posredni\u0161ki stre\u017Eniki (proxy)"
 Voice & Video Chat:
   name: Glasovni in slikovni klepet
-VPN & Proxy:
-  name: VPN in posredniški strežniki (proxy)
 Wallet:
   name: Denarnica
 Wallpaper:
@@ -149,37 +196,5 @@ Weather:
   name: Vreme
 Workout:
   name: Telovadba
-Pass Wallet:
-  name: Denarnica kartic
-Battery:
-  name: Baterija
-  description: Spremljajte in optimizirajte življenjsko dobo baterije, porabo energije in polnjenje
-Diet:
-  name: Dieta
-  description: Prehrana, kalorije, upravljanje in sledenje hrane
-Flashlight:
-  name: Svetilka
-  description: Aplikacije za svetilke in LED bliskavice
-Health Manager:
-  name: Upravljalnik zdravja
-Action Game:
-  name: Akcijska igra
-  description: Akcijske, športne, dirkalne in platformne igre
-Alarm Clock:
-  name: Budilka
-  description: Nastavi budilko na določeno uro
-Board Game:
-  name: Družabna igra
-  description: Namizna igra, šah, go, križec-krožec
-Camera:
-  name: Kamera
-  description: Kamera, program za pregledovanje posnetkov IP-kamere in videorekorder
-Card Game:
-  name: Igra s kartami
-  description: Igre s kartami, pasjansa
-Cast:
-  name: Oddajanje
-  description: Cast, UPnP, DLNA, FCast, AirPlay, Miracast
-Casual Game:
-  name: Sproščena igra
-  description: Preprosta sproščena igra
+Writing:
+  name: Pisanje

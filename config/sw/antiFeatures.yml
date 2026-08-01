@@ -7,12 +7,9 @@ DisabledAlgorithm:
 KnownVuln:
   description: Apu hii ina athari inayojulikana ya usalama
   name: Udhaifu unaojulikana
-Tracking:
-  name: Fuatilia
-  description: Apu hii hufuatilia na kuripoti shughuli yako
 NoSourceSince:
-  name: Msimbo chanzo hio haipatikani tena, hakuna masasisho yanayowezekana.
   description: Msimbo chanzi haupatikani tena, hakuna masasisho yanayowezekana
+  name: Msimbo chanzo hio haipatikani tena, hakuna masasisho yanayowezekana.
 NonFreeAdd:
   description: Apu hii inakuza nyongeza isiyo bure
   name: Nyongeza isiyo bure
@@ -28,3 +25,6 @@ NonFreeNet:
 TetheredNet:
   description: Apu hii hutegemea kabisa mfano fulani wa huduma ya mtandao
   name: Huduma za Mtandao zilizounganishwa
+Tracking:
+  description: Apu hii hufuatilia na kuripoti shughuli yako
+  name: Fuatilia

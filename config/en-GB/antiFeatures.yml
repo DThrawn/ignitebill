@@ -8,8 +8,8 @@ KnownVuln:
   description: This app contains a known security vulnerability
   name: Known Vulnerability
 NoSourceSince:
-  name: No Source Since
   description: The source code is no longer available, no updates possible
+  name: No Source Since
 NonFreeAdd:
   description: This app promotes non-free add-ons
   name: Non-Free Addons
@@ -22,9 +22,9 @@ NonFreeDep:
 NonFreeNet:
   description: This app promotes or depends entirely on a non-free network service
   name: Non-Free Network Services
-Tracking:
-  description: This app tracks and reports your activity
-  name: Tracking
 TetheredNet:
   description: This app depends entirely on a certain instance of a network service
   name: Tethered Network Services
+Tracking:
+  description: This app tracks and reports your activity
+  name: Tracking

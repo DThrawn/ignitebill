@@ -11,7 +11,7 @@ Multimedia:
 Navigation:
   name: Llywio
 Phone & SMS:
-  name: Ffôn ac SMS
+  name: "Ff\xF4n ac SMS"
 Reading:
   name: Darllen
 Science & Education:
@@ -23,6 +23,6 @@ Sports & Health:
 System:
   name: System
 Theming:
-  name: Themáu
+  name: "Them\xE1u"
 Writing:
   name: Ysgrifennu

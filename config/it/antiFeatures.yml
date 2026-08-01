@@ -1,15 +1,15 @@
 Ads:
-  description: Questa app contiene pubblicità
-  name: Pubblicità
+  description: "Questa app contiene pubblicit\xE0"
+  name: "Pubblicit\xE0"
 DisabledAlgorithm:
   description: Questa app ha una firma digitale debole
   name: Firmato usando un algoritmo non sicuro
 KnownVuln:
   description: Questa app contiene una falla di sicurezza nota
-  name: Vulnerabilità conosciuta
+  name: "Vulnerabilit\xE0 conosciuta"
 NoSourceSince:
+  description: "Questo codice sorgente non \xE8 pi\xF9 disponibile, impossibile aggiornare"
   name: Nessuna sorgente da
-  description: Questo codice sorgente non è più disponibile, impossibile aggiornare
 NonFreeAdd:
   description: Questa app promuove add-on non liberi
   name: Addon non liberi
@@ -20,11 +20,13 @@ NonFreeDep:
   description: Questa app dipende da altre app non libere
   name: Dipendenze non libere
 NonFreeNet:
-  description: Questa app promuove o dipende completamente da un servizio di rete non libero
+  description: Questa app promuove o dipende completamente da un servizio di rete
+    non libero
   name: Servizi di rete non liberi
-Tracking:
-  description: Questa app monitora e riferisce sulle tue attività
-  name: Tracciamento
 TetheredNet:
+  description: Questa app dipende completamente da una specifica istanza di un servizio
+    di rete
   name: Servizi di rete collegati
-  description: Questa app dipende completamente da una specifica istanza di un servizio di rete
+Tracking:
+  description: "Questa app monitora e riferisce sulle tue attivit\xE0"
+  name: Tracciamento

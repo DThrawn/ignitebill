@@ -1,30 +1,35 @@
 Ads:
-  description: Lietotne satur reklāmu
-  name: Reklāmas
+  description: "Lietotne satur rekl\u0101mu"
+  name: "Rekl\u0101mas"
 DisabledAlgorithm:
-  description: Šai lietotnei ir vājš drošības paraksts
-  name: Parakstīta ar nedrošu algoritmu
+  description: "\u0160ai lietotnei ir v\u0101j\u0161 dro\u0161\u012Bbas paraksts"
+  name: "Parakst\u012Bta ar nedro\u0161u algoritmu"
 KnownVuln:
-  description: Šī lietotne satur zināmu drošības ievainojamību
-  name: Zināma ievainojamība
+  description: "\u0160\u012B lietotne satur zin\u0101mu dro\u0161\u012Bbas ievainojam\u012B\
+    bu"
+  name: "Zin\u0101ma ievainojam\u012Bba"
 NoSourceSince:
-  name: Nav avota kopš
-  description: Pirmkods vairs nav pieejams, atjauninājumi nav iespējami
+  description: "Pirmkods vairs nav pieejams, atjaunin\u0101jumi nav iesp\u0113jami"
+  name: "Nav avota kop\u0161"
 NonFreeAdd:
-  description: Šī lietotne veicina nebrīvus papildinājumus
-  name: Nebrīvi papildinājumi
+  description: "\u0160\u012B lietotne veicina nebr\u012Bvus papildin\u0101jumus"
+  name: "Nebr\u012Bvi papildin\u0101jumi"
 NonFreeAssets:
-  description: Šī lietotne satur nebrīvus līdzekļus
-  name: Nebrīvi līdzekļi
+  description: "\u0160\u012B lietotne satur nebr\u012Bvus l\u012Bdzek\u013Cus"
+  name: "Nebr\u012Bvi l\u012Bdzek\u013Ci"
 NonFreeDep:
-  description: Šī lietotne ir atkarīga no citām nebrīvām lietotnēm
-  name: Nebrīvas atkarības
+  description: "\u0160\u012B lietotne ir atkar\u012Bga no cit\u0101m nebr\u012Bv\u0101\
+    m lietotn\u0113m"
+  name: "Nebr\u012Bvas atkar\u012Bbas"
 NonFreeNet:
-  description: Šī lietotne veicina vai ir pilnīgi atkarīga no tīkla pakalpojuma, kas izmanto nebrīvo programmatūru
-  name: Nebrīvi tīkla pakalpojumi
-Tracking:
-  description: Šī lietotne izseko darbības un ziņo par tām
-  name: Izsekošana
+  description: "\u0160\u012B lietotne veicina vai ir piln\u012Bgi atkar\u012Bga no\
+    \ t\u012Bkla pakalpojuma, kas izmanto nebr\u012Bvo programmat\u016Bru"
+  name: "Nebr\u012Bvi t\u012Bkla pakalpojumi"
 TetheredNet:
-  name: Piesaistīti tīkla pakalpojumi
-  description: Šī lietotne ir pilnībā atkarīga no noteikta veida tīkla pakalpojuma
+  description: "\u0160\u012B lietotne ir piln\u012Bb\u0101 atkar\u012Bga no noteikta\
+    \ veida t\u012Bkla pakalpojuma"
+  name: "Piesaist\u012Bti t\u012Bkla pakalpojumi"
+Tracking:
+  description: "\u0160\u012B lietotne izseko darb\u012Bbas un zi\u0146o par t\u0101\
+    m"
+  name: "Izseko\u0161ana"

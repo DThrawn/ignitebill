@@ -2,14 +2,15 @@ Ads:
   description: Ta aplikacja zawiera reklamy
   name: Reklamy
 DisabledAlgorithm:
-  description: Ta aplikacja ma słaby podpis bezpieczeństwa
-  name: Podpisana przy użyciu niebezpiecznego algorytmu
+  description: "Ta aplikacja ma s\u0142aby podpis bezpiecze\u0144stwa"
+  name: "Podpisana przy u\u017Cyciu niebezpiecznego algorytmu"
 KnownVuln:
-  description: Ta aplikacja ma znaną podatność bezpieczeństwa
-  name: Znana podatność
+  description: "Ta aplikacja ma znan\u0105 podatno\u015B\u0107 bezpiecze\u0144stwa"
+  name: "Znana podatno\u015B\u0107"
 NoSourceSince:
-  name: Brak źródła od
-  description: Kod źródłowy nie jest już dostępny, aktualizacje nie są możliwe
+  description: "Kod \u017Ar\xF3d\u0142owy nie jest ju\u017C dost\u0119pny, aktualizacje\
+    \ nie s\u0105 mo\u017Cliwe"
+  name: "Brak \u017Ar\xF3d\u0142a od"
 NonFreeAdd:
   description: Ta aplikacja promuje niewolne dodatki
   name: Niewolne dodatki
@@ -17,14 +18,16 @@ NonFreeAssets:
   description: Ta aplikacja zawiera niewolne zasoby
   name: Niewolne zasoby
 NonFreeDep:
-  description: Ta aplikacja zależy od innych niewolnych aplikacji
-  name: Niewolne zależności
+  description: "Ta aplikacja zale\u017Cy od innych niewolnych aplikacji"
+  name: "Niewolne zale\u017Cno\u015Bci"
 NonFreeNet:
-  description: Ta aplikacja promuje lub całkowicie zależy od niewolnej usługi sieciowej
-  name: Niewolne usługi sieciowe
-Tracking:
-  description: Ta aplikacja śledzi i raportuje Twoją aktywność
-  name: Śledzenie
+  description: "Ta aplikacja promuje lub ca\u0142kowicie zale\u017Cy od niewolnej\
+    \ us\u0142ugi sieciowej"
+  name: "Niewolne us\u0142ugi sieciowe"
 TetheredNet:
-  name: Usługi sieciowe wykorzystujące tethering
-  description: Ta aplikacja całkowicie zależy od określonej instancji usługi sieciowej
+  description: "Ta aplikacja ca\u0142kowicie zale\u017Cy od okre\u015Blonej instancji\
+    \ us\u0142ugi sieciowej"
+  name: "Us\u0142ugi sieciowe wykorzystuj\u0105ce tethering"
+Tracking:
+  description: "Ta aplikacja \u015Bledzi i raportuje Twoj\u0105 aktywno\u015B\u0107"
+  name: "\u015Aledzenie"

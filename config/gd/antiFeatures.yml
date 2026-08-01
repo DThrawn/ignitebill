@@ -2,13 +2,14 @@ Ads:
   description: Tha sanasachd am broinn na h-aplacaid seo
   name: Sanasachd
 DisabledAlgorithm:
-  description: Tha soidhneadh tèarainteachd lag aig an aplacaid seo
-  name: Soidhneadh le algairim nach eil sàbhailte
+  description: "Tha soidhneadh t\xE8arainteachd lag aig an aplacaid seo"
+  name: "Soidhneadh le algairim nach eil s\xE0bhailte"
 KnownVuln:
-  description: Tha so-leòntachd tèarainteachd aithnichte am broinn na h-aplacaid seo
-  name: So-leòntachd aithnichte
+  description: "Tha so-le\xF2ntachd t\xE8arainteachd aithnichte am broinn na h-aplacaid\
+    \ seo"
+  name: "So-le\xF2ntachd aithnichte"
 NoSourceSince:
-  name: Chan eil am bun-tùs ri fhaighinn tuilleadh is cha ghabh a h-ùrachadh.
+  name: "Chan eil am bun-t\xF9s ri fhaighinn tuilleadh is cha ghabh a h-\xF9rachadh."
 NonFreeAdd:
   description: Brosnaichidh an aplacaid seo tuilleadain nach eil saor
   name: Tuilleadain neo-shaor
@@ -19,11 +20,13 @@ NonFreeDep:
   description: Tha an aplacaid seo an eisimeil air aplacaidean eile nach eil saor
   name: Eisimeileachdan neo-shaor
 NonFreeNet:
-  description: Brosnaichidh an aplacaid seo seirbheisean lìonraidh nach eil saor
-  name: Seirbheisean lìonraidh neo-shaor
-Tracking:
-  description: Nì an aplacaid seo tracadh ort is nì i aithris air do ghnìomhachd
-  name: Tracadh
+  description: "Brosnaichidh an aplacaid seo seirbheisean l\xEConraidh nach eil saor"
+  name: "Seirbheisean l\xEConraidh neo-shaor"
 TetheredNet:
-  description: Tha an aplacaid seo a’ brosnachadh no gu tur an eisimeil air ionstans sònraichte de sheirbheis lìonraidh.
-  name: Lìonra teadhraichte
+  description: "Tha an aplacaid seo a\u2019 brosnachadh no gu tur an eisimeil air\
+    \ ionstans s\xF2nraichte de sheirbheis l\xEConraidh."
+  name: "L\xEConra teadhraichte"
+Tracking:
+  description: "N\xEC an aplacaid seo tracadh ort is n\xEC i aithris air do ghn\xEC\
+    omhachd"
+  name: Tracadh

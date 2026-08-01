@@ -1,83 +1,13 @@
-Connectivity:
-  name: Forbindelse
-Development:
-  name: Udvikling
-Graphics:
-  name: Grafik
-Internet:
-  name: Internet
-Multimedia:
-  name: Multimedier
-Navigation:
-  name: Navigation
-Phone & SMS:
-  name: Telefon & SMS
-Reading:
-  name: Læsning
-Science & Education:
-  name: Videnskab & Uddannelse
-Security:
-  name: Sikkerhed
-Sports & Health:
-  name: Sport & Sundhed
-System:
-  name: System
-Theming:
-  name: Temaer
-Writing:
-  name: Skrivning
-Browser:
-  name: Browser
-Email:
-  name: E-mail
-File Transfer:
-  name: Filoverførsel
-Forum:
-  name: Forum
-Gallery:
-  name: Galleri
-Icon Pack:
-  name: Ikonpakke
-Keyboard & IME:
-  name: Tastatur og IME
-Launcher:
-  name: Launcher
-Local Media Player:
-  name: Lokal medieafspiller
-News:
-  name: Nyheder
-Note:
-  name: Note
-Online Media Player:
-  name: Online medieafspiller
-Password & 2FA:
-  name: Adgangskode og 2FA
-Podcast:
-  name: Podcast
-Public Transport:
-  name: Offentlig transport
-Shopping List:
-  name: Indkøbsliste
-Task:
-  name: Opgave
-Text Editor:
-  name: Tekstredigering
-Translation & Dictionary:
-  name: Oversættelse og ordbog
-Voice & Video Chat:
-  name: Stemme- og videochat
-VPN & Proxy:
-  name: VPN og proxy
-Wallet:
-  name: Pung
-Wallpaper:
-  name: Baggrund
-Weather:
-  name: Vejr
-Workout:
-  name: Træning
 AI Chat:
   name: AI-chat
+App Manager:
+  name: "Apph\xE5ndtering"
+App Store & Updater:
+  name: Appbutik og -opdatering
+Bookmark:
+  name: "Bogm\xE6rke"
+Browser:
+  name: Browser
 Calculator:
   name: Lommeregner
 Calendar & Agenda:
@@ -86,27 +16,97 @@ Clock:
   name: Ur
 Cloud Storage & File Sync:
   name: Cloudlager og filsynkronisering
+Connectivity:
+  name: Forbindelse
 Contact:
   name: Kontakt
 DNS & Hosts:
-  name: DNS og værter
+  name: "DNS og v\xE6rter"
+Development:
+  name: Udvikling
 Draw:
   name: Tegning
 Ebook Reader:
-  name: E-bogslæser
-App Manager:
-  name: Apphåndtering
-App Store & Updater:
-  name: Appbutik og -opdatering
-Bookmark:
-  name: Bogmærke
+  name: "E-bogsl\xE6ser"
+Email:
+  name: E-mail
 File Encryption & Vault:
   name: Filkryptering og boks
+File Transfer:
+  name: "Filoverf\xF8rsel"
 Finance Manager:
-  name: Økonomihåndtering
+  name: "\xD8konomih\xE5ndtering"
 Firewall:
   name: Firewall
+Forum:
+  name: Forum
+Gallery:
+  name: Galleri
+Graphics:
+  name: Grafik
+Icon Pack:
+  name: Ikonpakke
+Internet:
+  name: Internet
 Inventory:
   name: Inventar
+Keyboard & IME:
+  name: Tastatur og IME
+Launcher:
+  name: Launcher
+Local Media Player:
+  name: Lokal medieafspiller
 Messaging:
   name: Beskeder
+Multimedia:
+  name: Multimedier
+Navigation:
+  name: Navigation
+News:
+  name: Nyheder
+Note:
+  name: Note
+Online Media Player:
+  name: Online medieafspiller
+Password & 2FA:
+  name: Adgangskode og 2FA
+Phone & SMS:
+  name: Telefon & SMS
+Podcast:
+  name: Podcast
+Public Transport:
+  name: Offentlig transport
+Reading:
+  name: "L\xE6sning"
+Science & Education:
+  name: Videnskab & Uddannelse
+Security:
+  name: Sikkerhed
+Shopping List:
+  name: "Indk\xF8bsliste"
+Sports & Health:
+  name: Sport & Sundhed
+System:
+  name: System
+Task:
+  name: Opgave
+Text Editor:
+  name: Tekstredigering
+Theming:
+  name: Temaer
+Translation & Dictionary:
+  name: "Overs\xE6ttelse og ordbog"
+VPN & Proxy:
+  name: VPN og proxy
+Voice & Video Chat:
+  name: Stemme- og videochat
+Wallet:
+  name: Pung
+Wallpaper:
+  name: Baggrund
+Weather:
+  name: Vejr
+Workout:
+  name: "Tr\xE6ning"
+Writing:
+  name: Skrivning

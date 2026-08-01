@@ -1,269 +1,289 @@
+AI Chat:
+  description: "AI-assistenter, chattbottar och gr\xE4nssnitt f\xF6r stora spr\xE5\
+    kmodeller (LLM)"
+  name: AI-chatt
+Action Game:
+  description: Action-, sport-, racing- och plattformsspel
+  name: Actionspel
+Alarm Clock:
+  description: "St\xE4ll in ett alarm p\xE5 en viss tid"
+  name: "V\xE4ckarklocka"
+App Manager:
+  description: "Hantera, organisera och kontrollera installerade appar, intentioner,\
+    \ beh\xF6righeter"
+  name: Apphanteraren
+App Store & Updater:
+  description: "Uppt\xE4ck, installera och uppdatera appar fr\xE5n mjukvaruf\xF6rr\xE5\
+    d"
+  name: Appbutik & uppdateringsprogram
+Battery:
+  description: "\xD6vervaka och optimera batteriets livstid, elf\xF6rbrukning och\
+    \ laddning"
+  name: Batteri
+Board Game:
+  description: "Br\xE4dspel, schack, go, luffarschack"
+  name: "Br\xE4dspel"
+Bookmark:
+  description: "Spara, organisera och hantera favoritl\xE4nkar och l\xE4slistor"
+  name: "Bokm\xE4rke"
+Browser:
+  description: "Webbl\xE4sare f\xF6r att surfa p\xE5 internet och se webbplatser"
+  name: "Webbl\xE4sare"
+Calculator:
+  description: "Verktyg f\xF6r aritmetiska, vetenskapliga och matematiska ber\xE4\
+    kningar"
+  name: Kalkylator
+Calendar & Agenda:
+  description: "Schemal\xE4gg aktiviteter, p\xE5minnelser, bokade m\xF6ten och dagsplaneringar"
+  name: Kalender och agenda
+Camera:
+  description: "Kamera, visningsprogram f\xF6r IP-kamera och videoinspelare"
+  name: Kamera
+Card Game:
+  description: Kortspel, patiens
+  name: Kortspel
+Clock:
+  description: Visa aktuell tid
+  name: Klocka
+Cloud Storage & File Sync:
+  description: "S\xE4kerhetskopiera, synka och kom \xE5t filer p\xE5 distans via molntj\xE4\
+    nster"
+  name: Molnlagring och filsynkronisering
 Connectivity:
   name: Anslutbarhet
-Development:
-  name: Utveckling
-  description: Kodnings-, programmerings-, IDE-, terminal- och utvecklarverktyg
-Graphics:
-  name: Grafik
-  description: Verktyg för bildredigering, fotomanipulation och visuell design
-Internet:
-  name: Internet
-Multimedia:
-  name: Multimedia
-Navigation:
-  name: Navigation
-  description: Kart-, GPS-, vägbeskrivnings- och ruttplaneringsappar
-Phone & SMS:
-  name: Telefon & SMS
-Reading:
-  name: Läsning
-Science & Education:
-  name: Vetenskap & Utbildning
-Security:
-  name: Säkerhet
-Sports & Health:
-  name: Sport & Hälsa
-  description: Träningsstatistik, välbefinnande, sportresultat och hälsoövervakning
-System:
-  name: System
-Theming:
-  name: Temasättning
-  description: Anpassa utseendet på din enhet med teman, teckensnitt och gränssnittsstilar
-Writing:
-  name: Skrivande
-AI Chat:
-  name: AI-chatt
-  description: AI-assistenter, chattbottar och gränssnitt för stora språkmodeller (LLM)
-App Manager:
-  name: Apphanteraren
-  description: Hantera, organisera och kontrollera installerade appar, intentioner, behörigheter
-App Store & Updater:
-  name: Appbutik & uppdateringsprogram
-  description: Upptäck, installera och uppdatera appar från mjukvaruförråd
-Bookmark:
-  name: Bokmärke
-  description: Spara, organisera och hantera favoritlänkar och läslistor
-Browser:
-  name: Webbläsare
-  description: Webbläsare för att surfa på internet och se webbplatser
-Calculator:
-  name: Kalkylator
-  description: Verktyg för aritmetiska, vetenskapliga och matematiska beräkningar
-Calendar & Agenda:
-  name: Kalender och agenda
-  description: Schemalägg aktiviteter, påminnelser, bokade möten och dagsplaneringar
-Cloud Storage & File Sync:
-  name: Molnlagring och filsynkronisering
-  description: Säkerhetskopiera, synka och kom åt filer på distans via molntjänster
+Contact:
+  description: "Adressbok, telefonbok och appar f\xF6r personhantering"
+  name: Kontakt
 DNS & Hosts:
-  name: DNS och värdar
+  name: "DNS och v\xE4rdar"
+Development:
+  description: Kodnings-, programmerings-, IDE-, terminal- och utvecklarverktyg
+  name: Utveckling
+Dice:
+  description: "Slumpv\xE4ljare"
+  name: "T\xE4rning"
+Diet:
+  name: Diet
+Download:
+  description: Nedladdare, nedladdningshanterare och torrent-klient
+  name: Nedladdning
 Draw:
   name: Rita
 Ebook Reader:
-  name: E-boksläsare
-  description: Läs e-böcker, EPUB, PDF:er och digitala böcker och publikationer
+  description: "L\xE4s e-b\xF6cker, EPUB, PDF:er och digitala b\xF6cker och publikationer"
+  name: "E-boksl\xE4sare"
 Email:
+  description: "E-postklienter f\xF6r att skicka, ta emot och hantera e-postmeddelanden"
   name: Mejl
-  description: E-postklienter för att skicka, ta emot och hantera e-postmeddelanden
+Emulator:
+  description: "Emulator som kan k\xF6ra spel och program"
+  name: Emulator
 File Encryption & Vault:
+  description: "Kryptera, l\xE5s och d\xF6lj privata filer och mappar"
   name: Filkryptering och valv
-  description: Kryptera, lås och dölj privata filer och mappar
+File Manager:
+  description: Filhanterare och -utforskare
+  name: Filhanterare
 File Transfer:
-  name: Filöverföring
+  name: "Fil\xF6verf\xF6ring"
+Finance Manager:
+  description: "H\xE5ll koll p\xE5 utgifter, budgetar, inkomster och privata bankkonton"
+  name: Ekonomihanterare
+Firewall:
+  description: "Blockera o\xF6nskad n\xE4tverkstrafik och kontrollera appars internet\xE5\
+    tkomst"
+  name: "Brandv\xE4gg"
+Flashlight:
+  name: Ficklampa
 Forum:
   name: Forum
 Gallery:
+  description: "Bl\xE4ddra bland, titta p\xE5 och organisera foton, bilder och videor"
   name: Galleri
-  description: Bläddra bland, titta på och organisera foton, bilder och videor
+Game Helper:
+  name: "Spelhj\xE4lpmedel"
+Graphics:
+  description: "Verktyg f\xF6r bildredigering, fotomanipulation och visuell design"
+  name: Grafik
 Habit Tracker:
-  name: Vanespårare
-  description: Skapa rutiner, håll koll på dagliga mål och övervaka personliga sviter
+  description: "Skapa rutiner, h\xE5ll koll p\xE5 dagliga m\xE5l och \xF6vervaka personliga\
+    \ sviter"
+  name: "Vanesp\xE5rare"
+Health Manager:
+  description: "Hantera vikt, puls, blodtryck, mens och andra h\xE4lsorelaterade m\xE4\
+    tv\xE4rden"
+  name: "H\xE4lso\xF6vervakare"
 Icon Pack:
+  description: "Anpassade ikonsamlingar f\xF6r att ge appikoner ny stil och tema"
   name: Ikonpaket
-  description: Anpassade ikonsamlingar för att ge appikoner ny stil och tema
+Internet:
+  name: Internet
+Inventory:
+  description: "H\xE5ll koll p\xE5, katalogisera och hantera fysiska f\xF6rem\xE5\
+    l och lager"
+  name: Inventarie
 Keyboard & IME:
+  description: "Anpassade tangentbord, inmatningsmetoder, autokorrigering och appar\
+    \ f\xF6r textinmatning"
   name: Tangentbord och IME
-  description: Anpassade tangentbord, inmatningsmetoder, autokorrigering och appar för textinmatning
 Launcher:
   name: Startare
 Local Media Player:
+  description: "Spela upp ljud- och videofiler som finns sparade p\xE5 din enhet"
   name: Lokal mediaspelare
-  description: Spela upp ljud- och videofiler som finns sparade på din enhet
 Location Tracker & Sharer:
-  name: Platsspårare och -delare
-  description: Dela och övervaka GPS-position med andra i realtid
+  description: "Dela och \xF6vervaka GPS-position med andra i realtid"
+  name: "Platssp\xE5rare och -delare"
+Lyrics:
+  description: "L\xE4s och s\xF6k efter l\xE5ttexter"
+  name: "L\xE5ttexter"
+Market & Price:
+  description: "Pris, v\xE4xelkurs, aktier"
+  name: Marknad & pris
+Meditation:
+  description: "Meditation, mindfulness, andnings\xF6vningar"
+  name: Meditation
 Messaging:
+  description: "Appar f\xF6r direktmeddelanden, chatt och SMS-kommunikation"
   name: Meddelanden
-  description: Appar för direktmeddelanden, chatt och SMS-kommunikation
+Multimedia:
+  name: Multimedia
 Music Practice Tool:
-  name: Musikövningsapp
-  description: Stämapparater, metronomer, ackordsverktyg och hjälpmedel för instrumentövning
+  description: "St\xE4mapparater, metronomer, ackordsverktyg och hj\xE4lpmedel f\xF6\
+    r instrument\xF6vning"
+  name: "Musik\xF6vningsapp"
+Navigation:
+  description: "Kart-, GPS-, v\xE4gbeskrivnings- och ruttplaneringsappar"
+  name: Navigation
+Network Analyzer:
+  name: "N\xE4tverksanalys"
 News:
   name: Nyheter
 Note:
   name: Notera
-Online Media Player:
-  name: Online mediaspelare
-  description: Strömma musik, videor och direktsänt innehåll från internet
-Pass Wallet:
-  name: Passplånbok
-Password & 2FA:
-  name: Lösenord och 2FA
-Podcast:
-  name: Podd
-  description: Prenumerera på, strömma och ladda ned ljudavsnitt av podcasts
-Public Transport:
-  name: Kollektivtrafik
-  description: Tidtabeller och reseplanerare för buss, tåg, tunnelbana och kollektivtrafik
-Recipe Manager:
-  name: Recepthanterare
-Religion:
-  name: Religion
-  description: Appar för bönetider, heliga texter, andaktsövningar och andlig träning
-Shopping List:
-  name: Inköpslista
-Social Network:
-  name: Socialt nätverk
-Task:
-  name: Uppgift
-  description: Att-göra-listor, uppgiftshanterare och produktivitets- och GTD-verktyg
-Text Editor:
-  name: Textredigerare
-Translation & Dictionary:
-  name: Översättning och ordbok
-  description: Översätt mellan språk, slå upp ord och ta del av ordlistor
-Unit Convertor:
-  name: Enhetskonverterare
-  description: Konvertera mellan enheter för längd, vikt, temperatur, valuta, med mera
-Voice & Video Chat:
-  name: Röst- och videochatt
-  description: Appar för ljud- och videosamtal, konferenser och VoIP-kommunikation
-VPN & Proxy:
-  name: VPN och proxy
-  description: Kryptera trafik, kringgå restriktioner och anonymisera din anslutning
-Wallet:
-  name: Plånbok
-  description: Digitala plånböcker för hantering av betalningar, kort och kryptovalutor
-Wallpaper:
-  name: Tapet
-Weather:
-  name: Väder
-Workout:
-  name: Träningspass
-Clock:
-  name: Klocka
-  description: Visa aktuell tid
-Firewall:
-  name: Brandvägg
-  description: Blockera oönskad nätverkstrafik och kontrollera appars internetåtkomst
-Inventory:
-  name: Inventarie
-  description: Håll koll på, katalogisera och hantera fysiska föremål och lager
-Contact:
-  name: Kontakt
-  description: Adressbok, telefonbok och appar för personhantering
-Action Game:
-  name: Actionspel
-  description: Action-, sport-, racing- och plattformsspel
-Battery:
-  name: Batteri
-  description: Övervaka och optimera batteriets livstid, elförbrukning och laddning
-Board Game:
-  name: Brädspel
-  description: Brädspel, schack, go, luffarschack
-Dice:
-  name: Tärning
-  description: Slumpväljare
-Emulator:
-  name: Emulator
-  description: Emulator som kan köra spel och program
-Card Game:
-  description: Kortspel, patiens
-  name: Kortspel
-Download:
-  name: Nedladdning
-  description: Nedladdare, nedladdningshanterare och torrent-klient
-File Manager:
-  name: Filhanterare
-  description: Filhanterare och -utforskare
-Flashlight:
-  name: Ficklampa
-Game Helper:
-  name: Spelhjälpmedel
-Health Manager:
-  name: Hälsoövervakare
-  description: Hantera vikt, puls, blodtryck, mens och andra hälsorelaterade mätvärden
-Lyrics:
-  name: Låttexter
-  description: Läs och sök efter låttexter
-Market & Price:
-  name: Marknad & pris
-  description: Pris, växelkurs, aktier
-Meditation:
-  name: Meditation
-  description: Meditation, mindfulness, andningsövningar
-Alarm Clock:
-  name: Väckarklocka
-  description: Ställ in ett alarm på en viss tid
-Diet:
-  name: Diet
-Network Analyzer:
-  name: Nätverksanalys
 Notification:
   name: Avisering
+OCR:
+  description: "Dokumentskanner, optisk teckenigenk\xE4nning"
+  name: OCR
+Online Media Player:
+  description: "Str\xF6mma musik, videor och direkts\xE4nt inneh\xE5ll fr\xE5n internet"
+  name: Online mediaspelare
 Party Game:
   name: Partyspel
+Pass Wallet:
+  name: "Passpl\xE5nbok"
+Password & 2FA:
+  name: "L\xF6senord och 2FA"
+Phone & SMS:
+  name: Telefon & SMS
 Platformer Game:
-  name: Plattformsspel
   description: Plattformsspel, sidoskrollande spel
-Puzzle Game:
-  name: Pusselspel
-  description: Pussel, sudoku, minnesspel
-Radio:
-  name: Radio
-  description: Strömma sändande FM/AM-radiostationer och internetradiosändningar
-Remote Controller:
-  name: Fjärrkontroll
-  description: IR- och smarta hem-fjärrkontroller för TV-apparater, luftkonditioneringsaggregat och andra enheter
-Camera:
-  name: Kamera
-  description: Kamera, visningsprogram för IP-kamera och videoinspelare
-Schedule:
-  name: Schema
-  description: Schema för konferens och evenemang
-Timer:
-  name: Tidtagare
-  description: Intervallmätning, tidtagning, nedräkning
-Recorder:
-  name: Inspelare
-  description: Ljud-, skärm- och samtalsinspelare
-Finance Manager:
-  name: Ekonomihanterare
-  description: Håll koll på utgifter, budgetar, inkomster och privata bankkonton
-OCR:
-  name: OCR
-  description: Dokumentskanner, optisk teckenigenkänning
+  name: Plattformsspel
+Podcast:
+  description: "Prenumerera p\xE5, str\xF6mma och ladda ned ljudavsnitt av podcasts"
+  name: Podd
+Public Transport:
+  description: "Tidtabeller och reseplanerare f\xF6r buss, t\xE5g, tunnelbana och\
+    \ kollektivtrafik"
+  name: Kollektivtrafik
 Push:
   description: Push-meddelanden
   name: Push
-Role-Playing Game:
-  name: Rollspel
-  description: RPG:er, rogue-liknande
+Puzzle Game:
+  description: Pussel, sudoku, minnesspel
+  name: Pusselspel
+Radio:
+  description: "Str\xF6mma s\xE4ndande FM/AM-radiostationer och internetradios\xE4\
+    ndningar"
+  name: Radio
+Reading:
+  name: "L\xE4sning"
+Recipe Manager:
+  name: Recepthanterare
+Recorder:
+  description: "Ljud-, sk\xE4rm- och samtalsinspelare"
+  name: Inspelare
+Religion:
+  description: "Appar f\xF6r b\xF6netider, heliga texter, andakts\xF6vningar och andlig\
+    \ tr\xE4ning"
+  name: Religion
 Remote Access:
-  name: Fjärråtkomst
-  description: Fjärrstyr datorer, servrar och enheter via RDP, VNC eller SSH
+  description: "Fj\xE4rrstyr datorer, servrar och enheter via RDP, VNC eller SSH"
+  name: "Fj\xE4rr\xE5tkomst"
+Remote Controller:
+  description: "IR- och smarta hem-fj\xE4rrkontroller f\xF6r TV-apparater, luftkonditioneringsaggregat\
+    \ och andra enheter"
+  name: "Fj\xE4rrkontroll"
+Role-Playing Game:
+  description: RPG:er, rogue-liknande
+  name: Rollspel
+Schedule:
+  description: "Schema f\xF6r konferens och evenemang"
+  name: Schema
+Science & Education:
+  name: Vetenskap & Utbildning
+Security:
+  name: "S\xE4kerhet"
+Shopping List:
+  name: "Ink\xF6pslista"
+Social Network:
+  name: "Socialt n\xE4tverk"
+Sports & Health:
+  description: "Tr\xE4ningsstatistik, v\xE4lbefinnande, sportresultat och h\xE4lso\xF6\
+    vervakning"
+  name: "Sport & H\xE4lsa"
 Stopwatch:
+  description: "M\xE4t framsteg, f\xF6rfluten tid, varvtider"
   name: Stoppur
-  description: Mät framsteg, förfluten tid, varvtider
+System:
+  name: System
+Task:
+  description: "Att-g\xF6ra-listor, uppgiftshanterare och produktivitets- och GTD-verktyg"
+  name: Uppgift
+Text Editor:
+  name: Textredigerare
+Text to Speech:
+  description: "Verktyg f\xF6r text-till-tal"
+Theming:
+  description: "Anpassa utseendet p\xE5 din enhet med teman, teckensnitt och gr\xE4\
+    nssnittsstilar"
+  name: "Temas\xE4ttning"
+Time Tracker:
+  description: "M\xE4t tidsanv\xE4ndning f\xF6r olika aktiviteter och sk\xE4rmtid"
+  name: "Tidsm\xE4tare"
+Timer:
+  description: "Intervallm\xE4tning, tidtagning, nedr\xE4kning"
+  name: Tidtagare
+Translation & Dictionary:
+  description: "\xD6vers\xE4tt mellan spr\xE5k, sl\xE5 upp ord och ta del av ordlistor"
+  name: "\xD6vers\xE4ttning och ordbok"
+Unit Convertor:
+  description: "Konvertera mellan enheter f\xF6r l\xE4ngd, vikt, temperatur, valuta,\
+    \ med mera"
+  name: Enhetskonverterare
+VPN & Proxy:
+  description: "Kryptera trafik, kringg\xE5 restriktioner och anonymisera din anslutning"
+  name: VPN och proxy
 Visual Novel:
   name: Visuell roman
+Voice & Video Chat:
+  description: "Appar f\xF6r ljud- och videosamtal, konferenser och VoIP-kommunikation"
+  name: "R\xF6st- och videochatt"
+Volume:
+  description: "Hantera volyminst\xE4llningar"
+  name: Volym
+Wallet:
+  description: "Digitala pl\xE5nb\xF6cker f\xF6r hantering av betalningar, kort och\
+    \ kryptovalutor"
+  name: "Pl\xE5nbok"
+Wallpaper:
+  name: Tapet
+Weather:
+  name: "V\xE4der"
 Word Game:
   description: Ordpussel, korsord, ordgissning
-Volume:
-  description: Hantera volyminställningar
-  name: Volym
-Time Tracker:
-  name: Tidsmätare
-  description: Mät tidsanvändning för olika aktiviteter och skärmtid
-Text to Speech:
-  description: Verktyg för text-till-tal
+Workout:
+  name: "Tr\xE4ningspass"
+Writing:
+  name: Skrivande

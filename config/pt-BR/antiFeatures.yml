@@ -1,30 +1,33 @@
 Ads:
-  description: Este aplicativo contém anúncios
-  name: Anúncios
+  description: "Este aplicativo cont\xE9m an\xFAncios"
+  name: "An\xFAncios"
 DisabledAlgorithm:
-  description: Este aplicativo tem uma assinatura de segurança fraca
+  description: "Este aplicativo tem uma assinatura de seguran\xE7a fraca"
   name: Assinado usando um algoritmo inseguro
 KnownVuln:
-  description: Este aplicativo contém uma falha de segurança já conhecida
+  description: "Este aplicativo cont\xE9m uma falha de seguran\xE7a j\xE1 conhecida"
   name: Vulnerabilidade conhecida
 NoSourceSince:
+  description: "O c\xF3digo-fonte n\xE3o est\xE1 mais dispon\xEDvel, atualiza\xE7\xF5\
+    es n\xE3o s\xE3o poss\xEDveis"
   name: Sem fonte desde
-  description: O código-fonte não está mais disponível, atualizações não são possíveis
 NonFreeAdd:
-  description: Este aplicativo promove complementos não livres
-  name: Complementos não livres
+  description: "Este aplicativo promove complementos n\xE3o livres"
+  name: "Complementos n\xE3o livres"
 NonFreeAssets:
-  description: Este aplicativo contém conteúdo não livre
-  name: Conteúdos não livres
+  description: "Este aplicativo cont\xE9m conte\xFAdo n\xE3o livre"
+  name: "Conte\xFAdos n\xE3o livres"
 NonFreeDep:
-  description: Este aplicativo depende de aplicativos não livres
-  name: Dependências não livres
+  description: "Este aplicativo depende de aplicativos n\xE3o livres"
+  name: "Depend\xEAncias n\xE3o livres"
 NonFreeNet:
-  description: Este app promove ou depende inteiramente em um serviço de rede não-livre
-  name: Serviços de rede não livres
+  description: "Este app promove ou depende inteiramente em um servi\xE7o de rede\
+    \ n\xE3o-livre"
+  name: "Servi\xE7os de rede n\xE3o livres"
+TetheredNet:
+  description: "Este app depende inteiramente de uma determinada inst\xE2ncia de um\
+    \ servi\xE7o de rede"
+  name: "Servi\xE7os de rede vinculada"
 Tracking:
   description: Este aplicativo rastreia e relata sua atividade
   name: Rastreamento
-TetheredNet:
-  description: Este app depende inteiramente de uma determinada instância de um serviço de rede
-  name: Serviços de rede vinculada

@@ -1,17 +1,17 @@
 Ads:
-  description: Ta aplikacija vsebuje oglaševanje
+  description: "Ta aplikacija vsebuje ogla\u0161evanje"
   name: Oglasi
 DisabledAlgorithm:
-  description: Ta aplikacija ima šibek varnostni podpis
-  name: Podpisano z nezaščitenim algoritmom
+  description: "Ta aplikacija ima \u0161ibek varnostni podpis"
+  name: "Podpisano z neza\u0161\u010Ditenim algoritmom"
 KnownVuln:
   description: Ta aplikacija vsebuje znano varnostno pomanjkljivost
   name: Znana ranljivost
 NoSourceSince:
-  name: Izvorna koda ni več dostopna od
-  description: Izvorna koda ni več na voljo, posodobitve niso mogoče
+  description: "Izvorna koda ni ve\u010D na voljo, posodobitve niso mogo\u010De"
+  name: "Izvorna koda ni ve\u010D dostopna od"
 NonFreeAdd:
-  description: Ta aplikacija promovira plačljive dodatke
+  description: "Ta aplikacija promovira pla\u010Dljive dodatke"
   name: Ne-prosti dodatki
 NonFreeAssets:
   description: Ta aplikacija vsebuje neodprte enote
@@ -20,11 +20,12 @@ NonFreeDep:
   description: Ta aplikcija je odvisna od ostalih ne odprtih aplikacijah
   name: Ne-proste odvisnosti
 NonFreeNet:
-  description: Ta aplikacija promovira plačljive internetne storitve
-  name: Ne-prosti omrežne storitve
-Tracking:
-  description: Ta aplikacija vam sledi in poroča o vaši aktivnosti
-  name: Sledenje
+  description: "Ta aplikacija promovira pla\u010Dljive internetne storitve"
+  name: "Ne-prosti omre\u017Ene storitve"
 TetheredNet:
-  description: To orodje je v celoti odvisno od določenega primera omrežne storitve
-  name: Vezano na zunanje omrežne storitve
+  description: "To orodje je v celoti odvisno od dolo\u010Denega primera omre\u017E\
+    ne storitve"
+  name: "Vezano na zunanje omre\u017Ene storitve"
+Tracking:
+  description: "Ta aplikacija vam sledi in poro\u010Da o va\u0161i aktivnosti"
+  name: Sledenje

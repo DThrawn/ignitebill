@@ -1,30 +1,33 @@
 Ads:
-  description: Þetta forrit inniheldur auglýsingar
-  name: Auglýsingar
+  description: "\xDEetta forrit inniheldur augl\xFDsingar"
+  name: "Augl\xFDsingar"
 DisabledAlgorithm:
-  description: Þetta forrit er með veika öryggisundirritun
-  name: Undirritað með óöruggu reikniriti
+  description: "\xDEetta forrit er me\xF0 veika \xF6ryggisundirritun"
+  name: "Undirrita\xF0 me\xF0 \xF3\xF6ruggu reikniriti"
 KnownVuln:
-  description: Þetta forrit inniheldur þekktan öryggisveikleika
-  name: Þekktir veikleikar
+  description: "\xDEetta forrit inniheldur \xFEekktan \xF6ryggisveikleika"
+  name: "\xDEekktir veikleikar"
 NoSourceSince:
-  name: Enginn grunnkóði síðan
-  description: Grunnkóðinn er ekki lengur tiltækur, engar uppfærslur eru mögulegar
+  description: "Grunnk\xF3\xF0inn er ekki lengur tilt\xE6kur, engar uppf\xE6rslur\
+    \ eru m\xF6gulegar"
+  name: "Enginn grunnk\xF3\xF0i s\xED\xF0an"
 NonFreeAdd:
-  description: Þetta forrit ýtir undir notkun ófrjálsra viðbóta
-  name: Ófrjálsar viðbætur
+  description: "\xDEetta forrit \xFDtir undir notkun \xF3frj\xE1lsra vi\xF0b\xF3ta"
+  name: "\xD3frj\xE1lsar vi\xF0b\xE6tur"
 NonFreeAssets:
-  description: Þetta forrit inniheldur ófrjáls tilföng
-  name: Ófrjáls tilföng
+  description: "\xDEetta forrit inniheldur \xF3frj\xE1ls tilf\xF6ng"
+  name: "\xD3frj\xE1ls tilf\xF6ng"
 NonFreeDep:
-  description: Þetta forrit er háð öðrum ófrjálsum forritum
-  name: Ófrjálsar kerfiskröfur
+  description: "\xDEetta forrit er h\xE1\xF0 \xF6\xF0rum \xF3frj\xE1lsum forritum"
+  name: "\xD3frj\xE1lsar kerfiskr\xF6fur"
 NonFreeNet:
-  description: Þetta forrit ýtir undir notkun ófrjálsrar þjónustu
-  name: Ófrjálsar netþjónustur
-Tracking:
-  description: Þetta forrit fylgist með og gefur skýrslu um hegðun þína
-  name: Eftirlit
+  description: "\xDEetta forrit \xFDtir undir notkun \xF3frj\xE1lsrar \xFEj\xF3nustu"
+  name: "\xD3frj\xE1lsar net\xFEj\xF3nustur"
 TetheredNet:
-  description: Þetta forrit er alfarið háð tilteknum netþjóni í netþjónustu
-  name: Samnýttar (tethered) netþjónustur
+  description: "\xDEetta forrit er alfari\xF0 h\xE1\xF0 tilteknum net\xFEj\xF3ni \xED\
+    \ net\xFEj\xF3nustu"
+  name: "Samn\xFDttar (tethered) net\xFEj\xF3nustur"
+Tracking:
+  description: "\xDEetta forrit fylgist me\xF0 og gefur sk\xFDrslu um heg\xF0un \xFE\
+    \xEDna"
+  name: Eftirlit

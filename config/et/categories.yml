@@ -1,319 +1,346 @@
+AI Chat:
+  description: Tehisaru abilised, vestlusrobotid ja suurte keelemudelite (LLM) liidesed
+  name: Vestlus tehisaruga
+Action Game:
+  description: "M\xE4rul, sport, v\xF5idus\xF5idud ja platvormim\xE4ngud"
+  name: "M\xE4rulim\xE4ngud"
+Alarm Clock:
+  description: "\xC4ratuse seadistamine"
+  name: "\xC4ratuskell"
+App Manager:
+  description: "Halda ja korralda paigaldatud rakendusi, seoseid ja \xF5igusi"
+  name: Rakendustehaldur
+App Store & Updater:
+  description: Otsi, paigalda ja uuenda rakendusi tarkvarahoidlatest
+  name: Rakendustepoed ja uuendused
+Battery:
+  description: "J\xE4lgi ja optimeeri aku eluiga, toitekasutust ja laadimist"
+  name: Akuhaldus
+Board Game:
+  description: "Lauam\xE4ng, male, go, trips-traps-trull"
+  name: "Lauam\xE4ngud"
+Bookmark:
+  description: Salvesta, halda ja korralda lemmiklinke ja lugemisloendeid
+  name: "J\xE4rjehoidjad"
+Browser:
+  description: Veebibrauserid internetis surfamiseks ja veebilehtede vaatamiseks
+  name: Veebibrauserid
+Calculator:
+  description: Aritmeetilised, teaduslikud ja matemaatilised arvutustarvikud
+  name: Kalkulaatorid
+Calendar & Agenda:
+  description: "Kavanda s\xFCndmusi, meeldetuletusi, kohtumisi ja p\xE4evakavasid"
+  name: "Kalender ja p\xE4evakava"
+Camera:
+  description: Kaamerad, IP-kaamerate kliendid ja videosalvestus
+  name: Kaamera
+Card Game:
+  description: "Kaardim\xE4ng, pasjanss"
+  name: "Kaardim\xE4ngud"
+Cast:
+  description: Meedialevitus, UPnP, DLNA, FCast, AirPlay, Miracast
+  name: Meedialevi
+Casual Game:
+  description: "Lihtne m\xE4ng vabaks ajaks"
+  name: "Vabaaja m\xE4ngud"
+Clock:
+  description: Teave hetke kellaaja kohta
+  name: Kellad
+Cloud Storage & File Sync:
+  description: "Varundus, s\xFCnkroonimine ja failide kaugjuurdep\xE4\xE4s pilveteenuste\
+    \ kaudu"
+  name: "Pilveruum ja s\xFCnkroonimine"
+Code & Forge:
+  description: "Git, forge, l\xE4htekoodi haldus ja majutus"
+  name: Koodi kirjutamine ja haldus
 Connectivity:
-  name: Ühenduvus
+  name: "\xDChenduvus"
+Contact:
+  description: Aadressiraamatud, telefoniraamatud ja kontaktide haldamise rakendused
+  name: Kontaktihaldus
+DNS & Hosts:
+  description: Seadista nimelahendust, reklaamide blokeerimist hosts-faili ja domeenide
+    suunamist
+  name: Nimelahendus ja hostid
 Development:
-  name: Arendus
   description: Koodimine, programmeerimine, IDE, terminal ja arendajate tarvikud
+  name: Arendus
+Dice:
+  description: "Juhuslikul valiku p\xF5hinevad m\xE4ngud"
+  name: "T\xE4ringum\xE4ngud"
+Diet:
+  description: "Toitumine, kalorid, toidu tarbimise haldamine ja j\xE4lgimine"
+  name: Toiduvalik
+Download:
+  description: Allalaadimine, allalaadimishaldurid, torrentikliendid
+  name: Allalaadimised
+Draw:
+  description: Joonistamine, maalimine, illustratsioonid ja digitaalkunsti rakendused
+  name: Joonistamine
+Ebook Reader:
+  description: "Loe e-raamatuid, EPUB-faile, PDF-faile ning digitaalseid raamatuid\
+    \ ja v\xE4ljaandeid"
+  name: E-raamatute lugemine
+Educational Game:
+  description: "\xD5ppimine m\xE4ngu ajal, k\xFCsimustikud, viktoriinid"
+  name: "Harivad m\xE4ngud"
+Email:
+  description: "E-posti kliendid e-kirjade saatmiseks, vastuv\xF5tmiseks ja haldamiseks"
+  name: E-post
+Emulator:
+  description: "M\xE4ngude ja programmide k\xE4ivitamise emulaatorid"
+  name: Emulaatorid
+File Encryption & Vault:
+  description: "Kr\xFCpti, lukusta ja peida isiklikud failid ja kaustad"
+  name: "Kr\xFCptimine ja andmehoidlad"
+File Manager:
+  description: Failide haldus ja uurimine
+  name: Failihaldurid
+File Transfer:
+  description: "Jaga ja edasta faile FTP, kohtv\xF5rgu, Bluetoothi v\xF5i v\xF5rd\xF5\
+    igusv\xF5rgu (p2p) kaudu"
+  name: Failide edastamine
+Finance Manager:
+  description: "J\xE4lgi kulusid, eelarveid, sissetulekuid ja oma pangakontosid"
+  name: Rahahaldus
+Firewall:
+  description: "Blokeeri soovimatut v\xF5rguliiklust ja piira rakenduste interneti\xFC\
+    hendust"
+  name: "Tulem\xFC\xFCrid"
+Flashlight:
+  description: "Taskulambid ja LED-v\xE4lklampide rakendused"
+  name: "V\xE4lklambid"
+Forum:
+  description: "Arutelufoorumid, kogukonna jutul\xF5ngad ja k\xFCsimuste-vastuste\
+    \ platvormid"
+  name: Foorumid
+Gallery:
+  description: Sirvi, vaata ja korralda fotosid, pilte ja videoid
+  name: Galeriid
+Game Helper:
+  description: "M\xE4ngutarvikud, abilised, kaaslased, tulemused, edetabelid, taimerid"
+  name: "M\xE4ngude abitarvikud"
 Graphics:
+  description: "Pildit\xF6\xF6tlus-, fotot\xF6\xF6tlus- ja visuaalse disaini tarvikud"
   name: Graafika
-  description: Pilditöötlus-, fototöötlus- ja visuaalse disaini tarvikud
+Habit Tracker:
+  description: "Koosta elurutiine, j\xE4lgi igap\xE4evaseid eesm\xE4rke ja hoia silma\
+    \ peal oma j\xE4rjestikustel saavutustel"
+  name: Elustiil
+Health Manager:
+  description: "J\xE4lgi kehakaalu, pulssi, verer\xF5hku, menstruatsiooni ja muid\
+    \ tervisen\xE4itajaid"
+  name: Tervisehaldus
+Icon Pack:
+  description: Kohandatud ikoonikomplektid rakenduste ikoonide kujundamiseks
+  name: Ikoonipakid
 Internet:
   name: Internet
-Multimedia:
-  name: Multimeedia
-Navigation:
-  name: Tee juhatamine
-  description: Kaardid, GPS, samm-sammult juhised ja teejuhatamise rakendused
-Phone & SMS:
-  name: Telefon ja SMS
-  description: Kõnevalijad, kõnehaldurid ja tekstisõnumite saatmise rakendused
-Reading:
-  name: Lugemine
-  description: Artiklid, pikemad tekstid, hilisemaks lugemiseks salvestamise rakendused ja veebilugemisrakendused
-Science & Education:
-  name: Teadus ja haridus
-  description: Õppimis-, uurimis-, teabe- ja haridusrakendused
-Security:
-  name: Turvalisus
-Sports & Health:
-  name: Sport ja tervis
-  description: Treeningute jälgimine, heaolu, sporditulemused ja tervise jälgimine
-System:
-  name: Süsteem
-Theming:
-  name: Kujundused
-  description: Kohanda oma nutiseadme välimust kujunduste, kirjatüüpide ja kasutajaliidese stiilide abil
-Writing:
-  name: Kirjutamine
-  description: Tekstitöötlusprogrammid, päevikute pidamise, kavandite koostamise ja pikemate tekstide kirjutamise rakendused
-VPN & Proxy:
-  name: VPN-id ja proksiteenused
-  description: Krüpti andmesidet, väldi piirangud ja muuda oma võrguühendus anonüümseks
-Email:
-  name: E-post
-  description: E-posti kliendid e-kirjade saatmiseks, vastuvõtmiseks ja haldamiseks
-DNS & Hosts:
-  name: Nimelahendus ja hostid
-  description: Seadista nimelahendust, reklaamide blokeerimist hosts-faili ja domeenide suunamist
-App Store & Updater:
-  name: Rakendustepoed ja uuendused
-  description: Otsi, paigalda ja uuenda rakendusi tarkvarahoidlatest
-Browser:
-  name: Veebibrauserid
-  description: Veebibrauserid internetis surfamiseks ja veebilehtede vaatamiseks
-File Encryption & Vault:
-  name: Krüptimine ja andmehoidlad
-  description: Krüpti, lukusta ja peida isiklikud failid ja kaustad
-File Transfer:
-  name: Failide edastamine
-  description: Jaga ja edasta faile FTP, kohtvõrgu, Bluetoothi või võrdõigusvõrgu (p2p) kaudu
-Messaging:
-  name: Sõnumirakendused
-  description: Kiirsuhtlus-, vestlus- ja SMS-rakendused
-News:
-  name: Uudised
-  description: Viimased uudised, artiklid, RSS-uudisvood ja uudiste koondajad
-Local Media Player:
-  name: Meediaesitus nutiseadmest
-  description: Esita seadmes salvestatud heli- ja videofaile võrguühendust kasutamata
-Online Media Player:
-  name: Meediaesitus võrgust
-  description: Kuula muusikat, vaata videoid ja jälgi otseülekandeid internetist
-Password & 2FA:
-  name: Salasõnad ja 2FA
-  description: Salasõnahaldurid, autentimisseadmed, OTP, TOTP, HOTP, U2F, FIDO ja kahefaktorilise autentimise tarvikud
-Social Network:
-  name: Sotsiaalvõrgustik
-  description: Sotsiaalmeedia, mikroblogimine ja veebikogukondade platvormid
-Weather:
-  name: Ilmaennustus
-  description: Ilmaennustused, radariülevaated, temperatuur ja ilmastikutingimused
-Keyboard & IME:
-  name: Klahvistik ja sisendmeetodid
-  description: Kohandatud klahvistikud, sisestusmeetodid, automaatkorrektuur ja kirjutamisrakendused
-Podcast:
-  name: Taskuhääling
-  description: Telli, kuula ja laadi alla taskuhäälinguid ning saateid
-Calendar & Agenda:
-  name: Kalender ja päevakava
-  description: Kavanda sündmusi, meeldetuletusi, kohtumisi ja päevakavasid
-Voice & Video Chat:
-  name: Hääl- ja videovestlused
-  description: Hääl- ja videokõned, konverentskõned ning VoIP-suhtlusrakendused
-Cloud Storage & File Sync:
-  name: Pilveruum ja sünkroonimine
-  description: Varundus, sünkroonimine ja failide kaugjuurdepääs pilveteenuste kaudu
-Wallet:
-  name: Dokumendi- ja rahataskud
-  description: Digitaalsed rahakotid maksete tegemiseks, kaartide ja krüptovaluutade haldamiseks
-Bookmark:
-  name: Järjehoidjad
-  description: Salvesta, halda ja korralda lemmiklinke ja lugemisloendeid
-Calculator:
-  name: Kalkulaatorid
-  description: Aritmeetilised, teaduslikud ja matemaatilised arvutustarvikud
-Draw:
-  name: Joonistamine
-  description: Joonistamine, maalimine, illustratsioonid ja digitaalkunsti rakendused
-Ebook Reader:
-  name: E-raamatute lugemine
-  description: Loe e-raamatuid, EPUB-faile, PDF-faile ning digitaalseid raamatuid ja väljaandeid
-Finance Manager:
-  name: Rahahaldus
-  description: Jälgi kulusid, eelarveid, sissetulekuid ja oma pangakontosid
-Gallery:
-  name: Galeriid
-  description: Sirvi, vaata ja korralda fotosid, pilte ja videoid
-Icon Pack:
-  name: Ikoonipakid
-  description: Kohandatud ikoonikomplektid rakenduste ikoonide kujundamiseks
-Launcher:
-  name: Käivitajad
-  description: Erinevad nutiseadme avalehe variandid ja töölauakeskkonna rakendused
-Note:
-  name: Märkmikud
-  description: Märkmikud, meeldetuletused ning kiire märkmete tegemise ja haldamise rakendused
-Pass Wallet:
-  name: Raha- ja kaarditaskud
-  description: Salvesta ja halda pardakaarte, pileteid, kliendikaarte ja kuponge
-Recipe Manager:
-  name: Retseptihaldus
-  description: Salvesta, korralda ja avasta toiduvalmistamisretsepte ning söögitegemise ideid
-Text Editor:
-  name: Tekstitoimetid
-  description: Vormindamata teksti redaktorid, Markdowni redaktorid ja kirjutamisvahendid
-Translation & Dictionary:
-  name: Tõlkimine ja sõnastikud
-  description: Tõlgi keete vaheli, otsi sõnade tähendusi ja kasuta sõnastikke
-Unit Convertor:
-  name: Ühikute teisendajad
-  description: Teisenda pikkuse, kaalu, temperatuuri, valuuta ja muid ühikuid
-Wallpaper:
-  name: Taustapildid
-  description: Avalehe ja lukustusvaate taustapildid ning reaalajas muutuvad taustapildid
-Workout:
-  name: Treening
-  description: Treeningute kavad, jõusaali treeningute jälgimine, jooksmine ja fitnessi treeningurakendused
-Public Transport:
-  name: Ühistransport ja sõiduplaanid
-  description: Bussi-, rongi-, metroo- ja muu ühistranspordi sõiduplaanid ning teekonna kavandajad
-Task:
-  name: Ülesanded
-  description: Ülesannete haldurid ning tootlikkuse ja GTD-tarvikud
-Shopping List:
-  name: Ostunimekirjad
-  description: Ostunimekirjad, ostude jälgimise rakendused ja ühisostmise rakendused
-Forum:
-  name: Foorumid
-  description: Arutelufoorumid, kogukonna jutulõngad ja küsimuste-vastuste platvormid
-Music Practice Tool:
-  name: Muusikatarvikud
-  description: Häälestusseadmed, metronoomid, akorditööriistad ja pilliharjutamise abivahendid
-Habit Tracker:
-  name: Elustiil
-  description: Koosta elurutiine, jälgi igapäevaseid eesmärke ja hoia silma peal oma järjestikustel saavutustel
-Location Tracker & Sharer:
-  name: Asukoha logimine ja jagamine
-  description: Jaga ja jälgi reaalajas GPS-asukohta teistega
-AI Chat:
-  name: Vestlus tehisaruga
-  description: Tehisaru abilised, vestlusrobotid ja suurte keelemudelite (LLM) liidesed
-App Manager:
-  name: Rakendustehaldur
-  description: Halda ja korralda paigaldatud rakendusi, seoseid ja õigusi
-Religion:
-  name: Usk ja religioon
-  description: Palveajad, pühad tekstid, vaimulikud lugemised ja vaimse praktika rakendused
-Clock:
-  name: Kellad
-  description: Teave hetke kellaaja kohta
-Firewall:
-  name: Tulemüürid
-  description: Blokeeri soovimatut võrguliiklust ja piira rakenduste internetiühendust
-Network Analyzer:
-  name: Võrguanalüüs
-  description: WiFi-võrkude diagnostika ja skannimine ning ühenduse toimivuse jälgimine
 Inventory:
+  description: "F\xFC\xFCsiliste esemete ja varude j\xE4lgimine, kataloogimine ja\
+    \ haldamine"
   name: Varahaldus
-  description: Füüsiliste esemete ja varude jälgimine, kataloogimine ja haldamine
-Contact:
-  name: Kontaktihaldus
-  description: Aadressiraamatud, telefoniraamatud ja kontaktide haldamise rakendused
-Battery:
-  name: Akuhaldus
-  description: Jälgi ja optimeeri aku eluiga, toitekasutust ja laadimist
-Flashlight:
-  name: Välklambid
-  description: Taskulambid ja LED-välklampide rakendused
-Radio:
-  name: Raadio
-  description: Kuula otseülekandes FM/AM-raadiojaamu ja internetiraadiojaamu
-Remote Controller:
-  name: Kaugjuhtimispuldid
-  description: Infrapuna- ja nutikodu puldid teleritele, kliima- ja muudele seadmetele
-Remote Access:
-  name: Kaugligipääs
-  description: Halda arvuteid, servereid ja seadmeid kaugjuhtimise teel RDP, VNC või SSH abil
-Diet:
-  name: Toiduvalik
-  description: Toitumine, kalorid, toidu tarbimise haldamine ja jälgimine
-Health Manager:
-  name: Tervisehaldus
-  description: Jälgi kehakaalu, pulssi, vererõhku, menstruatsiooni ja muid tervisenäitajaid
-Schedule:
-  name: Ürituste päevakavad
-  description: Konverentside ja ürituste päevaplaanid ja -kavad
-Text to Speech:
-  name: Kõnesüntees
-  description: Kõnesünteesi (tekst kõneks) tarvikud
-Time Tracker:
-  name: Ajakasutuse jälgimine
-  description: Jälgi tegevustele kulunud aega ja ekraaniaega
-Action Game:
-  name: Märulimängud
-  description: Märul, sport, võidusõidud ja platvormimängud
-Board Game:
-  name: Lauamängud
-  description: Lauamäng, male, go, trips-traps-trull
-Card Game:
-  name: Kaardimängud
-  description: Kaardimäng, pasjanss
-Casual Game:
-  name: Vabaaja mängud
-  description: Lihtne mäng vabaks ajaks
-Dice:
-  description: Juhuslikul valiku põhinevad mängud
-  name: Täringumängud
-Educational Game:
-  name: Harivad mängud
-  description: Õppimine mängu ajal, küsimustikud, viktoriinid
-Emulator:
-  name: Emulaatorid
-  description: Mängude ja programmide käivitamise emulaatorid
-Game Helper:
-  name: Mängude abitarvikud
-  description: Mängutarvikud, abilised, kaaslased, tulemused, edetabelid, taimerid
+Keyboard & IME:
+  description: Kohandatud klahvistikud, sisestusmeetodid, automaatkorrektuur ja kirjutamisrakendused
+  name: Klahvistik ja sisendmeetodid
+Launcher:
+  description: "Erinevad nutiseadme avalehe variandid ja t\xF6\xF6lauakeskkonna rakendused"
+  name: "K\xE4ivitajad"
+Local Media Player:
+  description: "Esita seadmes salvestatud heli- ja videofaile v\xF5rgu\xFChendust\
+    \ kasutamata"
+  name: Meediaesitus nutiseadmest
+Location Tracker & Sharer:
+  description: "Jaga ja j\xE4lgi reaalajas GPS-asukohta teistega"
+  name: Asukoha logimine ja jagamine
+Lyrics:
+  description: "Vaata ja otsi laulus\xF5nu"
+  name: "Laulus\xF5nad"
+Market & Price:
+  description: "Hinnad, valuutakursid, b\xF6rsinoteeringud"
+  name: Turud ja hinnad
 Meditation:
   description: Meditatsioon, teadvelolek, hingamisharjutused
   name: Mediteerimine
-Party Game:
-  name: Peomängud
-  description: Mängupeod, mängud mitmele, võrgumängud
-Platformer Game:
-  name: Platvormimängud
-  description: Mängud tasanditel ja külgvaates
-Puzzle Game:
-  name: Mõistatusmängud
-  description: Mõistatused,pusled, sudoku, mäluharjutused
-Role-Playing Game:
-  name: Rollimängud
-  description: Rollimängud (RPG) ja (vangi)koobastiku mängud, D&D-tüüpi mängud
-Shooter Game:
-  name: Laskmismängud
-  description: Sihtmärgi tabamisega seotud mängud
-Strategy Game:
-  name: Strateegiamängud
-  description: Strateegiad ja simulatsioonid
-Sport Game:
-  name: Spordimängud
-  description: Digitaalne sport, e-sport
-Timer:
-  name: Taimerid
-  description: Taimer, ajaarvestus, pöördloendus, ajast kinni pidamine
-Visual Novel:
-  name: Visuaalromaanid
-  description: Visuaalromaan, jutumängud, jaapani gal-mängud
-Word Game:
-  name: Sõnamängud
-  description: Sõnapusled, ristsõnad, sõnade äraarvamised
-Download:
-  name: Allalaadimised
-  description: Allalaadimine, allalaadimishaldurid, torrentikliendid
-File Manager:
-  name: Failihaldurid
-  description: Failide haldus ja uurimine
-Camera:
-  name: Kaamera
-  description: Kaamerad, IP-kaamerate kliendid ja videosalvestus
-Recorder:
-  name: Salvestaja
-  description: Heli-, ekraani- ja kõnesalvestus
-Market & Price:
-  name: Turud ja hinnad
-  description: Hinnad, valuutakursid, börsinoteeringud
-Lyrics:
-  name: Laulusõnad
-  description: Vaata ja otsi laulusõnu
-Alarm Clock:
-  name: Äratuskell
-  description: Äratuse seadistamine
-Cast:
-  name: Meedialevi
-  description: Meedialevitus, UPnP, DLNA, FCast, AirPlay, Miracast
+Messaging:
+  description: Kiirsuhtlus-, vestlus- ja SMS-rakendused
+  name: "S\xF5numirakendused"
+Multimedia:
+  name: Multimeedia
+Music Practice Tool:
+  description: "H\xE4\xE4lestusseadmed, metronoomid, akordit\xF6\xF6riistad ja pilliharjutamise\
+    \ abivahendid"
+  name: Muusikatarvikud
+Navigation:
+  description: Kaardid, GPS, samm-sammult juhised ja teejuhatamise rakendused
+  name: Tee juhatamine
+Network Analyzer:
+  description: "WiFi-v\xF5rkude diagnostika ja skannimine ning \xFChenduse toimivuse\
+    \ j\xE4lgimine"
+  name: "V\xF5rguanal\xFC\xFCs"
+News:
+  description: Viimased uudised, artiklid, RSS-uudisvood ja uudiste koondajad
+  name: Uudised
+Note:
+  description: "M\xE4rkmikud, meeldetuletused ning kiire m\xE4rkmete tegemise ja haldamise\
+    \ rakendused"
+  name: "M\xE4rkmikud"
 Notification:
-  name: Teavitused
   description: Teavituste haldus, logimine, edasisuunamine
-Stopwatch:
-  name: Stopper
-  description: Edenemise, möödunud aja või ringi aja mõõtmine
-Code & Forge:
-  name: Koodi kirjutamine ja haldus
-  description: Git, forge, lähtekoodi haldus ja majutus
+  name: Teavitused
 OCR:
-  name: Optiline märgituvastus
-  description: Dokumendiskanner, optiline märgituvastus ja tähetuvastus
+  description: "Dokumendiskanner, optiline m\xE4rgituvastus ja t\xE4hetuvastus"
+  name: "Optiline m\xE4rgituvastus"
+Online Media Player:
+  description: "Kuula muusikat, vaata videoid ja j\xE4lgi otse\xFClekandeid internetist"
+  name: "Meediaesitus v\xF5rgust"
+Party Game:
+  description: "M\xE4ngupeod, m\xE4ngud mitmele, v\xF5rgum\xE4ngud"
+  name: "Peom\xE4ngud"
+Pass Wallet:
+  description: Salvesta ja halda pardakaarte, pileteid, kliendikaarte ja kuponge
+  name: Raha- ja kaarditaskud
+Password & 2FA:
+  description: "Salas\xF5nahaldurid, autentimisseadmed, OTP, TOTP, HOTP, U2F, FIDO\
+    \ ja kahefaktorilise autentimise tarvikud"
+  name: "Salas\xF5nad ja 2FA"
+Phone & SMS:
+  description: "K\xF5nevalijad, k\xF5nehaldurid ja tekstis\xF5numite saatmise rakendused"
+  name: Telefon ja SMS
+Platformer Game:
+  description: "M\xE4ngud tasanditel ja k\xFClgvaates"
+  name: "Platvormim\xE4ngud"
+Podcast:
+  description: "Telli, kuula ja laadi alla taskuh\xE4\xE4linguid ning saateid"
+  name: "Taskuh\xE4\xE4ling"
+Public Transport:
+  description: "Bussi-, rongi-, metroo- ja muu \xFChistranspordi s\xF5iduplaanid ning\
+    \ teekonna kavandajad"
+  name: "\xDChistransport ja s\xF5iduplaanid"
 Push:
-  name: Tõuketeenused
-  description: Tõukesõnumid
+  description: "T\xF5ukes\xF5numid"
+  name: "T\xF5uketeenused"
+Puzzle Game:
+  description: "M\xF5istatused,pusled, sudoku, m\xE4luharjutused"
+  name: "M\xF5istatusm\xE4ngud"
+Radio:
+  description: "Kuula otse\xFClekandes FM/AM-raadiojaamu ja internetiraadiojaamu"
+  name: Raadio
+Reading:
+  description: Artiklid, pikemad tekstid, hilisemaks lugemiseks salvestamise rakendused
+    ja veebilugemisrakendused
+  name: Lugemine
+Recipe Manager:
+  description: "Salvesta, korralda ja avasta toiduvalmistamisretsepte ning s\xF6\xF6\
+    gitegemise ideid"
+  name: Retseptihaldus
+Recorder:
+  description: "Heli-, ekraani- ja k\xF5nesalvestus"
+  name: Salvestaja
+Religion:
+  description: "Palveajad, p\xFChad tekstid, vaimulikud lugemised ja vaimse praktika\
+    \ rakendused"
+  name: Usk ja religioon
+Remote Access:
+  description: "Halda arvuteid, servereid ja seadmeid kaugjuhtimise teel RDP, VNC\
+    \ v\xF5i SSH abil"
+  name: "Kaugligip\xE4\xE4s"
+Remote Controller:
+  description: Infrapuna- ja nutikodu puldid teleritele, kliima- ja muudele seadmetele
+  name: Kaugjuhtimispuldid
+Role-Playing Game:
+  description: "Rollim\xE4ngud (RPG) ja (vangi)koobastiku m\xE4ngud, D&D-t\xFC\xFC\
+    pi m\xE4ngud"
+  name: "Rollim\xE4ngud"
+Schedule:
+  description: "Konverentside ja \xFCrituste p\xE4evaplaanid ja -kavad"
+  name: "\xDCrituste p\xE4evakavad"
+Science & Education:
+  description: "\xD5ppimis-, uurimis-, teabe- ja haridusrakendused"
+  name: Teadus ja haridus
+Security:
+  name: Turvalisus
+Shooter Game:
+  description: "Sihtm\xE4rgi tabamisega seotud m\xE4ngud"
+  name: "Laskmism\xE4ngud"
+Shopping List:
+  description: "Ostunimekirjad, ostude j\xE4lgimise rakendused ja \xFChisostmise rakendused"
+  name: Ostunimekirjad
+Social Network:
+  description: Sotsiaalmeedia, mikroblogimine ja veebikogukondade platvormid
+  name: "Sotsiaalv\xF5rgustik"
+Sport Game:
+  description: Digitaalne sport, e-sport
+  name: "Spordim\xE4ngud"
+Sports & Health:
+  description: "Treeningute j\xE4lgimine, heaolu, sporditulemused ja tervise j\xE4\
+    lgimine"
+  name: Sport ja tervis
+Stopwatch:
+  description: "Edenemise, m\xF6\xF6dunud aja v\xF5i ringi aja m\xF5\xF5tmine"
+  name: Stopper
+Strategy Game:
+  description: Strateegiad ja simulatsioonid
+  name: "Strateegiam\xE4ngud"
+System:
+  name: "S\xFCsteem"
+Task:
+  description: "\xDClesannete haldurid ning tootlikkuse ja GTD-tarvikud"
+  name: "\xDClesanded"
+Text Editor:
+  description: Vormindamata teksti redaktorid, Markdowni redaktorid ja kirjutamisvahendid
+  name: Tekstitoimetid
+Text to Speech:
+  description: "K\xF5nes\xFCnteesi (tekst k\xF5neks) tarvikud"
+  name: "K\xF5nes\xFCntees"
+Theming:
+  description: "Kohanda oma nutiseadme v\xE4limust kujunduste, kirjat\xFC\xFCpide\
+    \ ja kasutajaliidese stiilide abil"
+  name: Kujundused
+Time Tracker:
+  description: "J\xE4lgi tegevustele kulunud aega ja ekraaniaega"
+  name: "Ajakasutuse j\xE4lgimine"
+Timer:
+  description: "Taimer, ajaarvestus, p\xF6\xF6rdloendus, ajast kinni pidamine"
+  name: Taimerid
+Translation & Dictionary:
+  description: "T\xF5lgi keete vaheli, otsi s\xF5nade t\xE4hendusi ja kasuta s\xF5\
+    nastikke"
+  name: "T\xF5lkimine ja s\xF5nastikud"
+Unit Convertor:
+  description: "Teisenda pikkuse, kaalu, temperatuuri, valuuta ja muid \xFChikuid"
+  name: "\xDChikute teisendajad"
+VPN & Proxy:
+  description: "Kr\xFCpti andmesidet, v\xE4ldi piirangud ja muuda oma v\xF5rgu\xFC\
+    hendus anon\xFC\xFCmseks"
+  name: VPN-id ja proksiteenused
+Visual Novel:
+  description: "Visuaalromaan, jutum\xE4ngud, jaapani gal-m\xE4ngud"
+  name: Visuaalromaanid
+Voice & Video Chat:
+  description: "H\xE4\xE4l- ja videok\xF5ned, konverentsk\xF5ned ning VoIP-suhtlusrakendused"
+  name: "H\xE4\xE4l- ja videovestlused"
 Volume:
-  name: Helivaljus
   description: Helivaljuse seadistuste haldus
+  name: Helivaljus
+Wallet:
+  description: "Digitaalsed rahakotid maksete tegemiseks, kaartide ja kr\xFCptovaluutade\
+    \ haldamiseks"
+  name: Dokumendi- ja rahataskud
+Wallpaper:
+  description: Avalehe ja lukustusvaate taustapildid ning reaalajas muutuvad taustapildid
+  name: Taustapildid
+Weather:
+  description: "Ilmaennustused, radari\xFClevaated, temperatuur ja ilmastikutingimused"
+  name: Ilmaennustus
+Word Game:
+  description: "S\xF5napusled, rists\xF5nad, s\xF5nade \xE4raarvamised"
+  name: "S\xF5nam\xE4ngud"
+Workout:
+  description: "Treeningute kavad, j\xF5usaali treeningute j\xE4lgimine, jooksmine\
+    \ ja fitnessi treeningurakendused"
+  name: Treening
+Writing:
+  description: "Tekstit\xF6\xF6tlusprogrammid, p\xE4evikute pidamise, kavandite koostamise\
+    \ ja pikemate tekstide kirjutamise rakendused"
+  name: Kirjutamine

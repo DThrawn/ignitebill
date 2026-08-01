@@ -1,30 +1,37 @@
 Ads:
-  description: 此应用包含广告
-  name: 广告
+  description: "\u6B64\u5E94\u7528\u5305\u542B\u5E7F\u544A"
+  name: "\u5E7F\u544A"
 DisabledAlgorithm:
-  description: 此应用的安全签名较弱
-  name: 使用不安全算法签名
+  description: "\u6B64\u5E94\u7528\u7684\u5B89\u5168\u7B7E\u540D\u8F83\u5F31"
+  name: "\u4F7F\u7528\u4E0D\u5B89\u5168\u7B97\u6CD5\u7B7E\u540D"
 KnownVuln:
-  description: 此应用包含已知的安全漏洞
-  name: 含有已知漏洞
+  description: "\u6B64\u5E94\u7528\u5305\u542B\u5DF2\u77E5\u7684\u5B89\u5168\u6F0F\
+    \u6D1E"
+  name: "\u542B\u6709\u5DF2\u77E5\u6F0F\u6D1E"
 NoSourceSince:
-  name: 自下列版本起源码不可用：
-  description: 源代码不再可用，不可能有更新
+  description: "\u6E90\u4EE3\u7801\u4E0D\u518D\u53EF\u7528\uFF0C\u4E0D\u53EF\u80FD\
+    \u6709\u66F4\u65B0"
+  name: "\u81EA\u4E0B\u5217\u7248\u672C\u8D77\u6E90\u7801\u4E0D\u53EF\u7528\uFF1A"
 NonFreeAdd:
-  description: 此应用推广非自由的附加组件
-  name: 非自由附加组件
+  description: "\u6B64\u5E94\u7528\u63A8\u5E7F\u975E\u81EA\u7531\u7684\u9644\u52A0\
+    \u7EC4\u4EF6"
+  name: "\u975E\u81EA\u7531\u9644\u52A0\u7EC4\u4EF6"
 NonFreeAssets:
-  description: 此应用包含非自由资源
-  name: 非自由资产
+  description: "\u6B64\u5E94\u7528\u5305\u542B\u975E\u81EA\u7531\u8D44\u6E90"
+  name: "\u975E\u81EA\u7531\u8D44\u4EA7"
 NonFreeDep:
-  description: 此应用依赖于其它非自由应用
-  name: 非自由依赖项
+  description: "\u6B64\u5E94\u7528\u4F9D\u8D56\u4E8E\u5176\u5B83\u975E\u81EA\u7531\
+    \u5E94\u7528"
+  name: "\u975E\u81EA\u7531\u4F9D\u8D56\u9879"
 NonFreeNet:
-  description: 此应用推广或完全依赖于非自由的网络服务
-  name: 非自由网络服务
-Tracking:
-  description: 此应用会记录并报告你的活动
-  name: 跟踪用户
+  description: "\u6B64\u5E94\u7528\u63A8\u5E7F\u6216\u5B8C\u5168\u4F9D\u8D56\u4E8E\
+    \u975E\u81EA\u7531\u7684\u7F51\u7EDC\u670D\u52A1"
+  name: "\u975E\u81EA\u7531\u7F51\u7EDC\u670D\u52A1"
 TetheredNet:
-  name: 与特定网络服务绑定
-  description: 该应用程序完全依赖于某个网络服务实例
+  description: "\u8BE5\u5E94\u7528\u7A0B\u5E8F\u5B8C\u5168\u4F9D\u8D56\u4E8E\u67D0\
+    \u4E2A\u7F51\u7EDC\u670D\u52A1\u5B9E\u4F8B"
+  name: "\u4E0E\u7279\u5B9A\u7F51\u7EDC\u670D\u52A1\u7ED1\u5B9A"
+Tracking:
+  description: "\u6B64\u5E94\u7528\u4F1A\u8BB0\u5F55\u5E76\u62A5\u544A\u4F60\u7684\
+    \u6D3B\u52A8"
+  name: "\u8DDF\u8E2A\u7528\u6237"

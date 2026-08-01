@@ -1,30 +1,34 @@
-Science & Education:
-  name: زانست و فێرکردن
-Writing:
-  name: نووسین
-Security:
-  name: پاراستن
-Navigation:
-  name: ڕێدۆز
-System:
-  name: سیستەم
-Connectivity:
-  name: پەیوەندی
-Development:
-  name: گەشەپێدان
-Phone & SMS:
-  name: تەلەفۆن و کورتەنامە
-Graphics:
-  name: نیگارەیی
-Internet:
-  name: ئینتەرنێت
-Theming:
-  name: وتار
-Reading:
-  name: خوێندنەوە
-Sports & Health:
-  name: تەندرووستی و وەرزش
-Multimedia:
-  name: ڕەنگاڵە
 App Store & Updater:
-  name: ئاپستۆر و نوێکەرەوەکان
+  name: "\u0626\u0627\u067E\u0633\u062A\u06C6\u0631 \u0648 \u0646\u0648\u06CE\u06A9\
+    \u06D5\u0631\u06D5\u0648\u06D5\u06A9\u0627\u0646"
+Connectivity:
+  name: "\u067E\u06D5\u06CC\u0648\u06D5\u0646\u062F\u06CC"
+Development:
+  name: "\u06AF\u06D5\u0634\u06D5\u067E\u06CE\u062F\u0627\u0646"
+Graphics:
+  name: "\u0646\u06CC\u06AF\u0627\u0631\u06D5\u06CC\u06CC"
+Internet:
+  name: "\u0626\u06CC\u0646\u062A\u06D5\u0631\u0646\u06CE\u062A"
+Multimedia:
+  name: "\u0695\u06D5\u0646\u06AF\u0627\u06B5\u06D5"
+Navigation:
+  name: "\u0695\u06CE\u062F\u06C6\u0632"
+Phone & SMS:
+  name: "\u062A\u06D5\u0644\u06D5\u0641\u06C6\u0646 \u0648 \u06A9\u0648\u0631\u062A\
+    \u06D5\u0646\u0627\u0645\u06D5"
+Reading:
+  name: "\u062E\u0648\u06CE\u0646\u062F\u0646\u06D5\u0648\u06D5"
+Science & Education:
+  name: "\u0632\u0627\u0646\u0633\u062A \u0648 \u0641\u06CE\u0631\u06A9\u0631\u062F\
+    \u0646"
+Security:
+  name: "\u067E\u0627\u0631\u0627\u0633\u062A\u0646"
+Sports & Health:
+  name: "\u062A\u06D5\u0646\u062F\u0631\u0648\u0648\u0633\u062A\u06CC \u0648 \u0648\
+    \u06D5\u0631\u0632\u0634"
+System:
+  name: "\u0633\u06CC\u0633\u062A\u06D5\u0645"
+Theming:
+  name: "\u0648\u062A\u0627\u0631"
+Writing:
+  name: "\u0646\u0648\u0648\u0633\u06CC\u0646"

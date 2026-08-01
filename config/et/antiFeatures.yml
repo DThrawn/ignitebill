@@ -2,14 +2,14 @@ Ads:
   description: Selles rakenduses on reklaame
   name: Reklaamid
 DisabledAlgorithm:
-  description: Sellel rakendusel on nõrk turvallkiri
+  description: "Sellel rakendusel on n\xF5rk turvallkiri"
   name: Allkirjastamisel on kasutatud ebaturvalist algoritmi
 KnownVuln:
-  description: Sellel rakendusel on tuntud turvanõrkus
-  name: Tuntud turvanõrkus
+  description: "Sellel rakendusel on tuntud turvan\xF5rkus"
+  name: "Tuntud turvan\xF5rkus"
 NoSourceSince:
-  name: Lähtekood pole saadaval alates
-  description: Lähtekood ei ole enam saadaval, uuendused ei ole enam võimalikud
+  description: "L\xE4htekood ei ole enam saadaval, uuendused ei ole enam v\xF5imalikud"
+  name: "L\xE4htekood pole saadaval alates"
 NonFreeAdd:
   description: See rakendus edendab mitte-vabu laiendusi
   name: Mitte-vabad laiendused
@@ -17,14 +17,15 @@ NonFreeAssets:
   description: Selles rakenduses on mitte-vabu komponente
   name: Mitte-vabad vara
 NonFreeDep:
-  description: See rakendus sõltub teistest mitte-vabadest rakendustest
-  name: Mitte-vabad Sõltuvused
+  description: "See rakendus s\xF5ltub teistest mitte-vabadest rakendustest"
+  name: "Mitte-vabad S\xF5ltuvused"
 NonFreeNet:
-  description: See rakendus eelistab mitte-vabu võrguteenuseid või sõltub nendest
-  name: Mitte-vabad võrguteenuseid
-Tracking:
-  description: See rakendus jälgib ja raporteerib su aktiivsusest
-  name: Jälgimine
+  description: "See rakendus eelistab mitte-vabu v\xF5rguteenuseid v\xF5i s\xF5ltub\
+    \ nendest"
+  name: "Mitte-vabad v\xF5rguteenuseid"
 TetheredNet:
-  description: See rakendus sõltub täielikult ühest kindlast võrguteenusest
-  name: Lõastatud võrguteenused
+  description: "See rakendus s\xF5ltub t\xE4ielikult \xFChest kindlast v\xF5rguteenusest"
+  name: "L\xF5astatud v\xF5rguteenused"
+Tracking:
+  description: "See rakendus j\xE4lgib ja raporteerib su aktiivsusest"
+  name: "J\xE4lgimine"

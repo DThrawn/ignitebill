@@ -1,35 +1,3 @@
-Connectivity:
-  name: Conectividad
-Development:
-  name: Desarrollo
-Graphics:
-  name: Gráficos
-Internet:
-  name: Internet
-Multimedia:
-  name: Multimedia
-Navigation:
-  name: Navegación
-Phone & SMS:
-  name: Teléfono & SMS
-Reading:
-  name: Leyendo
-Science & Education:
-  name: Ciencia y Educación
-Security:
-  name: Seguridad
-Sports & Health:
-  name: Deportes & Salud
-System:
-  name: Sistema
-Writing:
-  name: Escribiendo
-Theming:
-  name: Personalización
-VPN & Proxy:
-  name: VPN & Proxy
-Email:
-  name: Email
 App Store & Updater:
   name: Tienda de Aplicaciones y Actualizador
 Bookmark:
@@ -40,3 +8,35 @@ Calculator:
   name: Calculadora
 Calendar & Agenda:
   name: Calendario y Agenda
+Connectivity:
+  name: Conectividad
+Development:
+  name: Desarrollo
+Email:
+  name: Email
+Graphics:
+  name: "Gr\xE1ficos"
+Internet:
+  name: Internet
+Multimedia:
+  name: Multimedia
+Navigation:
+  name: "Navegaci\xF3n"
+Phone & SMS:
+  name: "Tel\xE9fono & SMS"
+Reading:
+  name: Leyendo
+Science & Education:
+  name: "Ciencia y Educaci\xF3n"
+Security:
+  name: Seguridad
+Sports & Health:
+  name: Deportes & Salud
+System:
+  name: Sistema
+Theming:
+  name: "Personalizaci\xF3n"
+VPN & Proxy:
+  name: VPN & Proxy
+Writing:
+  name: Escribiendo

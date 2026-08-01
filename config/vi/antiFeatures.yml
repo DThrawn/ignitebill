@@ -1,30 +1,39 @@
 Ads:
-  description: Ứng dụng chứa quảng cáo
-  name: Quảng cáo
+  description: "\u1EE8ng d\u1EE5ng ch\u1EE9a qu\u1EA3ng c\xE1o"
+  name: "Qu\u1EA3ng c\xE1o"
 DisabledAlgorithm:
-  description: Ứng dụng có chữ ký bảo mật yếu
-  name: Được ký bằng thuật toán không an toàn
+  description: "\u1EE8ng d\u1EE5ng c\xF3 ch\u1EEF k\xFD b\u1EA3o m\u1EADt y\u1EBFu"
+  name: "\u0110\u01B0\u1EE3c k\xFD b\u1EB1ng thu\u1EADt to\xE1n kh\xF4ng an to\xE0\
+    n"
 KnownVuln:
-  description: Ứng dụng chứa lỗ hổng bảo mật đã biết
-  name: Lỗ hổng bảo mật đã biết
+  description: "\u1EE8ng d\u1EE5ng ch\u1EE9a l\u1ED7 h\u1ED5ng b\u1EA3o m\u1EADt \u0111\
+    \xE3 bi\u1EBFt"
+  name: "L\u1ED7 h\u1ED5ng b\u1EA3o m\u1EADt \u0111\xE3 bi\u1EBFt"
 NoSourceSince:
-  name: Không còn mã nguồn từ
-  description: Mã nguồn không còn khả dụng, không còn được cập nhật
+  description: "M\xE3 ngu\u1ED3n kh\xF4ng c\xF2n kh\u1EA3 d\u1EE5ng, kh\xF4ng c\xF2\
+    n \u0111\u01B0\u1EE3c c\u1EADp nh\u1EADt"
+  name: "Kh\xF4ng c\xF2n m\xE3 ngu\u1ED3n t\u1EEB"
 NonFreeAdd:
-  description: Ứng dụng quảng bá các tiện ích mở rộng phi tự do
-  name: Tiện ích mở rộng phi tự do
+  description: "\u1EE8ng d\u1EE5ng qu\u1EA3ng b\xE1 c\xE1c ti\u1EC7n \xEDch m\u1EDF\
+    \ r\u1ED9ng phi t\u1EF1 do"
+  name: "Ti\u1EC7n \xEDch m\u1EDF r\u1ED9ng phi t\u1EF1 do"
 NonFreeAssets:
-  description: Ứng dụng chứa tài nguyên phi tự do
-  name: Tài nguyên phi tự do
+  description: "\u1EE8ng d\u1EE5ng ch\u1EE9a t\xE0i nguy\xEAn phi t\u1EF1 do"
+  name: "T\xE0i nguy\xEAn phi t\u1EF1 do"
 NonFreeDep:
-  description: Ứng dụng phụ thuộc vào các ứng dụng phi tự do khác
-  name: Phụ thuộc phi tự do
+  description: "\u1EE8ng d\u1EE5ng ph\u1EE5 thu\u1ED9c v\xE0o c\xE1c \u1EE9ng d\u1EE5\
+    ng phi t\u1EF1 do kh\xE1c"
+  name: "Ph\u1EE5 thu\u1ED9c phi t\u1EF1 do"
 NonFreeNet:
-  description: Ứng dụng quảng bá hoặc phụ thuộc hoàn toàn một dịch vụ mạng phi tự do
-  name: Dịch vụ mạng phi tự do
-Tracking:
-  description: Ứng dụng theo dõi và báo cáo hoạt động của bạn
-  name: Theo dõi
+  description: "\u1EE8ng d\u1EE5ng qu\u1EA3ng b\xE1 ho\u1EB7c ph\u1EE5 thu\u1ED9c\
+    \ ho\xE0n to\xE0n m\u1ED9t d\u1ECBch v\u1EE5 m\u1EA1ng phi t\u1EF1 do"
+  name: "D\u1ECBch v\u1EE5 m\u1EA1ng phi t\u1EF1 do"
 TetheredNet:
-  description: Ứng dụng phụ thuộc hoàn toàn một thành phần của một dịch vụ mạng
-  name: Phụ thuộc hoàn toàn một máy chủ cụ thể của một dịch vụ mạng
+  description: "\u1EE8ng d\u1EE5ng ph\u1EE5 thu\u1ED9c ho\xE0n to\xE0n m\u1ED9t th\xE0\
+    nh ph\u1EA7n c\u1EE7a m\u1ED9t d\u1ECBch v\u1EE5 m\u1EA1ng"
+  name: "Ph\u1EE5 thu\u1ED9c ho\xE0n to\xE0n m\u1ED9t m\xE1y ch\u1EE7 c\u1EE5 th\u1EC3\
+    \ c\u1EE7a m\u1ED9t d\u1ECBch v\u1EE5 m\u1EA1ng"
+Tracking:
+  description: "\u1EE8ng d\u1EE5ng theo d\xF5i v\xE0 b\xE1o c\xE1o ho\u1EA1t \u0111\
+    \u1ED9ng c\u1EE7a b\u1EA1n"
+  name: "Theo d\xF5i"

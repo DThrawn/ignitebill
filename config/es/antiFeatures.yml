@@ -1,30 +1,34 @@
 Ads:
-  description: Esta aplicación tiene publicidad
+  description: "Esta aplicaci\xF3n tiene publicidad"
   name: Anuncios
 DisabledAlgorithm:
-  description: Esta aplicación tiene una firma de seguridad muy débil
+  description: "Esta aplicaci\xF3n tiene una firma de seguridad muy d\xE9bil"
   name: Firmado con un algoritmo inseguro
 KnownVuln:
-  description: Esta aplicación contiene una vulnerabilidad de seguridad conocida
+  description: "Esta aplicaci\xF3n contiene una vulnerabilidad de seguridad conocida"
   name: Vulnerabilidad conocida
 NoSourceSince:
-  name: Código no disponible desde
-  description: El código fuente ya no está disponible, por lo que no tendrá versiones nuevas
+  description: "El c\xF3digo fuente ya no est\xE1 disponible, por lo que no tendr\xE1\
+    \ versiones nuevas"
+  name: "C\xF3digo no disponible desde"
 NonFreeAdd:
-  description: Esta aplicación promueve complementos no libres
+  description: "Esta aplicaci\xF3n promueve complementos no libres"
   name: Complementos no libres
 NonFreeAssets:
-  description: Esta aplicación contiene datos, imágenes o textos que no son libres
+  description: "Esta aplicaci\xF3n contiene datos, im\xE1genes o textos que no son\
+    \ libres"
   name: Elementos no libres
 NonFreeDep:
-  description: Esta aplicación depende de otras que no son libres
+  description: "Esta aplicaci\xF3n depende de otras que no son libres"
   name: Dependencias no libres
 NonFreeNet:
-  description: Esta aplicación promueve o se conecta a servidores remotos que no son libres
+  description: "Esta aplicaci\xF3n promueve o se conecta a servidores remotos que\
+    \ no son libres"
   name: Servicios de red no libres
-Tracking:
-  description: Esta aplicación sigue lo que haces e informa de tu actividad
-  name: Rastreo y seguimiento
 TetheredNet:
-  description: Esta aplicación depende de que un único servidor remoto de un tercero esté activo para funcionar
-  name: Unido a un único servicio de red
+  description: "Esta aplicaci\xF3n depende de que un \xFAnico servidor remoto de un\
+    \ tercero est\xE9 activo para funcionar"
+  name: "Unido a un \xFAnico servicio de red"
+Tracking:
+  description: "Esta aplicaci\xF3n sigue lo que haces e informa de tu actividad"
+  name: Rastreo y seguimiento

@@ -1,31 +1,5 @@
-Graphics:
-  name: Michoro
-Phone & SMS:
-  name: Simu na Huduma ya Ujumbe Fupi
-Science & Education:
-  name: Sayansi na Elimu
-Security:
-  name: Usalama
-Sports & Health:
-  name: Michezo na Afya
-Connectivity:
-  name: Muunganisho
-Development:
-  name: Maendeleo
-Internet:
-  name: Mtandao
-Multimedia:
-  name: Multimedia
-Navigation:
-  name: Urambazaji
-Reading:
-  name: Kusoma
-System:
-  name: Mfumo
-Theming:
-  name: Mandhari
-Writing:
-  name: Kuandika
+AI Chat:
+  name: AI Chat
 App Manager:
   name: Msimamizi wa Programu
 App Store & Updater:
@@ -42,30 +16,58 @@ Clock:
   name: Saa
 Cloud Storage & File Sync:
   name: Hifadhi ya Wingu na Usawazishaji wa Faili
+Connectivity:
+  name: Muunganisho
 Contact:
   name: Mawasiliano
 DNS & Hosts:
   name: DNS & Wapangishi
+Development:
+  name: Maendeleo
 Draw:
   name: Kuchora
+Ebook Reader:
+  name: Kisomaji Ebook
 Email:
   name: Barua pepe
+File Encryption & Vault:
+  name: Usimbaji wa Faili & Vault
 File Transfer:
   name: Uhamisho wa faili
+Finance Manager:
+  name: Meneja wa Fedha
+Firewall:
+  name: Firewall
 Forum:
   name: Jukwaa la majadiliano
 Gallery:
   name: Matunzio
+Graphics:
+  name: Michoro
 Habit Tracker:
   name: Kifuatilia Tabia
+Icon Pack:
+  name: Kifurushi cha ikoni
+Internet:
+  name: Mtandao
 Inventory:
   name: Orodha ya Bidhaa
+Keyboard & IME:
+  name: Kibodi na IME
+Launcher:
+  name: Kizindua
 Local Media Player:
   name: Kicheza Midia ya Kifaa
+Location Tracker & Sharer:
+  name: Kifuatilia Mahali & Mshiriki
 Messaging:
   name: Ujumbe
+Multimedia:
+  name: Multimedia
 Music Practice Tool:
   name: Zana ya Mazoezi ya Muziki
+Navigation:
+  name: Urambazaji
 Network Analyzer:
   name: Kichanganuzi cha Mtandao
 News:
@@ -74,16 +76,40 @@ Note:
   name: Dokezo
 Online Media Player:
   name: Kicheza Midia Mtandaoni
+Pass Wallet:
+  name: Pass Wallet
+Password & 2FA:
+  name: Nenosiri na 2FA
+Phone & SMS:
+  name: Simu na Huduma ya Ujumbe Fupi
 Podcast:
   name: Podikasti
 Public Transport:
   name: Usafiri wa Umma
+Reading:
+  name: Kusoma
+Recipe Manager:
+  name: Kidhibiti cha Mapishi
 Religion:
   name: Dini
+Science & Education:
+  name: Sayansi na Elimu
+Security:
+  name: Usalama
 Shopping List:
   name: Orodha ya Manunuzi
+Social Network:
+  name: Mtandao wa Kijamii
+Sports & Health:
+  name: Michezo na Afya
+System:
+  name: Mfumo
 Task:
   name: Kazi
+Text Editor:
+  name: Mhariri wa maandishi
+Theming:
+  name: Mandhari
 Translation & Dictionary:
   name: Tafsiri na Kamusi
 Unit Convertor:
@@ -94,35 +120,9 @@ Wallet:
   name: Mkoba
 Wallpaper:
   name: Picha ya Mandharinyuma
-AI Chat:
-  name: AI Chat
-Ebook Reader:
-  name: Kisomaji Ebook
-File Encryption & Vault:
-  name: Usimbaji wa Faili & Vault
-Finance Manager:
-  name: Meneja wa Fedha
-Firewall:
-  name: Firewall
-Icon Pack:
-  name: Kifurushi cha ikoni
-Keyboard & IME:
-  name: Kibodi na IME
-Launcher:
-  name: Kizindua
-Location Tracker & Sharer:
-  name: Kifuatilia Mahali & Mshiriki
-Pass Wallet:
-  name: Pass Wallet
-Password & 2FA:
-  name: Nenosiri na 2FA
-Social Network:
-  name: Mtandao wa Kijamii
-Text Editor:
-  name: Mhariri wa maandishi
-Recipe Manager:
-  name: Kidhibiti cha Mapishi
 Weather:
   name: Hali ya hewa
 Workout:
   name: Mazoezi
+Writing:
+  name: Kuandika

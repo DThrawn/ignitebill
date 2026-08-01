@@ -1,136 +1,136 @@
-Connectivity:
-  name: Savienojamība
-Development:
-  name: Izstrāde
-Graphics:
-  name: Grafika
-Internet:
-  name: Internets
-Multimedia:
-  name: Multivide
-Navigation:
-  name: Kartes un pārvietošanās norādes
-Phone & SMS:
-  name: Tālrunis un īsziņas
-Reading:
-  name: Lasīšana
-Science & Education:
-  name: Zinātne un izglītība
-Security:
-  name: Drošība
-Sports & Health:
-  name: Sports un veselība
-System:
-  name: Sistēma
-Theming:
-  name: Izskats
-Writing:
-  name: Rakstīšana
-Email:
-  name: E-pasts
-DNS & Hosts:
-  name: DNS un mitinātāji
-App Store & Updater:
-  name: Lietotņu veikals un atjauninātājs
-Browser:
-  name: Pārlūks
-File Transfer:
-  name: Datņu pārsūtīšana
-File Encryption & Vault:
-  name: Datņu šifrēšana un glabātava
-Local Media Player:
-  name: Vietējo informācijas nesēju atskaņotājs
-Messaging:
-  name: Ziņapmaiņa
-Weather:
-  name: Laikapstākļi
-Podcast:
-  name: Raidieraksts
-News:
-  name: Ziņas
-Online Media Player:
-  name: Tiešsaistes informācijas nesēju atskaņotājs
-Social Network:
-  name: Sabiedriskais tīkls
-VPN & Proxy:
-  name: VPN un starpniekserveris
-Keyboard & IME:
-  name: Tastatūra un ievades veidu redaktors
-Cloud Storage & File Sync:
-  name: Mākoņkrātuve un datņu sinhronizēšana
-Password & 2FA:
-  name: Paroles un divpakāpju autentificēšana
-Calendar & Agenda:
-  name: Kalendārs un dienaskārtība
-Voice & Video Chat:
-  name: Balss un video tērzēšana
-Wallet:
-  name: Maks
-Bookmark:
-  name: Grāmatzīme
-Calculator:
-  name: Skaitļotājs
-Draw:
-  name: Zīmēšana
-Ebook Reader:
-  name: E-grāmatu lasītājs
-Finance Manager:
-  name: Naudas līdzekļu pārvaldnieks
-Gallery:
-  name: Galerija
-Icon Pack:
-  name: Ikonu paka
-Launcher:
-  name: Palaidējs
-Note:
-  name: Piezīme
-Pass Wallet:
-  name: Caurlaižu maks
-Recipe Manager:
-  name: Recepšu pārvaldnieks
-Text Editor:
-  name: Teksta redaktors
-Translation & Dictionary:
-  name: Tulkošana un vārdnīca
-Unit Convertor:
-  name: Vienību pārveidotājs
-Wallpaper:
-  name: Ekrāntapete
-Workout:
-  name: Trenēšanās
-Public Transport:
-  name: Sabiedriskais transports
-Task:
-  name: Uzdevums
-Shopping List:
-  name: Iepirkumu saraksts
-Forum:
-  name: Forums
-Habit Tracker:
-  name: Ieradumu izsekotājs
-Music Practice Tool:
-  name: Mūzikas vingrināšanās rīks
-Location Tracker & Sharer:
-  name: Atrašanās vietas izsekotājs un kopīgotājs
 AI Chat:
-  name: MI tērzēšana
+  name: "MI t\u0113rz\u0113\u0161ana"
 App Manager:
-  name: Lietotņu pārvaldnieks
-Religion:
-  name: Ticība
-Network Analyzer:
-  name: Tīkla analizētājs
-Inventory:
-  name: Lietu uzskaite
-Clock:
-  name: Pulkstenis
-Firewall:
-  name: Ugunsmūris
+  name: "Lietot\u0146u p\u0101rvaldnieks"
+App Store & Updater:
+  name: "Lietot\u0146u veikals un atjaunin\u0101t\u0101js"
+Bookmark:
+  name: "Gr\u0101matz\u012Bme"
+Browser:
+  name: "P\u0101rl\u016Bks"
+Calculator:
+  name: "Skait\u013Cot\u0101js"
+Calendar & Agenda:
+  name: "Kalend\u0101rs un dienask\u0101rt\u012Bba"
 Camera:
   name: Kamera
+Clock:
+  name: Pulkstenis
+Cloud Storage & File Sync:
+  name: "M\u0101ko\u0146kr\u0101tuve un dat\u0146u sinhroniz\u0113\u0161ana"
+Connectivity:
+  name: "Savienojam\u012Bba"
+DNS & Hosts:
+  name: "DNS un mitin\u0101t\u0101ji"
+Development:
+  name: "Izstr\u0101de"
 Diet:
-  name: Diēta
+  name: "Di\u0113ta"
+Draw:
+  name: "Z\u012Bm\u0113\u0161ana"
+Ebook Reader:
+  name: "E-gr\u0101matu las\u012Bt\u0101js"
+Email:
+  name: E-pasts
 Emulator:
-  name: Emulātori
+  name: "Emul\u0101tori"
+File Encryption & Vault:
+  name: "Dat\u0146u \u0161ifr\u0113\u0161ana un glab\u0101tava"
 File Manager:
-  name: Failu pārvaldnieks
+  name: "Failu p\u0101rvaldnieks"
+File Transfer:
+  name: "Dat\u0146u p\u0101rs\u016Bt\u012B\u0161ana"
+Finance Manager:
+  name: "Naudas l\u012Bdzek\u013Cu p\u0101rvaldnieks"
+Firewall:
+  name: "Ugunsm\u016Bris"
+Forum:
+  name: Forums
+Gallery:
+  name: Galerija
+Graphics:
+  name: Grafika
+Habit Tracker:
+  name: "Ieradumu izsekot\u0101js"
+Icon Pack:
+  name: Ikonu paka
+Internet:
+  name: Internets
+Inventory:
+  name: Lietu uzskaite
+Keyboard & IME:
+  name: "Tastat\u016Bra un ievades veidu redaktors"
+Launcher:
+  name: "Palaid\u0113js"
+Local Media Player:
+  name: "Viet\u0113jo inform\u0101cijas nes\u0113ju atska\u0146ot\u0101js"
+Location Tracker & Sharer:
+  name: "Atra\u0161an\u0101s vietas izsekot\u0101js un kop\u012Bgot\u0101js"
+Messaging:
+  name: "Zi\u0146apmai\u0146a"
+Multimedia:
+  name: Multivide
+Music Practice Tool:
+  name: "M\u016Bzikas vingrin\u0101\u0161an\u0101s r\u012Bks"
+Navigation:
+  name: "Kartes un p\u0101rvieto\u0161an\u0101s nor\u0101des"
+Network Analyzer:
+  name: "T\u012Bkla analiz\u0113t\u0101js"
+News:
+  name: "Zi\u0146as"
+Note:
+  name: "Piez\u012Bme"
+Online Media Player:
+  name: "Tie\u0161saistes inform\u0101cijas nes\u0113ju atska\u0146ot\u0101js"
+Pass Wallet:
+  name: "Caurlai\u017Eu maks"
+Password & 2FA:
+  name: "Paroles un divpak\u0101pju autentific\u0113\u0161ana"
+Phone & SMS:
+  name: "T\u0101lrunis un \u012Bszi\u0146as"
+Podcast:
+  name: Raidieraksts
+Public Transport:
+  name: Sabiedriskais transports
+Reading:
+  name: "Las\u012B\u0161ana"
+Recipe Manager:
+  name: "Recep\u0161u p\u0101rvaldnieks"
+Religion:
+  name: "Tic\u012Bba"
+Science & Education:
+  name: "Zin\u0101tne un izgl\u012Bt\u012Bba"
+Security:
+  name: "Dro\u0161\u012Bba"
+Shopping List:
+  name: Iepirkumu saraksts
+Social Network:
+  name: "Sabiedriskais t\u012Bkls"
+Sports & Health:
+  name: "Sports un vesel\u012Bba"
+System:
+  name: "Sist\u0113ma"
+Task:
+  name: Uzdevums
+Text Editor:
+  name: Teksta redaktors
+Theming:
+  name: Izskats
+Translation & Dictionary:
+  name: "Tulko\u0161ana un v\u0101rdn\u012Bca"
+Unit Convertor:
+  name: "Vien\u012Bbu p\u0101rveidot\u0101js"
+VPN & Proxy:
+  name: VPN un starpniekserveris
+Voice & Video Chat:
+  name: "Balss un video t\u0113rz\u0113\u0161ana"
+Wallet:
+  name: Maks
+Wallpaper:
+  name: "Ekr\u0101ntapete"
+Weather:
+  name: "Laikapst\u0101k\u013Ci"
+Workout:
+  name: "Tren\u0113\u0161an\u0101s"
+Writing:
+  name: "Rakst\u012B\u0161ana"

@@ -1,30 +1,35 @@
 Ads:
-  description: Táto aplikácia obsahuje reklamy
+  description: "T\xE1to aplik\xE1cia obsahuje reklamy"
   name: Reklamy
 DisabledAlgorithm:
-  description: Táto aplikácia má slabý bezpečnostný podpis
-  name: Podpísané pomocou nebezpečného algoritmu
+  description: "T\xE1to aplik\xE1cia m\xE1 slab\xFD bezpe\u010Dnostn\xFD podpis"
+  name: "Podp\xEDsan\xE9 pomocou nebezpe\u010Dn\xE9ho algoritmu"
 KnownVuln:
-  description: Tato aplikácia má známu zraniteľnosť v zabezpečení
-  name: Známa slabina
+  description: "Tato aplik\xE1cia m\xE1 zn\xE1mu zranite\u013Enos\u0165 v zabezpe\u010D\
+    en\xED"
+  name: "Zn\xE1ma slabina"
 NoSourceSince:
-  name: Žiadny zdroj od
-  description: Zdrojový kód už nie je k dispozícii, aktualizácie nie sú možné
+  description: "Zdrojov\xFD k\xF3d u\u017E nie je k dispoz\xEDcii, aktualiz\xE1cie\
+    \ nie s\xFA mo\u017En\xE9"
+  name: "\u017Diadny zdroj od"
 NonFreeAdd:
-  description: Táto aplikácia propaguje neslobodné doplnky
-  name: Neslobodné doplnky
+  description: "T\xE1to aplik\xE1cia propaguje neslobodn\xE9 doplnky"
+  name: "Neslobodn\xE9 doplnky"
 NonFreeAssets:
-  description: Táto aplikácia obsahuje proprietárne časti
-  name: Neslobodné aktíva
+  description: "T\xE1to aplik\xE1cia obsahuje propriet\xE1rne \u010Dasti"
+  name: "Neslobodn\xE9 akt\xEDva"
 NonFreeDep:
-  description: Táto aplikácia závisí na iných neslobodných aplikáciách
-  name: Neslobodné závislosti
+  description: "T\xE1to aplik\xE1cia z\xE1vis\xED na in\xFDch neslobodn\xFDch aplik\xE1\
+    ci\xE1ch"
+  name: "Neslobodn\xE9 z\xE1vislosti"
 NonFreeNet:
-  description: Táto aplikácia propaguje alebo úplne závisí od sieťovej služby, ktorá nie je bezplatná
-  name: Neslobodné sieťové služby
-Tracking:
-  description: Táto aplikácia zaznamenáva a hlási vaše aktivity
-  name: Sledovanie
+  description: "T\xE1to aplik\xE1cia propaguje alebo \xFAplne z\xE1vis\xED od sie\u0165\
+    ovej slu\u017Eby, ktor\xE1 nie je bezplatn\xE1"
+  name: "Neslobodn\xE9 sie\u0165ov\xE9 slu\u017Eby"
 TetheredNet:
-  description: Táto aplikácia úplne závisí od určitej inštancie sieťovej služby
-  name: Pripojené sieťové služby
+  description: "T\xE1to aplik\xE1cia \xFAplne z\xE1vis\xED od ur\u010Ditej in\u0161\
+    tancie sie\u0165ovej slu\u017Eby"
+  name: "Pripojen\xE9 sie\u0165ov\xE9 slu\u017Eby"
+Tracking:
+  description: "T\xE1to aplik\xE1cia zaznamen\xE1va a hl\xE1si va\u0161e aktivity"
+  name: Sledovanie

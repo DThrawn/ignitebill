@@ -1,30 +1,33 @@
 Ads:
-  description: Denna app innehåller reklam
+  description: "Denna app inneh\xE5ller reklam"
   name: Annonser
 DisabledAlgorithm:
-  description: Denna app har en svag säkerhetssignatur
-  name: Signerad med en osäker algoritm
+  description: "Denna app har en svag s\xE4kerhetssignatur"
+  name: "Signerad med en os\xE4ker algoritm"
 KnownVuln:
-  description: Denna app innehåller en känd säkerhetssårbarhet
-  name: Känd sårbarhet
+  description: "Denna app inneh\xE5ller en k\xE4nd s\xE4kerhetss\xE5rbarhet"
+  name: "K\xE4nd s\xE5rbarhet"
 NoSourceSince:
-  name: Ingen källa sedan
-  description: Källkoden är inte längre tillgänglig, inga uppdateringar möjliga
+  description: "K\xE4llkoden \xE4r inte l\xE4ngre tillg\xE4nglig, inga uppdateringar\
+    \ m\xF6jliga"
+  name: "Ingen k\xE4lla sedan"
 NonFreeAdd:
-  description: Denna app uppmuntrar icke-fria tillägg
-  name: Icke-fria tillägg
+  description: "Denna app uppmuntrar icke-fria till\xE4gg"
+  name: "Icke-fria till\xE4gg"
 NonFreeAssets:
-  description: Denna app innehåller icke-fria resurser
+  description: "Denna app inneh\xE5ller icke-fria resurser"
   name: Icke-fria resurser
 NonFreeDep:
-  description: Denna app är beroende av andra icke-fria appar
+  description: "Denna app \xE4r beroende av andra icke-fria appar"
   name: Icke-fria beroenden
 NonFreeNet:
-  description: Denna app främjar eller är beroende av en icke-fri nätverkstjänst, alltså en tjänst som inte helt står under din kontroll.
-  name: Icke-fria nätverkstjänster
-Tracking:
-  description: Denna app spårar och rapporterar om din aktivitet
-  name: Spårning
+  description: "Denna app fr\xE4mjar eller \xE4r beroende av en icke-fri n\xE4tverkstj\xE4\
+    nst, allts\xE5 en tj\xE4nst som inte helt st\xE5r under din kontroll."
+  name: "Icke-fria n\xE4tverkstj\xE4nster"
 TetheredNet:
-  description: Den här appen är helt beroende av en viss instans av en nätverkstjänst
-  name: Låsta nätverkstjänster
+  description: "Den h\xE4r appen \xE4r helt beroende av en viss instans av en n\xE4\
+    tverkstj\xE4nst"
+  name: "L\xE5sta n\xE4tverkstj\xE4nster"
+Tracking:
+  description: "Denna app sp\xE5rar och rapporterar om din aktivitet"
+  name: "Sp\xE5rning"

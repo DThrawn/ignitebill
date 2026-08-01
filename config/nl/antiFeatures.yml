@@ -8,8 +8,8 @@ KnownVuln:
   description: Deze app bevat een bekend probleem in de beveiliging
   name: Bekende Kwetsbaarheid
 NoSourceSince:
-  name: Geen Bron Sinds
   description: De broncode is niet langer beschikbaar, updates zijn niet mogelijk
+  name: Geen Bron Sinds
 NonFreeAdd:
   description: Deze app promoot niet-vrije add-ons
   name: Niet-vrije uitbreidingen
@@ -22,9 +22,9 @@ NonFreeDep:
 NonFreeNet:
   description: Deze app promoot niet-vrije netwerkdiensten
   name: Niet-vrije netwerkdiensten
-Tracking:
-  description: Deze app houdt je activiteiten bij en rapporteert ze
-  name: Tracering
 TetheredNet:
   description: Deze app is volledig afhankelijk van een bepaalde netwerkdienst
   name: Gekoppelde netwerkdiensten
+Tracking:
+  description: Deze app houdt je activiteiten bij en rapporteert ze
+  name: Tracering

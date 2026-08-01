@@ -1,6 +1,9 @@
 archive:
+  description: "Cartlann st\xF3r oifigi\xFAil F-Droid Bogearra\xED Saor in Aisce.\
+    \ T\xE1 aipeanna anseo sean agus is f\xE9idir leo leochaileachta\xED agus ceisteanna\
+    \ sl\xE1nd\xE1la aitheanta a bheith iontu!"
   name: Cartlann F-Droid
-  description: Cartlann stór oifigiúil F-Droid Bogearraí Saor in Aisce. Tá aipeanna anseo sean agus is féidir leo leochaileachtaí agus ceisteanna slándála aitheanta a bheith iontu!
 repo:
-  description: An stór oifigiúil F-Droid Bogearraí Saor in Aisce. Tógtar gach rud sa stór seo ón gcód foinse i gcónaí.
+  description: "An st\xF3r oifigi\xFAil F-Droid Bogearra\xED Saor in Aisce. T\xF3\
+    gtar gach rud sa st\xF3r seo \xF3n gc\xF3d foinse i gc\xF3na\xED."
   name: F-Droid

@@ -1,84 +1,101 @@
-Connectivity:
-  name: Сувязь
-Development:
-  name: Распрацоўка
-Graphics:
-  name: Графіка
-Internet:
-  name: Інтэрнэт
-Multimedia:
-  name: Мультымедыя
-Navigation:
-  name: Навігацыя
-Phone & SMS:
-  name: Тэлефон і SMS
-Reading:
-  name: Чытанне
-Science & Education:
-  name: Навука і адукацыя
-Security:
-  name: Бяспека
-Sports & Health:
-  name: Спорт і здароўе
-System:
-  name: Сістэма
-Theming:
-  name: Тэмы
-Writing:
-  name: Напісанне
 AI Chat:
-  name: ШІ Размова
+  name: "\u0428\u0406 \u0420\u0430\u0437\u043C\u043E\u0432\u0430"
 App Manager:
-  name: Кіраўнік Праграм
+  name: "\u041A\u0456\u0440\u0430\u045E\u043D\u0456\u043A \u041F\u0440\u0430\u0433\
+    \u0440\u0430\u043C"
 App Store & Updater:
-  name: App Store і абнаўленні
+  name: "App Store \u0456 \u0430\u0431\u043D\u0430\u045E\u043B\u0435\u043D\u043D\u0456"
 Battery:
-  name: Батарэя
+  name: "\u0411\u0430\u0442\u0430\u0440\u044D\u044F"
 Bookmark:
-  name: Закладка
+  name: "\u0417\u0430\u043A\u043B\u0430\u0434\u043A\u0430"
 Browser:
-  name: Аглядальнік
+  name: "\u0410\u0433\u043B\u044F\u0434\u0430\u043B\u044C\u043D\u0456\u043A"
 Calculator:
-  name: Калькулятар
+  name: "\u041A\u0430\u043B\u044C\u043A\u0443\u043B\u044F\u0442\u0430\u0440"
 Calendar & Agenda:
-  name: Каляндар і парадак дня
+  name: "\u041A\u0430\u043B\u044F\u043D\u0434\u0430\u0440 \u0456 \u043F\u0430\u0440\
+    \u0430\u0434\u0430\u043A \u0434\u043D\u044F"
 Clock:
-  name: Гадзіннік
+  name: "\u0413\u0430\u0434\u0437\u0456\u043D\u043D\u0456\u043A"
 Cloud Storage & File Sync:
-  name: Воблачнае Сховішча і сінхранізацыя файлаў
+  name: "\u0412\u043E\u0431\u043B\u0430\u0447\u043D\u0430\u0435 \u0421\u0445\u043E\
+    \u0432\u0456\u0448\u0447\u0430 \u0456 \u0441\u0456\u043D\u0445\u0440\u0430\u043D\
+    \u0456\u0437\u0430\u0446\u044B\u044F \u0444\u0430\u0439\u043B\u0430\u045E"
+Connectivity:
+  name: "\u0421\u0443\u0432\u044F\u0437\u044C"
 Contact:
-  name: Кантакты
+  name: "\u041A\u0430\u043D\u0442\u0430\u043A\u0442\u044B"
 DNS & Hosts:
-  name: DNS і хасты
+  name: "DNS \u0456 \u0445\u0430\u0441\u0442\u044B"
+Development:
+  name: "\u0420\u0430\u0441\u043F\u0440\u0430\u0446\u043E\u045E\u043A\u0430"
 Draw:
-  name: Маляванне
+  name: "\u041C\u0430\u043B\u044F\u0432\u0430\u043D\u043D\u0435"
 Ebook Reader:
-  name: Чытальнікі электронных кніг
+  name: "\u0427\u044B\u0442\u0430\u043B\u044C\u043D\u0456\u043A\u0456 \u044D\u043B\
+    \u0435\u043A\u0442\u0440\u043E\u043D\u043D\u044B\u0445 \u043A\u043D\u0456\u0433"
 Email:
-  name: Электронная пошта
+  name: "\u042D\u043B\u0435\u043A\u0442\u0440\u043E\u043D\u043D\u0430\u044F \u043F\
+    \u043E\u0448\u0442\u0430"
 File Encryption & Vault:
-  name: Шыфраванне файлаў і сховішча
+  name: "\u0428\u044B\u0444\u0440\u0430\u0432\u0430\u043D\u043D\u0435 \u0444\u0430\
+    \u0439\u043B\u0430\u045E \u0456 \u0441\u0445\u043E\u0432\u0456\u0448\u0447\u0430"
 File Transfer:
-  name: Перадача файлаў
+  name: "\u041F\u0435\u0440\u0430\u0434\u0430\u0447\u0430 \u0444\u0430\u0439\u043B\
+    \u0430\u045E"
 Finance Manager:
-  name: Кіраўнік Фінансаў
+  name: "\u041A\u0456\u0440\u0430\u045E\u043D\u0456\u043A \u0424\u0456\u043D\u0430\
+    \u043D\u0441\u0430\u045E"
 Firewall:
-  name: Заслона
+  name: "\u0417\u0430\u0441\u043B\u043E\u043D\u0430"
 Flashlight:
-  name: Ліхтарык
+  name: "\u041B\u0456\u0445\u0442\u0430\u0440\u044B\u043A"
 Forum:
-  name: Форум
+  name: "\u0424\u043E\u0440\u0443\u043C"
 Gallery:
-  name: Галерэя
+  name: "\u0413\u0430\u043B\u0435\u0440\u044D\u044F"
+Graphics:
+  name: "\u0413\u0440\u0430\u0444\u0456\u043A\u0430"
 Icon Pack:
-  name: Пачкі значкоў
+  name: "\u041F\u0430\u0447\u043A\u0456 \u0437\u043D\u0430\u0447\u043A\u043E\u045E"
+Internet:
+  name: "\u0406\u043D\u0442\u044D\u0440\u043D\u044D\u0442"
 Inventory:
-  name: Інвэнтар
+  name: "\u0406\u043D\u0432\u044D\u043D\u0442\u0430\u0440"
 Keyboard & IME:
-  name: Клавіятура і ўвод
+  name: "\u041A\u043B\u0430\u0432\u0456\u044F\u0442\u0443\u0440\u0430 \u0456 \u045E\
+    \u0432\u043E\u0434"
 Launcher:
-  name: Запускальнік
+  name: "\u0417\u0430\u043F\u0443\u0441\u043A\u0430\u043B\u044C\u043D\u0456\u043A"
 Local Media Player:
-  name: Лакальны Медыя Прайгравальнік
+  name: "\u041B\u0430\u043A\u0430\u043B\u044C\u043D\u044B \u041C\u0435\u0434\u044B\
+    \u044F \u041F\u0440\u0430\u0439\u0433\u0440\u0430\u0432\u0430\u043B\u044C\u043D\
+    \u0456\u043A"
 Location Tracker & Sharer:
-  name: Адсочванне і абагульванне месцазнаходжання
+  name: "\u0410\u0434\u0441\u043E\u0447\u0432\u0430\u043D\u043D\u0435 \u0456 \u0430\
+    \u0431\u0430\u0433\u0443\u043B\u044C\u0432\u0430\u043D\u043D\u0435 \u043C\u0435\
+    \u0441\u0446\u0430\u0437\u043D\u0430\u0445\u043E\u0434\u0436\u0430\u043D\u043D\
+    \u044F"
+Multimedia:
+  name: "\u041C\u0443\u043B\u044C\u0442\u044B\u043C\u0435\u0434\u044B\u044F"
+Navigation:
+  name: "\u041D\u0430\u0432\u0456\u0433\u0430\u0446\u044B\u044F"
+Phone & SMS:
+  name: "\u0422\u044D\u043B\u0435\u0444\u043E\u043D \u0456 SMS"
+Reading:
+  name: "\u0427\u044B\u0442\u0430\u043D\u043D\u0435"
+Science & Education:
+  name: "\u041D\u0430\u0432\u0443\u043A\u0430 \u0456 \u0430\u0434\u0443\u043A\u0430\
+    \u0446\u044B\u044F"
+Security:
+  name: "\u0411\u044F\u0441\u043F\u0435\u043A\u0430"
+Sports & Health:
+  name: "\u0421\u043F\u043E\u0440\u0442 \u0456 \u0437\u0434\u0430\u0440\u043E\u045E\
+    \u0435"
+System:
+  name: "\u0421\u0456\u0441\u0442\u044D\u043C\u0430"
+Theming:
+  name: "\u0422\u044D\u043C\u044B"
+Writing:
+  name: "\u041D\u0430\u043F\u0456\u0441\u0430\u043D\u043D\u0435"

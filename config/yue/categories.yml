@@ -1,28 +1,28 @@
 Connectivity:
-  name: 網絡
+  name: "\u7DB2\u7D61"
 Development:
-  name: 開發
+  name: "\u958B\u767C"
 Graphics:
-  name: 圖像
+  name: "\u5716\u50CF"
 Internet:
-  name: 互聯網
+  name: "\u4E92\u806F\u7DB2"
 Multimedia:
-  name: 多媒體
+  name: "\u591A\u5A92\u9AD4"
 Navigation:
-  name: 導航
+  name: "\u5C0E\u822A"
 Phone & SMS:
-  name: 電話同短訊
+  name: "\u96FB\u8A71\u540C\u77ED\u8A0A"
 Reading:
-  name: 開卷
+  name: "\u958B\u5377"
 Science & Education:
-  name: 科學與教育
+  name: "\u79D1\u5B78\u8207\u6559\u80B2"
 Security:
-  name: 保密
+  name: "\u4FDD\u5BC6"
 Sports & Health:
-  name: 運動與健康
+  name: "\u904B\u52D5\u8207\u5065\u5EB7"
 System:
-  name: 系統
+  name: "\u7CFB\u7D71"
 Theming:
-  name: 佈景主題
+  name: "\u4F48\u666F\u4E3B\u984C"
 Writing:
-  name: 寫作
+  name: "\u5BEB\u4F5C"

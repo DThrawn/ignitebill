@@ -1,30 +1,33 @@
 Ads:
-  description: Esta aplicación contén publicidade
+  description: "Esta aplicaci\xF3n cont\xE9n publicidade"
   name: Anuncios
 DisabledAlgorithm:
-  description: Esta aplicación ten unha sinatura de seguranza feble
+  description: "Esta aplicaci\xF3n ten unha sinatura de seguranza feble"
   name: Asinado usando un algoritmo inseguro
 KnownVuln:
-  description: Esta aplicación contén unha vulnerabilidade de seguranza coñecida
-  name: Vulnerabilidade Coñecida
+  description: "Esta aplicaci\xF3n cont\xE9n unha vulnerabilidade de seguranza co\xF1\
+    ecida"
+  name: "Vulnerabilidade Co\xF1ecida"
 NoSourceSince:
-  name: Sen acceso ao código desde
-  description: O código fonte xa non está dispoñible, non recibirá actualizacións
+  description: "O c\xF3digo fonte xa non est\xE1 dispo\xF1ible, non recibir\xE1 actualizaci\xF3\
+    ns"
+  name: "Sen acceso ao c\xF3digo desde"
 NonFreeAdd:
-  description: Esta aplicación promociona engadidos que non son libres ou de balde
+  description: "Esta aplicaci\xF3n promociona engadidos que non son libres ou de balde"
   name: Complementos non libres
 NonFreeAssets:
-  description: Esta aplicación contén elemento non libres
+  description: "Esta aplicaci\xF3n cont\xE9n elemento non libres"
   name: Activos non libres
 NonFreeDep:
-  description: Esta aplicación depende doutras aplicacións non libres
+  description: "Esta aplicaci\xF3n depende doutras aplicaci\xF3ns non libres"
   name: Dependencias non libres
 NonFreeNet:
-  description: Esta aplicación promove servizos de rede que non son libres
+  description: "Esta aplicaci\xF3n promove servizos de rede que non son libres"
   name: Servizos de rede non libres
-Tracking:
-  description: Esta aplicación rexistra e informa da túa actividade
-  name: Seguimento
 TetheredNet:
-  description: Esta app depende totalmente dunha determinada instancia dun servizo da rede
-  name: Servizos de rede con fíos
+  description: Esta app depende totalmente dunha determinada instancia dun servizo
+    da rede
+  name: "Servizos de rede con f\xEDos"
+Tracking:
+  description: "Esta aplicaci\xF3n rexistra e informa da t\xFAa actividade"
+  name: Seguimento

@@ -6,10 +6,11 @@ DisabledAlgorithm:
   name: Signert med en utrygg algoritme
 KnownVuln:
   description: Dette programmet inneholder en kjent sikkerhetsfeil
-  name: Kjent sårbarhet
+  name: "Kjent s\xE5rbarhet"
 NoSourceSince:
+  description: Kildekoden er ikke lenger tilgjengelig. Ingen flere oppdateringer er
+    mulig
   name: Ingen kildekode siden
-  description: Kildekoden er ikke lenger tilgjengelig. Ingen flere oppdateringer er mulig
 NonFreeAdd:
   description: Dette programmet promoterer ufrie utvidelser
   name: Ufrie tillegg
@@ -22,9 +23,9 @@ NonFreeDep:
 NonFreeNet:
   description: Dette programmet promoterer ufrie nettverkstjenester
   name: Ufrie nettverkstjenester
-Tracking:
-  description: Dette programmet sporer og rapporterer din aktivitet
-  name: Sporing
 TetheredNet:
   description: Denne appen er fullstendig avhengig av en spesifikk instans av en nettverkstjeneste
   name: Fastbundete nettverkstjenester
+Tracking:
+  description: Dette programmet sporer og rapporterer din aktivitet
+  name: Sporing

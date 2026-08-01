@@ -1,16 +1,17 @@
 Ads:
   description: Dizze applikaasje hat advertinsjes
 DisabledAlgorithm:
-  description: Dizze applikaasje hat net in sterke feiligens ûndertekening
+  description: "Dizze applikaasje hat net in sterke feiligens \xFBndertekening"
 KnownVuln:
   description: Dizze applikaasje hat in bekend feiligens probleem
 NoSourceSince:
   name: De boarne koade is net langer beskikber, gjin fernijingen mooglik.
 NonFreeAdd:
-  description: Dizze applikaasje stimulearret it gebrûk fan net-frije add-ons
+  description: "Dizze applikaasje stimulearret it gebr\xFBk fan net-frije add-ons"
 NonFreeDep:
-  description: Dizze applikaasje hinget ôf fan oare net-frije applikaasjes
+  description: "Dizze applikaasje hinget \xF4f fan oare net-frije applikaasjes"
 NonFreeNet:
-  description: Dizze applikaasje stimulearret it gebrûk fan net-frije netwurk tsjinsten
+  description: "Dizze applikaasje stimulearret it gebr\xFBk fan net-frije netwurk\
+    \ tsjinsten"
 Tracking:
   description: Dizze applikaasje folget en rapportearret jo aktiviteit

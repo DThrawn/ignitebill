@@ -1,134 +1,164 @@
-Connectivity:
-  name: Зв'язок
-Development:
-  name: Розробка
-Graphics:
-  name: Графіка
-Internet:
-  name: Інтернет
-Multimedia:
-  name: Мультимедіа
-Navigation:
-  name: Навігація
-Phone & SMS:
-  name: Телефон і SMS
-Reading:
-  name: Читання
-Science & Education:
-  name: Освіта й наука
-Security:
-  name: Безпека
-Sports & Health:
-  name: Спорт і здоров'я
-System:
-  name: Система
-Theming:
-  name: Тематика
-Writing:
-  name: Написання
-Email:
-  name: Електронна пошта
-VPN & Proxy:
-  name: VPN та проксі
-DNS & Hosts:
-  name: DNS та хости
-Password & 2FA:
-  name: Пароль і двофакторна автентифікація
-Social Network:
-  name: Соціальна мережа
-File Transfer:
-  name: Передавання файлів
-File Encryption & Vault:
-  name: Шифрування файлів та сховище
-Messaging:
-  name: Повідомлення
-App Store & Updater:
-  name: App Store та оновлення
-Browser:
-  name: Браузер
-Local Media Player:
-  name: Локальний медіапрогравач
-News:
-  name: Новини
-Weather:
-  name: Погода
-Online Media Player:
-  name: Онлайн-медіаплеєр
-Keyboard & IME:
-  name: Клавіатура та ввід
-Podcast:
-  name: Подкаст
-Voice & Video Chat:
-  name: Голосовий та відеочат
-Cloud Storage & File Sync:
-  name: Хмарне сховище та синхронізація файлів
-Wallet:
-  name: Гаманець
-Calendar & Agenda:
-  name: Календар і порядок денний
-Bookmark:
-  name: Закладка
-Calculator:
-  name: Калькулятор
-Draw:
-  name: Нічия
-Ebook Reader:
-  name: Зчитувач електронних книг
-Finance Manager:
-  name: Фінансовий менеджер
-Gallery:
-  name: Галерея
-Icon Pack:
-  name: Набір значків
-Launcher:
-  name: Запускач
-Note:
-  name: Примітка
-Pass Wallet:
-  name: Гаманець Pass
-Recipe Manager:
-  name: Менеджер рецептів
-Text Editor:
-  name: Текстовий редактор
-Translation & Dictionary:
-  name: Переклад і словник
-Unit Convertor:
-  name: Конвертер одиниць
-Wallpaper:
-  name: Шпалери
-Workout:
-  name: Тренування
-Public Transport:
-  name: Карта та розклад руху громадського транспорту
-Task:
-  name: Завдання
-Shopping List:
-  name: Список покупок
-Forum:
-  name: Форум
-Habit Tracker:
-  name: Трекер звичок
-Music Practice Tool:
-  name: Інструмент для музичної практики
-Location Tracker & Sharer:
-  name: Відстеження та поширення розташування
 AI Chat:
-  name: Чат з ШІ
+  name: "\u0427\u0430\u0442 \u0437 \u0428\u0406"
 App Manager:
-  name: Менеджер застосунків
-Religion:
-  name: Релігія
-Clock:
-  name: Годинник
-Firewall:
-  name: Брандмауер
-Inventory:
-  name: Інвентар
-Network Analyzer:
-  name: Аналізатор мережі
-Contact:
-  name: Контакти
+  name: "\u041C\u0435\u043D\u0435\u0434\u0436\u0435\u0440 \u0437\u0430\u0441\u0442\
+    \u043E\u0441\u0443\u043D\u043A\u0456\u0432"
+App Store & Updater:
+  name: "App Store \u0442\u0430 \u043E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F"
 Battery:
-  name: Батарея
+  name: "\u0411\u0430\u0442\u0430\u0440\u0435\u044F"
+Bookmark:
+  name: "\u0417\u0430\u043A\u043B\u0430\u0434\u043A\u0430"
+Browser:
+  name: "\u0411\u0440\u0430\u0443\u0437\u0435\u0440"
+Calculator:
+  name: "\u041A\u0430\u043B\u044C\u043A\u0443\u043B\u044F\u0442\u043E\u0440"
+Calendar & Agenda:
+  name: "\u041A\u0430\u043B\u0435\u043D\u0434\u0430\u0440 \u0456 \u043F\u043E\u0440\
+    \u044F\u0434\u043E\u043A \u0434\u0435\u043D\u043D\u0438\u0439"
+Clock:
+  name: "\u0413\u043E\u0434\u0438\u043D\u043D\u0438\u043A"
+Cloud Storage & File Sync:
+  name: "\u0425\u043C\u0430\u0440\u043D\u0435 \u0441\u0445\u043E\u0432\u0438\u0449\
+    \u0435 \u0442\u0430 \u0441\u0438\u043D\u0445\u0440\u043E\u043D\u0456\u0437\u0430\
+    \u0446\u0456\u044F \u0444\u0430\u0439\u043B\u0456\u0432"
+Connectivity:
+  name: "\u0417\u0432'\u044F\u0437\u043E\u043A"
+Contact:
+  name: "\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u0438"
+DNS & Hosts:
+  name: "DNS \u0442\u0430 \u0445\u043E\u0441\u0442\u0438"
+Development:
+  name: "\u0420\u043E\u0437\u0440\u043E\u0431\u043A\u0430"
+Draw:
+  name: "\u041D\u0456\u0447\u0438\u044F"
+Ebook Reader:
+  name: "\u0417\u0447\u0438\u0442\u0443\u0432\u0430\u0447 \u0435\u043B\u0435\u043A\
+    \u0442\u0440\u043E\u043D\u043D\u0438\u0445 \u043A\u043D\u0438\u0433"
+Email:
+  name: "\u0415\u043B\u0435\u043A\u0442\u0440\u043E\u043D\u043D\u0430 \u043F\u043E\
+    \u0448\u0442\u0430"
+File Encryption & Vault:
+  name: "\u0428\u0438\u0444\u0440\u0443\u0432\u0430\u043D\u043D\u044F \u0444\u0430\
+    \u0439\u043B\u0456\u0432 \u0442\u0430 \u0441\u0445\u043E\u0432\u0438\u0449\u0435"
+File Transfer:
+  name: "\u041F\u0435\u0440\u0435\u0434\u0430\u0432\u0430\u043D\u043D\u044F \u0444\
+    \u0430\u0439\u043B\u0456\u0432"
+Finance Manager:
+  name: "\u0424\u0456\u043D\u0430\u043D\u0441\u043E\u0432\u0438\u0439 \u043C\u0435\
+    \u043D\u0435\u0434\u0436\u0435\u0440"
+Firewall:
+  name: "\u0411\u0440\u0430\u043D\u0434\u043C\u0430\u0443\u0435\u0440"
 Flashlight:
-  name: Ліхтарик
+  name: "\u041B\u0456\u0445\u0442\u0430\u0440\u0438\u043A"
+Forum:
+  name: "\u0424\u043E\u0440\u0443\u043C"
+Gallery:
+  name: "\u0413\u0430\u043B\u0435\u0440\u0435\u044F"
+Graphics:
+  name: "\u0413\u0440\u0430\u0444\u0456\u043A\u0430"
+Habit Tracker:
+  name: "\u0422\u0440\u0435\u043A\u0435\u0440 \u0437\u0432\u0438\u0447\u043E\u043A"
+Icon Pack:
+  name: "\u041D\u0430\u0431\u0456\u0440 \u0437\u043D\u0430\u0447\u043A\u0456\u0432"
+Internet:
+  name: "\u0406\u043D\u0442\u0435\u0440\u043D\u0435\u0442"
+Inventory:
+  name: "\u0406\u043D\u0432\u0435\u043D\u0442\u0430\u0440"
+Keyboard & IME:
+  name: "\u041A\u043B\u0430\u0432\u0456\u0430\u0442\u0443\u0440\u0430 \u0442\u0430\
+    \ \u0432\u0432\u0456\u0434"
+Launcher:
+  name: "\u0417\u0430\u043F\u0443\u0441\u043A\u0430\u0447"
+Local Media Player:
+  name: "\u041B\u043E\u043A\u0430\u043B\u044C\u043D\u0438\u0439 \u043C\u0435\u0434\
+    \u0456\u0430\u043F\u0440\u043E\u0433\u0440\u0430\u0432\u0430\u0447"
+Location Tracker & Sharer:
+  name: "\u0412\u0456\u0434\u0441\u0442\u0435\u0436\u0435\u043D\u043D\u044F \u0442\
+    \u0430 \u043F\u043E\u0448\u0438\u0440\u0435\u043D\u043D\u044F \u0440\u043E\u0437\
+    \u0442\u0430\u0448\u0443\u0432\u0430\u043D\u043D\u044F"
+Messaging:
+  name: "\u041F\u043E\u0432\u0456\u0434\u043E\u043C\u043B\u0435\u043D\u043D\u044F"
+Multimedia:
+  name: "\u041C\u0443\u043B\u044C\u0442\u0438\u043C\u0435\u0434\u0456\u0430"
+Music Practice Tool:
+  name: "\u0406\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u043D\u0442 \u0434\u043B\
+    \u044F \u043C\u0443\u0437\u0438\u0447\u043D\u043E\u0457 \u043F\u0440\u0430\u043A\
+    \u0442\u0438\u043A\u0438"
+Navigation:
+  name: "\u041D\u0430\u0432\u0456\u0433\u0430\u0446\u0456\u044F"
+Network Analyzer:
+  name: "\u0410\u043D\u0430\u043B\u0456\u0437\u0430\u0442\u043E\u0440 \u043C\u0435\
+    \u0440\u0435\u0436\u0456"
+News:
+  name: "\u041D\u043E\u0432\u0438\u043D\u0438"
+Note:
+  name: "\u041F\u0440\u0438\u043C\u0456\u0442\u043A\u0430"
+Online Media Player:
+  name: "\u041E\u043D\u043B\u0430\u0439\u043D-\u043C\u0435\u0434\u0456\u0430\u043F\
+    \u043B\u0435\u0454\u0440"
+Pass Wallet:
+  name: "\u0413\u0430\u043C\u0430\u043D\u0435\u0446\u044C Pass"
+Password & 2FA:
+  name: "\u041F\u0430\u0440\u043E\u043B\u044C \u0456 \u0434\u0432\u043E\u0444\u0430\
+    \u043A\u0442\u043E\u0440\u043D\u0430 \u0430\u0432\u0442\u0435\u043D\u0442\u0438\
+    \u0444\u0456\u043A\u0430\u0446\u0456\u044F"
+Phone & SMS:
+  name: "\u0422\u0435\u043B\u0435\u0444\u043E\u043D \u0456 SMS"
+Podcast:
+  name: "\u041F\u043E\u0434\u043A\u0430\u0441\u0442"
+Public Transport:
+  name: "\u041A\u0430\u0440\u0442\u0430 \u0442\u0430 \u0440\u043E\u0437\u043A\u043B\
+    \u0430\u0434 \u0440\u0443\u0445\u0443 \u0433\u0440\u043E\u043C\u0430\u0434\u0441\
+    \u044C\u043A\u043E\u0433\u043E \u0442\u0440\u0430\u043D\u0441\u043F\u043E\u0440\
+    \u0442\u0443"
+Reading:
+  name: "\u0427\u0438\u0442\u0430\u043D\u043D\u044F"
+Recipe Manager:
+  name: "\u041C\u0435\u043D\u0435\u0434\u0436\u0435\u0440 \u0440\u0435\u0446\u0435\
+    \u043F\u0442\u0456\u0432"
+Religion:
+  name: "\u0420\u0435\u043B\u0456\u0433\u0456\u044F"
+Science & Education:
+  name: "\u041E\u0441\u0432\u0456\u0442\u0430 \u0439 \u043D\u0430\u0443\u043A\u0430"
+Security:
+  name: "\u0411\u0435\u0437\u043F\u0435\u043A\u0430"
+Shopping List:
+  name: "\u0421\u043F\u0438\u0441\u043E\u043A \u043F\u043E\u043A\u0443\u043F\u043E\
+    \u043A"
+Social Network:
+  name: "\u0421\u043E\u0446\u0456\u0430\u043B\u044C\u043D\u0430 \u043C\u0435\u0440\
+    \u0435\u0436\u0430"
+Sports & Health:
+  name: "\u0421\u043F\u043E\u0440\u0442 \u0456 \u0437\u0434\u043E\u0440\u043E\u0432\
+    '\u044F"
+System:
+  name: "\u0421\u0438\u0441\u0442\u0435\u043C\u0430"
+Task:
+  name: "\u0417\u0430\u0432\u0434\u0430\u043D\u043D\u044F"
+Text Editor:
+  name: "\u0422\u0435\u043A\u0441\u0442\u043E\u0432\u0438\u0439 \u0440\u0435\u0434\
+    \u0430\u043A\u0442\u043E\u0440"
+Theming:
+  name: "\u0422\u0435\u043C\u0430\u0442\u0438\u043A\u0430"
+Translation & Dictionary:
+  name: "\u041F\u0435\u0440\u0435\u043A\u043B\u0430\u0434 \u0456 \u0441\u043B\u043E\
+    \u0432\u043D\u0438\u043A"
+Unit Convertor:
+  name: "\u041A\u043E\u043D\u0432\u0435\u0440\u0442\u0435\u0440 \u043E\u0434\u0438\
+    \u043D\u0438\u0446\u044C"
+VPN & Proxy:
+  name: "VPN \u0442\u0430 \u043F\u0440\u043E\u043A\u0441\u0456"
+Voice & Video Chat:
+  name: "\u0413\u043E\u043B\u043E\u0441\u043E\u0432\u0438\u0439 \u0442\u0430 \u0432\
+    \u0456\u0434\u0435\u043E\u0447\u0430\u0442"
+Wallet:
+  name: "\u0413\u0430\u043C\u0430\u043D\u0435\u0446\u044C"
+Wallpaper:
+  name: "\u0428\u043F\u0430\u043B\u0435\u0440\u0438"
+Weather:
+  name: "\u041F\u043E\u0433\u043E\u0434\u0430"
+Workout:
+  name: "\u0422\u0440\u0435\u043D\u0443\u0432\u0430\u043D\u043D\u044F"
+Writing:
+  name: "\u041D\u0430\u043F\u0438\u0441\u0430\u043D\u043D\u044F"

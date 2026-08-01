@@ -1,30 +1,33 @@
 Ads:
-  description: Cette application contient des publicités.
-  name: Publicités
+  description: "Cette application contient des publicit\xE9s."
+  name: "Publicit\xE9s"
 DisabledAlgorithm:
-  description: Cette application présente une signature de sécurité insuffisante.
-  name: Signé à l'aide d'un algorithme non sécurisé
+  description: "Cette application pr\xE9sente une signature de s\xE9curit\xE9 insuffisante."
+  name: "Sign\xE9 \xE0 l'aide d'un algorithme non s\xE9curis\xE9"
 KnownVuln:
-  description: Cette application présente une faille de sécurité connue.
-  name: Vulnérabilité connue
+  description: "Cette application pr\xE9sente une faille de s\xE9curit\xE9 connue."
+  name: "Vuln\xE9rabilit\xE9 connue"
 NoSourceSince:
+  description: "Le code source n'est plus disponible, aucune mise \xE0 jour n'est\
+    \ possible"
   name: Aucune source depuis
-  description: Le code source n'est plus disponible, aucune mise à jour n'est possible
 NonFreeAdd:
   description: Cette application fait la promotion d'extensions payantes
   name: Extensions payantes
 NonFreeAssets:
-  description: Cette application contient des éléments payants
-  name: Composants propriétaires
+  description: "Cette application contient des \xE9l\xE9ments payants"
+  name: "Composants propri\xE9taires"
 NonFreeDep:
-  description: Cette application nécessite d'autres applications payantes
-  name: Dépendances propriétaires
+  description: "Cette application n\xE9cessite d'autres applications payantes"
+  name: "D\xE9pendances propri\xE9taires"
 NonFreeNet:
-  description: Cette application fait la promotion d'un service réseau payant ou en dépend entièrement.
-  name: Services réseau payants
-Tracking:
-  description: Cette application suit et rend compte de votre activité
-  name: Suivi
+  description: "Cette application fait la promotion d'un service r\xE9seau payant\
+    \ ou en d\xE9pend enti\xE8rement."
+  name: "Services r\xE9seau payants"
 TetheredNet:
-  description: Cette application dépend entièrement d'une instance spécifique d'un service réseau
-  name: Services réseau en mode filaire
+  description: "Cette application d\xE9pend enti\xE8rement d'une instance sp\xE9cifique\
+    \ d'un service r\xE9seau"
+  name: "Services r\xE9seau en mode filaire"
+Tracking:
+  description: "Cette application suit et rend compte de votre activit\xE9"
+  name: Suivi

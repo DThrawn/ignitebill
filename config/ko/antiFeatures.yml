@@ -1,30 +1,43 @@
 Ads:
-  description: 이 앱에는 광고를 포함합니다
-  name: 광고
+  description: "\uC774 \uC571\uC5D0\uB294 \uAD11\uACE0\uB97C \uD3EC\uD568\uD569\uB2C8\
+    \uB2E4"
+  name: "\uAD11\uACE0"
 DisabledAlgorithm:
-  description: 이 앱은 약한 보안 서명이 있습니다
-  name: 안전하지 않은 알고리즘으로 서명됨
+  description: "\uC774 \uC571\uC740 \uC57D\uD55C \uBCF4\uC548 \uC11C\uBA85\uC774 \uC788\
+    \uC2B5\uB2C8\uB2E4"
+  name: "\uC548\uC804\uD558\uC9C0 \uC54A\uC740 \uC54C\uACE0\uB9AC\uC998\uC73C\uB85C\
+    \ \uC11C\uBA85\uB428"
 KnownVuln:
-  description: 이 앱은 알려진 보안 취약점을 포함합니다
-  name: 알려진 취약점
+  description: "\uC774 \uC571\uC740 \uC54C\uB824\uC9C4 \uBCF4\uC548 \uCDE8\uC57D\uC810\
+    \uC744 \uD3EC\uD568\uD569\uB2C8\uB2E4"
+  name: "\uC54C\uB824\uC9C4 \uCDE8\uC57D\uC810"
 NoSourceSince:
-  name: 소스 코드 사라짐
-  description: 소스 코드가 사라져 업데이트가 불가합니다
+  description: "\uC18C\uC2A4 \uCF54\uB4DC\uAC00 \uC0AC\uB77C\uC838 \uC5C5\uB370\uC774\
+    \uD2B8\uAC00 \uBD88\uAC00\uD569\uB2C8\uB2E4"
+  name: "\uC18C\uC2A4 \uCF54\uB4DC \uC0AC\uB77C\uC9D0"
 NonFreeAdd:
-  description: 이 앱은 자유롭지 않은 부가 기능을 권장하고 있습니다
-  name: 비자유 애드온
+  description: "\uC774 \uC571\uC740 \uC790\uC720\uB86D\uC9C0 \uC54A\uC740 \uBD80\uAC00\
+    \ \uAE30\uB2A5\uC744 \uAD8C\uC7A5\uD558\uACE0 \uC788\uC2B5\uB2C8\uB2E4"
+  name: "\uBE44\uC790\uC720 \uC560\uB4DC\uC628"
 NonFreeAssets:
-  description: 이 앱은 자유롭지 않은 에셋을 포함합니다
-  name: 비자유 에셋
+  description: "\uC774 \uC571\uC740 \uC790\uC720\uB86D\uC9C0 \uC54A\uC740 \uC5D0\uC14B\
+    \uC744 \uD3EC\uD568\uD569\uB2C8\uB2E4"
+  name: "\uBE44\uC790\uC720 \uC5D0\uC14B"
 NonFreeDep:
-  description: 이 앱은 다른 자유롭지 않은 앱에 의존합니다
-  name: 비자유 의존사항
+  description: "\uC774 \uC571\uC740 \uB2E4\uB978 \uC790\uC720\uB86D\uC9C0 \uC54A\uC740\
+    \ \uC571\uC5D0 \uC758\uC874\uD569\uB2C8\uB2E4"
+  name: "\uBE44\uC790\uC720 \uC758\uC874\uC0AC\uD56D"
 NonFreeNet:
-  description: 이 앱은 자유롭지 않은 네트워크 서비스를 권장하고 있습니다
-  name: 비자유 네트워크 서비스
-Tracking:
-  description: 이 앱은 당신의 활동을 추적하여 보고합니다
-  name: 추적
+  description: "\uC774 \uC571\uC740 \uC790\uC720\uB86D\uC9C0 \uC54A\uC740 \uB124\uD2B8\
+    \uC6CC\uD06C \uC11C\uBE44\uC2A4\uB97C \uAD8C\uC7A5\uD558\uACE0 \uC788\uC2B5\uB2C8\
+    \uB2E4"
+  name: "\uBE44\uC790\uC720 \uB124\uD2B8\uC6CC\uD06C \uC11C\uBE44\uC2A4"
 TetheredNet:
-  description: 이 앱은 네트워크의 특정 인스턴스에 완전히 의존합니다
-  name: 테더링(핫스팟) 네트워크 서비스
+  description: "\uC774 \uC571\uC740 \uB124\uD2B8\uC6CC\uD06C\uC758 \uD2B9\uC815 \uC778\
+    \uC2A4\uD134\uC2A4\uC5D0 \uC644\uC804\uD788 \uC758\uC874\uD569\uB2C8\uB2E4"
+  name: "\uD14C\uB354\uB9C1(\uD56B\uC2A4\uD31F) \uB124\uD2B8\uC6CC\uD06C \uC11C\uBE44\
+    \uC2A4"
+Tracking:
+  description: "\uC774 \uC571\uC740 \uB2F9\uC2E0\uC758 \uD65C\uB3D9\uC744 \uCD94\uC801\
+    \uD558\uC5EC \uBCF4\uACE0\uD569\uB2C8\uB2E4"
+  name: "\uCD94\uC801"

@@ -1,317 +1,376 @@
-Connectivity:
-  name: Bağlanabilirlik
-Development:
-  name: Geliştirme
-  description: Kodlama, programlama, IDE, uçbirim ve geliştirici araçları
-Graphics:
-  name: Çizim
-  description: Görüntü düzenleme, fotoğraf işleme ve görsel tasarım araçları
-Internet:
-  name: İnternet
-Multimedia:
-  name: Çoklu ortam
-Navigation:
-  name: Navigasyon
-  description: Haritalar, GPS, adım adım yol tarifi ve rota planlama uygulamaları
-Phone & SMS:
-  name: Telefon ve SMS
-  description: Arama programları, arama yöneticileri ve kısa mesaj gönderme araçları
-Reading:
-  name: Okuma
-  description: Makaleler, uzun metinler, "sonra oku" uygulamaları ve web okuyucu uygulamaları
-Science & Education:
-  name: Bilim ve Eğitim
-  description: Öğrenme, çalışma, bilgi kaynağı ve eğitim uygulamaları
-Security:
-  name: Güvenlik
-Sports & Health:
-  name: Spor ve Sağlık
-  description: Fitness takibi, sağlıklı yaşam, spor sonuçları ve sağlık izleme
-System:
-  name: Sistem
-Theming:
-  name: Tema
-  description: Temalar, yazı tipleri ve kullanıcı arayüzü stilleriyle cihazınızın görünümünü kişiselleştirin
-Writing:
-  name: Yazım
-  description: Kelime işlemciler, günlük tutma, taslak hazırlama ve uzun metin yazma uygulamaları
-Bookmark:
-  name: Yer imi
-  description: Favori bağlantıları ve okuma listelerini kaydedin, düzenleyin ve yönetin
-Browser:
-  name: Tarayıcı
-  description: İnternette gezinmek ve web sitelerini görüntülemek için internet tarayıcıları
-Calculator:
-  name: Hesap Makinesi
-  description: Aritmetik, bilimsel ve matematiksel hesaplama araçları
-Calendar & Agenda:
-  name: Takvim ve Ajanda
-  description: Etkinlikleri, hatırlatıcıları, randevuları ve günlük planlarınızı düzenleyin
-Cloud Storage & File Sync:
-  name: Bulut Depolama ve Dosya Eşitleme
-  description: Bulut hizmetleri aracılığıyla dosyaları yedekleyin, senkronize edin ve uzaktan erişin
-Draw:
-  name: Çizim
-  description: Eskiz, resim, illüstrasyon ve dijital sanat için tuval uygulamaları
-Ebook Reader:
-  name: E-Kitap Okuyucu
-  description: E-kitapları, EPUB, PDF ve dijital kitapları ve yayınları okuyun
-Email:
-  name: E-posta
-  description: E-posta mesajlarını göndermek, almak ve yönetmek için kullanılan e-posta istemcileri
-File Transfer:
-  name: Dosya Aktarımı
-  description: FTP, LAN, Bluetooth veya eşler arası (p2p) yoluyla dosya paylaşın ve aktarın
-Gallery:
-  name: Galeri
-  description: Fotoğrafları, resimleri ve videoları tarayın, görüntüleyin ve düzenleyin
-Icon Pack:
-  name: Simge Paketi
-  description: Uygulama simgelerini özelleştirmek için özel simge setleri
-Keyboard & IME:
-  name: Klavye ve Giriş Yöntemi Düzenleyici
-  description: Özel klavyeler, giriş yöntemleri, otomatik düzeltme ve yazma uygulamaları
-Launcher:
-  name: Başlatıcı
-  description: Ana ekran değiştiriciler ve masaüstü ortamı uygulamaları
-News:
-  name: Haberler
-  description: En son manşetler, makaleler, RSS beslemeleri ve haber toplayıcıları
-Note:
-  name: Not
-  description: Not defterleri, hatırlatıcılar ve hızlı not alma ve düzenleme uygulamaları
-Online Media Player:
-  name: Çevrim içi Ortam Oynatıcı
-  description: İnternetten müzik, video ve canlı yayınları tüketin
-Social Network:
-  name: Sosyal Ağ
-  description: Sosyal medya, mikroblog ve çevrimiçi topluluk platformları
-Text Editor:
-  name: Metin Düzenleyici
-  description: Düz metin editörleri, Markdown editörleri ve yazma araçları
-Translation & Dictionary:
-  name: Çeviri ve Sözlük
-  description: Dilleri çevirin, kelimeleri arayın ve kelime sözlüklerine erişin
-Unit Convertor:
-  name: Birim Dönüştürücü
-  description: Uzunluk, ağırlık, sıcaklık, para birimi ve daha birçok birim arasında dönüştürme yapın
-Voice & Video Chat:
-  name: Sesli ve Görüntülü Görüşme
-  description: Sesli ve görüntülü görüşme, konferans ve VoIP iletişim uygulamaları
-Wallet:
-  name: Cüzdan
-  description: Ödemeler, kartlar ve kripto para yönetimi için dijital cüzdanlar
-Wallpaper:
-  name: Duvar kağıdı
-  description: Ana ekran ve kilit ekranı arka planları ile canlı duvar kağıdı uygulamaları
-Weather:
-  name: Hava Durumu
-  description: Hava durumu tahminleri, radar, sıcaklık ve hava durumu uygulamaları
-App Store & Updater:
-  name: Uygulama Deposu ve Güncelleyici
-  description: Yazılım depolarından uygulamaları keşfedin, yükleyin ve güncelleyin
-File Encryption & Vault:
-  name: Dosya Şifreleme & Güvenli Kasa
-  description: Özel dosya ve klasörleri şifreleyin, kilitleyin ve gizleyin
-Finance Manager:
-  name: Finans Yöneticisi
-  description: Giderleri, bütçeleri, gelirleri ve kişisel finans hesaplarını takip edin
-Local Media Player:
-  name: Yerel Medya Oynatıcı
-  description: Cihazınızda depolanan ses ve video dosyalarını çevrimdışı olarak oynatın
-Messaging:
-  name: Mesajlaşma
-  description: Anlık mesajlaşma, sohbet ve SMS iletişim uygulamaları
-Pass Wallet:
-  name: Şifre Cüzdanı
-  description: Biniş kartlarını, biletleri, sadakat kartlarını ve kuponları saklayın
-Password & 2FA:
-  name: Şifre & 2FA
-  description: Şifre yöneticileri, kimlik doğrulama uygulamaları, OTP, TOTP, HOTP, U2F, FIDO ve iki faktörlü güvenlik araçları
-Public Transport:
-  name: Toplu Taşıma Haritası ve Zaman Çizelgesi
-  description: Otobüs, tren, metro ve toplu taşıma sefer saatleri ile rota planlayıcıları
-Recipe Manager:
-  name: Tarif Yöneticisi
-  description: Yemek tariflerini ve yemek fikirlerini saklayın, düzenleyin ve keşfedin
-Shopping List:
-  name: Alışveriş Listesi
-  description: Alışveriş listeleri, satın alınacaklar listesi takipçileri ve ortak alışveriş uygulamaları
-Task:
-  name: Görev
-  description: Yapılacaklar listeleri, görev yöneticileri, verimlilik ve GTD araçları
-Workout:
-  name: Antrenman
-  description: Egzersiz programları, spor salonu takibi, koşu ve fitness antrenmanı uygulamaları
-Podcast:
-  name: Podcast
-  description: Podcast sesli bölümlerini ve programlarını takip edin, dinleyin ve indirin
-VPN & Proxy:
-  name: VPN ve Proxy
-  description: Trafiği şifreleyin, kısıtlamaları aşın (engelleri aşma) ve bağlantınızı anonim hale getirin
-DNS & Hosts:
-  name: DNS ve Ana Bilgisayarlar
-  description: DNS çözümleyicilerini, reklam engellemeyi, hosts dosyasını ve etki alanı yönlendirmesini yapılandırın
 AI Chat:
+  description: "Yapay zeka asistanlar\u0131, sohbet robotlar\u0131 ve b\xFCy\xFCk\
+    \ dil modelleri (LLM) aray\xFCzleri"
   name: YZ Sohbet
-  description: Yapay zeka asistanları, sohbet robotları ve büyük dil modelleri (LLM) arayüzleri
-App Manager:
-  name: Uygulama Yöneticisi
-  description: Yüklü uygulamaları, niyetleri ve izinleri yönetin, düzenleyin ve kontrol et
-Clock:
-  name: Saat
-  description: Şu anki saati söyle
-Firewall:
-  name: Güvenlik Duvarı
-  description: İstenmeyen ağ trafiğini engelleyin ve uygulamaların internet erişimini kontrol edin
-Forum:
-  name: Forum
-  description: Tartışma forumları, topluluk başlıkları ve soru-cevap platformları
-Habit Tracker:
-  name: Alışkanlık İzleyici
-  description: Rutinler oluşturun, günlük hedeflerinizi takip edin ve kişisel serilerinizi izleyin
-Inventory:
-  name: Envanter
-  description: Fiziksel ürünleri ve stokları takip edin, kataloglayın ve yönetin
-Location Tracker & Sharer:
-  name: Konum İzleyici ve Paylaşıcı
-  description: Gerçek zamanlı GPS konumunu başkalarıyla paylaşın ve takip edin
-Music Practice Tool:
-  name: Müzik Çalışma Aracı
-  description: Akort aletleri, metronomlar, akor araçları ve enstrüman çalışma yardımcıları
-Network Analyzer:
-  name: Ağ İnceleyici
-  description: Wi-Fi sorunlarını teşhis edin, ağları tarayın ve bağlantı performansını izleyin
-Religion:
-  name: Din
-  description: Namaz vakitleri, kutsal metinler, ibadet rehberleri ve manevi uygulama uygulamaları
-Contact:
-  name: İletişim
-  description: Adres defteri, telefon rehberi ve kişi yönetimi uygulamaları
-Battery:
-  name: Batarya
-  description: Pil ömrünü, güç tüketimini ve şarj işlemini izleyin ve optimize edin
-Flashlight:
-  name: Fener
-  description: El feneri ve LED fener uygulamaları
-Radio:
-  name: Radyo
-  description: FM/AM radyo istasyonlarını ve internet radyo yayınlarını canlı olarak dinleyin
-Remote Access:
-  name: Uzaktan Erişim
-  description: RDP, VNC veya SSH aracılığıyla masaüstü bilgisayarları, sunucuları ve cihazları uzaktan kontrol edin
-Remote Controller:
-  name: Uzaktan Kumanda
-  description: TV'ler, klimalar ve diğer cihazlar için kızılötesi ve akıllı ev uzaktan kumandaları
-Diet:
-  name: Diyet
-  description: Beslenme, kalori, beslenme yönetimi ve takipçisi
-Health Manager:
-  name: Sağlık Yönetimi
-  description: Kilo, kalp atış hızı, kan basıncı, adet döngüsü ve diğer sağlık göstergelerini takip etme
-Schedule:
-  name: Planlama
-  description: Konferans ve etkinlik programlama
-Text to Speech:
-  name: Metinden Sese
-  description: Metinden Sese araçları
-Time Tracker:
-  name: Zaman Takipçisi
-  description: Etkinliklerde zaman kullanımını ve ekran süresini takip edin
 Action Game:
+  description: "Aksiyon, spor, yar\u0131\u015F ve platform oyunlar\u0131"
   name: Aksiyon Oyunu
-  description: Aksiyon, spor, yarış ve platform oyunları
-Board Game:
-  name: Masa Oyunu
-  description: Masa oyunu, satranç, go, tik-tak-toe
-Card Game:
-  name: Kart Oyunu
-  description: Kart oyunu, tek taş
-Casual Game:
-  name: Sıradan Oyun
-  description: Basit sıradan oyun
-Dice:
-  name: Zar
-  description: Rastgele seçici
-Download:
-  name: İndir
-  description: İndirici, indirme yöneticisi ve torrent istemcisi
-Educational Game:
-  name: Eğitici Oyun
-  description: Oynarken öğrenme, test yapma
-Emulator:
-  name: Emülatör
-  description: Oyun ve program çalıştıran emülatör
-File Manager:
-  name: Dosya Yöneticisi
-  description: Dosya yöneticisi ve gezgini
-Game Helper:
-  name: Oyun Yardımcısı
-  description: Oyun yardımcısı, asistan, eşlikçi, skor tablosu, kronometre
-Meditation:
-  name: Meditasyon
-  description: Meditasyon, farkındalık, nefes egzersizi
-Party Game:
-  name: Parti Oyunu
-  description: Çoklu oyuncu, parti oyunu
-Platformer Game:
-  name: Platform Oyunu
-  description: Platform oyunu, yan kaydırmalı oyun
-Camera:
-  name: Kamera
-  description: Kamera, IP kamera görüntüleme yazılımı ve video kaydedici
-Lyrics:
-  name: Sözler
-  description: Sözlere bakın ve arayın
-Market & Price:
-  name: Pazar ve Fiyat
-  description: Fiyat, döviz kuru, stok durumu
-Puzzle Game:
-  name: Bulmaca Oyunu
-  description: Bulmaca, sudoku, hafıza oyunu
-Recorder:
-  name: Kaydedici
-  description: Ses, ekran, arama kaydedici
-Role-Playing Game:
-  name: Rol Yapma Oyunu
-  description: RPG, rogue-like
-Shooter Game:
-  name: Nişancı Oyunu
-  description: Hedefi Vurma
-Strategy Game:
-  name: Strateji Oyunu
-  description: Strateji, Simülasyon
-Sport Game:
-  name: Spor Oyunu
-  description: Spor Oyunları
-Timer:
-  name: Zamanlayıcı
-  description: Aralıklı zamanlama, zaman tutma, geri sayım
-Visual Novel:
-  name: Görsel Roman
-  description: Görsel Roman, galgame, hikâye oyunu
-Word Game:
-  name: Kelime Oyunu
-  description: Kelime bulmaca oyunu, çapraz bulmaca, kelime tahmin oyunu
-Notification:
-  name: Bildirim
-  description: Bildirim yöneticisi, günlük kaydedici, yönlendirici, geliştirici
 Alarm Clock:
-  name: Çalar Saat
   description: Bir saate alarm kur
+  name: "\xC7alar Saat"
+App Manager:
+  description: "Y\xFCkl\xFC uygulamalar\u0131, niyetleri ve izinleri y\xF6netin, d\xFC\
+    zenleyin ve kontrol et"
+  name: "Uygulama Y\xF6neticisi"
+App Store & Updater:
+  description: "Yaz\u0131l\u0131m depolar\u0131ndan uygulamalar\u0131 ke\u015Ffedin,\
+    \ y\xFCkleyin ve g\xFCncelleyin"
+  name: "Uygulama Deposu ve G\xFCncelleyici"
+Battery:
+  description: "Pil \xF6mr\xFCn\xFC, g\xFC\xE7 t\xFCketimini ve \u015Farj i\u015F\
+    lemini izleyin ve optimize edin"
+  name: Batarya
+Board Game:
+  description: "Masa oyunu, satran\xE7, go, tik-tak-toe"
+  name: Masa Oyunu
+Bookmark:
+  description: "Favori ba\u011Flant\u0131lar\u0131 ve okuma listelerini kaydedin,\
+    \ d\xFCzenleyin ve y\xF6netin"
+  name: Yer imi
+Browser:
+  description: "\u0130nternette gezinmek ve web sitelerini g\xF6r\xFCnt\xFClemek i\xE7\
+    in internet taray\u0131c\u0131lar\u0131"
+  name: "Taray\u0131c\u0131"
+Calculator:
+  description: "Aritmetik, bilimsel ve matematiksel hesaplama ara\xE7lar\u0131"
+  name: Hesap Makinesi
+Calendar & Agenda:
+  description: "Etkinlikleri, hat\u0131rlat\u0131c\u0131lar\u0131, randevular\u0131\
+    \ ve g\xFCnl\xFCk planlar\u0131n\u0131z\u0131 d\xFCzenleyin"
+  name: Takvim ve Ajanda
+Camera:
+  description: "Kamera, IP kamera g\xF6r\xFCnt\xFCleme yaz\u0131l\u0131m\u0131 ve\
+    \ video kaydedici"
+  name: Kamera
+Card Game:
+  description: "Kart oyunu, tek ta\u015F"
+  name: Kart Oyunu
 Cast:
-  name: Yansıt
-  description: Yansıt, UPnP, DLNA, FCast, AirPlay, Miracast
+  description: "Yans\u0131t, UPnP, DLNA, FCast, AirPlay, Miracast"
+  name: "Yans\u0131t"
+Casual Game:
+  description: "Basit s\u0131radan oyun"
+  name: "S\u0131radan Oyun"
+Clock:
+  description: "\u015Eu anki saati s\xF6yle"
+  name: Saat
+Cloud Storage & File Sync:
+  description: "Bulut hizmetleri arac\u0131l\u0131\u011F\u0131yla dosyalar\u0131 yedekleyin,\
+    \ senkronize edin ve uzaktan eri\u015Fin"
+  name: "Bulut Depolama ve Dosya E\u015Fitleme"
 Code & Forge:
   name: Kod
+Connectivity:
+  name: "Ba\u011Flanabilirlik"
+Contact:
+  description: "Adres defteri, telefon rehberi ve ki\u015Fi y\xF6netimi uygulamalar\u0131"
+  name: "\u0130leti\u015Fim"
+DNS & Hosts:
+  description: "DNS \xE7\xF6z\xFCmleyicilerini, reklam engellemeyi, hosts dosyas\u0131\
+    n\u0131 ve etki alan\u0131 y\xF6nlendirmesini yap\u0131land\u0131r\u0131n"
+  name: DNS ve Ana Bilgisayarlar
+Development:
+  description: "Kodlama, programlama, IDE, u\xE7birim ve geli\u015Ftirici ara\xE7\
+    lar\u0131"
+  name: "Geli\u015Ftirme"
+Dice:
+  description: "Rastgele se\xE7ici"
+  name: Zar
+Diet:
+  description: "Beslenme, kalori, beslenme y\xF6netimi ve takip\xE7isi"
+  name: Diyet
+Download:
+  description: "\u0130ndirici, indirme y\xF6neticisi ve torrent istemcisi"
+  name: "\u0130ndir"
+Draw:
+  description: "Eskiz, resim, ill\xFCstrasyon ve dijital sanat i\xE7in tuval uygulamalar\u0131"
+  name: "\xC7izim"
+Ebook Reader:
+  description: "E-kitaplar\u0131, EPUB, PDF ve dijital kitaplar\u0131 ve yay\u0131\
+    nlar\u0131 okuyun"
+  name: E-Kitap Okuyucu
+Educational Game:
+  description: "Oynarken \xF6\u011Frenme, test yapma"
+  name: "E\u011Fitici Oyun"
+Email:
+  description: "E-posta mesajlar\u0131n\u0131 g\xF6ndermek, almak ve y\xF6netmek i\xE7\
+    in kullan\u0131lan e-posta istemcileri"
+  name: E-posta
+Emulator:
+  description: "Oyun ve program \xE7al\u0131\u015Ft\u0131ran em\xFClat\xF6r"
+  name: "Em\xFClat\xF6r"
+File Encryption & Vault:
+  description: "\xD6zel dosya ve klas\xF6rleri \u015Fifreleyin, kilitleyin ve gizleyin"
+  name: "Dosya \u015Eifreleme & G\xFCvenli Kasa"
+File Manager:
+  description: "Dosya y\xF6neticisi ve gezgini"
+  name: "Dosya Y\xF6neticisi"
+File Transfer:
+  description: "FTP, LAN, Bluetooth veya e\u015Fler aras\u0131 (p2p) yoluyla dosya\
+    \ payla\u015F\u0131n ve aktar\u0131n"
+  name: "Dosya Aktar\u0131m\u0131"
+Finance Manager:
+  description: "Giderleri, b\xFCt\xE7eleri, gelirleri ve ki\u015Fisel finans hesaplar\u0131\
+    n\u0131 takip edin"
+  name: "Finans Y\xF6neticisi"
+Firewall:
+  description: "\u0130stenmeyen a\u011F trafi\u011Fini engelleyin ve uygulamalar\u0131\
+    n internet eri\u015Fimini kontrol edin"
+  name: "G\xFCvenlik Duvar\u0131"
+Flashlight:
+  description: "El feneri ve LED fener uygulamalar\u0131"
+  name: Fener
+Forum:
+  description: "Tart\u0131\u015Fma forumlar\u0131, topluluk ba\u015Fl\u0131klar\u0131\
+    \ ve soru-cevap platformlar\u0131"
+  name: Forum
+Gallery:
+  description: "Foto\u011Fraflar\u0131, resimleri ve videolar\u0131 taray\u0131n,\
+    \ g\xF6r\xFCnt\xFCleyin ve d\xFCzenleyin"
+  name: Galeri
+Game Helper:
+  description: "Oyun yard\u0131mc\u0131s\u0131, asistan, e\u015Flik\xE7i, skor tablosu,\
+    \ kronometre"
+  name: "Oyun Yard\u0131mc\u0131s\u0131"
+Graphics:
+  description: "G\xF6r\xFCnt\xFC d\xFCzenleme, foto\u011Fraf i\u015Fleme ve g\xF6\
+    rsel tasar\u0131m ara\xE7lar\u0131"
+  name: "\xC7izim"
+Habit Tracker:
+  description: "Rutinler olu\u015Fturun, g\xFCnl\xFCk hedeflerinizi takip edin ve\
+    \ ki\u015Fisel serilerinizi izleyin"
+  name: "Al\u0131\u015Fkanl\u0131k \u0130zleyici"
+Health Manager:
+  description: "Kilo, kalp at\u0131\u015F h\u0131z\u0131, kan bas\u0131nc\u0131, adet\
+    \ d\xF6ng\xFCs\xFC ve di\u011Fer sa\u011Fl\u0131k g\xF6stergelerini takip etme"
+  name: "Sa\u011Fl\u0131k Y\xF6netimi"
+Icon Pack:
+  description: "Uygulama simgelerini \xF6zelle\u015Ftirmek i\xE7in \xF6zel simge setleri"
+  name: Simge Paketi
+Internet:
+  name: "\u0130nternet"
+Inventory:
+  description: "Fiziksel \xFCr\xFCnleri ve stoklar\u0131 takip edin, kataloglay\u0131\
+    n ve y\xF6netin"
+  name: Envanter
+Keyboard & IME:
+  description: "\xD6zel klavyeler, giri\u015F y\xF6ntemleri, otomatik d\xFCzeltme\
+    \ ve yazma uygulamalar\u0131"
+  name: "Klavye ve Giri\u015F Y\xF6ntemi D\xFCzenleyici"
+Launcher:
+  description: "Ana ekran de\u011Fi\u015Ftiriciler ve masa\xFCst\xFC ortam\u0131 uygulamalar\u0131"
+  name: "Ba\u015Flat\u0131c\u0131"
+Local Media Player:
+  description: "Cihaz\u0131n\u0131zda depolanan ses ve video dosyalar\u0131n\u0131\
+    \ \xE7evrimd\u0131\u015F\u0131 olarak oynat\u0131n"
+  name: "Yerel Medya Oynat\u0131c\u0131"
+Location Tracker & Sharer:
+  description: "Ger\xE7ek zamanl\u0131 GPS konumunu ba\u015Fkalar\u0131yla payla\u015F\
+    \u0131n ve takip edin"
+  name: "Konum \u0130zleyici ve Payla\u015F\u0131c\u0131"
+Lyrics:
+  description: "S\xF6zlere bak\u0131n ve aray\u0131n"
+  name: "S\xF6zler"
+Market & Price:
+  description: "Fiyat, d\xF6viz kuru, stok durumu"
+  name: Pazar ve Fiyat
+Meditation:
+  description: "Meditasyon, fark\u0131ndal\u0131k, nefes egzersizi"
+  name: Meditasyon
+Messaging:
+  description: "Anl\u0131k mesajla\u015Fma, sohbet ve SMS ileti\u015Fim uygulamalar\u0131"
+  name: "Mesajla\u015Fma"
+Multimedia:
+  name: "\xC7oklu ortam"
+Music Practice Tool:
+  description: "Akort aletleri, metronomlar, akor ara\xE7lar\u0131 ve enstr\xFCman\
+    \ \xE7al\u0131\u015Fma yard\u0131mc\u0131lar\u0131"
+  name: "M\xFCzik \xC7al\u0131\u015Fma Arac\u0131"
+Navigation:
+  description: "Haritalar, GPS, ad\u0131m ad\u0131m yol tarifi ve rota planlama uygulamalar\u0131"
+  name: Navigasyon
+Network Analyzer:
+  description: "Wi-Fi sorunlar\u0131n\u0131 te\u015Fhis edin, a\u011Flar\u0131 taray\u0131\
+    n ve ba\u011Flant\u0131 performans\u0131n\u0131 izleyin"
+  name: "A\u011F \u0130nceleyici"
+News:
+  description: "En son man\u015Fetler, makaleler, RSS beslemeleri ve haber toplay\u0131\
+    c\u0131lar\u0131"
+  name: Haberler
+Note:
+  description: "Not defterleri, hat\u0131rlat\u0131c\u0131lar ve h\u0131zl\u0131 not\
+    \ alma ve d\xFCzenleme uygulamalar\u0131"
+  name: Not
+Notification:
+  description: "Bildirim y\xF6neticisi, g\xFCnl\xFCk kaydedici, y\xF6nlendirici, geli\u015F\
+    tirici"
+  name: Bildirim
 OCR:
-  description: Belge tarayıcı, optik karakter tanıma
+  description: "Belge taray\u0131c\u0131, optik karakter tan\u0131ma"
+Online Media Player:
+  description: "\u0130nternetten m\xFCzik, video ve canl\u0131 yay\u0131nlar\u0131\
+    \ t\xFCketin"
+  name: "\xC7evrim i\xE7i Ortam Oynat\u0131c\u0131"
+Party Game:
+  description: "\xC7oklu oyuncu, parti oyunu"
+  name: Parti Oyunu
+Pass Wallet:
+  description: "Bini\u015F kartlar\u0131n\u0131, biletleri, sadakat kartlar\u0131\
+    n\u0131 ve kuponlar\u0131 saklay\u0131n"
+  name: "\u015Eifre C\xFCzdan\u0131"
+Password & 2FA:
+  description: "\u015Eifre y\xF6neticileri, kimlik do\u011Frulama uygulamalar\u0131\
+    , OTP, TOTP, HOTP, U2F, FIDO ve iki fakt\xF6rl\xFC g\xFCvenlik ara\xE7lar\u0131"
+  name: "\u015Eifre & 2FA"
+Phone & SMS:
+  description: "Arama programlar\u0131, arama y\xF6neticileri ve k\u0131sa mesaj g\xF6\
+    nderme ara\xE7lar\u0131"
+  name: Telefon ve SMS
+Platformer Game:
+  description: "Platform oyunu, yan kayd\u0131rmal\u0131 oyun"
+  name: Platform Oyunu
+Podcast:
+  description: "Podcast sesli b\xF6l\xFCmlerini ve programlar\u0131n\u0131 takip edin,\
+    \ dinleyin ve indirin"
+  name: Podcast
+Public Transport:
+  description: "Otob\xFCs, tren, metro ve toplu ta\u015F\u0131ma sefer saatleri ile\
+    \ rota planlay\u0131c\u0131lar\u0131"
+  name: "Toplu Ta\u015F\u0131ma Haritas\u0131 ve Zaman \xC7izelgesi"
 Push:
-  name: Anlık
-  description: Anlık iletiler
+  description: "Anl\u0131k iletiler"
+  name: "Anl\u0131k"
+Puzzle Game:
+  description: "Bulmaca, sudoku, haf\u0131za oyunu"
+  name: Bulmaca Oyunu
+Radio:
+  description: "FM/AM radyo istasyonlar\u0131n\u0131 ve internet radyo yay\u0131nlar\u0131\
+    n\u0131 canl\u0131 olarak dinleyin"
+  name: Radyo
+Reading:
+  description: "Makaleler, uzun metinler, \"sonra oku\" uygulamalar\u0131 ve web okuyucu\
+    \ uygulamalar\u0131"
+  name: Okuma
+Recipe Manager:
+  description: "Yemek tariflerini ve yemek fikirlerini saklay\u0131n, d\xFCzenleyin\
+    \ ve ke\u015Ffedin"
+  name: "Tarif Y\xF6neticisi"
+Recorder:
+  description: Ses, ekran, arama kaydedici
+  name: Kaydedici
+Religion:
+  description: "Namaz vakitleri, kutsal metinler, ibadet rehberleri ve manevi uygulama\
+    \ uygulamalar\u0131"
+  name: Din
+Remote Access:
+  description: "RDP, VNC veya SSH arac\u0131l\u0131\u011F\u0131yla masa\xFCst\xFC\
+    \ bilgisayarlar\u0131, sunucular\u0131 ve cihazlar\u0131 uzaktan kontrol edin"
+  name: "Uzaktan Eri\u015Fim"
+Remote Controller:
+  description: "TV'ler, klimalar ve di\u011Fer cihazlar i\xE7in k\u0131z\u0131l\xF6\
+    tesi ve ak\u0131ll\u0131 ev uzaktan kumandalar\u0131"
+  name: Uzaktan Kumanda
+Role-Playing Game:
+  description: RPG, rogue-like
+  name: Rol Yapma Oyunu
+Schedule:
+  description: Konferans ve etkinlik programlama
+  name: Planlama
+Science & Education:
+  description: "\xD6\u011Frenme, \xE7al\u0131\u015Fma, bilgi kayna\u011F\u0131 ve\
+    \ e\u011Fitim uygulamalar\u0131"
+  name: "Bilim ve E\u011Fitim"
+Security:
+  name: "G\xFCvenlik"
+Shooter Game:
+  description: Hedefi Vurma
+  name: "Ni\u015Fanc\u0131 Oyunu"
+Shopping List:
+  description: "Al\u0131\u015Fveri\u015F listeleri, sat\u0131n al\u0131nacaklar listesi\
+    \ takip\xE7ileri ve ortak al\u0131\u015Fveri\u015F uygulamalar\u0131"
+  name: "Al\u0131\u015Fveri\u015F Listesi"
+Social Network:
+  description: "Sosyal medya, mikroblog ve \xE7evrimi\xE7i topluluk platformlar\u0131"
+  name: "Sosyal A\u011F"
+Sport Game:
+  description: "Spor Oyunlar\u0131"
+  name: Spor Oyunu
+Sports & Health:
+  description: "Fitness takibi, sa\u011Fl\u0131kl\u0131 ya\u015Fam, spor sonu\xE7\
+    lar\u0131 ve sa\u011Fl\u0131k izleme"
+  name: "Spor ve Sa\u011Fl\u0131k"
 Stopwatch:
+  description: "\u0130lerleme, ge\xE7en s\xFCre ve tur s\xFCresi \xF6l\xE7\xFCm\xFC"
   name: Kronometre
-  description: İlerleme, geçen süre ve tur süresi ölçümü
+Strategy Game:
+  description: "Strateji, Sim\xFClasyon"
+  name: Strateji Oyunu
+System:
+  name: Sistem
+Task:
+  description: "Yap\u0131lacaklar listeleri, g\xF6rev y\xF6neticileri, verimlilik\
+    \ ve GTD ara\xE7lar\u0131"
+  name: "G\xF6rev"
+Text Editor:
+  description: "D\xFCz metin edit\xF6rleri, Markdown edit\xF6rleri ve yazma ara\xE7\
+    lar\u0131"
+  name: "Metin D\xFCzenleyici"
+Text to Speech:
+  description: "Metinden Sese ara\xE7lar\u0131"
+  name: Metinden Sese
+Theming:
+  description: "Temalar, yaz\u0131 tipleri ve kullan\u0131c\u0131 aray\xFCz\xFC stilleriyle\
+    \ cihaz\u0131n\u0131z\u0131n g\xF6r\xFCn\xFCm\xFCn\xFC ki\u015Fiselle\u015Ftirin"
+  name: Tema
+Time Tracker:
+  description: "Etkinliklerde zaman kullan\u0131m\u0131n\u0131 ve ekran s\xFCresini\
+    \ takip edin"
+  name: "Zaman Takip\xE7isi"
+Timer:
+  description: "Aral\u0131kl\u0131 zamanlama, zaman tutma, geri say\u0131m"
+  name: "Zamanlay\u0131c\u0131"
+Translation & Dictionary:
+  description: "Dilleri \xE7evirin, kelimeleri aray\u0131n ve kelime s\xF6zl\xFCklerine\
+    \ eri\u015Fin"
+  name: "\xC7eviri ve S\xF6zl\xFCk"
+Unit Convertor:
+  description: "Uzunluk, a\u011F\u0131rl\u0131k, s\u0131cakl\u0131k, para birimi ve\
+    \ daha bir\xE7ok birim aras\u0131nda d\xF6n\xFC\u015Ft\xFCrme yap\u0131n"
+  name: "Birim D\xF6n\xFC\u015Ft\xFCr\xFCc\xFC"
+VPN & Proxy:
+  description: "Trafi\u011Fi \u015Fifreleyin, k\u0131s\u0131tlamalar\u0131 a\u015F\
+    \u0131n (engelleri a\u015Fma) ve ba\u011Flant\u0131n\u0131z\u0131 anonim hale\
+    \ getirin"
+  name: VPN ve Proxy
+Visual Novel:
+  description: "G\xF6rsel Roman, galgame, hik\xE2ye oyunu"
+  name: "G\xF6rsel Roman"
+Voice & Video Chat:
+  description: "Sesli ve g\xF6r\xFCnt\xFCl\xFC g\xF6r\xFC\u015Fme, konferans ve VoIP\
+    \ ileti\u015Fim uygulamalar\u0131"
+  name: "Sesli ve G\xF6r\xFCnt\xFCl\xFC G\xF6r\xFC\u015Fme"
 Volume:
+  description: "Ses ayar\u0131n\u0131 y\xF6net"
   name: Ses
-  description: Ses ayarını yönet
+Wallet:
+  description: "\xD6demeler, kartlar ve kripto para y\xF6netimi i\xE7in dijital c\xFC\
+    zdanlar"
+  name: "C\xFCzdan"
+Wallpaper:
+  description: "Ana ekran ve kilit ekran\u0131 arka planlar\u0131 ile canl\u0131 duvar\
+    \ ka\u011F\u0131d\u0131 uygulamalar\u0131"
+  name: "Duvar ka\u011F\u0131d\u0131"
+Weather:
+  description: "Hava durumu tahminleri, radar, s\u0131cakl\u0131k ve hava durumu uygulamalar\u0131"
+  name: Hava Durumu
+Word Game:
+  description: "Kelime bulmaca oyunu, \xE7apraz bulmaca, kelime tahmin oyunu"
+  name: Kelime Oyunu
+Workout:
+  description: "Egzersiz programlar\u0131, spor salonu takibi, ko\u015Fu ve fitness\
+    \ antrenman\u0131 uygulamalar\u0131"
+  name: Antrenman
+Writing:
+  description: "Kelime i\u015Flemciler, g\xFCnl\xFCk tutma, taslak haz\u0131rlama\
+    \ ve uzun metin yazma uygulamalar\u0131"
+  name: "Yaz\u0131m"

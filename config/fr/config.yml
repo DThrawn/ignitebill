@@ -1,6 +1,9 @@
 archive:
-  description: Archives du dépôt officiel de logiciels libres F-Droid. Les applications qui y figurent sont anciennes et peuvent comporter des vulnérabilités et des failles de sécurité connues !
+  description: "Archives du d\xE9p\xF4t officiel de logiciels libres F-Droid. Les\
+    \ applications qui y figurent sont anciennes et peuvent comporter des vuln\xE9\
+    rabilit\xE9s et des failles de s\xE9curit\xE9 connues\u202F!"
   name: Archive F-Droid
 repo:
-  description: Le dépôt officiel de logiciels libres F-Droid. Tout ce qui se trouve dans ce dépôt est toujours construit à partir du code source.
+  description: "Le d\xE9p\xF4t officiel de logiciels libres F-Droid. Tout ce qui se\
+    \ trouve dans ce d\xE9p\xF4t est toujours construit \xE0 partir du code source."
   name: F-Droid

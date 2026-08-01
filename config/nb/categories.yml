@@ -1,41 +1,31 @@
-Connectivity:
-  name: Tilkobling
-Development:
-  name: Utvikling
-Graphics:
-  name: Grafikk
-Internet:
-  name: Internett
-Multimedia:
-  name: Multimedia
-Navigation:
-  name: Navigasjon
-Phone & SMS:
-  name: Telefon og SMS
-Reading:
-  name: Lesing
-Science & Education:
-  name: Vitenskap & utdanning
-Security:
-  name: Sikkerhet
-Sports & Health:
-  name: Idrett og helse
-System:
-  name: System
-Theming:
-  name: Tilpasning
-Writing:
-  name: Skriving
+AI Chat:
+  name: KI-chat
+App Manager:
+  name: App-administrasjon
+App Store & Updater:
+  name: App-butikker & Oppdatere
+Battery:
+  name: Batteri
 Bookmark:
   name: Bokmerke
+Browser:
+  name: Nettleser
 Calculator:
   name: Kalkulator
 Calendar & Agenda:
   name: Kalender & Agenda
+Clock:
+  name: Klokke
 Cloud Storage & File Sync:
   name: Skylagring & Filsynkronisering
+Connectivity:
+  name: Tilkobling
+Contact:
+  name: Kontakt
 DNS & Hosts:
   name: DNS & Verter
+Development:
+  name: Utvikling
 Draw:
   name: Tegning
 Ebook Reader:
@@ -45,96 +35,106 @@ Email:
 File Encryption & Vault:
   name: Filkryptering & Hvelv
 File Transfer:
-  name: Filoverføring
+  name: "Filoverf\xF8ring"
 Finance Manager:
   name: Finans
+Firewall:
+  name: Brannmur
+Flashlight:
+  name: Lommelykt
 Forum:
   name: Forum
 Gallery:
   name: Galleri
+Graphics:
+  name: Grafikk
 Habit Tracker:
   name: Vanesporer
 Icon Pack:
   name: Ikonpakke
+Internet:
+  name: Internett
+Inventory:
+  name: Inventar
 Keyboard & IME:
   name: Tastatur & Inndatametoder
+Launcher:
+  name: Launcher
 Local Media Player:
   name: Lokal mediaspiller
+Location Tracker & Sharer:
+  name: Lokasjonssporer og -deling
 Messaging:
   name: Meldinger
+Multimedia:
+  name: Multimedia
 Music Practice Tool:
-  name: Musikkøvingsverktøy
+  name: "Musikk\xF8vingsverkt\xF8y"
+Navigation:
+  name: Navigasjon
+Network Analyzer:
+  name: Nettverksanalyse
 News:
   name: Nyheter
 Note:
   name: Notater
 Online Media Player:
   name: Nettmediaspiller
+Pass Wallet:
+  name: "Lommeb\xF8ker & Kort"
 Password & 2FA:
   name: Passord & 2FA
+Phone & SMS:
+  name: Telefon og SMS
 Podcast:
   name: Podcast
 Public Transport:
   name: Offentlig transport
+Radio:
+  name: Radio
+Reading:
+  name: Lesing
 Recipe Manager:
   name: Oppskrifter
+Religion:
+  name: Religion
+Remote Access:
+  name: Fjernkontroll
+Remote Controller:
+  name: Fjernkontroll
+Science & Education:
+  name: Vitenskap & utdanning
+Security:
+  name: Sikkerhet
 Shopping List:
   name: Handleliste
 Social Network:
   name: Sosialt nettverk
+Sports & Health:
+  name: Idrett og helse
+System:
+  name: System
 Task:
   name: Oppgaver
 Text Editor:
   name: Tekstredigering
+Theming:
+  name: Tilpasning
 Translation & Dictionary:
   name: Oversettelse & Ordbok
 Unit Convertor:
   name: Enhetskonvertering
-Voice & Video Chat:
-  name: Stemme- & Video-chat
 VPN & Proxy:
   name: VPN & Mellomserver
+Voice & Video Chat:
+  name: Stemme- & Video-chat
 Wallet:
   name: Lommebok
 Wallpaper:
   name: Bakgrunn
 Weather:
-  name: Vær
+  name: "V\xE6r"
 Workout:
   name: Trening
-App Store & Updater:
-  name: App-butikker & Oppdatere
-Browser:
-  name: Nettleser
-Launcher:
-  name: Launcher
-Pass Wallet:
-  name: Lommebøker & Kort
-Location Tracker & Sharer:
-  name: Lokasjonssporer og -deling
-AI Chat:
-  name: KI-chat
-Religion:
-  name: Religion
-App Manager:
-  name: App-administrasjon
-Clock:
-  name: Klokke
-Firewall:
-  name: Brannmur
-Inventory:
-  name: Inventar
-Network Analyzer:
-  name: Nettverksanalyse
-Contact:
-  name: Kontakt
-Battery:
-  name: Batteri
-Flashlight:
-  name: Lommelykt
-Radio:
-  name: Radio
-Remote Controller:
-  name: Fjernkontroll
-Remote Access:
-  name: Fjernkontroll
+Writing:
+  name: Skriving

@@ -1,106 +1,134 @@
-Connectivity:
-  name: ئۇلىنىشچانلىق
-Development:
-  name: تەرەققىيات
-Graphics:
-  name: رەسىملەر
-Internet:
-  name: تور
-Multimedia:
-  name: كۆپ ۋاسىتە
-Navigation:
-  name: يول باشلاش
-Phone & SMS:
-  name: فون & قىسقا ئۇچۇر
-Reading:
-  name: ئوقۇشلۇق
-Science & Education:
-  name: پەن & مائارىپ
-Security:
-  name: بىخەتەرلىك
-Sports & Health:
-  name: تەنتەربىيە & ساغلاملىق
-System:
-  name: سىستېما
-Theming:
-  name: ئاساسىي ئۇسلۇب
-Writing:
-  name: يېزىقچىلىق
-DNS & Hosts:
-  name: DNS ۋە مۇلازىمېتىر
-VPN & Proxy:
-  name: مەۋھۇم شەخسىي تور ۋە ۋاكالەتچى مۇلازىمېتىر
-Email:
-  name: تورخەت
 App Store & Updater:
-  name: ئەپ دۇكىنى ۋە يېڭىلىغۇچ
+  name: "\u0626\u06D5\u067E \u062F\u06C7\u0643\u0649\u0646\u0649 \u06CB\u06D5 \u064A\
+    \u06D0\u06AD\u0649\u0644\u0649\u063A\u06C7\u0686"
 Bookmark:
-  name: خەتكۈچ
+  name: "\u062E\u06D5\u062A\u0643\u06C8\u0686"
 Browser:
-  name: توركۆرگۈ
+  name: "\u062A\u0648\u0631\u0643\u06C6\u0631\u06AF\u06C8"
 Calculator:
-  name: ھېسابلىغۇچ
+  name: "\u06BE\u06D0\u0633\u0627\u0628\u0644\u0649\u063A\u06C7\u0686"
 Calendar & Agenda:
-  name: يىلنامە ۋە كۈنتەرتىپ
+  name: "\u064A\u0649\u0644\u0646\u0627\u0645\u06D5 \u06CB\u06D5 \u0643\u06C8\u0646\
+    \u062A\u06D5\u0631\u062A\u0649\u067E"
 Cloud Storage & File Sync:
-  name: بۇلۇت ساقلىغۇچ ۋە ھۆججەت قەدەمداش
+  name: "\u0628\u06C7\u0644\u06C7\u062A \u0633\u0627\u0642\u0644\u0649\u063A\u06C7\
+    \u0686 \u06CB\u06D5 \u06BE\u06C6\u062C\u062C\u06D5\u062A \u0642\u06D5\u062F\u06D5\
+    \u0645\u062F\u0627\u0634"
+Connectivity:
+  name: "\u0626\u06C7\u0644\u0649\u0646\u0649\u0634\u0686\u0627\u0646\u0644\u0649\u0642"
+DNS & Hosts:
+  name: "DNS \u06CB\u06D5 \u0645\u06C7\u0644\u0627\u0632\u0649\u0645\u06D0\u062A\u0649\
+    \u0631"
+Development:
+  name: "\u062A\u06D5\u0631\u06D5\u0642\u0642\u0649\u064A\u0627\u062A"
 Draw:
-  name: سىزمىچىلىق
+  name: "\u0633\u0649\u0632\u0645\u0649\u0686\u0649\u0644\u0649\u0642"
 Ebook Reader:
-  name: ئېلكىتاب ئوقۇغۇچ
+  name: "\u0626\u06D0\u0644\u0643\u0649\u062A\u0627\u0628 \u0626\u0648\u0642\u06C7\
+    \u063A\u06C7\u0686"
+Email:
+  name: "\u062A\u0648\u0631\u062E\u06D5\u062A"
 File Encryption & Vault:
-  name: ھۆججەت شىفىرلاش ۋە ساقلىغۇچ
+  name: "\u06BE\u06C6\u062C\u062C\u06D5\u062A \u0634\u0649\u0641\u0649\u0631\u0644\
+    \u0627\u0634 \u06CB\u06D5 \u0633\u0627\u0642\u0644\u0649\u063A\u06C7\u0686"
 File Transfer:
-  name: ھۆججەت يوللاش
+  name: "\u06BE\u06C6\u062C\u062C\u06D5\u062A \u064A\u0648\u0644\u0644\u0627\u0634"
 Finance Manager:
-  name: مالىيە باشقۇرغۇچ
+  name: "\u0645\u0627\u0644\u0649\u064A\u06D5 \u0628\u0627\u0634\u0642\u06C7\u0631\
+    \u063A\u06C7\u0686"
 Gallery:
-  name: سۈرەتدان
+  name: "\u0633\u06C8\u0631\u06D5\u062A\u062F\u0627\u0646"
+Graphics:
+  name: "\u0631\u06D5\u0633\u0649\u0645\u0644\u06D5\u0631"
 Icon Pack:
-  name: سىنبەلگە بوغچىسى
+  name: "\u0633\u0649\u0646\u0628\u06D5\u0644\u06AF\u06D5 \u0628\u0648\u063A\u0686\
+    \u0649\u0633\u0649"
+Internet:
+  name: "\u062A\u0648\u0631"
 Keyboard & IME:
-  name: ھەرپتاختا ۋە كىرگۈزگۈچ
+  name: "\u06BE\u06D5\u0631\u067E\u062A\u0627\u062E\u062A\u0627 \u06CB\u06D5 \u0643\
+    \u0649\u0631\u06AF\u06C8\u0632\u06AF\u06C8\u0686"
 Launcher:
-  name: قوزغاتقۇچ
+  name: "\u0642\u0648\u0632\u063A\u0627\u062A\u0642\u06C7\u0686"
 Local Media Player:
-  name: يەرلىك ۋاسىتە قويغۇچ
+  name: "\u064A\u06D5\u0631\u0644\u0649\u0643 \u06CB\u0627\u0633\u0649\u062A\u06D5\
+    \ \u0642\u0648\u064A\u063A\u06C7\u0686"
 Messaging:
-  name: ئۇچۇرلىشىش
+  name: "\u0626\u06C7\u0686\u06C7\u0631\u0644\u0649\u0634\u0649\u0634"
+Multimedia:
+  name: "\u0643\u06C6\u067E \u06CB\u0627\u0633\u0649\u062A\u06D5"
+Navigation:
+  name: "\u064A\u0648\u0644 \u0628\u0627\u0634\u0644\u0627\u0634"
 News:
-  name: خەۋەر
+  name: "\u062E\u06D5\u06CB\u06D5\u0631"
 Note:
-  name: خاتىرە
+  name: "\u062E\u0627\u062A\u0649\u0631\u06D5"
 Online Media Player:
-  name: توردا ۋاسىتە قويغۇچ
+  name: "\u062A\u0648\u0631\u062F\u0627 \u06CB\u0627\u0633\u0649\u062A\u06D5 \u0642\
+    \u0648\u064A\u063A\u06C7\u0686"
 Pass Wallet:
-  name: ئىم ھەميانى
+  name: "\u0626\u0649\u0645 \u06BE\u06D5\u0645\u064A\u0627\u0646\u0649"
 Password & 2FA:
-  name: ئىم ۋە ئىككى ئامىللىق دەلىللەش
+  name: "\u0626\u0649\u0645 \u06CB\u06D5 \u0626\u0649\u0643\u0643\u0649 \u0626\u0627\
+    \u0645\u0649\u0644\u0644\u0649\u0642 \u062F\u06D5\u0644\u0649\u0644\u0644\u06D5\
+    \u0634"
+Phone & SMS:
+  name: "\u0641\u0648\u0646 & \u0642\u0649\u0633\u0642\u0627 \u0626\u06C7\u0686\u06C7\
+    \u0631"
 Podcast:
-  name: تارقاتقۇ
+  name: "\u062A\u0627\u0631\u0642\u0627\u062A\u0642\u06C7"
 Public Transport:
-  name: ئاممىۋى قاتناش خەرىتىسى ۋە ۋاقىت جەدۋىلى
+  name: "\u0626\u0627\u0645\u0645\u0649\u06CB\u0649 \u0642\u0627\u062A\u0646\u0627\
+    \u0634 \u062E\u06D5\u0631\u0649\u062A\u0649\u0633\u0649 \u06CB\u06D5 \u06CB\u0627\
+    \u0642\u0649\u062A \u062C\u06D5\u062F\u06CB\u0649\u0644\u0649"
+Reading:
+  name: "\u0626\u0648\u0642\u06C7\u0634\u0644\u06C7\u0642"
 Recipe Manager:
-  name: رىسالە باشقۇرغۇچ
+  name: "\u0631\u0649\u0633\u0627\u0644\u06D5 \u0628\u0627\u0634\u0642\u06C7\u0631\
+    \u063A\u06C7\u0686"
+Science & Education:
+  name: "\u067E\u06D5\u0646 & \u0645\u0627\u0626\u0627\u0631\u0649\u067E"
+Security:
+  name: "\u0628\u0649\u062E\u06D5\u062A\u06D5\u0631\u0644\u0649\u0643"
 Shopping List:
-  name: مال سېتىۋېلىش تىزىمى
+  name: "\u0645\u0627\u0644 \u0633\u06D0\u062A\u0649\u06CB\u06D0\u0644\u0649\u0634\
+    \ \u062A\u0649\u0632\u0649\u0645\u0649"
 Social Network:
-  name: ئىجتىمائىي تور
+  name: "\u0626\u0649\u062C\u062A\u0649\u0645\u0627\u0626\u0649\u064A \u062A\u0648\
+    \u0631"
+Sports & Health:
+  name: "\u062A\u06D5\u0646\u062A\u06D5\u0631\u0628\u0649\u064A\u06D5 & \u0633\u0627\
+    \u063A\u0644\u0627\u0645\u0644\u0649\u0642"
+System:
+  name: "\u0633\u0649\u0633\u062A\u06D0\u0645\u0627"
 Task:
-  name: ۋەزىپە
+  name: "\u06CB\u06D5\u0632\u0649\u067E\u06D5"
 Text Editor:
-  name: تېكىست تەھرىرلىگۈچ
+  name: "\u062A\u06D0\u0643\u0649\u0633\u062A \u062A\u06D5\u06BE\u0631\u0649\u0631\
+    \u0644\u0649\u06AF\u06C8\u0686"
+Theming:
+  name: "\u0626\u0627\u0633\u0627\u0633\u0649\u064A \u0626\u06C7\u0633\u0644\u06C7\
+    \u0628"
 Translation & Dictionary:
-  name: تەرجىمە ۋە لۇغەت
+  name: "\u062A\u06D5\u0631\u062C\u0649\u0645\u06D5 \u06CB\u06D5 \u0644\u06C7\u063A\
+    \u06D5\u062A"
 Unit Convertor:
-  name: ئولچەم ئالماشتۇرغۇچ
+  name: "\u0626\u0648\u0644\u0686\u06D5\u0645 \u0626\u0627\u0644\u0645\u0627\u0634\
+    \u062A\u06C7\u0631\u063A\u06C7\u0686"
+VPN & Proxy:
+  name: "\u0645\u06D5\u06CB\u06BE\u06C7\u0645 \u0634\u06D5\u062E\u0633\u0649\u064A\
+    \ \u062A\u0648\u0631 \u06CB\u06D5 \u06CB\u0627\u0643\u0627\u0644\u06D5\u062A\u0686\
+    \u0649 \u0645\u06C7\u0644\u0627\u0632\u0649\u0645\u06D0\u062A\u0649\u0631"
 Voice & Video Chat:
-  name: ئۈن ۋە سىن سۆھبەت
+  name: "\u0626\u06C8\u0646 \u06CB\u06D5 \u0633\u0649\u0646 \u0633\u06C6\u06BE\u0628\
+    \u06D5\u062A"
 Wallet:
-  name: ھەميان
+  name: "\u06BE\u06D5\u0645\u064A\u0627\u0646"
 Wallpaper:
-  name: تام قەغەز
+  name: "\u062A\u0627\u0645 \u0642\u06D5\u063A\u06D5\u0632"
 Weather:
-  name: ھاۋا رايى
+  name: "\u06BE\u0627\u06CB\u0627 \u0631\u0627\u064A\u0649"
 Workout:
-  name: چېنىقىش
+  name: "\u0686\u06D0\u0646\u0649\u0642\u0649\u0634"
+Writing:
+  name: "\u064A\u06D0\u0632\u0649\u0642\u0686\u0649\u0644\u0649\u0642"

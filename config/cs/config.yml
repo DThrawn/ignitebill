@@ -1,6 +1,10 @@
 archive:
-  description: Archiv oficiálního repozitáře svobodného softwaru F-Droid. Aplikace zde jsou zastaralé a mohou obsahovat známé zranitelnosti a bezpečnostní problémy!
+  description: "Archiv ofici\xE1ln\xEDho repozit\xE1\u0159e svobodn\xE9ho softwaru\
+    \ F-Droid. Aplikace zde jsou zastaral\xE9 a mohou obsahovat zn\xE1m\xE9 zranitelnosti\
+    \ a bezpe\u010Dnostn\xED probl\xE9my!"
   name: Archiv F-Droid
 repo:
-  description: Oficiální repozitář svobodného softwaru F-Droid. Vše v tomto repozitáři je vždy sestaveno ze zdrojového kódu.
+  description: "Ofici\xE1ln\xED repozit\xE1\u0159 svobodn\xE9ho softwaru F-Droid.\
+    \ V\u0161e v tomto repozit\xE1\u0159i je v\u017Edy sestaveno ze zdrojov\xE9ho\
+    \ k\xF3du."
   name: F-Droid

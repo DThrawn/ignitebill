@@ -1,30 +1,35 @@
 Ads:
-  description: Az alkalmazás reklámot tartalmaz
-  name: Reklámok
+  description: "Az alkalmaz\xE1s rekl\xE1mot tartalmaz"
+  name: "Rekl\xE1mok"
 DisabledAlgorithm:
-  description: Az alkalmazásnak gyenge a biztonsági aláírása
-  name: Nem biztonságos algoritmussal van aláírva
+  description: "Az alkalmaz\xE1snak gyenge a biztons\xE1gi al\xE1\xEDr\xE1sa"
+  name: "Nem biztons\xE1gos algoritmussal van al\xE1\xEDrva"
 KnownVuln:
-  description: Az alkalmazás ismert biztonsági rést tartalmaz
-  name: Ismert sérülékenység
+  description: "Az alkalmaz\xE1s ismert biztons\xE1gi r\xE9st tartalmaz"
+  name: "Ismert s\xE9r\xFCl\xE9kenys\xE9g"
 NoSourceSince:
-  name: Már nincs forráskód
-  description: A forráskód többé nem elérhető, több frissítés nem lehetséges
+  description: "A forr\xE1sk\xF3d t\xF6bb\xE9 nem el\xE9rhet\u0151, t\xF6bb friss\xED\
+    t\xE9s nem lehets\xE9ges"
+  name: "M\xE1r nincs forr\xE1sk\xF3d"
 NonFreeAdd:
-  description: Az alkalmazás nem szabad kiegészítőket támogat
-  name: Nem szabad kiegészítők
+  description: "Az alkalmaz\xE1s nem szabad kieg\xE9sz\xEDt\u0151ket t\xE1mogat"
+  name: "Nem szabad kieg\xE9sz\xEDt\u0151k"
 NonFreeAssets:
-  description: Az alkalmazás nem szabad erőforrásokat tartalmaz
-  name: Nem szabad erőforrások
+  description: "Az alkalmaz\xE1s nem szabad er\u0151forr\xE1sokat tartalmaz"
+  name: "Nem szabad er\u0151forr\xE1sok"
 NonFreeDep:
-  description: Az alkalmazás egyéb, nem szabad alkalmazásoktól függ
-  name: Nem szabad függőségek
+  description: "Az alkalmaz\xE1s egy\xE9b, nem szabad alkalmaz\xE1sokt\xF3l f\xFC\
+    gg"
+  name: "Nem szabad f\xFCgg\u0151s\xE9gek"
 NonFreeNet:
-  description: Ez az alkalmazás nem szabad hálózati szolgáltatást reklámoz, vagy teljes mértékben attól függ
-  name: Nem szabad hálózati szolgáltatások
-Tracking:
-  description: Az alkalmazás nyomon követi és jelenti a tevékenységeit
-  name: Követés
+  description: "Ez az alkalmaz\xE1s nem szabad h\xE1l\xF3zati szolg\xE1ltat\xE1st\
+    \ rekl\xE1moz, vagy teljes m\xE9rt\xE9kben att\xF3l f\xFCgg"
+  name: "Nem szabad h\xE1l\xF3zati szolg\xE1ltat\xE1sok"
 TetheredNet:
-  description: Ez az alkalmazás teljes egészében egy hálózati szolgáltatás egy adott példányára támaszkodik
-  name: Kötött hálózati szolgáltatások
+  description: "Ez az alkalmaz\xE1s teljes eg\xE9sz\xE9ben egy h\xE1l\xF3zati szolg\xE1\
+    ltat\xE1s egy adott p\xE9ld\xE1ny\xE1ra t\xE1maszkodik"
+  name: "K\xF6t\xF6tt h\xE1l\xF3zati szolg\xE1ltat\xE1sok"
+Tracking:
+  description: "Az alkalmaz\xE1s nyomon k\xF6veti \xE9s jelenti a tev\xE9kenys\xE9\
+    geit"
+  name: "K\xF6vet\xE9s"

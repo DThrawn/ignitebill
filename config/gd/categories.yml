@@ -5,24 +5,24 @@ Development:
 Graphics:
   name: Grafaigeachd
 Internet:
-  name: Eadar-lìon
+  name: "Eadar-l\xECon"
 Multimedia:
   name: Meadhanan
 Navigation:
-  name: Seòladaireachd
+  name: "Se\xF2ladaireachd"
 Phone & SMS:
-  name: Fòn ⁊ SMS
+  name: "F\xF2n \u204A SMS"
 Reading:
   name: Leughadh
 Science & Education:
-  name: Saidheans ⁊ foghlam
+  name: "Saidheans \u204A foghlam"
 Security:
-  name: Tèarainteachd
+  name: "T\xE8arainteachd"
 Sports & Health:
-  name: Spòrs ⁊ slàinte
+  name: "Sp\xF2rs \u204A sl\xE0inte"
 System:
   name: An siostam
 Theming:
-  name: Ùrlaran
+  name: "\xD9rlaran"
 Writing:
-  name: Sgrìobhadh
+  name: "Sgr\xECobhadh"

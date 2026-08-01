@@ -1,30 +1,32 @@
 Ads:
-  description: Aquesta aplicació conté publicitat
+  description: "Aquesta aplicaci\xF3 cont\xE9 publicitat"
   name: Anuncis
 DisabledAlgorithm:
-  description: La signatura de seguretat de l'aplicació és feble
+  description: "La signatura de seguretat de l'aplicaci\xF3 \xE9s feble"
   name: Signat amb un algoritme insegur
 KnownVuln:
-  description: Aquesta aplicació té un problema de seguretat conegut
+  description: "Aquesta aplicaci\xF3 t\xE9 un problema de seguretat conegut"
   name: Vulnerabilitat coneguda
 NoSourceSince:
+  description: "El codi font ja no \xE9s disponible, no \xE9s possible d'actualitzar"
   name: Sense font des de
-  description: El codi font ja no és disponible, no és possible d'actualitzar
 NonFreeAdd:
-  description: Aquesta aplicació promou complements no lliures
+  description: "Aquesta aplicaci\xF3 promou complements no lliures"
   name: Complements no lliures
 NonFreeAssets:
-  description: Aquesta aplicació conté recursos no lliures
-  name: Recursos no gratuïts
+  description: "Aquesta aplicaci\xF3 cont\xE9 recursos no lliures"
+  name: "Recursos no gratu\xEFts"
 NonFreeDep:
-  description: Aquesta aplicació depèn d'altres aplicacions no lliures
-  name: Dependències no lliures
+  description: "Aquesta aplicaci\xF3 dep\xE8n d'altres aplicacions no lliures"
+  name: "Depend\xE8ncies no lliures"
 NonFreeNet:
-  description: Aquesta aplicació promou o depèn completament de serveis de xarxa no lliures
+  description: "Aquesta aplicaci\xF3 promou o dep\xE8n completament de serveis de\
+    \ xarxa no lliures"
   name: Serveis de xarxa no lliures
-Tracking:
-  description: Aquesta aplicació segueix i informa sobre la vostra activitat
-  name: Seguiment
 TetheredNet:
-  description: Aquesta aplicació depèn completament d'algunes instàncies d'un servei de xarxa
+  description: "Aquesta aplicaci\xF3 dep\xE8n completament d'algunes inst\xE0ncies\
+    \ d'un servei de xarxa"
   name: Serveis de Xarxes Vinculades (Tethered)
+Tracking:
+  description: "Aquesta aplicaci\xF3 segueix i informa sobre la vostra activitat"
+  name: Seguiment

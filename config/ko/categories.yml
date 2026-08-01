@@ -1,319 +1,399 @@
-Connectivity:
-  name: 접속성
-Development:
-  name: 개발
-  description: 코딩, 프로그래밍, IDE, 터미널, 개발자 도구
-Graphics:
-  name: 그래픽
-  description: 이미지 편집, 사진 보정, 시각 디자인 도구
-Internet:
-  name: 인터넷
-Multimedia:
-  name: 멀티미디어
-Navigation:
-  name: 네비게이션
-  description: 지도, GPS, 길찾기, 경로 계획 앱
-Phone & SMS:
-  name: 전화 및 문자
-  description: 전화 앱, 통화 목록 관리자, 문자 메시지 유틸리티
-Reading:
-  name: 독서
-  description: 문서, 장문 콘텐츠, 나중에 읽을 글, 웹 리더 앱
-Science & Education:
-  name: 과학 및 교육
-  description: 학습, 공부, 참고 자료, 교육용 앱
-Security:
-  name: 보안
-Sports & Health:
-  name: 스포츠 및 건강
-  description: 피트니스 추적, 웰빙, 스포츠 점수, 건강 모니터링
-System:
-  name: 시스템
-Theming:
-  name: 꾸미기
-  description: 테마, 글꼴, UI 스타일로 기기의 외관을 사용자화
-Writing:
-  name: 작성
-  description: 워드프로세서, 일기, 초안, 긴 글 작성용 앱
-App Store & Updater:
-  name: 앱 스토어 및 업데이터
-  description: 소프트웨어 저장소로부터 앱을 탐색, 설치, 업데이트
-Bookmark:
-  name: 북마크
-  description: 즐겨찾기 링크와 읽기 목록을 저장, 체계화, 관리
-Browser:
-  name: 브라우저
-  description: 인터넷 서핑과 웹사이트 열람을 위한 웹 브라우저
-Calculator:
-  name: 계산기
-  description: 산수, 과학적, 수학적 계산 도구
-Calendar & Agenda:
-  name: 캘린더 및 일정
-  description: 일정, 알림, 약속, 일일 계획표 관리
-Cloud Storage & File Sync:
-  name: 클라우드 저장소 및 파일 동기화
-  description: 클라우드 서비스로 원격 백업, 동기화, 접근
-DNS & Hosts:
-  name: DNS 및 호스트
-  description: DNS 리졸버, 광고 차단, hosts 파일, 도메인 라우팅 구성
-Draw:
-  name: 그리기
-  description: 스케치, 그림, 일러스트레이션, 디지털 아트 캔버스 앱
-Ebook Reader:
-  name: 전자책 리더
-  description: 전자책, EPUB, PDF, 디지털 도서 및 출판물 열람
-Email:
-  name: 이메일
-  description: 이메일 메시지를 전송, 수신, 관리하는 메일 클라이언트
-File Encryption & Vault:
-  name: 파일 암호화 및 보관
-  description: 개인 파일과 폴더를 암호화, 잠금, 숨기기
-File Transfer:
-  name: 파일 전송
-  description: FTP, LAN, 블루투스, 개인 간 공유(P2P)로 파일 공유 및 전송
-Finance Manager:
-  name: 재무 관리자
-  description: 지출, 예산, 수입, 개인 재무 현황 추적
-Gallery:
-  name: 갤러리
-  description: 사진, 이미지, 동영상을 탐색, 열람, 체계화
-Icon Pack:
-  name: 아이콘 팩
-  description: 앱 아이콘의 스타일과 테마를 설정하는 맞춤 아이콘 모음
-Keyboard & IME:
-  name: 키보드 및 IME
-  description: 사용자 지정 키보드, 입력 방식, 자동 교정, 타이핑 앱
-Launcher:
-  name: 런처
-  description: 홈 화면 대체, 데스크톱 환경 앱
-Local Media Player:
-  name: 로컬 미디어 플레이어
-  description: 기기에 저장된 오프라인 오디오 및 비디오 파일 재생
-Messaging:
-  name: 메시지
-  description: 인스턴트 메시지, 채팅, SMS 커뮤니케이션 앱
-News:
-  name: 뉴스
-  description: 최신 헤드라인, 기사, RSS 피드, 뉴스 포털
-Note:
-  name: 메모
-  description: 텍스트 편집기, 메모, 빠른 노트 작성 및 정리 앱
-Online Media Player:
-  name: 온라인 미디어 플레이어
-  description: 인터넷에서 음악, 동영상, 실시간 콘텐츠 스트리밍
-Pass Wallet:
-  name: 패스 지갑
-  description: 탑승권, 티켓, 멤버십 카드, 쿠폰 저장
-Password & 2FA:
-  name: 비밀번호 및 2단계 인증
-  description: 비밀번호 관리자, 인증기, OTP, TOTP, HOTP, U2F, FIDO, 2단계 인증 도구
-Podcast:
-  name: 팟캐스트
-  description: 팟캐스트 음성 에피소드 및 쇼를 구독, 스트리밍, 다운로드
-Public Transport:
-  name: 대중교통 지도 및 시간표
-  description: 버스, 기차, 지하철 등 대중교통 시간표 확인 및 여정 계획
-Recipe Manager:
-  name: 레시피 관리자
-  description: 조리법과 식사 아이디어를 저장, 정리, 탐색
-Shopping List:
-  name: 쇼핑 목록
-  description: 식재료 목록, 장보기 관리, 공동 쇼핑 앱
-Social Network:
-  name: 소셜 네트워크
-  description: 소셜 미디어, 마이크로블로그, 온라인 커뮤니티 플랫폼
-Task:
-  name: 작업
-  description: 할 일 목록, 작업 관리자, 생산성 및 업무 관리 도구
-Text Editor:
-  name: 텍스트 편집기
-  description: 평문 텍스트 편집기, 마크다운 편집기, 글쓰기 도구
-Translation & Dictionary:
-  name: 번역 및 사전
-  description: 언어 번역, 단어 검색, 어휘 자료 열람
-Unit Convertor:
-  name: 단위 변환기
-  description: 길이, 무게, 온도, 통화 등의 단위 간 변환
-Voice & Video Chat:
-  name: 음성 및 영상 채팅
-  description: 음성 및 영상통화, 회의, VoIP 커뮤니케이션 앱
-VPN & Proxy:
-  name: VPN 및 프록시
-  description: 트래픽 암호화, 제한(검열) 우회, 연결 익명화
-Wallet:
-  name: 지갑
-  description: 결제, 카드, 암호화폐 관리를 위한 디지털 지갑
-Wallpaper:
-  name: 배경화면
-  description: 홈 화면과 잠금화면의 배경화면 및 라이브 배경화면 앱
-Weather:
-  name: 날씨
-  description: 예보, 레이더, 기온, 기상 조건 앱
-Workout:
-  name: 운동
-  description: 운동 루틴, 헬스장 기록, 달리기, 피트니스 훈련 앱
 AI Chat:
-  name: AI 채팅
-  description: AI 어시스턴트, 챗봇, 대형 언어 모델(LLM) 인터페이스
-App Manager:
-  name: 앱 관리자
-  description: 설치한 앱, 인텐트, 권한을 관리, 체계화, 제어
-Clock:
-  name: 시계
-  description: 현재 시각 보기
-Contact:
-  name: 연락처
-  description: 주소록, 전화번호부, 인명 관리 앱
-Firewall:
-  name: 방화벽
-  description: 원치 않는 네트워크 트래픽 차단, 앱의 인터넷 접속 제어
-Forum:
-  name: 포럼
-  description: 토의 게시판, 커뮤니티 스레드, 질의응답 플랫폼
-Habit Tracker:
-  name: 습관 추적기
-  description: 습관 만들기, 일일 목표 추적, 연속 달성 모니터링
-Inventory:
-  name: 인벤토리
-  description: 실물 품목과 재고를 추적, 목록화, 관리
-Location Tracker & Sharer:
-  name: 위치 추적 및 공유기
-  description: 타인과 실시간 GPS 위치 공유 및 모니터링
-Music Practice Tool:
-  name: 음악 연습용 도구
-  description: 튜너, 메트로놈, 화음 도구, 악기 연습 도구
-Network Analyzer:
-  name: 네트워크 분석기
-  description: Wi-Fi 진단, 네트워크 스캔, 연결 속도 모니터링
-Religion:
-  name: 종교
-  description: 예배 시간, 경전, 묵상집, 영적 수련 앱
+  description: "AI \uC5B4\uC2DC\uC2A4\uD134\uD2B8, \uCC57\uBD07, \uB300\uD615 \uC5B8\
+    \uC5B4 \uBAA8\uB378(LLM) \uC778\uD130\uD398\uC774\uC2A4"
+  name: "AI \uCC44\uD305"
 Action Game:
-  name: 액션 게임
-  description: 액션, 스포츠, 레이싱, 플랫포머 게임
+  description: "\uC561\uC158, \uC2A4\uD3EC\uCE20, \uB808\uC774\uC2F1, \uD50C\uB7AB\
+    \uD3EC\uBA38 \uAC8C\uC784"
+  name: "\uC561\uC158 \uAC8C\uC784"
 Alarm Clock:
-  name: 알람시계
-  description: 시간에 맞춰 알람 설정
+  description: "\uC2DC\uAC04\uC5D0 \uB9DE\uCDB0 \uC54C\uB78C \uC124\uC815"
+  name: "\uC54C\uB78C\uC2DC\uACC4"
+App Manager:
+  description: "\uC124\uCE58\uD55C \uC571, \uC778\uD150\uD2B8, \uAD8C\uD55C\uC744\
+    \ \uAD00\uB9AC, \uCCB4\uACC4\uD654, \uC81C\uC5B4"
+  name: "\uC571 \uAD00\uB9AC\uC790"
+App Store & Updater:
+  description: "\uC18C\uD504\uD2B8\uC6E8\uC5B4 \uC800\uC7A5\uC18C\uB85C\uBD80\uD130\
+    \ \uC571\uC744 \uD0D0\uC0C9, \uC124\uCE58, \uC5C5\uB370\uC774\uD2B8"
+  name: "\uC571 \uC2A4\uD1A0\uC5B4 \uBC0F \uC5C5\uB370\uC774\uD130"
 Battery:
-  name: 배터리
-  description: 배터리 수명, 전력 사용량, 충전 모니터링 및 최적화
+  description: "\uBC30\uD130\uB9AC \uC218\uBA85, \uC804\uB825 \uC0AC\uC6A9\uB7C9,\
+    \ \uCDA9\uC804 \uBAA8\uB2C8\uD130\uB9C1 \uBC0F \uCD5C\uC801\uD654"
+  name: "\uBC30\uD130\uB9AC"
 Board Game:
-  name: 보드게임
-  description: 보드게임, 체스, 바둑, 틱택토
+  description: "\uBCF4\uB4DC\uAC8C\uC784, \uCCB4\uC2A4, \uBC14\uB451, \uD2F1\uD0DD\
+    \uD1A0"
+  name: "\uBCF4\uB4DC\uAC8C\uC784"
+Bookmark:
+  description: "\uC990\uACA8\uCC3E\uAE30 \uB9C1\uD06C\uC640 \uC77D\uAE30 \uBAA9\uB85D\
+    \uC744 \uC800\uC7A5, \uCCB4\uACC4\uD654, \uAD00\uB9AC"
+  name: "\uBD81\uB9C8\uD06C"
+Browser:
+  description: "\uC778\uD130\uB137 \uC11C\uD551\uACFC \uC6F9\uC0AC\uC774\uD2B8 \uC5F4\
+    \uB78C\uC744 \uC704\uD55C \uC6F9 \uBE0C\uB77C\uC6B0\uC800"
+  name: "\uBE0C\uB77C\uC6B0\uC800"
+Calculator:
+  description: "\uC0B0\uC218, \uACFC\uD559\uC801, \uC218\uD559\uC801 \uACC4\uC0B0\
+    \ \uB3C4\uAD6C"
+  name: "\uACC4\uC0B0\uAE30"
+Calendar & Agenda:
+  description: "\uC77C\uC815, \uC54C\uB9BC, \uC57D\uC18D, \uC77C\uC77C \uACC4\uD68D\
+    \uD45C \uAD00\uB9AC"
+  name: "\uCE98\uB9B0\uB354 \uBC0F \uC77C\uC815"
 Camera:
-  name: 카메라
-  description: 카메라, IP 카메라 뷰어, 동영상 녹화 앱
+  description: "\uCE74\uBA54\uB77C, IP \uCE74\uBA54\uB77C \uBDF0\uC5B4, \uB3D9\uC601\
+    \uC0C1 \uB179\uD654 \uC571"
+  name: "\uCE74\uBA54\uB77C"
 Card Game:
-  name: 카드 게임
-  description: 카드 게임, 솔리테어
+  description: "\uCE74\uB4DC \uAC8C\uC784, \uC194\uB9AC\uD14C\uC5B4"
+  name: "\uCE74\uB4DC \uAC8C\uC784"
 Cast:
-  name: 캐스트
-  description: 캐스트, UPnP, DLNA, FCast, AirPlay, Miracast
+  description: "\uCE90\uC2A4\uD2B8, UPnP, DLNA, FCast, AirPlay, Miracast"
+  name: "\uCE90\uC2A4\uD2B8"
 Casual Game:
-  name: 캐주얼 게임
-  description: 간단한 캐주얼 게임
-Dice:
-  name: 주사위
-  description: 무작위 선택기
-Diet:
-  name: 식단
-  description: 영양소, 칼로리, 식품 관리 및 추적
-Download:
-  name: 다운로드
-  description: 다운로더, 다운로드 매니저, 토렌트 클라이언트
-Educational Game:
-  name: 교육용 게임
-  description: 게임, 퀴즈로 배우기
-Emulator:
-  name: 에뮬레이터
-  description: 게임과 프로그램을 실행하는 에뮬레이터
-File Manager:
-  name: 파일 관리자
-  description: 파일 관리자 및 탐색기
-Flashlight:
-  name: 손전등
-  description: 손전등 및 LED 플래시라이트 앱
-Lyrics:
-  name: 가사
-  description: 가사 열람 및 검색
-Meditation:
-  name: 명상
-  description: 명상, 마음챙김, 호흡 연습
-Party Game:
-  name: 파티 게임
-  description: 멀티플레이어, 파티 게임
-Platformer Game:
-  name: 플랫포머 게임
-  description: 플랫포머, 횡스크롤 게임
-Puzzle Game:
-  name: 퍼즐 게임
-  description: 퍼즐, 스도쿠, 기억력 게임
-Radio:
-  name: 라디오
-  description: FM/AM 라디오 방송국과 인터넷 라디오 방송을 실시간으로 스트리밍
-Role-Playing Game:
-  name: 롤플레잉 게임
-  description: RPG, 로그라이크
-Remote Access:
-  name: 원격 접속
-  description: RDP, VNC, SSH로 데스크톱, 서버, 기기를 원격으로 제어
-Remote Controller:
-  name: 리모컨
-  description: TV, 에어컨 등의 기기를 IR이나 스마트 홈으로 원격 제어
-Shooter Game:
-  name: 슈팅 게임
-  description: 목표를 향해 사격하기
-Strategy Game:
-  name: 전략 게임
-  description: 전략, 시뮬레이션
-Sport Game:
-  name: 스포츠 게임
-  description: 스포츠 게임
-Stopwatch:
-  name: 스톱워치
-  description: 진행도, 경과 시간, 랩 타임 측정
-Word Game:
-  name: 단어 게임
-  description: 단어 퍼즐 게임, 십자말풀이, 단어 추측
-Visual Novel:
-  name: 비주얼 노벨
-  description: 비주얼 노벨, 미연시, 스토리 게임
-Timer:
-  name: 타이머
-  description: 시간 측정, 시간 기록, 카운트다운
-Text to Speech:
-  description: TTS 도구
-  name: 텍스트 음성 변환
-Game Helper:
-  name: 게임 도우미
-  description: 게임 도우미, 어시스턴트, 보조, 점수판, 타이머
-Health Manager:
-  name: 건강 관리자
-  description: 체중, 심박, 혈압, 월경 등 건강 지표 관리
-Market & Price:
-  name: 시장 및 가격
-  description: 가격, 환율, 주식
-Notification:
-  name: 알림
-  description: 알림 관리, 기록, 리디렉션, 향상
-Recorder:
-  name: 녹음기
-  description: 오디오, 화면, 통화 녹음
-Schedule:
-  name: 일정
-  description: 콘퍼런스 및 이벤트 일정
-Time Tracker:
-  name: 시간 추적
-  description: 활동 시간과 화면 사용 시간 추적
-Push:
-  name: 푸시
-  description: 푸시 메시지
-Volume:
-  name: 음량
-  description: 음량 설정 관리
-OCR:
-  name: OCR
-  description: 문서 스캔, 광학 문자 인식
+  description: "\uAC04\uB2E8\uD55C \uCE90\uC8FC\uC5BC \uAC8C\uC784"
+  name: "\uCE90\uC8FC\uC5BC \uAC8C\uC784"
+Clock:
+  description: "\uD604\uC7AC \uC2DC\uAC01 \uBCF4\uAE30"
+  name: "\uC2DC\uACC4"
+Cloud Storage & File Sync:
+  description: "\uD074\uB77C\uC6B0\uB4DC \uC11C\uBE44\uC2A4\uB85C \uC6D0\uACA9 \uBC31\
+    \uC5C5, \uB3D9\uAE30\uD654, \uC811\uADFC"
+  name: "\uD074\uB77C\uC6B0\uB4DC \uC800\uC7A5\uC18C \uBC0F \uD30C\uC77C \uB3D9\uAE30\
+    \uD654"
 Code & Forge:
-  name: 코드 및 개발 플랫폼
-  description: Git, 소스 코드 호스팅, 개발 플랫폼
+  description: "Git, \uC18C\uC2A4 \uCF54\uB4DC \uD638\uC2A4\uD305, \uAC1C\uBC1C \uD50C\
+    \uB7AB\uD3FC"
+  name: "\uCF54\uB4DC \uBC0F \uAC1C\uBC1C \uD50C\uB7AB\uD3FC"
+Connectivity:
+  name: "\uC811\uC18D\uC131"
+Contact:
+  description: "\uC8FC\uC18C\uB85D, \uC804\uD654\uBC88\uD638\uBD80, \uC778\uBA85 \uAD00\
+    \uB9AC \uC571"
+  name: "\uC5F0\uB77D\uCC98"
+DNS & Hosts:
+  description: "DNS \uB9AC\uC878\uBC84, \uAD11\uACE0 \uCC28\uB2E8, hosts \uD30C\uC77C\
+    , \uB3C4\uBA54\uC778 \uB77C\uC6B0\uD305 \uAD6C\uC131"
+  name: "DNS \uBC0F \uD638\uC2A4\uD2B8"
+Development:
+  description: "\uCF54\uB529, \uD504\uB85C\uADF8\uB798\uBC0D, IDE, \uD130\uBBF8\uB110\
+    , \uAC1C\uBC1C\uC790 \uB3C4\uAD6C"
+  name: "\uAC1C\uBC1C"
+Dice:
+  description: "\uBB34\uC791\uC704 \uC120\uD0DD\uAE30"
+  name: "\uC8FC\uC0AC\uC704"
+Diet:
+  description: "\uC601\uC591\uC18C, \uCE7C\uB85C\uB9AC, \uC2DD\uD488 \uAD00\uB9AC\
+    \ \uBC0F \uCD94\uC801"
+  name: "\uC2DD\uB2E8"
+Download:
+  description: "\uB2E4\uC6B4\uB85C\uB354, \uB2E4\uC6B4\uB85C\uB4DC \uB9E4\uB2C8\uC800\
+    , \uD1A0\uB80C\uD2B8 \uD074\uB77C\uC774\uC5B8\uD2B8"
+  name: "\uB2E4\uC6B4\uB85C\uB4DC"
+Draw:
+  description: "\uC2A4\uCF00\uCE58, \uADF8\uB9BC, \uC77C\uB7EC\uC2A4\uD2B8\uB808\uC774\
+    \uC158, \uB514\uC9C0\uD138 \uC544\uD2B8 \uCE94\uBC84\uC2A4 \uC571"
+  name: "\uADF8\uB9AC\uAE30"
+Ebook Reader:
+  description: "\uC804\uC790\uCC45, EPUB, PDF, \uB514\uC9C0\uD138 \uB3C4\uC11C \uBC0F\
+    \ \uCD9C\uD310\uBB3C \uC5F4\uB78C"
+  name: "\uC804\uC790\uCC45 \uB9AC\uB354"
+Educational Game:
+  description: "\uAC8C\uC784, \uD034\uC988\uB85C \uBC30\uC6B0\uAE30"
+  name: "\uAD50\uC721\uC6A9 \uAC8C\uC784"
+Email:
+  description: "\uC774\uBA54\uC77C \uBA54\uC2DC\uC9C0\uB97C \uC804\uC1A1, \uC218\uC2E0\
+    , \uAD00\uB9AC\uD558\uB294 \uBA54\uC77C \uD074\uB77C\uC774\uC5B8\uD2B8"
+  name: "\uC774\uBA54\uC77C"
+Emulator:
+  description: "\uAC8C\uC784\uACFC \uD504\uB85C\uADF8\uB7A8\uC744 \uC2E4\uD589\uD558\
+    \uB294 \uC5D0\uBBAC\uB808\uC774\uD130"
+  name: "\uC5D0\uBBAC\uB808\uC774\uD130"
+File Encryption & Vault:
+  description: "\uAC1C\uC778 \uD30C\uC77C\uACFC \uD3F4\uB354\uB97C \uC554\uD638\uD654\
+    , \uC7A0\uAE08, \uC228\uAE30\uAE30"
+  name: "\uD30C\uC77C \uC554\uD638\uD654 \uBC0F \uBCF4\uAD00"
+File Manager:
+  description: "\uD30C\uC77C \uAD00\uB9AC\uC790 \uBC0F \uD0D0\uC0C9\uAE30"
+  name: "\uD30C\uC77C \uAD00\uB9AC\uC790"
+File Transfer:
+  description: "FTP, LAN, \uBE14\uB8E8\uD22C\uC2A4, \uAC1C\uC778 \uAC04 \uACF5\uC720\
+    (P2P)\uB85C \uD30C\uC77C \uACF5\uC720 \uBC0F \uC804\uC1A1"
+  name: "\uD30C\uC77C \uC804\uC1A1"
+Finance Manager:
+  description: "\uC9C0\uCD9C, \uC608\uC0B0, \uC218\uC785, \uAC1C\uC778 \uC7AC\uBB34\
+    \ \uD604\uD669 \uCD94\uC801"
+  name: "\uC7AC\uBB34 \uAD00\uB9AC\uC790"
+Firewall:
+  description: "\uC6D0\uCE58 \uC54A\uB294 \uB124\uD2B8\uC6CC\uD06C \uD2B8\uB798\uD53D\
+    \ \uCC28\uB2E8, \uC571\uC758 \uC778\uD130\uB137 \uC811\uC18D \uC81C\uC5B4"
+  name: "\uBC29\uD654\uBCBD"
+Flashlight:
+  description: "\uC190\uC804\uB4F1 \uBC0F LED \uD50C\uB798\uC2DC\uB77C\uC774\uD2B8\
+    \ \uC571"
+  name: "\uC190\uC804\uB4F1"
+Forum:
+  description: "\uD1A0\uC758 \uAC8C\uC2DC\uD310, \uCEE4\uBBA4\uB2C8\uD2F0 \uC2A4\uB808\
+    \uB4DC, \uC9C8\uC758\uC751\uB2F5 \uD50C\uB7AB\uD3FC"
+  name: "\uD3EC\uB7FC"
+Gallery:
+  description: "\uC0AC\uC9C4, \uC774\uBBF8\uC9C0, \uB3D9\uC601\uC0C1\uC744 \uD0D0\uC0C9\
+    , \uC5F4\uB78C, \uCCB4\uACC4\uD654"
+  name: "\uAC24\uB7EC\uB9AC"
+Game Helper:
+  description: "\uAC8C\uC784 \uB3C4\uC6B0\uBBF8, \uC5B4\uC2DC\uC2A4\uD134\uD2B8, \uBCF4\
+    \uC870, \uC810\uC218\uD310, \uD0C0\uC774\uBA38"
+  name: "\uAC8C\uC784 \uB3C4\uC6B0\uBBF8"
+Graphics:
+  description: "\uC774\uBBF8\uC9C0 \uD3B8\uC9D1, \uC0AC\uC9C4 \uBCF4\uC815, \uC2DC\
+    \uAC01 \uB514\uC790\uC778 \uB3C4\uAD6C"
+  name: "\uADF8\uB798\uD53D"
+Habit Tracker:
+  description: "\uC2B5\uAD00 \uB9CC\uB4E4\uAE30, \uC77C\uC77C \uBAA9\uD45C \uCD94\uC801\
+    , \uC5F0\uC18D \uB2EC\uC131 \uBAA8\uB2C8\uD130\uB9C1"
+  name: "\uC2B5\uAD00 \uCD94\uC801\uAE30"
+Health Manager:
+  description: "\uCCB4\uC911, \uC2EC\uBC15, \uD608\uC555, \uC6D4\uACBD \uB4F1 \uAC74\
+    \uAC15 \uC9C0\uD45C \uAD00\uB9AC"
+  name: "\uAC74\uAC15 \uAD00\uB9AC\uC790"
+Icon Pack:
+  description: "\uC571 \uC544\uC774\uCF58\uC758 \uC2A4\uD0C0\uC77C\uACFC \uD14C\uB9C8\
+    \uB97C \uC124\uC815\uD558\uB294 \uB9DE\uCDA4 \uC544\uC774\uCF58 \uBAA8\uC74C"
+  name: "\uC544\uC774\uCF58 \uD329"
+Internet:
+  name: "\uC778\uD130\uB137"
+Inventory:
+  description: "\uC2E4\uBB3C \uD488\uBAA9\uACFC \uC7AC\uACE0\uB97C \uCD94\uC801, \uBAA9\
+    \uB85D\uD654, \uAD00\uB9AC"
+  name: "\uC778\uBCA4\uD1A0\uB9AC"
+Keyboard & IME:
+  description: "\uC0AC\uC6A9\uC790 \uC9C0\uC815 \uD0A4\uBCF4\uB4DC, \uC785\uB825 \uBC29\
+    \uC2DD, \uC790\uB3D9 \uAD50\uC815, \uD0C0\uC774\uD551 \uC571"
+  name: "\uD0A4\uBCF4\uB4DC \uBC0F IME"
+Launcher:
+  description: "\uD648 \uD654\uBA74 \uB300\uCCB4, \uB370\uC2A4\uD06C\uD1B1 \uD658\uACBD\
+    \ \uC571"
+  name: "\uB7F0\uCC98"
+Local Media Player:
+  description: "\uAE30\uAE30\uC5D0 \uC800\uC7A5\uB41C \uC624\uD504\uB77C\uC778 \uC624\
+    \uB514\uC624 \uBC0F \uBE44\uB514\uC624 \uD30C\uC77C \uC7AC\uC0DD"
+  name: "\uB85C\uCEEC \uBBF8\uB514\uC5B4 \uD50C\uB808\uC774\uC5B4"
+Location Tracker & Sharer:
+  description: "\uD0C0\uC778\uACFC \uC2E4\uC2DC\uAC04 GPS \uC704\uCE58 \uACF5\uC720\
+    \ \uBC0F \uBAA8\uB2C8\uD130\uB9C1"
+  name: "\uC704\uCE58 \uCD94\uC801 \uBC0F \uACF5\uC720\uAE30"
+Lyrics:
+  description: "\uAC00\uC0AC \uC5F4\uB78C \uBC0F \uAC80\uC0C9"
+  name: "\uAC00\uC0AC"
+Market & Price:
+  description: "\uAC00\uACA9, \uD658\uC728, \uC8FC\uC2DD"
+  name: "\uC2DC\uC7A5 \uBC0F \uAC00\uACA9"
+Meditation:
+  description: "\uBA85\uC0C1, \uB9C8\uC74C\uCC59\uAE40, \uD638\uD761 \uC5F0\uC2B5"
+  name: "\uBA85\uC0C1"
+Messaging:
+  description: "\uC778\uC2A4\uD134\uD2B8 \uBA54\uC2DC\uC9C0, \uCC44\uD305, SMS \uCEE4\
+    \uBBA4\uB2C8\uCF00\uC774\uC158 \uC571"
+  name: "\uBA54\uC2DC\uC9C0"
+Multimedia:
+  name: "\uBA40\uD2F0\uBBF8\uB514\uC5B4"
+Music Practice Tool:
+  description: "\uD29C\uB108, \uBA54\uD2B8\uB85C\uB188, \uD654\uC74C \uB3C4\uAD6C\
+    , \uC545\uAE30 \uC5F0\uC2B5 \uB3C4\uAD6C"
+  name: "\uC74C\uC545 \uC5F0\uC2B5\uC6A9 \uB3C4\uAD6C"
+Navigation:
+  description: "\uC9C0\uB3C4, GPS, \uAE38\uCC3E\uAE30, \uACBD\uB85C \uACC4\uD68D \uC571"
+  name: "\uB124\uBE44\uAC8C\uC774\uC158"
+Network Analyzer:
+  description: "Wi-Fi \uC9C4\uB2E8, \uB124\uD2B8\uC6CC\uD06C \uC2A4\uCE94, \uC5F0\uACB0\
+    \ \uC18D\uB3C4 \uBAA8\uB2C8\uD130\uB9C1"
+  name: "\uB124\uD2B8\uC6CC\uD06C \uBD84\uC11D\uAE30"
+News:
+  description: "\uCD5C\uC2E0 \uD5E4\uB4DC\uB77C\uC778, \uAE30\uC0AC, RSS \uD53C\uB4DC\
+    , \uB274\uC2A4 \uD3EC\uD138"
+  name: "\uB274\uC2A4"
+Note:
+  description: "\uD14D\uC2A4\uD2B8 \uD3B8\uC9D1\uAE30, \uBA54\uBAA8, \uBE60\uB978\
+    \ \uB178\uD2B8 \uC791\uC131 \uBC0F \uC815\uB9AC \uC571"
+  name: "\uBA54\uBAA8"
+Notification:
+  description: "\uC54C\uB9BC \uAD00\uB9AC, \uAE30\uB85D, \uB9AC\uB514\uB809\uC158\
+    , \uD5A5\uC0C1"
+  name: "\uC54C\uB9BC"
+OCR:
+  description: "\uBB38\uC11C \uC2A4\uCE94, \uAD11\uD559 \uBB38\uC790 \uC778\uC2DD"
+  name: OCR
+Online Media Player:
+  description: "\uC778\uD130\uB137\uC5D0\uC11C \uC74C\uC545, \uB3D9\uC601\uC0C1, \uC2E4\
+    \uC2DC\uAC04 \uCF58\uD150\uCE20 \uC2A4\uD2B8\uB9AC\uBC0D"
+  name: "\uC628\uB77C\uC778 \uBBF8\uB514\uC5B4 \uD50C\uB808\uC774\uC5B4"
+Party Game:
+  description: "\uBA40\uD2F0\uD50C\uB808\uC774\uC5B4, \uD30C\uD2F0 \uAC8C\uC784"
+  name: "\uD30C\uD2F0 \uAC8C\uC784"
+Pass Wallet:
+  description: "\uD0D1\uC2B9\uAD8C, \uD2F0\uCF13, \uBA64\uBC84\uC2ED \uCE74\uB4DC\
+    , \uCFE0\uD3F0 \uC800\uC7A5"
+  name: "\uD328\uC2A4 \uC9C0\uAC11"
+Password & 2FA:
+  description: "\uBE44\uBC00\uBC88\uD638 \uAD00\uB9AC\uC790, \uC778\uC99D\uAE30, OTP,\
+    \ TOTP, HOTP, U2F, FIDO, 2\uB2E8\uACC4 \uC778\uC99D \uB3C4\uAD6C"
+  name: "\uBE44\uBC00\uBC88\uD638 \uBC0F 2\uB2E8\uACC4 \uC778\uC99D"
+Phone & SMS:
+  description: "\uC804\uD654 \uC571, \uD1B5\uD654 \uBAA9\uB85D \uAD00\uB9AC\uC790\
+    , \uBB38\uC790 \uBA54\uC2DC\uC9C0 \uC720\uD2F8\uB9AC\uD2F0"
+  name: "\uC804\uD654 \uBC0F \uBB38\uC790"
+Platformer Game:
+  description: "\uD50C\uB7AB\uD3EC\uBA38, \uD6A1\uC2A4\uD06C\uB864 \uAC8C\uC784"
+  name: "\uD50C\uB7AB\uD3EC\uBA38 \uAC8C\uC784"
+Podcast:
+  description: "\uD31F\uCE90\uC2A4\uD2B8 \uC74C\uC131 \uC5D0\uD53C\uC18C\uB4DC \uBC0F\
+    \ \uC1FC\uB97C \uAD6C\uB3C5, \uC2A4\uD2B8\uB9AC\uBC0D, \uB2E4\uC6B4\uB85C\uB4DC"
+  name: "\uD31F\uCE90\uC2A4\uD2B8"
+Public Transport:
+  description: "\uBC84\uC2A4, \uAE30\uCC28, \uC9C0\uD558\uCCA0 \uB4F1 \uB300\uC911\
+    \uAD50\uD1B5 \uC2DC\uAC04\uD45C \uD655\uC778 \uBC0F \uC5EC\uC815 \uACC4\uD68D"
+  name: "\uB300\uC911\uAD50\uD1B5 \uC9C0\uB3C4 \uBC0F \uC2DC\uAC04\uD45C"
+Push:
+  description: "\uD478\uC2DC \uBA54\uC2DC\uC9C0"
+  name: "\uD478\uC2DC"
+Puzzle Game:
+  description: "\uD37C\uC990, \uC2A4\uB3C4\uCFE0, \uAE30\uC5B5\uB825 \uAC8C\uC784"
+  name: "\uD37C\uC990 \uAC8C\uC784"
+Radio:
+  description: "FM/AM \uB77C\uB514\uC624 \uBC29\uC1A1\uAD6D\uACFC \uC778\uD130\uB137\
+    \ \uB77C\uB514\uC624 \uBC29\uC1A1\uC744 \uC2E4\uC2DC\uAC04\uC73C\uB85C \uC2A4\uD2B8\
+    \uB9AC\uBC0D"
+  name: "\uB77C\uB514\uC624"
+Reading:
+  description: "\uBB38\uC11C, \uC7A5\uBB38 \uCF58\uD150\uCE20, \uB098\uC911\uC5D0\
+    \ \uC77D\uC744 \uAE00, \uC6F9 \uB9AC\uB354 \uC571"
+  name: "\uB3C5\uC11C"
+Recipe Manager:
+  description: "\uC870\uB9AC\uBC95\uACFC \uC2DD\uC0AC \uC544\uC774\uB514\uC5B4\uB97C\
+    \ \uC800\uC7A5, \uC815\uB9AC, \uD0D0\uC0C9"
+  name: "\uB808\uC2DC\uD53C \uAD00\uB9AC\uC790"
+Recorder:
+  description: "\uC624\uB514\uC624, \uD654\uBA74, \uD1B5\uD654 \uB179\uC74C"
+  name: "\uB179\uC74C\uAE30"
+Religion:
+  description: "\uC608\uBC30 \uC2DC\uAC04, \uACBD\uC804, \uBB35\uC0C1\uC9D1, \uC601\
+    \uC801 \uC218\uB828 \uC571"
+  name: "\uC885\uAD50"
+Remote Access:
+  description: "RDP, VNC, SSH\uB85C \uB370\uC2A4\uD06C\uD1B1, \uC11C\uBC84, \uAE30\
+    \uAE30\uB97C \uC6D0\uACA9\uC73C\uB85C \uC81C\uC5B4"
+  name: "\uC6D0\uACA9 \uC811\uC18D"
+Remote Controller:
+  description: "TV, \uC5D0\uC5B4\uCEE8 \uB4F1\uC758 \uAE30\uAE30\uB97C IR\uC774\uB098\
+    \ \uC2A4\uB9C8\uD2B8 \uD648\uC73C\uB85C \uC6D0\uACA9 \uC81C\uC5B4"
+  name: "\uB9AC\uBAA8\uCEE8"
+Role-Playing Game:
+  description: "RPG, \uB85C\uADF8\uB77C\uC774\uD06C"
+  name: "\uB864\uD50C\uB808\uC789 \uAC8C\uC784"
+Schedule:
+  description: "\uCF58\uD37C\uB7F0\uC2A4 \uBC0F \uC774\uBCA4\uD2B8 \uC77C\uC815"
+  name: "\uC77C\uC815"
+Science & Education:
+  description: "\uD559\uC2B5, \uACF5\uBD80, \uCC38\uACE0 \uC790\uB8CC, \uAD50\uC721\
+    \uC6A9 \uC571"
+  name: "\uACFC\uD559 \uBC0F \uAD50\uC721"
+Security:
+  name: "\uBCF4\uC548"
+Shooter Game:
+  description: "\uBAA9\uD45C\uB97C \uD5A5\uD574 \uC0AC\uACA9\uD558\uAE30"
+  name: "\uC288\uD305 \uAC8C\uC784"
+Shopping List:
+  description: "\uC2DD\uC7AC\uB8CC \uBAA9\uB85D, \uC7A5\uBCF4\uAE30 \uAD00\uB9AC,\
+    \ \uACF5\uB3D9 \uC1FC\uD551 \uC571"
+  name: "\uC1FC\uD551 \uBAA9\uB85D"
+Social Network:
+  description: "\uC18C\uC15C \uBBF8\uB514\uC5B4, \uB9C8\uC774\uD06C\uB85C\uBE14\uB85C\
+    \uADF8, \uC628\uB77C\uC778 \uCEE4\uBBA4\uB2C8\uD2F0 \uD50C\uB7AB\uD3FC"
+  name: "\uC18C\uC15C \uB124\uD2B8\uC6CC\uD06C"
+Sport Game:
+  description: "\uC2A4\uD3EC\uCE20 \uAC8C\uC784"
+  name: "\uC2A4\uD3EC\uCE20 \uAC8C\uC784"
+Sports & Health:
+  description: "\uD53C\uD2B8\uB2C8\uC2A4 \uCD94\uC801, \uC6F0\uBE59, \uC2A4\uD3EC\uCE20\
+    \ \uC810\uC218, \uAC74\uAC15 \uBAA8\uB2C8\uD130\uB9C1"
+  name: "\uC2A4\uD3EC\uCE20 \uBC0F \uAC74\uAC15"
+Stopwatch:
+  description: "\uC9C4\uD589\uB3C4, \uACBD\uACFC \uC2DC\uAC04, \uB7A9 \uD0C0\uC784\
+    \ \uCE21\uC815"
+  name: "\uC2A4\uD1B1\uC6CC\uCE58"
+Strategy Game:
+  description: "\uC804\uB7B5, \uC2DC\uBBAC\uB808\uC774\uC158"
+  name: "\uC804\uB7B5 \uAC8C\uC784"
+System:
+  name: "\uC2DC\uC2A4\uD15C"
+Task:
+  description: "\uD560 \uC77C \uBAA9\uB85D, \uC791\uC5C5 \uAD00\uB9AC\uC790, \uC0DD\
+    \uC0B0\uC131 \uBC0F \uC5C5\uBB34 \uAD00\uB9AC \uB3C4\uAD6C"
+  name: "\uC791\uC5C5"
+Text Editor:
+  description: "\uD3C9\uBB38 \uD14D\uC2A4\uD2B8 \uD3B8\uC9D1\uAE30, \uB9C8\uD06C\uB2E4\
+    \uC6B4 \uD3B8\uC9D1\uAE30, \uAE00\uC4F0\uAE30 \uB3C4\uAD6C"
+  name: "\uD14D\uC2A4\uD2B8 \uD3B8\uC9D1\uAE30"
+Text to Speech:
+  description: "TTS \uB3C4\uAD6C"
+  name: "\uD14D\uC2A4\uD2B8 \uC74C\uC131 \uBCC0\uD658"
+Theming:
+  description: "\uD14C\uB9C8, \uAE00\uAF34, UI \uC2A4\uD0C0\uC77C\uB85C \uAE30\uAE30\
+    \uC758 \uC678\uAD00\uC744 \uC0AC\uC6A9\uC790\uD654"
+  name: "\uAFB8\uBBF8\uAE30"
+Time Tracker:
+  description: "\uD65C\uB3D9 \uC2DC\uAC04\uACFC \uD654\uBA74 \uC0AC\uC6A9 \uC2DC\uAC04\
+    \ \uCD94\uC801"
+  name: "\uC2DC\uAC04 \uCD94\uC801"
+Timer:
+  description: "\uC2DC\uAC04 \uCE21\uC815, \uC2DC\uAC04 \uAE30\uB85D, \uCE74\uC6B4\
+    \uD2B8\uB2E4\uC6B4"
+  name: "\uD0C0\uC774\uBA38"
+Translation & Dictionary:
+  description: "\uC5B8\uC5B4 \uBC88\uC5ED, \uB2E8\uC5B4 \uAC80\uC0C9, \uC5B4\uD718\
+    \ \uC790\uB8CC \uC5F4\uB78C"
+  name: "\uBC88\uC5ED \uBC0F \uC0AC\uC804"
+Unit Convertor:
+  description: "\uAE38\uC774, \uBB34\uAC8C, \uC628\uB3C4, \uD1B5\uD654 \uB4F1\uC758\
+    \ \uB2E8\uC704 \uAC04 \uBCC0\uD658"
+  name: "\uB2E8\uC704 \uBCC0\uD658\uAE30"
+VPN & Proxy:
+  description: "\uD2B8\uB798\uD53D \uC554\uD638\uD654, \uC81C\uD55C(\uAC80\uC5F4)\
+    \ \uC6B0\uD68C, \uC5F0\uACB0 \uC775\uBA85\uD654"
+  name: "VPN \uBC0F \uD504\uB85D\uC2DC"
+Visual Novel:
+  description: "\uBE44\uC8FC\uC5BC \uB178\uBCA8, \uBBF8\uC5F0\uC2DC, \uC2A4\uD1A0\uB9AC\
+    \ \uAC8C\uC784"
+  name: "\uBE44\uC8FC\uC5BC \uB178\uBCA8"
+Voice & Video Chat:
+  description: "\uC74C\uC131 \uBC0F \uC601\uC0C1\uD1B5\uD654, \uD68C\uC758, VoIP \uCEE4\
+    \uBBA4\uB2C8\uCF00\uC774\uC158 \uC571"
+  name: "\uC74C\uC131 \uBC0F \uC601\uC0C1 \uCC44\uD305"
+Volume:
+  description: "\uC74C\uB7C9 \uC124\uC815 \uAD00\uB9AC"
+  name: "\uC74C\uB7C9"
+Wallet:
+  description: "\uACB0\uC81C, \uCE74\uB4DC, \uC554\uD638\uD654\uD3D0 \uAD00\uB9AC\uB97C\
+    \ \uC704\uD55C \uB514\uC9C0\uD138 \uC9C0\uAC11"
+  name: "\uC9C0\uAC11"
+Wallpaper:
+  description: "\uD648 \uD654\uBA74\uACFC \uC7A0\uAE08\uD654\uBA74\uC758 \uBC30\uACBD\
+    \uD654\uBA74 \uBC0F \uB77C\uC774\uBE0C \uBC30\uACBD\uD654\uBA74 \uC571"
+  name: "\uBC30\uACBD\uD654\uBA74"
+Weather:
+  description: "\uC608\uBCF4, \uB808\uC774\uB354, \uAE30\uC628, \uAE30\uC0C1 \uC870\
+    \uAC74 \uC571"
+  name: "\uB0A0\uC528"
+Word Game:
+  description: "\uB2E8\uC5B4 \uD37C\uC990 \uAC8C\uC784, \uC2ED\uC790\uB9D0\uD480\uC774\
+    , \uB2E8\uC5B4 \uCD94\uCE21"
+  name: "\uB2E8\uC5B4 \uAC8C\uC784"
+Workout:
+  description: "\uC6B4\uB3D9 \uB8E8\uD2F4, \uD5EC\uC2A4\uC7A5 \uAE30\uB85D, \uB2EC\
+    \uB9AC\uAE30, \uD53C\uD2B8\uB2C8\uC2A4 \uD6C8\uB828 \uC571"
+  name: "\uC6B4\uB3D9"
+Writing:
+  description: "\uC6CC\uB4DC\uD504\uB85C\uC138\uC11C, \uC77C\uAE30, \uCD08\uC548,\
+    \ \uAE34 \uAE00 \uC791\uC131\uC6A9 \uC571"
+  name: "\uC791\uC131"

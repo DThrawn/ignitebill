@@ -1,30 +1,33 @@
 Ads:
-  description: Tämä sovellus sisältää mainoksia
+  description: "T\xE4m\xE4 sovellus sis\xE4lt\xE4\xE4 mainoksia"
   name: Mainokset
 DisabledAlgorithm:
-  description: Tällä sovelluksella on heikko turvallisuusallekirjoitus
+  description: "T\xE4ll\xE4 sovelluksella on heikko turvallisuusallekirjoitus"
   name: Allekirjoitettu turvattomalla algoritmilla
 KnownVuln:
-  description: Tämä sovellus sisältää tunnetun haavoittuvuuden
+  description: "T\xE4m\xE4 sovellus sis\xE4lt\xE4\xE4 tunnetun haavoittuvuuden"
   name: Tunnettu haavoittuvuus
 NoSourceSince:
-  name: Ei lähdekoodia alkaen
-  description: Lähdekoodi ei ole enää saatavilla, päivitykset eivät ole mahdollisia
+  description: "L\xE4hdekoodi ei ole en\xE4\xE4 saatavilla, p\xE4ivitykset eiv\xE4\
+    t ole mahdollisia"
+  name: "Ei l\xE4hdekoodia alkaen"
 NonFreeAdd:
-  description: Tämä sovellus suosittelee ei-vapaita lisäosia
-  name: Ei-vapaat lisäosat
+  description: "T\xE4m\xE4 sovellus suosittelee ei-vapaita lis\xE4osia"
+  name: "Ei-vapaat lis\xE4osat"
 NonFreeAssets:
-  description: Tämä sovellus sisältää ei-vapaita osia
-  name: Ei-vapaa sisältö
+  description: "T\xE4m\xE4 sovellus sis\xE4lt\xE4\xE4 ei-vapaita osia"
+  name: "Ei-vapaa sis\xE4lt\xF6"
 NonFreeDep:
-  description: Tämä sovellus on riippuvainen muista, ei-vapaista sovelluksista
+  description: "T\xE4m\xE4 sovellus on riippuvainen muista, ei-vapaista sovelluksista"
   name: Ei-vapaat riippuvuudet
 NonFreeNet:
-  description: Tämä sovellus tukee tai on täysin riippuvainen ei-vapaasta verkkopalvelusta
+  description: "T\xE4m\xE4 sovellus tukee tai on t\xE4ysin riippuvainen ei-vapaasta\
+    \ verkkopalvelusta"
   name: Ei-vapaat verkkopalvelut
-Tracking:
-  description: Tämä sovellus seuraa ja raportoi toimintaasi
-  name: Seuranta
 TetheredNet:
-  description: Tämä sovellus on täysin riippuvainen tietystä verkkopalvelun instanssista
+  description: "T\xE4m\xE4 sovellus on t\xE4ysin riippuvainen tietyst\xE4 verkkopalvelun\
+    \ instanssista"
   name: Vaaditut verkkopalvelut
+Tracking:
+  description: "T\xE4m\xE4 sovellus seuraa ja raportoi toimintaasi"
+  name: Seuranta

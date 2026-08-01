@@ -1,16 +1,17 @@
 Ads:
   description: Asnas-a yegber adellel
 DisabledAlgorithm:
-  description: Asnas-a yesɛa azmul i ixuṣṣen deg tɣellist
+  description: "Asnas-a yes\u025Ba azmul i ixu\u1E63\u1E63en deg t\u0263ellist"
 NoSourceSince:
-  name: Tangalt taɣbalut dayen ur telli ara, ulac ileqman.
+  name: "Tangalt ta\u0263balut dayen ur telli ara, ulac ileqman."
 NonFreeAdd:
   description: Asnas-a yegber Izegrar ur nelli ara d ilelliyen
 NonFreeAssets:
-  description: Asnas-a yegber iḥricen ur nelli ara d ilelliyen
+  description: "Asnas-a yegber i\u1E25ricen ur nelli ara d ilelliyen"
 NonFreeDep:
-  description: Asnas-a icudd ɣer yisnasen-nniḍen ur nelli ara d ilelliyen
+  description: "Asnas-a icudd \u0263er yisnasen-nni\u1E0Den ur nelli ara d ilelliyen"
 NonFreeNet:
-  description: Asnas-a isnernay imeẓliyen n uẓeṭṭa ur nelli ara d ilelliyen
+  description: "Asnas-a isnernay ime\u1E93liyen n u\u1E93e\u1E6D\u1E6Da ur nelli ara\
+    \ d ilelliyen"
 Tracking:
-  description: Asnas-a ad yeḍfeṛ udiɣ ad d-yazen armud-ik
+  description: "Asnas-a ad ye\u1E0Dfe\u1E5B udi\u0263 ad d-yazen armud-ik"

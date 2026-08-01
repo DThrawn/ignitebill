@@ -1,29 +1,35 @@
 Ads:
-  name: 有廣告
-  description: 呢個 app 包含廣告
+  description: "\u5462\u500B app \u5305\u542B\u5EE3\u544A"
+  name: "\u6709\u5EE3\u544A"
 DisabledAlgorithm:
-  description: 呢個 app 嘅簽署安全性薄弱
-  name: 以唔安全嘅演算法簽署
-NoSourceSince:
-  name: 原始碼唔再提供，唔會再有更新。
-NonFreeAdd:
-  description: 呢個 app 推廣非自由嘅附加元件
-  name: 附加元件非自由
-NonFreeAssets:
-  description: 呢個 app 包含非自由嘅資源
-  name: 資源非自由
-NonFreeDep:
-  description: 呢個 app 依賴其他非自由嘅 app
-  name: 依賴項目非自由
-NonFreeNet:
-  description: 呢個 app 推廣或完全依賴非自由嘅網絡服務
-  name: 網絡服務非自由
-Tracking:
-  description: 呢個 app 會追蹤同報告您嘅活動
-  name: 會追蹤
-TetheredNet:
-  description: 呢個 app 完全依賴單一網絡服務
-  name: 獨家網絡服務
+  description: "\u5462\u500B app \u5605\u7C3D\u7F72\u5B89\u5168\u6027\u8584\u5F31"
+  name: "\u4EE5\u5514\u5B89\u5168\u5605\u6F14\u7B97\u6CD5\u7C3D\u7F72"
 KnownVuln:
-  description: 呢個 app 有已知嘅安全漏洞
-  name: 有已知漏洞
+  description: "\u5462\u500B app \u6709\u5DF2\u77E5\u5605\u5B89\u5168\u6F0F\u6D1E"
+  name: "\u6709\u5DF2\u77E5\u6F0F\u6D1E"
+NoSourceSince:
+  name: "\u539F\u59CB\u78BC\u5514\u518D\u63D0\u4F9B\uFF0C\u5514\u6703\u518D\u6709\u66F4\
+    \u65B0\u3002"
+NonFreeAdd:
+  description: "\u5462\u500B app \u63A8\u5EE3\u975E\u81EA\u7531\u5605\u9644\u52A0\u5143\
+    \u4EF6"
+  name: "\u9644\u52A0\u5143\u4EF6\u975E\u81EA\u7531"
+NonFreeAssets:
+  description: "\u5462\u500B app \u5305\u542B\u975E\u81EA\u7531\u5605\u8CC7\u6E90"
+  name: "\u8CC7\u6E90\u975E\u81EA\u7531"
+NonFreeDep:
+  description: "\u5462\u500B app \u4F9D\u8CF4\u5176\u4ED6\u975E\u81EA\u7531\u5605\
+    \ app"
+  name: "\u4F9D\u8CF4\u9805\u76EE\u975E\u81EA\u7531"
+NonFreeNet:
+  description: "\u5462\u500B app \u63A8\u5EE3\u6216\u5B8C\u5168\u4F9D\u8CF4\u975E\u81EA\
+    \u7531\u5605\u7DB2\u7D61\u670D\u52D9"
+  name: "\u7DB2\u7D61\u670D\u52D9\u975E\u81EA\u7531"
+TetheredNet:
+  description: "\u5462\u500B app \u5B8C\u5168\u4F9D\u8CF4\u55AE\u4E00\u7DB2\u7D61\u670D\
+    \u52D9"
+  name: "\u7368\u5BB6\u7DB2\u7D61\u670D\u52D9"
+Tracking:
+  description: "\u5462\u500B app \u6703\u8FFD\u8E64\u540C\u5831\u544A\u60A8\u5605\u6D3B\
+    \u52D5"
+  name: "\u6703\u8FFD\u8E64"

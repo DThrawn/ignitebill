@@ -2,29 +2,33 @@ Ads:
   description: Tato aplikace obsahuje reklamu
   name: Reklamy
 DisabledAlgorithm:
-  description: Tato aplikace má slabý bezpečnostní podpis
-  name: Podepsáno pomocí málo bezpečného algoritmu
+  description: "Tato aplikace m\xE1 slab\xFD bezpe\u010Dnostn\xED podpis"
+  name: "Podeps\xE1no pomoc\xED m\xE1lo bezpe\u010Dn\xE9ho algoritmu"
 KnownVuln:
-  description: Tato aplikace má známou zranitelnost v zabezpečení
-  name: Známá zranitelnost
+  description: "Tato aplikace m\xE1 zn\xE1mou zranitelnost v zabezpe\u010Den\xED"
+  name: "Zn\xE1m\xE1 zranitelnost"
 NoSourceSince:
-  name: Žádný zdroj od
-  description: Zdrojový kód již není k dispozici, aktualizace nejsou možné
+  description: "Zdrojov\xFD k\xF3d ji\u017E nen\xED k dispozici, aktualizace nejsou\
+    \ mo\u017En\xE9"
+  name: "\u017D\xE1dn\xFD zdroj od"
 NonFreeAdd:
-  description: Tato aplikace propaguje nesvobodné doplňky
-  name: Nesvobodné doplňky
+  description: "Tato aplikace propaguje nesvobodn\xE9 dopl\u0148ky"
+  name: "Nesvobodn\xE9 dopl\u0148ky"
 NonFreeAssets:
-  description: Tato aplikace obsahuje nesvobodné části
-  name: Nesvobodné části
+  description: "Tato aplikace obsahuje nesvobodn\xE9 \u010D\xE1sti"
+  name: "Nesvobodn\xE9 \u010D\xE1sti"
 NonFreeDep:
-  description: Tato aplikace závisí na jiných nesvobodných aplikacích
-  name: Nesvobodné závislosti
+  description: "Tato aplikace z\xE1vis\xED na jin\xFDch nesvobodn\xFDch aplikac\xED\
+    ch"
+  name: "Nesvobodn\xE9 z\xE1vislosti"
 NonFreeNet:
-  description: Tato aplikace propaguje nebo zcela závisí na nesvobodné síťové službě
-  name: Nesvobodné síťové služby
-Tracking:
-  description: Tato aplikace zaznamenává a odesílá vaši aktivitu
-  name: Sledování
+  description: "Tato aplikace propaguje nebo zcela z\xE1vis\xED na nesvobodn\xE9 s\xED\
+    \u0165ov\xE9 slu\u017Eb\u011B"
+  name: "Nesvobodn\xE9 s\xED\u0165ov\xE9 slu\u017Eby"
 TetheredNet:
-  name: Provázáné síťové služby
-  description: Tato aplikace zcela závisí na určité instanci síťové služby
+  description: "Tato aplikace zcela z\xE1vis\xED na ur\u010Dit\xE9 instanci s\xED\u0165\
+    ov\xE9 slu\u017Eby"
+  name: "Prov\xE1z\xE1n\xE9 s\xED\u0165ov\xE9 slu\u017Eby"
+Tracking:
+  description: "Tato aplikace zaznamen\xE1v\xE1 a odes\xEDl\xE1 va\u0161i aktivitu"
+  name: "Sledov\xE1n\xED"

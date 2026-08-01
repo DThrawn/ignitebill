@@ -22,5 +22,6 @@ NonFreeNet:
   description: Aplikazio honek sare zerbitzu ez libreak sustatzen ditu
   name: Libreak ez diren sareko zerbitzuak
 Tracking:
-  description: Aplikazio honek zure jardueraren jarraipena egiten du eta berri ematen du
+  description: Aplikazio honek zure jardueraren jarraipena egiten du eta berri ematen
+    du
   name: Arrastoaren jarraipena

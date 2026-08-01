@@ -1,30 +1,33 @@
 Ads:
-  description: Tiu ĉi aplikaĵo enhavas reklamojn
+  description: "Tiu \u0109i aplika\u0135o enhavas reklamojn"
   name: Reklamoj
 DisabledAlgorithm:
-  description: Tiu ĉi aplikaĵo posedas malfortan sekurecan subskribon
+  description: "Tiu \u0109i aplika\u0135o posedas malfortan sekurecan subskribon"
   name: Subskribita per malsekura algoritmo
 KnownVuln:
-  description: Tiu ĉi aplikaĵo posedas sekurecan vundeblon
+  description: "Tiu \u0109i aplika\u0135o posedas sekurecan vundeblon"
   name: Konata sekureca vundeblo
 NoSourceSince:
+  description: "La fontkodo ne estas plu disponebla, neniu ebla \u011Disdatigo"
   name: Nedisponebla fontkodo
-  description: La fontkodo ne estas plu disponebla, neniu ebla ĝisdatigo
 NonFreeAdd:
-  description: Tiu ĉi aplikaĵo favoras neliberajn aldonaĵojn
-  name: Neliberaj aldonaĵoj
+  description: "Tiu \u0109i aplika\u0135o favoras neliberajn aldona\u0135ojn"
+  name: "Neliberaj aldona\u0135oj"
 NonFreeAssets:
-  description: Tiu ĉi aplikaĵo enhavas neliberan enhavon
+  description: "Tiu \u0109i aplika\u0135o enhavas neliberan enhavon"
   name: Nelibera enhavo
 NonFreeDep:
-  description: Tiu ĉi aplikaĵo dependas de aliaj neliberaj aplikaĵoj
+  description: "Tiu \u0109i aplika\u0135o dependas de aliaj neliberaj aplika\u0135\
+    oj"
   name: Neliberaj dependecoj
 NonFreeNet:
-  description: Tiu ĉi aplikaĵo favoras aŭ tute dependas de nelibera retservo
+  description: "Tiu \u0109i aplika\u0135o favoras a\u016D tute dependas de nelibera\
+    \ retservo"
   name: Neliberaj retservoj
-Tracking:
-  description: Tiu ĉi aplikaĵo spuras kaj raportas vian agadon
-  name: Spurado
 TetheredNet:
-  description: Tiu ĉi aplikaĵo tute dependas de difinita ekzemplo de reta servo
+  description: "Tiu \u0109i aplika\u0135o tute dependas de difinita ekzemplo de reta\
+    \ servo"
   name: Alligita al retservo
+Tracking:
+  description: "Tiu \u0109i aplika\u0135o spuras kaj raportas vian agadon"
+  name: Spurado

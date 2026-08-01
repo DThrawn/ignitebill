@@ -1,7 +1,7 @@
 Connectivity:
   name: Ferbiningen
 Development:
-  name: Ûntwikkeling
+  name: "\xDBntwikkeling"
 Graphics:
   name: Grafysk
 Internet:
@@ -13,13 +13,13 @@ Navigation:
 Phone & SMS:
   name: Telefoan & SMS
 Reading:
-  name: Lêze
+  name: "L\xEAze"
 Science & Education:
   name: Wittenskip & Edukaasje
 Security:
   name: Befeiliging
 Sports & Health:
-  name: Sport & Sûnens
+  name: "Sport & S\xFBnens"
 System:
   name: Systeem
 Writing:

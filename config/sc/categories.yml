@@ -1,31 +1,3 @@
-Connectivity:
-  name: Connetividade
-Development:
-  name: Isvilupu
-Graphics:
-  name: Gràfica
-Internet:
-  name: Ìnternet
-Multimedia:
-  name: Multimèdia
-Navigation:
-  name: Nàvigu
-Phone & SMS:
-  name: Telèfono & SMS
-Reading:
-  name: Letura
-Science & Education:
-  name: Iscièntzia e educatzione
-Security:
-  name: Seguràntzia
-Sports & Health:
-  name: Isport e Salude
-System:
-  name: Sistema
-Theming:
-  name: Temas
-Writing:
-  name: Iscritura
 App Store & Updater:
   name: Butega de aplicatziones e atualizadore
 Bookmark:
@@ -35,72 +7,100 @@ Browser:
 Calculator:
   name: Carculadora
 Calendar & Agenda:
-  name: Calendàriu e agenda
+  name: "Calend\xE0riu e agenda"
 Cloud Storage & File Sync:
   name: Archiviatzione in sa nue e sincronizada de documentos
+Connectivity:
+  name: Connetividade
+DNS & Hosts:
+  name: DNS e retzidores (hosts)
+Development:
+  name: Isvilupu
 Draw:
   name: Disinnu
 Ebook Reader:
-  name: Leghidore de libros eletrònicos
+  name: "Leghidore de libros eletr\xF2nicos"
 Email:
-  name: Posta eletrònica
+  name: "Posta eletr\xF2nica"
 File Encryption & Vault:
   name: Tzifradura de documentos e cassaforte
 File Transfer:
-  name: Tràmuda de documentos
+  name: "Tr\xE0muda de documentos"
 Finance Manager:
-  name: Gestore de finàntzias
+  name: "Gestore de fin\xE0ntzias"
 Gallery:
   name: Galleria
+Graphics:
+  name: "Gr\xE0fica"
 Icon Pack:
   name: Pachete de iconas
+Internet:
+  name: "\xCCnternet"
 Keyboard & IME:
-  name: Tecladu e mètodos de intrada (IME)
+  name: "Tecladu e m\xE8todos de intrada (IME)"
+Launcher:
+  name: Aviadores de aplicatziones
 Local Media Player:
   name: Leghidore multimediale locale
 Messaging:
-  name: Messagìstica
+  name: "Messag\xECstica"
+Multimedia:
+  name: "Multim\xE8dia"
+Navigation:
+  name: "N\xE0vigu"
 News:
   name: Novas
 Note:
   name: Nota
 Online Media Player:
-  name: Leghidore multimediale in lìnia
+  name: "Leghidore multimediale in l\xECnia"
+Pass Wallet:
+  name: "Portaf\xF2lliu de cartas e billetes"
 Password & 2FA:
   name: Crae de intrada e autenticatzione a duos fatores
+Phone & SMS:
+  name: "Tel\xE8fono & SMS"
 Podcast:
   name: Podcast
 Public Transport:
-  name: Oràrios e mapas de sos trasportos pùblicos
+  name: "Or\xE0rios e mapas de sos trasportos p\xF9blicos"
+Reading:
+  name: Letura
 Recipe Manager:
   name: Manigiadore de retzetas
+Science & Education:
+  name: "Isci\xE8ntzia e educatzione"
+Security:
+  name: "Segur\xE0ntzia"
 Shopping List:
-  name: Lista de còmporas
+  name: "Lista de c\xF2mporas"
 Social Network:
   name: Retes sotziales
+Sports & Health:
+  name: Isport e Salude
+System:
+  name: Sistema
 Task:
   name: Faina
 Text Editor:
   name: Editore de testu
+Theming:
+  name: Temas
 Translation & Dictionary:
-  name: Tradutzione e ditzionàriu
+  name: "Tradutzione e ditzion\xE0riu"
 Unit Convertor:
   name: Cunvertidore de unidades
-Voice & Video Chat:
-  name: Tzarrada de boghe e vìdeu
 VPN & Proxy:
-  name: VPN e serbidores intermediàrios
+  name: "VPN e serbidores intermedi\xE0rios"
+Voice & Video Chat:
+  name: "Tzarrada de boghe e v\xECdeu"
 Wallet:
   name: Taschinu
 Wallpaper:
   name: Isfundu
 Weather:
-  name: Mèteu
+  name: "M\xE8teu"
 Workout:
   name: Allenamentu
-DNS & Hosts:
-  name: DNS e retzidores (hosts)
-Launcher:
-  name: Aviadores de aplicatziones
-Pass Wallet:
-  name: Portafòlliu de cartas e billetes
+Writing:
+  name: Iscritura

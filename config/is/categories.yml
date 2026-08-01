@@ -1,207 +1,209 @@
-Connectivity:
-  name: Tengingar
-Development:
-  name: Þróun
-Graphics:
-  name: Myndefni
-Internet:
-  name: Internetið
-Multimedia:
-  name: Margmiðlun
-Navigation:
-  name: Yfirsýn
-Phone & SMS:
-  name: Símar og SMS
-Reading:
-  name: Lestur
-Science & Education:
-  name: Menntun og vísindi
-Security:
-  name: Öryggi
-Sports & Health:
-  name: Íþróttir og heilsa
-System:
-  name: Kerfið
-Theming:
-  name: Þemu
-Writing:
-  name: Skrifa
+AI Chat:
+  description: "Vi\xF0m\xF3t fyrir AI-a\xF0sto\xF0, spjallkerfi og st\xF3r tungum\xE1\
+    lal\xEDk\xF6n"
+  name: AI-spjall
+Action Game:
+  description: "Leikir me\xF0 spennu, \xED\xFEr\xF3ttum, keppni og \xFEv\xEDl\xED\
+    ku"
+  name: Spennuleikur
+App Manager:
+  name: "Forritast\xFDring"
 App Store & Updater:
-  name: Forritasafn og uppfærslur
+  name: "Forritasafn og uppf\xE6rslur"
+Battery:
+  name: "Rafhla\xF0a"
+Board Game:
+  name: "Bor\xF0leikur"
 Bookmark:
-  name: Bókamerki
+  name: "B\xF3kamerki"
 Browser:
   name: Vafri
 Calculator:
-  name: Reiknivél
+  name: "Reikniv\xE9l"
 Calendar & Agenda:
-  name: Dagatal og dagskrá
+  name: "Dagatal og dagskr\xE1"
+Camera:
+  name: "Myndav\xE9l"
+Card Game:
+  name: Spil
+Casual Game:
+  description: "Einfaldur au\xF0veldur leikur"
+  name: "Au\xF0veldur leikur"
+Clock:
+  description: "Vekjaraklukkur, skei\xF0klukkur og heimsklukkur"
+  name: Klukka
 Cloud Storage & File Sync:
-  name: Geymsla á tölvuskýi og samstilling skráa
+  name: "Geymsla \xE1 t\xF6lvusk\xFDi og samstilling skr\xE1a"
+Connectivity:
+  name: Tengingar
+Contact:
+  name: "Tengili\xF0ir"
 DNS & Hosts:
-  name: DNS & Hýsingar
+  name: "DNS & H\xFDsingar"
+Development:
+  name: "\xDEr\xF3un"
+Dice:
+  description: Tilviljanakennt val
+  name: Teningar
+Diet:
+  name: "Matar\xE6\xF0i"
+Download:
+  name: "Ni\xF0urhal"
 Draw:
   name: Teikna
 Ebook Reader:
-  name: Rafbókalesari
+  name: "Rafb\xF3kalesari"
+Educational Game:
+  name: Kennsluleikur
 Email:
-  name: Tölvupóstur
+  name: "T\xF6lvup\xF3stur"
+Emulator:
+  name: Hermir
 File Encryption & Vault:
-  name: Dulritun skráa og lykilorðageymsla
+  name: "Dulritun skr\xE1a og lykilor\xF0ageymsla"
+File Manager:
+  description: "Skr\xE1astj\xF3ri og sko\xF0ari"
+  name: "Skr\xE1astj\xF3ri"
 File Transfer:
-  name: Skráaflutningur
+  name: "Skr\xE1aflutningur"
 Finance Manager:
-  name: Fjármálaumsýsla
+  name: "Fj\xE1rm\xE1laums\xFDsla"
+Firewall:
+  name: Eldveggur
+Flashlight:
+  description: "Forrit fyrir LED-lj\xF3skastara og vasalj\xF3s"
+  name: "Vasalj\xF3s"
 Forum:
-  name: Spjallsvæði
+  name: "Spjallsv\xE6\xF0i"
 Gallery:
+  description: "Fletta, sko\xF0a og ra\xF0a myndum og myndskei\xF0um"
   name: Myndasafn
-  description: Fletta, skoða og raða myndum og myndskeiðum
+Graphics:
+  name: Myndefni
 Habit Tracker:
-  name: Venjuskráning
+  name: "Venjuskr\xE1ning"
+Health Manager:
+  name: "Heilsustj\xF3rnun"
 Icon Pack:
-  name: Táknmyndapakki
+  name: "T\xE1knmyndapakki"
+Internet:
+  name: "Interneti\xF0"
+Inventory:
+  name: "Birg\xF0askr\xE1ning"
 Keyboard & IME:
-  name: Lyklaborð og innsláttur
+  name: "Lyklabor\xF0 og innsl\xE1ttur"
 Launcher:
-  name: Ræsir
+  name: "R\xE6sir"
 Local Media Player:
-  name: Margmiðlunarspilari á tæki
+  name: "Margmi\xF0lunarspilari \xE1 t\xE6ki"
 Location Tracker & Sharer:
-  name: Staðsetningarrakning og deiling
+  name: "Sta\xF0setningarrakning og deiling"
+Lyrics:
+  name: Lagatextar
+Market & Price:
+  name: "Marka\xF0ir og ver\xF0"
+Meditation:
+  name: "Huglei\xF0sla"
 Messaging:
-  name: Skilaboð
+  name: "Skilabo\xF0"
+Multimedia:
+  name: "Margmi\xF0lun"
 Music Practice Tool:
-  name: Tónlistaræfingatól
+  name: "T\xF3nlistar\xE6fingat\xF3l"
+Navigation:
+  name: "Yfirs\xFDn"
+Network Analyzer:
+  name: Greining netkerfa
 News:
-  name: Fréttir
+  name: "Fr\xE9ttir"
 Note:
   name: Minnispunktur
 Online Media Player:
-  name: Margmiðlunarspilari á neti
+  name: "Margmi\xF0lunarspilari \xE1 neti"
+Party Game:
+  name: "Part\xFDleikur"
 Pass Wallet:
-  name: Lykilorðaveski
+  name: "Lykilor\xF0aveski"
 Password & 2FA:
-  name: Lykilorð og 2FA
+  name: "Lykilor\xF0 og 2FA"
+Phone & SMS:
+  name: "S\xEDmar og SMS"
 Podcast:
-  name: Hlaðvarp
+  name: "Hla\xF0varp"
 Public Transport:
-  name: Almenningssamgöngur
+  name: "Almenningssamg\xF6ngur"
+Puzzle Game:
+  name: "P\xFAsluspil"
+Radio:
+  name: "\xDAtvarp"
+Reading:
+  name: Lestur
 Recipe Manager:
   name: Uppskriftasafn
+Recorder:
+  name: Upptaka
+Religion:
+  name: "Tr\xFAarbr\xF6g\xF0"
+Remote Access:
+  name: "Fjara\xF0gangur"
+Remote Controller:
+  name: "Fjarst\xFDring"
+Role-Playing Game:
+  name: Hlutverkaleikur
+Schedule:
+  description: "\xC1\xE6tlanir fyrir r\xE1\xF0stefnur og atbur\xF0i"
+  name: "Vinnu\xE1\xE6tlun"
+Science & Education:
+  name: "Menntun og v\xEDsindi"
+Security:
+  name: "\xD6ryggi"
+Shooter Game:
+  description: Skotfimi
+  name: Skotleikur
 Shopping List:
   name: Innkaupalisti
 Social Network:
-  name: Samfélagsnet
+  name: "Samf\xE9lagsnet"
+Sport Game:
+  description: "\xCD\xFEr\xF3ttaleikir"
+  name: "\xCD\xFEr\xF3ttaleikur"
+Sports & Health:
+  name: "\xCD\xFEr\xF3ttir og heilsa"
+Strategy Game:
+  description: "Herk\xE6nska, herming"
+  name: "Herk\xE6nskuleikur"
+System:
+  name: "Kerfi\xF0"
 Task:
   name: Verkefni
 Text Editor:
   name: Textaritill
+Text to Speech:
+  description: "Verkf\xE6ri fyrir texta-\xED-tal"
+  name: "Texti-\xED-tal"
+Theming:
+  name: "\xDEemu"
+Time Tracker:
+  name: "T\xEDmastj\xF3rnun"
+Timer:
+  name: "T\xEDmataka"
 Translation & Dictionary:
-  name: Þýðingar og orðasafn
+  name: "\xDE\xFD\xF0ingar og or\xF0asafn"
 Unit Convertor:
   name: Einingaumbreytir
+VPN & Proxy:
+  name: "VPN og milli\xFEj\xF3nn"
 Voice & Video Chat:
   name: Tal- og myndspjall
-VPN & Proxy:
-  name: VPN og milliþjónn
 Wallet:
   name: Veski
 Wallpaper:
   name: Bakgrunnsmynd
 Weather:
-  name: Veður
-Workout:
-  name: Líkamsrækt
-AI Chat:
-  name: AI-spjall
-  description: Viðmót fyrir AI-aðstoð, spjallkerfi og stór tungumálalíkön
-App Manager:
-  name: Forritastýring
-Clock:
-  name: Klukka
-  description: Vekjaraklukkur, skeiðklukkur og heimsklukkur
-Contact:
-  name: Tengiliðir
-Firewall:
-  name: Eldveggur
-Inventory:
-  name: Birgðaskráning
-Network Analyzer:
-  name: Greining netkerfa
-Religion:
-  name: Trúarbrögð
-Battery:
-  name: Rafhlaða
-Diet:
-  name: Mataræði
-Flashlight:
-  name: Vasaljós
-  description: Forrit fyrir LED-ljóskastara og vasaljós
-Health Manager:
-  name: Heilsustjórnun
-Radio:
-  name: Útvarp
-Remote Access:
-  name: Fjaraðgangur
-Remote Controller:
-  name: Fjarstýring
-Schedule:
-  name: Vinnuáætlun
-  description: Áætlanir fyrir ráðstefnur og atburði
-Text to Speech:
-  name: Texti-í-tal
-  description: Verkfæri fyrir texta-í-tal
-Time Tracker:
-  name: Tímastjórnun
-Action Game:
-  name: Spennuleikur
-  description: Leikir með spennu, íþróttum, keppni og þvílíku
-Board Game:
-  name: Borðleikur
-Camera:
-  name: Myndavél
-Card Game:
-  name: Spil
-Dice:
-  name: Teningar
-  description: Tilviljanakennt val
-Download:
-  name: Niðurhal
-Casual Game:
-  name: Auðveldur leikur
-  description: Einfaldur auðveldur leikur
-Educational Game:
-  name: Kennsluleikur
-Emulator:
-  name: Hermir
-File Manager:
-  name: Skráastjóri
-  description: Skráastjóri og skoðari
-Lyrics:
-  name: Lagatextar
-Market & Price:
-  name: Markaðir og verð
-Meditation:
-  name: Hugleiðsla
-Party Game:
-  name: Partýleikur
-Puzzle Game:
-  name: Púsluspil
-Recorder:
-  name: Upptaka
-Role-Playing Game:
-  name: Hlutverkaleikur
-Shooter Game:
-  name: Skotleikur
-  description: Skotfimi
-Strategy Game:
-  name: Herkænskuleikur
-  description: Herkænska, herming
-Sport Game:
-  name: Íþróttaleikur
-  description: Íþróttaleikir
-Timer:
-  name: Tímataka
+  name: "Ve\xF0ur"
 Word Game:
-  name: Orðaleikur
+  name: "Or\xF0aleikur"
+Workout:
+  name: "L\xEDkamsr\xE6kt"
+Writing:
+  name: Skrifa

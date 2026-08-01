@@ -1,317 +1,359 @@
+AI Chat:
+  description: Asistentes de IA, chatbots e interfaces de modelos de lenguaje a gran
+    escala (LLM)
+  name: Chat de IA
+Action Game:
+  description: "Juegos de acci\xF3n, deportes, carreras y de plataformas"
+  name: "Juegos de acci\xF3n"
+Alarm Clock:
+  description: Establecer una alarma
+  name: Reloj despertador
+App Manager:
+  description: Gestiona, organiza y controla las aplicaciones instaladas, las intenciones
+    y los permisos
+  name: Gestor de aplicaciones
+App Store & Updater:
+  description: Descubrir, instalar y actualizar aplicaciones desde repositorios de
+    software
+  name: Tienda de aplicaciones y actualizadores
+Battery:
+  description: "Monitorizar y optimizar la vida de bater\xEDa, uso de energ\xEDa y\
+    \ carga"
+  name: "Bater\xEDa"
+Board Game:
+  description: Juegos de mesa, ajedrez, go y tres en raya
+  name: Juegos de mesa
+Bookmark:
+  description: Guardar, organizar y administrar enlaces favoritos y listas de lectura
+  name: Marcadores
+Browser:
+  description: "Navegadores web para surfear el internet y ver p\xE1ginas web"
+  name: Navegador
+Calculator:
+  description: "Herramientas para c\xE1lculos aritm\xE9ticos, cient\xEDficos y matem\xE1\
+    ticas"
+  name: Calculadora
+Calendar & Agenda:
+  description: Planificar eventos, recordatorios, citas y planes diarios
+  name: Calendarios y agendas
+Camera:
+  description: "C\xE1mara, visor de c\xE1maras IP y grabadora de v\xEDdeo"
+  name: "C\xE1mara"
+Card Game:
+  description: Juegos de cartas, solitario
+  name: Juegos de cartas
+Cast:
+  description: Transmitir, UPnP, DLNA, FCast, AirPlay, Miracast
+  name: Transmitir
+Casual Game:
+  description: Juegos casuales simples
+  name: Juegos casuales
+Clock:
+  description: Indicar la hora actual
+  name: Reloj
+Cloud Storage & File Sync:
+  description: "Respalda, sincroniza y accede a tus archivos de forma remota a trav\xE9\
+    s de servicios en la nube"
+  name: Subir y sincronizar archivos
+Code & Forge:
+  description: "Git, alojamiento del c\xF3digo fuente, forja"
+  name: "C\xF3digo y forja"
 Connectivity:
   name: Conectividad
+Contact:
+  description: "Aplicaciones de agenda de contactos, directorio telef\xF3nico y gesti\xF3\
+    n de personas"
+  name: Contactos
+DNS & Hosts:
+  description: Configurar resoluciones DNS, bloqueo de anuncios, archivo hosts y enrutamiento
+    de dominios
+  name: DNS y Hospedajes
 Development:
+  description: "Codificaci\xF3n, programaci\xF3n, IDE, terminal y herramientas para\
+    \ desarrolladores"
   name: Desarrollo
-  description: Codificación, programación, IDE, terminal y herramientas para desarrolladores
+Dice:
+  description: "Selecci\xF3n aleatoria"
+  name: Dados
+Diet:
+  description: "Nutrici\xF3n, calorias, gesti\xF3n de comida y rastreador"
+  name: Dieta
+Download:
+  description: Descargadores, gestores de descargas y clientes torrent
+  name: Descargar
+Draw:
+  description: Aplicaciones para bosquejo, pintar, ilustrar y crear arte digital
+  name: Dibujo
+Ebook Reader:
+  description: Lee libros-e EPUB, PDF y libros digitales y publicaciones
+  name: Lector de libro-e
+Educational Game:
+  description: Aprende jugando, quiz
+  name: Juegos educativos
+Email:
+  description: Clientes de correo-e para enviar, recibir y gestionar mensajes de correo-e
+  name: Correo-e
+Emulator:
+  description: Emuladores para juegos y programas
+  name: Emulador
+File Encryption & Vault:
+  description: Cifra, bloquea y oculta archivos y carpetas privados
+  name: "Cifrado de archivos y b\xF3vedas"
+File Manager:
+  description: Exploradores y administradores de archivos
+  name: Administrador de archivos
+File Transfer:
+  description: "Comparta y transfiera archivos a trav\xE9s de FTP, LAN, Bluetooth\
+    \ o peer-to-peer (p2p)"
+  name: Transferencia de archivo
+Finance Manager:
+  description: Controla los gastos, presupuestos, ingresos y las cuentas financieras
+    personales
+  name: Contabilidad y finanzas
+Firewall:
+  description: "Bloquea el tr\xE1fico de red no deseado y controla el acceso a Internet\
+    \ de la aplicaci\xF3n"
+  name: Cortafuegos
+Flashlight:
+  description: Aplicaciones de linterna y luz LED
+  name: Linterna
+Forum:
+  description: "Foros de discusi\xF3n, hilos de la comunidad y plataformas de PyR"
+  name: Foros
+Gallery:
+  description: "Explora, visualiza y organiza fotos, im\xE1genes y v\xEDdeos"
+  name: "Galer\xEDa"
+Game Helper:
+  description: "Ayudas, asistentes, compa\xF1ero, marcador y temporizadores para juegos"
+  name: Ayudas para juegos
 Graphics:
-  name: Gráficos
-  description: Herramientas de edición de imágenes, manipulación fotográfica y diseño visual
+  description: "Herramientas de edici\xF3n de im\xE1genes, manipulaci\xF3n fotogr\xE1\
+    fica y dise\xF1o visual"
+  name: "Gr\xE1ficos"
+Habit Tracker:
+  description: Construye rutinas, realiza un seguimiento de tus objetivos diarios
+    y controla tus rachas personales
+  name: "Seguimiento de h\xE1bitos"
+Health Manager:
+  description: "Peso del administrador, frecuencia card\xEDaca, presi\xF3n arterial,\
+    \ menstruaci\xF3n y otras m\xE9tricas de salud"
+  name: Gestor de salud
+Icon Pack:
+  description: Conjuntos de iconos personalizados para personalizar el estilo y el
+    tema de los iconos de las aplicaciones
+  name: Paquete de iconos
 Internet:
   name: Internet
-Multimedia:
-  name: Multimedia
-Navigation:
-  name: Navegación
-  description: Mapas, GPS, direcciones de cambio y aplicaciones de planificación de rutas
-Phone & SMS:
-  name: Llamadas de teléfono y SMS
-  description: Marcadores, gestores de llamadas y utilidades de mensajería de texto
-Reading:
-  name: Lectura
-  description: Artículos, contenidos de larga duración, aplicaciones de lectura y lectura web
-Science & Education:
-  name: Ciencia y Educación
-  description: Aprender, estudiar, hacer referencia y aplicaciones educativas
-Security:
-  name: Seguridad
-Sports & Health:
-  name: Deportes y Salud
-  description: Seguimiento de la actividad física, bienestar, puntuaciones deportivas y monitorización de la salud
-System:
-  name: Sistema
-Theming:
-  name: Colores e interfaz
-  description: Personaliza el aspecto de tu dispositivo con temas, fuentes y estilos UI
-Writing:
-  name: Escritura
-Email:
-  name: Correo-e
-  description: Clientes de correo-e para enviar, recibir y gestionar mensajes de correo-e
-VPN & Proxy:
-  name: Redes privadas (VPN) y proxies
-  description: Cifrar tráfico, evadir restricciones (circunvención) y anonimizar tu conexión
-DNS & Hosts:
-  name: DNS y Hospedajes
-  description: Configurar resoluciones DNS, bloqueo de anuncios, archivo hosts y enrutamiento de dominios
-File Transfer:
-  name: Transferencia de archivo
-  description: Comparta y transfiera archivos a través de FTP, LAN, Bluetooth o peer-to-peer (p2p)
-Messaging:
-  name: Mensajería
-  description: Aplicaciones de mensajería instantánea, chat y comunicación por SMS
-File Encryption & Vault:
-  name: Cifrado de archivos y bóvedas
-  description: Cifra, bloquea y oculta archivos y carpetas privados
-Password & 2FA:
-  name: Contraseñas y segundo factor de autenticación
-  description: Administradores de contraseñas, autenticadores, OTP, TOTP, HOTP, U2F, FIDO y herramientas de seguridad de dos factores
-Browser:
-  name: Navegador
-  description: Navegadores web para surfear el internet y ver páginas web
-App Store & Updater:
-  name: Tienda de aplicaciones y actualizadores
-  description: Descubrir, instalar y actualizar aplicaciones desde repositorios de software
-News:
-  name: Novedades
-  description: Últimas noticias, artículos, fuentes RSS y agregadores de noticias
-Local Media Player:
-  name: Reproductor local
-  description: Reproduce sin conexión archivos de audio y vídeo almacenados en tu dispositivo
-Keyboard & IME:
-  name: Teclado y métodos de entrada (IME)
-  description: Teclados personalizados, métodos de entrada, auto‐corrección y aplicaciones de escritura
-Social Network:
-  name: Redes sociales
-  description: Redes sociales, microblogueo, y plataformas de comunidades en línea
-Podcast:
-  name: Pódcast
-  description: Suscríbete a, streaming y descarga episodios y programas de audio podcast
-Weather:
-  name: El tiempo y previsiones
-  description: Aplicaciones de pronóstico, radar, temperatura y afección atmosférica
-Online Media Player:
-  name: Reproductor en línea
-  description: Transmitir música, videos y contenido en vivo desde internet
-Workout:
-  name: Ejercicio físico
-  description: Rutinas de ejercicio, seguimiento de gimnasio, running y aplicaciones de entrenamiento
-Wallpaper:
-  name: Fondos de pantalla
-  description: Aplicaciones de fondos de pantalla estáticos y animados para la pantalla de inicio y bloqueo
-Wallet:
-  name: Cartera
-  description: Carteras digitales para pagos, tarjetas y gestión de criptomonedas
-Voice & Video Chat:
-  name: Chat de vídeo y voz
-  description: Aplicaciones de comunicación de audio y vídeo, conferencias y VoIP
-Unit Convertor:
-  name: Conversión de unidades
-  description: Convertir entre unidades de longitud, peso, temperatura, moneda y más
-Translation & Dictionary:
-  name: Traducción y diccionarios
-  description: Traducir idiomas, buscar palabras, y acceder a referencias de vocabulario
-Text Editor:
-  name: Editor de textos
-  description: Editores de texto plano, Editores Markdown, y herramientas de escritura
-Bookmark:
-  name: Marcadores
-  description: Guardar, organizar y administrar enlaces favoritos y listas de lectura
-Calculator:
-  name: Calculadora
-  description: Herramientas para cálculos aritméticos, científicos y matemáticas
-Calendar & Agenda:
-  name: Calendarios y agendas
-  description: Planificar eventos, recordatorios, citas y planes diarios
-Cloud Storage & File Sync:
-  name: Subir y sincronizar archivos
-  description: Respalda, sincroniza y accede a tus archivos de forma remota a través de servicios en la nube
-Draw:
-  name: Dibujo
-  description: Aplicaciones para bosquejo, pintar, ilustrar y crear arte digital
-Ebook Reader:
-  name: Lector de libro-e
-  description: Lee libros-e EPUB, PDF y libros digitales y publicaciones
-Finance Manager:
-  name: Contabilidad y finanzas
-  description: Controla los gastos, presupuestos, ingresos y las cuentas financieras personales
-Gallery:
-  name: Galería
-  description: Explora, visualiza y organiza fotos, imágenes y vídeos
-Icon Pack:
-  name: Paquete de iconos
-  description: Conjuntos de iconos personalizados para personalizar el estilo y el tema de los iconos de las aplicaciones
-Launcher:
-  name: Lanzador de aplicaciones
-  description: Reemplazo de la pantalla de inicio y aplicaciones de entorno de escritorio
-Note:
-  name: Notas
-  description: Cuadernos, memorándum y aplicaciones para tomar y organizar notas rápidamente
-Pass Wallet:
-  name: Billetes de transporte y entradas
-  description: Guardar pases de embarque, boletos, tarjetas de fidelidad y cupones
-Recipe Manager:
-  name: Recetas de cocina
-  description: Almacene, organice y descubra recetas de cocina e ideas de comida
-Public Transport:
-  name: Transporte público
-  description: Bus, tren, metro, horarios de tránsito y planificadores de viaje
-Shopping List:
-  name: Lista de la compra
-  description: Listas de comestibles, rastreadores de compras y aplicaciones de compras colaborativas
-Task:
-  name: Tareas
-  description: Listas de cosas por hacer, gestores de tareas, herramientas de productividad, herramientas GTD
-Forum:
-  name: Foros
-  description: Foros de discusión, hilos de la comunidad y plataformas de PyR
-Habit Tracker:
-  name: Seguimiento de hábitos
-  description: Construye rutinas, realiza un seguimiento de tus objetivos diarios y controla tus rachas personales
-Location Tracker & Sharer:
-  name: Seguir y compartir mi ubicación
-  description: Comparte y monitoriza el lugar de GPS en tiempo real con otros
-Music Practice Tool:
-  name: Práctica musical
-  description: Afinadores, metrónomos, herramientas para acordes y ayudas para la práctica de instrumentos
-AI Chat:
-  name: Chat de IA
-  description: Asistentes de IA, chatbots e interfaces de modelos de lenguaje a gran escala (LLM)
-App Manager:
-  name: Gestor de aplicaciones
-  description: Gestiona, organiza y controla las aplicaciones instaladas, las intenciones y los permisos
-Religion:
-  name: Religión
-  description: Tiempos de oración, textos santos, devocionales y aplicaciones de práctica espiritual
-Clock:
-  name: Reloj
-  description: Indicar la hora actual
-Contact:
-  name: Contactos
-  description: Aplicaciones de agenda de contactos, directorio telefónico y gestión de personas
-Firewall:
-  name: Cortafuegos
-  description: Bloquea el tráfico de red no deseado y controla el acceso a Internet de la aplicación
 Inventory:
+  description: "Realizar el seguimiento, catalogar y gestionar los art\xEDculos f\xED\
+    sicos y el inventario"
   name: Inventario
-  description: Realizar el seguimiento, catalogar y gestionar los artículos físicos y el inventario
-Network Analyzer:
-  name: Diagnósticos de red
-  description: Diagnosticar Wi-Fi, escanear redes y monitorizar el rendimiento de la conexión
-Battery:
-  name: Batería
-  description: Monitorizar y optimizar la vida de batería, uso de energía y carga
-Flashlight:
-  name: Linterna
-  description: Aplicaciones de linterna y luz LED
-Remote Access:
-  name: Acceso Remoto
-  description: Control de escritorios, servidores y dispositivos a distancia a través de RDP, VNC o SSH
-Radio:
-  name: Radio
-  description: Transmite en directo emisoras de radio FM/AM y programas de radio por internet
-Remote Controller:
-  name: Mando a Distancia
-  description: IR y mandos inteligentes para TV, unidades AC y otros dispositivos
-Diet:
-  name: Dieta
-  description: Nutrición, calorias, gestión de comida y rastreador
-Action Game:
-  name: Juegos de acción
-  description: Juegos de acción, deportes, carreras y de plataformas
-Board Game:
-  name: Juegos de mesa
-  description: Juegos de mesa, ajedrez, go y tres en raya
-Card Game:
-  name: Juegos de cartas
-  description: Juegos de cartas, solitario
-Casual Game:
-  name: Juegos casuales
-  description: Juegos casuales simples
-Dice:
-  name: Dados
-  description: Selección aleatoria
-Download:
-  name: Descargar
-  description: Descargadores, gestores de descargas y clientes torrent
-Educational Game:
-  name: Juegos educativos
-  description: Aprende jugando, quiz
-Emulator:
-  name: Emulador
-  description: Emuladores para juegos y programas
-File Manager:
-  name: Administrador de archivos
-  description: Exploradores y administradores de archivos
-Game Helper:
-  name: Ayudas para juegos
-  description: Ayudas, asistentes, compañero, marcador y temporizadores para juegos
-Health Manager:
-  name: Gestor de salud
-  description: Peso del administrador, frecuencia cardíaca, presión arterial, menstruación y otras métricas de salud
-Alarm Clock:
-  name: Reloj despertador
-  description: Establecer una alarma
-Camera:
-  name: Cámara
-  description: Cámara, visor de cámaras IP y grabadora de vídeo
-Cast:
-  name: Transmitir
-  description: Transmitir, UPnP, DLNA, FCast, AirPlay, Miracast
+Keyboard & IME:
+  description: "Teclados personalizados, m\xE9todos de entrada, auto\u2010correcci\xF3\
+    n y aplicaciones de escritura"
+  name: "Teclado y m\xE9todos de entrada (IME)"
+Launcher:
+  description: Reemplazo de la pantalla de inicio y aplicaciones de entorno de escritorio
+  name: Lanzador de aplicaciones
+Local Media Player:
+  description: "Reproduce sin conexi\xF3n archivos de audio y v\xEDdeo almacenados\
+    \ en tu dispositivo"
+  name: Reproductor local
+Location Tracker & Sharer:
+  description: Comparte y monitoriza el lugar de GPS en tiempo real con otros
+  name: "Seguir y compartir mi ubicaci\xF3n"
 Lyrics:
   description: Ver y buscar letras
   name: Letras
 Market & Price:
-  name: Mercado y precios
   description: Precio, tipo de cambio, acciones
+  name: Mercado y precios
 Meditation:
-  name: Meditación
-  description: Meditación, atención plena, práctica respiratoria
+  description: "Meditaci\xF3n, atenci\xF3n plena, pr\xE1ctica respiratoria"
+  name: "Meditaci\xF3n"
+Messaging:
+  description: "Aplicaciones de mensajer\xEDa instant\xE1nea, chat y comunicaci\xF3\
+    n por SMS"
+  name: "Mensajer\xEDa"
+Multimedia:
+  name: Multimedia
+Music Practice Tool:
+  description: "Afinadores, metr\xF3nomos, herramientas para acordes y ayudas para\
+    \ la pr\xE1ctica de instrumentos"
+  name: "Pr\xE1ctica musical"
+Navigation:
+  description: "Mapas, GPS, direcciones de cambio y aplicaciones de planificaci\xF3\
+    n de rutas"
+  name: "Navegaci\xF3n"
+Network Analyzer:
+  description: "Diagnosticar Wi-Fi, escanear redes y monitorizar el rendimiento de\
+    \ la conexi\xF3n"
+  name: "Diagn\xF3sticos de red"
+News:
+  description: "\xDAltimas noticias, art\xEDculos, fuentes RSS y agregadores de noticias"
+  name: Novedades
+Note:
+  description: "Cuadernos, memor\xE1ndum y aplicaciones para tomar y organizar notas\
+    \ r\xE1pidamente"
+  name: Notas
 Notification:
-  name: Notificación
   description: Administrador de notificaciones, registrador, redirector, potenciador
-Code & Forge:
-  name: Código y forja
-  description: Git, alojamiento del código fuente, forja
+  name: "Notificaci\xF3n"
 OCR:
+  description: "Esc\xE1ner de documentos, reconocimiento de caracteres \xF3pticos"
   name: OCR
-  description: Escáner de documentos, reconocimiento de caracteres ópticos
+Online Media Player:
+  description: "Transmitir m\xFAsica, videos y contenido en vivo desde internet"
+  name: "Reproductor en l\xEDnea"
 Party Game:
-  name: Juego de Fiesta
   description: Multi-jugador, Juego de Fiesta
+  name: Juego de Fiesta
+Pass Wallet:
+  description: Guardar pases de embarque, boletos, tarjetas de fidelidad y cupones
+  name: Billetes de transporte y entradas
+Password & 2FA:
+  description: "Administradores de contrase\xF1as, autenticadores, OTP, TOTP, HOTP,\
+    \ U2F, FIDO y herramientas de seguridad de dos factores"
+  name: "Contrase\xF1as y segundo factor de autenticaci\xF3n"
+Phone & SMS:
+  description: "Marcadores, gestores de llamadas y utilidades de mensajer\xEDa de\
+    \ texto"
+  name: "Llamadas de tel\xE9fono y SMS"
 Platformer Game:
-  name: Juego de plataformas
   description: Plataformas, juego de desplazamiento lateral
+  name: Juego de plataformas
+Podcast:
+  description: "Suscr\xEDbete a, streaming y descarga episodios y programas de audio\
+    \ podcast"
+  name: "P\xF3dcast"
+Public Transport:
+  description: "Bus, tren, metro, horarios de tr\xE1nsito y planificadores de viaje"
+  name: "Transporte p\xFAblico"
 Push:
-  name: Push
   description: Mensajes push
+  name: Push
 Puzzle Game:
-  name: Juego de rompecabezas
   description: Rompecabezas, sudoku, juego de memoria
+  name: Juego de rompecabezas
+Radio:
+  description: Transmite en directo emisoras de radio FM/AM y programas de radio por
+    internet
+  name: Radio
+Reading:
+  description: "Art\xEDculos, contenidos de larga duraci\xF3n, aplicaciones de lectura\
+    \ y lectura web"
+  name: Lectura
+Recipe Manager:
+  description: Almacene, organice y descubra recetas de cocina e ideas de comida
+  name: Recetas de cocina
 Recorder:
-  name: Grabadora
   description: Audio, pantalla, grabadora de llamadas
+  name: Grabadora
+Religion:
+  description: "Tiempos de oraci\xF3n, textos santos, devocionales y aplicaciones\
+    \ de pr\xE1ctica espiritual"
+  name: "Religi\xF3n"
+Remote Access:
+  description: "Control de escritorios, servidores y dispositivos a distancia a trav\xE9\
+    s de RDP, VNC o SSH"
+  name: Acceso Remoto
+Remote Controller:
+  description: IR y mandos inteligentes para TV, unidades AC y otros dispositivos
+  name: Mando a Distancia
 Role-Playing Game:
-  name: Juego de roles
   description: RPG, rogue-like
+  name: Juego de roles
 Schedule:
-  name: Horario
   description: Horario para conferencia y evento
+  name: Horario
+Science & Education:
+  description: Aprender, estudiar, hacer referencia y aplicaciones educativas
+  name: "Ciencia y Educaci\xF3n"
+Security:
+  name: Seguridad
 Shooter Game:
-  name: Juego de disparos
   description: Juego de tiro al blanco
-Strategy Game:
-  name: Juego de estrategia
-  description: Estrategia, simulación
+  name: Juego de disparos
+Shopping List:
+  description: Listas de comestibles, rastreadores de compras y aplicaciones de compras
+    colaborativas
+  name: Lista de la compra
+Social Network:
+  description: "Redes sociales, microblogueo, y plataformas de comunidades en l\xED\
+    nea"
+  name: Redes sociales
 Sport Game:
-  name: Juego de Deporte
   description: Juegos de Deporte
+  name: Juego de Deporte
+Sports & Health:
+  description: "Seguimiento de la actividad f\xEDsica, bienestar, puntuaciones deportivas\
+    \ y monitorizaci\xF3n de la salud"
+  name: Deportes y Salud
 Stopwatch:
-  name: Cronómetro
   description: Medir el progreso, transcurrido, temporizador de vueltas
+  name: "Cron\xF3metro"
+Strategy Game:
+  description: "Estrategia, simulaci\xF3n"
+  name: Juego de estrategia
+System:
+  name: Sistema
+Task:
+  description: Listas de cosas por hacer, gestores de tareas, herramientas de productividad,
+    herramientas GTD
+  name: Tareas
+Text Editor:
+  description: Editores de texto plano, Editores Markdown, y herramientas de escritura
+  name: Editor de textos
 Text to Speech:
-  name: Texto a Voz
   description: Herramientas TTS
+  name: Texto a Voz
+Theming:
+  description: Personaliza el aspecto de tu dispositivo con temas, fuentes y estilos
+    UI
+  name: Colores e interfaz
 Time Tracker:
-  name: Registrador de tiempo
   description: Uso del registrador de tiempo en actividades y tiempo en pantalla
+  name: Registrador de tiempo
 Timer:
   name: Temporizador
+Translation & Dictionary:
+  description: Traducir idiomas, buscar palabras, y acceder a referencias de vocabulario
+  name: "Traducci\xF3n y diccionarios"
+Unit Convertor:
+  description: "Convertir entre unidades de longitud, peso, temperatura, moneda y\
+    \ m\xE1s"
+  name: "Conversi\xF3n de unidades"
+VPN & Proxy:
+  description: "Cifrar tr\xE1fico, evadir restricciones (circunvenci\xF3n) y anonimizar\
+    \ tu conexi\xF3n"
+  name: Redes privadas (VPN) y proxies
 Visual Novel:
-  name: Novela visual
   description: Novela visual, Simulador de citas, Juego de Historia
+  name: Novela visual
+Voice & Video Chat:
+  description: "Aplicaciones de comunicaci\xF3n de audio y v\xEDdeo, conferencias\
+    \ y VoIP"
+  name: "Chat de v\xEDdeo y voz"
 Volume:
+  description: "Gesti\xF3n del volumen"
   name: Volumen
-  description: Gestión del volumen
+Wallet:
+  description: "Carteras digitales para pagos, tarjetas y gesti\xF3n de criptomonedas"
+  name: Cartera
+Wallpaper:
+  description: "Aplicaciones de fondos de pantalla est\xE1ticos y animados para la\
+    \ pantalla de inicio y bloqueo"
+  name: Fondos de pantalla
+Weather:
+  description: "Aplicaciones de pron\xF3stico, radar, temperatura y afecci\xF3n atmosf\xE9\
+    rica"
+  name: El tiempo y previsiones
 Word Game:
-  name: Juego de Palabra
   description: Juego de Rompecabezas, crucigrama, adivina la palabra
+  name: Juego de Palabra
+Workout:
+  description: Rutinas de ejercicio, seguimiento de gimnasio, running y aplicaciones
+    de entrenamiento
+  name: "Ejercicio f\xEDsico"
+Writing:
+  name: Escritura

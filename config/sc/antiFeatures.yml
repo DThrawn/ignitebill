@@ -1,29 +1,32 @@
 Ads:
-  description: Custa aplicatzione cuntènnidi publitzidade
+  description: "Custa aplicatzione cunt\xE8nnidi publitzidade"
   name: Publitzidade
 DisabledAlgorithm:
-  description: Custa aplicatzione tenet una firma de seguresa dèbile
+  description: "Custa aplicatzione tenet una firma de seguresa d\xE8bile"
   name: Firmadu impreende un\'algoritmu non seguru
 KnownVuln:
   description: Custa aplicatzione tenet una vulnerabilidade de seguresa connota
   name: Vulnerabilidade connota
 NoSourceSince:
-  name: Su còdighe mitza no est prus disponìbile, no est possìbile fàghere agiornamentos.
+  name: "Su c\xF2dighe mitza no est prus dispon\xECbile, no est poss\xECbile f\xE0\
+    ghere agiornamentos."
 NonFreeAdd:
-  description: Custa aplicatzione promovet estensiones (add-ons) non lìberas
-  name: Estensiones non lìberas
+  description: "Custa aplicatzione promovet estensiones (add-ons) non l\xECberas"
+  name: "Estensiones non l\xECberas"
 NonFreeAssets:
-  description: Custa aplicatzione cuntennit cantos non lìberos
-  name: Cumponentes non lìberos
+  description: "Custa aplicatzione cuntennit cantos non l\xECberos"
+  name: "Cumponentes non l\xECberos"
 NonFreeDep:
-  description: Custa aplicatzione dipendet dae àteros aplicos non lìberos
-  name: Dipendèntzias non lìberas
+  description: "Custa aplicatzione dipendet dae \xE0teros aplicos non l\xECberos"
+  name: "Dipend\xE8ntzias non l\xECberas"
 NonFreeNet:
-  description: Custa aplicatzione promovet servìtzios de retza non lìberos
-  name: Servìtzios de retza non lìberos
-Tracking:
-  description: Custa aplicatzione compidat e riferit a àteros de sas atividades tuas
-  name: Arrastamentu
+  description: "Custa aplicatzione promovet serv\xECtzios de retza non l\xECberos"
+  name: "Serv\xECtzios de retza non l\xECberos"
 TetheredNet:
-  name: Servìtzios ligados
-  description: Custa aplicatzione promovet o dipendet de su totu dae un'istàntzia ispetzìfica de unu servìtziu de rete.
+  description: "Custa aplicatzione promovet o dipendet de su totu dae un'ist\xE0ntzia\
+    \ ispetz\xECfica de unu serv\xECtziu de rete."
+  name: "Serv\xECtzios ligados"
+Tracking:
+  description: "Custa aplicatzione compidat e riferit a \xE0teros de sas atividades\
+    \ tuas"
+  name: Arrastamentu

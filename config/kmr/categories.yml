@@ -1,11 +1,11 @@
 Connectivity:
-  name: Girêdanî
+  name: "Gir\xEAdan\xEE"
 Development:
-  name: Pêşdebirin
+  name: "P\xEA\u015Fdebirin"
 Graphics:
-  name: Grafîk
+  name: "Graf\xEEk"
 Internet:
-  name: Înternet
+  name: "\xCEnternet"
 Phone & SMS:
   name: Telefon & SMS
 Reading:
@@ -13,10 +13,10 @@ Reading:
 Science & Education:
   name: Zanist & perwerde
 Security:
-  name: Ewlehî
+  name: "Ewleh\xEE"
 Sports & Health:
-  name: Werzişî & tenduristî
+  name: "Werzi\u015F\xEE & tendurist\xEE"
 System:
   name: Pergal
 Writing:
-  name: Nivîsandin
+  name: "Niv\xEEsandin"

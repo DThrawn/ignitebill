@@ -8,8 +8,8 @@ KnownVuln:
   description: Aplikasi ini berisi kerentanan keamanan yang dikenal
   name: Kerentanan yang Diketahui
 NoSourceSince:
-  name: Sumber tidak tersedia sejak
   description: Kode sumber tidak lagi tersedia, tidak mungkin melakukan pembaruan
+  name: Sumber tidak tersedia sejak
 NonFreeAdd:
   description: Aplikasi ini mempromosikan ekstensi non-bebas
   name: Ekstensi Non-Bebas
@@ -22,9 +22,9 @@ NonFreeDep:
 NonFreeNet:
   description: Aplikasi ini mempromosikan layanan jaringan non-bebas
   name: Layanan Jaringan Non-Bebas
+TetheredNet:
+  description: Aplikasi ini sepenuhnya bergantung pada layanan jaringan tertentu
+  name: Layanan Jaringan Tertambat
 Tracking:
   description: Aplikasi ini melacak dan melaporkan aktivitas Anda
   name: Pelacakan
-TetheredNet:
-  name: Layanan Jaringan Tertambat
-  description: Aplikasi ini sepenuhnya bergantung pada layanan jaringan tertentu

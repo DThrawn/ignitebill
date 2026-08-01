@@ -1,26 +1,28 @@
 Connectivity:
   name: kalavaDika
 Development:
-  name: అభివృద్ధి
+  name: "\u0C05\u0C2D\u0C3F\u0C35\u0C43\u0C26\u0C4D\u0C27\u0C3F"
 Graphics:
-  name: గ్రాఫిక్స్
+  name: "\u0C17\u0C4D\u0C30\u0C3E\u0C2B\u0C3F\u0C15\u0C4D\u0C38\u0C4D"
 Internet:
-  name: అంతర్జాలం
+  name: "\u0C05\u0C02\u0C24\u0C30\u0C4D\u0C1C\u0C3E\u0C32\u0C02"
 Multimedia:
-  name: మల్టీమీడియా
+  name: "\u0C2E\u0C32\u0C4D\u0C1F\u0C40\u0C2E\u0C40\u0C21\u0C3F\u0C2F\u0C3E"
 Navigation:
-  name: నౌకాయానం
+  name: "\u0C28\u0C4C\u0C15\u0C3E\u0C2F\u0C3E\u0C28\u0C02"
 Phone & SMS:
-  name: ఫోన్ & ఎస్ఎంఎస్
+  name: "\u0C2B\u0C4B\u0C28\u0C4D & \u0C0E\u0C38\u0C4D\u0C0E\u0C02\u0C0E\u0C38\u0C4D"
 Reading:
-  name: చదవటం
+  name: "\u0C1A\u0C26\u0C35\u0C1F\u0C02"
 Science & Education:
-  name: విజ్ఞానం & విద్య
+  name: "\u0C35\u0C3F\u0C1C\u0C4D\u0C1E\u0C3E\u0C28\u0C02 & \u0C35\u0C3F\u0C26\u0C4D\
+    \u0C2F"
 Security:
-  name: రక్షణ
+  name: "\u0C30\u0C15\u0C4D\u0C37\u0C23"
 Sports & Health:
-  name: క్రీడలు & ఆరోగ్యం
+  name: "\u0C15\u0C4D\u0C30\u0C40\u0C21\u0C32\u0C41 & \u0C06\u0C30\u0C4B\u0C17\u0C4D\
+    \u0C2F\u0C02"
 System:
-  name: వ్యవస్థ
+  name: "\u0C35\u0C4D\u0C2F\u0C35\u0C38\u0C4D\u0C25"
 Writing:
-  name: వ్రాయటం
+  name: "\u0C35\u0C4D\u0C30\u0C3E\u0C2F\u0C1F\u0C02"

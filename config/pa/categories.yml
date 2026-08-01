@@ -1,28 +1,29 @@
 Connectivity:
-  name: ਕਨੈਕਟਵਿਟੀ
+  name: "\u0A15\u0A28\u0A48\u0A15\u0A1F\u0A35\u0A3F\u0A1F\u0A40"
 Development:
-  name: ਡਿਵੈਲਪਮੈਂਟ
+  name: "\u0A21\u0A3F\u0A35\u0A48\u0A32\u0A2A\u0A2E\u0A48\u0A02\u0A1F"
 Graphics:
-  name: ਗਰਾਫਿਕਸ
+  name: "\u0A17\u0A30\u0A3E\u0A2B\u0A3F\u0A15\u0A38"
 Internet:
-  name: ਇੰਟਰਨੈੱਟ
+  name: "\u0A07\u0A70\u0A1F\u0A30\u0A28\u0A48\u0A71\u0A1F"
 Multimedia:
-  name: ਮਲਟੀ-ਮੀਡਿਆ
+  name: "\u0A2E\u0A32\u0A1F\u0A40-\u0A2E\u0A40\u0A21\u0A3F\u0A06"
 Navigation:
-  name: ਨੇਵੀਗੇਸ਼ਨ
+  name: "\u0A28\u0A47\u0A35\u0A40\u0A17\u0A47\u0A38\u0A3C\u0A28"
 Phone & SMS:
-  name: ਫ਼ੋਨ ਤੇ SMS
+  name: "\u0A2B\u0A3C\u0A4B\u0A28 \u0A24\u0A47 SMS"
 Reading:
-  name: ਪੜ੍ਹਨ
+  name: "\u0A2A\u0A5C\u0A4D\u0A39\u0A28"
 Science & Education:
-  name: ਵਿਗਿਆਨ ਤੇ ਸਿੱਖਿਆ
+  name: "\u0A35\u0A3F\u0A17\u0A3F\u0A06\u0A28 \u0A24\u0A47 \u0A38\u0A3F\u0A71\u0A16\
+    \u0A3F\u0A06"
 Security:
-  name: ਸੁਰੱਖਿਆ
-Writing:
-  name: ਲਿਖਣ
+  name: "\u0A38\u0A41\u0A30\u0A71\u0A16\u0A3F\u0A06"
 Sports & Health:
-  name: ਖੇਡਾਂ ਅਤੇ ਸਿਹਤ
+  name: "\u0A16\u0A47\u0A21\u0A3E\u0A02 \u0A05\u0A24\u0A47 \u0A38\u0A3F\u0A39\u0A24"
 System:
-  name: ਸਿਸਟਮ
+  name: "\u0A38\u0A3F\u0A38\u0A1F\u0A2E"
 Theming:
-  name: ਥੀਮਿੰਗ
+  name: "\u0A25\u0A40\u0A2E\u0A3F\u0A70\u0A17"
+Writing:
+  name: "\u0A32\u0A3F\u0A16\u0A23"

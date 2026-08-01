@@ -1,307 +1,311 @@
+AI Chat:
+  description: AI assistants, chatbots, and large language model (LLM) interfaces
+  name: AI Chat
+Action Game:
+  description: Action, sport, racing and platformer games
+  name: Action Game
+Alarm Clock:
+  description: Set an alarm on a time
+  name: Alarm Clock
+App Manager:
+  description: Manage, organise, and control installed apps, intents, permissions
+  name: App Manager
+App Store & Updater:
+  description: Discover, install, and update apps from software repositories
+  name: App Store & Updater
+Battery:
+  description: Monitor and optimise battery life, power usage, and charging
+  name: Battery
+Board Game:
+  description: Board game, chess, go, tic-tac-toe
+  name: Board Game
+Bookmark:
+  description: Save, organise, and manage favorite links and reading lists
+  name: Bookmark
+Browser:
+  description: Web browsers for surfing the internet and viewing websites
+  name: Browser
+Calculator:
+  description: Arithmetic, scientific, and mathematical calculation tools
+  name: Calculator
+Calendar & Agenda:
+  description: Schedule events, reminders, appointments, and daily planners
+  name: Calendar & Agenda
+Camera:
+  description: Camera, IP camera viewer and video recorder
+  name: Camera
+Card Game:
+  description: Card game, solitaire
+  name: Card Game
+Cast:
+  description: Cast, UPnP, DLNA, FCast, AirPlay, Miracast
+  name: Cast
+Casual Game:
+  description: Simple casual game
+  name: Casual Game
+Clock:
+  description: Tell the current time
+  name: Clock
+Cloud Storage & File Sync:
+  description: Backup, sync, and access files remotely via cloud services
+  name: Cloud Storage & File Sync
 Connectivity:
   name: Connectivity
+Contact:
+  description: Address book, phonebook, and people management apps
+  name: Contact
+DNS & Hosts:
+  description: Configure DNS resolvers, ad blocking, hosts file, and domain routing
+  name: DNS & Hosts
 Development:
-  name: Development
   description: Coding, programming, IDE, terminal, and developer tools
+  name: Development
+Dice:
+  description: Random selector
+  name: Dice
+Diet:
+  description: Nutrition, calorie, food management and tracker
+  name: Diet
+Download:
+  description: Downloader, download manager, and torrent client
+  name: Download
+Draw:
+  description: Sketching, painting, illustration, and digital art canvas apps
+  name: Draw
+Ebook Reader:
+  description: Read ebooks, EPUB, PDF, and digital books and publications
+  name: Ebook Reader
+Educational Game:
+  description: Learn in game, quiz
+  name: Educational Game
+Email:
+  description: Mail clients for sending, receiving, and managing email messages
+  name: Email
+Emulator:
+  description: Emulator running game and program
+  name: Emulator
+File Encryption & Vault:
+  description: Encrypt, lock, and hide private files and folders
+  name: File Encryption & Vault
+File Manager:
+  description: File manager and explorer
+  name: File Manager
+File Transfer:
+  description: Share and transfer files via FTP, LAN, Bluetooth, or peer-to-peer (p2p)
+  name: File Transfer
+Finance Manager:
+  description: Track expenses, budgets, income, and personal financial accounts
+  name: Finance Manager
+Firewall:
+  description: Block unwanted network traffic and control app's internet access
+  name: Firewall
+Flashlight:
+  description: Torch and LED flash light apps
+  name: Torch
+Forum:
+  description: Discussion boards, community threads, and Q&A platforms
+  name: Forum
+Gallery:
+  description: Browse, view, and organise photos, images, and videos
+  name: Gallery
+Game Helper:
+  description: Game helper, assistant, companion, score board, timer
+  name: Game Helper
 Graphics:
-  name: Graphics
   description: Image editing, photo manipulation, and visual design tools
+  name: Graphics
+Habit Tracker:
+  description: Build routines, track daily goals, and monitor personal streaks
+  name: Habit Tracker
+Health Manager:
+  description: Manager weight, heart rate, blood pressure, menstruation and other
+    health metrics
+  name: Health Manager
+Icon Pack:
+  description: Custom icon sets to style and theme app icons
+  name: Icon Pack
 Internet:
   name: Internet
+Inventory:
+  description: Track, catalogue, and manage physical items and stock
+  name: Inventory
+Keyboard & IME:
+  description: Custom keyboards, input methods, autocorrect, and typing apps
+  name: Keyboard & IME
+Launcher:
+  description: Home screen replacements and desktop environment apps
+  name: Launcher
+Local Media Player:
+  description: Play offline audio and video files stored on your device
+  name: Local Media Player
+Location Tracker & Sharer:
+  description: Share and monitor real-time GPS location with others
+  name: Location Tracker & Sharer
+Lyrics:
+  description: View and search lyrics
+  name: Lyrics
+Market & Price:
+  description: Price, exchange rate, stock
+  name: Market & Price
+Meditation:
+  description: Meditation, mindfulness, breathing practice
+  name: Meditation
+Messaging:
+  description: Instant messaging, chat, and SMS communication apps
+  name: Messaging
 Multimedia:
   name: Multimedia
+Music Practice Tool:
+  description: Tuners, metronomes, chord tools, and instrument practice aids
+  name: Music Practice Tool
 Navigation:
-  name: Navigation
   description: Maps, GPS, turn-by-turn directions, and route planning apps
+  name: Navigation
+Network Analyzer:
+  description: Diagnose Wi-Fi, scan networks, and monitor connection performance
+  name: Network Analyser
+News:
+  description: Latest headlines, articles, RSS feeds, and news aggregators
+  name: News
+Note:
+  description: Notepads, memos, and quick note-taking and organisation apps
+  name: Note
+Notification:
+  description: Notification manager, logger, redirector, enhancer
+  name: Notification
+Online Media Player:
+  description: Stream music, videos, and live content from the internet
+  name: Online Media Player
+Party Game:
+  description: Multi-player, party game
+  name: Party Game
+Pass Wallet:
+  description: Store boarding passes, tickets, loyalty cards, and coupons
+  name: Pass Wallet
+Password & 2FA:
+  description: Password managers, authenticators, OTP, TOTP, HOTP, U2F, FIDO and two-factor
+    security tools
+  name: Password & 2FA
 Phone & SMS:
-  name: Phone & SMS
   description: Dialers, call managers, and text messaging utilities
+  name: Phone & SMS
+Platformer Game:
+  description: Platformer, side scrolling game
+  name: Platformer Game
+Podcast:
+  description: Subscribe to, stream, and download podcast audio episodes and shows
+  name: Podcast
+Public Transport:
+  description: Bus, train, metro, and transit schedules and journey planners
+  name: Public Transport
+Puzzle Game:
+  description: Puzzle, sudoku, memory game
+  name: Puzzle Game
+Radio:
+  description: Stream live FM/AM radio stations and internet radio broadcasts
+  name: Radio
 Reading:
-  name: Reading
   description: Articles, long-form content, read-it-later, and web reader apps
+  name: Reading
+Recipe Manager:
+  description: Store, organise, and discover cooking recipes and meal ideas
+  name: Recipe Manager
+Recorder:
+  description: Audio, screen, call recorder
+  name: Recorder
+Religion:
+  description: Prayer times, holy texts, devotionals, and spiritual practice apps
+  name: Religion
+Remote Access:
+  description: Control desktops, servers, and devices remotely via RDP, VNC, or SSH
+  name: Remote Access
+Remote Controller:
+  description: IR and smart home remotes for TVs, AC units, and other devices
+  name: Remote Controller
+Role-Playing Game:
+  description: RPG, rogue-like
+  name: Role-playing Game
+Schedule:
+  description: Schedule for conference and event
+  name: Schedule
 Science & Education:
-  name: Science & Education
   description: Learning, studying, reference, and educational apps
+  name: Science & Education
 Security:
   name: Security
+Shooter Game:
+  description: Shooting target
+  name: Shooter Game
+Shopping List:
+  description: Grocery lists, to-buy trackers, and collaborative shopping apps
+  name: Shopping List
+Social Network:
+  description: Social media, microblogging, and online community platforms
+  name: Social Network
+Sport Game:
+  description: Sport Games
+  name: Sport Game
 Sports & Health:
-  name: Sports & Health
   description: Fitness tracking, wellness, sports scores, and health monitoring
+  name: Sports & Health
+Stopwatch:
+  description: Measure progress, elapsed, lap timer
+  name: Stopwatch
+Strategy Game:
+  description: Strategy, simulation
+  name: Strategy Game
 System:
   name: System
-Theming:
-  name: Theming
-  description: Customise your device's look with themes, fonts, and UI styles
-Writing:
-  name: Writing
-  description: Word processors, journaling, drafting, and long-form writing apps
-App Store & Updater:
-  name: App Store & Updater
-  description: Discover, install, and update apps from software repositories
-AI Chat:
-  name: AI Chat
-  description: AI assistants, chatbots, and large language model (LLM) interfaces
-App Manager:
-  name: App Manager
-  description: Manage, organise, and control installed apps, intents, permissions
-Bookmark:
-  name: Bookmark
-  description: Save, organise, and manage favorite links and reading lists
-Browser:
-  name: Browser
-  description: Web browsers for surfing the internet and viewing websites
-Calculator:
-  name: Calculator
-  description: Arithmetic, scientific, and mathematical calculation tools
-Calendar & Agenda:
-  name: Calendar & Agenda
-  description: Schedule events, reminders, appointments, and daily planners
-Clock:
-  name: Clock
-  description: Tell the current time
-Cloud Storage & File Sync:
-  name: Cloud Storage & File Sync
-  description: Backup, sync, and access files remotely via cloud services
-Contact:
-  name: Contact
-  description: Address book, phonebook, and people management apps
-DNS & Hosts:
-  name: DNS & Hosts
-  description: Configure DNS resolvers, ad blocking, hosts file, and domain routing
-Draw:
-  name: Draw
-  description: Sketching, painting, illustration, and digital art canvas apps
-Ebook Reader:
-  name: Ebook Reader
-  description: Read ebooks, EPUB, PDF, and digital books and publications
-Email:
-  name: Email
-  description: Mail clients for sending, receiving, and managing email messages
-File Encryption & Vault:
-  name: File Encryption & Vault
-  description: Encrypt, lock, and hide private files and folders
-File Transfer:
-  name: File Transfer
-  description: Share and transfer files via FTP, LAN, Bluetooth, or peer-to-peer (p2p)
-Finance Manager:
-  name: Finance Manager
-  description: Track expenses, budgets, income, and personal financial accounts
-Firewall:
-  name: Firewall
-  description: Block unwanted network traffic and control app's internet access
-Forum:
-  name: Forum
-  description: Discussion boards, community threads, and Q&A platforms
-Gallery:
-  name: Gallery
-  description: Browse, view, and organise photos, images, and videos
-Habit Tracker:
-  name: Habit Tracker
-  description: Build routines, track daily goals, and monitor personal streaks
-Icon Pack:
-  name: Icon Pack
-  description: Custom icon sets to style and theme app icons
-Inventory:
-  name: Inventory
-  description: Track, catalogue, and manage physical items and stock
-Keyboard & IME:
-  name: Keyboard & IME
-  description: Custom keyboards, input methods, autocorrect, and typing apps
-Launcher:
-  name: Launcher
-  description: Home screen replacements and desktop environment apps
-Local Media Player:
-  name: Local Media Player
-  description: Play offline audio and video files stored on your device
-Location Tracker & Sharer:
-  name: Location Tracker & Sharer
-  description: Share and monitor real-time GPS location with others
-Messaging:
-  name: Messaging
-  description: Instant messaging, chat, and SMS communication apps
-Music Practice Tool:
-  name: Music Practice Tool
-  description: Tuners, metronomes, chord tools, and instrument practice aids
-Network Analyzer:
-  name: Network Analyser
-  description: Diagnose Wi-Fi, scan networks, and monitor connection performance
-News:
-  name: News
-  description: Latest headlines, articles, RSS feeds, and news aggregators
-Note:
-  name: Note
-  description: Notepads, memos, and quick note-taking and organisation apps
-Online Media Player:
-  name: Online Media Player
-  description: Stream music, videos, and live content from the internet
-Pass Wallet:
-  name: Pass Wallet
-  description: Store boarding passes, tickets, loyalty cards, and coupons
-Password & 2FA:
-  name: Password & 2FA
-  description: Password managers, authenticators, OTP, TOTP, HOTP, U2F, FIDO and two-factor security tools
-Podcast:
-  name: Podcast
-  description: Subscribe to, stream, and download podcast audio episodes and shows
-Public Transport:
-  name: Public Transport
-  description: Bus, train, metro, and transit schedules and journey planners
-Recipe Manager:
-  name: Recipe Manager
-  description: Store, organise, and discover cooking recipes and meal ideas
-Religion:
-  name: Religion
-  description: Prayer times, holy texts, devotionals, and spiritual practice apps
-Shopping List:
-  name: Shopping List
-  description: Grocery lists, to-buy trackers, and collaborative shopping apps
-Social Network:
-  name: Social Network
-  description: Social media, microblogging, and online community platforms
 Task:
-  name: Task
   description: To-do lists, task managers, and productivity and GTD tools
+  name: Task
 Text Editor:
-  name: Text Editor
   description: Plain text editors, Markdown editors, and writing tools
-Translation & Dictionary:
-  name: Translation & Dictionary
-  description: Translate languages, look up words, and access vocabulary references
-Unit Convertor:
-  name: Unit Convertor
-  description: Convert between units of length, weight, temperature, currency, and more
-Voice & Video Chat:
-  name: Voice & Video Chat
-  description: Audio and video calling, conferencing, and VoIP communication apps
-VPN & Proxy:
-  name: VPN & Proxy
-  description: Encrypt traffic, bypass restrictions (circumvention) and anonymise your connection
-Wallet:
-  name: Wallet
-  description: Digital wallets for payments, cards, and cryptocurrency management
-Wallpaper:
-  name: Wallpaper
-  description: Home screen and lock screen background and live wallpaper apps
-Weather:
-  name: Weather
-  description: Forecasts, radar, temperature, and atmospheric condition apps
-Workout:
-  name: Workout
-  description: Exercise routines, gym tracking, running, and fitness training apps
-Battery:
-  name: Battery
-  description: Monitor and optimise battery life, power usage, and charging
-Flashlight:
-  name: Torch
-  description: Torch and LED flash light apps
-Radio:
-  name: Radio
-  description: Stream live FM/AM radio stations and internet radio broadcasts
-Remote Controller:
-  name: Remote Controller
-  description: IR and smart home remotes for TVs, AC units, and other devices
-Remote Access:
-  name: Remote Access
-  description: Control desktops, servers, and devices remotely via RDP, VNC, or SSH
-Diet:
-  name: Diet
-  description: Nutrition, calorie, food management and tracker
-Health Manager:
-  name: Health Manager
-  description: Manager weight, heart rate, blood pressure, menstruation and other health metrics
-Action Game:
-  name: Action Game
-  description: Action, sport, racing and platformer games
-Board Game:
-  name: Board Game
-  description: Board game, chess, go, tic-tac-toe
-Card Game:
-  name: Card Game
-  description: Card game, solitaire
-Casual Game:
-  name: Casual Game
-  description: Simple casual game
-Dice:
-  name: Dice
-  description: Random selector
-Educational Game:
-  name: Educational Game
-  description: Learn in game, quiz
-Emulator:
-  name: Emulator
-  description: Emulator running game and program
-Game Helper:
-  name: Game Helper
-  description: Game helper, assistant, companion, score board, timer
-Party Game:
-  name: Party Game
-  description: Multi-player, party game
-Platformer Game:
-  name: Platformer Game
-  description: Platformer, side scrolling game
-Puzzle Game:
-  name: Puzzle Game
-  description: Puzzle, sudoku, memory game
-Role-Playing Game:
-  name: Role-playing Game
-  description: RPG, rogue-like
-Schedule:
-  name: Schedule
-  description: Schedule for conference and event
-Shooter Game:
-  name: Shooter Game
-  description: Shooting target
-Strategy Game:
-  name: Strategy Game
-  description: Strategy, simulation
-Sport Game:
-  name: Sport Game
-  description: Sport Games
+  name: Text Editor
 Text to Speech:
-  name: Text to Speech
   description: TTS tools
+  name: Text to Speech
+Theming:
+  description: Customise your device's look with themes, fonts, and UI styles
+  name: Theming
 Time Tracker:
-  name: Time Tracker
   description: Track time usage on activities and screen time
-Visual Novel:
-  name: Visual Novel
-  description: Visual Novel, galgame, story game
-Word Game:
-  name: Word Game
-  description: Word puzzle game, crossword, word guessing
-Meditation:
-  name: Meditation
-  description: Meditation, mindfulness, breathing practice
+  name: Time Tracker
 Timer:
-  name: Timer
   description: Interval timing, timekeeping, countdown
-Download:
-  name: Download
-  description: Downloader, download manager, and torrent client
-File Manager:
-  name: File Manager
-  description: File manager and explorer
-Camera:
-  name: Camera
-  description: Camera, IP camera viewer and video recorder
-Lyrics:
-  name: Lyrics
-  description: View and search lyrics
-Market & Price:
-  name: Market & Price
-  description: Price, exchange rate, stock
-Recorder:
-  name: Recorder
-  description: Audio, screen, call recorder
-Alarm Clock:
-  name: Alarm Clock
-  description: Set an alarm on a time
-Cast:
-  name: Cast
-  description: Cast, UPnP, DLNA, FCast, AirPlay, Miracast
-Notification:
-  name: Notification
-  description: Notification manager, logger, redirector, enhancer
-Stopwatch:
-  name: Stopwatch
-  description: Measure progress, elapsed, lap timer
+  name: Timer
+Translation & Dictionary:
+  description: Translate languages, look up words, and access vocabulary references
+  name: Translation & Dictionary
+Unit Convertor:
+  description: Convert between units of length, weight, temperature, currency, and
+    more
+  name: Unit Convertor
+VPN & Proxy:
+  description: Encrypt traffic, bypass restrictions (circumvention) and anonymise
+    your connection
+  name: VPN & Proxy
+Visual Novel:
+  description: Visual Novel, galgame, story game
+  name: Visual Novel
+Voice & Video Chat:
+  description: Audio and video calling, conferencing, and VoIP communication apps
+  name: Voice & Video Chat
+Wallet:
+  description: Digital wallets for payments, cards, and cryptocurrency management
+  name: Wallet
+Wallpaper:
+  description: Home screen and lock screen background and live wallpaper apps
+  name: Wallpaper
+Weather:
+  description: Forecasts, radar, temperature, and atmospheric condition apps
+  name: Weather
+Word Game:
+  description: Word puzzle game, crossword, word guessing
+  name: Word Game
+Workout:
+  description: Exercise routines, gym tracking, running, and fitness training apps
+  name: Workout
+Writing:
+  description: Word processors, journaling, drafting, and long-form writing apps
+  name: Writing

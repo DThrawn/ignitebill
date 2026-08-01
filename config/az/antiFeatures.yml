@@ -1,11 +1,15 @@
-DisabledAlgorithm:
-  name: Təhlükəli Alqoritm İşlədərək İmzalanıb
-  description: Bu tətbiqin zəif təhlükəsizlik imzası var
 Ads:
-  description: Bu tətbiq reklam ehtiva edir
+  description: "Bu t\u0259tbiq reklam ehtiva edir"
   name: Reklamlar
+DisabledAlgorithm:
+  description: "Bu t\u0259tbiqin z\u0259if t\u0259hl\xFCk\u0259sizlik imzas\u0131\
+    \ var"
+  name: "T\u0259hl\xFCk\u0259li Alqoritm \u0130\u015Fl\u0259d\u0259r\u0259k \u0130\
+    mzalan\u0131b"
 KnownVuln:
-  description: Bu tətbiqin məlum təhlükəsizlik zəifliyi var
-  name: Məlum Zəiflik
+  description: "Bu t\u0259tbiqin m\u0259lum t\u0259hl\xFCk\u0259sizlik z\u0259ifliyi\
+    \ var"
+  name: "M\u0259lum Z\u0259iflik"
 NoSourceSince:
-  name: Mənbə kodu artıq mövcud deyil, yeniləmələr mümkün deyil.
+  name: "M\u0259nb\u0259 kodu art\u0131q m\xF6vcud deyil, yenil\u0259m\u0259l\u0259\
+    r m\xFCmk\xFCn deyil."

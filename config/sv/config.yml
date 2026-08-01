@@ -1,6 +1,9 @@
 archive:
-  description: Arkiv för F-Droids officiella förråd för fri mjukvara. Appar här är gamla och kan innehålla kända sårbarheter och säkerhetsproblem!
+  description: "Arkiv f\xF6r F-Droids officiella f\xF6rr\xE5d f\xF6r fri mjukvara.\
+    \ Appar h\xE4r \xE4r gamla och kan inneh\xE5lla k\xE4nda s\xE5rbarheter och s\xE4\
+    kerhetsproblem!"
   name: F-Droid-arkiv
 repo:
-  description: Det officiella F-Droid-arkivet för fri programvara. Allt i detta repositorie är alltid byggt från källkoden.
+  description: "Det officiella F-Droid-arkivet f\xF6r fri programvara. Allt i detta\
+    \ repositorie \xE4r alltid byggt fr\xE5n k\xE4llkoden."
   name: F-Droid

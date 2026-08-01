@@ -1,50 +1,50 @@
+Browser:
+  name: Iminig
+Calculator:
+  name: "Tamsi\u1E0Dent"
 Connectivity:
   name: Tuqqniwt
 Development:
   name: Taneflit
+Email:
+  name: Imayl
 Graphics:
-  name: Tiẓrudlifin
+  name: "Ti\u1E93rudlifin"
 Internet:
   name: Internet
 Multimedia:
   name: Agetmedia
 Navigation:
   name: Asnirem
-Phone & SMS:
-  name: Tiliɣri d SMS
-Reading:
-  name: Taɣuṛi
-Science & Education:
-  name: Tussna & Usegmi
-Security:
-  name: Taɣellist
-Sports & Health:
-  name: Addal & Tazmert
-System:
-  name: Anagraw
-Theming:
-  name: Aggan
-Writing:
-  name: Tira
-Browser:
-  name: Iminig
-Calculator:
-  name: Tamsiḍent
-Email:
-  name: Imayl
+Network Analyzer:
+  name: "Amsisle\u1E0D n u\u1E93e\u1E6D\u1E6Da"
 News:
   name: Isallen
 Note:
   name: Tazmilt
 Password & 2FA:
-  name: Awal n uɛeddi & A2F
+  name: "Awal n u\u025Beddi & A2F"
+Phone & SMS:
+  name: "Tili\u0263ri d SMS"
+Reading:
+  name: "Ta\u0263u\u1E5Bi"
+Science & Education:
+  name: Tussna & Usegmi
+Security:
+  name: "Ta\u0263ellist"
+Sports & Health:
+  name: Addal & Tazmert
+System:
+  name: Anagraw
 Text Editor:
-  name: Amaẓrag n weḍris
+  name: "Ama\u1E93rag n we\u1E0Dris"
+Theming:
+  name: Aggan
 VPN & Proxy:
-  name: VPN & Upṛuksi
+  name: "VPN & Up\u1E5Buksi"
 Wallet:
-  name: Ṭṭezḍam
+  name: "\u1E6C\u1E6Dez\u1E0Dam"
 Weather:
   name: Tignewt
-Network Analyzer:
-  name: Amsisleḍ n uẓeṭṭa
+Writing:
+  name: Tira

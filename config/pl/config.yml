@@ -1,6 +1,9 @@
 archive:
-  description: Archiwum oficjalnego repozytorium wolnego oprogramowania F-Droid. Aplikacje tutaj są stare i mogą zawierać znane luki w zabezpieczeniach oraz mieć problemy z bezpieczeństwem!
+  description: "Archiwum oficjalnego repozytorium wolnego oprogramowania F-Droid.\
+    \ Aplikacje tutaj s\u0105 stare i mog\u0105 zawiera\u0107 znane luki w zabezpieczeniach\
+    \ oraz mie\u0107 problemy z bezpiecze\u0144stwem!"
   name: Archiwum F-Droid
 repo:
-  description: Oficjalne repozytorium wolnego oprogramowania F-Droid. Wszystko w tym repozytorium jest zawsze zbudowane z kodu źródłowego.
+  description: "Oficjalne repozytorium wolnego oprogramowania F-Droid. Wszystko w\
+    \ tym repozytorium jest zawsze zbudowane z kodu \u017Ar\xF3d\u0142owego."
   name: F-Droid

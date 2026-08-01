@@ -1,294 +1,360 @@
+AI Chat:
+  description: "MI-asszisztensek, cseveg\u0151botok \xE9s nagy nyelvi modellek (LLM)\
+    \ fel\xFCletei"
+  name: "MI cseveg\xE9s"
+Action Game:
+  description: "Akci\xF3, sport, versenyz\xE9s \xE9s egy\xE9b platformj\xE1t\xE9kok"
+  name: "Akci\xF3j\xE1t\xE9k"
+Alarm Clock:
+  description: "Riaszt\xE1s be\xE1ll\xEDt\xE1sa egy adott id\u0151re"
+  name: "\xC9breszt\u0151\xF3ra"
+App Manager:
+  description: "Telep\xEDtett alkalmaz\xE1sok \xE9s enged\xE9lyek kezel\xE9se, szervez\xE9\
+    se \xE9s vez\xE9rl\xE9se"
+  name: "Alkalmaz\xE1skezel\u0151"
+App Store & Updater:
+  description: "Alkalmaz\xE1sok felfedez\xE9se, telep\xEDt\xE9se \xE9s friss\xEDt\xE9\
+    se szoftvert\xE1rol\xF3kb\xF3l"
+  name: "Alkalmaz\xE1sbolt \xE9s -friss\xEDt\u0151"
+Battery:
+  description: "Akkumul\xE1tor-\xE9lettartam, energiahaszn\xE1lat \xE9s t\xF6lt\xE9\
+    s k\xF6vet\xE9se \xE9s optimaliz\xE1l\xE1sa"
+  name: "Akkumul\xE1tor"
+Board Game:
+  description: "T\xE1rsasj\xE1t\xE9kok, sakk, go, tic-tac-toe"
+  name: "T\xE1rsasj\xE1t\xE9kok"
+Bookmark:
+  description: "Kedvenc hivatkoz\xE1sok \xE9s olvas\xE1si list\xE1k ment\xE9se, rendszerez\xE9\
+    se \xE9s kezel\xE9se"
+  name: "K\xF6nyvjelz\u0151"
+Browser:
+  description: "Webb\xF6ng\xE9sz\u0151k internetes sz\xF6rf\xF6z\xE9shez \xE9s webhelyek\
+    \ megtekint\xE9s\xE9hez"
+  name: "B\xF6ng\xE9sz\u0151"
+Calculator:
+  description: "Aritmetikai, tudom\xE1nyos \xE9s matematikai sz\xE1m\xEDt\xE1si eszk\xF6\
+    z\xF6k"
+  name: "Sz\xE1mol\xF3g\xE9p"
+Calendar & Agenda:
+  description: "Esem\xE9nyek, eml\xE9keztet\u0151k \xE9s tal\xE1lkoz\xF3k \xFCtemez\xE9\
+    se, napirendtervez\u0151k"
+  name: "Napt\xE1r \xE9s napirend"
+Camera:
+  description: "Kamera, IP-kameramegjelen\xEDt\u0151 \xE9s vide\xF3felvev\u0151"
+  name: Kamera
+Card Game:
+  description: "K\xE1rtyaj\xE1t\xE9kok, paszi\xE1nsz"
+  name: "K\xE1rtyaj\xE1t\xE9kok"
+Cast:
+  description: "Tartalom\xE1tk\xFCld\xE9s, UPnP, DLNA, FCast, AirPlay, Miracast"
+  name: "Tartalom\xE1tk\xFCld\xE9s"
+Casual Game:
+  description: "Egyszer\u0171, alkalmi j\xE1t\xE9kok"
+  name: "Alkalmi j\xE1t\xE9kok"
+Clock:
+  description: "Pontos id\u0151 megmond\xE1sa"
+  name: "\xD3ra"
+Cloud Storage & File Sync:
+  description: "Biztons\xE1gi ment\xE9s, szinkroniz\xE1l\xE1s \xE9s f\xE1jlok t\xE1\
+    voli el\xE9r\xE9se felh\u0151szolg\xE1ltat\xE1sokkal"
+  name: "Felh\u0151s t\xE1rol\xE1s \xE9s f\xE1jlszinkroniz\xE1l\xE1s"
+Code & Forge:
+  description: "Git, forr\xE1sk\xF3d-kiszolg\xE1l\xE1s \xE9s -kezel\xE9s"
+  name: "K\xF3dol\xE1s \xE9s k\xF3dkezel\xE9s"
 Connectivity:
-  name: Kapcsolódás
+  name: "Kapcsol\xF3d\xE1s"
+Contact:
+  description: "C\xEDmjegyz\xE9k-, telefonk\xF6nyv- \xE9s n\xE9vjegykezel\u0151 alkalmaz\xE1\
+    sok"
+  name: "N\xE9vjegy"
+DNS & Hosts:
+  description: "DNS-felold\xF3k, rekl\xE1mblokkol\xE1s, hosts f\xE1jl \xE9s tartom\xE1\
+    ny-\xFAtv\xE1laszt\xE1s be\xE1ll\xEDt\xE1sa"
+  name: "DNS \xE9s kiszolg\xE1l\xF3k"
 Development:
-  name: Fejlesztés
-  description: Kódolás, programozás, IDE, terminál és fejlesztői eszközök
+  description: "K\xF3dol\xE1s, programoz\xE1s, IDE, termin\xE1l \xE9s fejleszt\u0151\
+    i eszk\xF6z\xF6k"
+  name: "Fejleszt\xE9s"
+Dice:
+  description: "V\xE9letlenszer\u0171 v\xE1laszt\xE1s"
+  name: Kocka
+Diet:
+  description: "T\xE1panyag-, kal\xF3ria-, \xE9lelmiszeradat-kezel\u0151k \xE9s -k\xF6\
+    vet\u0151k"
+  name: "\xC9trend"
+Download:
+  description: "Let\xF6lt\u0151, let\xF6lt\xE9skezel\u0151 \xE9s torrentkliens"
+  name: "Let\xF6lt\xE9s"
+Draw:
+  description: "V\xE1zlatk\xE9sz\xEDt\xE9shez, fest\xE9shez, illusztr\xE1ci\xF3hoz\
+    \ \xE9s digit\xE1lis m\u0171v\xE9szethez haszn\xE1lhat\xF3 alkalmaz\xE1sok"
+  name: "Rajzol\xE1s"
+Ebook Reader:
+  description: "E-k\xF6nyvek, EPUB-f\xE1jlok, PDF-ek \xE9s digit\xE1lis k\xF6nyvek,\
+    \ publik\xE1ci\xF3k olvas\xE1sa"
+  name: "E-k\xF6nyv olvas\xF3"
+Educational Game:
+  description: "J\xE1t\xE9kos tanul\xE1s, kv\xEDz"
+  name: "Oktat\xE1si j\xE1t\xE9k"
+Email:
+  description: "Levelez\u0151kliensek e-mail-\xFCzenetek k\xFCld\xE9s\xE9hez, fogad\xE1\
+    s\xE1hoz \xE9s kezel\xE9s\xE9hez"
+  name: E-mail
+Emulator:
+  description: "J\xE1t\xE9kot \xE9s programot futtat\xF3 emul\xE1tor"
+  name: "Emul\xE1tor"
+File Encryption & Vault:
+  description: "Priv\xE1t f\xE1jlok \xE9s mapp\xE1k titkos\xEDt\xE1sa, z\xE1rol\xE1\
+    sa \xE9s elrejt\xE9se"
+  name: "F\xE1jltitkos\xEDt\xE1s \xE9s sz\xE9fek"
+File Manager:
+  description: "F\xE1jlkezel\u0151 \xE9s -tall\xF3z\xF3"
+  name: "F\xE1jlkezel\u0151"
+File Transfer:
+  description: "F\xE1jlok megoszt\xE1sa \xE9s \xE1tvitele FTP, LAN, Bluetooth vagy\
+    \ egyenrang\xFA h\xE1l\xF3zat (P2P) seg\xEDts\xE9g\xE9vel"
+  name: "F\xE1jl\xE1tvitel"
+Finance Manager:
+  description: "Kiad\xE1sok, k\xF6lts\xE9gvet\xE9sek, bev\xE9telek \xE9s szem\xE9\
+    lyes p\xE9nz\xFCgyi sz\xE1ml\xE1k k\xF6vet\xE9se"
+  name: "P\xE9nz\xFCgykezel\u0151"
+Firewall:
+  description: "Nem k\xEDv\xE1nt h\xE1l\xF3zati forgalom blokkol\xE1sa, alkalmaz\xE1\
+    sok internetel\xE9r\xE9s\xE9nek ir\xE1ny\xEDt\xE1sa"
+  name: "T\u0171zfal"
+Flashlight:
+  description: "Zsebl\xE1mpa- \xE9s LED-villan\xF3s alkalmaz\xE1sok"
+  name: "Zsebl\xE1mpa"
+Forum:
+  description: "Vitaf\xF3rumok, k\xF6z\xF6ss\xE9gi t\xE9m\xE1k \xE9s Q&A platformok"
+  name: "F\xF3rum"
+Gallery:
+  description: "F\xE9nyk\xE9pek, k\xE9pek \xE9s vide\xF3k tall\xF3z\xE1sa, megtekint\xE9\
+    se \xE9s rendszerez\xE9se"
+  name: "Gal\xE9ria"
+Game Helper:
+  description: "J\xE1t\xE9kseg\xE9d, asszisztens, t\xE1rs, pontsz\xE1mt\xE1bla, id\u0151\
+    z\xEDt\u0151"
+  name: "J\xE1t\xE9kseg\xE9d"
 Graphics:
+  description: "K\xE9pszerkeszt\u0151, f\xE9nyk\xE9p-manipul\xE1ci\xF3s \xE9s vizu\xE1\
+    lis tervez\xE9si eszk\xF6z\xF6k"
   name: Grafika
-  description: Képszerkesztő, fénykép-manipulációs és vizuális tervezési eszközök
+Habit Tracker:
+  description: "Rutinok \xE9p\xEDt\xE9se, napi c\xE9lok k\xF6vet\xE9se \xE9s szem\xE9\
+    lyes sorozatok k\xF6vet\xE9se"
+  name: "Szok\xE1sk\xF6vet\u0151"
+Health Manager:
+  description: "S\xFAly-, sz\xEDvver\xE9s-, v\xE9rnyom\xE1s-, menstru\xE1ci\xF3s adatok\
+    \ \xE9s egy\xE9b eg\xE9szs\xE9g\xFCgyi metrik\xE1k kezel\xE9se"
+  name: "Eg\xE9szs\xE9gkezel\u0151"
+Icon Pack:
+  description: "Egy\xE9nik ikont\xE9m\xE1k az alkalmaz\xE1sikonok st\xEDlus\xE1nak\
+    \ \xE9s t\xE9m\xE1j\xE1nak be\xE1ll\xEDt\xE1s\xE1hoz"
+  name: Ikoncsomag
 Internet:
   name: Internet
+Inventory:
+  description: "Fiziakai t\xE1rgyak \xE9s k\xE9szletek k\xF6vet\xE9se, katalogiz\xE1\
+    l\xE1sa \xE9s kezel\xE9se"
+  name: "Lelt\xE1r"
+Keyboard & IME:
+  description: "Egy\xE9ni billenty\u0171zetek, beviteli m\xF3dok, automatikus jav\xED\
+    t\xE1s \xE9s g\xE9pel\xE9si alkalmaz\xE1sok"
+  name: "Billenty\u0171zet \xE9s bevitelszerkeszt\u0151"
+Launcher:
+  description: "Alternat\xEDv kezd\u0151k\xE9perny\u0151k \xE9s asztali k\xF6rnyezeti\
+    \ alkalmaz\xE1sok"
+  name: "Ind\xEDt\xF3"
+Local Media Player:
+  description: "Az eszk\xF6z\xF6n t\xE1rolt hang- \xE9s vide\xF3f\xE1jlok lej\xE1\
+    tsz\xE1sa"
+  name: "Helyi m\xE9dialej\xE1tsz\xF3"
+Location Tracker & Sharer:
+  description: "Val\xF3s idej\u0171 GPS-helyadatok k\xF6vet\xE9se \xE9s megoszt\xE1\
+    sa m\xE1sokkal"
+  name: "Helyk\xF6vet\u0151 \xE9s -megoszt\xF3"
+Lyrics:
+  description: "Dalsz\xF6vegek megtekint\xE9se \xE9s keres\xE9se"
+  name: "Dalsz\xF6vegek"
+Market & Price:
+  description: "\xC1r, t\u0151zsde, r\xE9szv\xE9ny"
+  name: "Piac \xE9s \xE1rak"
+Meditation:
+  description: "Medit\xE1ci\xF3, mindfulness, l\xE9gz\xE9sgyakorlatok"
+  name: "Medit\xE1ci\xF3"
+Messaging:
+  description: "Azonnali \xFCzenetk\xFCld\xE9s, cseveg\xE9s \xE9s SMS-kommunik\xE1\
+    ci\xF3s alkalmaz\xE1sok"
+  name: "\xDCzenetk\xFCld\xE9s"
 Multimedia:
-  name: Multimédia
+  name: "Multim\xE9dia"
+Music Practice Tool:
+  description: "Hangol\xF3k, metron\xF3mok, akkord- \xE9s hangszertanul\xE1si seg\xE9\
+    deszk\xF6z\xF6k"
+  name: "Zenei gyakorl\xF3 eszk\xF6z\xF6k"
 Navigation:
-  name: Navigáció
-  description: Térképek, GPS, navigációs és útvonaltervező alkalmazások
+  description: "T\xE9rk\xE9pek, GPS, navig\xE1ci\xF3s \xE9s \xFAtvonaltervez\u0151\
+    \ alkalmaz\xE1sok"
+  name: "Navig\xE1ci\xF3"
+Network Analyzer:
+  description: "Wi-Fi diagnosztiz\xE1l\xE1sa, h\xE1l\xF3zatok keres\xE9s \xE9s a kapcsolat\
+    \ teljes\xEDtm\xE9ny\xE9nek figyel\xE9se"
+  name: "H\xE1l\xF3zatelemz\u0151"
+News:
+  description: "Legfrissebb szalagc\xEDmek, cikkek, RSS-h\xEDrforr\xE1sok \xE9s h\xED\
+    rgy\u0171jt\u0151k"
+  name: "H\xEDrek"
+Note:
+  description: "Jegyzett\xF6mb\xF6k, feljegyz\xE9sek, gyors jegyzetel\xE9si \xE9s\
+    \ szervez\xE9si alkalmaz\xE1sok"
+  name: Jegyzet
+Notification:
+  description: "\xC9rtes\xEDt\xE9skezel\u0151, -napl\xF3z\xF3, -\xE1tir\xE1ny\xED\
+    t\xF3, -optimaliz\xE1l\xF3"
+  name: "\xC9rtes\xEDt\xE9sek"
+OCR:
+  description: "Dokumentumbeolvas\xF3, optikai karakterfelismer\xE9s"
+  name: OCR
+Online Media Player:
+  description: "Zene, vide\xF3 \xE9s \xE9l\u0151 tartalom k\xF6zvet\xEDt\xE9se az\
+    \ internetr\u0151l"
+  name: "Online m\xE9dialej\xE1tsz\xF3"
+Party Game:
+  description: "T\xF6bbj\xE1t\xE9kos partij\xE1t\xE9k"
+  name: "Partij\xE1t\xE9k"
+Pass Wallet:
+  description: "B\xE9rletek, jegyek, h\u0171s\xE9gk\xE1rty\xE1k \xE9s kuponok t\xE1\
+    rol\xE1sa"
+  name: "Jegyt\xE1rca"
+Password & 2FA:
+  description: "Jelsz\xF3kezel\u0151k, hiteles\xEDt\u0151k, OTP, TOTP, HOTP, U2F,\
+    \ FIDO \xE9s k\xE9tl\xE9pcs\u0151s biztons\xE1gi eszk\xF6z\xF6k"
+  name: "Jelszavak \xE9s 2FA"
 Phone & SMS:
-  name: Telefon és SMS
-  description: Tárcsázók, híváskezelők és SMS-segédprogramok
+  description: "T\xE1rcs\xE1z\xF3k, h\xEDv\xE1skezel\u0151k \xE9s SMS-seg\xE9dprogramok"
+  name: "Telefon \xE9s SMS"
+Platformer Game:
+  description: "Oldalaz\xF3s platformj\xE1t\xE9k"
+  name: "Platformj\xE1t\xE9k"
+Podcast:
+  description: "Feliratkoz\xE1s podcast-epiz\xF3dokra \xE9s sorozatokra, azok k\xF6\
+    zvet\xEDt\xE9se \xE9s let\xF6lt\xE9se"
+  name: Podcast
+Public Transport:
+  description: "Busz, vonat, metr\xF3, menetrend \xE9s utaz\xE1stervez\xE9s"
+  name: "T\xF6megk\xF6zleked\xE9s"
+Push:
+  description: "Lek\xFCld\xE9ses \xFCzenetek"
+  name: "Lek\xFCld\xE9s"
+Puzzle Game:
+  description: "Puzzle, sz\xFAdoku, mem\xF3riaj\xE1t\xE9k"
+  name: "Puzzlej\xE1t\xE9k"
+Radio:
+  description: "\xC9l\u0151 FM/AM r\xE1di\xF3\xE1llom\xE1sok \xE9s internetes r\xE1\
+    di\xF3ad\xE1sok k\xF6zvet\xEDt\xE9se"
+  name: "R\xE1di\xF3"
 Reading:
-  name: Olvasás
-  description: Cikkek, hosszabb tartalmak, elolvasás később és webes olvasó alkalmazások
+  description: "Cikkek, hosszabb tartalmak, elolvas\xE1s k\xE9s\u0151bb \xE9s webes\
+    \ olvas\xF3 alkalmaz\xE1sok"
+  name: "Olvas\xE1s"
+Recipe Manager:
+  description: "Receptek \xE9s \xE9tel\xF6tletek t\xE1rol\xE1sa, rendszerez\xE9se\
+    \ \xE9s felfedez\xE9se"
+  name: "Receptkezel\u0151"
+Recorder:
+  description: "Hang-, k\xE9perny\u0151-, h\xEDv\xE1sr\xF6gz\xEDt\u0151"
+  name: "R\xF6gz\xEDt\u0151"
+Religion:
+  description: "Imaid\u0151k, szent sz\xF6vegek, im\xE1ds\xE1gos olvasm\xE1nyok \xE9\
+    s spiritu\xE1lis gyakorlatokhoz kapcsol\xF3d\xF3 alkalmaz\xE1sok"
+  name: "Vall\xE1s"
+Remote Access:
+  description: "Asztali g\xE9pek, kiszolg\xE1l\xF3k \xE9s eszk\xF6z\xF6k t\xE1voli\
+    \ vez\xE9rl\xE9se RDP-n, VNC-n vagy SSH-n kereszt\xFCl"
+  name: "T\xE1voli el\xE9r\xE9s"
+Remote Controller:
+  description: "Infrav\xF6r\xF6s \xE9s okosotthonos t\xE1vir\xE1ny\xEDt\xF3k TV-khez,\
+    \ l\xE9gkond\xEDcion\xE1l\xF3khoz \xE9s m\xE1s eszk\xF6z\xF6kh\xF6z"
+  name: "T\xE1vir\xE1ny\xEDt\xF3"
+Role-Playing Game:
+  name: "Szerepj\xE1t\xE9k"
+Schedule:
+  description: "Konferenci\xE1k \xE9s esem\xE9nyek \xFCtemez\xE9se"
+  name: "\xDCtemez\xE9s"
 Science & Education:
-  name: Tudomány és oktatás
-  description: Tanulási, referenciaként szolgáló és oktatási alkalmazások
+  description: "Tanul\xE1si, referenciak\xE9nt szolg\xE1l\xF3 \xE9s oktat\xE1si alkalmaz\xE1\
+    sok"
+  name: "Tudom\xE1ny \xE9s oktat\xE1s"
 Security:
-  name: Biztonság
+  name: "Biztons\xE1g"
+Shopping List:
+  description: "Bev\xE1s\xE1rl\xF3list\xE1k, v\xE1s\xE1rl\xE1sk\xF6vet\u0151k \xE9\
+    s k\xF6z\xF6s v\xE1s\xE1rl\xE1si alkalmaz\xE1sok"
+  name: "Bev\xE1s\xE1rl\xF3lista"
+Social Network:
+  description: "K\xF6z\xF6ss\xE9gi m\xE9dia, mikroblogol\xE1s \xE9s online k\xF6z\xF6\
+    ss\xE9gi platformok"
+  name: "K\xF6z\xF6ss\xE9gi h\xE1l\xF3zat"
 Sports & Health:
-  name: Sport és egészség
-  description: Sportkövetés, wellness, sportpontszámok és egészségkövetés
+  description: "Sportk\xF6vet\xE9s, wellness, sportpontsz\xE1mok \xE9s eg\xE9szs\xE9\
+    gk\xF6vet\xE9s"
+  name: "Sport \xE9s eg\xE9szs\xE9g"
 System:
   name: Rendszer
-Theming:
-  name: Stílus
-  description: Az eszköze testreszabása témákkal, betűkészletekkel és felületstílusokkal
-Writing:
-  name: Írás
-  description: Szövegszerkesztők, naplóíráshoz, vázlatkészítéshez és hosszabb szövegek írásához használható alkalmazások
-DNS & Hosts:
-  name: DNS és kiszolgálók
-  description: DNS-feloldók, reklámblokkolás, hosts fájl és tartomány-útválasztás beállítása
-Email:
-  name: E-mail
-  description: Levelezőkliensek e-mail-üzenetek küldéséhez, fogadásához és kezeléséhez
-Messaging:
-  name: Üzenetküldés
-  description: Azonnali üzenetküldés, csevegés és SMS-kommunikációs alkalmazások
-Password & 2FA:
-  name: Jelszavak és 2FA
-  description: Jelszókezelők, hitelesítők, OTP, TOTP, HOTP, U2F, FIDO és kétlépcsős biztonsági eszközök
-Social Network:
-  name: Közösségi hálózat
-  description: Közösségi média, mikroblogolás és online közösségi platformok
-VPN & Proxy:
-  name: VPN és proxy
-  description: Forgalom titkosítása, korlátozások megkerülése és a kapcsolata anonimizálása
-File Transfer:
-  name: Fájlátvitel
-  description: Fájlok megosztása és átvitele FTP, LAN, Bluetooth vagy egyenrangú hálózat (P2P) segítségével
-File Encryption & Vault:
-  name: Fájltitkosítás és széfek
-  description: Privát fájlok és mappák titkosítása, zárolása és elrejtése
-Bookmark:
-  name: Könyvjelző
-  description: Kedvenc hivatkozások és olvasási listák mentése, rendszerezése és kezelése
-Browser:
-  name: Böngésző
-  description: Webböngészők internetes szörfözéshez és webhelyek megtekintéséhez
-Calculator:
-  name: Számológép
-  description: Aritmetikai, tudományos és matematikai számítási eszközök
-Ebook Reader:
-  name: E-könyv olvasó
-  description: E-könyvek, EPUB-fájlok, PDF-ek és digitális könyvek, publikációk olvasása
-Gallery:
-  name: Galéria
-  description: Fényképek, képek és videók tallózása, megtekintése és rendszerezése
-Icon Pack:
-  name: Ikoncsomag
-  description: Egyénik ikontémák az alkalmazásikonok stílusának és témájának beállításához
-News:
-  name: Hírek
-  description: Legfrissebb szalagcímek, cikkek, RSS-hírforrások és hírgyűjtők
-Note:
-  name: Jegyzet
-  description: Jegyzettömbök, feljegyzések, gyors jegyzetelési és szervezési alkalmazások
-Online Media Player:
-  name: Online médialejátszó
-  description: Zene, videó és élő tartalom közvetítése az internetről
-Recipe Manager:
-  name: Receptkezelő
-  description: Receptek és ételötletek tárolása, rendszerezése és felfedezése
-Shopping List:
-  name: Bevásárlólista
-  description: Bevásárlólisták, vásárláskövetők és közös vásárlási alkalmazások
-Text Editor:
-  name: Szövegszerkesztő
-  description: Formázás nélküli szövegszerkesztők, Markdown-szerkesztők és írási eszközök
-Wallet:
-  name: Pénztárca
-  description: Digitális pénztárcák fizetéshez, kártyákhoz és kriptovaluta-kezeléshez
-Wallpaper:
-  name: Háttérkép
-  description: Kezdőképernyő- és zárképernyőhátterek, élő háttérképes alkalmazások
-Weather:
-  name: Időjárás
-  description: Időjárás-előrejelzések, radar, hőmérséklet és légköri viszonyokról szóló alkalmazások
-AI Chat:
-  name: MI csevegés
-  description: MI-asszisztensek, csevegőbotok és nagy nyelvi modellek (LLM) felületei
-App Manager:
-  name: Alkalmazáskezelő
-  description: Telepített alkalmazások és engedélyek kezelése, szervezése és vezérlése
-App Store & Updater:
-  name: Alkalmazásbolt és -frissítő
-  description: Alkalmazások felfedezése, telepítése és frissítése szoftvertárolókból
-Religion:
-  name: Vallás
-  description: Imaidők, szent szövegek, imádságos olvasmányok és spirituális gyakorlatokhoz kapcsolódó alkalmazások
-Calendar & Agenda:
-  name: Naptár és napirend
-  description: Események, emlékeztetők és találkozók ütemezése, napirendtervezők
-Clock:
-  name: Óra
-  description: Pontos idő megmondása
-Cloud Storage & File Sync:
-  name: Felhős tárolás és fájlszinkronizálás
-  description: Biztonsági mentés, szinkronizálás és fájlok távoli elérése felhőszolgáltatásokkal
-Draw:
-  name: Rajzolás
-  description: Vázlatkészítéshez, festéshez, illusztrációhoz és digitális művészethez használható alkalmazások
-Finance Manager:
-  name: Pénzügykezelő
-  description: Kiadások, költségvetések, bevételek és személyes pénzügyi számlák követése
-Firewall:
-  name: Tűzfal
-  description: Nem kívánt hálózati forgalom blokkolása, alkalmazások internetelérésének irányítása
-Forum:
-  name: Fórum
-  description: Vitafórumok, közösségi témák és Q&A platformok
-Habit Tracker:
-  name: Szokáskövető
-  description: Rutinok építése, napi célok követése és személyes sorozatok követése
-Inventory:
-  name: Leltár
-  description: Fiziakai tárgyak és készletek követése, katalogizálása és kezelése
-Keyboard & IME:
-  name: Billentyűzet és bevitelszerkesztő
-  description: Egyéni billentyűzetek, beviteli módok, automatikus javítás és gépelési alkalmazások
-Launcher:
-  name: Indító
-  description: Alternatív kezdőképernyők és asztali környezeti alkalmazások
-Local Media Player:
-  name: Helyi médialejátszó
-  description: Az eszközön tárolt hang- és videófájlok lejátszása
-Location Tracker & Sharer:
-  name: Helykövető és -megosztó
-  description: Valós idejű GPS-helyadatok követése és megosztása másokkal
-Music Practice Tool:
-  name: Zenei gyakorló eszközök
-  description: Hangolók, metronómok, akkord- és hangszertanulási segédeszközök
-Network Analyzer:
-  name: Hálózatelemző
-  description: Wi-Fi diagnosztizálása, hálózatok keresés és a kapcsolat teljesítményének figyelése
-Pass Wallet:
-  name: Jegytárca
-  description: Bérletek, jegyek, hűségkártyák és kuponok tárolása
-Podcast:
-  name: Podcast
-  description: Feliratkozás podcast-epizódokra és sorozatokra, azok közvetítése és letöltése
-Public Transport:
-  name: Tömegközlekedés
-  description: Busz, vonat, metró, menetrend és utazástervezés
 Task:
+  description: "Teend\u0151list\xE1k, feladatkezel\u0151k, termel\xE9kenys\xE9gi eszk\xF6\
+    z\xF6k"
   name: Feladat
-  description: Teendőlisták, feladatkezelők, termelékenységi eszközök
-Translation & Dictionary:
-  name: Fordítás és szótár
-  description: Nyelvek lefordítása, szavak kikeresése és szótárhivatkozások elérése
-Unit Convertor:
-  name: Mértékegység-átváltó
-  description: Átalakítás hosszmértékek, súlymértékek, hőmérsékletek, pénznemek és egyebek közt
-Voice & Video Chat:
-  name: Hang- és videócsevegés
-  description: Hang- és videóhívások, konferencia és VoIP kommunikációs alkalmazások
-Workout:
-  name: Edzés
-  description: Edzésprogramok, edzőteremhez, futáshoz és fitneszedzéshez kapcsolódó alkalmazások
-Contact:
-  name: Névjegy
-  description: Címjegyzék-, telefonkönyv- és névjegykezelő alkalmazások
-Battery:
-  name: Akkumulátor
-  description: Akkumulátor-élettartam, energiahasználat és töltés követése és optimalizálása
-Flashlight:
-  name: Zseblámpa
-  description: Zseblámpa- és LED-villanós alkalmazások
-Radio:
-  name: Rádió
-  description: Élő FM/AM rádióállomások és internetes rádióadások közvetítése
-Remote Controller:
-  name: Távirányító
-  description: Infravörös és okosotthonos távirányítók TV-khez, légkondícionálókhoz és más eszközökhöz
-Diet:
-  name: Étrend
-  description: Tápanyag-, kalória-, élelmiszeradat-kezelők és -követők
-Health Manager:
-  name: Egészségkezelő
-  description: Súly-, szívverés-, vérnyomás-, menstruációs adatok és egyéb egészségügyi metrikák kezelése
-Remote Access:
-  name: Távoli elérés
-  description: Asztali gépek, kiszolgálók és eszközök távoli vezérlése RDP-n, VNC-n vagy SSH-n keresztül
-Schedule:
-  name: Ütemezés
-  description: Konferenciák és események ütemezése
+Text Editor:
+  description: "Form\xE1z\xE1s n\xE9lk\xFCli sz\xF6vegszerkeszt\u0151k, Markdown-szerkeszt\u0151\
+    k \xE9s \xEDr\xE1si eszk\xF6z\xF6k"
+  name: "Sz\xF6vegszerkeszt\u0151"
 Text to Speech:
-  name: Szöveg beszéddé alakítása
-  description: TTS eszközök
+  description: "TTS eszk\xF6z\xF6k"
+  name: "Sz\xF6veg besz\xE9dd\xE9 alak\xEDt\xE1sa"
+Theming:
+  description: "Az eszk\xF6ze testreszab\xE1sa t\xE9m\xE1kkal, bet\u0171k\xE9szletekkel\
+    \ \xE9s fel\xFCletst\xEDlusokkal"
+  name: "St\xEDlus"
 Time Tracker:
-  name: Időkövető
-  description: Tevékenységek és képernyőidő nyomon követése
-Action Game:
-  name: Akciójáték
-  description: Akció, sport, versenyzés és egyéb platformjátékok
-Board Game:
-  name: Társasjátékok
-  description: Társasjátékok, sakk, go, tic-tac-toe
-Camera:
-  name: Kamera
-  description: Kamera, IP-kameramegjelenítő és videófelvevő
-Card Game:
-  name: Kártyajátékok
-  description: Kártyajátékok, pasziánsz
-Casual Game:
-  name: Alkalmi játékok
-  description: Egyszerű, alkalmi játékok
-Cast:
-  name: Tartalomátküldés
-  description: Tartalomátküldés, UPnP, DLNA, FCast, AirPlay, Miracast
-Alarm Clock:
-  name: Ébresztőóra
-  description: Riasztás beállítása egy adott időre
-Code & Forge:
-  name: Kódolás és kódkezelés
-  description: Git, forráskód-kiszolgálás és -kezelés
-Dice:
-  name: Kocka
-  description: Véletlenszerű választás
-Download:
-  name: Letöltés
-  description: Letöltő, letöltéskezelő és torrentkliens
-Educational Game:
-  name: Oktatási játék
-  description: Játékos tanulás, kvíz
-Emulator:
-  name: Emulátor
-  description: Játékot és programot futtató emulátor
-File Manager:
-  name: Fájlkezelő
-  description: Fájlkezelő és -tallózó
-Game Helper:
-  name: Játéksegéd
-  description: Játéksegéd, asszisztens, társ, pontszámtábla, időzítő
-Lyrics:
-  name: Dalszövegek
-  description: Dalszövegek megtekintése és keresése
-Market & Price:
-  name: Piac és árak
-  description: Ár, tőzsde, részvény
-Meditation:
-  name: Meditáció
-  description: Meditáció, mindfulness, légzésgyakorlatok
-Notification:
-  name: Értesítések
-  description: Értesítéskezelő, -naplózó, -átirányító, -optimalizáló
-OCR:
-  name: OCR
-  description: Dokumentumbeolvasó, optikai karakterfelismerés
-Party Game:
-  name: Partijáték
-  description: Többjátékos partijáték
-Platformer Game:
-  name: Platformjáték
-  description: Oldalazós platformjáték
-Push:
-  name: Leküldés
-  description: Leküldéses üzenetek
-Puzzle Game:
-  name: Puzzlejáték
-  description: Puzzle, szúdoku, memóriajáték
-Recorder:
-  name: Rögzítő
-  description: Hang-, képernyő-, hívásrögzítő
-Role-Playing Game:
-  name: Szerepjáték
+  description: "Tev\xE9kenys\xE9gek \xE9s k\xE9perny\u0151id\u0151 nyomon k\xF6vet\xE9\
+    se"
+  name: "Id\u0151k\xF6vet\u0151"
+Translation & Dictionary:
+  description: "Nyelvek leford\xEDt\xE1sa, szavak kikeres\xE9se \xE9s sz\xF3t\xE1\
+    rhivatkoz\xE1sok el\xE9r\xE9se"
+  name: "Ford\xEDt\xE1s \xE9s sz\xF3t\xE1r"
+Unit Convertor:
+  description: "\xC1talak\xEDt\xE1s hosszm\xE9rt\xE9kek, s\xFAlym\xE9rt\xE9kek, h\u0151\
+    m\xE9rs\xE9kletek, p\xE9nznemek \xE9s egyebek k\xF6zt"
+  name: "M\xE9rt\xE9kegys\xE9g-\xE1tv\xE1lt\xF3"
+VPN & Proxy:
+  description: "Forgalom titkos\xEDt\xE1sa, korl\xE1toz\xE1sok megker\xFCl\xE9se \xE9\
+    s a kapcsolata anonimiz\xE1l\xE1sa"
+  name: "VPN \xE9s proxy"
+Voice & Video Chat:
+  description: "Hang- \xE9s vide\xF3h\xEDv\xE1sok, konferencia \xE9s VoIP kommunik\xE1\
+    ci\xF3s alkalmaz\xE1sok"
+  name: "Hang- \xE9s vide\xF3cseveg\xE9s"
+Wallet:
+  description: "Digit\xE1lis p\xE9nzt\xE1rc\xE1k fizet\xE9shez, k\xE1rty\xE1khoz \xE9\
+    s kriptovaluta-kezel\xE9shez"
+  name: "P\xE9nzt\xE1rca"
+Wallpaper:
+  description: "Kezd\u0151k\xE9perny\u0151- \xE9s z\xE1rk\xE9perny\u0151h\xE1tterek,\
+    \ \xE9l\u0151 h\xE1tt\xE9rk\xE9pes alkalmaz\xE1sok"
+  name: "H\xE1tt\xE9rk\xE9p"
+Weather:
+  description: "Id\u0151j\xE1r\xE1s-el\u0151rejelz\xE9sek, radar, h\u0151m\xE9rs\xE9\
+    klet \xE9s l\xE9gk\xF6ri viszonyokr\xF3l sz\xF3l\xF3 alkalmaz\xE1sok"
+  name: "Id\u0151j\xE1r\xE1s"
+Workout:
+  description: "Edz\xE9sprogramok, edz\u0151teremhez, fut\xE1shoz \xE9s fitneszedz\xE9\
+    shez kapcsol\xF3d\xF3 alkalmaz\xE1sok"
+  name: "Edz\xE9s"
+Writing:
+  description: "Sz\xF6vegszerkeszt\u0151k, napl\xF3\xEDr\xE1shoz, v\xE1zlatk\xE9sz\xED\
+    t\xE9shez \xE9s hosszabb sz\xF6vegek \xEDr\xE1s\xE1hoz haszn\xE1lhat\xF3 alkalmaz\xE1\
+    sok"
+  name: "\xCDr\xE1s"

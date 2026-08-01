@@ -1,319 +1,419 @@
+AI Chat:
+  description: "Tr\u1EE3 l\xFD AI, chatbot v\xE0 giao di\u1EC7n m\xF4 h\xECnh ng\xF4\
+    n ng\u1EEF l\u1EDBn (LLM)"
+  name: "Tr\xF2 chuy\u1EC7n AI"
+Action Game:
+  description: "H\xE0nh \u0111\u1ED9ng, th\u1EC3 thao, \u0111ua xe v\xE0 \u0111i c\u1EA3\
+    nh"
+  name: "Game h\xE0nh \u0111\u1ED9ng"
+Alarm Clock:
+  description: "\u0110\u1EB7t b\xE1o th\u1EE9c \u0111\xFAng gi\u1EDD"
+  name: "\u0110\u1ED3ng h\u1ED3 b\xE1o th\u1EE9c"
+App Manager:
+  description: "Qu\u1EA3n l\xFD, s\u1EAFp x\u1EBFp v\xE0 ki\u1EC3m so\xE1t c\xE1c\
+    \ \u1EE9ng d\u1EE5ng, \xFD \u0111\u1ECBnh v\xE0 quy\u1EC1n \u0111\xE3 c\xE0i \u0111\
+    \u1EB7t"
+  name: "Qu\u1EA3n l\xFD \u1EE9ng d\u1EE5ng"
+App Store & Updater:
+  description: "Kh\xE1m ph\xE1, c\xE0i \u0111\u1EB7t v\xE0 c\u1EADp nh\u1EADt \u1EE9\
+    ng d\u1EE5ng t\u1EEB c\xE1c kho ph\u1EA7n m\u1EC1m"
+  name: "C\u1EEDa h\xE0ng \u1EE9ng d\u1EE5ng & Tr\xECnh c\u1EADp nh\u1EADt"
+Battery:
+  description: "Theo d\xF5i v\xE0 t\u1ED1i \u01B0u h\xF3a th\u1EDDi l\u01B0\u1EE3\
+    ng pin, m\u1EE9c ti\xEAu th\u1EE5 \u0111i\u1EC7n n\u0103ng v\xE0 qu\xE1 tr\xEC\
+    nh s\u1EA1c"
+  name: Pin
+Board Game:
+  description: "C\u1EDD b\xE0n, c\u1EDD vua, c\u1EDD v\xE2y, c\u1EDD caro"
+  name: "Game c\u1EDD"
+Bookmark:
+  description: "L\u01B0u, s\u1EAFp x\u1EBFp v\xE0 qu\u1EA3n l\xFD c\xE1c li\xEAn k\u1EBF\
+    t y\xEAu th\xEDch v\xE0 danh s\xE1ch \u0111\u1ECDc"
+  name: "D\u1EA5u trang"
+Browser:
+  description: "Tr\xECnh duy\u1EC7t web d\xF9ng \u0111\u1EC3 l\u01B0\u1EDBt internet\
+    \ v\xE0 xem c\xE1c trang web"
+  name: "Tr\xECnh duy\u1EC7t"
+Calculator:
+  description: "C\xF4ng c\u1EE5 t\xEDnh to\xE1n s\u1ED1 h\u1ECDc, khoa h\u1ECDc v\xE0\
+    \ to\xE1n h\u1ECDc"
+  name: "M\xE1y t\xEDnh b\u1ECF t\xFAi"
+Calendar & Agenda:
+  description: "L\xEAn l\u1ECBch s\u1EF1 ki\u1EC7n, nh\u1EAFc nh\u1EDF, cu\u1ED9c\
+    \ h\u1EB9n v\xE0 k\u1EBF ho\u1EA1ch h\xE0ng ng\xE0y"
+  name: "L\u1ECBch & Nh\u1EADt tr\xECnh"
+Camera:
+  description: "M\xE1y \u1EA3nh, tr\xECnh xem camera IP v\xE0 ghi video"
+  name: "M\xE1y \u1EA3nh"
+Card Game:
+  description: "Ti\u1EBFn l\xEAn, t\u1EE9 s\u1EAFc"
+  name: "Game b\xE0i"
+Cast:
+  description: Cast, UPnP, DLNA, FCast, AirPlay, Miracast
+  name: Cast
+Casual Game:
+  description: "Tr\xF2 ch\u01A1i \u0111i\u1EC1u khi\u1EC3n \u0111\u01A1n gi\u1EA3n"
+  name: Game casual
+Clock:
+  description: "Cho bi\u1EBFt th\u1EDDi gian hi\u1EC7n t\u1EA1i"
+  name: "\u0110\u1ED3ng h\u1ED3"
+Cloud Storage & File Sync:
+  description: "Sao l\u01B0u, \u0111\u1ED3ng b\u1ED9 h\xF3a v\xE0 truy c\u1EADp t\u1EC7\
+    p t\u1EEB xa th\xF4ng qua d\u1ECBch v\u1EE5 \u0111\xE1m m\xE2y"
+  name: "L\u01B0u tr\u1EEF tr\xEAn m\xE2y & \u0110\u1ED3ng b\u1ED9 t\u1EC7p"
+Code & Forge:
+  description: "Git, l\u01B0u tr\u1EEF m\xE3 ngu\u1ED3n, m\xF4i tr\u01B0\u1EDDng"
+  name: "M\xE3 ngu\u1ED3n v\xE0 m\xF4i tr\u01B0\u1EDDng l\u1EADp tr\xECnh"
 Connectivity:
-  name: Kết nối
+  name: "K\u1EBFt n\u1ED1i"
+Contact:
+  description: "\u1EE8ng d\u1EE5ng s\u1ED5 \u0111\u1ECBa ch\u1EC9, danh b\u1EA1 \u0111\
+    i\u1EC7n tho\u1EA1i v\xE0 qu\u1EA3n l\xFD nh\xE2n s\u1EF1"
+  name: "Danh b\u1EA1"
+DNS & Hosts:
+  description: "C\u1EA5u h\xECnh tr\xECnh ph\xE2n gi\u1EA3i DNS, ch\u1EB7n qu\u1EA3\
+    ng c\xE1o, t\u1EC7p hosts v\xE0 \u0111\u1ECBnh tuy\u1EBFn t\xEAn mi\u1EC1n"
+  name: "DNS & M\xE1y ch\u1EE7"
 Development:
-  name: Lập trình
-  description: Mã hóa, lập trình, IDE, terminal và các công cụ dành cho nhà phát triển
+  description: "M\xE3 h\xF3a, l\u1EADp tr\xECnh, IDE, terminal v\xE0 c\xE1c c\xF4\
+    ng c\u1EE5 d\xE0nh cho nh\xE0 ph\xE1t tri\u1EC3n"
+  name: "L\u1EADp tr\xECnh"
+Dice:
+  description: "T\u1EF1 \u0111\u1ED9ng ch\u1ECDn"
+  name: "X\xFAc x\u1EAFc"
+Diet:
+  description: "Dinh d\u01B0\u1EE1ng, calo, qu\u1EA3n l\xFD v\xE0 theo d\xF5i ch\u1EBF\
+    \ \u0111\u1ED9 \u0103n u\u1ED1ng"
+  name: "\u0102n ki\xEAng"
+Download:
+  description: "Tr\xECnh qu\u1EA3n l\xFD t\u1EA3i v\xE0 torrent"
+  name: "T\u1EA3i xu\u1ED1ng"
+Draw:
+  description: "\u1EE8ng d\u1EE5ng ph\xE1c th\u1EA3o, v\u1EBD tranh, minh h\u1ECD\
+    a v\xE0 v\u1EBD k\u1EF9 thu\u1EADt s\u1ED1"
+  name: "V\u1EBD"
+Ebook Reader:
+  description: "\u0110\u1ECDc s\xE1ch \u0111i\u1EC7n t\u1EED, EPUB, PDF v\xE0 c\xE1\
+    c \u1EA5n ph\u1EA9m k\u1EF9 thu\u1EADt s\u1ED1 kh\xE1c"
+  name: "Tr\xECnh \u0111\u1ECDc ebook"
+Educational Game:
+  description: "Ch\u01A1i m\xE0 h\u1ECDc, \u0111\u1ED1 vui"
+  name: "Game gi\xE1o d\u1EE5c"
+Email:
+  description: "C\xE1c ph\u1EA7n m\u1EC1m qu\u1EA3n l\xFD th\u01B0 \u0111i\u1EC7n\
+    \ t\u1EED d\xF9ng \u0111\u1EC3 g\u1EEDi, nh\u1EADn v\xE0 qu\u1EA3n l\xFD tin nh\u1EAF\
+    n email"
+  name: Email
+Emulator:
+  description: "Tr\xECnh gi\u1EA3 l\u1EADp ch\u1EA1y tr\xF2 ch\u01A1i v\xE0 ch\u01B0\
+    \u01A1ng tr\xECnh"
+  name: "Gi\u1EA3 l\u1EADp"
+File Encryption & Vault:
+  description: "M\xE3 h\xF3a, kh\xF3a v\xE0 \u1EA9n c\xE1c t\u1EC7p v\xE0 th\u01B0\
+    \ m\u1EE5c ri\xEAng t\u01B0"
+  name: "M\xE3 h\xF3a & l\u01B0u tr\u1EEF t\u1EC7p"
+File Manager:
+  description: "Qu\u1EA3n l\xFD t\u1EC7p v\xE0 kh\xE1m ph\xE1"
+  name: "Qu\u1EA3n l\xFD t\u1EC7p"
+File Transfer:
+  description: "Chia s\u1EBB v\xE0 truy\u1EC1n t\u1EA3i t\u1EADp tin qua FTP, m\u1EA1\
+    ng LAN, Bluetooth ho\u1EB7c m\u1EA1ng ngang h\xE0ng (p2p)"
+  name: "G\u1EEDi t\u1EC7p"
+Finance Manager:
+  description: "Theo d\xF5i chi ph\xED, ng\xE2n s\xE1ch, thu nh\u1EADp v\xE0 t\xE0\
+    i kho\u1EA3n t\xE0i ch\xEDnh c\xE1 nh\xE2n"
+  name: "Qu\u1EA3n l\xFD t\xE0i ch\xEDnh"
+Firewall:
+  description: "Ch\u1EB7n l\u01B0u l\u01B0\u1EE3ng m\u1EA1ng kh\xF4ng mong mu\u1ED1\
+    n v\xE0 ki\u1EC3m so\xE1t quy\u1EC1n truy c\u1EADp internet c\u1EE7a \u1EE9ng\
+    \ d\u1EE5ng"
+  name: "T\u01B0\u1EDDng l\u1EEDa"
+Flashlight:
+  description: "\u1EE8ng d\u1EE5ng \u0111\xE8n pin v\xE0 \u0111\xE8n flash LED"
+  name: "\u0110\xE8n pin"
+Forum:
+  description: "Di\u1EC5n \u0111\xE0n th\u1EA3o lu\u1EADn, c\xE1c ch\u1EE7 \u0111\u1EC1\
+    \ c\u1ED9ng \u0111\u1ED3ng v\xE0 n\u1EC1n t\u1EA3ng h\u1ECFi \u0111\xE1p"
+  name: "Di\u1EC5n \u0111\xE0n"
+Gallery:
+  description: "Duy\u1EC7t, xem v\xE0 s\u1EAFp x\u1EBFp \u1EA3nh, h\xECnh \u1EA3nh\
+    \ v\xE0 video"
+  name: "Th\u01B0 vi\u1EC7n \u1EA3nh"
+Game Helper:
+  description: "Tr\u1EE3 gi\xFAp tr\xF2 ch\u01A1i, ng\u01B0\u1EDDi b\u1EA1n \u0111\
+    \u1ED3ng h\xE0nh, b\u1EA3ng \u0111i\u1EC3m, b\u1ED9 \u0111\u1EBFm th\u1EDDi gian"
+  name: "Tr\u1EE3 gi\xFAp game"
 Graphics:
-  name: Đồ họa
-  description: Công cụ chỉnh sửa hình ảnh, thao tác ảnh và thiết kế trực quan
+  description: "C\xF4ng c\u1EE5 ch\u1EC9nh s\u1EEDa h\xECnh \u1EA3nh, thao t\xE1c\
+    \ \u1EA3nh v\xE0 thi\u1EBFt k\u1EBF tr\u1EF1c quan"
+  name: "\u0110\u1ED3 h\u1ECDa"
+Habit Tracker:
+  description: "X\xE2y d\u1EF1ng th\xF3i quen, theo d\xF5i m\u1EE5c ti\xEAu h\xE0\
+    ng ng\xE0y v\xE0 gi\xE1m s\xE1t chu\u1ED7i th\xE0nh t\xEDch c\xE1 nh\xE2n"
+  name: "Theo d\xF5i th\xF3i quen"
+Health Manager:
+  description: "Qu\u1EA3n l\xFD c\xE2n n\u1EB7ng, nh\u1ECBp tim, huy\u1EBFt \xE1p,\
+    \ chu k\u1EF3 kinh nguy\u1EC7t v\xE0 c\xE1c ch\u1EC9 s\u1ED1 s\u1EE9c kh\u1ECF\
+    e kh\xE1c"
+  name: "Qu\u1EA3n l\xFD s\u1EE9c kh\u1ECFe"
+Icon Pack:
+  description: "B\u1ED9 bi\u1EC3u t\u01B0\u1EE3ng t\xF9y ch\u1EC9nh \u0111\u1EC3 t\u1EA1\
+    o ki\u1EC3u v\xE0 ch\u1EE7 \u0111\u1EC1 cho bi\u1EC3u t\u01B0\u1EE3ng \u1EE9ng\
+    \ d\u1EE5ng"
+  name: "G\xF3i bi\u1EC3u t\u01B0\u1EE3ng"
 Internet:
   name: Internet
-Multimedia:
-  name: Đa phương tiện
-Navigation:
-  name: Điều hướng
-  description: Các ứng dụng bản đồ, GPS, chỉ dẫn từng bước và lập kế hoạch tuyến đường
-Phone & SMS:
-  name: Gọi điện & SMS
-  description: Các tiện ích quay số, quản lý cuộc gọi và nhắn tin văn bản
-Reading:
-  name: Đọc
-  description: Bài viết, nội dung dài, đọc sau và ứng dụng đọc trên web
-Science & Education:
-  name: Khoa học & Giáo dục
-  description: Ứng dụng học tập, nghiên cứu, tham khảo và giáo dục
-Security:
-  name: Bảo mật
-Sports & Health:
-  name: Thể thao & sức khoẻ
-  description: Theo dõi thể chất, sức khỏe, điểm số thể thao và giám sát sức khỏe
-System:
-  name: Hệ thống
-Theming:
-  name: Giao diện
-  description: Tùy chỉnh giao diện thiết bị của bạn với các chủ đề, phông chữ và kiểu giao diện người dùng
-Writing:
-  name: Soạn thảo
-  description: Các ứng dụng xử lý văn bản, viết nhật ký, soạn thảo và viết bài dài
-AI Chat:
-  name: Trò chuyện AI
-  description: Trợ lý AI, chatbot và giao diện mô hình ngôn ngữ lớn (LLM)
-App Manager:
-  name: Quản lý ứng dụng
-  description: Quản lý, sắp xếp và kiểm soát các ứng dụng, ý định và quyền đã cài đặt
-App Store & Updater:
-  name: Cửa hàng ứng dụng & Trình cập nhật
-  description: Khám phá, cài đặt và cập nhật ứng dụng từ các kho phần mềm
-Bookmark:
-  name: Dấu trang
-  description: Lưu, sắp xếp và quản lý các liên kết yêu thích và danh sách đọc
-Browser:
-  name: Trình duyệt
-  description: Trình duyệt web dùng để lướt internet và xem các trang web
-Calculator:
-  name: Máy tính bỏ túi
-  description: Công cụ tính toán số học, khoa học và toán học
-Calendar & Agenda:
-  name: Lịch & Nhật trình
-  description: Lên lịch sự kiện, nhắc nhở, cuộc hẹn và kế hoạch hàng ngày
-Clock:
-  name: Đồng hồ
-  description: Cho biết thời gian hiện tại
-Cloud Storage & File Sync:
-  name: Lưu trữ trên mây & Đồng bộ tệp
-  description: Sao lưu, đồng bộ hóa và truy cập tệp từ xa thông qua dịch vụ đám mây
-Contact:
-  name: Danh bạ
-  description: Ứng dụng sổ địa chỉ, danh bạ điện thoại và quản lý nhân sự
-DNS & Hosts:
-  name: DNS & Máy chủ
-  description: Cấu hình trình phân giải DNS, chặn quảng cáo, tệp hosts và định tuyến tên miền
-Draw:
-  name: Vẽ
-  description: Ứng dụng phác thảo, vẽ tranh, minh họa và vẽ kỹ thuật số
-Ebook Reader:
-  name: Trình đọc ebook
-  description: Đọc sách điện tử, EPUB, PDF và các ấn phẩm kỹ thuật số khác
-Email:
-  name: Email
-  description: Các phần mềm quản lý thư điện tử dùng để gửi, nhận và quản lý tin nhắn email
-File Encryption & Vault:
-  name: Mã hóa & lưu trữ tệp
-  description: Mã hóa, khóa và ẩn các tệp và thư mục riêng tư
-File Transfer:
-  name: Gửi tệp
-  description: Chia sẻ và truyền tải tập tin qua FTP, mạng LAN, Bluetooth hoặc mạng ngang hàng (p2p)
-Finance Manager:
-  name: Quản lý tài chính
-  description: Theo dõi chi phí, ngân sách, thu nhập và tài khoản tài chính cá nhân
-Firewall:
-  name: Tường lửa
-  description: Chặn lưu lượng mạng không mong muốn và kiểm soát quyền truy cập internet của ứng dụng
-Forum:
-  name: Diễn đàn
-  description: Diễn đàn thảo luận, các chủ đề cộng đồng và nền tảng hỏi đáp
-Gallery:
-  name: Thư viện ảnh
-  description: Duyệt, xem và sắp xếp ảnh, hình ảnh và video
-Habit Tracker:
-  name: Theo dõi thói quen
-  description: Xây dựng thói quen, theo dõi mục tiêu hàng ngày và giám sát chuỗi thành tích cá nhân
-Icon Pack:
-  name: Gói biểu tượng
-  description: Bộ biểu tượng tùy chỉnh để tạo kiểu và chủ đề cho biểu tượng ứng dụng
 Inventory:
-  name: Quản lý kho
-  description: Theo dõi, lập danh mục và quản lý các mặt hàng và hàng tồn kho vật lý
+  description: "Theo d\xF5i, l\u1EADp danh m\u1EE5c v\xE0 qu\u1EA3n l\xFD c\xE1c m\u1EB7\
+    t h\xE0ng v\xE0 h\xE0ng t\u1ED3n kho v\u1EADt l\xFD"
+  name: "Qu\u1EA3n l\xFD kho"
 Keyboard & IME:
-  name: Bàn phím & IME
-  description: Bàn phím tùy chỉnh, phương thức nhập liệu, tự động sửa lỗi và ứng dụng gõ chữ
+  description: "B\xE0n ph\xEDm t\xF9y ch\u1EC9nh, ph\u01B0\u01A1ng th\u1EE9c nh\u1EAD\
+    p li\u1EC7u, t\u1EF1 \u0111\u1ED9ng s\u1EEDa l\u1ED7i v\xE0 \u1EE9ng d\u1EE5ng\
+    \ g\xF5 ch\u1EEF"
+  name: "B\xE0n ph\xEDm & IME"
 Launcher:
-  name: Trình launcher
-  description: Ứng dụng thay thế màn hình chính và ứng dụng môi trường máy tính để bàn
+  description: "\u1EE8ng d\u1EE5ng thay th\u1EBF m\xE0n h\xECnh ch\xEDnh v\xE0 \u1EE9\
+    ng d\u1EE5ng m\xF4i tr\u01B0\u1EDDng m\xE1y t\xEDnh \u0111\u1EC3 b\xE0n"
+  name: "Tr\xECnh launcher"
 Local Media Player:
-  name: Trình phát phương tiện offline
-  description: Phát các tệp âm thanh và video ngoại tuyến được lưu trữ trên thiết bị của bạn
+  description: "Ph\xE1t c\xE1c t\u1EC7p \xE2m thanh v\xE0 video ngo\u1EA1i tuy\u1EBF\
+    n \u0111\u01B0\u1EE3c l\u01B0u tr\u1EEF tr\xEAn thi\u1EBFt b\u1ECB c\u1EE7a b\u1EA1\
+    n"
+  name: "Tr\xECnh ph\xE1t ph\u01B0\u01A1ng ti\u1EC7n offline"
 Location Tracker & Sharer:
-  name: Định vị và chia sẻ vị trí
-  description: Chia sẻ và theo dõi vị trí GPS theo thời gian thực với người khác
-Messaging:
-  name: Nhắn tin
-  description: Ứng dụng nhắn tin tức thời, trò chuyện và liên lạc SMS
-Music Practice Tool:
-  name: Công cụ luyện tập nhạc
-  description: Máy chỉnh âm, máy đếm nhịp, dụng cụ luyện hợp âm và các công cụ hỗ trợ luyện tập nhạc cụ
-Network Analyzer:
-  name: Chẩn đoán mạng
-  description: Chẩn đoán sự cố Wi-Fi, quét mạng và giám sát hiệu suất kết nối
-News:
-  name: Tin tức
-  description: Tin tức mới nhất, bài viết, nguồn cấp dữ liệu RSS và các trang tổng hợp tin tức
-Note:
-  name: Ghi chú
-  description: Sổ tay, ghi chú, ứng dụng ghi chép và sắp xếp nhanh chóng
-Online Media Player:
-  name: Trình phát phương tiện online
-  description: Phát nhạc, video và nội dung trực tiếp từ internet
-Pass Wallet:
-  name: Ví giấy tờ
-  description: Lưu trữ thẻ lên máy bay, vé, thẻ khách hàng thân thiết và phiếu giảm giá
-Password & 2FA:
-  name: Mật khẩu & 2FA
-  description: Trình quản lý mật khẩu, công cụ xác thực, OTP, TOTP, HOTP, U2F, FIDO và công cụ bảo mật hai bước
-Podcast:
-  name: Podcast
-  description: Đăng ký, nghe trực tuyến và tải xuống các tập và chương trình âm thanh podcast
-Public Transport:
-  name: Giao thông công cộng
-  description: Lịch trình xe buýt, tàu hỏa, tàu điện ngầm và phương tiện giao thông công cộng, cùng với công cụ lập kế hoạch hành trình
-Recipe Manager:
-  name: Quản lý công thức
-  description: Lưu trữ, sắp xếp và khám phá các công thức nấu ăn và ý tưởng bữa ăn
-Religion:
-  name: Tôn giáo
-  description: Thời gian cầu nguyện, kinh sách, sách hướng dẫn tâm linh và ứng dụng thực hành tâm linh
-Shopping List:
-  name: Danh sách mua sắm
-  description: Danh sách mua sắm, công cụ theo dõi hàng cần mua và ứng dụng mua sắm cộng tác
-Social Network:
-  name: Mạng xã hội
-  description: Mạng xã hội, tiểu blog và các nền tảng cộng đồng trực tuyến
-Task:
-  name: Công việc
-  description: Danh sách việc cần làm, trình quản lý nhiệm vụ và các công cụ năng suất và GTD
-Text Editor:
-  name: Trình soạn thảo
-  description: Các trình soạn thảo văn bản thuần túy, trình soạn thảo Markdown và các công cụ viết
-Translation & Dictionary:
-  name: Dịch & Từ điển
-  description: Dịch ngôn ngữ, tra cứu từ vựng và tham khảo từ vựng
-Unit Convertor:
-  name: Chuyển đổi đơn vị
-  description: Chuyển đổi giữa các đơn vị đo chiều dài, trọng lượng, nhiệt độ, tiền tệ và nhiều hơn nữa
-Voice & Video Chat:
-  name: Gọi thoại và video
-  description: Ứng dụng gọi thoại và video, hội nghị và liên lạc VoIP
-VPN & Proxy:
-  name: VPN & Proxy
-  description: Mã hóa lưu lượng truy cập, vượt qua các hạn chế (phá vỡ rào cản) và ẩn danh kết nối của bạn
-Wallet:
-  name: Ví
-  description: Ví điện tử dùng để thanh toán, quản lý thẻ và tiền điện tử
-Wallpaper:
-  name: Hình nền
-  description: Ứng dụng hình nền màn hình chính và màn hình khóa cũng như hình nền động
-Weather:
-  name: Thời tiết
-  description: Ứng dụng dự báo, radar, nhiệt độ và điều kiện khí quyển
-Workout:
-  name: Sức khỏe
-  description: Các ứng dụng theo dõi lịch tập luyện, theo dõi hoạt động thể dục, chạy bộ và huấn luyện thể hình
-Battery:
-  name: Pin
-  description: Theo dõi và tối ưu hóa thời lượng pin, mức tiêu thụ điện năng và quá trình sạc
-Flashlight:
-  name: Đèn pin
-  description: Ứng dụng đèn pin và đèn flash LED
-Radio:
-  name: Radio
-  description: Nghe trực tiếp các đài phát thanh FM/AM và các chương trình phát thanh trên internet
-Remote Controller:
-  name: Điều khiển từ xa
-  description: Điều khiển từ xa hồng ngoại và điều khiển nhà thông minh dành cho TV, máy điều hòa và các thiết bị khác
-Remote Access:
-  name: Truy cập từ xa
-  description: Điều khiển máy tính để bàn, máy chủ và thiết bị từ xa thông qua RDP, VNC hoặc SSH
-Diet:
-  name: Ăn kiêng
-  description: Dinh dưỡng, calo, quản lý và theo dõi chế độ ăn uống
-Health Manager:
-  name: Quản lý sức khỏe
-  description: Quản lý cân nặng, nhịp tim, huyết áp, chu kỳ kinh nguyệt và các chỉ số sức khỏe khác
-Schedule:
-  description: Lịch trình hội nghị và sự kiện
-  name: Lịch trình
-Text to Speech:
-  name: Chuyển văn bản thành giọng nói
-  description: Công cụ chuyển văn bản thành giọng nói
-Time Tracker:
-  name: Theo dõi thời gian
-  description: Theo dõi thời gian sử dụng các hoạt động và thời gian sáng màn hình
-Action Game:
-  name: Game hành động
-  description: Hành động, thể thao, đua xe và đi cảnh
-Board Game:
-  name: Game cờ
-  description: Cờ bàn, cờ vua, cờ vây, cờ caro
-Card Game:
-  name: Game bài
-  description: Tiến lên, tứ sắc
-Casual Game:
-  name: Game casual
-  description: Trò chơi điều khiển đơn giản
-Dice:
-  name: Xúc xắc
-  description: Tự động chọn
-Educational Game:
-  name: Game giáo dục
-  description: Chơi mà học, đố vui
-Emulator:
-  name: Giả lập
-  description: Trình giả lập chạy trò chơi và chương trình
-Game Helper:
-  name: Trợ giúp game
-  description: Trợ giúp trò chơi, người bạn đồng hành, bảng điểm, bộ đếm thời gian
-Meditation:
-  name: Thiền
-  description: Thiền định, chánh niệm, luyện tập hơi thở
-Party Game:
-  name: Game tụ hợp
-  description: Nhiều người chơi, tụ hợp
-Platformer Game:
-  name: Game đi cảnh
-  description: Game đi cảnh, màn hình cuộn ngang
-Puzzle Game:
-  name: Game xếp hình
-  description: Trò chơi xếp hình, sudoku, trò chơi trí nhớ
-Role-Playing Game:
-  name: Game nhập vai
-  description: RPG, roguelike
-Shooter Game:
-  name: Game bắn súng
-  description: Bắn mục tiêu
-Strategy Game:
-  name: Game chiến thuật
-  description: Chiến thuật, mô phỏng
-Sport Game:
-  name: Game thể thao
-  description: Trò chơi thể thao
-Timer:
-  name: Đếm thời gian
-  description: Tính thời gian theo khoảng, đo thời gian, đếm ngược
-Visual Novel:
-  name: Visual novel
-  description: Tiểu thuyết hình ảnh, game dành cho nữ, game kể chuyện
-Word Game:
-  name: Game chữ
-  description: Trò chơi giải đố chữ, trò chơi ô chữ, trò chơi đoán từ
-Download:
-  name: Tải xuống
-  description: Trình quản lý tải và torrent
-File Manager:
-  name: Quản lý tệp
-  description: Quản lý tệp và khám phá
-Camera:
-  name: Máy ảnh
-  description: Máy ảnh, trình xem camera IP và ghi video
-Recorder:
-  name: Ghi âm
-  description: Âm thanh, màn hình, ghi âm cuộc gọi
-Market & Price:
-  name: Giá cả & Thị trường
-  description: Giá cả, tỉ lệ quy đổi, chứng khoán
+  description: "Chia s\u1EBB v\xE0 theo d\xF5i v\u1ECB tr\xED GPS theo th\u1EDDi gian\
+    \ th\u1EF1c v\u1EDBi ng\u01B0\u1EDDi kh\xE1c"
+  name: "\u0110\u1ECBnh v\u1ECB v\xE0 chia s\u1EBB v\u1ECB tr\xED"
 Lyrics:
-  name: Lời bài hát
-  description: Xem và tìm lời bài hát
+  description: "Xem v\xE0 t\xECm l\u1EDDi b\xE0i h\xE1t"
+  name: "L\u1EDDi b\xE0i h\xE1t"
+Market & Price:
+  description: "Gi\xE1 c\u1EA3, t\u1EC9 l\u1EC7 quy \u0111\u1ED5i, ch\u1EE9ng kho\xE1\
+    n"
+  name: "Gi\xE1 c\u1EA3 & Th\u1ECB tr\u01B0\u1EDDng"
+Meditation:
+  description: "Thi\u1EC1n \u0111\u1ECBnh, ch\xE1nh ni\u1EC7m, luy\u1EC7n t\u1EAD\
+    p h\u01A1i th\u1EDF"
+  name: "Thi\u1EC1n"
+Messaging:
+  description: "\u1EE8ng d\u1EE5ng nh\u1EAFn tin t\u1EE9c th\u1EDDi, tr\xF2 chuy\u1EC7\
+    n v\xE0 li\xEAn l\u1EA1c SMS"
+  name: "Nh\u1EAFn tin"
+Multimedia:
+  name: "\u0110a ph\u01B0\u01A1ng ti\u1EC7n"
+Music Practice Tool:
+  description: "M\xE1y ch\u1EC9nh \xE2m, m\xE1y \u0111\u1EBFm nh\u1ECBp, d\u1EE5ng\
+    \ c\u1EE5 luy\u1EC7n h\u1EE3p \xE2m v\xE0 c\xE1c c\xF4ng c\u1EE5 h\u1ED7 tr\u1EE3\
+    \ luy\u1EC7n t\u1EADp nh\u1EA1c c\u1EE5"
+  name: "C\xF4ng c\u1EE5 luy\u1EC7n t\u1EADp nh\u1EA1c"
+Navigation:
+  description: "C\xE1c \u1EE9ng d\u1EE5ng b\u1EA3n \u0111\u1ED3, GPS, ch\u1EC9 d\u1EAB\
+    n t\u1EEBng b\u01B0\u1EDBc v\xE0 l\u1EADp k\u1EBF ho\u1EA1ch tuy\u1EBFn \u0111\
+    \u01B0\u1EDDng"
+  name: "\u0110i\u1EC1u h\u01B0\u1EDBng"
+Network Analyzer:
+  description: "Ch\u1EA9n \u0111o\xE1n s\u1EF1 c\u1ED1 Wi-Fi, qu\xE9t m\u1EA1ng v\xE0\
+    \ gi\xE1m s\xE1t hi\u1EC7u su\u1EA5t k\u1EBFt n\u1ED1i"
+  name: "Ch\u1EA9n \u0111o\xE1n m\u1EA1ng"
+News:
+  description: "Tin t\u1EE9c m\u1EDBi nh\u1EA5t, b\xE0i vi\u1EBFt, ngu\u1ED3n c\u1EA5\
+    p d\u1EEF li\u1EC7u RSS v\xE0 c\xE1c trang t\u1ED5ng h\u1EE3p tin t\u1EE9c"
+  name: "Tin t\u1EE9c"
+Note:
+  description: "S\u1ED5 tay, ghi ch\xFA, \u1EE9ng d\u1EE5ng ghi ch\xE9p v\xE0 s\u1EAF\
+    p x\u1EBFp nhanh ch\xF3ng"
+  name: "Ghi ch\xFA"
 Notification:
-  name: Thông báo
-  description: Quản lý thông báo, nhật trình, điều hướng, nâng cao
-Alarm Clock:
-  name: Đồng hồ báo thức
-  description: Đặt báo thức đúng giờ
-Cast:
-  name: Cast
-  description: Cast, UPnP, DLNA, FCast, AirPlay, Miracast
-Stopwatch:
-  name: Đồng hồ bấm giờ
-  description: Đo lường tiến trình, thời gian trôi qua, bộ đếm lặp
-Code & Forge:
-  name: Mã nguồn và môi trường lập trình
-  description: Git, lưu trữ mã nguồn, môi trường
+  description: "Qu\u1EA3n l\xFD th\xF4ng b\xE1o, nh\u1EADt tr\xECnh, \u0111i\u1EC1\
+    u h\u01B0\u1EDBng, n\xE2ng cao"
+  name: "Th\xF4ng b\xE1o"
 OCR:
+  description: "Qu\xE9t t\xE0i li\u1EC7u, nh\u1EADn d\u1EA1ng k\xFD t\u1EF1 quang\
+    \ h\u1ECDc"
   name: OCR
-  description: Quét tài liệu, nhận dạng ký tự quang học
+Online Media Player:
+  description: "Ph\xE1t nh\u1EA1c, video v\xE0 n\u1ED9i dung tr\u1EF1c ti\u1EBFp t\u1EEB\
+    \ internet"
+  name: "Tr\xECnh ph\xE1t ph\u01B0\u01A1ng ti\u1EC7n online"
+Party Game:
+  description: "Nhi\u1EC1u ng\u01B0\u1EDDi ch\u01A1i, t\u1EE5 h\u1EE3p"
+  name: "Game t\u1EE5 h\u1EE3p"
+Pass Wallet:
+  description: "L\u01B0u tr\u1EEF th\u1EBB l\xEAn m\xE1y bay, v\xE9, th\u1EBB kh\xE1\
+    ch h\xE0ng th\xE2n thi\u1EBFt v\xE0 phi\u1EBFu gi\u1EA3m gi\xE1"
+  name: "V\xED gi\u1EA5y t\u1EDD"
+Password & 2FA:
+  description: "Tr\xECnh qu\u1EA3n l\xFD m\u1EADt kh\u1EA9u, c\xF4ng c\u1EE5 x\xE1\
+    c th\u1EF1c, OTP, TOTP, HOTP, U2F, FIDO v\xE0 c\xF4ng c\u1EE5 b\u1EA3o m\u1EAD\
+    t hai b\u01B0\u1EDBc"
+  name: "M\u1EADt kh\u1EA9u & 2FA"
+Phone & SMS:
+  description: "C\xE1c ti\u1EC7n \xEDch quay s\u1ED1, qu\u1EA3n l\xFD cu\u1ED9c g\u1ECD\
+    i v\xE0 nh\u1EAFn tin v\u0103n b\u1EA3n"
+  name: "G\u1ECDi \u0111i\u1EC7n & SMS"
+Platformer Game:
+  description: "Game \u0111i c\u1EA3nh, m\xE0n h\xECnh cu\u1ED9n ngang"
+  name: "Game \u0111i c\u1EA3nh"
+Podcast:
+  description: "\u0110\u0103ng k\xFD, nghe tr\u1EF1c tuy\u1EBFn v\xE0 t\u1EA3i xu\u1ED1\
+    ng c\xE1c t\u1EADp v\xE0 ch\u01B0\u01A1ng tr\xECnh \xE2m thanh podcast"
+  name: Podcast
+Public Transport:
+  description: "L\u1ECBch tr\xECnh xe bu\xFDt, t\xE0u h\u1ECFa, t\xE0u \u0111i\u1EC7\
+    n ng\u1EA7m v\xE0 ph\u01B0\u01A1ng ti\u1EC7n giao th\xF4ng c\xF4ng c\u1ED9ng,\
+    \ c\xF9ng v\u1EDBi c\xF4ng c\u1EE5 l\u1EADp k\u1EBF ho\u1EA1ch h\xE0nh tr\xEC\
+    nh"
+  name: "Giao th\xF4ng c\xF4ng c\u1ED9ng"
 Push:
-  name: Thông báo đẩy
-  description: Thông báo đẩy
+  description: "Th\xF4ng b\xE1o \u0111\u1EA9y"
+  name: "Th\xF4ng b\xE1o \u0111\u1EA9y"
+Puzzle Game:
+  description: "Tr\xF2 ch\u01A1i x\u1EBFp h\xECnh, sudoku, tr\xF2 ch\u01A1i tr\xED\
+    \ nh\u1EDB"
+  name: "Game x\u1EBFp h\xECnh"
+Radio:
+  description: "Nghe tr\u1EF1c ti\u1EBFp c\xE1c \u0111\xE0i ph\xE1t thanh FM/AM v\xE0\
+    \ c\xE1c ch\u01B0\u01A1ng tr\xECnh ph\xE1t thanh tr\xEAn internet"
+  name: Radio
+Reading:
+  description: "B\xE0i vi\u1EBFt, n\u1ED9i dung d\xE0i, \u0111\u1ECDc sau v\xE0 \u1EE9\
+    ng d\u1EE5ng \u0111\u1ECDc tr\xEAn web"
+  name: "\u0110\u1ECDc"
+Recipe Manager:
+  description: "L\u01B0u tr\u1EEF, s\u1EAFp x\u1EBFp v\xE0 kh\xE1m ph\xE1 c\xE1c c\xF4\
+    ng th\u1EE9c n\u1EA5u \u0103n v\xE0 \xFD t\u01B0\u1EDFng b\u1EEFa \u0103n"
+  name: "Qu\u1EA3n l\xFD c\xF4ng th\u1EE9c"
+Recorder:
+  description: "\xC2m thanh, m\xE0n h\xECnh, ghi \xE2m cu\u1ED9c g\u1ECDi"
+  name: "Ghi \xE2m"
+Religion:
+  description: "Th\u1EDDi gian c\u1EA7u nguy\u1EC7n, kinh s\xE1ch, s\xE1ch h\u01B0\
+    \u1EDBng d\u1EABn t\xE2m linh v\xE0 \u1EE9ng d\u1EE5ng th\u1EF1c h\xE0nh t\xE2\
+    m linh"
+  name: "T\xF4n gi\xE1o"
+Remote Access:
+  description: "\u0110i\u1EC1u khi\u1EC3n m\xE1y t\xEDnh \u0111\u1EC3 b\xE0n, m\xE1\
+    y ch\u1EE7 v\xE0 thi\u1EBFt b\u1ECB t\u1EEB xa th\xF4ng qua RDP, VNC ho\u1EB7\
+    c SSH"
+  name: "Truy c\u1EADp t\u1EEB xa"
+Remote Controller:
+  description: "\u0110i\u1EC1u khi\u1EC3n t\u1EEB xa h\u1ED3ng ngo\u1EA1i v\xE0 \u0111\
+    i\u1EC1u khi\u1EC3n nh\xE0 th\xF4ng minh d\xE0nh cho TV, m\xE1y \u0111i\u1EC1\
+    u h\xF2a v\xE0 c\xE1c thi\u1EBFt b\u1ECB kh\xE1c"
+  name: "\u0110i\u1EC1u khi\u1EC3n t\u1EEB xa"
+Role-Playing Game:
+  description: RPG, roguelike
+  name: "Game nh\u1EADp vai"
+Schedule:
+  description: "L\u1ECBch tr\xECnh h\u1ED9i ngh\u1ECB v\xE0 s\u1EF1 ki\u1EC7n"
+  name: "L\u1ECBch tr\xECnh"
+Science & Education:
+  description: "\u1EE8ng d\u1EE5ng h\u1ECDc t\u1EADp, nghi\xEAn c\u1EE9u, tham kh\u1EA3\
+    o v\xE0 gi\xE1o d\u1EE5c"
+  name: "Khoa h\u1ECDc & Gi\xE1o d\u1EE5c"
+Security:
+  name: "B\u1EA3o m\u1EADt"
+Shooter Game:
+  description: "B\u1EAFn m\u1EE5c ti\xEAu"
+  name: "Game b\u1EAFn s\xFAng"
+Shopping List:
+  description: "Danh s\xE1ch mua s\u1EAFm, c\xF4ng c\u1EE5 theo d\xF5i h\xE0ng c\u1EA7\
+    n mua v\xE0 \u1EE9ng d\u1EE5ng mua s\u1EAFm c\u1ED9ng t\xE1c"
+  name: "Danh s\xE1ch mua s\u1EAFm"
+Social Network:
+  description: "M\u1EA1ng x\xE3 h\u1ED9i, ti\u1EC3u blog v\xE0 c\xE1c n\u1EC1n t\u1EA3\
+    ng c\u1ED9ng \u0111\u1ED3ng tr\u1EF1c tuy\u1EBFn"
+  name: "M\u1EA1ng x\xE3 h\u1ED9i"
+Sport Game:
+  description: "Tr\xF2 ch\u01A1i th\u1EC3 thao"
+  name: "Game th\u1EC3 thao"
+Sports & Health:
+  description: "Theo d\xF5i th\u1EC3 ch\u1EA5t, s\u1EE9c kh\u1ECFe, \u0111i\u1EC3\
+    m s\u1ED1 th\u1EC3 thao v\xE0 gi\xE1m s\xE1t s\u1EE9c kh\u1ECFe"
+  name: "Th\u1EC3 thao & s\u1EE9c kho\u1EBB"
+Stopwatch:
+  description: "\u0110o l\u01B0\u1EDDng ti\u1EBFn tr\xECnh, th\u1EDDi gian tr\xF4\
+    i qua, b\u1ED9 \u0111\u1EBFm l\u1EB7p"
+  name: "\u0110\u1ED3ng h\u1ED3 b\u1EA5m gi\u1EDD"
+Strategy Game:
+  description: "Chi\u1EBFn thu\u1EADt, m\xF4 ph\u1ECFng"
+  name: "Game chi\u1EBFn thu\u1EADt"
+System:
+  name: "H\u1EC7 th\u1ED1ng"
+Task:
+  description: "Danh s\xE1ch vi\u1EC7c c\u1EA7n l\xE0m, tr\xECnh qu\u1EA3n l\xFD nhi\u1EC7\
+    m v\u1EE5 v\xE0 c\xE1c c\xF4ng c\u1EE5 n\u0103ng su\u1EA5t v\xE0 GTD"
+  name: "C\xF4ng vi\u1EC7c"
+Text Editor:
+  description: "C\xE1c tr\xECnh so\u1EA1n th\u1EA3o v\u0103n b\u1EA3n thu\u1EA7n t\xFA\
+    y, tr\xECnh so\u1EA1n th\u1EA3o Markdown v\xE0 c\xE1c c\xF4ng c\u1EE5 vi\u1EBF\
+    t"
+  name: "Tr\xECnh so\u1EA1n th\u1EA3o"
+Text to Speech:
+  description: "C\xF4ng c\u1EE5 chuy\u1EC3n v\u0103n b\u1EA3n th\xE0nh gi\u1ECDng\
+    \ n\xF3i"
+  name: "Chuy\u1EC3n v\u0103n b\u1EA3n th\xE0nh gi\u1ECDng n\xF3i"
+Theming:
+  description: "T\xF9y ch\u1EC9nh giao di\u1EC7n thi\u1EBFt b\u1ECB c\u1EE7a b\u1EA1\
+    n v\u1EDBi c\xE1c ch\u1EE7 \u0111\u1EC1, ph\xF4ng ch\u1EEF v\xE0 ki\u1EC3u giao\
+    \ di\u1EC7n ng\u01B0\u1EDDi d\xF9ng"
+  name: "Giao di\u1EC7n"
+Time Tracker:
+  description: "Theo d\xF5i th\u1EDDi gian s\u1EED d\u1EE5ng c\xE1c ho\u1EA1t \u0111\
+    \u1ED9ng v\xE0 th\u1EDDi gian s\xE1ng m\xE0n h\xECnh"
+  name: "Theo d\xF5i th\u1EDDi gian"
+Timer:
+  description: "T\xEDnh th\u1EDDi gian theo kho\u1EA3ng, \u0111o th\u1EDDi gian, \u0111\
+    \u1EBFm ng\u01B0\u1EE3c"
+  name: "\u0110\u1EBFm th\u1EDDi gian"
+Translation & Dictionary:
+  description: "D\u1ECBch ng\xF4n ng\u1EEF, tra c\u1EE9u t\u1EEB v\u1EF1ng v\xE0 tham\
+    \ kh\u1EA3o t\u1EEB v\u1EF1ng"
+  name: "D\u1ECBch & T\u1EEB \u0111i\u1EC3n"
+Unit Convertor:
+  description: "Chuy\u1EC3n \u0111\u1ED5i gi\u1EEFa c\xE1c \u0111\u01A1n v\u1ECB \u0111\
+    o chi\u1EC1u d\xE0i, tr\u1ECDng l\u01B0\u1EE3ng, nhi\u1EC7t \u0111\u1ED9, ti\u1EC1\
+    n t\u1EC7 v\xE0 nhi\u1EC1u h\u01A1n n\u1EEFa"
+  name: "Chuy\u1EC3n \u0111\u1ED5i \u0111\u01A1n v\u1ECB"
+VPN & Proxy:
+  description: "M\xE3 h\xF3a l\u01B0u l\u01B0\u1EE3ng truy c\u1EADp, v\u01B0\u1EE3\
+    t qua c\xE1c h\u1EA1n ch\u1EBF (ph\xE1 v\u1EE1 r\xE0o c\u1EA3n) v\xE0 \u1EA9n\
+    \ danh k\u1EBFt n\u1ED1i c\u1EE7a b\u1EA1n"
+  name: VPN & Proxy
+Visual Novel:
+  description: "Ti\u1EC3u thuy\u1EBFt h\xECnh \u1EA3nh, game d\xE0nh cho n\u1EEF,\
+    \ game k\u1EC3 chuy\u1EC7n"
+  name: Visual novel
+Voice & Video Chat:
+  description: "\u1EE8ng d\u1EE5ng g\u1ECDi tho\u1EA1i v\xE0 video, h\u1ED9i ngh\u1ECB\
+    \ v\xE0 li\xEAn l\u1EA1c VoIP"
+  name: "G\u1ECDi tho\u1EA1i v\xE0 video"
 Volume:
-  name: Âm lượng
-  description: Quản lý thiết lập âm lượng
+  description: "Qu\u1EA3n l\xFD thi\u1EBFt l\u1EADp \xE2m l\u01B0\u1EE3ng"
+  name: "\xC2m l\u01B0\u1EE3ng"
+Wallet:
+  description: "V\xED \u0111i\u1EC7n t\u1EED d\xF9ng \u0111\u1EC3 thanh to\xE1n, qu\u1EA3\
+    n l\xFD th\u1EBB v\xE0 ti\u1EC1n \u0111i\u1EC7n t\u1EED"
+  name: "V\xED"
+Wallpaper:
+  description: "\u1EE8ng d\u1EE5ng h\xECnh n\u1EC1n m\xE0n h\xECnh ch\xEDnh v\xE0\
+    \ m\xE0n h\xECnh kh\xF3a c\u0169ng nh\u01B0 h\xECnh n\u1EC1n \u0111\u1ED9ng"
+  name: "H\xECnh n\u1EC1n"
+Weather:
+  description: "\u1EE8ng d\u1EE5ng d\u1EF1 b\xE1o, radar, nhi\u1EC7t \u0111\u1ED9\
+    \ v\xE0 \u0111i\u1EC1u ki\u1EC7n kh\xED quy\u1EC3n"
+  name: "Th\u1EDDi ti\u1EBFt"
+Word Game:
+  description: "Tr\xF2 ch\u01A1i gi\u1EA3i \u0111\u1ED1 ch\u1EEF, tr\xF2 ch\u01A1\
+    i \xF4 ch\u1EEF, tr\xF2 ch\u01A1i \u0111o\xE1n t\u1EEB"
+  name: "Game ch\u1EEF"
+Workout:
+  description: "C\xE1c \u1EE9ng d\u1EE5ng theo d\xF5i l\u1ECBch t\u1EADp luy\u1EC7\
+    n, theo d\xF5i ho\u1EA1t \u0111\u1ED9ng th\u1EC3 d\u1EE5c, ch\u1EA1y b\u1ED9 v\xE0\
+    \ hu\u1EA5n luy\u1EC7n th\u1EC3 h\xECnh"
+  name: "S\u1EE9c kh\u1ECFe"
+Writing:
+  description: "C\xE1c \u1EE9ng d\u1EE5ng x\u1EED l\xFD v\u0103n b\u1EA3n, vi\u1EBF\
+    t nh\u1EADt k\xFD, so\u1EA1n th\u1EA3o v\xE0 vi\u1EBFt b\xE0i d\xE0i"
+  name: "So\u1EA1n th\u1EA3o"

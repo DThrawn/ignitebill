@@ -19,7 +19,8 @@ NonFreeDep:
   description: Dumedepende sa ibang mga di-libreng app ang app na ito
   name: Dumedepende sa mga di-libre
 NonFreeNet:
-  description: Nagpo-promote ng mga di-libreng serbisyong pang-network ang app na ito
+  description: Nagpo-promote ng mga di-libreng serbisyong pang-network ang app na
+    ito
   name: Mga di-libre serbisyong pang-network
 Tracking:
   description: Tina-track at inuulat ng app na ito ang iyong aktibidad

@@ -1,6 +1,9 @@
 archive:
-  description: Oficialios F-Droid laisvosios programinės įrangos saugyklos archyvas. Čia esančios programos yra senos ir jose gali būti žinomų pažeidžiamumų ir saugumo problemų!
+  description: "Oficialios F-Droid laisvosios programin\u0117s \u012Frangos saugyklos\
+    \ archyvas. \u010Cia esan\u010Dios programos yra senos ir jose gali b\u016Bti\
+    \ \u017Einom\u0173 pa\u017Eeid\u017Eiamum\u0173 ir saugumo problem\u0173!"
   name: F-Droid archyvas
 repo:
-  description: Oficiali F-Droid laisvosios programinės įrangos saugykla. Visa, kas yra šioje saugykloje, yra sukurta iš šaltinio kodo.
+  description: "Oficiali F-Droid laisvosios programin\u0117s \u012Frangos saugykla.\
+    \ Visa, kas yra \u0161ioje saugykloje, yra sukurta i\u0161 \u0161altinio kodo."
   name: F-Droid

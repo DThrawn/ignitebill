@@ -1,30 +1,33 @@
 Ads:
-  description: Ova aplikacija sadrži oglase
+  description: "Ova aplikacija sadr\u017Ei oglase"
   name: Oglasi
 DisabledAlgorithm:
   description: Ova aplikacija ima slab sigurnosni potpis
-  name: Potpisano pomoću nesigurnog algoritma
+  name: "Potpisano pomo\u0107u nesigurnog algoritma"
 KnownVuln:
-  description: Ova aplikacija sadrži poznat sigurnosni problem
+  description: "Ova aplikacija sadr\u017Ei poznat sigurnosni problem"
   name: Poznata ranjivost
 NoSourceSince:
+  description: "Izvorni kod vi\u0161e nije dostupan, aktualiziranja nisu mogu\u0107\
+    a"
   name: Nema izvora od
-  description: Izvorni kod više nije dostupan, aktualiziranja nisu moguća
 NonFreeAdd:
-  description: Ova aplikacija promiče neslobodne dodatke
+  description: "Ova aplikacija promi\u010De neslobodne dodatke"
   name: Ne-slobodni podaci
 NonFreeAssets:
-  description: Ova aplikacija sadrži ne-slobodne resurse
+  description: "Ova aplikacija sadr\u017Ei ne-slobodne resurse"
   name: Ne-slobodni resursi
 NonFreeDep:
   description: Ova aplikacija ovisi o drugim ne-slobodnim aplikacijama
   name: Ne-slobodne ovisnosti
 NonFreeNet:
-  description: Ova aplikacija promovira ili potpuno ovisi o ne-slobodnom mrežnom uslugom
-  name: Ne-slobodne mrežne usluge
-Tracking:
-  description: Ova aplikacija prati tvoje aktivnosti i o njima izvještava
-  name: Praćenje
+  description: "Ova aplikacija promovira ili potpuno ovisi o ne-slobodnom mre\u017E\
+    nom uslugom"
+  name: "Ne-slobodne mre\u017Ene usluge"
 TetheredNet:
-  description: Ova aplikacija u potpunosti ovisi o određenoj instanci mrežne usluge
-  name: Dijeljene mrežnih usluga
+  description: "Ova aplikacija u potpunosti ovisi o odre\u0111enoj instanci mre\u017E\
+    ne usluge"
+  name: "Dijeljene mre\u017Enih usluga"
+Tracking:
+  description: "Ova aplikacija prati tvoje aktivnosti i o njima izvje\u0161tava"
+  name: "Pra\u0107enje"

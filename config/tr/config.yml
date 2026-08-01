@@ -1,6 +1,9 @@
 archive:
-  description: Resmi F-Droid Özgür Yazılım deposunun arşivi. Buradaki uygulamalar eskidir ve bilinen güvenlik açıkları ve sorunları içerebilir!
-  name: F-Droid Arşivi
+  description: "Resmi F-Droid \xD6zg\xFCr Yaz\u0131l\u0131m deposunun ar\u015Fivi.\
+    \ Buradaki uygulamalar eskidir ve bilinen g\xFCvenlik a\xE7\u0131klar\u0131 ve\
+    \ sorunlar\u0131 i\xE7erebilir!"
+  name: "F-Droid Ar\u015Fivi"
 repo:
-  description: Resmi F-Droid Özgür Yazılım deposu. Bu depodaki her şey her zaman kaynak kodlarından oluşturulmuştur.
+  description: "Resmi F-Droid \xD6zg\xFCr Yaz\u0131l\u0131m deposu. Bu depodaki her\
+    \ \u015Fey her zaman kaynak kodlar\u0131ndan olu\u015Fturulmu\u015Ftur."
   name: F-Droid

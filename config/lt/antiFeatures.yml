@@ -1,30 +1,35 @@
 Ads:
-  description: Šioje programėlėje yra reklamų
+  description: "\u0160ioje program\u0117l\u0117je yra reklam\u0173"
   name: Skelbimai
 DisabledAlgorithm:
-  description: Ši programėlė turi silpną saugumo parašą
-  name: Pasirašyta naudojant nesaugų algoritmą
+  description: "\u0160i program\u0117l\u0117 turi silpn\u0105 saugumo para\u0161\u0105"
+  name: "Pasira\u0161yta naudojant nesaug\u0173 algoritm\u0105"
 KnownVuln:
-  description: Šioje programėlėje yra žinomas saugumo pažeidžiamumas
-  name: Žinomas pažeidžiamumas
+  description: "\u0160ioje program\u0117l\u0117je yra \u017Einomas saugumo pa\u017E\
+    eid\u017Eiamumas"
+  name: "\u017Dinomas pa\u017Eeid\u017Eiamumas"
 NoSourceSince:
-  name: Nebėra šaltinio
-  description: Šaltinio kodas nebeprieinamas, atnaujinimai negalimi
+  description: "\u0160altinio kodas nebeprieinamas, atnaujinimai negalimi"
+  name: "Neb\u0117ra \u0161altinio"
 NonFreeAdd:
-  description: Ši programėlė propaguoja ne laisvosios programinės įrangos papildinius
+  description: "\u0160i program\u0117l\u0117 propaguoja ne laisvosios programin\u0117\
+    s \u012Frangos papildinius"
   name: Ne atviro kodo papildiniai
 NonFreeAssets:
-  description: Šioje programėlėje yra mokamų resursų
+  description: "\u0160ioje program\u0117l\u0117je yra mokam\u0173 resurs\u0173"
   name: Mokami resursai
 NonFreeDep:
-  description: Ši programėlė priklauso nuo kitų uždaro kodo programėlių
-  name: Nuo uždaro kodo priklausomos programėlės
+  description: "\u0160i program\u0117l\u0117 priklauso nuo kit\u0173 u\u017Edaro kodo\
+    \ program\u0117li\u0173"
+  name: "Nuo u\u017Edaro kodo priklausomos program\u0117l\u0117s"
 NonFreeNet:
-  description: Ši programėlė propaguoja privačią tinklo paslaugą arba nuo jos priklauso
+  description: "\u0160i program\u0117l\u0117 propaguoja priva\u010Di\u0105 tinklo\
+    \ paslaug\u0105 arba nuo jos priklauso"
   name: Ne atviro kodo tinklo paslaugos
-Tracking:
-  description: Ši programėlė seka ir perduoda jūsų veiklą
-  name: Sekimas
 TetheredNet:
-  description: Ši programėlė visiškai priklauso nuo tam tikro tinklo paslaugos atvejo
-  name: Pririšto tinklo paslaugos
+  description: "\u0160i program\u0117l\u0117 visi\u0161kai priklauso nuo tam tikro\
+    \ tinklo paslaugos atvejo"
+  name: "Priri\u0161to tinklo paslaugos"
+Tracking:
+  description: "\u0160i program\u0117l\u0117 seka ir perduoda j\u016Bs\u0173 veikl\u0105"
+  name: Sekimas

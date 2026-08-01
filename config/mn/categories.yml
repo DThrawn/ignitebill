@@ -1,28 +1,31 @@
 Connectivity:
-  name: Холболт
+  name: "\u0425\u043E\u043B\u0431\u043E\u043B\u0442"
 Development:
-  name: Хөгжил
+  name: "\u0425\u04E9\u0433\u0436\u0438\u043B"
 Graphics:
-  name: График
+  name: "\u0413\u0440\u0430\u0444\u0438\u043A"
 Internet:
-  name: Интернет
+  name: "\u0418\u043D\u0442\u0435\u0440\u043D\u0435\u0442"
 Multimedia:
-  name: Мультимедиа
+  name: "\u041C\u0443\u043B\u044C\u0442\u0438\u043C\u0435\u0434\u0438\u0430"
 Navigation:
-  name: Чиглүүлэлт
+  name: "\u0427\u0438\u0433\u043B\u04AF\u04AF\u043B\u044D\u043B\u0442"
 Phone & SMS:
-  name: Утас ба SMS
+  name: "\u0423\u0442\u0430\u0441 \u0431\u0430 SMS"
 Reading:
-  name: Унших
+  name: "\u0423\u043D\u0448\u0438\u0445"
 Science & Education:
-  name: Шинжлэх ухаан ба боловсрол
+  name: "\u0428\u0438\u043D\u0436\u043B\u044D\u0445 \u0443\u0445\u0430\u0430\u043D\
+    \ \u0431\u0430 \u0431\u043E\u043B\u043E\u0432\u0441\u0440\u043E\u043B"
 Security:
-  name: Аюулгүй байдал
+  name: "\u0410\u044E\u0443\u043B\u0433\u04AF\u0439 \u0431\u0430\u0439\u0434\u0430\
+    \u043B"
 Sports & Health:
-  name: Спорт ба эрүүл мэнд
+  name: "\u0421\u043F\u043E\u0440\u0442 \u0431\u0430 \u044D\u0440\u04AF\u04AF\u043B\
+    \ \u043C\u044D\u043D\u0434"
 System:
-  name: Систем
+  name: "\u0421\u0438\u0441\u0442\u0435\u043C"
 Theming:
-  name: Дулаан
+  name: "\u0414\u0443\u043B\u0430\u0430\u043D"
 Writing:
-  name: Бичих
+  name: "\u0411\u0438\u0447\u0438\u0445"

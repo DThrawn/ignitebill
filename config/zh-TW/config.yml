@@ -1,6 +1,9 @@
 archive:
-  name: F-Droid 封存
-  description: 官方 F-Droid 免費軟體庫的封存。此封存中的應用程式老舊，或有已知漏洞及安全問題！
+  description: "\u5B98\u65B9 F-Droid \u514D\u8CBB\u8EDF\u9AD4\u5EAB\u7684\u5C01\u5B58\
+    \u3002\u6B64\u5C01\u5B58\u4E2D\u7684\u61C9\u7528\u7A0B\u5F0F\u8001\u820A\uFF0C\
+    \u6216\u6709\u5DF2\u77E5\u6F0F\u6D1E\u53CA\u5B89\u5168\u554F\u984C\uFF01"
+  name: "F-Droid \u5C01\u5B58"
 repo:
-  description: 官方 F-Droid 免費軟體庫。此軟體庫一律皆自原始碼建構。
+  description: "\u5B98\u65B9 F-Droid \u514D\u8CBB\u8EDF\u9AD4\u5EAB\u3002\u6B64\u8EDF\
+    \u9AD4\u5EAB\u4E00\u5F8B\u7686\u81EA\u539F\u59CB\u78BC\u5EFA\u69CB\u3002"
   name: F-Droid

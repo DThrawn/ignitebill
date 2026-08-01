@@ -1,220 +1,265 @@
+AI Chat:
+  description: Assistentes de IA, chatbots e interfaces de modelo de linguagem grande
+    (LLM)
+  name: Conversar com IA
+App Manager:
+  description: "Girar, organizar e controlo de apps instaladas, inten\xE7\xF5es e\
+    \ permiss\xF5es"
+  name: Gestor de apps
+App Store & Updater:
+  description: "Descubrir, instalar e atualizar apps de reposit\xF3rios de software"
+  name: Loja de apps e atualizador
+Battery:
+  description: "Monitore e otimize a vida \xFAtil da pilha, o uso de energia e o carregamento"
+  name: Pilha
+Bookmark:
+  description: "Grave, organize e gira liga\xE7\xF5es favoritas e listas de leitura"
+  name: Marcador
+Browser:
+  description: Navegadores da Web para navegar na Internet e visualizar sites
+  name: Navegador
+Calculator:
+  description: "Ferramentas de c\xE1lculo aritm\xE9tico, cient\xEDfico e matem\xE1\
+    tico"
+  name: Calculador
+Calendar & Agenda:
+  description: "Agende eventos, lembretes, compromissos e planejadores di\xE1rios"
+  name: "Calend\xE1rio e agenda"
+Clock:
+  description: "Utilit\xE1rios de alarme, cron\xF4metro, cron\xF4metro e rel\xF3gio\
+    \ mundial"
+  name: "Rel\xF3gio"
+Cloud Storage & File Sync:
+  description: "Fa\xE7a backup, sincronize e aceda ficheiros remotamente por meio\
+    \ de servi\xE7os em nuvem"
+  name: "Armazenamento na nuvem e sincroniza\xE7\xE3o de ficheiros"
 Connectivity:
   name: Conectividade
+Contact:
+  description: "Apps de cat\xE1logo de endere\xE7os, agenda telef\xF4nica e gest\xE3\
+    o de pessoas"
+  name: Contacto
+DNS & Hosts:
+  description: "Configure resolvedores de DNS, bloqueio de an\xFAncios, ficheiro de\
+    \ hosts e roteamento de dom\xEDnio"
+  name: DNS & hosts
 Development:
+  description: "Ferramentas de codifica\xE7\xE3o, programa\xE7\xE3o, IDE, terminal\
+    \ e programador"
   name: Desenvolvimento
-  description: Ferramentas de codificação, programação, IDE, terminal e programador
+Diet:
+  description: "Nutri\xE7\xE3o, calorias, gest\xE3o de alimentos e rastreador"
+  name: Dieta
+Draw:
+  description: "Apps de desenho, pintura, ilustra\xE7\xE3o e telas de arte digital"
+  name: Desenhar
+Ebook Reader:
+  description: "Leia e-books, EPUB, PDF e livros e publica\xE7\xF5es digitais"
+  name: Leitor de e-book
+Email:
+  description: Clientes de email para enviar, receber e gerir mensagens de email
+  name: E-mail
+File Encryption & Vault:
+  description: Criptografe, bloqueie e oculte ficheiros e pastas particulares
+  name: Criptografia de ficheiros e cofre
+File Transfer:
+  description: Partilhe e transfira ficheiros via FTP, LAN, Bluetooth ou ponto a ponto
+    (p2p)
+  name: "Transfer\xEAncia de ficheiros"
+Finance Manager:
+  description: "Acompanhe despesas, or\xE7amentos, receitas e contas financeiras pessoais"
+  name: "Gestor de finan\xE7as"
+Firewall:
+  description: "Bloqueie o tr\xE1fego de rede indesejado e controle o acesso do apps\
+    \ \xE0 Internet"
+  name: Firewall
+Flashlight:
+  description: Apps de lanterna e flash LED
+  name: Lanterna
+Forum:
+  description: "F\xF3runs de discuss\xE3o, t\xF3picos da comunidade e plataformas\
+    \ de perguntas e respostas"
+  name: "F\xF3rum"
+Gallery:
+  description: "Navegue, visualize e organize fotos, imagens e v\xEDdeos"
+  name: Galeria
 Graphics:
-  name: Gráficos
-  description: Ferramentas de edição de imagens, manipulação de fotos e design visual
+  description: "Ferramentas de edi\xE7\xE3o de imagens, manipula\xE7\xE3o de fotos\
+    \ e design visual"
+  name: "Gr\xE1ficos"
+Habit Tracker:
+  description: "Crie rotinas, monitore metas di\xE1rias e monitore sequ\xEAncias pessoais"
+  name: "Rastejador de h\xE1bitos"
+Health Manager:
+  description: "Gest\xE3o de peso, frequ\xEAncia card\xEDaca, tens\xE3o arterial,\
+    \ menstrua\xE7\xE3o e outras m\xE9tricas de sa\xFAde"
+  name: "Gest\xE3o de sa\xFAde"
+Icon Pack:
+  description: "Apps de conjuntos de \xEDcones personalizados para \xEDcones de estilo\
+    \ e tema"
+  name: "Pacote de \xEDcones"
 Internet:
   name: Internet
+Inventory:
+  description: "Rastreie, catalogue e gira elementos f\xEDsicos e estoque"
+  name: "Invent\xE1rio"
+Keyboard & IME:
+  description: "Apps de teclados personalizados, m\xE9todos de entrada, corre\xE7\xE3\
+    o autom\xE1tica e digita\xE7\xE3o"
+  name: Teclado e MDE (IME)
+Launcher:
+  description: "Apps de substitui\xE7\xF5es de ecr\xE3 inicial e ambiente de desktop"
+  name: "Lan\xE7ador"
+Local Media Player:
+  description: "Reproduza ficheiros de \xE1udio e v\xEDdeo off-line armazenados no\
+    \ seu dispositivo"
+  name: "Reprodutor de m\xE9dia local"
+Location Tracker & Sharer:
+  description: "Partilhe e monitore a localiza\xE7\xE3o GPS em tempo real com outras\
+    \ pessoas"
+  name: "Rastreador e compartilhador de localiza\xE7\xE3o"
+Messaging:
+  description: "Apps de mensagens instant\xE2neas, bate-papo e comunica\xE7\xE3o por\
+    \ SMS"
+  name: Mensageiros
 Multimedia:
-  name: Multimédia
+  name: "Multim\xE9dia"
+Music Practice Tool:
+  description: "Afinadores, metr\xF4nomos, ferramentas de acordes e aux\xEDlios para\
+    \ pr\xE1tica de instrumentos"
+  name: "Ferramenta de pr\xE1tica musical"
 Navigation:
-  name: Navegação
-  description: Apps de mapas, GPS, instruções passo a passo e planejamento de rotas
+  description: "Apps de mapas, GPS, instru\xE7\xF5es passo a passo e planejamento\
+    \ de rotas"
+  name: "Navega\xE7\xE3o"
+Network Analyzer:
+  description: "Diagnosticar Wi-Fi, verificar redes e monitorar o desempenho da conex\xE3\
+    o"
+  name: Analisador de rede
+News:
+  description: "\xDAltimas manchetes, artigos, feeds RSS e agregadores de not\xED\
+    cias"
+  name: "Not\xEDcias"
+Note:
+  description: "Apps de blocos de notas, memorandos e r\xE1pidas de anota\xE7\xF5\
+    es e organiza\xE7\xE3o"
+  name: Nota
+Online Media Player:
+  description: "Transmita m\xFAsicas, v\xEDdeos e conte\xFAdo em direto da Internet"
+  name: "Reprodutor de m\xE9dia on-line"
+Pass Wallet:
+  description: "Armazene cart\xF5es de embarque, bilhetes, cart\xF5es de fidelidade\
+    \ e cupons"
+  name: Carteira de passe
+Password & 2FA:
+  description: "Gestores de palavras-passe, autenticadores e ferramentas de seguran\xE7\
+    a de dois fatores"
+  name: Palavras-passe e dois fatores
 Phone & SMS:
+  description: "Discadores, gestores de chamadas e utilit\xE1rios de mensagens de\
+    \ texto"
   name: Telefone e SMS
-  description: Discadores, gestores de chamadas e utilitários de mensagens de texto
+Podcast:
+  description: "Assine, transmita e descarregue epis\xF3dios e programas de \xE1udio\
+    \ de podcast"
+  name: Podcast
+Public Transport:
+  description: "Hor\xE1rios e planejadores de viagens de autocarro, comboio, metro\
+    \ e transporte p\xFAblico"
+  name: "Mapa de transporte p\xFAblico e hor\xE1rios"
+Radio:
+  description: "Transmita esta\xE7\xF5es de r\xE1dio FM/AM em direto e transmiss\xF5\
+    es de r\xE1dio pela Internet"
+  name: "R\xE1dio"
 Reading:
+  description: "Apps de artigos, conte\xFAdo extenso, leia mais tarde e leitura da\
+    \ web"
   name: Leitura
-  description: Apps de artigos, conteúdo extenso, leia mais tarde e leitura da web
+Recipe Manager:
+  description: "Armazene, organize e descubra receitas culin\xE1rias e ideias para\
+    \ refei\xE7\xF5es"
+  name: Gestor de receitas
+Religion:
+  description: "Apps de tempos de ora\xE7\xE3o, textos sagrados, devocionais e pr\xE1\
+    tica espiritual"
+  name: "Religi\xE3o"
+Remote Access:
+  description: Controlo desktops, servidores e dispositivos remotamente via RDP, VNC
+    ou SSH
+  name: Acesso remoto
+Remote Controller:
+  description: "Controlos remotos infravermelhos e dom\xE9sticos inteligentes para\
+    \ TVs, unidades de CA e outros dispositivos"
+  name: Controlo remoto
+Schedule:
+  description: "Programa\xE7\xE3o para confer\xEAncia e evento"
+  name: Agenda
 Science & Education:
-  name: Ciência e educação
-  description: Apps de aprendizagem, estudo, referência e educacionais
+  description: "Apps de aprendizagem, estudo, refer\xEAncia e educacionais"
+  name: "Ci\xEAncia e educa\xE7\xE3o"
 Security:
-  name: Segurança
+  name: "Seguran\xE7a"
+Shopping List:
+  description: Apps de listas de compras, rastreadores de compras e de compras colaborativas
+  name: Lista de compras
+Social Network:
+  description: "M\xE9dia social, microblogging e plataformas de comunidades online"
+  name: Rede social
 Sports & Health:
-  name: Desporto e saúde
-  description: Acompanhamento de condicionamento físico, bem-estar, resultados desportivos e monitoramento de saúde
+  description: "Acompanhamento de condicionamento f\xEDsico, bem-estar, resultados\
+    \ desportivos e monitoramento de sa\xFAde"
+  name: "Desporto e sa\xFAde"
 System:
   name: Sistema
-Theming:
-  name: Temas
-  description: Personalize a aparência do seu dispositivo com temas, fontes e estilos de UI
-Writing:
-  name: Escrita
-  description: Apps de processadores de texto, diários, rascunhos e escrita de formato longo
-App Store & Updater:
-  name: Loja de apps e atualizador
-  description: Descubrir, instalar e atualizar apps de repositórios de software
-Bookmark:
-  name: Marcador
-  description: Grave, organize e gira ligações favoritas e listas de leitura
-Browser:
-  name: Navegador
-  description: Navegadores da Web para navegar na Internet e visualizar sites
-Calculator:
-  name: Calculador
-  description: Ferramentas de cálculo aritmético, científico e matemático
-Calendar & Agenda:
-  name: Calendário e agenda
-  description: Agende eventos, lembretes, compromissos e planejadores diários
-Cloud Storage & File Sync:
-  name: Armazenamento na nuvem e sincronização de ficheiros
-  description: Faça backup, sincronize e aceda ficheiros remotamente por meio de serviços em nuvem
-DNS & Hosts:
-  name: DNS & hosts
-  description: Configure resolvedores de DNS, bloqueio de anúncios, ficheiro de hosts e roteamento de domínio
-Draw:
-  name: Desenhar
-  description: Apps de desenho, pintura, ilustração e telas de arte digital
-Ebook Reader:
-  name: Leitor de e-book
-  description: Leia e-books, EPUB, PDF e livros e publicações digitais
-Email:
-  name: E-mail
-  description: Clientes de email para enviar, receber e gerir mensagens de email
-File Encryption & Vault:
-  name: Criptografia de ficheiros e cofre
-  description: Criptografe, bloqueie e oculte ficheiros e pastas particulares
-File Transfer:
-  name: Transferência de ficheiros
-  description: Partilhe e transfira ficheiros via FTP, LAN, Bluetooth ou ponto a ponto (p2p)
-Finance Manager:
-  name: Gestor de finanças
-  description: Acompanhe despesas, orçamentos, receitas e contas financeiras pessoais
-Gallery:
-  name: Galeria
-  description: Navegue, visualize e organize fotos, imagens e vídeos
-Icon Pack:
-  name: Pacote de ícones
-  description: Apps de conjuntos de ícones personalizados para ícones de estilo e tema
-Local Media Player:
-  name: Reprodutor de média local
-  description: Reproduza ficheiros de áudio e vídeo off-line armazenados no seu dispositivo
-Messaging:
-  name: Mensageiros
-  description: Apps de mensagens instantâneas, bate-papo e comunicação por SMS
-News:
-  name: Notícias
-  description: Últimas manchetes, artigos, feeds RSS e agregadores de notícias
-Note:
-  name: Nota
-  description: Apps de blocos de notas, memorandos e rápidas de anotações e organização
-Online Media Player:
-  name: Reprodutor de média on-line
-  description: Transmita músicas, vídeos e conteúdo em direto da Internet
-Pass Wallet:
-  name: Carteira de passe
-  description: Armazene cartões de embarque, bilhetes, cartões de fidelidade e cupons
-Password & 2FA:
-  name: Palavras-passe e dois fatores
-  description: Gestores de palavras-passe, autenticadores e ferramentas de segurança de dois fatores
-Podcast:
-  name: Podcast
-  description: Assine, transmita e descarregue episódios e programas de áudio de podcast
-Public Transport:
-  name: Mapa de transporte público e horários
-  description: Horários e planejadores de viagens de autocarro, comboio, metro e transporte público
-Recipe Manager:
-  name: Gestor de receitas
-  description: Armazene, organize e descubra receitas culinárias e ideias para refeições
-Shopping List:
-  name: Lista de compras
-  description: Apps de listas de compras, rastreadores de compras e de compras colaborativas
-Social Network:
-  name: Rede social
-  description: Média social, microblogging e plataformas de comunidades online
 Task:
+  description: Listas de tarefas, gestores de tarefas e ferramentas de produtividade
+    e GTD
   name: Tarefa
-  description: Listas de tarefas, gestores de tarefas e ferramentas de produtividade e GTD
 Text Editor:
-  name: Editor de textos
   description: Editores de texto simples, editores Markdown e ferramentas de escrita
-Translation & Dictionary:
-  name: Tradução e dicionário
-  description: Traduza idiomas, procure palavras e aceda referências de vocabulário
-Unit Convertor:
-  name: Conversor de unidades
-  description: Converta entre unidades de comprimento, peso, temperatura, moeda e muito mais
-Voice & Video Chat:
-  name: Chat de voz e vídeo
-  description: Apps de chamadas de áudio e vídeo, conferências e comunicação VoIP
-VPN & Proxy:
-  name: VPN e proxy
-  description: Criptografe o tráfego, contorne restrições (contorno) e faça a sua conexão anônima
-Wallet:
-  name: Carteira
-  description: Carteiras digitais para pagamentos, cartões e gestão de criptomoedas
-Weather:
-  name: Clima
-  description: Apps de previsões, radar, temperatura e condições atmosféricas
-Keyboard & IME:
-  name: Teclado e MDE (IME)
-  description: Apps de teclados personalizados, métodos de entrada, correção automática e digitação
-Launcher:
-  name: Lançador
-  description: Apps de substituições de ecrã inicial e ambiente de desktop
-Wallpaper:
-  name: Papel de parede
-  description: Apps de ecrã inicial e plano de fundo da ecrã de bloqueio e papel de parede em direto
-Workout:
-  name: Exercício físico
-  description: Apps de rotinas de exercícios, monitoramento de academia, corrida e treino físico
-Forum:
-  name: Fórum
-  description: Fóruns de discussão, tópicos da comunidade e plataformas de perguntas e respostas
-Habit Tracker:
-  name: Rastejador de hábitos
-  description: Crie rotinas, monitore metas diárias e monitore sequências pessoais
-Music Practice Tool:
-  name: Ferramenta de prática musical
-  description: Afinadores, metrônomos, ferramentas de acordes e auxílios para prática de instrumentos
-AI Chat:
-  name: Conversar com IA
-  description: Assistentes de IA, chatbots e interfaces de modelo de linguagem grande (LLM)
-App Manager:
-  name: Gestor de apps
-  description: Girar, organizar e controlo de apps instaladas, intenções e permissões
-Battery:
-  name: Pilha
-  description: Monitore e otimize a vida útil da pilha, o uso de energia e o carregamento
-Clock:
-  name: Relógio
-  description: Utilitários de alarme, cronômetro, cronômetro e relógio mundial
-Contact:
-  name: Contacto
-  description: Apps de catálogo de endereços, agenda telefônica e gestão de pessoas
-Diet:
-  name: Dieta
-  description: Nutrição, calorias, gestão de alimentos e rastreador
-Firewall:
-  name: Firewall
-  description: Bloqueie o tráfego de rede indesejado e controle o acesso do apps à Internet
-Flashlight:
-  name: Lanterna
-  description: Apps de lanterna e flash LED
-Health Manager:
-  name: Gestão de saúde
-  description: Gestão de peso, frequência cardíaca, tensão arterial, menstruação e outras métricas de saúde
-Inventory:
-  name: Inventário
-  description: Rastreie, catalogue e gira elementos físicos e estoque
-Location Tracker & Sharer:
-  name: Rastreador e compartilhador de localização
-  description: Partilhe e monitore a localização GPS em tempo real com outras pessoas
-Network Analyzer:
-  name: Analisador de rede
-  description: Diagnosticar Wi-Fi, verificar redes e monitorar o desempenho da conexão
-Radio:
-  name: Rádio
-  description: Transmita estações de rádio FM/AM em direto e transmissões de rádio pela Internet
-Religion:
-  name: Religião
-  description: Apps de tempos de oração, textos sagrados, devocionais e prática espiritual
-Remote Access:
-  name: Acesso remoto
-  description: Controlo desktops, servidores e dispositivos remotamente via RDP, VNC ou SSH
-Remote Controller:
-  name: Controlo remoto
-  description: Controlos remotos infravermelhos e domésticos inteligentes para TVs, unidades de CA e outros dispositivos
-Schedule:
-  name: Agenda
-  description: Programação para conferência e evento
+  name: Editor de textos
 Text to Speech:
-  name: Texto para fala
   description: Ferramentas TTS
+  name: Texto para fala
+Theming:
+  description: "Personalize a apar\xEAncia do seu dispositivo com temas, fontes e\
+    \ estilos de UI"
+  name: Temas
 Time Tracker:
+  description: "Acompanhe o uso do tempo em atividades e tempo de ecr\xE3"
   name: Rastreador de tempo
-  description: Acompanhe o uso do tempo em atividades e tempo de ecrã
+Translation & Dictionary:
+  description: "Traduza idiomas, procure palavras e aceda refer\xEAncias de vocabul\xE1\
+    rio"
+  name: "Tradu\xE7\xE3o e dicion\xE1rio"
+Unit Convertor:
+  description: Converta entre unidades de comprimento, peso, temperatura, moeda e
+    muito mais
+  name: Conversor de unidades
+VPN & Proxy:
+  description: "Criptografe o tr\xE1fego, contorne restri\xE7\xF5es (contorno) e fa\xE7\
+    a a sua conex\xE3o an\xF4nima"
+  name: VPN e proxy
+Voice & Video Chat:
+  description: "Apps de chamadas de \xE1udio e v\xEDdeo, confer\xEAncias e comunica\xE7\
+    \xE3o VoIP"
+  name: "Chat de voz e v\xEDdeo"
+Wallet:
+  description: "Carteiras digitais para pagamentos, cart\xF5es e gest\xE3o de criptomoedas"
+  name: Carteira
+Wallpaper:
+  description: "Apps de ecr\xE3 inicial e plano de fundo da ecr\xE3 de bloqueio e\
+    \ papel de parede em direto"
+  name: Papel de parede
+Weather:
+  description: "Apps de previs\xF5es, radar, temperatura e condi\xE7\xF5es atmosf\xE9\
+    ricas"
+  name: Clima
+Workout:
+  description: "Apps de rotinas de exerc\xEDcios, monitoramento de academia, corrida\
+    \ e treino f\xEDsico"
+  name: "Exerc\xEDcio f\xEDsico"
+Writing:
+  description: "Apps de processadores de texto, di\xE1rios, rascunhos e escrita de\
+    \ formato longo"
+  name: Escrita

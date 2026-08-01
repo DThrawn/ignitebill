@@ -1,319 +1,346 @@
+AI Chat:
+  description: Asistiloj de artefarita intelekto, retbabilejaj robotoj kaj fasadoj
+    por grandaj lingv-modeloj
+  name: Artefarita intelekto
+Action Game:
+  description: Rapidagaj, sportaj, kurkonkursaj kaj platformaj bitludoj
+  name: Rapidagaj ludoj
+Alarm Clock:
+  description: Agordi alarmon je difinita tempo
+  name: "Vekhorlo\u011Doj"
+App Manager:
+  description: "Administri, organizi kaj regi instalitajn aplika\u0135ojn, ekigilojn\
+    \ \xABIntent\xBB, permesojn"
+  name: "Administriloj de aplika\u0135oj"
+App Store & Updater:
+  description: "Malkovri, instali kaj \u011Disdatigi aplika\u0135ojn el deponejoj\
+    \ de aplika\u0135oj"
+  name: "Deponejoj kaj \u011Disdatigiloj de aplika\u0135oj"
+Battery:
+  description: "Kontroli kaj plejbonigi vivecon de baterio, konsumon de energio kaj\
+    \ \u015Dargadon"
+  name: Baterio
+Board Game:
+  description: "Tabulludoj, \u015Dakludo, goo, Krucoj-kaj-nuloj"
+  name: Tabulludoj
+Bookmark:
+  description: Konservi, organizi kaj administri ligilojn kaj leglistojn
+  name: Administriloj de legosignoj
+Browser:
+  description: Retfoliumiloj (retumiloj) por krozi la interreton
+  name: Retfoliumiloj
+Calculator:
+  description: Iloj por fari aritmetikajn, sciencajn kaj matematikajn kalkulojn
+  name: Kalkuliloj
+Calendar & Agenda:
+  description: "Plani okaza\u0135ojn, farenda\u0135ojn, renkontojn kaj \u0109iutagajn\
+    \ taskojn"
+  name: Kalendaroj kaj tempplanoj
+Camera:
+  description: "Aplika\u0135oj de fotilo, rigardiloj de IP-fotilo kaj aplika\u0135\
+    oj de kamerao"
+  name: Fotilo
+Card Game:
+  description: Kartludoj, paciencludoj (ermitludoj)
+  name: Kartludoj
+Cast:
+  description: Dissendado, UPnP, DLNA, FCast, AirPlay, Miracast
+  name: Dissendado
+Casual Game:
+  description: "Facilaj bitludoj por \u0109iu tago"
+  name: Okazaj ludoj
+Clock:
+  description: Vidigi nunan tempon
+  name: "Horlo\u011Doj"
+Cloud Storage & File Sync:
+  description: Sekurkopii, samtempigi kaj telealiri dosierojn en nubaj servoj
+  name: Nuba konservado kaj dosiera samtempigo
+Code & Forge:
+  description: Git, retgastigo de fontkodo, kunlabora programado
+  name: Kodo kaj programado
 Connectivity:
   name: Konekteco
+Contact:
+  description: Adresaroj kaj organiziloj de kontaktoj
+  name: Listoj de kontaktoj
+DNS & Hosts:
+  description: "Agordi DNS-servilojn, reklam-blokilojn, dosieron \xABhosts\xBB kaj\
+    \ enkursigon de nomregnoj"
+  name: DNS kaj retgastigo
 Development:
+  description: "Terrminal-imitiloj, programadaj \u0109irka\u016Da\u0135oj kaj iloj\
+    \ por programistoj"
   name: Programado
-  description: Terrminal-imitiloj, programadaj ĉirkaŭaĵoj kaj iloj por programistoj
+Dice:
+  description: Generiloj de hazardo
+  name: "\u0134etkuboj"
+Diet:
+  description: "Spuri kaj administri man\u011Da\u0135ojn, kaloriojn kaj nutradon"
+  name: Dieto
+Download:
+  description: "Administriloj de el\u015Dutoj kaj BitTorent-klientoj"
+  name: "El\u015Dutiloj"
+Draw:
+  description: "Iloj por desegni, pentri, krei ilustra\u0135ojn kaj por cifereca grafiko"
+  name: Desegnado
+Ebook Reader:
+  description: Legi elektronikajn librojn, bildstriojn kaj dokumentojn; PDF, EPUB
+  name: Legiloj de bitlibroj
+Educational Game:
+  description: Lerni per ludo, demandaroj
+  name: Edukaj ludoj
+Email:
+  description: "Retpo\u015Dtilojn: sendi, ricevi kaj administri retpo\u015Dton"
+  name: "Retpo\u015Dto"
+Emulator:
+  description: Imitiloj, kiuj ebligas ruli malnovajn ludojn kaj programojn
+  name: Lud-imitiloj
+File Encryption & Vault:
+  description: "\u0108ifri, bloki kaj ka\u015Di privatajn dosier(uj)ojn"
+  name: "Dosiera \u0109ifrado"
+File Manager:
+  description: Organizi kaj foliumi dosierojn
+  name: Dosier-administriloj
+File Transfer:
+  description: "Kunhavigi kaj transigi dosierojn per FTP, loka reto, Bludento a\u016D\
+    \ samtavolaj retoj (P2P)"
+  name: Dosiera kunhavigo
+Finance Manager:
+  description: "Spuri elspezojn, bu\u011Detojn, enspezojn kaj kontojn"
+  name: Financ-administriloj
+Firewall:
+  description: "Bloki nedeziratan retan trafikon kaj regi interretan aliron de aplika\u0135\
+    oj"
+  name: "Farjo\u015Dirmiloj"
+Flashlight:
+  description: "Utiligi LED-on a\u016D ekranon kiel po\u015Dlampon"
+  name: "Po\u015Dlampo"
+Forum:
+  description: "Forumoj, diskut-fadenoj kaj platformoj \u201Cdemandoj kaj respondoj\u201D"
+  name: Diskutejoj
+Gallery:
+  description: Foliumi, vidigi kaj organizi fotojn, bildojn kaj filmetojn
+  name: Bild-foliumiloj
+Game Helper:
+  description: Asistiloj por ludoj, poenttabuloj, temp-mezuriloj
+  name: Lud-helpiloj
 Graphics:
-  name: Grafiko
   description: Redakti kaj pritrakti fotojn, grafikaj iloj
+  name: Grafiko
+Habit Tracker:
+  description: Prilabori kutimojn, spuri tagajn celojn kaj personajn emojn
+  name: Spuriloj de kutimoj
+Health Manager:
+  description: Spuri pezon, pulson, sangpremon, menstruan ciklon kaj aliajn sanajn
+    statistikojn
+  name: Administriloj de sano
+Icon Pack:
+  description: "Propraj aroj da bildsimboloj por unuecigi aspekton de piktogramoj\
+    \ de aplika\u0135oj"
+  name: "Bildsimbol-paka\u0135oj"
 Internet:
   name: Interreto
+Inventory:
+  description: "Spuri, katalogi kaj administri posedatajn a\u0135ojn"
+  name: "Administriloj de poseda\u0135oj"
+Keyboard & IME:
+  description: "Propraj klavaroj, enig-metodoj, skrib-korektiloj kaj tajpaj aplika\u0135\
+    oj"
+  name: Klavaroj
+Launcher:
+  description: "Neoficialaj aplika\u0135oj de \u0109efekrano (aplika\u0135lan\u0109\
+    iloj) kaj fenestriloj"
+  name: "Aplika\u0135lan\u0109iloj"
+Local Media Player:
+  description: "Ludi sonajn kaj filmajn dosierojn trovi\u011Dantajn en via aparato"
+  name: "Ludiloj de lokaj a\u016Ddvida\u0135oj"
+Location Tracker & Sharer:
+  description: Kunhavigi kaj spuri geografian pozicion realtempe
+  name: Spuriloj (kaj kunhavigiloj) de pozicio
+Lyrics:
+  description: Montri kaj trovi tekstojn de kantoj
+  name: Kanttekstoj
+Market & Price:
+  description: Prezoj, valutoj, kurzoj
+  name: Merkato kaj prezoj
+Meditation:
+  description: Plenatenta meditado, ekzercado de spiro
+  name: Meditado
+Messaging:
+  description: "Tujmesa\u011Diloj, babilejaj kaj SMS-aj aplika\u0135oj"
+  name: Komunikiloj
 Multimedia:
   name: Sono kaj video
+Music Practice Tool:
+  description: Agordiloj, metronomoj, akordaj iloj kaj helpiloj por muzik-lernantoj
+  name: Muzik-ekzerciloj
 Navigation:
+  description: "Mapoj, GPS, navigiloj kaj aplika\u0135oj por plani kursoj"
   name: Navigado
-  description: Mapoj, GPS, navigiloj kaj aplikaĵoj por plani kursoj
+Network Analyzer:
+  description: Kontroli vifion, skani retojn kaj spuri rendimenton de konekto
+  name: Analiziloj de retkonektoj
+News:
+  description: "Nova\u0135oj, artikoloj, RSS-abonfluoj kaj nova\u0135-kolektiloj"
+  name: "Legiloj de nova\u0135oj"
+Note:
+  description: "Notiloj, memorigiloj, kaj aplika\u0135oj por rapide fari kaj organizi\
+    \ notojn"
+  name: Notlibroj
+Notification:
+  description: Iloj por administri, registri, alidirekti kaj plivastigi sciigojn
+  name: Sciigoj
+OCR:
+  description: Dokument-skaniloj, optika signorekono
+  name: Optika signorekono
+Online Media Player:
+  description: Ludi elsendfluan muzikon/filmojn el la interreto
+  name: "Ludiloj de foraj a\u016Ddvida\u0135oj"
+Party Game:
+  description: Plurpersonaj ludoj
+  name: Plurpersonaj ludoj
+Pass Wallet:
+  description: Teni ferdek-kartojn, biletojn, lojalec-kartojn, kaj kuponojn
+  name: Biletujoj (por lojalec-kartoj)
+Password & 2FA:
+  description: "Administriloj de pasvortoj, iloj por 2-pa\u015Da a\u016Dtentigo kaj\
+    \ OTP, TOTP, HOTP, U2F kaj FIDO"
+  name: "Pasvort-administriloj kaj dupa\u015Daj a\u016Dtentigiloj"
 Phone & SMS:
+  description: "Aplika\u0135oj por telefoni, administri telefonajn konektojn kaj tekstmesa\u011D\
+    i"
   name: Telefonado kaj SMS
-  description: Aplikaĵoj por telefoni, administri telefonajn konektojn kaj tekstmesaĝi
+Platformer Game:
+  description: Platformaj kaj flank-rulumaj bitludoj
+  name: Platformaj ludoj
+Podcast:
+  description: "Aboni, a\u016Dskulti kaj el\u015Duti interretajn elsendojn (podkastojn)"
+  name: Ludiloj de aboneblaj sondosieroj (podkastoj)
+Public Transport:
+  description: "A\u016Dtobusaj, tramaj kaj fervojaj horaroj, planiloj de voja\u011D\
+    o"
+  name: Publika transporto
+Push:
+  description: "Pu\u015D-sciigoj"
+  name: "Pu\u015D-te\u0125nologio"
+Puzzle Game:
+  description: Logikaj kaj memor-ekzercaj bitludoj, sudoko
+  name: Logikaj ludoj
+Radio:
+  description: "A\u016Dskulti radion: FM, AM kaj interretan"
+  name: Radio
 Reading:
+  description: "Artikoloj, ampleksaj tekstoj, ret-legiloj, kaj aplika\u0135oj \u201C\
+    legi poste\u201D (administriloj de legosignoj)"
   name: Legado
-  description: Artikoloj, ampleksaj tekstoj, ret-legiloj, kaj aplikaĵoj “legi poste” (administriloj de legosignoj)
+Recipe Manager:
+  description: "Teni, organizi kaj malkovri kuir-receptojn kaj ideojn pri man\u011D\
+    a\u0135oj"
+  name: Administriloj de kuir-receptoj
+Recorder:
+  description: Registri sonon, surekranan aktivecon kaj telefonajn interparoladojn
+  name: Registriloj
+Religion:
+  description: "Pre\u011D-horaroj, sanktaj tekstoj, pre\u011Doj kaj asistiloj de spirita\
+    \ disvolvi\u011Do"
+  name: Religio
+Remote Access:
+  description: "Teleregi komputilojn, servilojn kaj aparatojn per RDP, VNC a\u016D\
+    \ SSH"
+  name: Fora aliro
+Remote Controller:
+  description: "Teleregiloj transru\u011Daj, Bludentaj, ktp por televidiloj kaj domaj\
+    \ elektronika\u0135oj"
+  name: Teleregiloj
+Role-Playing Game:
+  description: "Rolaj (RPG) kaj labirint-esploradaj (\xABroguelike\xBB) bitludoj"
+  name: Rolaj ludoj
+Schedule:
+  description: "Horplanoj de konferencoj kaj okaza\u0135oj"
+  name: Horplanoj
 Science & Education:
+  description: "Aplika\u0135oj por lerni, parkerigi kaj studi"
   name: Scienco kaj edukado
-  description: Aplikaĵoj por lerni, parkerigi kaj studi
 Security:
   name: Sekureco
+Shooter Game:
+  description: Pafado al celoj
+  name: Pafaj ludoj
+Shopping List:
+  description: "Listoj de a\u0109etoj kaj kunlabora a\u0109etado"
+  name: "Listoj de a\u0109etoj"
+Social Network:
+  description: Sociaj komunikiloj, taglibretoj (mikroblogoj) kaj interretaj komunumaj
+    platformoj
+  name: Sociaj komunikiloj
+Sport Game:
+  description: Sportaj bitludoj
+  name: Sportaj ludoj
 Sports & Health:
-  name: Sporto kaj sano
   description: Spuri korpan/mensan sanon, korpan aktivecon kaj poentaron dum sportoj
+  name: Sporto kaj sano
+Stopwatch:
+  description: Mezuri temppason, rondirojn
+  name: "Temp-mezuriloj (klikhorlo\u011Doj)"
+Strategy Game:
+  description: Strategiaj kaj simuladaj bitludoj
+  name: Strategiaj ludoj
 System:
   name: Operaciumaj iloj
-Theming:
-  name: Haŭtoj (etosoj)
-  description: Personecigi vian aparaton per haŭtoj, tiparoj kaj stiloj de fasado
-Writing:
-  name: Skribado
-  description: Dokument-redaktiloj, aplikaĵoj por konduki taglibron, malnetojn aŭ skribi pli longajn tekstojn
-Email:
-  name: Retpoŝto
-  description: 'Retpoŝtilojn: sendi, ricevi kaj administri retpoŝton'
-VPN & Proxy:
-  name: VPN kaj retperiloj
-  description: Ĉifri datumtrafikon, preterpasi blokadojn kaj anonimigi vian retkonekton
-DNS & Hosts:
-  name: DNS kaj retgastigo
-  description: Agordi DNS-servilojn, reklam-blokilojn, dosieron «hosts» kaj enkursigon de nomregnoj
-Social Network:
-  name: Sociaj komunikiloj
-  description: Sociaj komunikiloj, taglibretoj (mikroblogoj) kaj interretaj komunumaj platformoj
-App Store & Updater:
-  name: Deponejoj kaj ĝisdatigiloj de aplikaĵoj
-  description: Malkovri, instali kaj ĝisdatigi aplikaĵojn el deponejoj de aplikaĵoj
-Browser:
-  name: Retfoliumiloj
-  description: Retfoliumiloj (retumiloj) por krozi la interreton
-File Encryption & Vault:
-  name: Dosiera ĉifrado
-  description: Ĉifri, bloki kaj kaŝi privatajn dosier(uj)ojn
-File Transfer:
-  name: Dosiera kunhavigo
-  description: Kunhavigi kaj transigi dosierojn per FTP, loka reto, Bludento aŭ samtavolaj retoj (P2P)
-Keyboard & IME:
-  name: Klavaroj
-  description: Propraj klavaroj, enig-metodoj, skrib-korektiloj kaj tajpaj aplikaĵoj
-Local Media Player:
-  name: Ludiloj de lokaj aŭdvidaĵoj
-  description: Ludi sonajn kaj filmajn dosierojn troviĝantajn en via aparato
-Messaging:
-  name: Komunikiloj
-  description: Tujmesaĝiloj, babilejaj kaj SMS-aj aplikaĵoj
-News:
-  name: Legiloj de novaĵoj
-  description: Novaĵoj, artikoloj, RSS-abonfluoj kaj novaĵ-kolektiloj
-Online Media Player:
-  name: Ludiloj de foraj aŭdvidaĵoj
-  description: Ludi elsendfluan muzikon/filmojn el la interreto
-Password & 2FA:
-  name: Pasvort-administriloj kaj dupaŝaj aŭtentigiloj
-  description: Administriloj de pasvortoj, iloj por 2-paŝa aŭtentigo kaj OTP, TOTP, HOTP, U2F kaj FIDO
-Podcast:
-  name: Ludiloj de aboneblaj sondosieroj (podkastoj)
-  description: Aboni, aŭskulti kaj elŝuti interretajn elsendojn (podkastojn)
-Weather:
-  name: Veterprognozo
-  description: Prognozoj, radaraj bildoj, temperaturo kaj veterkondiĉoj
-Calendar & Agenda:
-  name: Kalendaroj kaj tempplanoj
-  description: Plani okazaĵojn, farendaĵojn, renkontojn kaj ĉiutagajn taskojn
-Cloud Storage & File Sync:
-  name: Nuba konservado kaj dosiera samtempigo
-  description: Sekurkopii, samtempigi kaj telealiri dosierojn en nubaj servoj
-Voice & Video Chat:
-  name: Sonaj/videaj komunikiloj
-  description: Aplikaĵoj por (vid)telefonvokoj, telekunvenoj kaj VoIP
-Wallet:
-  name: Monujoj
-  description: Ciferecaj monujoj por pagi, kartoj kaj ĉifromonoj
-Calculator:
-  name: Kalkuliloj
-  description: Iloj por fari aritmetikajn, sciencajn kaj matematikajn kalkulojn
-Draw:
-  name: Desegnado
-  description: Iloj por desegni, pentri, krei ilustraĵojn kaj por cifereca grafiko
-Ebook Reader:
-  name: Legiloj de bitlibroj
-  description: Legi elektronikajn librojn, bildstriojn kaj dokumentojn; PDF, EPUB
-Finance Manager:
-  name: Financ-administriloj
-  description: Spuri elspezojn, buĝetojn, enspezojn kaj kontojn
-Gallery:
-  name: Bild-foliumiloj
-  description: Foliumi, vidigi kaj organizi fotojn, bildojn kaj filmetojn
-Icon Pack:
-  name: Bildsimbol-pakaĵoj
-  description: Propraj aroj da bildsimboloj por unuecigi aspekton de piktogramoj de aplikaĵoj
-Launcher:
-  name: Aplikaĵlanĉiloj
-  description: Neoficialaj aplikaĵoj de ĉefekrano (aplikaĵlanĉiloj) kaj fenestriloj
-Note:
-  name: Notlibroj
-  description: Notiloj, memorigiloj, kaj aplikaĵoj por rapide fari kaj organizi notojn
-Pass Wallet:
-  name: Biletujoj (por lojalec-kartoj)
-  description: Teni ferdek-kartojn, biletojn, lojalec-kartojn, kaj kuponojn
-Public Transport:
-  name: Publika transporto
-  description: Aŭtobusaj, tramaj kaj fervojaj horaroj, planiloj de vojaĝo
-Recipe Manager:
-  name: Administriloj de kuir-receptoj
-  description: Teni, organizi kaj malkovri kuir-receptojn kaj ideojn pri manĝaĵoj
 Task:
+  description: "Listoj de farenda\u0135oj kaj taskoj, metodo \u201Cigi aferojn finitaj\u201D"
   name: Planiloj
-  description: Listoj de farendaĵoj kaj taskoj, metodo “igi aferojn finitaj”
 Text Editor:
-  name: Tekst-redaktiloj
   description: Redaktiloj de plata teksto, Markdown kaj pli
-Translation & Dictionary:
-  name: Tradukiloj kaj vortaroj
-  description: Traduki inter lingvoj, trovi signifojn de vortoj
-Unit Convertor:
-  name: Konvertiloj de unuoj
-  description: Konverti inter unuoj de longo, maso, temperaturo, valuto kaj pli
-Wallpaper:
-  name: Ekranfonoj
-  description: Ekranfonoj por hejmekrano kaj ŝlosekrano kaj movbildaj ekranfonoj
-Workout:
-  name: Trejnado
-  description: Plani ekzercojn, spuri progreson en ekzercejo, kurado kaj trejnado
-Bookmark:
-  name: Administriloj de legosignoj
-  description: Konservi, organizi kaj administri ligilojn kaj leglistojn
-Shopping List:
-  name: Listoj de aĉetoj
-  description: Listoj de aĉetoj kaj kunlabora aĉetado
-Forum:
-  name: Diskutejoj
-  description: Forumoj, diskut-fadenoj kaj platformoj “demandoj kaj respondoj”
-Habit Tracker:
-  name: Spuriloj de kutimoj
-  description: Prilabori kutimojn, spuri tagajn celojn kaj personajn emojn
-Music Practice Tool:
-  name: Muzik-ekzerciloj
-  description: Agordiloj, metronomoj, akordaj iloj kaj helpiloj por muzik-lernantoj
-Location Tracker & Sharer:
-  name: Spuriloj (kaj kunhavigiloj) de pozicio
-  description: Kunhavigi kaj spuri geografian pozicion realtempe
-AI Chat:
-  name: Artefarita intelekto
-  description: Asistiloj de artefarita intelekto, retbabilejaj robotoj kaj fasadoj por grandaj lingv-modeloj
-App Manager:
-  name: Administriloj de aplikaĵoj
-  description: Administri, organizi kaj regi instalitajn aplikaĵojn, ekigilojn «Intent», permesojn
-Religion:
-  name: Religio
-  description: Preĝ-horaroj, sanktaj tekstoj, preĝoj kaj asistiloj de spirita disvolviĝo
-Clock:
-  name: Horloĝoj
-  description: Vidigi nunan tempon
-Firewall:
-  name: Farjoŝirmiloj
-  description: Bloki nedeziratan retan trafikon kaj regi interretan aliron de aplikaĵoj
-Network Analyzer:
-  name: Analiziloj de retkonektoj
-  description: Kontroli vifion, skani retojn kaj spuri rendimenton de konekto
-Inventory:
-  name: Administriloj de posedaĵoj
-  description: Spuri, katalogi kaj administri posedatajn aĵojn
-Contact:
-  name: Listoj de kontaktoj
-  description: Adresaroj kaj organiziloj de kontaktoj
-Battery:
-  name: Baterio
-  description: Kontroli kaj plejbonigi vivecon de baterio, konsumon de energio kaj ŝargadon
-Flashlight:
-  name: Poŝlampo
-  description: Utiligi LED-on aŭ ekranon kiel poŝlampon
-Radio:
-  name: Radio
-  description: 'Aŭskulti radion: FM, AM kaj interretan'
-Remote Controller:
-  name: Teleregiloj
-  description: Teleregiloj transruĝaj, Bludentaj, ktp por televidiloj kaj domaj elektronikaĵoj
-Remote Access:
-  name: Fora aliro
-  description: Teleregi komputilojn, servilojn kaj aparatojn per RDP, VNC aŭ SSH
-Diet:
-  name: Dieto
-  description: Spuri kaj administri manĝaĵojn, kaloriojn kaj nutradon
-Health Manager:
-  name: Administriloj de sano
-  description: Spuri pezon, pulson, sangpremon, menstruan ciklon kaj aliajn sanajn statistikojn
-Schedule:
-  name: Horplanoj
-  description: Horplanoj de konferencoj kaj okazaĵoj
+  name: Tekst-redaktiloj
 Text to Speech:
+  description: "Konverti tekston al vo\u0109o"
   name: Parolsinteziloj
-  description: Konverti tekston al voĉo
+Theming:
+  description: "Personecigi vian aparaton per ha\u016Dtoj, tiparoj kaj stiloj de fasado"
+  name: "Ha\u016Dtoj (etosoj)"
 Time Tracker:
+  description: "Spuri tempon pasigitan je specifaj agoj kaj tempon \u0109e ekrano"
   name: Temp-mezuriloj
-  description: Spuri tempon pasigitan je specifaj agoj kaj tempon ĉe ekrano
-Action Game:
-  name: Rapidagaj ludoj
-  description: Rapidagaj, sportaj, kurkonkursaj kaj platformaj bitludoj
-Board Game:
-  name: Tabulludoj
-  description: Tabulludoj, ŝakludo, goo, Krucoj-kaj-nuloj
-Card Game:
-  name: Kartludoj
-  description: Kartludoj, paciencludoj (ermitludoj)
-Casual Game:
-  name: Okazaj ludoj
-  description: Facilaj bitludoj por ĉiu tago
 Timer:
+  description: "Mezuri intertempojn, te\u0125niko Pomodoro, mezuri tempon malanta\u016D\
+    en"
   name: Temp-mezuriloj (retrokalkulaj)
-  description: Mezuri intertempojn, teĥniko Pomodoro, mezuri tempon malantaŭen
-Dice:
-  name: Ĵetkuboj
-  description: Generiloj de hazardo
-Download:
-  name: Elŝutiloj
-  description: Administriloj de elŝutoj kaj BitTorent-klientoj
-Educational Game:
-  name: Edukaj ludoj
-  description: Lerni per ludo, demandaroj
-Emulator:
-  name: Lud-imitiloj
-  description: Imitiloj, kiuj ebligas ruli malnovajn ludojn kaj programojn
-File Manager:
-  name: Dosier-administriloj
-  description: Organizi kaj foliumi dosierojn
-Game Helper:
-  name: Lud-helpiloj
-  description: Asistiloj por ludoj, poenttabuloj, temp-mezuriloj
-Meditation:
-  name: Meditado
-  description: Plenatenta meditado, ekzercado de spiro
-Party Game:
-  name: Plurpersonaj ludoj
-  description: Plurpersonaj ludoj
-Platformer Game:
-  name: Platformaj ludoj
-  description: Platformaj kaj flank-rulumaj bitludoj
-Puzzle Game:
-  name: Logikaj ludoj
-  description: Logikaj kaj memor-ekzercaj bitludoj, sudoko
-Role-Playing Game:
-  name: Rolaj ludoj
-  description: Rolaj (RPG) kaj labirint-esploradaj («roguelike») bitludoj
-Shooter Game:
-  name: Pafaj ludoj
-  description: Pafado al celoj
-Strategy Game:
-  name: Strategiaj ludoj
-  description: Strategiaj kaj simuladaj bitludoj
-Sport Game:
-  name: Sportaj ludoj
-  description: Sportaj bitludoj
+Translation & Dictionary:
+  description: Traduki inter lingvoj, trovi signifojn de vortoj
+  name: Tradukiloj kaj vortaroj
+Unit Convertor:
+  description: Konverti inter unuoj de longo, maso, temperaturo, valuto kaj pli
+  name: Konvertiloj de unuoj
+VPN & Proxy:
+  description: "\u0108ifri datumtrafikon, preterpasi blokadojn kaj anonimigi vian\
+    \ retkonekton"
+  name: VPN kaj retperiloj
 Visual Novel:
+  description: "Vidaj romanoj, bish\u014Djo, interaga fikcio"
   name: Vidaj romanoj
-  description: Vidaj romanoj, bishōjo, interaga fikcio
-Word Game:
-  name: Vortaj ludoj
-  description: Krucvortenigmoj, diveni vortojn
-Camera:
-  name: Fotilo
-  description: Aplikaĵoj de fotilo, rigardiloj de IP-fotilo kaj aplikaĵoj de kamerao
-Recorder:
-  name: Registriloj
-  description: Registri sonon, surekranan aktivecon kaj telefonajn interparoladojn
-Lyrics:
-  name: Kanttekstoj
-  description: Montri kaj trovi tekstojn de kantoj
-Market & Price:
-  name: Merkato kaj prezoj
-  description: Prezoj, valutoj, kurzoj
-Alarm Clock:
-  name: Vekhorloĝoj
-  description: Agordi alarmon je difinita tempo
-Cast:
-  name: Dissendado
-  description: Dissendado, UPnP, DLNA, FCast, AirPlay, Miracast
-Notification:
-  name: Sciigoj
-  description: Iloj por administri, registri, alidirekti kaj plivastigi sciigojn
-Stopwatch:
-  name: Temp-mezuriloj (klikhorloĝoj)
-  description: Mezuri temppason, rondirojn
-Code & Forge:
-  name: Kodo kaj programado
-  description: Git, retgastigo de fontkodo, kunlabora programado
-OCR:
-  name: Optika signorekono
-  description: Dokument-skaniloj, optika signorekono
-Push:
-  name: Puŝ-teĥnologio
-  description: Puŝ-sciigoj
+Voice & Video Chat:
+  description: "Aplika\u0135oj por (vid)telefonvokoj, telekunvenoj kaj VoIP"
+  name: Sonaj/videaj komunikiloj
 Volume:
+  description: "Iloj por administri la\u016Dtecon"
   name: Sonforteco
-  description: Iloj por administri laŭtecon
+Wallet:
+  description: "Ciferecaj monujoj por pagi, kartoj kaj \u0109ifromonoj"
+  name: Monujoj
+Wallpaper:
+  description: "Ekranfonoj por hejmekrano kaj \u015Dlosekrano kaj movbildaj ekranfonoj"
+  name: Ekranfonoj
+Weather:
+  description: "Prognozoj, radaraj bildoj, temperaturo kaj veterkondi\u0109oj"
+  name: Veterprognozo
+Word Game:
+  description: Krucvortenigmoj, diveni vortojn
+  name: Vortaj ludoj
+Workout:
+  description: Plani ekzercojn, spuri progreson en ekzercejo, kurado kaj trejnado
+  name: Trejnado
+Writing:
+  description: "Dokument-redaktiloj, aplika\u0135oj por konduki taglibron, malnetojn\
+    \ a\u016D skribi pli longajn tekstojn"
+  name: Skribado

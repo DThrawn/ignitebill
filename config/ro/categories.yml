@@ -1,319 +1,373 @@
+AI Chat:
+  description: "Asisten\u021Bi AI, chatbo\u021Bi \u0219i interfe\u021Be bazate pe\
+    \ modele lingvistice de mari dimensiuni (LLM)"
+  name: Chat AI
+Action Game:
+  description: "Jocuri de ac\u021Biune, sport, curse \u0219i platform\u0103"
+  name: "Joc de ac\u021Biune"
+Alarm Clock:
+  description: "Seteaz\u0103 alarma la or\u0103"
+  name: "Alarm\u0103 ceas"
+App Manager:
+  description: "Gestionarea, organizarea \u0219i controlul aplica\u021Biilor instalate,\
+    \ inten\u021Biile, permisiunile"
+  name: "Manager aplica\u021Bii"
+App Store & Updater:
+  description: "Descoperirea, instalarea \u0219i actualizarea aplica\u021Biile din\
+    \ depozitele software"
+  name: "Magazin aplica\u021Bii & Actualiz\u0103ri"
+Battery:
+  description: "Monitorizarea \u0219i optimizarea duratei de via\u021B\u0103 a bateriei,\
+    \ a utiliz\u0103rii \u0219i a \xEEnc\u0103rc\u0103rii"
+  name: Baterie
+Board Game:
+  description: "Joc de societate, \u0219ah, Go, X \u0219i 0"
+  name: Joc de societate
+Bookmark:
+  description: "Salvarea, organizarea \u0219i gestionarea link-uri preferate \u0219\
+    i liste de lectur\u0103"
+  name: Semn de carte
+Browser:
+  description: "Browsere web pentru navigare pe internet \u0219i vizualizare site-uri\
+    \ web"
+  name: Navigator web
+Calculator:
+  description: "Instrumente de calcul aritmetice, \u0219tiin\u021Bifice \u0219i matematice"
+  name: Calculator
+Calendar & Agenda:
+  description: "Programare evenimente, memento-uri, \xEEnt\xE2lniri \u0219i planificare\
+    \ de zi cu zi"
+  name: "Calendar \u0219i agenda"
+Camera:
+  description: "Camera, vizualizatorul camerei IP \u0219i \xEEnregistrarel video"
+  name: Camera foto
+Card Game:
+  description: "Joc de c\u0103r\u021Bi, solitaire"
+  name: "Joc de c\u0103r\u021Bi"
+Cast:
+  description: Transmisie, oglindire, UPnP, DLNA, FCast, AirPlay, Miracast
+  name: Difuzare
+Casual Game:
+  description: Joc simplu de ocazie
+  name: Joc ocazional
+Clock:
+  description: "Arat\u0103 ora curent\u0103"
+  name: Ceas
+Cloud Storage & File Sync:
+  description: "Copii de siguran\u021B\u0103, sincronizare \u0219i accesare de la\
+    \ distan\u021B\u0103 prin intermediul serviciilor online"
+  name: "Stocare \xEEn cloud & Sincronizare fi\u0219iere"
+Code & Forge:
+  description: "Git, g\u0103zduire de cod surs\u0103"
+  name: "Depozit cod surs\u0103"
 Connectivity:
   name: Conectivitate
+Contact:
+  description: "Agend\u0103 persoane, list\u0103 de contacte \u0219i gestionarea contactelor"
+  name: Contact
+DNS & Hosts:
+  description: "Configurare serverele DNS, blocarea reclamelor, fi\u0219ierul hosts\
+    \ \u0219i rutarea domeniilor"
+  name: DNS & Gazde
 Development:
+  description: "Cod, programare, IDE, terminal \u0219i instrumente pentru dezvoltatori"
   name: Dezvoltare programe
-  description: Cod, programare, IDE, terminal și instrumente pentru dezvoltatori
+Dice:
+  description: Selector aleator
+  name: Zar
+Diet:
+  description: "Nutri\u021Bie, calorii, managementul \u0219i urm\u0103rirea alimentelor"
+  name: "Diet\u0103"
+Download:
+  description: "Desc\u0103rc\u0103tor, manager de desc\u0103rcare \u0219i client torrent"
+  name: "Desc\u0103rcare"
+Draw:
+  description: "Schi\u021Be, pictur\u0103, ilustra\u021Bie, canava \u0219i art\u0103\
+    \ digital\u0103"
+  name: Desen
+Ebook Reader:
+  description: "Cititor c\u0103r\u021Bi electronice, EPUB, PDF \u0219i c\u0103r\u021B\
+    i \u0219i publica\u021Bii digitale"
+  name: "Carte electronic\u0103"
+Educational Game:
+  description: "\xCEnva\u021B\u0103 \xEEn joc, test, chestionar, concurs"
+  name: "Joc educa\u021Bional"
+Email:
+  description: "Clien\u021Bii de trimis \u0219i primit e-mail \u0219i gestionarea\
+    \ mesajelor prin e-mail"
+  name: E-mail
+Emulator:
+  description: "Emulator de joc \u0219i program"
+  name: Emulator
+File Encryption & Vault:
+  description: "Criptare, blocare \u0219i ascundere fi\u0219iere \u0219i dosarele\
+    \ private"
+  name: "Criptare fi\u0219iere \u0219i seif"
+File Manager:
+  description: "Manager de fi\u0219iere \u0219i explorator"
+  name: "Manager fi\u0219ier"
+File Transfer:
+  description: "Partajare \u0219i transfer fi\u0219iere prin FTP, LAN, Bluetooth sau\
+    \ peer-to-peer (p2p)"
+  name: "Transfer fi\u0219iere"
+Finance Manager:
+  description: "Urm\u0103rirea cheltuieli, bugete, venituri \u0219i conturi financiare\
+    \ personale"
+  name: Manager financiar
+Firewall:
+  description: "Blocare traficul nedorit de re\u021Bea \u0219i control acces la Internet"
+  name: Firewall
+Flashlight:
+  description: "Lantern\u0103 \u0219i bli\u021B cu LED"
+  name: "Lantern\u0103"
+Forum:
+  description: "Forumuri de discu\u021Bii, grupuri comunitare \u0219i platforme de\
+    \ \xEEntreb\u0103ri \u0219i r\u0103spunsuri"
+  name: Forum
+Gallery:
+  description: "Navigare, vizualizare \u0219i organizare fotografii, imagini \u0219\
+    i videoclipuri"
+  name: Galerie
+Game Helper:
+  description: Ajutor de joc, asistent, tabela de scor, cronometrul
+  name: Instrument de ajutor pentru joc
 Graphics:
-  name: Grafică
-  description: Editare imagini, manipulare fotografii și instrumentele de design vizual
+  description: "Editare imagini, manipulare fotografii \u0219i instrumentele de design\
+    \ vizual"
+  name: "Grafic\u0103"
+Habit Tracker:
+  description: "Construire rutine, urm\u0103rire obiective zilnice \u0219i monitorizare\
+    \ seriile personale"
+  name: Jurnal de obiceiuri
+Health Manager:
+  description: "Management greutate, ritmul cardiac, tensiunea arterial\u0103, menstrua\u021B\
+    ia \u0219i alte m\u0103sur\u0103tori de s\u0103n\u0103tate"
+  name: "Manager de s\u0103n\u0103tate"
+Icon Pack:
+  description: "Seturi de pictograme personalizate \u0219i tematice"
+  name: "Pachet iconi\u021Be"
 Internet:
   name: Internet
+Inventory:
+  description: "Urm\u0103rire, catalogare \u0219i gestionare elementele fizice \u0219\
+    i stocuri"
+  name: Inventar
+Keyboard & IME:
+  description: "Tastaturi personalizate, metode de introducere, autocorectare \u0219\
+    i tastare"
+  name: "Tastatur\u0103 & IME"
+Launcher:
+  description: "Personalizare ecran de start, lansator \u0219i a mediului de lucru"
+  name: Lansator
+Local Media Player:
+  description: "Redare fi\u0219ierele audio \u0219i video stocate pe dispozitiv"
+  name: Vizualizator media local
+Location Tracker & Sharer:
+  description: "Partajare \u0219i monitorizare loca\u021Bie GPS \xEEn timp real cu\
+    \ al\u021Bii"
+  name: "Localizare \u0219i partajare loca\u021Bie"
+Lyrics:
+  description: "Vizualizare \u0219i c\u0103utare versuri"
+  name: Versuri
+Market & Price:
+  description: "Curs de schimb, pia\u021B\u0103 \u0219i stoc"
+  name: "Comer\u021B \u0219i pre\u021B"
+Meditation:
+  description: "Medita\u021Bie, mindfulness, practic\u0103 de respira\u021Bie"
+  name: "Medita\u021Bie"
+Messaging:
+  description: "Mesagerie instantanee, discu\u021Bii, SMS \u0219i comunicare"
+  name: Mesagerie
 Multimedia:
   name: Multimedia
+Music Practice Tool:
+  description: "Tunerele, metronom, uneltele de coard\u0103 \u0219i ajutoarele pentru\
+    \ practicarea instrumentelor"
+  name: "Instrumentul de practic\u0103 muzical\u0103"
 Navigation:
-  name: Navigație
-  description: Hărți, GPS, direcții pas cu pas și planificare rute
+  description: "H\u0103r\u021Bi, GPS, direc\u021Bii pas cu pas \u0219i planificare\
+    \ rute"
+  name: "Naviga\u021Bie"
+Network Analyzer:
+  description: "Diagnosticare Wi-Fi, scanare re\u021Bele \u0219i monitorizarea performan\u0163\
+    ei conexiunii"
+  name: "Analiz\u0103 re\u021Bea"
+News:
+  description: "Cele mai recente titluri, articole, fluxuri RSS \u0219i agregatoare\
+    \ de \u0219tiri"
+  name: "\u0218tiri"
+Note:
+  description: "Agende, memoriu \u0219i luarea rapid\u0103 de noti\u021Be \u0219i\
+    \ organizare"
+  name: "Noti\u021Be"
+Notification:
+  description: "Manager de notificare, jurnalizare, redirec\u021Bionare, \xEEmbun\u0103\
+    t\u0103\u021Bire"
+  name: Notificare
+OCR:
+  description: "Scaner de documente, recunoa\u0219tere optic\u0103 a caracterelor"
+  name: OCR
+Online Media Player:
+  description: "Redare muzic\u0103, videoclipuri \u0219i con\u021Binut \xEEn direct\
+    \ de pe Internet"
+  name: Vizualizator media pe Internet
+Party Game:
+  description: "Mai mul\u021Bi juc\u0103tori, joc de petrecere"
+  name: Joc de petrecere
+Pass Wallet:
+  description: "Stocare permise de \xEEmbarcare, bilete, carduri de loialitate \u0219\
+    i cupoane"
+  name: Portofel tichete
+Password & 2FA:
+  description: "Manager de parole, autentificator, OTP, TOTP, HOTP, U2F, FIDO \u0219\
+    i instrumente de securitate cu doi factori"
+  name: Parole & 2FA
 Phone & SMS:
+  description: "Aplica\u021Bii de apelare, gestionare a apelurilor \u0219i mesagerie\
+    \ text"
   name: Telefon & SMS
-  description: Aplicații de apelare, gestionare a apelurilor și mesagerie text
+Platformer Game:
+  description: "Platformer, joc de derulare lateral\u0103"
+  name: Joc platformer
+Podcast:
+  description: "Abonare, ascultare \xEEn flux \u0219i desc\u0103rcare episoade \u0219\
+    i emisiuni audio de podcast"
+  name: Podcast
+Public Transport:
+  description: "Autobuz, tren, metrou, ore de tranzit \u0219i planificatoare de c\u0103\
+    l\u0103torie"
+  name: Transport public & Orar
+Push:
+  description: Mesaje push
+  name: Push
+Puzzle Game:
+  description: Puzzle, sudoku, joc de memorie
+  name: Jocuri de puzzle
+Radio:
+  description: "Ascultare \xEEn direct posturi de radio FM/AM \u0219i transmisiuni\
+    \ radio pe internet"
+  name: Radio
 Reading:
+  description: "Articole, con\u021Binut cu form\u0103 lung\u0103, cite\u0219te mai\
+    \ t\xE2rziu \u0219i cititor web"
   name: Citit
-  description: Articole, conținut cu formă lungă, citește mai târziu și cititor web
+Recipe Manager:
+  description: "Salvare, organizare \u0219i descoperire re\u021Bete de g\u0103tit\
+    \ \u0219i idei de meniu"
+  name: "Manager re\u021Bete"
+Recorder:
+  description: "Microfon, ecran, \xEEnregistrare apel"
+  name: "\xCEncegistrare audio"
+Religion:
+  description: "Ore de rug\u0103ciune, texte sfinte, devo\u021Bionale \u0219i practic\u0103\
+    \ spiritual\u0103"
+  name: Religie
+Remote Access:
+  description: "Control desktop-uri, servere \u0219i dispozitive de la distan\u021B\
+    \u0103 prin RDP, VNC sau SSH"
+  name: "Acces la distan\u021B\u0103"
+Remote Controller:
+  description: "Infra-ro\u0219u \u0219i telecomenzi de cas\u0103 inteligente pentru\
+    \ televizoare, unit\u0103\u021Bi AC \u0219i alte dispozitive"
+  name: "Control la distan\u021B\u0103"
+Role-Playing Game:
+  description: Joc de aventura, explorare, rogue-like
+  name: Joc de rol
+Schedule:
+  description: "Programul conferin\u021Belor \u0219i evenimentelor"
+  name: Planificare
 Science & Education:
-  name: Știință & educație
-  description: Învățare, studiu, consultare și educație
+  description: "\xCEnv\u0103\u021Bare, studiu, consultare \u0219i educa\u021Bie"
+  name: "\u0218tiin\u021B\u0103 & educa\u021Bie"
 Security:
   name: Securitate
+Shooter Game:
+  description: "Antrenamente la \u021Bint\u0103, tir cu arme"
+  name: "Joc cu \xEEmpu\u0219c\u0103turi"
+Shopping List:
+  description: "Liste de cump\u0103r\u0103turi, urm\u0103rirea produselor de cump\u0103\
+    rat \u0219i cump\u0103r\u0103turi colaborative"
+  name: "List\u0103 cump\u0103r\u0103turi"
+Social Network:
+  description: "Social media, microblogging \u0219i platformele comunit\u0103\u021B\
+    ilor online"
+  name: "Re\u021Bea social\u0103"
+Sport Game:
+  description: Jocuri de sport, atletice, reflex
+  name: Joc sportiv
 Sports & Health:
-  name: Sport & sănătate
-  description: Monitorizarea activității fizice, starea de bine, rezultate sportive și monitorizarea stării de sănătate
+  description: "Monitorizarea activit\u0103\u021Bii fizice, starea de bine, rezultate\
+    \ sportive \u0219i monitorizarea st\u0103rii de s\u0103n\u0103tate"
+  name: "Sport & s\u0103n\u0103tate"
+Stopwatch:
+  description: "M\u0103surarea progresului, timp scurs, cronometru de tur"
+  name: Cronometru
+Strategy Game:
+  description: Strategie, simulare
+  name: Joc de strategie
 System:
   name: Sistem
-Theming:
-  name: Teme
-  description: Personalizare aspect dispozitiv cu teme, fonturi și stiluri de interfață
-Writing:
-  name: Scris
-  description: Procesare text, jurnalizare, redactare schițe și aplicații de scriere în formă lungă
-Email:
-  name: E-mail
-  description: Clienții de trimis și primit e-mail și gestionarea mesajelor prin e-mail
-DNS & Hosts:
-  name: DNS & Gazde
-  description: Configurare serverele DNS, blocarea reclamelor, fișierul hosts și rutarea domeniilor
-VPN & Proxy:
-  name: VPN și proxy
-  description: Criptare trafic, ocolire restricțiile (eludare) și anonimizare conexiune
-File Encryption & Vault:
-  name: Criptare fișiere și seif
-  description: Criptare, blocare și ascundere fișiere și dosarele private
-File Transfer:
-  name: Transfer fișiere
-  description: Partajare și transfer fișiere prin FTP, LAN, Bluetooth sau peer-to-peer (p2p)
-Messaging:
-  name: Mesagerie
-  description: Mesagerie instantanee, discuții, SMS și comunicare
-Password & 2FA:
-  name: Parole & 2FA
-  description: Manager de parole, autentificator, OTP, TOTP, HOTP, U2F, FIDO și instrumente de securitate cu doi factori
-Social Network:
-  name: Rețea socială
-  description: Social media, microblogging și platformele comunităților online
-App Store & Updater:
-  name: Magazin aplicații & Actualizări
-  description: Descoperirea, instalarea și actualizarea aplicațiile din depozitele software
-Browser:
-  name: Navigator web
-  description: Browsere web pentru navigare pe internet și vizualizare site-uri web
-Local Media Player:
-  name: Vizualizator media local
-  description: Redare fișierele audio și video stocate pe dispozitiv
-News:
-  name: Știri
-  description: Cele mai recente titluri, articole, fluxuri RSS și agregatoare de știri
-Online Media Player:
-  name: Vizualizator media pe Internet
-  description: Redare muzică, videoclipuri și conținut în direct de pe Internet
-Podcast:
-  name: Podcast
-  description: Abonare, ascultare în flux și descărcare episoade și emisiuni audio de podcast
-Weather:
-  name: Meteo
-  description: Previziuni, radar, temperaturi și condiții atmosferice
-Keyboard & IME:
-  name: Tastatură & IME
-  description: Tastaturi personalizate, metode de introducere, autocorectare și tastare
-Calendar & Agenda:
-  name: Calendar și agenda
-  description: Programare evenimente, memento-uri, întâlniri și planificare de zi cu zi
-Cloud Storage & File Sync:
-  name: Stocare în cloud & Sincronizare fișiere
-  description: Copii de siguranță, sincronizare și accesare de la distanță prin intermediul serviciilor online
-Voice & Video Chat:
-  name: Apeluri audio & Video
-  description: Apelare audio și video, conferințe și comunicare VoIP
-Wallet:
-  name: Portofel
-  description: Portofele digitale pentru plăți, carduri și gestionarea criptomonedelor
-Bookmark:
-  name: Semn de carte
-  description: Salvarea, organizarea și gestionarea link-uri preferate și liste de lectură
-Calculator:
-  name: Calculator
-  description: Instrumente de calcul aritmetice, științifice și matematice
-Draw:
-  name: Desen
-  description: Schițe, pictură, ilustrație, canava și artă digitală
-Ebook Reader:
-  name: Carte electronică
-  description: Cititor cărți electronice, EPUB, PDF și cărți și publicații digitale
-Finance Manager:
-  name: Manager financiar
-  description: Urmărirea cheltuieli, bugete, venituri și conturi financiare personale
-Gallery:
-  name: Galerie
-  description: Navigare, vizualizare și organizare fotografii, imagini și videoclipuri
-Icon Pack:
-  name: Pachet iconițe
-  description: Seturi de pictograme personalizate și tematice
-Launcher:
-  name: Lansator
-  description: Personalizare ecran de start, lansator și a mediului de lucru
-Note:
-  name: Notițe
-  description: Agende, memoriu și luarea rapidă de notițe și organizare
-Pass Wallet:
-  name: Portofel tichete
-  description: Stocare permise de îmbarcare, bilete, carduri de loialitate și cupoane
-Recipe Manager:
-  name: Manager rețete
-  description: Salvare, organizare și descoperire rețete de gătit și idei de meniu
-Text Editor:
-  name: Editor text
-  description: Editor text neformatat, Markdown și instrumente de scriere
-Translation & Dictionary:
-  name: Traducere & dicționar
-  description: Traducerea limbilor, căutare cuvinte și accesare vocabular referințe
-Unit Convertor:
-  name: Convertor unități
-  description: Conversie între unități de lungime, greutate, temperatură, valută și multe altele
-Wallpaper:
-  name: Fundal
-  description: Fundalul ecranului de start, al ecranului de blocare și fundaluri animate
-Workout:
-  name: Antrenament
-  description: Rutine de exerciții, monitorizarea activității la sală, alergare și antrenament de fitness
-Public Transport:
-  name: Transport public & Orar
-  description: Autobuz, tren, metrou, ore de tranzit și planificatoare de călătorie
-Shopping List:
-  name: Listă cumpărături
-  description: Liste de cumpărături, urmărirea produselor de cumpărat și cumpărături colaborative
 Task:
+  description: "Liste de sarcini, gestionarea activit\u0103\u021Bilor, instrumente\
+    \ de productivitate \u0219i GTD"
   name: Activitate
-  description: Liste de sarcini, gestionarea activităților, instrumente de productivitate și GTD
-Forum:
-  name: Forum
-  description: Forumuri de discuții, grupuri comunitare și platforme de întrebări și răspunsuri
-Habit Tracker:
-  name: Jurnal de obiceiuri
-  description: Construire rutine, urmărire obiective zilnice și monitorizare seriile personale
-Music Practice Tool:
-  name: Instrumentul de practică muzicală
-  description: Tunerele, metronom, uneltele de coardă și ajutoarele pentru practicarea instrumentelor
-Location Tracker & Sharer:
-  name: Localizare și partajare locație
-  description: Partajare și monitorizare locație GPS în timp real cu alții
-AI Chat:
-  name: Chat AI
-  description: Asistenți AI, chatboți și interfețe bazate pe modele lingvistice de mari dimensiuni (LLM)
-App Manager:
-  name: Manager aplicații
-  description: Gestionarea, organizarea și controlul aplicațiilor instalate, intențiile, permisiunile
-Religion:
-  name: Religie
-  description: Ore de rugăciune, texte sfinte, devoționale și practică spirituală
-Clock:
-  name: Ceas
-  description: Arată ora curentă
-Contact:
-  name: Contact
-  description: Agendă persoane, listă de contacte și gestionarea contactelor
-Firewall:
-  name: Firewall
-  description: Blocare traficul nedorit de rețea și control acces la Internet
-Inventory:
-  name: Inventar
-  description: Urmărire, catalogare și gestionare elementele fizice și stocuri
-Network Analyzer:
-  name: Analiză rețea
-  description: Diagnosticare Wi-Fi, scanare rețele și monitorizarea performanţei conexiunii
-Battery:
-  name: Baterie
-  description: Monitorizarea și optimizarea duratei de viață a bateriei, a utilizării și a încărcării
-Flashlight:
-  name: Lanternă
-  description: Lanternă și bliț cu LED
-Radio:
-  name: Radio
-  description: Ascultare în direct posturi de radio FM/AM și transmisiuni radio pe internet
-Remote Controller:
-  name: Control la distanță
-  description: Infra-roșu și telecomenzi de casă inteligente pentru televizoare, unități AC și alte dispozitive
-Remote Access:
-  name: Acces la distanță
-  description: Control desktop-uri, servere și dispozitive de la distanță prin RDP, VNC sau SSH
-Diet:
-  name: Dietă
-  description: Nutriție, calorii, managementul și urmărirea alimentelor
-Health Manager:
-  name: Manager de sănătate
-  description: Management greutate, ritmul cardiac, tensiunea arterială, menstruația și alte măsurători de sănătate
-Schedule:
-  name: Planificare
-  description: Programul conferințelor și evenimentelor
+Text Editor:
+  description: "Editor text neformatat, Markdown \u0219i instrumente de scriere"
+  name: Editor text
 Text to Speech:
-  name: Conversie text în vorbire
   description: Instrumente TTS
+  name: "Conversie text \xEEn vorbire"
+Theming:
+  description: "Personalizare aspect dispozitiv cu teme, fonturi \u0219i stiluri de\
+    \ interfa\u021B\u0103"
+  name: Teme
 Time Tracker:
-  name: Urmărirea timpului
-  description: Urmăriți utilizarea timpului pe activități și timpul petrecut în fața ecranului
-Action Game:
-  name: Joc de acțiune
-  description: Jocuri de acțiune, sport, curse și platformă
-Board Game:
-  name: Joc de societate
-  description: Joc de societate, șah, Go, X și 0
-Card Game:
-  name: Joc de cărți
-  description: Joc de cărți, solitaire
-Casual Game:
-  name: Joc ocazional
-  description: Joc simplu de ocazie
-Dice:
-  name: Zar
-  description: Selector aleator
-Educational Game:
-  name: Joc educațional
-  description: Învață în joc, test, chestionar, concurs
-Emulator:
-  name: Emulator
-  description: Emulator de joc și program
-Game Helper:
-  name: Instrument de ajutor pentru joc
-  description: Ajutor de joc, asistent, tabela de scor, cronometrul
-Party Game:
-  name: Joc de petrecere
-  description: Mai mulți jucători, joc de petrecere
-Platformer Game:
-  name: Joc platformer
-  description: Platformer, joc de derulare laterală
-Puzzle Game:
-  name: Jocuri de puzzle
-  description: Puzzle, sudoku, joc de memorie
-Role-Playing Game:
-  name: Joc de rol
-  description: Joc de aventura, explorare, rogue-like
-Shooter Game:
-  name: Joc cu împușcături
-  description: Antrenamente la țintă, tir cu arme
-Strategy Game:
-  name: Joc de strategie
-  description: Strategie, simulare
-Sport Game:
-  name: Joc sportiv
-  description: Jocuri de sport, atletice, reflex
-Visual Novel:
-  name: Romanul vizual
-  description: Roman vizual, joc de poveste
-Word Game:
-  name: Joc de cuvinte
-  description: Joc de puzzle cu cuvinte, cuvinte încrucișate, ghicire a cuvintelor
-Meditation:
-  name: Meditație
-  description: Meditație, mindfulness, practică de respirație
+  description: "Urm\u0103ri\u021Bi utilizarea timpului pe activit\u0103\u021Bi \u0219\
+    i timpul petrecut \xEEn fa\u021Ba ecranului"
+  name: "Urm\u0103rirea timpului"
 Timer:
+  description: "Temporizare interval, pontaj, num\u0103r\u0103toarea invers\u0103"
   name: Temporizator
-  description: Temporizare interval, pontaj, numărătoarea inversă
-Download:
-  name: Descărcare
-  description: Descărcător, manager de descărcare și client torrent
-File Manager:
-  name: Manager fișier
-  description: Manager de fișiere și explorator
-Camera:
-  name: Camera foto
-  description: Camera, vizualizatorul camerei IP și înregistrarel video
-Lyrics:
-  name: Versuri
-  description: Vizualizare și căutare versuri
-Market & Price:
-  name: Comerț și preț
-  description: Curs de schimb, piață și stoc
-Recorder:
-  name: Încegistrare audio
-  description: Microfon, ecran, înregistrare apel
-Alarm Clock:
-  name: Alarmă ceas
-  description: Setează alarma la oră
-Cast:
-  name: Difuzare
-  description: Transmisie, oglindire, UPnP, DLNA, FCast, AirPlay, Miracast
-Notification:
-  name: Notificare
-  description: Manager de notificare, jurnalizare, redirecționare, îmbunătățire
-Stopwatch:
-  name: Cronometru
-  description: Măsurarea progresului, timp scurs, cronometru de tur
-Code & Forge:
-  name: Depozit cod sursă
-  description: Git, găzduire de cod sursă
-OCR:
-  name: OCR
-  description: Scaner de documente, recunoaștere optică a caracterelor
-Push:
-  name: Push
-  description: Mesaje push
+Translation & Dictionary:
+  description: "Traducerea limbilor, c\u0103utare cuvinte \u0219i accesare vocabular\
+    \ referin\u021Be"
+  name: "Traducere & dic\u021Bionar"
+Unit Convertor:
+  description: "Conversie \xEEntre unit\u0103\u021Bi de lungime, greutate, temperatur\u0103\
+    , valut\u0103 \u0219i multe altele"
+  name: "Convertor unit\u0103\u021Bi"
+VPN & Proxy:
+  description: "Criptare trafic, ocolire restric\u021Biile (eludare) \u0219i anonimizare\
+    \ conexiune"
+  name: "VPN \u0219i proxy"
+Visual Novel:
+  description: Roman vizual, joc de poveste
+  name: Romanul vizual
+Voice & Video Chat:
+  description: "Apelare audio \u0219i video, conferin\u021Be \u0219i comunicare VoIP"
+  name: Apeluri audio & Video
 Volume:
+  description: "Configureaz\u0103 set\u0103ri volum"
   name: Volum audio
-  description: Configurează setări volum
+Wallet:
+  description: "Portofele digitale pentru pl\u0103\u021Bi, carduri \u0219i gestionarea\
+    \ criptomonedelor"
+  name: Portofel
+Wallpaper:
+  description: "Fundalul ecranului de start, al ecranului de blocare \u0219i fundaluri\
+    \ animate"
+  name: Fundal
+Weather:
+  description: "Previziuni, radar, temperaturi \u0219i condi\u021Bii atmosferice"
+  name: Meteo
+Word Game:
+  description: "Joc de puzzle cu cuvinte, cuvinte \xEEncruci\u0219ate, ghicire a cuvintelor"
+  name: Joc de cuvinte
+Workout:
+  description: "Rutine de exerci\u021Bii, monitorizarea activit\u0103\u021Bii la sal\u0103\
+    , alergare \u0219i antrenament de fitness"
+  name: Antrenament
+Writing:
+  description: "Procesare text, jurnalizare, redactare schi\u021Be \u0219i aplica\u021B\
+    ii de scriere \xEEn form\u0103 lung\u0103"
+  name: Scris

@@ -7,12 +7,12 @@ KnownVuln:
 NoSourceSince:
   name: Dyw\'r cod gwreiddiol ddim bellach ar gael a dim diweddariadau\'n bosib.
 NonFreeAdd:
-  description: Mae'r ap hwn yn hyrwyddo ychwanegiadau sy'n codi tâl
+  description: "Mae'r ap hwn yn hyrwyddo ychwanegiadau sy'n codi t\xE2l"
 NonFreeAssets:
   description: Mae'r ap hwn yn cynnwys asedau sydd am ddim
 NonFreeDep:
-  description: Mae'r ap hwn yn dibynnu ar apiau eraill sy'n codi tâl
+  description: "Mae'r ap hwn yn dibynnu ar apiau eraill sy'n codi t\xE2l"
 NonFreeNet:
-  description: Mae'r ap hwn yn hyrwyddo gwasanaethau rhwydwaith sy'n codi tâl
+  description: "Mae'r ap hwn yn hyrwyddo gwasanaethau rhwydwaith sy'n codi t\xE2l"
 Tracking:
   description: Mae'r ap hwn yn tracio ac adrodd dy weithgaredd

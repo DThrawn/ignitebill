@@ -1,142 +1,147 @@
-Connectivity:
-  name: Ryšiai ir tinklas
-Development:
-  name: Plėtojimas
-Graphics:
-  name: Grafika
-Internet:
-  name: Internetas
-Multimedia:
-  name: Multimedija
-Navigation:
-  name: Navigacija
-Phone & SMS:
-  name: Telefonas ir SMS
-Reading:
-  name: Skaitymas
-Science & Education:
-  name: Mokslas ir švietimas
-Security:
-  name: Saugumas
-Sports & Health:
-  name: Sportas ir sveikata
-System:
-  name: Sistema
-Theming:
-  name: Apipavidalinimas
-Writing:
-  name: Rašymas
+AI Chat:
+  description: "DI asistentai, pokalbi\u0173 botai ir didel\u0117s kalbos modeli\u0173\
+    \ (LLM) s\u0105sajos"
+  name: DI pokalbis
+Action Game:
+  description: "Veiksmo, sporto, lenktyni\u0173 ir platform\u0173 \u017Eaidimai"
+  name: "Veiksmo \u017Eaidimas"
+Alarm Clock:
+  description: "Nustatykite \u017Eadintuv\u0105"
+  name: "\u017Dadintuvas"
+App Manager:
+  name: "Program\u0173 tvarkykl\u0117"
 App Store & Updater:
-  name: Programėlių parduotuvė ir atnaujintuvas
-  description: Atraskite, įdiekite ir atnaujinkite programėles iš prog. įrangos saugyklų
+  description: "Atraskite, \u012Fdiekite ir atnaujinkite program\u0117les i\u0161\
+    \ prog. \u012Frangos saugykl\u0173"
+  name: "Program\u0117li\u0173 parduotuv\u0117 ir atnaujintuvas"
+Battery:
+  description: "Steb\u0117kite ir optimizuokite baterijos veikimo trukm\u0119, energijos\
+    \ naudojim\u0105 ir \u012Fkrovim\u0105"
+  name: Baterija
+Board Game:
+  description: "Stalo \u017Eaidimas, \u0161achmatai, go, kry\u017Eiukai-nuliukai"
+  name: "Stalo \u017Eaidimas"
 Bookmark:
-  name: Žymė
-  description: Išsaugokite ir tvarkykite mėgstamiausias nuorodas ir skaitymo sąrašus
+  description: "I\u0161saugokite ir tvarkykite m\u0117gstamiausias nuorodas ir skaitymo\
+    \ s\u0105ra\u0161us"
+  name: "\u017Dym\u0117"
 Browser:
-  name: Naršyklė
-  description: Žiniatinklio naršyklės paieškai internete ir svetainių peržiūrai
+  description: "\u017Diniatinklio nar\u0161ykl\u0117s paie\u0161kai internete ir svetaini\u0173\
+    \ per\u017Ei\u016Brai"
+  name: "Nar\u0161ykl\u0117"
 Calculator:
-  name: Skaičiuotuvas
-  description: Aritmetiniai, moksliniai ir matematiniai skaičiavimo įrankiai
+  description: "Aritmetiniai, moksliniai ir matematiniai skai\u010Diavimo \u012Frankiai"
+  name: "Skai\u010Diuotuvas"
 Calendar & Agenda:
-  name: Kalendorius ir darbotvarkė
-  description: Planuokite įvykius, priminimus, konsultacijas ir dienos planus
+  description: "Planuokite \u012Fvykius, priminimus, konsultacijas ir dienos planus"
+  name: "Kalendorius ir darbotvark\u0117"
+Camera:
+  description: "Fotoaparatas, IP vaizdo kameros ir vaizdo \u012Fra\u0161ymas"
+  name: Fotoaparatas
+Card Game:
+  description: "Kort\u0173 \u017Eaidimas, pasjansas"
+  name: "Kort\u0173 \u017Eaidimas"
 Cloud Storage & File Sync:
-  name: Saugykla debesyje ir failų sinchronizavimas
+  name: "Saugykla debesyje ir fail\u0173 sinchronizavimas"
+Connectivity:
+  name: "Ry\u0161iai ir tinklas"
 DNS & Hosts:
   name: DNS ir serveriai
+Development:
+  name: "Pl\u0117tojimas"
+Draw:
+  name: "Pie\u0161imas"
 Ebook Reader:
-  name: El. knygų skaityklė
+  name: "El. knyg\u0173 skaitykl\u0117"
 Email:
-  name: Elektroninis paštas
+  name: "Elektroninis pa\u0161tas"
 File Encryption & Vault:
-  name: Failų šifravimas ir saugykla
+  name: "Fail\u0173 \u0161ifravimas ir saugykla"
 File Transfer:
-  name: Failų perkėlimas
+  name: "Fail\u0173 perk\u0117limas"
 Finance Manager:
-  name: Finansų valdyklė
+  name: "Finans\u0173 valdykl\u0117"
+Forum:
+  name: Forumas
 Gallery:
   name: Galerija
+Graphics:
+  name: Grafika
+Habit Tracker:
+  name: "\u012Epro\u010Di\u0173 sekiklis"
 Icon Pack:
-  name: Piktogramų pakas
-Draw:
-  name: Piešimas
+  name: "Piktogram\u0173 pakas"
+Internet:
+  name: Internetas
 Keyboard & IME:
-  name: Klaviatūra ir įvesties metodai (IME)
+  name: "Klaviat\u016Bra ir \u012Fvesties metodai (IME)"
 Launcher:
   name: Paleidimo programa
 Local Media Player:
-  name: Vietinės medijos leistuvė
+  name: "Vietin\u0117s medijos leistuv\u0117"
+Location Tracker & Sharer:
+  name: "Vietov\u0117s sekimo ir bendrinimo \u012Frankis"
 Messaging:
-  name: Susirašinėjimas
+  name: "Susira\u0161in\u0117jimas"
+Multimedia:
+  name: Multimedija
+Music Practice Tool:
+  name: "Muzikin\u0117s praktikos \u012Frankis"
+Navigation:
+  name: Navigacija
 News:
   name: Naujienos
 Note:
   name: Pastaba
 Online Media Player:
-  name: Internetinė medijos leistuvė
+  name: "Internetin\u0117 medijos leistuv\u0117"
 Pass Wallet:
-  name: Bilietų piniginė
+  name: "Biliet\u0173 pinigin\u0117"
 Password & 2FA:
-  name: Slaptažodžiai ir 2 fakt. autentif.
+  name: "Slapta\u017Eod\u017Eiai ir 2 fakt. autentif."
+Phone & SMS:
+  name: Telefonas ir SMS
 Podcast:
-  name: Tinklalaidė
+  name: "Tinklalaid\u0117"
 Public Transport:
-  name: Vieš. transp. žemėlapis ir tvarkaraštis
+  name: "Vie\u0161. transp. \u017Eem\u0117lapis ir tvarkara\u0161tis"
+Reading:
+  name: Skaitymas
 Recipe Manager:
-  name: Receptų tvarkyklė
+  name: "Recept\u0173 tvarkykl\u0117"
+Science & Education:
+  name: "Mokslas ir \u0161vietimas"
+Security:
+  name: Saugumas
 Shopping List:
-  name: Pirkinių sąrašas
+  name: "Pirkini\u0173 s\u0105ra\u0161as"
 Social Network:
   name: Socialinis tinklas
+Sports & Health:
+  name: Sportas ir sveikata
+System:
+  name: Sistema
 Task:
-  name: Užduotis
+  name: "U\u017Eduotis"
 Text Editor:
-  name: Tekstų redaktorius
+  name: "Tekst\u0173 redaktorius"
+Theming:
+  name: Apipavidalinimas
 Translation & Dictionary:
-  name: Vertimas ir žodynas
+  name: "Vertimas ir \u017Eodynas"
 Unit Convertor:
-  name: Vienetų keitiklis
+  name: "Vienet\u0173 keitiklis"
+VPN & Proxy:
+  name: "VPN ir \u012Fgaliotieji serveriai"
 Voice & Video Chat:
   name: Balso ir garso pokalbiai
-VPN & Proxy:
-  name: VPN ir įgaliotieji serveriai
 Wallet:
-  name: Piniginė
+  name: "Pinigin\u0117"
 Wallpaper:
-  name: Užsklanda
+  name: "U\u017Esklanda"
 Weather:
   name: Orai
 Workout:
-  name: Treniruotė
-Forum:
-  name: Forumas
-Habit Tracker:
-  name: Įpročių sekiklis
-Music Practice Tool:
-  name: Muzikinės praktikos įrankis
-Location Tracker & Sharer:
-  name: Vietovės sekimo ir bendrinimo įrankis
-Action Game:
-  name: Veiksmo žaidimas
-  description: Veiksmo, sporto, lenktynių ir platformų žaidimai
-AI Chat:
-  name: DI pokalbis
-  description: DI asistentai, pokalbių botai ir didelės kalbos modelių (LLM) sąsajos
-Alarm Clock:
-  name: Žadintuvas
-  description: Nustatykite žadintuvą
-App Manager:
-  name: Programų tvarkyklė
-Battery:
-  name: Baterija
-  description: Stebėkite ir optimizuokite baterijos veikimo trukmę, energijos naudojimą ir įkrovimą
-Board Game:
-  name: Stalo žaidimas
-  description: Stalo žaidimas, šachmatai, go, kryžiukai-nuliukai
-Camera:
-  name: Fotoaparatas
-  description: Fotoaparatas, IP vaizdo kameros ir vaizdo įrašymas
-Card Game:
-  name: Kortų žaidimas
-  description: Kortų žaidimas, pasjansas
+  name: "Treniruot\u0117"
+Writing:
+  name: "Ra\u0161ymas"

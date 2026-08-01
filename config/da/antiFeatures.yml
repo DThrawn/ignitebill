@@ -5,26 +5,27 @@ DisabledAlgorithm:
   description: Denne app har en svag sikkerhedssignatur
   name: Signeret med en usikker algoritme
 KnownVuln:
-  description: Denne app indeholder en kendt sårbarhed
-  name: Kendt sårbarhed
+  description: "Denne app indeholder en kendt s\xE5rbarhed"
+  name: "Kendt s\xE5rbarhed"
 NoSourceSince:
+  description: "Denne kilde er ikke l\xE6ngere tilg\xE6ngelig, ingen opdateringer\
+    \ mulig"
   name: Ingen kilde siden
-  description: Denne kilde er ikke længere tilgængelig, ingen opdateringer mulig
 NonFreeAdd:
-  description: Denne app fremmer ikke-frie tilføjelser
-  name: Ikke frie tilføjelser
+  description: "Denne app fremmer ikke-frie tilf\xF8jelser"
+  name: "Ikke frie tilf\xF8jelser"
 NonFreeAssets:
   description: Denne app indeholder ikke-frit indhold
   name: Ikke frie genstande
 NonFreeDep:
-  description: Denne app er afhængig af andre ikke-frie apps
-  name: Ikke frie afhængigheder
+  description: "Denne app er afh\xE6ngig af andre ikke-frie apps"
+  name: "Ikke frie afh\xE6ngigheder"
 NonFreeNet:
-  description: Appen fremmer ikke-frie netværkstjenester
-  name: Ikke-frie netværkstjenester
+  description: "Appen fremmer ikke-frie netv\xE6rkstjenester"
+  name: "Ikke-frie netv\xE6rkstjenester"
+TetheredNet:
+  description: "Denne app afh\xE6nger helt af en bestemt instans af en netv\xE6rkstjeneste"
+  name: "Bundne Netv\xE6rkstjenester"
 Tracking:
   description: Denne app sporer og indberetter din aktivitet
   name: Sporing
-TetheredNet:
-  description: Denne app afhænger helt af en bestemt instans af en netværkstjeneste
-  name: Bundne Netværkstjenester

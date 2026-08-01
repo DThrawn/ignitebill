@@ -1,30 +1,33 @@
 Ads:
-  description: Esta aplicação contém publicidade
-  name: Anúncios
+  description: "Esta aplica\xE7\xE3o cont\xE9m publicidade"
+  name: "An\xFAncios"
 DisabledAlgorithm:
-  description: Esta aplicação tem uma assinatura de segurança fraca
+  description: "Esta aplica\xE7\xE3o tem uma assinatura de seguran\xE7a fraca"
   name: Assinado usando um algoritmo inseguro
 KnownVuln:
-  description: Esta aplicação contém uma falha de segurança conhecida
+  description: "Esta aplica\xE7\xE3o cont\xE9m uma falha de seguran\xE7a conhecida"
   name: Vulnerabilidade conhecida
 NoSourceSince:
+  description: "O c\xF3digo-fonte acabou de estar dispon\xEDvel, atualiza\xE7\xF5\
+    es n\xE3o s\xE3o poss\xEDveis"
   name: Sem fonte desde
-  description: O código-fonte acabou de estar disponível, atualizações não são possíveis
 NonFreeAdd:
-  description: Esta aplicação promove complementos não-livres
-  name: Complementos não-livres
+  description: "Esta aplica\xE7\xE3o promove complementos n\xE3o-livres"
+  name: "Complementos n\xE3o-livres"
 NonFreeAssets:
-  description: Esta aplicação contém conteúdo não-livre
-  name: Conteúdos não livres
+  description: "Esta aplica\xE7\xE3o cont\xE9m conte\xFAdo n\xE3o-livre"
+  name: "Conte\xFAdos n\xE3o livres"
 NonFreeDep:
-  description: Esta aplicação depende de outras aplicações não-livres
-  name: Dependências não-livres
+  description: "Esta aplica\xE7\xE3o depende de outras aplica\xE7\xF5es n\xE3o-livres"
+  name: "Depend\xEAncias n\xE3o-livres"
 NonFreeNet:
-  description: Esta aplicação promove ou depende inteiramente de um serviço de rede não-livre
-  name: Serviços de rede não-livres
-Tracking:
-  description: Esta aplicação monitoriza e reporta a sua atividade
-  name: Rastreamento
+  description: "Esta aplica\xE7\xE3o promove ou depende inteiramente de um servi\xE7\
+    o de rede n\xE3o-livre"
+  name: "Servi\xE7os de rede n\xE3o-livres"
 TetheredNet:
-  description: Esta aplicação depende inteiramente de uma determinada instância de um serviço de rede
-  name: Serviços de Rede Tethered
+  description: "Esta aplica\xE7\xE3o depende inteiramente de uma determinada inst\xE2\
+    ncia de um servi\xE7o de rede"
+  name: "Servi\xE7os de Rede Tethered"
+Tracking:
+  description: "Esta aplica\xE7\xE3o monitoriza e reporta a sua atividade"
+  name: Rastreamento

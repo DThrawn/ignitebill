@@ -1,30 +1,33 @@
 Ads:
-  name: Fógraí
-  description: Tá fógraíocht san aip seo
+  description: "T\xE1 f\xF3gra\xEDocht san aip seo"
+  name: "F\xF3gra\xED"
 DisabledAlgorithm:
-  name: Arna shíniú Ag Úsáid Algartam Neamhshábháilte
-  description: Tá síniú slándála lag ag an aip seo
+  description: "T\xE1 s\xEDni\xFA sl\xE1nd\xE1la lag ag an aip seo"
+  name: "Arna sh\xEDni\xFA Ag \xDAs\xE1id Algartam Neamhsh\xE1bh\xE1ilte"
 KnownVuln:
-  description: Tá leochaileacht slándála aitheanta san aip seo
+  description: "T\xE1 leochaileacht sl\xE1nd\xE1la aitheanta san aip seo"
   name: Leochaileacht Aitheanta
 NoSourceSince:
-  name: Gan Foinse Ó shin
-  description: Níl an cód foinse ar fáil a thuilleadh, níl aon nuashonruithe indéanta
+  description: "N\xEDl an c\xF3d foinse ar f\xE1il a thuilleadh, n\xEDl aon nuashonruithe\
+    \ ind\xE9anta"
+  name: "Gan Foinse \xD3 shin"
+NonFreeAdd:
+  description: "Cuireann an aip seo breise\xE1in nach bhfuil saor in aisce chun cinn"
+  name: "Breise\xE1in Neamh-Saor in Aisce"
+NonFreeAssets:
+  description: "T\xE1 s\xF3cmhainn\xED neamh-saor san aip seo"
+  name: "S\xF3cmhainn\xED Neamh-Saor in Aisce"
 NonFreeDep:
   description: Braitheann an aip seo ar aipeanna eile nach bhfuil saor in aisce
-  name: Spleáchais Neamh-Saor in Aisce
+  name: "Sple\xE1chais Neamh-Saor in Aisce"
 NonFreeNet:
-  description: Cuireann an aip seo chun cinn nó braitheann sé go hiomlán ar sheirbhís líonra nach bhfuil saor in aisce
-  name: Seirbhísí Líonra Neamh-Saor in Aisce
-NonFreeAssets:
-  description: Tá sócmhainní neamh-saor san aip seo
-  name: Sócmhainní Neamh-Saor in Aisce
-NonFreeAdd:
-  description: Cuireann an aip seo breiseáin nach bhfuil saor in aisce chun cinn
-  name: Breiseáin Neamh-Saor in Aisce
-Tracking:
-  description: Déanann an aip seo do ghníomhaíocht a rianú agus a thuairisciú
-  name: Rianú
+  description: "Cuireann an aip seo chun cinn n\xF3 braitheann s\xE9 go hioml\xE1\
+    n ar sheirbh\xEDs l\xEDonra nach bhfuil saor in aisce"
+  name: "Seirbh\xEDs\xED L\xEDonra Neamh-Saor in Aisce"
 TetheredNet:
-  description: Braitheann an aip seo go hiomlán ar shampla áirithe de sheirbhís líonra
-  name: Seirbhísí Líonra Tethered
+  description: "Braitheann an aip seo go hioml\xE1n ar shampla \xE1irithe de sheirbh\xED\
+    s l\xEDonra"
+  name: "Seirbh\xEDs\xED L\xEDonra Tethered"
+Tracking:
+  description: "D\xE9anann an aip seo do ghn\xEDomha\xEDocht a rian\xFA agus a thuairisci\xFA"
+  name: "Rian\xFA"

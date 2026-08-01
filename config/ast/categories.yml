@@ -1,5 +1,5 @@
 Connectivity:
-  name: Conectividá
+  name: "Conectivid\xE1"
 Development:
   name: Desendolcu
 Graphics:
@@ -9,17 +9,17 @@ Internet:
 Multimedia:
   name: Multimedia
 Navigation:
-  name: Navegación
+  name: "Navegaci\xF3n"
 Phone & SMS:
-  name: Telefonía y SMS
+  name: "Telefon\xEDa y SMS"
 Reading:
   name: Llectura
 Science & Education:
-  name: Ciencia y educación
+  name: "Ciencia y educaci\xF3n"
 Security:
   name: Seguranza
 Sports & Health:
-  name: Deporte y salú
+  name: "Deporte y sal\xFA"
 System:
   name: Sistema
 Theming:
