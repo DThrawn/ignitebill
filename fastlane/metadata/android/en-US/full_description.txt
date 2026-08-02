@@ -1,0 +1,12 @@
+IgniteBill is an open-source time and fee tracking application designed for freelancers,
+consultants, and independent professionals. Your data stays entirely on your device:
+no account, no ads, no telemetry, and no forced cloud.
+
+Key Features:
+* Accurate time tracking with background support.
+* Flexible pricing: hourly, vacation, or flat rate.
+* One-click application of custom taxes and fixed fees.
+* Free data exports (CSV, JSON, Text).
+* Professional PDF reports and advanced themes via PRO license.
+* Home screen widget for quick session control.
+* 100% Free and Open Source core features.
