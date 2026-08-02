@@ -2,7 +2,7 @@ Categories:
   - Time Tracker
   - Finance Manager
 License: MIT
-AuthorName: Dthrawn
+AuthorName: DThrawn
 WebSite: https://github.com/DThrawn/ignitebill
 SourceCode: https://github.com/DThrawn/ignitebill
 IssueTracker: https://github.com/DThrawn/ignitebill/issues
@@ -10,11 +10,6 @@ IssueTracker: https://github.com/DThrawn/ignitebill/issues
 RepoType: git
 Repo: https://github.com/DThrawn/ignitebill.git
 Binaries: https://github.com/DThrawn/ignitebill/releases/download/v%v/app-foss-%a-release.apk
-
-VercodeOperation:
-  - '%c * 10 + 1'
-  - '%c * 10 + 2'
-  - '%c * 10 + 3'
 
 Builds:
   - versionName: 1.2.2
@@ -178,5 +173,9 @@ AllowedAPKSigningKeys: aa598653de0f759deb0319c0e9564486231bbd1a7f1b04e75f00b6b74
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
 UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+VercodeOperation:
+  - 10 * %c + 1
+  - 10 * %c + 2
+  - 10 * %c + 3
 CurrentVersion: 1.2.3
 CurrentVersionCode: 183
