@@ -24,6 +24,7 @@ Builds:
     rm:
       - ios
     prebuild:
+      - sed -i '/signingConfig.*release/d' android/app/build.gradle.kts
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
@@ -44,6 +45,7 @@ Builds:
     rm:
       - ios
     prebuild:
+      - sed -i '/signingConfig.*release/d' android/app/build.gradle.kts
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
@@ -64,6 +66,7 @@ Builds:
     rm:
       - ios
     prebuild:
+      - sed -i '/signingConfig.*release/d' android/app/build.gradle.kts
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
@@ -84,6 +87,7 @@ Builds:
     rm:
       - ios
     prebuild:
+      - sed -i '/signingConfig.*release/d' android/app/build.gradle.kts
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
@@ -104,6 +108,7 @@ Builds:
     rm:
       - ios
     prebuild:
+      - sed -i '/signingConfig.*release/d' android/app/build.gradle.kts
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
@@ -124,6 +129,7 @@ Builds:
     rm:
       - ios
     prebuild:
+      - sed -i '/signingConfig.*release/d' android/app/build.gradle.kts
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
