@@ -27,6 +27,8 @@ Builds:
       - sed -i '/signingConfig.*release/d' android/app/build.gradle.kts
       - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/g' android/app/build.gradle.kts
       - sed -i 's/jvmTarget = "17"/jvmTarget = "21"/g' android/app/build.gradle.kts
+      - sed -i 's/jvmToolchain(17)/jvmToolchain(21)/g' android/app/build.gradle.kts
+      - sed -i 's/JvmTarget.JVM_17/JvmTarget.JVM_21/g' android/app/build.gradle.kts
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
@@ -50,6 +52,8 @@ Builds:
       - sed -i '/signingConfig.*release/d' android/app/build.gradle.kts
       - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/g' android/app/build.gradle.kts
       - sed -i 's/jvmTarget = "17"/jvmTarget = "21"/g' android/app/build.gradle.kts
+      - sed -i 's/jvmToolchain(17)/jvmToolchain(21)/g' android/app/build.gradle.kts
+      - sed -i 's/JvmTarget.JVM_17/JvmTarget.JVM_21/g' android/app/build.gradle.kts
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
@@ -73,6 +77,8 @@ Builds:
       - sed -i '/signingConfig.*release/d' android/app/build.gradle.kts
       - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/g' android/app/build.gradle.kts
       - sed -i 's/jvmTarget = "17"/jvmTarget = "21"/g' android/app/build.gradle.kts
+      - sed -i 's/jvmToolchain(17)/jvmToolchain(21)/g' android/app/build.gradle.kts
+      - sed -i 's/JvmTarget.JVM_17/JvmTarget.JVM_21/g' android/app/build.gradle.kts
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
@@ -96,6 +102,8 @@ Builds:
       - sed -i '/signingConfig.*release/d' android/app/build.gradle.kts
       - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/g' android/app/build.gradle.kts
       - sed -i 's/jvmTarget = "17"/jvmTarget = "21"/g' android/app/build.gradle.kts
+      - sed -i 's/jvmToolchain(17)/jvmToolchain(21)/g' android/app/build.gradle.kts
+      - sed -i 's/JvmTarget.JVM_17/JvmTarget.JVM_21/g' android/app/build.gradle.kts
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
@@ -119,6 +127,8 @@ Builds:
       - sed -i '/signingConfig.*release/d' android/app/build.gradle.kts
       - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/g' android/app/build.gradle.kts
       - sed -i 's/jvmTarget = "17"/jvmTarget = "21"/g' android/app/build.gradle.kts
+      - sed -i 's/jvmToolchain(17)/jvmToolchain(21)/g' android/app/build.gradle.kts
+      - sed -i 's/JvmTarget.JVM_17/JvmTarget.JVM_21/g' android/app/build.gradle.kts
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
@@ -142,6 +152,8 @@ Builds:
       - sed -i '/signingConfig.*release/d' android/app/build.gradle.kts
       - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/g' android/app/build.gradle.kts
       - sed -i 's/jvmTarget = "17"/jvmTarget = "21"/g' android/app/build.gradle.kts
+      - sed -i 's/jvmToolchain(17)/jvmToolchain(21)/g' android/app/build.gradle.kts
+      - sed -i 's/JvmTarget.JVM_17/JvmTarget.JVM_21/g' android/app/build.gradle.kts
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
