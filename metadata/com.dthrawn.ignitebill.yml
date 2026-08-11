@@ -24,17 +24,18 @@ Builds:
     rm:
       - ios
     prebuild:
-      - sed -i '/signingConfig.*release/d' android/app/build.gradle.kts
-      - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/g' android/app/build.gradle.kts
-      - sed -i 's/jvmTarget = "17"/jvmTarget = "21"/g' android/app/build.gradle.kts
-      - sed -i 's/jvmToolchain(17)/jvmToolchain(21)/g' android/app/build.gradle.kts
-      - sed -i 's/JvmTarget.JVM_17/JvmTarget.JVM_21/g' android/app/build.gradle.kts
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
+      - cp /home/vagrant/metadata/build.gradle.kts android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get --enforce-lockfile
-    scandelete:
-      - .pub-cache
+      - find .pub-cache -type d -name "example" -prune -exec rm -rf {} +
+      - find .pub-cache -type d -name "test" -prune -exec rm -rf {} +
+      - find .pub-cache -type d -name "extension" -prune -exec rm -rf {} +
+      - find .pub-cache -type f -name "*.wasm" -delete
+      - find .pub-cache -type f -name "*.exe" -delete
+      - find .pub-cache -type f -name "*.zip" -delete
+      - find .pub-cache -type f -name "*.tar.gz" -delete
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter build apk --release --flavor foss --split-per-abi
@@ -49,17 +50,18 @@ Builds:
     rm:
       - ios
     prebuild:
-      - sed -i '/signingConfig.*release/d' android/app/build.gradle.kts
-      - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/g' android/app/build.gradle.kts
-      - sed -i 's/jvmTarget = "17"/jvmTarget = "21"/g' android/app/build.gradle.kts
-      - sed -i 's/jvmToolchain(17)/jvmToolchain(21)/g' android/app/build.gradle.kts
-      - sed -i 's/JvmTarget.JVM_17/JvmTarget.JVM_21/g' android/app/build.gradle.kts
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
+      - cp /home/vagrant/metadata/build.gradle.kts android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get --enforce-lockfile
-    scandelete:
-      - .pub-cache
+      - find .pub-cache -type d -name "example" -prune -exec rm -rf {} +
+      - find .pub-cache -type d -name "test" -prune -exec rm -rf {} +
+      - find .pub-cache -type d -name "extension" -prune -exec rm -rf {} +
+      - find .pub-cache -type f -name "*.wasm" -delete
+      - find .pub-cache -type f -name "*.exe" -delete
+      - find .pub-cache -type f -name "*.zip" -delete
+      - find .pub-cache -type f -name "*.tar.gz" -delete
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter build apk --release --flavor foss --split-per-abi
@@ -74,17 +76,18 @@ Builds:
     rm:
       - ios
     prebuild:
-      - sed -i '/signingConfig.*release/d' android/app/build.gradle.kts
-      - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/g' android/app/build.gradle.kts
-      - sed -i 's/jvmTarget = "17"/jvmTarget = "21"/g' android/app/build.gradle.kts
-      - sed -i 's/jvmToolchain(17)/jvmToolchain(21)/g' android/app/build.gradle.kts
-      - sed -i 's/JvmTarget.JVM_17/JvmTarget.JVM_21/g' android/app/build.gradle.kts
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
+      - cp /home/vagrant/metadata/build.gradle.kts android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get --enforce-lockfile
-    scandelete:
-      - .pub-cache
+      - find .pub-cache -type d -name "example" -prune -exec rm -rf {} +
+      - find .pub-cache -type d -name "test" -prune -exec rm -rf {} +
+      - find .pub-cache -type d -name "extension" -prune -exec rm -rf {} +
+      - find .pub-cache -type f -name "*.wasm" -delete
+      - find .pub-cache -type f -name "*.exe" -delete
+      - find .pub-cache -type f -name "*.zip" -delete
+      - find .pub-cache -type f -name "*.tar.gz" -delete
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter build apk --release --flavor foss --split-per-abi
@@ -99,17 +102,18 @@ Builds:
     rm:
       - ios
     prebuild:
-      - sed -i '/signingConfig.*release/d' android/app/build.gradle.kts
-      - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/g' android/app/build.gradle.kts
-      - sed -i 's/jvmTarget = "17"/jvmTarget = "21"/g' android/app/build.gradle.kts
-      - sed -i 's/jvmToolchain(17)/jvmToolchain(21)/g' android/app/build.gradle.kts
-      - sed -i 's/JvmTarget.JVM_17/JvmTarget.JVM_21/g' android/app/build.gradle.kts
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
+      - cp /home/vagrant/metadata/build.gradle.kts android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get --enforce-lockfile
-    scandelete:
-      - .pub-cache
+      - find .pub-cache -type d -name "example" -prune -exec rm -rf {} +
+      - find .pub-cache -type d -name "test" -prune -exec rm -rf {} +
+      - find .pub-cache -type d -name "extension" -prune -exec rm -rf {} +
+      - find .pub-cache -type f -name "*.wasm" -delete
+      - find .pub-cache -type f -name "*.exe" -delete
+      - find .pub-cache -type f -name "*.zip" -delete
+      - find .pub-cache -type f -name "*.tar.gz" -delete
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter build apk --release --flavor foss --split-per-abi
@@ -124,17 +128,18 @@ Builds:
     rm:
       - ios
     prebuild:
-      - sed -i '/signingConfig.*release/d' android/app/build.gradle.kts
-      - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/g' android/app/build.gradle.kts
-      - sed -i 's/jvmTarget = "17"/jvmTarget = "21"/g' android/app/build.gradle.kts
-      - sed -i 's/jvmToolchain(17)/jvmToolchain(21)/g' android/app/build.gradle.kts
-      - sed -i 's/JvmTarget.JVM_17/JvmTarget.JVM_21/g' android/app/build.gradle.kts
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
+      - cp /home/vagrant/metadata/build.gradle.kts android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get --enforce-lockfile
-    scandelete:
-      - .pub-cache
+      - find .pub-cache -type d -name "example" -prune -exec rm -rf {} +
+      - find .pub-cache -type d -name "test" -prune -exec rm -rf {} +
+      - find .pub-cache -type d -name "extension" -prune -exec rm -rf {} +
+      - find .pub-cache -type f -name "*.wasm" -delete
+      - find .pub-cache -type f -name "*.exe" -delete
+      - find .pub-cache -type f -name "*.zip" -delete
+      - find .pub-cache -type f -name "*.tar.gz" -delete
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter build apk --release --flavor foss --split-per-abi
@@ -149,17 +154,18 @@ Builds:
     rm:
       - ios
     prebuild:
-      - sed -i '/signingConfig.*release/d' android/app/build.gradle.kts
-      - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/g' android/app/build.gradle.kts
-      - sed -i 's/jvmTarget = "17"/jvmTarget = "21"/g' android/app/build.gradle.kts
-      - sed -i 's/jvmToolchain(17)/jvmToolchain(21)/g' android/app/build.gradle.kts
-      - sed -i 's/JvmTarget.JVM_17/JvmTarget.JVM_21/g' android/app/build.gradle.kts
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
+      - cp /home/vagrant/metadata/build.gradle.kts android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get --enforce-lockfile
-    scandelete:
-      - .pub-cache
+      - find .pub-cache -type d -name "example" -prune -exec rm -rf {} +
+      - find .pub-cache -type d -name "test" -prune -exec rm -rf {} +
+      - find .pub-cache -type d -name "extension" -prune -exec rm -rf {} +
+      - find .pub-cache -type f -name "*.wasm" -delete
+      - find .pub-cache -type f -name "*.exe" -delete
+      - find .pub-cache -type f -name "*.zip" -delete
+      - find .pub-cache -type f -name "*.tar.gz" -delete
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter build apk --release --flavor foss --split-per-abi
