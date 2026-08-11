@@ -171,6 +171,84 @@ Builds:
       - $$flutter$$/bin/flutter build apk --release --flavor foss --split-per-abi
         --target-platform="android-x64"
 
+  - versionName: 1.2.4
+    versionCode: 191
+    commit: v1.2.4
+    output: build/app/outputs/flutter-apk/app-foss-armeabi-v7a-release.apk
+    srclibs:
+      - flutter@stable
+    rm:
+      - ios
+    prebuild:
+      - sed -i '/foojay-resolver/d' android/settings.gradle.kts
+      - cp /home/vagrant/metadata/build.gradle.kts android/app/build.gradle.kts
+      - export PUB_CACHE=$(pwd)/.pub-cache
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter pub get --enforce-lockfile
+      - find .pub-cache -type d -name "example" -prune -exec rm -rf {} +
+      - find .pub-cache -type d -name "test" -prune -exec rm -rf {} +
+      - find .pub-cache -type d -name "extension" -prune -exec rm -rf {} +
+      - find .pub-cache -type f -name "*.wasm" -delete
+      - find .pub-cache -type f -name "*.exe" -delete
+      - find .pub-cache -type f -name "*.zip" -delete
+      - find .pub-cache -type f -name "*.tar.gz" -delete
+    build:
+      - export PUB_CACHE=$(pwd)/.pub-cache
+      - $$flutter$$/bin/flutter build apk --release --flavor foss --split-per-abi
+        --target-platform="android-arm"
+
+  - versionName: 1.2.4
+    versionCode: 192
+    commit: v1.2.4
+    output: build/app/outputs/flutter-apk/app-foss-arm64-v8a-release.apk
+    srclibs:
+      - flutter@stable
+    rm:
+      - ios
+    prebuild:
+      - sed -i '/foojay-resolver/d' android/settings.gradle.kts
+      - cp /home/vagrant/metadata/build.gradle.kts android/app/build.gradle.kts
+      - export PUB_CACHE=$(pwd)/.pub-cache
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter pub get --enforce-lockfile
+      - find .pub-cache -type d -name "example" -prune -exec rm -rf {} +
+      - find .pub-cache -type d -name "test" -prune -exec rm -rf {} +
+      - find .pub-cache -type d -name "extension" -prune -exec rm -rf {} +
+      - find .pub-cache -type f -name "*.wasm" -delete
+      - find .pub-cache -type f -name "*.exe" -delete
+      - find .pub-cache -type f -name "*.zip" -delete
+      - find .pub-cache -type f -name "*.tar.gz" -delete
+    build:
+      - export PUB_CACHE=$(pwd)/.pub-cache
+      - $$flutter$$/bin/flutter build apk --release --flavor foss --split-per-abi
+        --target-platform="android-arm64"
+
+  - versionName: 1.2.4
+    versionCode: 193
+    commit: v1.2.4
+    output: build/app/outputs/flutter-apk/app-foss-x86_64-release.apk
+    srclibs:
+      - flutter@stable
+    rm:
+      - ios
+    prebuild:
+      - sed -i '/foojay-resolver/d' android/settings.gradle.kts
+      - cp /home/vagrant/metadata/build.gradle.kts android/app/build.gradle.kts
+      - export PUB_CACHE=$(pwd)/.pub-cache
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter pub get --enforce-lockfile
+      - find .pub-cache -type d -name "example" -prune -exec rm -rf {} +
+      - find .pub-cache -type d -name "test" -prune -exec rm -rf {} +
+      - find .pub-cache -type d -name "extension" -prune -exec rm -rf {} +
+      - find .pub-cache -type f -name "*.wasm" -delete
+      - find .pub-cache -type f -name "*.exe" -delete
+      - find .pub-cache -type f -name "*.zip" -delete
+      - find .pub-cache -type f -name "*.tar.gz" -delete
+    build:
+      - export PUB_CACHE=$(pwd)/.pub-cache
+      - $$flutter$$/bin/flutter build apk --release --flavor foss --split-per-abi
+        --target-platform="android-x64"
+
 AllowedAPKSigningKeys: aa598653de0f759deb0319c0e9564486231bbd1a7f1b04e75f00b6b74dadf75f
 
 AutoUpdateMode: Version
@@ -180,5 +258,5 @@ VercodeOperation:
   - '%c * 10 + 2'
   - '%c * 10 + 3'
 UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 1.2.3
-CurrentVersionCode: 183
+CurrentVersion: 1.2.4
+CurrentVersionCode: 193
