@@ -26,7 +26,6 @@ Builds:
     prebuild:
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
       - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/g' android/app/build.gradle.kts
-      - sed -i '/versionCodeOverride =/a \            val abi = output.filters.find { it.filterType == "ABI" }?.identifier; (output as com.android.build.gradle.internal.api.ApkVariantOutputImpl).outputFileName = "app-foss-${abi ?: \"universal\"}-release.apk"' android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get --enforce-lockfile
@@ -53,7 +52,6 @@ Builds:
     prebuild:
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
       - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/g' android/app/build.gradle.kts
-      - sed -i '/versionCodeOverride =/a \            val abi = output.filters.find { it.filterType == "ABI" }?.identifier; (output as com.android.build.gradle.internal.api.ApkVariantOutputImpl).outputFileName = "app-foss-${abi ?: \"universal\"}-release.apk"' android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get --enforce-lockfile
@@ -80,7 +78,6 @@ Builds:
     prebuild:
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
       - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/g' android/app/build.gradle.kts
-      - sed -i '/versionCodeOverride =/a \            val abi = output.filters.find { it.filterType == "ABI" }?.identifier; (output as com.android.build.gradle.internal.api.ApkVariantOutputImpl).outputFileName = "app-foss-${abi ?: \"universal\"}-release.apk"' android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get --enforce-lockfile
@@ -107,7 +104,6 @@ Builds:
     prebuild:
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
       - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/g' android/app/build.gradle.kts
-      - sed -i '/versionCodeOverride =/a \            val abi = output.filters.find { it.filterType == "ABI" }?.identifier; (output as com.android.build.gradle.internal.api.ApkVariantOutputImpl).outputFileName = "app-foss-${abi ?: \"universal\"}-release.apk"' android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get --enforce-lockfile
@@ -134,7 +130,6 @@ Builds:
     prebuild:
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
       - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/g' android/app/build.gradle.kts
-      - sed -i '/versionCodeOverride =/a \            val abi = output.filters.find { it.filterType == "ABI" }?.identifier; (output as com.android.build.gradle.internal.api.ApkVariantOutputImpl).outputFileName = "app-foss-${abi ?: \"universal\"}-release.apk"' android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get --enforce-lockfile
@@ -161,7 +156,6 @@ Builds:
     prebuild:
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
       - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/g' android/app/build.gradle.kts
-      - sed -i '/versionCodeOverride =/a \            val abi = output.filters.find { it.filterType == "ABI" }?.identifier; (output as com.android.build.gradle.internal.api.ApkVariantOutputImpl).outputFileName = "app-foss-${abi ?: \"universal\"}-release.apk"' android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get --enforce-lockfile
@@ -188,7 +182,6 @@ Builds:
     prebuild:
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
       - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/g' android/app/build.gradle.kts
-      - sed -i '/versionCodeOverride =/a \            val abi = output.filters.find { it.filterType == "ABI" }?.identifier; (output as com.android.build.gradle.internal.api.ApkVariantOutputImpl).outputFileName = "app-foss-${abi ?: \"universal\"}-release.apk"' android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get --enforce-lockfile
@@ -215,7 +208,6 @@ Builds:
     prebuild:
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
       - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/g' android/app/build.gradle.kts
-      - sed -i '/versionCodeOverride =/a \            val abi = output.filters.find { it.filterType == "ABI" }?.identifier; (output as com.android.build.gradle.internal.api.ApkVariantOutputImpl).outputFileName = "app-foss-${abi ?: \"universal\"}-release.apk"' android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get --enforce-lockfile
@@ -242,7 +234,6 @@ Builds:
     prebuild:
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
       - sed -i 's/JavaVersion.VERSION_17/JavaVersion.VERSION_21/g' android/app/build.gradle.kts
-      - sed -i '/versionCodeOverride =/a \            val abi = output.filters.find { it.filterType == "ABI" }?.identifier; (output as com.android.build.gradle.internal.api.ApkVariantOutputImpl).outputFileName = "app-foss-${abi ?: \"universal\"}-release.apk"' android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get --enforce-lockfile
