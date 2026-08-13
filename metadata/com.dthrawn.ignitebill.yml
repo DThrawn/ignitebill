@@ -25,7 +25,7 @@ Builds:
       - ios
     prebuild:
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
-      - cp /home/vagrant/metadata/build.gradle.kts android/app/build.gradle.kts
+      - cp /home/vagrant/metadata/com.dthrawn.ignitebill/build.gradle.kts android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get --enforce-lockfile
@@ -51,7 +51,7 @@ Builds:
       - ios
     prebuild:
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
-      - cp /home/vagrant/metadata/build.gradle.kts android/app/build.gradle.kts
+      - cp /home/vagrant/metadata/com.dthrawn.ignitebill/build.gradle.kts android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get --enforce-lockfile
@@ -77,7 +77,7 @@ Builds:
       - ios
     prebuild:
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
-      - cp /home/vagrant/metadata/build.gradle.kts android/app/build.gradle.kts
+      - cp /home/vagrant/metadata/com.dthrawn.ignitebill/build.gradle.kts android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get --enforce-lockfile
@@ -103,7 +103,7 @@ Builds:
       - ios
     prebuild:
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
-      - cp /home/vagrant/metadata/build.gradle.kts android/app/build.gradle.kts
+      - cp /home/vagrant/metadata/com.dthrawn.ignitebill/build.gradle.kts android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get --enforce-lockfile
@@ -129,7 +129,7 @@ Builds:
       - ios
     prebuild:
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
-      - cp /home/vagrant/metadata/build.gradle.kts android/app/build.gradle.kts
+      - cp /home/vagrant/metadata/com.dthrawn.ignitebill/build.gradle.kts android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get --enforce-lockfile
@@ -155,7 +155,7 @@ Builds:
       - ios
     prebuild:
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
-      - cp /home/vagrant/metadata/build.gradle.kts android/app/build.gradle.kts
+      - cp /home/vagrant/metadata/com.dthrawn.ignitebill/build.gradle.kts android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get --enforce-lockfile
@@ -181,7 +181,7 @@ Builds:
       - ios
     prebuild:
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
-      - cp /home/vagrant/metadata/build.gradle.kts android/app/build.gradle.kts
+      - cp /home/vagrant/metadata/com.dthrawn.ignitebill/build.gradle.kts android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get --enforce-lockfile
@@ -207,7 +207,7 @@ Builds:
       - ios
     prebuild:
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
-      - cp /home/vagrant/metadata/build.gradle.kts android/app/build.gradle.kts
+      - cp /home/vagrant/metadata/com.dthrawn.ignitebill/build.gradle.kts android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get --enforce-lockfile
@@ -233,7 +233,7 @@ Builds:
       - ios
     prebuild:
       - sed -i '/foojay-resolver/d' android/settings.gradle.kts
-      - cp /home/vagrant/metadata/build.gradle.kts android/app/build.gradle.kts
+      - cp /home/vagrant/metadata/com.dthrawn.ignitebill/build.gradle.kts android/app/build.gradle.kts
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get --enforce-lockfile
